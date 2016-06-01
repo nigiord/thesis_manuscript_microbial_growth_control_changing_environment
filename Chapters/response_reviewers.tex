@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amscd,amssymb,amstext,epsfig,textcomp}
+\usepackage{lscape}
+%\usepackage{multirow}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\usepackage[authoryear]{natbib}
+
+\usepackage{color}
+\newcommand{\tr}[1]{\textcolor{red}{#1}}
+
+\begin{document}
+
+\title{\bf Response to Reviewers of "Dynamical allocation of cellular resources as an optimal control problem: Novel
+insights into microbial growth strategies" (PCOMPBIOL-S-15-02269)}
+
+\author{Nils Giordano$^{\text{}1,2}$, Francis Mairet$^{\text{}3}$, Jean-Luc Gouz\'{e}$^{\text{}3}$, \\ Johannes Geiselmann$^{\text{}1,2,*}$, Hidde de Jong$^{\text{}2,*}$ \\ \\
+1. Universit\'e Grenoble Alpes, Laboratoire Interdisciplinaire de Physique (CNRS UMR 5588) \\ 140 rue de la physique BP 87, 38402 Saint Martin d'H\`{e}res  France\\
+2. INRIA, Grenoble - Rh\^one-Alpes research centre,\\ 655 avenue de l'Europe, Montbonnot, 38334 Saint Ismier Cedex, France \\
+3. Inria, Sophia-Antipolis M\'{e}diterran\'{e}e research centre, 2004 route des Lucioles, BP 93,\\ 06902 Sophia-Antipolis Cedex, France \\
+\\
+$^{*}$ Corresponding authors with equal contributions: \\ Johannes Geiselmann (Hans.Geiselmann@ujf-grenoble.fr), \\ Hidde de Jong (Hidde.de-Jong@inria.fr)
+}
+
+
+\date{}
+
+\maketitle
+%\nocite{*}
+
+\noindent  We would like to thank the reviewers for their comments on our manuscript "Dynamical allocation of cellular resources as an optimal control problem: Novel insights into microbial growth strategies" (PCOMPBIOL-S-15-02269). In this document we describe how our revised manuscript addresses the comments of reviewer 3, which mostly concern the presentation of our work. In summary, we have made the following two major changes:
+
+\begin{enumerate}
+\item The second part of the \textit{Results} section has been streamlined and we have tried to clarify the presentation throughout;
+\item A \textit{Methods} section has been added to the paper and part of the material in the Supplementary Information has been shifted to this new section.
+\end{enumerate}
+Below we respond to the reviewer comments in detail and we indicate which changes have been made to the manuscript (major changes in red). The reviewer comments are in italic, and our response in default font.
+
+
+\section*{Reviewer 3}
+
+\textit{In this paper the authors study a resource allocation problem to identify strategies that microbes use to adapt their proteome in response to nutrient upshifts. The paper addresses a very relevant topic in systems biology with a unique (and very much needed) angle from a dynamic optimization framework. Their main results say basically that optimal regulatory strategies that maximize steady state growth are not necessarily optimal in dynamic environments. As far as I know this is the first study that reveals this property from dynamic resource allocation problems. They go further and propose a number of feedback strategies, based on precursor-sensing, nutrient-sensing, and the imbalance between precursors and ribosomes (akin to the ppGpp system), and compare them in terms of their dynamic responses. This is a very interesting paper and a solid contribution. The results seem correct but I have a number of comments to streamline ideas and homogenize the quality of the different sections of the paper in terms of language, figures and flow of ideas.} \\
+
+\textit{- Some parts of Text S1 and S4 should be included as methods or an appendix in the main text to improve readability. I also found a small typo in S1.10, a missing \^ in the jacobian.} \\
+
+\noindent\textbf{Answer:} We have added a \textit{Methods} section to the paper, with the following subsections:
+
+\begin{enumerate}
+\item \textit{Steady-state analysis of model.} This subsection summarizes the major results of the model analysis in Text~S1, notably explicit expressions for the optimal growth rate at steady state referred to in the main text. The details of the derivation of these expression remain in Text~S1. 
+\item \textit{Model fitting.} This subsection describes how the self-replicator model was fitted against the data of \cite{Scott2010}. The contents of this subsection were formerly included in Text~S2.
+\item \textit{Solution of optimal control problem.} This subsection provides an outline of the way in which the analytical results for the optimal control problem were obtained. The details of the derivation remain in Text~S3. The subsection also describes how the optimal control problem was solved numerically for generating Fig.~4, a text formerly included in Text~S3.
+\item \textit{Specification and analysis of control strategies.} This subsection shows that all three control strategies discussed in the paper drive the self-replicator to the optimal steady state after the upshift. The contents were moved here from Text~S4, which has been renamed to \textit{Kinetic model of the ppGpp system in Escherichia coli} to better cover the remaining material.
+\end{enumerate}  
+
+The typo in S.1.10 was corrected.\\
+
+\textit{- Fig 2 is important but a bit convoluted. I am not sure panel 2B adds too much information and moreover, the references to Fig 2 in the text are a bit confusing, as they go back and forth between panels and it is cumbersome to follow.} \\
+
+\noindent\textbf{Answer:} We have reduced the information overload by splitting Fig.~2 in the original manuscript into two new figures. Fig.~2 in the revised manuscript (corresponding to Fig.~2\text{A-B} in the original manuscript) presents the analysis of the self-replicator model of bacterial growth, whereas Fig.~3 in the revised manuscript (corresponding to Fig.~2\text{C-D} in the original manuscript) shows that the model is consistent with the steady-state data of Scott \textit{et al.} We believe it is important to show the dynamics in the phase plane, but we have improved the legibility of the plot (Fig.~2\textit{A} in the revised manucript). The order of the figures and the figure panels now corresponds to the order in which they are mentioned in the text.\\
+
+\textit{- I suggest to unify the language across the whole manuscript. For example, some sections use a natural language while others a control-theoretic jargon (eg p 10), which I think it’s not the best choice unless concepts are clearly defined. A similar problem happens with several concepts in the manuscript, eg. the authors refer to the ‘environmental variable’ $e_{m}(t)$, but the constant turnover rate $E_m$ as a parameter; another example is the use of ‘intensive’ variables, vs ‘extensive’ ones, without an explanation of what these mean.} \\
+
+\noindent\textbf{Answer:} We have tried to unify the language across the manuscript and avoid jargon when possible. In particular, we have removed some terminology specific to control theory from the main text, such as "singular arc" and "bang arc", and we have summarized the properties of the solution of the optimal control problem more informally in the main text. The notions of "bang-bang-singular" and "Pontryagin maximum principle" have been preserved, as they are central to the paper and have been used before in systems biology and mathematical biology (see the references in the \textit{Discussion}). The \textit{Methods} subsection \textit{Solution of optimal control problem} provides a more technical description and uses the appropriate terminology from control theory. 
+
+Whereas $e_m(t)$ is a variable in the general model, it becomes a constant $e_m$ (or $E_M$ in its rescaled form) in the specific upshift scenarios we consider. This has been further emphasized in the text, notably in the sections \textit{Solution of the optimal control problem} and \textit{Simple feedback control strategies}. We use the notion of "intensive" variables only once, but in a context where it is difficult to replace by another term and where it is immediately followed by an intuitive explanation and an appropriate reference (\textit{Introduction}).\\
+
+
+\textit{- The introduction, first results sections and discussion are excellently written, with clean explanations and model assumptions clearly laid out. However, from p10 the flow is a bit broken and results are not so cleanly presented. I would advise the authors to streamline the text, lay out assumptions clearly (as in the first results section) and improve the figures as well. A figure for the different feedback schemes in p11 would help to clarify what is being sought, while Fig 4 could be removed or converted to an inset, as it contains little information. Another idea is to improve Figs 5 and 6: I am not sure the vector fields in panels A-B speak out the point the authors make in the text. Maybe these panels should be together for better comparison, or the authors could better explain what they mean by ‘performance’ when they compare the different dynamic responses in 5c-d vs 6c-d.} \\
+
+\noindent\textbf{Answer:} We have rewritten the final three \textit{Results} sections to improve the overall flow of the text. In particular, we have added more intuitions and motivations, and we have tried to make the assumptions more explicit. We have also relegated Fig.~4 to a Supplementary figure (Fig.~S1) and added a new Fig.~5 in which the control strategies are graphically superposed on the self-replicator system of Fig.~1. We have preserved Figs~5 and 6 (Figs~6 and 7 in the revised manuscript), but we have better explained in the text how the vector fields in panels \textit{A-B} relate to the temporal response curves in panels \textit{C-D}.  \\
+
+
+\textit{- Text S3. I think the authors could expand this section to cleanly explain the variable definitions, the derivations and pontryagin’s conditions in more detail. 3 examples: a) the constancy of the hamiltonian appears as a condition only in the middle of the derivation, b ) the definition of ‘overtaking optimality’ is missing (but crucial to the derivation, is this the role of $\lambda_0$ in the hamiltonian? ), c) the footnote 2 about abnormal extremal trajectories needs more explanation. Since this is a supplementary file, the authors can afford to explain things in detail while keeping it accessible to someone not entirely familiar with the concepts from optimal control.} \\
+
+\noindent\textbf{Answer:} Text~S3 has been extended to provide more explanations. In particular, the conservation of the Hamiltonian along extremal trajectories is now explicitly stated earlier in the text, the notion of "overtaking optimality" is explicity defined, and footnote~2 is further developed in the text.\\
+
+
+\textit{- In Fig 3B, it is unclear why the switching function has constant sign but $\alpha(t)$ switches right after $\hat{t}=2$.} \\
+
+\noindent\textbf{Answer:} In the revised manuscript, this point is further developed at the end of the section \textit{Solution of the optimal control problem}, when discussing the figure (Fig.~4\textit{B} in the revised manuscript). We explain that the optimal solution does cross the switching curve at the moment that $\alpha$ switches from 1 to 0, around $\hat{t}=2$, and remains close to the switching curve until the next switch occurs.   \\
+
+
+\textit{- In S4.1, it is unclear why ‘we know from Eq. S1.20 that $g(\hat{p})$ is the only control law...'} \\
+
+\noindent\textbf{Answer:} The formulation was misleading: the statement is not "known", but shown here, immediately after Eq.~S4.1, with the help of Eq. S1.20. We changed the text to better bring this out (notice that this section has been moved to the \textit{Methods} section of the main text, as described above, while the proof is now included in Text~S1). \\
+
+
+\textit{- S4.3, I suggest to include the definitions/notation from Bosdriesz et al explicitly to make it a standalone document.}
+
+\noindent\textbf{Answer:} Done, in Text~S4. \\
+
+
+
+
+\begin{thebibliography}{10}
+
+\bibitem[{Scott {\it et~al\/}(2010)Scott, Gunderson, Mateescu, Zhang \&
+  Hwa}]{Scott2010}
+Scott M, Gunderson CW, Mateescu EM, Zhang Z, Hwa T (2010) {Interdependence of
+  cell growth and gene expression: origins and consequences.} {\it Science\/}
+  {\bf 330}: 1099--1102
+
+
+\end{thebibliography}
+
+\end{document}
+

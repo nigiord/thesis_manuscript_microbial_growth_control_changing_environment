@@ -1,0 +1,616 @@
+\section*{Introduction}
+
+Microorganisms adapt their physiology to changes in nutrient availability in the environment.
+This involves changes in the expression of a large number of genes, encoding proteins with a variety of cellular functions, such as transporters for the uptake of nutrients, enzymes for the conversion of nutrients to energy and building blocks for macromolecules, the components of the transcriptional and translational machinery, and transcription factors to preferentially direct RNA polymerase to specific promoters~\cite{schaechter_microbe_2006,keseler_ecocyc_2013}.
+Fundamentally, the reorganization of gene expression in response to changes in environmental conditions is a resource allocation problem.
+It poses the question how microorganisms redistribute their protein synthesis capacity over different cellular functions when constrained by the changing environment.
+
+The mechanisms responsible for resource allocation in microbial cells are usually assumed to have been optimized through evolution, so as to maximize the offspring of cells in their natural environment.
+How this general principle manifests itself on the level of cellular physiology is not straightforward though.
+Many studies have reasoned that growth-rate maximization provides a selective advantage to microorganisms, because it allows competitors to be outgrown when resources are scarce.
+Others have shown, however, that appropriate optimization criteria will depend on the structure of the environment and the ecosystem, as well as on the molecular properties of metabolic pathways~\cite{frank_tradeoff_2010,maclean_tragedy_2008,schuetz_multidimensional_2012,schuster_maximization_2008,schuetz_systematic_2007}.
+For instance,  in environments without competition for a shared resource, maximization of growth yield rather than growth rate is expected to provide a selective advantage.
+Although what counts as optimal is thus context-dependent, growth and evolution experiments in \textit{Escherichia coli} have shown that in certain conditions bacterial metabolism is indeed geared towards growth-rate maximization~\cite{edwards_silico_2001,ibarra_escherichia_2002,lewis_omic_2010}.
+
+For this reason, growth-rate maximization is a central hypothesis in a number of recent theoretical studies of resource allocation using coarse-grained models of the cell~\cite{molenaar_shifts_2009,scott_interdependence_2010,scott_emergence_2014}.
+The models deliberately reduce the molecular complexity of regulatory networks so as to focus on generic explanatory principles~\cite{servedio_not_2014}.
+Along these lines, Molenaar \etal developed a series of simple models of the microbial cell, taking into account that growth requires the synthesis of proteins playing a role in metabolism (transporters, enzymes) and gene expression (ribosomes), in varying proportions.
+Allocation parameters that maximize the growth rate were shown to account, at least in a qualitative way, for the variation of the amount of ribosomal protein as a fraction of total protein in different growth media, and for the occurrence of overflow metabolism above certain growth rates~\cite{molenaar_shifts_2009}.
+Using another coarse-grained model of the cell, centered on amino acid supply (metabolism) and demand (protein synthesis), Scott \etal derived empirical growth laws with linear relations between the ribosomal protein fraction and the growth rate, in conditions where the nutrient supply or demand are altered~\cite{scott_interdependence_2010,scott_emergence_2014}.
+In their model, maximization of growth rate requires maximization of amino acid flux and is achieved for a specific, unique value of the ribosomal protein fraction.
+Based on a structurally similar model, Maitra and Dill related optimal resource allocation to the basic constants of the metabolic and gene expression machinery, in particular energy efficiency~\cite{maitra_bacterial_2014}.
+
+The assumption of growth-rate maximization may lead to correct predictions in some situations, but ignores the regulatory mechanisms achieving resource allocation and therefore cannot provide a causal explanation of cellular behavior~\cite{kremling_understanding_2015}.
+Several studies have used coarse-grained models to understand which control strategies microorganisms employ to achieve (optimal) resource allocation~\cite{bosdriesz_how_2015,scott_emergence_2014,weisse_mechanistic_2015}.
+Scott \etal have shown that a robust feedforward control strategy, based on the sensing of the amino acid pool size and the corresponding adjustment of the fraction of ribosomes producing ribosomal proteins, allows the ribosomal protein fraction to be maintained close to its optimal value under a variety of growth conditions~\cite{scott_emergence_2014}.
+The authors suggest that this control strategy involves the signalling molecule ppGpp, in agreement with conclusions drawn from a recent kinetic model of the regulatory mechanisms achieving optimal adjustment of the ribosomal protein fraction~\cite{bosdriesz_how_2015}.
+Wei{\ss}e \etal also developed a coarse-grained model of microbial growth based on resource allocation trade-offs~\cite{weisse_mechanistic_2015}. 
+Without including specific regulatory interactions, the model accounts for the above-mentioned bacterial growth laws, predicts host-circuit interactions in synthetic biology, and relates gene regulation to the nutrient composition of the medium.
+
+The above studies consider resource allocation at steady state, where all intensive variables describing the growing microbial culture, \tr{in particular the concentrations of its molecular components, are constant (see~\cite{fishov_microbial_1995} for a precise definition of steady-state growth and the closely related notions of balanced and exponential growth).}
+This requires an environment to be stable over a long period of time.
+Such conditions can be achieved in the laboratory~\cite{borirak_molecular_2014}, but many microorganisms naturally experience frequently-changing conditions.
+For example, \textit{E. coli} can cycle between two distinct habitats, the mammalian intestine and the earth's surface (water, sediment, soil)~\cite{savageau_escherichia_1983}.
+The bacteria transit through different microenvironments in the intestinal system, where they encounter different mixes of sugars~\cite{savageau_demand_1998}.
+They are even more challenged in the open environment outside the host, with a greatly fluctuating availability of carbon and energy sources and a large variability in temperature, osmolarity, oxygen, and microbial communities~\cite{blount_unexhausted_2015,vanelsas_survival_2011}.
+
+This situation motivates a dynamical perspective on microbial growth and resource allocation~\cite{pavlov_optimal_2013,vandenberg_optimal_1998,waldherr_dynamic_2015,ehrenberg_mediumdependent_2012}. However, fundamental results like the growth laws uncovered for steady-state conditions are still lacking.
+In particular, extending the results reviewed above to dynamical conditions raises the following questions:
+Are control strategies that maximize steady-state growth also optimal in dynamical environments?
+If this is not the case, then which alternative strategies would be optimal for such conditions?
+And finally, how do these strategies compare with the regulatory mechanisms that have actually evolved in microorganisms?
+
+The aim of this study is to address the above fundamental questions in a specific dynamical growth scenario, namely a transition between two steady states following an environmental perturbation.
+In particular, we consider the upshift of a microbial culture from a medium supporting growth at a low rate to a medium supporting growth at a high rate~\cite{ehrenberg_mediumdependent_2012}.
+We develop a coarse-grained model of the cell, inspired by the self-replicator model of Molenaar \etal~\cite{molenaar_shifts_2009}, and reformulate our questions in the context of optimal control theory~\cite{stengel_optimal_1994} to identify control schemes maximizing biomass production over an interval of time, the dynamical equivalent of growth-rate maximization.
+
+We show that Pontryagin's Maximum Principle suggests that optimal resource allocation after a growth transition is achieved by a bang-bang-singular control law~\cite{stengel_optimal_1994}, a conjecture confirmed by direct numerical optimization.
+This optimal solution provides a gold standard against which possible control strategies of the cell can be compared.
+We consider simple strategies that drive the system to the steady state enabling growth at the maximal rate in the new medium, after the upshift.
+In a dynamical growth scenario, the strategy sensing the concentration of precursor metabolites emerges as the best candidate, consistent with the analysis of Scott \etal that feedforward activation of the rate of synthesis of ribosomal proteins, involving ppGpp-mediated sensing of the amino acid pool~\cite{dalebroux_ppgpp_2012,potrykus_pppgpp_2008,hauryliuk_recent_2015}, is the key regulatory mechanism for growth control.
+It is possible, however, to define a strategy approaching the theoretical optimum even more closely by exploiting information on both the precursor concentration and the abundance of the gene expression machinery.
+Interestingly, a thorough analysis of the functioning of the ppGpp system, as described by a kinetic model of the synthesis and degradation of this signalling molecule, suggests similarities between our two-variable control strategy and the regulation of the transcription of ribosomal RNA by ppGpp~\cite{bosdriesz_how_2015}.
+
+The results presented here generalize the analysis of control strategies enabling optimal growth of microorganisms from steady-state to dynamical scenarios.
+The control strategies are formulated in the context of a coarse-grained model of resource allocation, based on minimal assumptions, that accounts for empirical growth laws at steady state.
+The analysis shows that during growth transitions, control strategies based on information of a single variable are outperformed by systems measuring several variables.
+This conclusion agrees with the intuition that, in dynamical environments, there may be an evolutionary pressure towards more elaborate sensory systems.
+From a methodological point of view, our study illustrates how optimal control theory can provide novel insights into complex biological phenomena~\cite{iglesias_control_2010}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Results}
+
+\subsection*{Self-replicator model of resource allocation}
+\label{sec:model}
+
+Resource allocation in bacteria involves the distribution of cellular resources (precursor metabolites and energy) over processes supporting maintenance and growth~\cite{schaechter_microbe_2006}.
+A simple modelling tool for analyzing resource allocation questions in a precise way are so-called self-replicator models.
+These models have a long history in various domains of chemistry, biology, physics, and computer science~\cite{sipper_fifty_1998}, and were recently put to use as an analytical tool in systems biology~\cite{molenaar_shifts_2009} (see also~\cite{flamm_minimal_2007}).
+We will show that despite their simplicity, which make them tractable for mathematical analysis, self-replicator models are sufficiently expressive to account for empirical observations and make testable predictions.
+
+Bearing in mind that the major constituents of the cell are macromolecules (DNA, RNA, proteins), produced from precursor metabolites, a fundamental resource allocation question is the following: How much of the cellular resources are invested in the making of new macromolecules (gene expression machinery) and how much in performing other functions, in particular producing metabolic enzymes involved in the uptake of nutrients and their conversion to precursor metabolites (metabolic machinery)?
+In order to address this question, we consider a self-replicating system composed of the gene expression machinery ($R$) and the metabolic machinery ($M$).
+The system, shown schematically in Fig.~\ref{fig:self_replicator}, is thus defined by two macroreactions which are conveniently written as:
+\begin{equation}\label{eq:reactions}
+\begin{aligned}
+S &\overset{V_M}{\longrightarrow} P, \\
+P &\overset{V_R}{\longrightarrow} \alpha R + (1-\alpha) M.
+\end{aligned}
+\end{equation}
+The first reaction, catalyzed by $M$, converts external substrates ($S$) into precursor metabolites ($P$).
+The second reaction, catalyzed by $R$, converts precursors into macromolecules ($R$ and $M$).
+The resource allocation parameter $\alpha \in [0,1]$ defines the proportion of precursor mass used for making gene expression machinery as compared to metabolic machinery.
+We will interchangeably use the symbols $M$, $R$, $S$, and $P$ for the components of the replicators themselves and their total mass [g].
+We will denote the rates at which the macroreactions occur by $V_R$ and $V_M$ [g~h\textsuperscript{-1}].
+
+\begin{figure}[h]
+\includegraphics[scale=1]{./Fig/Fig1.eps}
+\caption[Self-replicator model of bacterial growth]{
+{\bf Self-replicator model of bacterial growth.} External substrates $S$ enter the cell and are transformed into precursors $P$ through the action of the metabolic machinery $M$.
+The precursors are used by the gene expression machinery $R$ to make the proteins composing both the metabolic machinery (transporters, enzymes, ...) and the gene expression machinery itself (RNA polymerase, ribosomes, ...).
+$\alpha$ ($1-\alpha$) is the mass proportion of precursors converted into $R$ ($M$).
+Thick arrows denote reactions and thin, dashed arrows denote catalytic activities.
+The rate of synthesis of precursors and the rate of synthesis of proteins from precursors are denoted by $V_M$ and $V_R$, respectively.
+}
+\label{fig:self_replicator}
+\end{figure}
+
+The self-replicator system in Fig.~\ref{fig:self_replicator} is based on a number of simplifying assumptions.
+First, cell division is not explicitly modelled and replication should therefore be interpreted as the growth of (the mass of) a cell population.
+This amounts to the assumption that individual cells in a growing populations have the same macromolecular composition.
+Second, degradation of the macromolecules is ignored.
+In other words, we assume that macromolecules are stable and that their degradation rates are negligible with respect to the rates of other reactions in the system.
+Third, we consider only two classes of macromolecules ($R$ and $M$).
+In particular, we do not assume that an irreducible mass fraction of the precursors is dedicated to cell maintenance~\cite{scott_interdependence_2010}.
+The system could be easily extended to relax the above assumptions, but this would complicate the analysis of the model and obscure the points we want to make.
+
+In what follows, it will be more convenient to describe the quantities in the system as intracellular concentrations rather than as the total mass in the cell population.
+To this end, we define the volume $\mathtt{Vol}$ [L] of the cell population as follows:
+\begin{equation}
+\mathtt{Vol} = \beta \, (M + R),
+\label{eq:voldef}
+\end{equation}
+with $\beta$ a conversion constant [L~g\textsuperscript{-1}] equal to the inverse of the cytoplasmic density.
+Dividing each variable $M$, $R$, and $P$ by $\mathtt{Vol}$ yields the concentrations $m$, $r$, and $p$ of metabolic enzymes, ribosomes and other components of the gene expression machinery, and precursor metabolites, respectively [g~L\textsuperscript{-1}].
+Henceforth, these variables as well as $\mathtt{Vol}$ and $\alpha$ will be considered functions of time $t$ [h].
+
+The dynamics of the self-replicator in Fig.~\ref{fig:self_replicator} can be described by the following system of ordinary differential equations (see Text~\ref{S1_Text} for the derivation):
+\begin{eqnarray}
+\frac{dp}{dt} &=& v_M(s,r) - v_R(p,r) \, (1+\beta\, p), \label{eq:pdef}\\
+\frac{dr}{dt} &=& v_R(p,r) \, (\alpha(t) - \beta\, r), \label{eq:rdef}
+\end{eqnarray}
+where $s$ [g~L\textsuperscript{-1}] denote the (extracellular) concentration of substrate.
+$v_M(s,r)$ [g~L\textsuperscript{-1}~h\textsuperscript{-1}] and $v_R(p,r)$ [g~L\textsuperscript{-1}~h\textsuperscript{-1}] denote the precursor synthesis rate and the macromolecule synthesis rate, respectively.
+The growth rate $\mu$ [h\textsuperscript{-1}] of the replicator system is defined as the relative increase of the volume, and can be rewritten with Eqs~\ref{eq:pdef}-\ref{eq:rdef} as proportional to the macromolecule synthesis rate (Text~\ref{S1_Text}):
+\begin{equation}\label{eq:growthrate}
+\mu = \frac{1}{\mathtt{Vol}} \frac{d\mathtt{Vol}}{dt} = \frac{1}{M+R}\frac{d(M+R)}{dt} = \beta\, v_R(p,r).
+\end{equation}
+
+The precursor concentration changes through the joint effect of the precursor synthesis rate $v_M(\cdot )$, the macromolecule synthesis rate $v_R(\cdot )$, and the rate of growth dilution ($\beta\, v_R(\cdot ) \,p$).
+The change in concentration of ribosomes and other components of the gene expression machinery is the net effect of the ribosome synthesis rate ($\alpha (\cdot )\, v_R (\cdot)$) and the rate of growth dilution ($\beta \, v_R(\cdot) \, r $).
+Remark that it is not necessary to add an equation for $m$ because it follows from Eq.~\ref{eq:voldef} that $r + m = 1/\beta$, and therefore $dm/dt = - dr/dt$.
+
+We use Michaelis-Menten kinetics to define the synthesis rate of each reaction:
+\begin{align}
+v_M(s,r) &= k_M\,m\, \frac{s}{K_M + s} = k_M\,(1/\beta - r)\, \frac{s}{K_M + s},  \label{eq:metaflux} \\
+v_R(p,r) &= k_R\,r\, \frac{p}{K_R + p}, \label{eq:machflux}
+\end{align}
+with rate constants $k_M, k_R$ [h\textsuperscript{-1}] and half-saturation constants $K_M, K_R$ [g~L\textsuperscript{-1}].
+Note that the rate of precursor synthesis is proportional to the concentration of the components of the metabolic machinery, while the macromolecule synthesis rate is proportional to the concentration of the components of the gene expression machinery.
+These catalytic effects correspond to the dashed arrows in Fig.~\ref{fig:self_replicator}.
+The rate constant $k_M$ depends both on the quality of the nutrients in the medium (higher $k_M$ for a richer medium) and on the metabolic efficiency of the macroreaction converting the substrate into precursors (higher $k_M$ for a more efficient reaction).
+For convenience, we henceforth assume that the environmental conditions do not change over the time-interval considered, either because $s$ is constant or because $s \gg K_M$, corresponding to a situation in which the substrate is available in excess.
+In both cases, $e_M(s) = k_M\, s/(K_M + s)$ is approximately constant, so that we can write
+\begin{equation}
+\label{eq:metaflux_simplified}
+v_M (r) = e_M \, (1/\beta-r).
+\end{equation}
+The rate constant $k_R$ characterizes the efficiency of the gene expression machinery, depending on the elongation rate of ribosomes, among other things. The ratio $p/K_R$ is an indicator of the saturation of the gene expression machinery by precursors.
+
+The system of Eqs~\ref{eq:pdef}-\ref{eq:rdef} thus has four parameters ($e_M$, $k_R$, $K_R$, $\beta$), one of which characterizes the input from the environment ($e_M$).
+The order of magnitude of the parameters can be inferred from data in the literature, as explained in Text~\ref{S2_Text}.
+Below we use the following values for the parameters $e_M = 3.6$~h\textsuperscript{-1}, $k_R = 3.6$~h\textsuperscript{-1}, $K_R=1$~g~L\textsuperscript{-1}, $\beta = 0.003$~L~g\textsuperscript{-1} (Table \ref{S1_Table}).
+However, it should be emphasized that the conclusions of this paper do not depend on the exact quantitative values of these parameters.
+
+An interesting property of the model is that it is built on minimal assumptions, basically the two macroreactions and the definition of the volume as proportional to the total mass of macromolecules.
+Like in~\cite{molenaar_shifts_2009,pavlov_optimal_2013,scott_emergence_2014}, these assumptions directly lead to the expression of the growth rate in Eq.~\ref{eq:growthrate}, without additional assumptions.
+
+\subsection*{Growth-rate maximization of the self-replicator reproduces bacterial growth laws}
+\label{sec:growthlaws}
+
+%The dynamics of the self-replicator model can be easily analyzed in the phase plane $(p,r)$, assuming constant resource allocation $\alpha(t)=\alpha$ and a constant environment $e_M$.
+The nullcline for $r$ is given by $r=0$, $r=\alpha/\beta$, and $p=0$, while the nullcline for $p$ is defined by
+
+\[
+r = \frac{e_M}{\beta \left(e_M + k_R\, \frac{p}{K_R+p}\, (1+\beta p)\right)}.
+\]
+The nullclines define a single stable steady state $(p^*, r^*)$ \tr{(Fig.~\ref{fig:model_analysis}\textit{A} and \textit{Methods}).}
+At this steady state, the growth rate is constant and denoted by $\mu^*$.
+The nullcline for $p$ is defined by the environment $e_M$.
+The nullcline for $r$, and thus the location of the steady state with the associated growth rate, are given by $\alpha$.
+\tr{Fig.~\ref{fig:model_analysis}\textit{B}} shows the dependency of the steady-state growth rate $\mu^*$ on the resource allocation parameter $\alpha$.
+As can be seen, $\mu^*$ is maximal for a specific, unique value of $\alpha$, which we denote $\alpha_{opt}^*$.
+That is, the model predicts that there is a single optimal way to divide the precursor flux over the synthesis of the gene expression machinery and the metabolic machinery.
+The same result, using a similar model, was obtained by Scott \etal~\cite{scott_emergence_2014}.
+The self-replicator model is simple enough to derive an algebraic expression for computing $\alpha^*_{opt}$ and the corresponding maximal growth rate $\mu^*_{opt}$ \tr{(\textit{Methods} and Text~\ref{S1_Text}),} which will simplify analysis of the system in later sections.
+
+\begin{figure}[!ht]
+\includegraphics[scale=1]{./Fig/Fig2.eps}
+\caption[Analysis of self-replicator model of bacterial growth]{\textbf{\tr{Analysis of self-replicator model of bacterial growth.}}\\
+\tr{\textit{A:}~Phase-plane analysis of the self-replicator model of Eqs~\ref{eq:pdef} and \ref{eq:rdef}.
+The nullclines for $p$ and $r$ are shown as solid and dashed curves, respectively.
+}
+\tr{Parameter values are $e_M = 3.6$~h\textsuperscript{-1}, $k_R = 3.6$~h\textsuperscript{-1}, $K_R=1$~g~L\textsuperscript{-1}, $\beta = 0.003$~L~g\textsuperscript{-1}, $\alpha = 0.45$.}
+\tr{
+\textit{B:}~Dependence of the growth rate at steady state $\mu^{*}$ on the resource allocation parameter $\alpha$, for two different environmental conditions (solid line, $e_M = 4.76$~h\textsuperscript{-1}; dashed line, $e_M = 1.57$~h\textsuperscript{-1}, other parameter values are $k_R = 2.23$~h\textsuperscript{-1}, $K_R=1$~g~L\textsuperscript{-1}, and $\beta = 0.003$~L~g\textsuperscript{-1}).
+The maximal growth rate is attained for a unique $\alpha$, called $\alpha^*_{opt}$.}
+}
+\label{fig:model_analysis}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=1]{./Fig/Fig3.eps}
+\caption[Self-replicator model accounts for bacterial growth laws]{
+\textbf{\tr{Self-replicator model accounts for bacterial growth laws.}}\\
+\tr{\textit{A:}~Predicted quasi-linear relation between the maximal growth rate $\mu^{*}_{opt}$ and the corresponding optimal resource allocation $\alpha^*_{opt}$, for different values of $e_M$ (different colors).
+The colored dots indicate $\alpha^*_{opt}$ and $\mu^{*}_{opt}$  for $k_R = 2.23$~h\textsuperscript{-1} and different $e_M$, and the dashed black line the relation for all intermediate values of $e_M$.
+The dashed colored lines indicate the relation between $\alpha^*_{opt}$ and $\mu^{*}_{opt}$ obtained when, for a given value of $e_M$, the value of $k_R$ is decreased (lower $k_R$ leads to lower $\mu^{*}_{opt}$).
+The solid grey curves correspond to $(\mu^*,\alpha)$-profiles like those shown in Fig.~\ref{fig:model_analysis}\textit{B}.
+\textit{B:}~Measured relation between the total RNA/protein mass ratio and the growth rate, in different growth media with different doses of a translation inhibitor (data from~\cite{scott_interdependence_2010}).
+For each medium, indicated by a color, five different concentrations of inhibitor were used (higher dose leads to lower growth rate).
+Growth-medium compositions are given in the original publication and error bars represent standard deviations.
+The dashed black and colored lines are the same as in panel \textit{A}, indicating the good quantitative correspondence between model predictions and experimental data for the chosen parameter values, obtained by fitting the model to the data points (see \textit{Methods} for details).
+}
+}
+\label{fig:model_validation}
+\end{figure}
+
+In order to validate the model, we verified that it can account for data on the macromolecular composition of \textit{E. coli} at steady state~\cite{scott_interdependence_2010}.
+When optimizing $\alpha$ for different values of $e_M$ (assuming cells attain maximal growth), the model predicts a relation between $\alpha^*_{opt}$ and $\mu^*_{opt}$ (colored dots and black dashed line in \tr{Fig.~\ref{fig:model_validation}\textit{A}}) that is quasi-linear for high growth rates.
+We compared this prediction with the results of experiments where the relation between the growth rate and the mass ratio of total RNA and protein was determined in different growth media (\tr{Fig.~\ref{fig:model_validation}\textit{B}}).
+In the framework of our model, different media correspond to different values of $e_M$, and different total RNA/protein mass ratios to different values of $\alpha$ (up to a conversion factor)
+\footnote{The RNA/protein mass ratio is often used as a proxy for the fraction of total protein mass that is ribosomal protein.
+At steady state, it correlates with the fraction of the total protein synthesis flux devoted to the production of ribosomal proteins~\cite{scott_interdependence_2010}, and therefore with $\alpha$.}
+, allowing a direct comparison of \tr{the model predictions in Fig.~\ref{fig:model_validation}\textit{A} with the data in Fig.~\ref{fig:model_validation}\textit{B} (see \textit{Methods}).}
+As can be seen, the model is able to account for the observed quasi-linear relation between the growth rate and the total mass ratio of RNA and protein. 
+\tr{Moreover, for realistic values of $k_R$ and $e_M$, a good quantitative fit is obtained (\textit{Methods} and Table~S1).}
+
+The data from Scott \etal also reveal a second apparently linear relation between the growth rate and the total RNA/protein mass ratio.
+This relation is obtained when varying, in the same growth medium, the efficiency of protein synthesis by adding different doses of an inhibitor of translation (chloramphenicol)~\cite{scott_interdependence_2010}.
+Using the model, we computed $\alpha^*_{opt}$ and $\mu^*_{opt}$, for constant environment $e_M$ and different values of the efficiency of protein synthesis $k_R$ (dashed colored lines in Fig.~\ref{fig:model_validation}\textit{A}).
+As can be seen in Fig.~\ref{fig:model_validation}\textit{B}, the model also captures the second linear relation in the data.
+
+We conclude that the self-replicator model is able to reproduce known observations of resource allocation in bacteria, so-called growth laws~\cite{scott_interdependence_2010}.
+The model is similar to a model recently proposed by Scott \etal~\cite{scott_emergence_2014}.
+Contrary to the latter model, the translation rate is not assumed to be constant in the self-replicator model, but rather depends on precursor abundance, as proposed by the same authors in~\cite{klumpp_molecular_2013}.
+
+The above analysis of bacterial growth has two major limitations.
+First, the predictions of optimal resource allocation (the value of $\alpha$ leading to the maximal growth rate) hold at steady state, for a constant environment, whereas most bacteria are not expected to encounter such conditions outside the laboratory.
+An allocation of resources that is optimal for steady-state growth and constant over time may not be optimal in dynamical growth conditions.
+Second, while it predicts which value of $\alpha$ is optimal at steady state, the model says nothing about the strategies that could be used to control resource allocation and set $\alpha$ to its optimal value.
+In other words, how could bacterial cells use sensors of changes in their internal state and the environment to optimally adjust $\alpha$?
+In what follows, we will address the above two questions, after having given a precise statement of the problem of optimal resource allocation in a dynamical environment in the next section. 
+
+\subsection*{Biomass maximization as an optimal control problem}
+\label{sec:optimalcontrolproblem}
+
+A self-replicator at steady state accumulates biomass according to $\texttt{Vol}(0)\, e^{\mu^*\, t}$, $t\in [0,\tau]$, when $\mu^*$ is the growth rate at steady state. 
+The accumulation of biomass is obviously maximal when the growth rate is maximal ($\mu^* = \mu^*_{opt}$).
+In dynamical conditions, the growth rate is not constant and biomass accumulation is described more generally by: 
+\begin{equation*}
+\frac{d\texttt{Vol}}{dt} = \mu(t) \, \texttt{Vol}.
+\end{equation*}
+In other words, when integrating over the time interval $[0,\tau]$:
+\begin{equation}\label{eq:biomassdyn}
+\ln \left(\frac{\texttt{Vol}(\tau)}{\texttt{Vol}(0)}\right) =  \int_{0}^{\tau} \mu(t) \, dt.
+\end{equation}
+Since the logarithm is an increasing function, maximizing the biomass produced over $[0,\tau]$ requires maximization of the right-hand side of the equation.
+
+In a changing environment, maximization of the integral in Eq.~\ref{eq:biomassdyn} will generally require the optimal value of $\alpha$ to be a function of time instead of a specific constant value.
+This dynamical resource allocation problem can be formulated in a more precise way using concepts from optimal control theory~\cite{stengel_optimal_1994}. 
+Let $J$ be the objective function  
+\begin{equation*}
+J(\alpha)= \int_{0}^{\tau} \mu(t) \, dt = \int_{0}^{\tau} \beta \, v_R(p,r) \, dt,
+\end{equation*}
+where $\alpha:\mathbb{R}^+ \rightarrow [0,1]$ is a time-dependent function. 
+The time evolution of $p$ and $r$ is determined by the self-replicator model of Eqs~\ref{eq:pdef} and \ref{eq:rdef}, and $p$ and $r$ thus depend on $e_M$ and $\alpha$. 
+Moreover, let $\mathcal{U}=\{\alpha:\mathbb{R}^+ \rightarrow [0,1] \}$ be the set of admissible controls. 
+The optimal dynamical control problem then consists in finding the time-varying function $\alpha_{opt}(t)$ that maximizes $J(\alpha)$ over the time-interval $[0,\tau]$:
+
+\begin{equation}
+\alpha_{opt} = \arg \underset{\alpha \in \mathcal{U}}{\max} \ J(\alpha).
+\label{eq:J}
+\end{equation}
+
+In what follows, we will simplify the above problem by considering that the environment changes in a step-wise fashion at $t=0$, but remains constant over the time-interval $[0,\tau]$, that is, $e_M(t)=e_M$.
+More specifically, we focus on the case of a nutrient upshift, corresponding to a step-wise increase of $e_M$.
+This upshift scenario corresponds to classical experiments in bacterial physiology~\cite{kjeldgaard_kinetics_1961,schaechter_patterns_1961,johnsen_control_1977}, reviewed in~\cite{ehrenberg_mediumdependent_2012}, and is frequently encountered in the life cycle of a microorganism~\cite{schaechter_microbe_2006}.
+Notice that more complex environments can be approximated by a sequence of step-wise nutrient upshifts and downshifts.
+
+\subsection*{Solution of the optimal control problem}
+\label{sec:optimalcontrolsolution}
+
+Optimal dynamical control problems for two-dimensional nonlinear dynamical systems, like the problem of Eq.~\ref{eq:J}, are generally difficult to solve.
+However, we will show that the class of functions to which $\alpha_{opt}$ belongs can be identified, and we will use numerical optimization to identify a particular \tr{$\alpha_{opt}$} maximizing $J$.
+
+As a preliminary step, in order to simplify the analysis, the variables in the self-replicator model of Eqs~\ref{eq:pdef} and \ref{eq:rdef} are made nondimensional, by defining $\hat{t} = k_R\, t$, $\hat{p} = \beta\, p$, and $\hat{r} = \beta\, r$.
+This leads to the following ODE system:
+\begin{eqnarray}
+\frac{d\hat{p}}{d\hat{t}} &=& (1-\hat{r})\, E_M - (1+\hat{p})\, \hat{r} \, \frac{\hat{p}}{K+\hat{p}}, \label{eq:pdefnondim}\\
+\frac{d\hat{r}}{d\hat{t}} &=& \hat{r} \frac{\hat{p}}{K + \hat{p}} \, (\alpha (\hat{t}) - \hat{r}), \label{eq:rdefnondim}
+\end{eqnarray}
+where $K= \beta\, K_R$ and $E_M= e_M / k_R$.
+\tr{The nondimensional growth rate is given by:
+\begin{equation}
+\label{eq:munondim}
+\hat{\mu} = \frac{\mu}{k_R} = \frac{\hat{p}}{K + \hat{p}} \, \hat{r} .
+\end{equation}
+Notice that the nondimensionalized system depends on a single parameter $K$, \tr{in addition to the constant environment $E_M$, which functions as an input to the system.}
+
+Analysis of the nondimensionalized system allows a number of properties of the solution of the optimal control problem of Eq.~\ref{eq:J} to be derived (\textit{Methods} and Text~\ref{S3_Text}).
+First, by applying a version of the well-known Pontryagin Maximum Principle \cite{carlson_infinite_1991}, we can prove that the optimal solution is obtained for an alternating sequence of $\alpha(\cdot)=0$ and $\alpha(\cdot)=1$, possibly ending with an intermediate value of $\alpha(\cdot)$, corresponding to the optimal steady state $(\hat{p}(t),\hat{r}(t))=(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$, that is, the steady state leading to the optimal growth rate $\hat{\mu}_{opt}^*$ in the post-upshift environment $E_M$.
+Second, if the optimal solution reaches the optimal steady state for the new environment, then it does so after an infinite number of switches of $\alpha (\cdot)$ between 0 and 1.
+Third, this switching behavior is characterized by a so-called switching curve $\hat{r}=\varphi(\hat{p})$ in the $(\hat{p},\hat{r})$-plane, which passes through $(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$.
+The switching curve divides the phase plane into two regions, such that $\alpha(\cdot)$ switches to 0 when the system is in the region above $\varphi$ and to 1 when the system is below $\varphi$ (black dashed curve in Fig.~\ref{fig:optimalcontrol}\textit{A}).}
+
+\tr{In line with these results, we conjecture that the optimal solution consists in a switching transient towards the optimal steady state for the new environment, and remains at this steady state until the next environmental change.
+Such a solution is known as a bang-bang-singular solution in the control theory literature~\cite{stengel_optimal_1994}.
+Formally, the solution of Eq.~\ref{eq:J} can be described as}
+\begin{equation}
+\label{eq:optcontrol}
+\alpha_{opt}(\hat{t})=
+\begin{cases}
+0, \ \textrm{if} \ \hat{r}(\hat{t}) > \varphi(\hat{p}(\hat{t})),\\
+1, \ \textrm{if} \ \hat{r}(\hat{t}) < \varphi(\hat{p}(\hat{t})), \\
+\alpha^*_{opt}, \ \textrm{if} \ (\hat{p}(\hat{t}),\hat{r}(\hat{t}))=(\hat{p}_{opt}^*,\hat{r}_{opt}^*).
+\end{cases}
+\end{equation}
+Notice that the optimal solution involves dynamical feedback from the state of the system to the control variable $\alpha(\cdot)$, and is therefore an instance of closed-loop optimization~\cite{stengel_optimal_1994}.
+
+The optimal control problem of Eq.~\ref{eq:J} was also solved numerically by a direct method using the \texttt{bocop} software~\cite{bonnans_bocop_2012} (see \tr{\textit{Methods}} for details).
+A time discretization allows the problem to be transformed into a nonlinear optimization problem solved here by interior point techniques.
+\tr{The optimal trajectories obtained numerically confirm our conjecture that the optimal control is bang-bang-singular.}
+An example solution, obtained by numerical optimization is shown in Fig.~\ref{fig:optimalcontrol}.
+At time $\hat{t}=0$, $E_M$ jumps from a low to a high value, corresponding to a nutrient upshift (dashed black line in Fig.~\ref{fig:optimalcontrol}B).
+The optimal solution $\alpha_{opt}$ consists of a sequence of switches between $\alpha=1$, corresponding to maximal synthesis of the gene expression machinery, and $\alpha=0$, corresponding to maximal synthesis of the metabolic machinery, until $(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$ is reached.
+\tr{$\alpha$ is then set to $\alpha^*_{opt}$, the value leading to the maximum growth rate in the new medium (here 0.5, for $E_M=1$).
+The sequence of switches of $\alpha$ in Fig.~\ref{fig:optimalcontrol}\textit{B} corresponds to successive crossings of the switching curve in Fig.~\ref{fig:optimalcontrol}\textit{A}.
+In particular, the switch just after $\hat{t}=2$ corresponds to the first crossing of the switching curve; the subsequent switches accumulate around the steady state and are therefore difficult to identify in the plot.}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1]{./Fig/Fig4.eps}
+\caption[Optimal control of the self-replicator during a nutrient upshift]{
+{\bf Optimal control of the self-replicator during a nutrient upshift.}\\
+\textit{A:}~Optimal trajectory in the phase plane for the nondimensionalized model of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim}, with streamlines. The optimal trajectory is shown as a solid, red curve.
+The solid, black curve represents the $\hat{p}$-nullcline.
+The dashed, black curve is the switching curve $\varphi(\hat{p})$.
+The optimal solution was obtained by numerical optimization using \texttt{bocop}~\cite{bonnans_bocop_2012} (see \tr{\textit{Methods}} for details), using the parameter values $E_M=1$ and $K=0.003$, and starting from the initial state $(0.024,0.18)$ at $t=0$ (optimal steady state for $E_M=0.2$).
+\textit{B:}~Time evolution of the control variable $\alpha_{opt}(\cdot)$ (thick, red line) and the environment $E_M$ (dashed, black line).
+}
+\label{fig:optimalcontrol}
+\end{figure}
+
+What is the biological relevance of the bang-bang-singular solution maximizing growth of the bacterial self-replicator?
+In order to answer this question, we will investigate in the next two sections the different ways in which microorganisms could implement or have been shown to implement feedback growth control by sensing the environment and cellular physiology.
+Although the idealized solution proposed by optimal control theory will obviously not be found in nature, actual control strategies may produce solutions that are close.
+The optimal solution can thus be used as a gold standard, a benchmark for comparing actual control strategies. 
+
+\subsection*{Simple feedback control strategies: exploiting information on nutrients or precursors}
+\label{sec:steadystate}
+
+The control strategies that microbial cells have evolved to bring resource allocation in line with changes in the environment involve a variety of molecular mechanisms~\cite{chubukov_coordination_2014}.
+These mechanisms are responsible for sensing the environment and the physiological state of the cell, as well as for adjusting the expression of genes that encode components of the transcriptional and translational machinery, enzymes, transporters, and proteins with other metabolic functions.
+
+In the framework of the self-replicator model of bacterial growth, control strategies take the form of feedback control laws mapping the value of system variables to a value of the control variable $\alpha(\cdot)$.
+In this section, we explore two such strategies, the first exploiting information \tr{on the quality and quantity of substrate present} in the environment, as reflected in the value of $E_M$, and the second using information on the precursor concentration $\hat{p}$.
+\tr{The feedback control strategies are graphically displayed in Fig.~\ref{fig:strategies_overview}, as an extension of the self-replicator of Fig.~\ref{fig:self_replicator}.}
+\tr{We pose a number of mathematical constraints on the feedback control strategies considered below.
+First, we require the control laws to be functions of the variables of the self-replicator but not involve derivatives or integrals of these variables.
+Second, for a constant environment $E_M$, the control strategies must drive the system to a unique stable and non-trivial steady state, enabling a non-zero growth rate.
+Third, this steady state must equal the optimal steady state for that environment, given by $(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$.
+}
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1]{./Fig/Fig5.eps}
+\caption[Alternative strategies for controlling the self-replicator of bacterial growth]{
+{\bf \tr{Alternative strategies for controlling the self-replicator of bacterial growth.}}\\
+\tr{The feedback control strategies, shown in red and superposed on the self-replicator of Fig.~\ref{fig:self_replicator}, exploit information on system variables and the environment to adjust the value of $\alpha$, and thus the relative allocation of resources to the metabolic machinery and gene expression machinery.
+}
+}
+\label{fig:strategies_overview}
+\end{figure}
+
+
+The first control strategy is defined by the function $f \colon \mathbb{R}^+ \to [0,1]$, mapping $E_M$ to $\alpha$:
+\begin{equation}
+\alpha = f(E_M).
+\label{eq:f}
+\end{equation}
+\tr{Notice that $\alpha$ is constant because $E_M$ is fixed to the value defining the new environment after the upshift.
+What would be an appropriate choice for $f$?
+An advantage of the self-replicator model is that the optimal allocation at steady state can be explicitly formulated as a function of $E_M$ (Eq.~\ref{eq:alpha_mu_optimal} in \textit{Methods}, with derivation in Text~\ref{S1_Text}).
+This function is the unique function satisfying all of the above criteria (Text~\ref{S1_Text}).
+Fig.~\ref{S1_Fig}\textit{A} plots $f$ and shows that it is conveniently approximated by a Michaelis-Menten function, \textit{i.e.},}
+\begin{equation}\label{eq:MMApprox}
+\alpha(\cdot) = \dfrac{E_M}{E_M + K_{mE}},
+\end{equation}
+with the dimensionless half-saturation constant $K_{mE}$.
+The interest of the approximation is that it demonstrates that the control strategy can be described by a simple and ubiquitous response curve in biochemical kinetics.
+ 
+\tr{As an example of a regulatory system resembling the above control strategy consider the phosphotransferase system responsible for the uptake of glucose, the preferred substrate of \textit{E. coli}~\cite{deutscher_how_2006}.
+In the presence of glucose, the EIIA\textsuperscript{Glc} component of the phosphotransferase system is mostly unphosphorylated, since the phosphate groups are used for the conversion of extracellular glucose to intracellular glucose-6-phosphate.
+When glucose disappears from the medium, however, the glucose uptake rate decreases and, correspondingly, the phosphorylated fraction of EIIA\textsuperscript{\textrm{Glc}} increases.
+The phosphorylation state of EIIA\textsuperscript{\textrm{Glc}} thus provides an indirect read-out of glucose availability.
+In response to this signal, a variety of metabolic processes are upregulated or downregulated, notably involving the signalling molecule cAMP which activates the pleiotropic transcription factor Crp~\cite{deutscher_how_2006,gorke_carbon_2008}.}
+
+\tr{How does the control strategy of Eq.~\ref{eq:f},} which we call a nutrient-only strategy, perform in comparison with the optimal solution derived in the previous section?
+That is, how much biomass does this strategy produce compared with the maximal amount of biomass that can theoretically be obtained after a nutrient upshift?
+\tr{In order to answer these questions, we simulated the response to a sudden upshift of the self-replicator of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim} controlled by the nutrient-only strategy of Eq.~\ref{eq:f}.
+The results are shown} in Fig.~\ref{fig:comparison_nutrients_precursor}.
+Panel~\textit{A} shows the trajectory of the controlled self-replicator system and panel~\textit{D} plots the evolution of the amount of biomass as a fraction of the amount of biomass produced by the optimal strategy.
+While the system does reach the steady state that is optimal for $E_M$, the nutrient-only strategy has poor performance in the transient phase immediately following the nutrient upshift.
+As can be seen \tr{from the solution trajectory} in Fig.~\ref{fig:comparison_nutrients_precursor}\textit{A}, fixing $\alpha$ to the value that enables optimal growth at steady state leads to a huge transient overshoot of the precursor concentration.
+The overshoot reveals that resource allocation is initially suboptimal, with too many resources invested in the metabolic machinery at the expense of the gene expression machinery.
+\tr{This causes a transiently suboptimal growth rate, leading to lower biomass accumulation (Eq.~\ref{eq:biomassdyn}).}
+
+One way to avoid the transient precursor imbalance observed in Fig.~\ref{fig:comparison_nutrients_precursor}\textit{A} would be to exploit information on the precursor concentration in the control strategy.
+The second strategy considered here, which we label a precursor-only strategy, does exactly this: it involves a feedback control law $g \colon \mathbb{R}^+ \to [0,1]$ mapping $\hat{p}$ to $\alpha$:
+
+\begin{equation}
+\alpha = g(\hat{p}).
+\label{eq:precursorstrategy}
+\end{equation}
+Since $\hat{p}$ will vary during the upshift experiment, $\alpha$ is not constant, \tr{contrary to the nutrient-only strategy above.
+In the \textit{Methods} section, we present a function $g$ satisfying the requirements listed in the beginning of this section, in particular that the system converge to a stable steady state ensuring maximal growth in the new environment.
+Moreover, we show that any other choice for $g$ leads to lower biomass production.}
+The function is plotted in Fig.~\ref{S1_Fig}\textit{B}, and as shown in the same panel, is conveniently approximated by a Hill function with cooperativity coefficient 2:
+\begin{equation}\label{eq:HillApprox}
+\alpha (\cdot)= \dfrac{\hat{p}^2}{\hat{p}^2 + {K_{mp}}^2},
+\end{equation}
+where $K_{mp}$ is a dimensionless half-saturation constant.
+
+While converging to the same steady state, this second strategy, which we will refer to as the precursor-only strategy, performs much better than the nutrient-only strategy after an upshift, as shown in Fig.~\ref{fig:comparison_nutrients_precursor}.
+\tr{We simulated the response to a nutrient upshift of the self-replicator of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim} with the precursor-only strategy of Eq.~\ref{eq:precursorstrategy}.
+The relative biomass increases by} 51\% and reaches 94\% of the biomass produced by the optimal control strategy (the theoretical maximum).
+The precursor-only strategy notably avoids the inefficient transient accumulation of precursors directly after the nutrient upshift, by alternatingly investing more resources in gene expression (consumption of precursors) and metabolism (production of precursors).
+In this respect, the oscillatory time profile of $\alpha$ (Fig.~\ref{fig:comparison_nutrients_precursor}\textit{C}) is somewhat reminiscent of the bang-bang-singular control in the solution of the optimal control problem (Fig.~\ref{fig:optimalcontrol}\textit{B}).
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{./Fig/Fig6.eps}
+\caption[Comparison of the performance of the nutrient-only and precursor-only strategies after a nutrient upshift]{
+{\bf Comparison of the performance of the nutrient-only and precursor-only strategies after a nutrient upshift.}\\
+\textit{A:}~Trajectory in the phase plane for the nutrient-only strategy \tr{(green curve).}
+The solid, black curve represents the $\hat{p}$-nullcline.
+The dashed, black curve is the $\hat{r}$-nullcline.
+The solution is obtained by numerical simulation of the system of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim}, supplemented with $\alpha = f(E_M)$ as specified by \tr{Eq.~\ref{eq:meth_f} in the \textit{Methods} section and plotted in Fig.~\ref{S1_Fig}\textit{A}.}
+The initial state corresponds to the steady state attained for an environment given by $0.2 \, E_M$.
+\tr{While converging to the new steady state after the upshift, the precursor concentration makes a large overshoot.}
+\textit{B:}~As above, but for the precursor-only strategy.
+The feedback control strategy is now defined by $\alpha = g(\hat{p})$ as specified by \tr{Eq.~\ref{eq:meth_g} in the \textit{Methods} section and plotted in Fig.~\ref{S1_Fig}\textit{B}.
+The solution trajectory (blue curve) exhibits a lower overshoot.}
+\textit{C:}~Evolution of the control variable $\alpha(\cdot)$ as a function of time, for each of the above two strategies.
+\tr{Notice that in the nutrient-only strategy $\alpha(\cdot)$ immediately jumps to the optimal value for the post-upshift steady state (green curve), whereas in the precursor-only strategy it depends on the (time-varying) precursor concentration (blue curve).}
+\textit{D:}~Evolution of the ratio $\texttt{Vol} / \texttt{Vol}_{opt}$  as a function of time, where $\texttt{Vol}$ is the volume of the self-replicator and $\texttt{Vol}_{opt}$ the volume of the same replicator following the optimal strategy shown in Fig.~\ref{fig:optimalcontrol}.
+In all of the above simulations, the parameter values $E_M=1$ and $K=0.003$ were used.
+}
+\label{fig:comparison_nutrients_precursor}
+\end{figure}
+
+Both strategies, nutrient-only and precursor-only, drive the self-replicator towards the same steady state.
+Whereas the two strategies are thus indistinguishable when the analysis is restricted to steady state, the precursor-only strategy is shown to perform much better in a dynamical upshift scenario, \tr{in the sense that the biomass produced is much closer to that produced by the optimal strategy}.
+Several authors have concluded that control strategies based on precursor sensing are key for maintaining optimal growth at steady state.
+Scott \textit{et al.} argue that a strategy similar to the precursor-only approach above allows robust control of amino acid supply and demand, resulting in optimal steady-state growth over a range of nutrient conditions~\cite{scott_emergence_2014}.
+They associate this strategy with ppGpp-mediated control of the synthesis of ribosomal proteins~\cite{dalebroux_ppgpp_2012,potrykus_pppgpp_2008,hauryliuk_recent_2015}.
+The signalling molecule ppGpp accumulates in response to an increase in the level of uncharged tRNA, when amino acid concentrations in the cell drop. 
+This causes ribosomes to "stall" and leads to RelA-mediated conversion of GTP to ppGpp, the molecular details of which are still subject of debate~\cite{english_singlemolecule_2011,hauryliuk_recent_2015}.
+Since ppGpp inhibits the transcription of ribosomal RNAs~\cite{dennis_control_2004}, the concentration of the latter decreases, leading to more inactive ribosomal proteins and, through a well-characterized post-transcriptional autoregulatory mechanism, a lower synthesis rate of ribosomal proteins~\cite{keener_regulation_1996,potrykus_pppgpp_2008}.
+Our analysis adds to the above study a novel insight: measuring precursors does not only enable resource allocation control to achieve maximal growth at steady state, but is also a good strategy in a dynamical context.
+
+While the precursor-only strategy is thus seen to lead to good results, Fig.~\ref{fig:comparison_nutrients_precursor}\textit{D} shows that there remains room for improvement.
+It seems reasonable to expect that control strategies exploiting information of not just a single variable, but several variables simultaneously, could further improve the performance of the self-replicator during a growth transition.
+
+
+\subsection*{A near-optimal feedback control strategy: exploiting information on the imbalance between precursors and the gene expression machinery}
+\label{sec:strategies}
+
+\tr{In the quest for further improvements, a} natural starting-point would be to consider the curve defining the optimal steady states $(\hat{p}^*_{opt},\hat{r}^*_{opt})$  for \tr{different environments $E_M$.
+This curve is defined by a function mapping $\hat{p}^*$ to $\hat{r}^*$, which is actually the same as the function $g$ introduced in the precursor-only strategy (\textit{Methods} and Figure~\ref{S1_Fig}), given that at steady state $\hat{r}=\alpha$ (Eq.~\ref{eq:rdefnondim}).
+The curve can be seen as representing an optimal balance between precursors and the gene expression machinery, in the sense that the maximal growth rate attainable for a given precursor concentration $\hat{p}$ requires a concentration $\hat{r}$ of ribosomes and other components of the gene expression machinery equal to $g(\hat{p})$. 
+If either $\hat{r}>g(\hat{p})$ or $\hat{r}<g(\hat{p})$, the growth rate is suboptimal.}
+
+\tr{These considerations suggest an intuitive control strategy, namely to avoid an imbalance between $\hat{p}$ and $\hat{r}$ at all times, and remain as close as possible to the curve defined by $g$.
+In particular, when} the gene expression machinery is more abundant than what is optimal given the available precursors ($\hat{r} > g(\hat{p})$), its synthesis is switched off ($\alpha = 0$).
+Conversely, when $\hat{r} < g(\hat{p})$, synthesis of the gene expression machinery is switched on.
+\tr{This strategy thus tries to restore} "as quickly as possible" the optimal balance between precursors $\hat{p}$ and the gene expression machinery $\hat{r}$, giving rise to a so-called on-off control strategy:
+\begin{equation}
+\label{eq:stratswitch}
+\alpha = h(\hat{p},\hat{r}) =
+\begin{cases}
+0, \ \textrm{if} \ \hat{r} > g(\hat{p}),\\
+1, \ \textrm{if} \ \hat{r} < g(\hat{p}), \\
+\alpha_{opt}^* \ \textrm{if} \ (\hat{p},\hat{r})=(\hat{p}_{opt}^*,\hat{r}_{opt}^*).
+\end{cases}
+\end{equation}
+
+\tr{As shown in the \textit{Methods} section, the on-off strategy drives the system to a stable steady state ensuring growth at the maximal rate.}
+Notice that, contrary to the strategies discussed in the previous section, the value of $\alpha$ selected by the on-off strategy depends on both $\hat{p}$ and $\hat{r}$ \tr{(Fig.~\ref{fig:strategies_overview}).
+It thus uses more information on the state of the system than the nutrient-only and precursor-only strategies.}
+
+Fig.~\ref{fig:onoffresults} shows the performance of the on-off strategy after a nutrient upshift, as compared to the precursor-only strategy.
+The transition is seen to be nearly perfect, in the sense that 98\% of the optimal biomass is produced by the strategy.
+The time course of $\alpha$ in panel \textit{D} is very similar to the optimal time course obtained by numerical optimization, shown in Fig.~\ref{fig:optimalcontrol}\textit{B}, and clearly brings out the bang-bang-singular nature of the solution. 
+These results show that a strategy exploiting complete information on the internal state of the self-replicator can lead to near-optimal performance, outcompeting a strategy that uses partial information on the internal state (precursor abundance only).
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{./Fig/Fig7.eps}
+\caption[Comparison of the performance of the precursor-only and the on-off strategies after a nutrient upshift.]
+{
+{\bf Comparison of the performance of the precursor-only and the on-off strategies after a nutrient upshift.}\newline
+\textit{A:}~Trajectory in the phase plane for the on-off strategy (yellow curve).
+The solid, black curve represents the $\hat{p}$-nullcline and the dashed, black curve the function $g$.
+The solution is obtained by numerical simulation of the system of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim}, supplemented with the equation $\alpha = h(\hat{p},\hat{r})$ defined in Eq.~\ref{eq:stratswitch} and plotted in Fig.~\ref{fig:ppGppsurface}\textit{A}.
+The initial state corresponds to the optimal steady state attained for an environment given by $0.2 \, E_M$.
+\textit{B:}~Trajectory in the phase plane for the precursor-only strategy (same as in Fig.~\ref{fig:comparison_nutrients_precursor}\textit{B}, added for comparison).
+\textit{C:}~Evolution of the control variable $\alpha$ for each strategy as a function of time.
+Both strategies stabilize the system at the optimal steady state, but only the on-off strategy (yellow curve) exhibits bang-bang behavior.
+\textit{D:}~Evolution of the ratio $\texttt{Vol} / \texttt{Vol}_{opt}$ for the on-off and precursor-only strategies as a function of time, where $\texttt{Vol}$ is the volume of the self-replicator and $\texttt{Vol}_{opt}$ the volume of the same replicator following the optimal strategy shown in Fig.~\ref{fig:optimalcontrol}.
+The final values of $\texttt{Vol} / \texttt{Vol}_{opt}$ attained by the two strategies are 0.9831 and 0.9413, respectively.
+The on-off strategy is thus hardly distinguishable from the optimal control strategy in the plot.
+In all of the above simulations, the parameter values $E_M=1$ and $K=0.003$ were used.
+}
+\label{fig:onoffresults}
+\end{figure}
+
+Are microbial cells equipped with mechanisms implementing a strategy similar to the on-off strategy?
+A possible candidate would again be the ppGpp system.
+A kinetic model of ppGpp metabolism and the regulation of the synthesis of ribosomal proteins was recently presented by Bosdriesz \textit{et al.}~\cite{bosdriesz_how_2015}.
+The model proved capable of accounting for a range of experimental data, including the steady-state concentration of ppGpp as a function of the growth rate~\cite{bremer_modulation_1996} and the dynamical response of ppGpp to a nutrient upshift or downshift~\cite{murray_control_2003}.
+A major conclusion of the model is that the steady-state concentration of ppGpp exhibits a strongly ultrasensitive response to deviations of the ribosomal protein fraction from the optimal ribosomal protein fraction at a given growth rate. 
+These deviations from optimality, in turn, lead to a switch-like response of the synthesis rate of ribosomal proteins (Fig.~4 in Bosdriesz \textit{et al.}~\cite{bosdriesz_how_2015}).
+
+\tr{How does this mechanistic model of ppGpp regulation relate to the on-off strategy presented above?
+In order to answer this question, we first need to find a correspondence between the variables $p$ and $r$ of our coarse-grained model and the concentrations of molecular species in the kinetic model of Bosdriesz \textit{et al.}
+This is rather straightforward to achieve, by equating $p$ to the total amino acid concentration and $r$ to the ribosome concentration.
+Second, Text~\ref{S4_Text} shows that by making two simplifying assumptions, ppGpp can be expressed as a function of the total amino acid concentration and the ribosome concentration.
+In particular, we assume that concentrations of all individual amino acids are equal, and that the concentrations of charged tRNAs and ppGpp evolve fast relative to the dynamics of the amino acid and ribosome concentrations.
+The third step consists in positing an explicit relation between ppGpp and $\alpha$, based on the regulatory action of ppGpp on the transcription of ribosomal RNA~\cite{dennis_control_2004}:
+
+\begin{equation}
+\alpha(\cdot) = \frac{K_I}{K_I + \texttt{ppGpp}(\cdot)},
+\label{eq:ppGpp_empirical}
+\end{equation}
+with $K_I$ a Michaelis-Menten inhibition constant [$\mu$mol~L\textsuperscript{-1}] and $\texttt{ppGpp}$ the (time-varying) intracellular concentration of ppGpp [$\mu$mol~L\textsuperscript{-1}].}
+
+The response function for ppGpp \tr{thus obtained and evaluated for a range of amino acid and ribosome concentrations} is represented in Fig.~\ref{fig:ppGppsurface}, and visually compared with the on-off strategy.
+As can be seen, the two response surfaces are very similar.
+In other words, the ultrasensitive response of the synthesis rate of ribosomal proteins to the suboptimal allocation of cellular resources, derived from a model of the molecular mechanisms involved in the synthesis, degradation, and regulatory action of ppGpp~\cite{bosdriesz_how_2015}, implements a control strategy that is close to the optimal predicted by a control-theoretical analysis of the self-replicator.
+While the role of ppGpp in maintaining optimal resource allocation was already pointed out by Scott \etal and Bosdriesz \etal, the latter studies were restricted to optimizing steady-state growth.
+A major insight from the analysis in this section is that this conclusion seems to carry over to dynamical scenarios as well.
+Fundamentally, the analysis suggests that the ppGpp system is a likely candidate to fulfill this role because it integrates information on the imbalance between precursor concentration and abundance of the gene expression machinery.
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{./Fig/Fig8.eps}
+\caption[ppGpp regulation implements a on-off control strategy of resource allocation.]
+{
+{\bf ppGpp regulation implements an on-off control strategy of resource allocation.}\newline
+\textit{A:}~Response surface of the on-off control strategy, \tr{defined by $\alpha = h(\hat{p},\hat{r})$ in Eq.~\ref{eq:stratswitch}.}
+\textit{B:}~Response surface of the ppGpp control strategy, as defined by Eq.~\ref{eq:ppGpp_empirical} and \tr{the simplified kinetic model defining ppGpp in terms of the total amino acid concentration and the ribosomal protein fraction (Text~\ref{S4_Text}).}
+The shape of the response surface of the ppGpp control strategy is seen to be in very good agreement with the on-off strategy leading to near-optimal performance of the self-replicator during a nutrient upshift.
+}
+\label{fig:ppGppsurface}
+\end{figure}
+
+\section*{Discussion}
+\label{sec:discussion}
+
+Quantitative growth laws are empirical regularities pointing at fundamental properties of microbial life~\cite{scott_bacterial_2011}.
+Recent work has led to the precise theoretical formulation of growth laws and has shown that they can be derived from basic assumptions on the molecular processes responsible for the assimilation of nutrients and their conversion to biomass~\cite{bosdriesz_how_2015,maitra_bacterial_2014,molenaar_shifts_2009,scott_emergence_2014,weisse_mechanistic_2015}.
+The growth laws are uniquely defined under the hypothesis that microorganisms allocate resources in such a way as to maximize their growth rate.
+Several of the above-mentioned studies have analyzed feedback control strategies on the molecular level enabling cells to achieve optimal resource allocation in a robust manner.
+The control strategies exploit information on the physiological state of the cell to adjust the (relative) rate of synthesis of different classes of proteins (ribsomes, metabolic enzymes, $\ldots$).
+Whereas the growth laws describe microbial growth at steady state, most microorganisms live in complex, continuously changing environments.
+Despite some precursory work~\cite{pavlov_optimal_2013,vandenberg_optimal_1998}, questions about the dynamics of microbial growth remain largely unanswered:
+Which resource allocation schemes are optimal in changing environments? Which dynamical control strategies lead to (near-)optimal resource allocation? How do these strategies compare with those actually implemented by microorganisms? 
+
+We have addressed the above questions by means of a self-replicator model of microbial growth, which, like other coarse-grained models of bacterial growth~\cite{maitra_bacterial_2014,molenaar_shifts_2009,scott_emergence_2014}, is capable of reproducing the growth laws at steady state (Fig.~\ref{fig:model_validation}).
+A first major contribution of our work is to show that, in the case of a dynamical upshift scenario, optimal production of biomass requires a bang-bang-singular resource allocation scheme (Fig.~\ref{fig:optimalcontrol}).
+\tr{That is, the optimal self-replicator should iteratively allocate all of its resources to the gene expression machinery (bang control input) and the metabolic machinery (another bang control input), until the steady state enabling maximal growth in the post-upshift environment is reached, corresponding to a trade-off in the allocation of resources to the two processes (singular control input).}
+
+Bang-bang phenomena are widespread in a variety of life processes.
+Applications of optimal control theory to reproductive strategies in insects~\cite{macevicz_modeling_1976}, the development of intestinal crypts~\cite{itzkovitz_optimality_2012}, and the activation of metabolic pathways~\cite{bartl_modelling_2010,oyarzun_sequential_2009} have led to bang-bang or bang-bang-singular strategies.
+In optimal control problems, such a solution arises with systems where the differential equations are linear in the control variable (in our case, $\alpha (\cdot)$).
+Examples of applications that are close to the problem considered here are the control of gene expression for adaptation to environmental changes~\cite{pavlov_optimal_2013, madar_promoter_2013}, and the allocation of resources between nutrient uptake and growth in microorganisms~\cite{vandenberg_optimal_1998, kiselev_resource_2009}.
+Whereas the former applications focus on minimization of response times, the latter also optimize biomass during a growth transition, using a different model, not derived from first principles as in this study.
+However, the optimal solution of the corresponding optimal control problem is also bang-bang-singular, thus showing that our conclusions are robust to model variations.
+
+Our second major contribution is the assessment of how different feedback control strategies perform with respect to each other and to the gold standard determined from optimal control theory.
+We show that the precursor-only and nutrient-only strategies, both of which drive the self-replicator to the steady state with maximal growth rate in a static environment, perform quite differently in a dynamical upshift scenario (Fig.~\ref{fig:comparison_nutrients_precursor}).
+While the precursor-only strategy is better than the nutrient-only strategy in a dynamical environment, it is in turn outperformed by a so-called on-off strategy, which achieves a near-perfect growth transition by exploiting information on the imbalance between the precursor concentration and the abundance of the gene expression machinery (Fig.~\ref{fig:onoffresults}).
+The superior performance of the on-off strategy can be intuitively explained by the fact that during a growth transition the two variables are not fully correlated, which means that sensing both instead of either one provides additional information in a dynamical context.
+
+Interestingly, the on-off strategy is based on a feedback control law that very much resembles the response function for ppGpp-mediated regulation of the synthesis of ribosomal RNAs in \textit{E. coli}~\cite{bosdriesz_how_2015}.
+The role of ppGpp in controlling microbial growth has been amply documented~\cite{dalebroux_ppgpp_2012,potrykus_pppgpp_2008,hauryliuk_recent_2015}.
+For example, Potrykus \textit{et al.} observed that in cells without ppGpp (ppGpp$^0$ mutants) the RNA/protein mass ratio, a proxy for our resource allocation variable $\alpha$, does not change with the growth rate, which has led these authors to conclude that ppGpp is the major source of growth-rate control in \textit{E. coli}~\cite{potrykus_ppgpp_2011}.
+The central importance of ppGpp in the reallocation of gene expression resources in \textit{E. coli} following changes in nutrient availability has also been mapped with higher resolution, using genome-wide transcriptome studies~\cite{traxler_guanosine_2006,traxler_global_2008}.
+In nearly all bacterial species examined so far, ppGpp is known to accumulate in response to an increase in the level of uncharged tRNA~\cite{gaca_many_2015}, although the molecular details of ppGpp metabolism and the range of other functions of the alarmone may greatly vary across species~\cite{gaca_many_2015,hauryliuk_recent_2015,liu_diversity_2015}.
+While it has thus been well-established that regulation by ppGpp is an evolutionary conserved mechanism of growth control in the bacterial cell, our analysis provides a new perspective by suggesting that ppGpp enables optimal reallocation of resources after a growth transition, dynamically maximizing the accumulation of biomass.
+
+The model on which the above results are based is built from first principles by distinguishing two fundamental cellular processes: metabolism (converting nutrients to precursors) and gene expression (converting precursors to the proteins that make up biomass) (Fig.~\ref{fig:self_replicator}). 
+Despite its simplicity, our self-replicator model is capable of reproducing the empirical growth laws and of making testable predictions on the time-course profile of the resource allocation variable $\alpha$ and on the concentrations $p$ and $r$ of components of the gene expression machinery and metabolic machinery, respectively (see Fig.~\ref{fig:ppGppsurface} and below). 
+The model can be easily extended with more details on protein synthesis, central carbon and energy metabolism, stress systems, or cell membranes, but this would make the mathematical analysis of the model dynamics and the optimal control problem more complicated. 
+Notice, however, that the direct numerical approach for solving the optimal control problem remains applicable, even for more fine-grained models (Fig.~\ref{fig:optimalcontrol}, see also~\cite{waldherr_dynamic_2015}).
+
+The comparison of different control strategies during a classical growth transition should be interpreted carefully, in a qualitative rather than quantitative manner. 
+Whereas the differences in performance based on the biomass ratio $\texttt{Vol} / \texttt{Vol}_{opt}$ of the control strategies are robust, the absolute numbers for the biomass ratio will depend on details of the growth experiment chosen and the exact parameter values. 
+Another implicit assumption in the analysis of the control strategies is that the costs of their molecular implementation can be neglected.
+This is not true in general, since every control strategy requires resources to be diverted towards the synthesis of sensory systems and regulatory proteins, with possibly detrimental effects on growth.
+In other words, a control strategy entails a trade-off between the growth burden of regulation and the growth benefit of the improved capability to adapt to changes in the environment~\cite{kalisky_costbenefit_2007,poelwijk_tradeoffs_2011}. 
+The analysis of control strategies could be refined by adding a reaction to the self-replicator that models the loss of resources incurred by regulatory strategies.
+While in general the growth burden of a control strategy requiring information on several aspects of cellular physiology is expected to be higher, notice that a single regulatory system may be capable of sensing more than one variable.
+For example, we show that ppGpp levels in the cell carry information on both the metabolic and the gene expression state (Fig.~\ref{fig:ppGppsurface}), thus integrating several signals in a cost-efficient manner. 
+
+The model predictions for the dynamical adaptation of resource allocation after a nutrient upshift suggest several interesting experimental tests.
+In particular, the switching profile of the resource allocation variable $\alpha$ is a promising candidate for experimental validation. 
+The most straightforward option would be direct measurement of the synthesis rate of ribosomal proteins, using a translational fusion of a fluorescent reporter with a ribosomal protein~\cite{bakshi_superresolution_2012,english_singlemolecule_2011}.
+However, a more indirect approach based on the quantification of ppGpp concentrations in the cell or the activity of the ribosomal RNA (rRNA) promoters would also be a possibility.
+Interestingly, some data are already available in the literature.
+For instance, Gausing has reviewed data on the synthesis of ribosomal proteins after a nutrient upshift, showing that the synthesis rate goes through "a series of rapid changes" resembling oscillations~\cite{gausing_regulation_1980}.
+Later work attributed this pattern to regulation on the transcriptional level~\cite{zengel_transcription_1986}.
+Friesen \textit{et al.} observed oscillatory patterns in ppGpp concentrations after a nutrient upshift, with an initial response resembling bang control for an upshift to a particularly rich medium~\cite{friesen_synthesis_1975}.
+Murray \textit{et al.} also present data on the ppGpp concentration after a nutrient upshift~\cite{murray_control_2003}, but with a lower temporal resolution and no clear oscillatory pattern.
+All of the above measurements were carried out on the population level, which means that switching patterns may be obscured by desynchronisation of the individual cells.
+More sophisticated experimental set-ups are necessary for the decisive validation of the model predictions, allowing gene expression in single cells to be followed over time in tightly regulated growth conditions~\cite{young_measuring_2011,duncombe_microfluidics_2015}.
+In addition, the model could be validated on other dynamical scenarios, for example nutrient downshifts~\cite{molin_control_1977,murray_control_2003}.
+
+Apart from its interest for fundamental science, resource allocation is also a critical question in biotechnology, where there exists an inherent trade-off between the maximization of yield and productivity\cite{venayak_engineering_2015}.
+High yield means that most of the substrate is converted to a metabolite, peptide or recombinant protein of interest, but this leads to low productivity if the remaining nutrient influx is insufficient to sustain population growth.
+Engineered control of resource allocation may help in establishing the right trade-off, the most profitable balance between yield and productivity, in a biotechnological process.
+Such a trade-off could be attained either in steady-state conditions (the incoming nutrient flux is optimally distributed over growth and production) or in dynamical conditions (alternating utilization of the incoming nutrient flux for growth or production)~\cite{dahl_engineering_2013,xu_improving_2014,izard_synthetic_2015}.
+When extended with heterologous metabolic pathways, the self-replicator models used in this study would provide an adequate \textit{in-silico} test bed for the rapid screening and comparison of alternative control strategies in bioprocess engineering.

@@ -1,0 +1,32 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Context and motivations}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Problem statement}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Related work}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Approach}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Organisation of the dissertation}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Dynamical Allocation of Cellular Resources as an Optimal Control Problem}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Abstract}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Author Summary}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Introduction}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Results}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.4.1}{Self-replicator model of resource allocation}{section.2.4}% 12
+\BOOKMARK [2][-]{subsection.2.4.2}{Growth-rate maximization of the self-replicator reproduces bacterial growth laws}{section.2.4}% 13
+\BOOKMARK [2][-]{subsection.2.4.3}{Biomass maximization as an optimal control problem}{section.2.4}% 14
+\BOOKMARK [2][-]{subsection.2.4.4}{Solution of the optimal control problem}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.5}{Simple feedback control strategies: exploiting information on nutrients or precursors}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.6}{A near-optimal feedback control strategy: exploiting information on the imbalance between precursors and the gene expression machinery}{section.2.4}% 17
+\BOOKMARK [1][-]{section.2.5}{Discussion}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.6}{Methods}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.6.1}{Steady-state analysis of model}{section.2.6}% 20
+\BOOKMARK [2][-]{subsection.2.6.2}{Model fitting}{section.2.6}% 21
+\BOOKMARK [2][-]{subsection.2.6.3}{Solution of optimal control problem}{section.2.6}% 22
+\BOOKMARK [2][-]{subsection.2.6.4}{Specification and analysis of control strategies}{section.2.6}% 23
+\BOOKMARK [1][-]{section.2.7}{Supporting Information}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.7.1}{S1 Text \205 Model derivation and analysis}{section.2.7}% 25
+\BOOKMARK [2][-]{subsection.2.7.2}{S2 Text \205 Model parameters}{section.2.7}% 26
+\BOOKMARK [2][-]{subsection.2.7.3}{S3 Text \205 Solution of optimal control problem}{section.2.7}% 27
+\BOOKMARK [2][-]{subsection.2.7.4}{S4 Text \205 Kinetic model of the ppGpp system in Escherichia coli}{section.2.7}% 28
+\BOOKMARK [2][-]{subsection.2.7.5}{S1 Table \205 Parameter values of self-replicator model}{section.2.7}% 29
+\BOOKMARK [2][-]{subsection.2.7.6}{S1 Figure \205 Simple control strategies for the self-replicator of bacterial growth}{section.2.7}% 30
+\BOOKMARK [0][-]{chapter.3}{Monitoring Gene Expression Machinery during growth transitions}{}% 31
+\BOOKMARK [0][-]{chapter.4}{Discussion}{}% 32

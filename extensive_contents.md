@@ -1,0 +1,83 @@
+#####################
+#  Thesis content   #
+#####################
+
+I - Introduction
+================
+
+
+Summary: In this section, we present the topic of microorganism growth, in particular the recent focus which is made on resource allocation, and discuss some of the limitations of those studies.
+We describe the self-replicator approach, and how we're going to apply it in dynamical conditions.
+
+Context and motivations
+-----------------------
+- Resource allocation is a fundamental process of self-replication (and so life in general).
+- General growth laws (of resource allocation) are needed and under intense investigation those years
+- They lay on the assumption of growth rate maximization, which has a long story of successes in microbiology
+- Most of the work is done at balanced growth (for a lot of experimental and theoretical reasons)
+- But life is dynamic, so is the environment in which micro-organisms live
+- What happens outside the steady-state? We have examples in biology for which a dynamical perspective was essential.
+Wouldn't it be the same for growth laws?
+- Hence, more and more investigators focus on dynamic growth laws
+
+Problem statement
+-----------------
+- Is growth rate maximization still relevant in dynamical conditions?
+- Is considering balanced-growth a critical assumption to understand growth control strategies?
+- Can we gain additional information by considering the variable nature of the environment?
+
+Approach
+--------
+- We use a self-replicator model which is presented here, inspired by the work of Molenaar et al.
+- We describe the assumptions and the mathematical description of the system.
+- We introduce how we're going to use it at balanced and unbalanced growth, what will be considered as "the environment"
+and what will be considered as "Biomass".
+- We describe what experimental measures will be needed (GEM abundance and growth rate) to validate the model predictions,
+and introduce the tool (gene expression reporter) that we used.
+
+Organisation of the dissertation
+--------------------------------
+- We first make the environment vary, and check what it means to be optimal in a dynamical context. We underline the fact that even in
+the naivest approach, being optimal at balanced and unbalanced growth are inherently incompatible.
+- But micro-organisms are more clever than that : the environment is indeed dynamic, but so are the organisms!
+They can dynamically adapt to the changes.
+The problem is now mathematically and experimentally challenging.
+For the mathematical part, optimal control theory saved the day.
+- The last chapter is about how we tackle the experimental problem of monitoring gene expression machinery in dynamic.
+Guided by our theoretical work, we knew exactly what to look for during a growth transition, but the problem was (is?) anyway challenging.
+
+II - Overproduction of Gene Expression Machinery is Predicted to Be Optimal in a Variable Environment
+=====================================================================================================
+This part is about the first year of my PhD during which I developped the self-replicator model and made simulations about optimality in periodic conditions.
+I already wrote a 20-page report (in English) about this part.
+Most of it can probably be reused here.
+- Motivation
+- Methods
+- Results
+- Discussion
+
+III - Dynamical Allocation of Cellular Resources as an Optimal Control Problem
+==============================================================================
+This part is about our paper in Plos Computational Biology. The last part made us ask the question "But what if alpha is allowed to vary?".
+Optimal control theory came as a necessary tool to study this, and made us think about the underlying regulations.
+- Motivation
+- Methods
+- Results
+- Discussion
+
+IV - Monitoring Gene Expression Machinery during growth transitions
+===================================================================
+This part is about the experiments. The preceding chapter made predictions about what should happen during transition if the micro-organisms actually optimize their biomass.
+I describe here the strain construction, the choices we made (fluorescent reporter, subunit, single cell/pop, etc), the strain caracterisation (measured growth, signal-to-noise ratio,
+the silly things mCherry was doing), and
+- Motivation
+- Methods
+- Results
+- Discussion
+
+V - General discussion
+======================
+- in praise of simple models
+- an intrinsic link between complexity and environment dynamic
+- some perspectives for industrial production
+

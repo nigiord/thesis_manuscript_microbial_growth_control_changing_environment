@@ -1,0 +1,407 @@
+% Template for PLoS
+% Version 3.1 February 2015
+%
+% To compile to pdf, run:
+% latex plos.template
+% bibtex plos.template
+% latex plos.template
+% latex plos.template
+% dvipdf plos.template
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended 
+% to minimize problems and delays during our production 
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Once your paper is accepted for publication, 
+% PLEASE REMOVE ALL TRACKED CHANGES in this file and leave only
+% the final text of your manuscript.
+%
+% There are no restrictions on package use within the LaTeX files except that 
+% no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% Please do not create a heading level below \subsection. For 3rd level headings, use \paragraph{}.
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file. 
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% For figure citations, please use "Fig." instead of "Figure".
+% See http://www.plosone.org/static/figureGuidelines for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - tabs/spacing/line breaks within cells to alter layout or alignment
+% - vertically-merged cells (no tabular environments within tabular environments, do not use \multirow)
+% - colors, shading, or graphic objects
+% See http://www.plosone.org/static/figureGuidelines#tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS
+%
+% IMPORTANT
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://www.plosone.org/static/latexGuidelines
+%
+% Please be sure to include all portions of an equation in the math environment.
+%
+% Do not include text that is not math in the math environment. For example, CO2 will be CO\textsubscript{2}.
+%
+% Please add line breaks to long display equations when possible in order to fit size of the column. 
+%
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+%
+% % % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% Use Unicode characters when possible
+\usepackage[utf8]{inputenc}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% fixltx2e package for \textsubscript
+\usepackage{fixltx2e}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% rotating package for sideways tables
+\usepackage{rotating}
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+% Leave date blank
+\date{}
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\sf PLOS}
+
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
+
+%% END MACROS SECTION
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Personalized preambule %%%%
+% For cross-referencing
+\usepackage{xr}
+\externaldocument[S1.]{supp_S1}
+\externaldocument[S2.]{supp_S2}
+\externaldocument[S3.]{supp_S3}
+\externaldocument[S4.]{supp_S4}
+
+%%%% Language and fonts
+%%%% Math Stuff
+\usepackage{amsfonts}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newtheorem{theorem}{Theorem}
+%%%% Chemical Stuff
+\usepackage[version=3]{mhchem}
+%%%% OPTIONAL MACRO DEFINITIONS
+\usepackage{xspace}
+\newcommand*{\coli}{\textit{Escherichia coli}\xspace}
+\newcommand*{\etal}{\textit{et al.}\xspace}
+
+\usepackage{color} 
+\newcommand{\tr}[1]{{\color{red} #1}}
+\usepackage{soul}
+
+\begin{document}
+\vspace*{0.35in}
+\input{titlepage}
+
+% Please keep the abstract below 300 words
+\input{abstract}
+
+% Please keep the Author Summary between 150 and 200 words
+% Use first person. PLOS ONE authors please skip this step. 
+% Author Summary not valid for PLOS ONE submissions.   
+\input{author_summary}
+
+\linenumbers
+
+%%%%%% CORE OF THE ARTICLE %%%%%
+\input{core_label}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tr{
+\section*{Methods}
+
+\subsection*{Steady-state analysis of model}
+\label{sec:methods_model_analysis}
+
+The nondimensional version of the model, given by Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim}, was used for a steady-state analysis of the self-replicator.
+Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim} were derived from the original model of Eqs~\ref{eq:pdef}-\ref{eq:rdef} by means of the following rescalings:
+\begin{equation*}
+\hat{p}  = \beta \, p,\;\;\;
+\hat{r}  = \beta \, r,\;\;\;
+\hat{t}  = k_R \, t,\;\;\;
+E_M = e_M/k_R,\;\;\;
+K = \beta K_R.
+\end{equation*}
+
+As shown in Text~\ref{S1_Text}, for a constant environment $E_M$ and constant resource allocation $\alpha$, the system has two steady states: a trivial unstable steady state $(\hat{p}^*, \hat{r}^*) = (0,1)$, allowing no growth in the absence of precursors, and a steady state with a positive growth rate given by
+\begin{equation}
+\label{eq:meth_steadystate}
+(\hat{p}^*, \hat{r}^*) = \left( \frac{(1-\alpha)\, E_M - \alpha + \sqrt{[(1-\alpha)\, E_M - \alpha]^2 + 4\alpha\, (1-\alpha)\, E_M\, K}}{2\alpha}, \alpha \right).
+\end{equation}
+The two eigenvalues of the Jacobian matrix evaluated at $(\hat{p}^*, \hat{r}^*)$ are negative (Text~\ref{S1_Text}), so that this steady state is stable.
+
+The growth rate at steady state, as a function of $\hat{p}^*$ and $\hat{r}^*$, is given by Eq.~\ref{eq:munondim}, which we repeat here for clarity:
+\begin{equation*}
+\hat{\mu}^* = \frac{\hat{p}^*}{K + \hat{p}^*} \, \hat{r}^* .
+\end{equation*}
+Evaluating $d\hat{p}/dt=0$ at $(\hat{p}^*, \hat{r}^*)$ allows $\hat{r}^*$, and therefore $\hat{\mu}^*$, to be written as a function of $\hat{p}^*$ (Text~\ref{S1_Text}).
+Accordingly, we can compute $\partial\hat{\mu}^*/\partial\hat{p}^*$ and, when setting this partial derivative to 0, determine the maximum growth rate at steady state $\mu_{opt}^*$ and the optimal resource allocation $\alpha_{opt}^*$ bringing about this maximal growth rate.
+As shown in Text~\ref{S1_Text}, $\mu_{opt}^*$ and $\alpha_{opt}^*$ can be written as explicit functions of either the environment $E_M$:
+\begin{equation}
+\label{eq:alpha_mu_optimal}
+\alpha_{opt}^* = \frac{E_M + \sqrt{K\, E_M}}{E_M + 2\sqrt{K\, E_M} + 1}
+, \;\;\;\;\;\;\;\;\;\;\;\;\;\; 
+\hat{\mu}^*_{opt} = \frac{E_M}{E_M + 2\sqrt{K\, E_M} + 1},
+\end{equation}
+or the precursor abundance $\hat{p}_{opt}^*$:
+\begin{equation}
+\label{eq:alpha_mu_optimal_p}
+\alpha_{opt}^* = \frac{\hat{p}^{*}_{opt}}{\hat{p}^{*}_{opt} + \frac{K}{K+\hat{p}^{*}_{opt}}(1+\hat{p}^{*}_{opt})}
+, \;\;\;\;\;\;\;\;\;\;\;\;\;\; 
+\hat{\mu}^*_{opt} = \frac{\hat{p}^{* 2}_{opt}}{\hat{p}^{* 2}_{opt} + 2K\hat{p}^*_{opt} + K}.
+\end{equation}
+The above equations were used for the derivation of the control strategies (see below).
+
+
+\subsection*{Model fitting}
+\label{sec:methods_model_fitting}
+
+As can be seen by comparing Figs~\ref{fig:model_validation}\textit{A} and~\ref{fig:model_validation}\textit{B}, growth-rate maximization in the self-replicator model leads to a good qualitative correspondence with the growth laws.
+In order to determine if a good quantitative fit of the model with the data from Scott~\textit{et al.} \cite{scott_interdependence_2010} can be obtained, for reasonable parameter values, we estimated $e_M$ and $k_R$ in Eqs~\ref{eq:pdef}-\ref{eq:rdef} from the measured RNA/protein mass ratios.
+At steady state, the RNA/protein mass ratio can be interpreted as proportional to $\hat{r}^*$ (and thus $\alpha_{opt}^*$), with an unknown (dimensionless) proportionality constant $\gamma$:
+\begin{equation}
+\hat{r}^* = \alpha_{opt}^* = \gamma \, \frac{\text{RNA mass}}{\text{protein mass}}.
+\label{eq:gamma}
+\end{equation}
+Reformulating Eq.~\ref{eq:alpha_mu_optimal} in terms of the original parameters $e_M$ and $k_R$, which have physical dimensions facilitating the biological interpretation of their values, we obtain a straighforward relation between $e_M$, $k_R$, $K$, $\alpha_{opt}^*$ and $\mu_{opt}^*$:
+\begin{equation}
+\label{eq:alpha_mu_optimal_dim}
+\alpha_{opt}^* = \frac{e_M + \sqrt{K\, e_M\, k_R}}{e_M + 2\sqrt{K\, e_M\, k_R} + k_R}
+, \;\;\;\;\;\;\;\;\;\;\;\;\;\; 
+\mu^*_{opt} = \frac{e_M \, k_R}{e_M + 2\sqrt{K\, e_M\, k_R} + k_R}.
+\end{equation}
+
+Eqs~\ref{eq:gamma}-\ref{eq:alpha_mu_optimal_dim} were used to estimate values of $k_R$ and $\gamma$, as well as $e_M$ for each of the six growth conditions, from the measurements of the growth rate and the RNA/protein mass ratio. 
+The value $K$ was not estimated from the experimental data, but set to a value inferred from the literature (Text~\ref{S1_Text}).
+The optimization process was carried out by means of the differential evolution algorithm of Storn and Price~\cite{storn_differential_1997}.
+The results are shown in Fig.~\ref{fig:model_validation}\textit{B}, while the estimated parameter values are summarized in Table~\ref{S1_Table}.
+The parameter values are in very good agreement with order-of-magnitude values determined from the literature (Text~\ref{S2_Text} and Table~\ref{S1_Table}). 
+
+\subsection*{Solution of optimal control problem}
+
+The optimal control problem of Eq.~\ref{eq:J} consists in identifying the function $\alpha_{opt}(t)$ that maximizes the integral of the growth rate $\hat{\mu}$ over an interval $[0, \tau]$.
+In order to solve this problem, we first redefined it over an infinite horizon (\textit{i.e.}, $\tau \rightarrow \infty $) in order to avoid boundary effects occurring over finite time intervals, in particular the depletion of precursors just before reaching $\tau$.
+With $\mathcal{U}=\{\alpha:\mathbb{R}^+ \rightarrow [0,1] \}$ the set of admissible controls, the full optimization problem for the nondimensionalized system is given by
+\begin{equation}\label{eq:meth_prob}
+\max_{\alpha \in \mathcal{U}} J(\alpha)\equiv \int_0^{\infty} \hat{r}(\hat{t}) \, \dfrac{\hat{p}(\hat{t})}{K+\hat{p}(\hat{t})}\, d\hat{t}.
+\end{equation}
+Since $J(\alpha)$ diverges, we actually consider overtaking optimality:
+A solution is overtaking optimal if its performance index catches up with the performance index of any other solution (\cite{carlson_infinite_1991}, see Text~\ref{S3_Text} for details).
+
+Necessary conditions on optimal trajectories can be obtained by the Infinite Horizon Maximum Principle \cite{carlson_infinite_1991}, an extension of the well-known Pontryagin Maximum Principle.
+Analysis of the Hamiltonian of the system of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim} and the associated adjoint system shows that the optimal trajectory is a concatenation of bang arcs ($\alpha(\cdot)=0$ or $\alpha(\cdot)=1$) and possibly a singular arc corresponding to the optimal steady state $(\hat{p}(t),\hat{r}(t))=(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$, that is, the steady state leading to the optimal growth rate $\hat{\mu}_{opt}^*$ in the new environment after the upshift (Text~\ref{S3_Text}).
+Moreover, from the Kelley condition~\cite{borisov_fullers_2000}, we can show that if the optimal trajectory has a singular arc, then it must enter this singular arc \textit{via} a chattering arc, \textit{i.e.}, with an infinite number of switches of $\alpha (\cdot)$ between 0 and 1 (Text~\ref{S3_Text}).
+The chattering arc is characterized by a switching curve $\hat{r}=\varphi(\hat{p})$ in the $(\hat{p},\hat{r})$-plane, which passes through $(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$.
+The switching curve divides the phase plane into two regions, such that $\alpha(t)$ switches to 0 when the system is in the region above $\varphi$ and to 1 when the system is below $\varphi$ (Text~\ref{S3_Text} and Fig.~\ref{fig:optimalcontrol}).
+
+The above results have led to the conjectured optimal solution of Eq.~\ref{eq:optcontrol}.
+In parallel, we numerically solved the problem of Eq.~\ref{eq:meth_prob} by a direct method using the \texttt{bocop} software~\cite{bonnans_bocop_2012}.
+A time discretization allows the optimal control problem to be transformed into a nonlinear optimization problem,
+solved here by interior point techniques.
+A discretization by a Lobatto IIIC formula (6th order) was used with 4000 time steps, and the relative tolerance for the NLP solver was set to $10^{-14}$.
+The optimal trajectories thus obtained are composed of a chattering arc followed by a steady state corresponding to the singular arc (Fig.~\ref{fig:optimalcontrol}).
+The switching curve $\varphi(\hat{p})$ was computed from numerical simulations with different initial conditions. 
+
+\subsection*{Specification and analysis of control strategies}
+
+As described in the \textit{Results} section, we are interested in control strategies satisfying the following conditions:
+\begin{description}
+\item[(C1)] The control laws are static functions of the system variables (as opposed to, for instance, functions that depend on derivatives or integrals of the variables).
+\item[(C2)] For any given constant environment $E_M$, they drive the self-replicator system towards a unique stable steady state that is not trivial, \textit{i.e.}, with nonzero growth rate.
+\item[(C3)] This steady state corresponds to the optimal steady state $(\hat{p}_{opt}^*, \hat{r}_{opt}^*)$, allowing growth at the maximal rate $\mu^*_{opt}$.
+\end{description}
+It can be directly verified from the functions $f$, $g$, and $h$ defining the nutrient-only, precursor-only, and on-off control strategies (Eqs~\ref{eq:f}, \ref{eq:precursorstrategy}, and \ref{eq:stratswitch}) that they are indeed static functions of the system variables (or the system input, in the case of the nutrient-only strategy). 
+Here we show that the other two conditions are also satisfied for all three strategies.
+
+Following Eq.~\ref{eq:f}, the nutrient-only strategy is defined by $\alpha = f(E_M)$, so that $\alpha$ is constant after the upshift.
+As shown above and in Text~\ref{S1_Text}, this means that the system controlled by the nutrient-only strategy has a single nontrivial stable steady state (Condition~C2). 
+In addition, in this case the optimal steady state is attained for $\alpha^*_{opt}$ defined as in Eq.~\ref{eq:alpha_mu_optimal}, and the following function $f$ therefore guarantees Condition~C3:
+\begin{equation}
+\label{eq:meth_f}
+f(E_M) = \frac{E_M + \sqrt{K E_M}}{E_M + 2\sqrt{K\, E_M} + 1}.
+\end{equation}
+In Text~\ref{S1_Text} it is shown that Eq.~\ref{eq:meth_f} is the only definition of $f$ satisfying all conditions.
+Fig.~\ref{S1_Fig}\textit{A} shows a plot of $f(E_M)$ together with a biologically plausible Michaelis-Menten approximation (Eq.~\ref{eq:MMApprox}).
+
+The full specification of the precursor-only strategy demands an expression for the function $g$ in Eq.~\ref{eq:precursorstrategy}.
+Recall that Eq.~\ref{eq:alpha_mu_optimal_p} defines $\alpha_{opt}^*$ in terms of the precursor concentration $\hat{p}_{opt}^*$, which leads us to propose the following function $g$:
+\begin{equation}
+\label{eq:meth_g}
+g(\hat{p}) = \frac{\hat{p}}{\hat{p} + \frac{K}{K + \hat{p}}(1+\hat{p})}.
+\end{equation}
+As shown in Text~\ref{S1_Text} by computing the Jacobian, the system given by Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim} and \ref{eq:meth_g} has a single nontrivial stable steady state for any environment $E_M$ (Condition~C2).
+Moreover, Eq.~\ref{eq:meth_g} guarantees this steady state to be optimal (Condition~C3).
+This can be seen by noting that at steady state, $d\hat{r}/dt=0$ implies $\hat{r}^*=g(\hat{p}^*)$ (Eq.~\ref{eq:rdefnondim}).
+In order for the self-replicator to attain a maximal growth rate at steady rate, Eq.~\ref{eq:alpha_mu_optimal_p} needs to be satified, which is the case for the above choice of the function $g$.
+Like for $f$, Eq.~\ref{eq:meth_g} is the only choice for $g$ satisfying C1-C3.
+Fig.~\ref{S1_Fig}\textit{B} shows a plot of $g(\hat{p})$ together with a biologically plausible Hill approximation (Eq.~\ref{eq:HillApprox}).
+
+The on-off control strategy is defined in Eq.~\ref{eq:stratswitch} and repeated below:
+\begin{equation}
+h(\hat{p}, \hat{r}) = 
+\begin{cases}
+0, \ \textrm{if} \ \hat{r} > g(\hat{p}),\\
+1, \ \textrm{if} \ \hat{r} < g(\hat{p}), \\
+\alpha_{opt}^*, \ \textrm{if} \ (\hat{p},\hat{r})=(\hat{p}_{opt}^*,\hat{r}_{opt}^*).
+\end{cases}
+\end{equation}
+This strategy drives the system to a single steady state, because the $\hat{p}$-nullcline crosses the function $g(\hat{p})$ only once, as shown graphically in Fig.~\ref{fig:onoffresults}\textit{A}.
+In Text~\ref{S1_Text} we argue that this steady state is stable, by taking into account so-called sliding modes on the switching curve~\cite{filippov_differential_1988} (Condition~C2).
+Moreover, the steady state coincides with the optimal steady state $(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$ by construction, so that Condition~C3 is satisfied as well.
+Fig~\ref{fig:ppGppsurface}\textit{A} shows a plot of $h(\hat{p}, \hat{r})$.
+
+Note that since $h(\cdot)$ is discontinuous, numerical instabilities occur during simulations.
+We therefore used the following continuous approximation of this function:
+\begin{equation}
+\frac{g(\hat{p})^{100}}{g(\hat{p})^{100} + \hat{r}^{100}}, \ \textrm{if} \ \hat{r} \neq g(\hat{p}).
+\end{equation}
+The approximation causes $\alpha$ to take intermediate values (instead of 0 or 1) just before reaching the optimal steady state in Fig~\ref{fig:onoffresults}\textit{C}.
+For numerical simulations of the ODE system, we used the CVODE solver~\cite{cohen_cvode_1996} from SUNDIALS 2.6.2~\cite{hindmarsh_sundials_2005}.
+
+}
+
+\section*{Supporting Information}
+
+%%%%%% FOR MANUAL REF%%%%%
+\makeatletter
+\newcommand{\manuallabel}[2]{\def\@currentlabel{#2}\label{#1}}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tr{
+\subsection*{Text S1 -- Model derivation and analysis}
+\manuallabel{S1_Text}{S1}
+%{\bf Lorem Ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+
+\subsection*{Text S2 -- Model parameters}
+\manuallabel{S2_Text}{S2}
+%{\bf Lorem Ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+
+\subsection*{Text S3 -- Solution of optimal control problem}
+\manuallabel{S3_Text}{S3}
+%{\bf Lorem Ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+
+\subsection*{Text S4 -- Kinetic model of the ppGpp system in \textit{Escherichia coli}}
+\manuallabel{S4_Text}{S4}
+%{\bf Lorem Ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+\subsection*{Table S1 -- Parameter values of self-replicator model}
+\manuallabel{S1_Table}{S1}
+%{\bf Lorem Ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+
+\subsection*{Figure S1 -- Simple control strategies for the self-replicator of bacterial growth}
+\manuallabel{S1_Fig}{S1}
+%{\bf Lorem Ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+
+}
+
+\section*{Acknowledgments}
+This work was partially supported by the Investissements d'Avenir Bio-informatique programme under project RESET (ANR-11-BINF-0005), the Inria Project Lab Algae in silico, and the Labex SIGNALIFE (ANR-11-LABX-0028-01).
+The authors thank Eugenio Cinquemani for discussions and comments on the manuscript.
+
+\nolinenumbers
+
+%\section*{References}
+% Either type in your references using
+% \begin{thebibliography}{}
+% \bibitem{}
+% Text
+% \end{thebibliography}
+%
+% OR
+%
+% Compile your BiBTeX database using our plos2015.bst
+% style file and paste the contents of your .bbl file
+% here.
+% 
+\bibliography{references}
+
+
+\end{document}
+
