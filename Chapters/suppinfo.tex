@@ -1,0 +1,462 @@
+\section{Model derivation and analysis}
+\label{sec:supp_S1}
+
+\subsection{Model formulation}
+
+The time evolution of the total mass of each component of the self-replicator can be written as follows:
+\begin{eqnarray}
+\frac{dP}{dt} &=& V_M(t) - V_R(t) \nonumber \\
+\frac{dM}{dt} &=& (1-\alpha(t))\, V_R(t) \label{eq:ext_system}\\
+\frac{dR}{dt} &=& \alpha(t) \, V_R(t)  \nonumber ,
+\end{eqnarray}
+where $P$, $M$, $R$ [g] denote the total mass of precursors, metabolic machinery and gene expression machinery, respectively.
+$V_M$ [g min$^{-1}$] is the rate of production of precursors by metabolism and $V_R$ [g min$^{-1}$] the rate of utilisation of precursors for gene expression.
+
+Dividing the mass variables by the total time-varying volume $\texttt{Vol}(t)$ of the system, we obtain the concentration variables $p = P/\texttt{Vol}$, $m = M/\texttt{Vol}$, $r = R/\texttt{Vol}$ [g L$^{-1}$].
+The dynamics of the concentration variables then follows with Eq.~\ref{eq:ext_system}:
+\begin{eqnarray}
+\frac{dp}{dt} &=& \frac{V_M(t)}{\texttt{Vol}} - \frac{V_R(t)}{\texttt{Vol}} - \frac{1}{\texttt{Vol}}\frac{d\texttt{Vol}}{dt}\, p, \nonumber \\
+\frac{dm}{dt} &=& (1-\alpha(t))\cdot \frac{V_R(t)}{\texttt{Vol}} - \frac{1}{\texttt{Vol}}\frac{d\texttt{Vol}}{dt} \, m  \label{eq:deriv_int_system}\\ 
+\frac{dr}{dt} &=& \alpha(t) \, \frac{V_R(t)}{\texttt{Vol}}  - \frac{1}{\texttt{Vol}}\frac{d\texttt{Vol}}{dt} \, r. \nonumber
+\end{eqnarray}
+
+At this point, we define $v_M = V_M/\texttt{Vol}$ and $v_R = V_R/\texttt{Vol}$ [g L$^{-1}$ min$^{-1}$] as the mass fluxes per unit volume.
+Moreover, with the definition of the volume in terms of the total protein mass in Eq.~\ref{eq:voldef}, that is, $\texttt{Vol} = \beta\, (M + R)$, we find that:
+\begin{equation}
+\label{eq:sup_deriv_growthrate}
+\frac{1}{\texttt{Vol}} \frac{d\texttt{Vol}}{dt} = \frac{\beta}{\texttt{Vol}} \frac{d(M+R)}{dt} = \beta\, \frac{V_R(t)}{\texttt{Vol}} = \beta \, v_R(t).
+\end{equation}
+This leads to the system:
+\begin{eqnarray}
+\frac{dp}{dt} &=& v_M(t) - v_R(t) \, (1+\beta\, p), \label{eq:sup_pdef}\\
+\frac{dr}{dt} &=& v_R(t)  \, (\alpha(t) - \beta\, r), \label{eq:sup_rdef},
+\end{eqnarray}
+where the equation for $m(t)$ is omitted since by construction $r(t) + m(t) = 1/\beta$ and $dr/dt + dm/dt = 0$.
+
+As stated in the main text, we use Michaelis-Menten kinetics to express $v_M$ and $v_R$ in terms of the system variables:
+\begin{eqnarray}
+v_M(t) &=& m(t) \, k_M \, \frac{s(t)}{K_M +s(t)} = \left(\frac{1}{\beta} - r(t)\right)\, e_M(t) \nonumber \\
+v_R(t) &=& r(t) \, k_R \, \frac{p(t)}{K_R +p(t)}, \nonumber 
+\end{eqnarray}
+with rate constants $k_M$, $k_R$ [min$^{-1}$] and half-saturation constants $K_M$, $K_R$ [g L$^{-1}$].
+$s(t)$ is an exogenous variable representing the nutrient concentration in the external medium.
+We simplify $v_M(t)$ by defining the environmental input $e_M(t) = k_M \, s(t) / (K_M + s(t))$.
+
+Finally, the growth rate $\mu$ [min$^{-1}$] is defined as the relative increase of the volume of the self-replicator.
+From Eq.~\ref{eq:sup_deriv_growthrate}), it follows that:
+\begin{equation}
+\label{eq:sup_growthrate}
+\mu (t) = \frac{1}{\texttt{Vol}} \frac{d\texttt{Vol}}{dt} = \beta\, v_R(t).
+\end{equation}
+
+\subsection{Nondimensionalization of the system}
+
+For the sake of simplifying the proofs and derivations below, we simplify the system by defining the following nondimensional variables:
+\begin{equation*}
+\hat{p}  = \beta \, p,\;\;\;
+\hat{r}  = \beta \, r,\;\;\;
+\hat{t}  = k_R \, t.
+\end{equation*}
+When injecting these into Eq.~\ref{eq:sup_pdef}, we obtain:
+\[
+\frac{k_R}{\beta} \, \frac{d\hat{p}}{d\hat{t}} = \left( \frac{1}{\beta} - \frac{\hat{r}}{\beta} \right) \, e_M - \frac{\hat{r}}{\beta} \, k_R \, \frac{\hat{p}}{\beta K_R + \hat{p}} \, (1 + \hat{p}),
+\]
+which simplifies to:
+\[
+\frac{d\hat{p}}{d\hat{t}} = ( 1 - \hat{r} ) \, \frac{e_M}{k_R} - \hat{r} \, \frac{\hat{p}}{\beta K_R + \hat{p}} \, (1 + \hat{p}).
+\]
+In a similar manner, we derive the time evolution of the nondimensional $\hat{r}$, and thus obtain the system
+\begin{equation}
+\label{eq:sup_adim}
+\begin{aligned}
+\frac{d\hat{p}}{d\hat{t}} &= (1-\hat{r})\, E_M - (1 + \hat{p}) \, \frac{\hat{p}}{K + \hat{p}}\, \hat{r},\\
+\frac{d\hat{r}}{d\hat{t}} &= (\alpha - \hat{r}) \, \frac{\hat{p}}{K + \hat{p}}\, \hat{r},
+\end{aligned}
+\end{equation}
+with the lumped parameters $E_M = e_M / k_R$ and $K = \beta \, K_R$.
+The corresponding nondimensionalized growth rate is given by:
+\begin{equation}
+\label{eq:sup_growthrate_adim}
+\hat{\mu} = \frac{\mu}{k_R} = \frac{\hat{p}}{K+\hat{p}} \, \hat{r}.
+\end{equation}
+
+\subsection{Steady-state growth of the self-replicator}
+\label{si::growthrate}
+
+If we suppose $E_M > 0$, $K > 0$ and $\alpha \in ]0, 1[$, there is a trivial unstable steady state at the point $(0, 0)$.
+A second steady-state exists for the point in which $\hat{r}^* = \alpha$ and $\hat{p}^*$ is a root of the following polynomial:
+\[
+\alpha \, \hat{p}^2 + \left(\alpha - (1-\alpha) \, E_M \right) \hat{p} - (1-\alpha)\, E_M\, K.
+\]
+If we keep the only admissible root for this polynomial (\textit{i.e.}, for which $\hat{p} \geq 0$), the second steady state is given by:
+\begin{equation}
+\label{eq:sup_steadystate}
+(\hat{p}^*, \hat{r}^*) = \left( \frac{(1-\alpha)\, E_M - \alpha + \sqrt{[(1-\alpha)\, E_M - \alpha]^2 + 4\alpha\, (1-\alpha)\, E_M\, K}}{2\alpha}, \alpha \right).
+\end{equation}
+We can determine the stability of this steady state by looking at the Jacobian matrix $J$ of the ODE system:
+\begin{equation}
+\label{eq:sup_jacop}
+J = \left(\begin{matrix}
+- \frac{\hat{r}}{K + \hat{p}} \left[ \hat{p} + (1+\hat{p})\, \frac{K}{K+\hat{p}}\right] & - E_M - (1+\hat{p})\frac{\hat{p}}{K+\hat{p}}\\
+(\alpha - \hat{r})\, r \, \frac{K}{(K+\hat{p})^2} & (\alpha - 2\hat{r})\, \frac{\hat{p}}{K+\hat{p}}
+\end{matrix}\right) .
+\end{equation}
+Evaluated at the point $(\hat{p}^*, \hat{r}^*)$, the Jacobian matrix becomes:
+\[
+J_{(\hat{p}^*, \hat{r}^*)} = \left(\begin{matrix}
+- \frac{\alpha}{K + \hat{p}^*} \left[ \hat{p}^* + (1+\hat{p}^*)\frac{K}{K+\hat{p}^*}\right] & - E_M - (1+\hat{p}^*)\frac{\hat{p}^*}{K+\hat{p}^*}\\
+0 & -\alpha\frac{\hat{p}^*}{K+\hat{p}^*}
+\end{matrix}\right).
+\]
+Since $\hat{p}^*$, $\alpha$, $E_M$, $K$ $>0$, the two eigenvalues are negative and therefore the steady state $(\hat{p}^*, \hat{r}^*)$ is stable (see also the streamlines in Figure~\ref{fig:isoclines}\textit{B} in the main text).
+It means that for fixed environmental conditions $E_M$ and resource allocation $\alpha$, the self-replicator converges towards a steady state in which all intensive variables are constant, also called balanced growth [Fishov95].
+
+One can now easily derive the steady-state growth rate, denoted $\hat{\mu}^*$.
+By substituting Eq.~\ref{eq:sup_growthrate_adim} into the first ODE of the system of Eq.~\ref{eq:sup_adim}, we find at steady state:
+\[
+\left(\frac{d\hat{p}}{d\hat{t}}\right)_{(\hat{p}^*, \hat{r}^*)} = 0 = (1-\alpha)\, E_M - (1+\hat{p}^*)\, \hat{\mu}^*,
+\]
+which by means of Eq.~\ref{eq:sup_steadystate} gives the following relation:
+\begin{equation}
+\label{eq:sup_growthrate_p}
+\hat{\mu}^* = \frac{(1-\alpha)\, E_M}{1+\hat{p}^*} = \frac{2\alpha(1-\alpha)\, E_M}{(1-\alpha)\, E_M + \alpha + \sqrt{\left[(1-\alpha)\, E_M -\alpha\right]^2 + 4\alpha(1-\alpha)\, E_M\, K}}.
+\end{equation}
+Finally, we can transform this expression to obtain:
+\begin{equation}
+\label{eq:sup_growthrate_final}
+\hat{\mu}^* = \begin{cases}
+\frac{(1-\alpha)\, E_M + \alpha - \sqrt{\left[(1-\alpha)\, E_M - \alpha\right]^2 + 4(1-\alpha)\, \alpha\, E_M\, K}}{2(1-K)} &\text{ for }K\neq 1,\\
+\frac{\alpha\, (1-\alpha)\, E_M}{\alpha + (1-\alpha)\, E_M} &\text{ for }K = 1.
+\end{cases}
+\end{equation}
+This function of $\alpha$ is plotted in Figure~\ref{fig:isoclines}\textit{A} in the main text.
+
+\subsection{Maximization of growth rate at steady state}
+\label{si::optimal}
+
+We are interested in the steady state at which growth occurs at the maximum rate.
+Growth rate at steady state $\hat{\mu}^\star$ is given by:
+\begin{equation}
+\label{eq:sup_growthrate_steadystate}
+\hat{\mu}^* = \frac{\hat{p}^*}{K + \hat{p}^*} \, \hat{r}^* .
+\end{equation}
+From the first ODE of the system of Eq.~\ref{eq:sup_adim}, we have:
+\begin{equation}
+\label{eq:sup_isop}
+\hat{r}^* = \frac{E_M}{E_M + \frac{\hat{p}^*}{K + \hat{p}^*} (1+\hat{p}^*)} .
+\end{equation}
+Substituting Eq.~\ref{eq:sup_isop} into Eq.~\ref{eq:sup_growthrate_steadystate}, we obtain:
+\begin{equation}
+\label{eq:sup_growthrate_steadystate_p}
+\hat{\mu}^* = \frac{E_M \, \hat{p}^*}{\hat{p}^{* 2} + (E_M + 1)\, \hat{p}^* + E_M\, K} .
+\end{equation}
+The value of $\hat{p}^*$ maximizing $\hat{\mu}^*$ can be determined from
+\begin{equation}
+\label{eq:sup_growthrate_steadystate_deriv_p}
+\frac{\partial\hat{\mu}^*}{\partial\hat{p}^*} = \frac{E_M \, (E_M\, K - \hat{p}^{*2})}{\left(\hat{p}^{* 2} + (E_M + 1)\, \hat{p}^* + E_M\, K\right)^2},
+\end{equation}
+by looking at the values of $\hat{p}^*$ for which this derivative exceeds 0.
+It follows that $\hat{\mu}^*$ is maximal for:
+\begin{equation}
+\label{eq:sup_p_optimal}
+\hat{p}^* = \hat{p}^*_{opt} = \sqrt{K\, E_M}.
+\end{equation}
+By substituting $\hat{p}^*_{opt}$ and $\alpha_{opt}$ for $\hat{p}^*$ and $\hat{r}^*$, respectively, in Eq.~\ref{eq:sup_isop}, we obtain the resource allocation maximizing the growth rate:
+\begin{equation}
+\label{eq:sup_alpha_optimal}
+\alpha_{opt} = \frac{E_M + \sqrt{KE_M}}{E_M + 2\sqrt{KE_M} + 1}.
+\end{equation}
+Finally, injecting this result in Eq. \ref{eq:sup_growthrate_steadystate} we obtain the optimal steady-state growth rate:
+\begin{equation}
+\label{eq:sup_growthrate_optimal}
+\hat{\mu}^*_{opt} = \frac{E_M}{E_M + 2\sqrt{K\, E_M} + 1}.
+\end{equation}
+In addition, by using Eq. \ref{eq:sup_p_optimal}, we can write $\alpha_{opt}$ and $\hat{\mu}_{opt}^*$ as a functions of $\hat{p}_{opt}^*$ only:
+\begin{equation}
+\label{eq:sup_alpha_mu_optimal_p}
+\alpha_{opt} = \frac{\hat{p}^{*}_{opt}}{\hat{p}^{*}_{opt} + \frac{K}{K+\hat{p}^{*}_{opt}}(1+\hat{p}^{*}_{opt})}
+\;\;\;\;\;\;\; ; \;\;\;\;\;\;\;
+\hat{\mu}^*_{opt} = \frac{\hat{p}^{* 2}_{opt}}{\hat{p}^{* 2}_{opt} + 2K\hat{p}^*_{opt} + K}.
+\end{equation}
+
+\section{Model parameters}
+\label{sec:supp_S2}
+
+
+Most of the conclusions of this paper are parameter-independent in the range of physically admissible values.
+The parameter values used in the simulations are orders of magnitude based on data reported in the literature for fast-growing bacteria (mostly \textit{Escherichia coli}).
+As a consistency test, some of the parameter values where validated by fitting the model to experimental data at steady state (Figure~\ref{fig:isoclines} in the main text).
+The parameters of the model of Eqs.~\ref{eq:pdef} and \ref{eq:rdef} in the main text and their values used in the simulations are listed in the table below:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Name & Unit & Description \\
+\hline
+$e_M$ & h$^{-1}$ & Constant characterizing nutrient composition of medium\\
+\hline
+$k_R$ & h$^{-1}$ & Rate constant of macromolecular synthesis\\
+\hline
+$K_R$ & g\ L$^{-1}$ & Half-saturation constant of macromolecular synthesis\\
+\hline
+$\beta$ & L\ g$^{-1}$ & Inverse of the cellular density of macromolecules\\ % & Inverse de la molarit\'e totale & $\frac{118.9}{400} \approx 0.3 $ & \cite{totconc,weightaa}\\
+\hline
+$\alpha$ & $\emptyset$ & Resource allocation parameter\\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{COMMENT: still needs to be decided if we speak about synthesis of macromolecules or protein synthesis. }
+
+\subsection{Parameter values used in simulations}
+
+\subsubsection{\texorpdfstring{$e_M$}{eM}}
+
+By definition, $e_M$ is the effective turnover of the metabolic macroreaction producing precursors from external substrates, obtained by dividing the reaction rate $v_M$ by the enzyme concentration $m$ (Eq.~\ref{eq:metaflux}).
+The unit of $e_M$ is min$^{-1}$,  decomposed as follows:
+\[
+[e_M]  = \frac{\text{mass of metabolic product}}{\text{mass of enzyme M}\cdot \text{time}} = \frac{1}{\text{time}}.
+\]
+Note that $e_M = k_M\, s / (K_M + s)$ where $k_M$ is the turnover number of the reaction, indicating the maximum rate of conversion of external nutrients to precursor metabolites. 
+$e_M$ will thus vary with the concentration $s$ of the external nutrients taken up by the cells and the identity of the nutrients. 
+For example, the precursor mass that can be produced from 1 g of glucose is higher than that produced from 1 g of acetate.
+
+How can we find a typical value for $k_M$, and thus for $e_M$ (both have the same order of magnitude if we suppose that the reaction is not operating far below saturation, that is, $e_M \approx K_M$)?
+We stipulate that in our formalism the concentration of $p$, the concentration of precursors feeding into macromolecular synthesis, is close to the concentration of charged tRNA in the cell, since the latter are directly consumed by the most abundant part of the gene expression machinery, the ribosomes.
+A reasonable estimate for $k_M$ could therefore be obtained from the turnover numbers of reactions involved in the synthesis of charged tRNA.
+\cite{uter_longrange_2004} provides a typical value for one such reaction, catalyzed by glutaminyl-tRNA synthetase: $k_{\textit{cat,GlnRS}} = 3.2 s^{-1}$, indicating that on average 3.2 glutaminyl-tRNA molecules are produced per glutaminyl-tRNA synthetase molecule per second. 
+After conversion to mass units \cite{freist_glutaminyltrna_1997}, this gives:
+\[
+k_{\textit{cat,GlnRS}} = \frac{3.2 \cdot 147}{64.4 \cdot 10^ 3} \approx 10^{-3} \, \text{g of glutaminyl-tRNA} \cdot \text{g of enzyme}^{-1} \cdot \text{s}^{-1}.
+\]
+We therefore take
+\[
+k_M \approx 3.6 \text{ h}^{-1} \geq e_M,
+\]
+and thus obtain an upper bound for $e_M$.
+
+\subsubsection{\texorpdfstring{$k_R$}{kR}}
+
+$k_R$ is the mass turnover number of the synthesis of macromolecules, in units h$^{-1}$.
+As for $e_M$, we can decompose this into
+\[
+[k_R]  = \frac{\text{g of macromolecules}}{\text{g of gene expression machinery}\cdot \text{time}} = \frac{1}{\text{time}}
+\]
+We equate the mass of macromolecules the mass of proteins, the most abundant macromolecule in the cell [DennisBremer], and the mass of gene expression machinery with the mass of ribosomes (see above).
+The dimensional analysis of $k_R$ thus becomes:
+\[
+\begin{aligned}
+\left[k_R\right] &= \frac{\text{[protein mass produced]}}{\text{[ribosomal mass]} \cdot \text{[hour]}}\\
+&= \frac{\text{[moles of protein]} \cdot \text{[protein molar mass]}}{\text{[moles of ribosome]} \cdot \text{[ribosome molar mass]} \cdot \text{[hour]}}\\
+&= \frac{\text{[moles of amino acids]} \cdot \text{[molar mass of amino acids]}}{\text{[moles of ribosome]} \cdot \text{[hour]} \cdot \text{[ribosome molar mass]}}\\
+&= \frac{\text{[maximal protein elongation rate]} \cdot \text{[molar mass of amino-acids]}}{\text{[ribosome molar mass]}}
+\end{aligned}
+\]
+The values in the last equality are available from the literature\cite{ehrenberg_mediumdependent_2012,klumpp_molecular_2013} [weightaa,massribo].
+We obtain:
+\[
+k_R \approx \frac{10 \cdot 100}{10^6}\cdot 3600 \approx 3.6 \text{ h}^{-1}.
+\]
+This value is comparable with the translational capacity $k_T$, in $\mu$g of protein per $\mu$g of ribosomal protein per hour, given by Scott \textit{et al.}\cite{scott_interdependence_2010}:
+\[
+k_T = \frac{4.5 \text{ }\mu\text{g of protein} \text{ / }\mu\text{g of RNA} \text{ / h }}{0.76 \text{ }\mu\text{g of ribosomal protein} \text{ / } \mu\text{g of RNA}} = 5.9 \text{ h}^{-1}
+\]
+
+\subsubsection{\texorpdfstring{$K_R$}{KR}}
+
+While a value for the parameter $K_R$, representing the half-saturation constant of macromolecular synthesis, is more difficult to obtain from the literature, it should satisfy a straightforward constraint.
+If the activity of the gene expression machinery is to significantly vary over time and between different environments, $p$ should neither be much smaller nor be much larger than $K_M$.
+We satisfy this constraint by choosing $K_R$ to equal the total concentration of metabolites in the cell, as an order of magnitude\cite{bennett_absolute_2009}:
+\[
+K_R \approx 10\text{ g} \cdot \text{L}^{-1}
+\]
+
+\textbf{COMMENT: Why don't we choose total concentration of charged tRNAs here? Would be consistent with derivation of $k_R$...}
+
+\subsubsection{\texorpdfstring{$\beta$}{Beta}}
+
+$\beta$ is the inverse of cellular density of macromolecules, which has been shown constant during balanced growth over a large range of growth rates \cite{churchward_macromolecular_1982}, and there is some data suggesting that $\beta$ varies little during growth transitions as well [Zhou13].
+From \cite{zimmerman_estimation_1991,mcguffee_diffusion_2010} we take the following typical value for $\beta$:
+\[
+\beta \approx \frac{1}{300} \approx 3\cdot 10^{-3} \text{ L} \cdot \text{g}^{-1}.
+\]
+
+\subsubsection{\texorpdfstring{$E_M$}{EM} and \texorpdfstring{$K$}{K}}
+
+From the values of the parameter in the dimensional model, one can deduce the parameters in the nondimensional model, used in the simulations:
+\[
+E_M = \frac{e_M}{k_R} = \frac{3.6}{3.6} = 1 \;\;\;\;\; ; \;\;\;\;\;  K = \beta\, K_R = 3\cdot 10^{-3} \cdot 10 = 0.03
+\]
+
+\subsection{Validation of parameters by fitting model to steady-state data set}
+
+As a validation of the chosen orders of magnitude for the parameters, we fitted the model to the data on the RNA/protein mass ratio in \textit{Escherichia coli} as a function of the steady-state growth rate [ScottHwa].
+These data were used to formulate so-called empirical growth laws.
+As can be seen by comparing panels \textit{C} and \textit{D} of Figure~\ref{fig:isoclines} in the main text, growth-rate maximization in the self-replicator model leads to a good qualitative correspondence with the growth laws.
+Can our model also quantitatively reproduce the growth laws, for parameter values close to those used in our simulations? 
+
+As explained in footnote~1 in the main text, the RNA/protein mass ratio can be interpreted as proportional to $\alpha$, with an unknown proportionality constant $\gamma$: $\alpha = \gamma \cdot \text{RNA/protein mass ratio}$.
+We consider Eqs.~\ref{eq:pdef} and \ref{eq:rdef} in the main text at steady state (\textit{i.e.}, $dp/dt = dr/dt = 0$ ), and fit the model to the data using the differential evolution algorithm of Storn and Price [R133].
+We first search for the value of $k_R$ that minimizes the squared difference between the data points and the model predictions when maximizing the growth rate for various values of $e_M$ (black dashed line in Figure~\ref{fig:isoclines}\textit{D}).
+Second, we search for the six $e_M$ parameters (one per growth medium) that minimize the squared difference between the translational inhibition data for a given medium when maximizing the growth rate for different values of $k_R$ (colored dashed lines in Figure~\ref{fig:isoclines}\textit{D}).
+Third, the correction parameter $\gamma$ is optimized on top of that so as to optimize both processes.
+\textbf{COMMENT: the description of the last should be made more precise. Are you running an optimization process with all data? Fixing the values of $e_M$ and $k_R$ or using them as initial values only?}
+The results of the fitting procedure are shown in Figure~\ref{fig:isoclines}\textit{D}, and discussed in the main text.
+The parameter values are summarized in the table below (M63, cAA, and RDM refer to the medium compositions in [Scott10]).
+As can be seen, they are in excellent agreement with the values used in the simulations, as determined from the literature in the previous subsection.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Parameter & Unit & Literature value & Fitted value \\
+\hline
+$\gamma$ & $-$ & No value & 1.33\\
+\hline
+$k_R$ & h$^{-1}$ & 3.6 & 2.74\\
+\hline
+$e_M$ for M63+glycerol & h$^{-1}$ &  $< 3.6$ & 0.607\\
+\hline
+$e_M$ for M63+glucose & h$^{-1}$ &  $< 3.6$ & 0.912\\
+\hline
+$e_M$ for cAA+glycerol & h$^{-1}$ &  $< 3.6$ & 1.12\\
+\hline
+$e_M$ for cAA+glucose & h$^{-1}$ &  $< 3.6$ & 1.68\\
+\hline
+$e_M$ for RDM+glycerol & h$^{-1}$ &  $< 3.6$ & 3.48\\
+\hline
+$e_M$ for RDM+glucose & h$^{-1}$ &  $< 3.6$ & 5.06\\
+\hline
+$\beta K_R$ & $-$  & 0.03 & Not fitted\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Derivation of optimal control strategy}
+\label{sec:supp_S3}
+
+\subsection{Statement of the problem}
+
+We consider the dimensionless system defined by Eqs~\ref{eq:pdefnondim} and \ref{eq:rdefnondim} in the main text, which are here repeated for clarity:
+\begin{equation}{\label{eq:model}}
+\begin{cases}
+\frac{d\hat{p}}{d\hat{t}} = (1-\hat{r})\, E_M - (1+\hat{p})\, \hat{r} \, \frac{\hat{p}}{K+\hat{p}}, \\
+\frac{d\hat{r}}{d\hat{t}} = \hat{r} \frac{\hat{p}}{K + \hat{p}} \, (\alpha (\hat{t}) - \hat{r}).
+\end{cases}
+\end{equation}
+
+The objective of this study is to maximize the growth rate $\hat{\mu}= \hat{r}\, \hat{p}/(K+\hat{p})$ on an infinite time interval.
+Consider the set of admissible controls
+\[
+\mathcal{U}=\{\alpha:\mathbb{R} \rightarrow [0,1] \ \mid \ \alpha(\cdot) \ \mathrm{measurable}\}.
+\]
+The optimization problem can then be stated as follows:
+\begin{equation}\label{Prob}\tag{P}
+\max_{\alpha \in \mathcal{U}} J(\alpha)\equiv \int_0^{+\infty} \hat{r}(\hat{t}) \, \dfrac{\hat{p}(\hat{t})}{K+\hat{p}(\hat{t})}\, d\hat{t},
+\end{equation}
+where $(\hat{p}(\hat{t}),\hat{r}(\hat{t}))$ is the unique solution of Eq.~\ref{eq:model} starting at a given point $(\hat{p}_0,\hat{r}_0)\in \Omega \equiv \mathbb{R}^+_* \times (0,1)$ for a given control $\alpha\in \mathcal{U}$.
+Note that since $J(\alpha)$ diverges, we actually consider \textit{overtaking optimality}: a trajectory is overtaking optimal if the performance index catches up to the performance
+index of any other trajectory (see Definition 1.2(ii) in\cite{carlson_infinite_1991} for a rigorous mathematical definition). 
+
+\subsection{Maximum Principle}
+Necessary conditions on optimal trajectories can be obtained by the Infinite Horizon Maximum Principle\cite{carlson_infinite_1991}.
+Let $H=H(\hat{p},\hat{r},\lambda_p,\lambda_r,\lambda_0,\alpha)$ be the Hamiltonian of the system defined by:
+\[
+H \equiv \lambda_p\, E_M\, (1-\hat{r}) - \hat{r}\, \dfrac{\hat{p}}{K+\hat{p}}\left[\lambda_p (1+\hat{p}) +\lambda_r\, \hat{r} +\lambda_0\right] + \alpha \, \lambda_r \, \hat{r}\, \frac{\hat{p}}{K+\hat{p}}.
+\]
+Moreover, let $\alpha$ be an optimal control, and $\hat{x}(\cdot)=(\hat{p}(\cdot),\hat{r}(\cdot))$ the associated trajectory.
+Then, there exists $\lambda_0 \leq 0$ and an absolutely continuous map $\lambda=(\lambda_p,\lambda_r):[0,+\infty) \rightarrow \mathbb{R}^2$
+such that $(\lambda,\lambda_0)\neq0$, and
+\begin{align}{\label{eq:adjoint}}
+\dot{\lambda}_p&= \hat{r} \, \frac{K}{(K+\hat{p})^2}\, \left[\lambda_p \, (1+\hat{p}) +\lambda_r\, ( \hat{r}-\alpha) + \lambda_0\right] + \hat{r}\, \frac{\hat{p}}{K+\hat{p}}\, \lambda_p,\\
+ \dot{\lambda}_r&= \lambda_p\, E_M +\frac{\hat{p}}{K+\hat{p}} \, \left[\lambda_p \, (1+\hat{p}) +\lambda_r\, (2 \hat{r}-\alpha) +\lambda_0\right].
+\end{align}
+The maximization condition is given by:
+\begin{equation}{\label{eq:PMP}}
+\begin{aligned}
+&\alpha(\hat{t}) \in \mathrm{argmax}_{v \in [0,1]} H(\hat{x}(\hat{t}),\lambda(\hat{t}),\lambda_0,v), \\ &\mathrm{a.e.} \ \hat{t}\in [0,+\infty).
+\end{aligned}
+\end{equation}
+
+An extremal trajectory is a quadruplet $(\hat{x}(\cdot),\lambda(\cdot),\lambda_0,\alpha(\cdot))$ satisfying Eqs~\ref{eq:model}-\ref{eq:PMP}. 
+Next, we take $\lambda_0=-1$.\footnote{One can show that abnormal extremal trajectories (obtained for $\lambda_0=0)$ are not optimal. \textbf{A VERIFIER}}
+From Eq.~\ref{eq:PMP}, we have that the control strategy is given by the sign of the \textit{switching function} $\phi \equiv \lambda_r \, \hat{r}\, \hat{p}/(K+\hat{p})$, that is, \textbf{COMMENT: IS THIS EVIDENT?}
+\[
+\begin{cases}
+\alpha=1 \iff \phi>0,\\
+\alpha=0 \iff \phi<0.
+\end{cases}
+\]
+
+\subsection{Characterization of singular arcs}
+
+Whenever $\phi$ is vanishing over a time interval, we say that the trajectory is \textit{singular}.
+We will now characterize such trajectories.
+If $I=[\hat{t}_1,\hat{t}_2]$ is a singular arc, we have $\phi(\hat{t})=\dot{\phi}(\hat{t})=0$, for all $\hat{t}\in[\hat{t}_1,\hat{t}_2]$, that is, $\lambda_r(\hat{t})=0$ and $\dot\lambda_r(\hat{t})=0$. Using additionally that $H$ is constant along an extremal trajectory, we obtain that $\lambda_p$ is constant along a singular arc. From Eq.~\ref{eq:adjoint}, this gives $\hat{p}(\hat{t})=\sqrt{E_M\, K}=\hat{p}_{opt}^*$. Using $d\hat{p}/d\hat{t}=0$, we finally get $\hat{r}(\hat{t})=\hat{r}_{opt}^*$.
+Thus, the singular arc is the optimal steady state, corresponding to a singular control $\alpha(\hat{t})=\alpha_{opt}$, with $\alpha_{opt}$ depending on $E_M$ (Supplementary Text ???).
+
+A necessary condition of optimality for a singular arc is given by the Kelley condition~\cite{borisov_fullers_2000}.
+We must differentiate $\phi$ with respect to $\hat{t}$ until $\alpha$ appears in the derivative. Along a singular arc, we obtain for $q=2$:
+$$
+(-1)^q\frac{\partial}{\partial\alpha}\frac{d^{2q}}{d\hat{t}^{2q}}\phi(\hat{t})<0,
+$$
+satisfying the Kelley condition necessary for optimality. Given that the singular arc is of second order, an optimal trajectory can enter into the singular arc only by a \textit{chattering arc} (which contains an infinite number of switching points) \cite{marchal_chattering_2013,borisov_fullers_2000}. 
+
+\subsection{Optimal trajectories}
+
+From the Maximum Principle, we have shown that the optimal trajectory is a concatenation of bang arcs ($\alpha(t)=0$ or $\alpha(t)=1$) and possibly a singular arc corresponding to the optimal steady state $(\hat{p}(\hat{t}),\hat{r}(\hat{t}))=(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$. Moreover, if the optimal trajectory has a singular arc, it must enter it through a chattering arc (\textit{i.e.}, with an infinite number of switches between $\alpha=0$ and $\alpha=1$).
+
+These elements motivate the supposition that optimal solutions consist in a transient (chattering arc) towards the optimal steady state, after which they remain there (until a change to another environment). The chattering arc can be characterized by a switching curve $\hat{p}\mapsto\varphi(\hat{p})$ which passes through the optimal steady state.
+Defining $A_0$ and $A_1$ the regions above and below $\varphi$ in the $(\hat{p},\hat{r})$-plane, respectively, we conjecture that the following feedback control law is optimal: 
+%The simplest way to reach the optimal steady-state is thus two arcs, either 0-1 or 1-0 depending on the initial conditions. More precisely, let $\phi_0$ and $\phi_1$ be defined as the the trajectories solution of System \eqref{model} backward in time starting at $(p_{opt}^*,r_{opt}^*)$ with respectively $\alpha=0$ and $\alpha=1$. Given $\phi=\phi_0 \cup \phi_1$, we define $A_0$ and $A_1$ the regions above and below $\phi$ in the plane $(p,r)$. 
+
+
+\begin{equation}\label{control-opt}
+\begin{cases}
+\alpha(\hat{t})=0 \ \textrm{if} \ (\hat{p}(\hat{t}),\hat{r}(\hat{t}))\in A_0,\\
+\alpha(\hat{t})=1 \ \textrm{if} \ (\hat{p}(\hat{t}),\hat{r}(\hat{t}))\in A_1,\\
+\alpha(\hat{t})=\alpha_{opt} \ \textrm{if} \ (\hat{p}(\hat{t}),\hat{r}(\hat{t}))=(\hat{p}_{opt}^*,\hat{r}_{opt}^*).
+\end{cases}
+\end{equation}
+
+It is possible to show from an analysis of the adjoint system that, after the first switch, a trajectory with two consecutive switches in the regions $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}<\hat{p}_{opt}^*\}$ or $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}>\hat{p}_{opt}^*\}$ is not optimal. \textbf{COMMENT: IS THIS EVIDENT?} This is a first hint that the proposed control strategy is optimal. Moreover, our conjecture is also in line with the \textit{turnpike property}: \cite{trelat_turnpike_2015} have shown that, for a quite generic class of systems, the optimal strategy consists in staying on the optimal steady state (after a short transient).
+
+Finally, we numerically solved the optimal control problem by the direct method using the \texttt{bocop} software\cite{bonnans_bocop_2012}. A time discretization allows the optimal control problem to be transformed into a nonlinear optimization problem,
+solved here by interior point techniques.
+
+A discretization by a Lobatto IIIC formula (6th order) was used with 4000 time steps, and the relative tolerance for the NLP solver was set at $10^{-14}$.
+The optimal trajectories thus obtained are composed of a chattering arc followed by a steady state corresponding to the singular arc, as shown in Figure~\ref{fig:optimalcontrol} in the main text.
+The switching curve $\varphi(\hat{p})$ was computed from numerical simulations with different initial conditions. \textbf{COMMENT: NUMERICAL OPTIMIZATION FOR DIFFERENT ENVIRONMENTS?}
+
+It is important to stress that the optimization process was performed without any preliminary assumptions on the characteristics of the optimal trajectory. 
+The fact that the numerical solution verifies the Maximum Principle (\textit{i.e.}, the singular arc corresponds to the optimal steady state) and the Kelley condition (\textit{i.e.}, the presence of a chattering arc)
+tends to confirm that the control strategy of Eq.~\ref{control-opt} is optimal. As an aside, we note that due to the fact that numerical optimization was performed for a finite horizon, we actually obtained a second chattering arc escaping from the singular arc at the end of the simulation.  This is a classical property of the turnpike strategy: the optimal trajectory leaves the optimal steady state just before the end of the time interval of interest, in our case consuming almost all precursors. This arc was removed from the plot in Figure~\ref{fig:optimalcontrol}, because it does not occur with an infinite horizon and is therefore an artifact for the purpose of this study.
+
+\section{Feedback control strategies based on the system variables}
+\label{sec:supp_S4}
+
+\subsection{Static feedback controls of one variable}
+
+As described in the main text, one can describe the regulatory process of the microorganism by feedback control strategy, which sense variation in the system variables and adapt the resource allocation $\alpha$ accordingly.
+
+First, we assume that the allocation of resource is directly regulated just by one variable, e.g. the nondimensional concentration of precursors $\hat{p}$.
+In our settings, this corresponds to consider $\alpha(t)=h(\hat{p}(t))$, where $h:\mathbb{R}^+\rightarrow [0,1]$ is a function to be defined.
+In control theory, this function is said to be a static function of $\hat{p}$ (as opposed to, for instance, functions that could depend on the derivative or the integral of $\hat{p}$).
+Within this class of functions, we know from Eq.~\ref{eq:sup_alpha_mu_optimal_p} that $g(p)$ is the only control law that guarantees optimal steady-state:
+\begin{equation}
+\label{eq:supp_g}
+g(\hat{p}) = \frac{\hat{p}}{\hat{p} + \frac{K}{K + \hat{p}}(1+\hat{p})}.
+\end{equation}
+We prove this statement by contradiction. Assume a control law $h(\hat{p})$ different from $g(\hat{p})$, i.e. $\exists \tilde p \mid h(\tilde p)\neq g(\tilde p)$. At steady-state, $\dot r=0$ gives $r=h(\tilde p)$. Thus, we obtain with this control law a steady-state $(\tilde p,h(\tilde p))\neq(\tilde p,\gamma(\tilde p))$, i.e. which is not optimal, in contradiction with our statement.
+
+Similarly, using Eq.~\ref{eq:sup_alpha_optimal} we can show that $\alpha(t)=f(E_M(t))$ such that:
+\begin{equation}
+\label{eq:supp_f}
+f(E_M) = \frac{E_M + \sqrt{K E_M}}{E_M + 2\sqrt{KE_M} + 1}
+\end{equation}
+is the only control law using the environmental parameter $E_M$ that guarantees optimal steady-state.
+Figure~\ref{fig:regfunction} represents these function along biologically plausible approximation (hill-type functions).
+Note that in both cases, these control laws do not fulfill the conditions given by the Maximum Principle (whenever initial conditions are different from the optimal steady-state).
+Thus it is trivial that these control laws are not optimal.
+How far from the optimal these strategies performs is represented in Figure~\ref{fig:strategies}.
+
+\subsection{Static feedback controls of several variables: example of internal variables, \texorpdfstring{$\hat{p}$}{p} and \texorpdfstring{$\hat{r}$}{r}}

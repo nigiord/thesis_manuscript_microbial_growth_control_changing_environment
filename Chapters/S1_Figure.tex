@@ -1,0 +1,34 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{suppinfo_preambule}
+% Add an S1
+\renewcommand{\thefigure}{S1}%
+
+\usepackage{color} 
+\newcommand{\tr}[1]{{#1}}
+
+\begin{document}
+\begin{flushleft}
+{\Large
+\textbf\newline{\textbf{S1 Figure -- Simple control strategies for the self-replicator of bacterial growth\footnote{Supporting Information of "\input{title}"}}}
+}
+\newline
+\input{authors_affil}
+\end{flushleft}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\textwidth]{./Fig/plot_strategies.eps}
+\caption{
+\noindent\textit{A:} Nutrient-only strategy: $\alpha = f(E_M)$.
+The dashed, black curve is the (unique) strategy driving the system exactly to the optimal steady state, that is, the state in which growth occurs at the maximal rate supported by $E_M$.
+\tr{The function $f$ is defined by Eq.~\ref{eq:meth_f} in the \textit{Methods} section of the main text.}
+The solid, red curve is an approximation of this function by the simple Michaelis-Menten curve of Eq.~\ref{eq:MMApprox}, with $K_{mE} = 1.0$.
+\textit{B:} Precursor-only strategy: $\alpha = g(\hat{p})$.
+The dashed, black curve is the (unique) strategy driving the system exactly to the optimal steady state.
+\tr{The function $g$ is defined by Eq.~\ref{eq:meth_g} in the \textit{Methods} section of the main text.}
+The solid, red curve is an approximation of this function by the simple Hill curve of Eq.~\ref{eq:HillApprox}, with $K_{mp} = 0.06$ and a cooperativity coefficient 2.}
+\end{figure}
+
+
+\end{document}

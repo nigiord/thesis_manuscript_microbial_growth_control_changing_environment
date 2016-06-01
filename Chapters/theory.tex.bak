@@ -1,0 +1,13 @@
+\chapter{Dynamical Allocation of Cellular Resources as an Optimal Control Problem}
+\chaptermark{Optimal Control Problem}
+
+\section*{Summary of chapter \thechapter}
+In this section, we present the topic of microorganism growth, in particular the recent focus which is made on resource allocation, and discuss some of the limitations of those studies.
+We describe the self-replicator approach, and how we're going to apply it in dynamical conditions.
+
+\selectlanguage{french}
+\section*{Résumé du chapître \thechapter : [titre français]}
+dans cette section blablabla
+\selectlanguage{english}
+
+\include{Chapters/main_final}
