@@ -3,13 +3,16 @@
 
 \usepackage[a4paper]{meta-donnees} % University template
 \usepackage[utf8]{inputenc} % UTF-8 for accents
+\usepackage[T1]{fontenc} % UTF-8 for accents
 \usepackage[english,french]{babel} % for langages
 \usepackage{lipsum}
 %\usepackage{epigraph} % for quotations at the beginning of each chapter
 %\setlength{\epigraphwidth}{15cm}
 
 % amsmath and amssymb packages, useful for mathematical formulas and symbols
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+
+\usepackage{graphicx} % no idea but was needed by Francis
 
 % cite package, to clean up citations in the main text. Do not remove.
 \usepackage{cite}
@@ -43,57 +46,8 @@
 
 
 \begin{document}
-% les lignes en bas sont à insérer obligatoirement après \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             Commandes Meta-données               %%
-%%   à renseigner par les auteurs pour générer      %%
-%%     la couverture modèle Univ. Grenoble          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\Sethpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture horizontalement (valeur par défaut est -5.5mm)
-%\Setvpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture verticalement (valeur par défaut est -15.5mm)
-
-%\Universite{}    %%optionnel : à décommenter et à renseigenr si vous voulez changer le non d'université
-%\Grade{}         %%optionnel : à décommenter et à renseigenr si vous voulez changer le grade
-\Specialite{Biologie cellulaire }
-\Arrete{7 Ao\^ut 2006}
-\Auteur{Nils Giordano}
-\Directeur{Johannes Geiselmann}
-\CoDirecteur{Hidde de Jong}    %%optionnel : à décommenter et à renseigenr si présence d'un Co-directeur de thèse
-\Laboratoire{Laboratoire Interdisciplinaire de Physique}
-\EcoleDoctorale{Ecole doctorale Chimie et Science du Vivant}         
-\Titre{Growth regulation in \textit{Escherichia coli}: theoretical and experimental study by mean of cost-benefit models}
-%\Soustitre{}      %%optionnel : à décommenter et à renseigenr si présence d'un sous-titre de thèse
-\Depot{}       
-
-
-% Commande pour création de nouvelles catégories dans le jury:
-
-%\UGTNewJuryCategory{...NomDeLaCategorie...}{...Definition...}
-
-% Exemple \UGTNewJuryCategory{UGTFamille}{Membre de la famille} que nous ajoutons dans la commande \Jury ci-dessous sous la forme \UGTFamille{Jean Rousseau}{(...titre_et_affiliation...s'il_y_en_a...)}
-
-
-\Jury{
-\UGTPresident{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}
-%\UGTPresidente{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}
-
-\UGTRapporteur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}      %% 1er rapporteur
-\UGTRapporteur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}      %% second rapporteur
- 
-\UGTExaminateur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}     %% 1er examinateur
-\UGTExaminateur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}     %% second examinateur
-\UGTExaminatrice{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}    %% 3ème examinateur
-
-\UGTDirecteur{M, Johannes Geiselmann}{Professeur Université Joseph Fourier, LIPhy, Grenoble}       %% Directeur de thèse
-\UGTCoDirecteur{M, Hidde de Jong}{Directeur de recherche Inria, Grenoble -- Rhône-Alpes}     %% Co-Directeur de thèse s'il y en a
-
-\UGTInvite{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}
-\UGTInvitee{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}
-}
-
-\MakeUGthesePDG    %% très important pour générer la couverture de thèse
+\input{titlepage}
 
 \input{dedication}
 
@@ -112,6 +66,8 @@
 \input{Chapters/experiments}
 
 \input{Chapters/discussion}
+
+\bibliography{references}
 
 \end{document}
 
