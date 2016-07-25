@@ -7,7 +7,7 @@
 \select@language {english}
 \contentsline {section}{\numberline {1.1}Context and motivations}{11}{section.1.1}
 \contentsline {section}{\numberline {1.2}Problem statement}{12}{section.1.2}
-\contentsline {section}{\numberline {1.3}Related work}{12}{section.1.3}
+\contentsline {section}{\numberline {1.3}Related work}{13}{section.1.3}
 \contentsline {section}{\numberline {1.4}Approach}{13}{section.1.4}
 \contentsline {section}{\numberline {1.5}Organisation of the dissertation}{13}{section.1.5}
 \contentsline {chapter}{\numberline {2}Dynamical Allocation of Cellular Resources as an Optimal Control Problem: Novel Insights into Microbial Growth Strategies }{15}{chapter.2}
@@ -20,44 +20,44 @@
 \contentsline {section}{\numberline {2.5}Growth-rate maximization of the self-replicator reproduces bacterial growth laws}{23}{section.2.5}
 \contentsline {section}{\numberline {2.6}Biomass maximization as an optimal control problem}{26}{section.2.6}
 \contentsline {section}{\numberline {2.7}Solution of the optimal control problem}{27}{section.2.7}
-\contentsline {section}{\numberline {2.8}Simple feedback control strategies: exploiting information on nutrients or precursors}{30}{section.2.8}
-\contentsline {section}{\numberline {2.9}A near-optimal feedback control strategy: exploiting information on the imbalance between precursors and the gene expression machinery}{34}{section.2.9}
-\contentsline {section}{\numberline {2.10}Discussion}{37}{section.2.10}
-\contentsline {section}{\numberline {2.11}Methods}{42}{section.2.11}
-\contentsline {subsection}{\numberline {2.11.1}Steady-state analysis of model}{42}{subsection.2.11.1}
-\contentsline {subsection}{\numberline {2.11.2}Model fitting}{43}{subsection.2.11.2}
-\contentsline {subsection}{\numberline {2.11.3}Solution of optimal control problem}{44}{subsection.2.11.3}
-\contentsline {subsection}{\numberline {2.11.4}Specification and analysis of control strategies}{45}{subsection.2.11.4}
-\contentsline {section}{\numberline {2.12}S1 Text -- Model derivation and analysis}{47}{section.2.12}
-\contentsline {subsection}{\numberline {2.12.1}Model formulation}{47}{subsection.2.12.1}
-\contentsline {subsection}{\numberline {2.12.2}Nondimensionalization of the system}{48}{subsection.2.12.2}
-\contentsline {subsection}{\numberline {2.12.3}Steady-state growth of the self-replicator}{49}{subsection.2.12.3}
-\contentsline {subsection}{\numberline {2.12.4}Maximization of growth rate at steady state}{50}{subsection.2.12.4}
-\contentsline {subsection}{\numberline {2.12.5}Analysis of the control strategies}{51}{subsection.2.12.5}
-\contentsline {subsubsection}{Nutrient-only strategy}{51}{section*.5}
-\contentsline {subsection}{\numberline {2.12.6}Precursor-only strategy}{52}{subsection.2.12.6}
-\contentsline {subsection}{\numberline {2.12.7}On-off strategy}{54}{subsection.2.12.7}
-\contentsline {section}{\numberline {2.13}S2 Text -- Model parameters}{56}{section.2.13}
-\contentsline {section}{\numberline {2.14}S3 Text -- Solution of optimal control problem}{59}{section.2.14}
-\contentsline {subsection}{\numberline {2.14.1}Statement of the problem}{59}{subsection.2.14.1}
-\contentsline {subsection}{\numberline {2.14.2}Maximum Principle}{60}{subsection.2.14.2}
-\contentsline {subsection}{\numberline {2.14.3}Characterization of singular arcs}{61}{subsection.2.14.3}
-\contentsline {subsection}{\numberline {2.14.4}Analysis of the adjoint system}{61}{subsection.2.14.4}
-\contentsline {subsection}{\numberline {2.14.5}Optimal trajectories}{62}{subsection.2.14.5}
-\contentsline {section}{\numberline {2.15}S4 Text -- Kinetic model of the ppGpp system}{64}{section.2.15}
-\contentsline {section}{\numberline {2.16}S1 Table -- Parameter values of self-replicator model}{69}{section.2.16}
-\contentsline {section}{\numberline {2.17}S1 Figure -- Simple control strategies for the self-replicator of bacterial growth}{70}{section.2.17}
-\contentsline {chapter}{\numberline {3}Monitoring of Gene Expression Machinery during growth transitions}{71}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{72}{section.3.1}
-\contentsline {section}{\numberline {3.2}Methods}{72}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Strain design}{72}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Strain construction}{72}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Microfluidic device}{72}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Data analysis}{72}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Results}{72}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Model calibration}{72}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Bang-bang expression during transitions, as predicted}{73}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Discrepancies with the model and model adaptation}{73}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Discussion}{73}{section.3.4}
-\contentsline {section}{\numberline {3.5}Supporting Information}{73}{section.3.5}
-\contentsline {chapter}{\numberline {4}Discussion}{75}{chapter.4}
+\contentsline {section}{\numberline {2.8}Simple feedback control strategies: exploiting information on nutrients or precursors}{29}{section.2.8}
+\contentsline {section}{\numberline {2.9}A near-optimal feedback control strategy: exploiting information on the imbalance between precursors and the gene expression machinery}{32}{section.2.9}
+\contentsline {section}{\numberline {2.10}Discussion}{34}{section.2.10}
+\contentsline {section}{\numberline {2.11}Methods}{38}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Steady-state analysis of model}{38}{subsection.2.11.1}
+\contentsline {subsection}{\numberline {2.11.2}Model fitting}{39}{subsection.2.11.2}
+\contentsline {subsection}{\numberline {2.11.3}Solution of optimal control problem}{40}{subsection.2.11.3}
+\contentsline {subsection}{\numberline {2.11.4}Specification and analysis of control strategies}{41}{subsection.2.11.4}
+\contentsline {section}{\numberline {2.12}S1 Text -- Model derivation and analysis}{50}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Model formulation}{50}{subsection.2.12.1}
+\contentsline {subsection}{\numberline {2.12.2}Nondimensionalization of the system}{51}{subsection.2.12.2}
+\contentsline {subsection}{\numberline {2.12.3}Steady-state growth of the self-replicator}{52}{subsection.2.12.3}
+\contentsline {subsection}{\numberline {2.12.4}Maximization of growth rate at steady state}{53}{subsection.2.12.4}
+\contentsline {subsection}{\numberline {2.12.5}Analysis of the control strategies}{54}{subsection.2.12.5}
+\contentsline {subsubsection}{Nutrient-only strategy}{54}{section*.5}
+\contentsline {subsection}{\numberline {2.12.6}Precursor-only strategy}{55}{subsection.2.12.6}
+\contentsline {subsection}{\numberline {2.12.7}On-off strategy}{57}{subsection.2.12.7}
+\contentsline {section}{\numberline {2.13}S2 Text -- Model parameters}{59}{section.2.13}
+\contentsline {section}{\numberline {2.14}S3 Text -- Solution of optimal control problem}{62}{section.2.14}
+\contentsline {subsection}{\numberline {2.14.1}Statement of the problem}{62}{subsection.2.14.1}
+\contentsline {subsection}{\numberline {2.14.2}Maximum Principle}{63}{subsection.2.14.2}
+\contentsline {subsection}{\numberline {2.14.3}Characterization of singular arcs}{64}{subsection.2.14.3}
+\contentsline {subsection}{\numberline {2.14.4}Analysis of the adjoint system}{64}{subsection.2.14.4}
+\contentsline {subsection}{\numberline {2.14.5}Optimal trajectories}{65}{subsection.2.14.5}
+\contentsline {section}{\numberline {2.15}S4 Text -- Kinetic model of the ppGpp system}{67}{section.2.15}
+\contentsline {section}{\numberline {2.16}S1 Table -- Parameter values of self-replicator model}{72}{section.2.16}
+\contentsline {section}{\numberline {2.17}S1 Figure -- Simple control strategies for the self-replicator of bacterial growth}{73}{section.2.17}
+\contentsline {chapter}{\numberline {3}Monitoring of Gene Expression Machinery during growth transitions}{75}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{76}{section.3.1}
+\contentsline {section}{\numberline {3.2}Methods}{76}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Strain design}{76}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Strain construction}{76}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Microfluidic device}{76}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Data analysis}{76}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Results}{76}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Model calibration}{76}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Bang-bang expression during transitions, as predicted}{77}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Discrepancies with the model and model adaptation}{77}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Discussion}{77}{section.3.4}
+\contentsline {section}{\numberline {3.5}Supporting Information}{77}{section.3.5}
+\contentsline {chapter}{\numberline {4}Discussion}{79}{chapter.4}
