@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2016.2.4)  1 JUN 2016 11:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2016.3.3)  25 JUL 2016 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9k> and hyphenation patterns for 3 languages loaded.
+Babel <3.9k> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
@@ -272,6 +272,16 @@ File: babel.def 2014/03/24 3.9k Babel common definitions
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
 Language: frenchb 2014/03/14 v3.0b French support from the babel system
+\l@french = a dialect from \language\l@nohyphenation 
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `French' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=nohyphenation instead on input l
+ine 56.
+
 \l@acadian = a dialect from \language\l@french 
 \l@canadien = a dialect from \language\l@french 
 \FBcolonskip=\skip46
@@ -289,8 +299,7 @@ Package babel Info: Making ? an active character on input line 370.
 \labelwidthFB=\skip50
 \leftmarginFB=\skip51
 \parindentFFN=\dimen105
-))
-(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+)) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
@@ -592,7 +601,7 @@ LaTeX Info: Redefining \nameref on input line 48.
 \openout3 = `main.out'.
 
  (./titlepage.tex
-LaTeX Font Info:    Try loading font information for T1+phv on input line 51.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -603,46 +612,46 @@ File: logo_Univ_Grenoble.eps Graphic file (type eps)
 File: logo_first_ligne.eps Graphic file (type eps)
  <logo_first_ligne.eps>
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <16> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
 
-Underfull \hbox (badness 3219) in paragraph at lines 51--51
-[]\T1/phv/b/n/16 DOCTEUR DE la Com-mu-nauté UNI-VER-SITÉ
+Underfull \hbox (badness 3219) in paragraph at lines 52--52
+[]\T1/phv/b/n/16 DOCTEUR DE la Communauté UNIVERSITÉ
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <22> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-[]\T1/phv/b/n/22 Growth control in mi-croor-ga-
+Overfull \hbox (2.07947pt too wide) in paragraph at lines 52--52
+[]\T1/phv/b/n/22 Growth control in microorganisms :
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 51.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
 
-Overfull \hbox (18.42468pt too wide) in paragraph at lines 51--51
+Overfull \hbox (18.42468pt too wide) in paragraph at lines 52--52
 [][] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 51
+Underfull \vbox (badness 10000) detected at line 52
  []
 
 [1
@@ -654,7 +663,13 @@ Underfull \vbox (badness 10000) detected at line 51
 ]) (./abstract.tex
 [5] [6
 
-]) [7
+]
+Overfull \hbox (0.69177pt too wide) in paragraph at lines 8--8
+\T1/cmr/m/n/12 Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum s
+ociis natoque
+ []
+
+) [7
 
 ] [8
 
@@ -678,17 +693,17 @@ Overfull \hbox (382.89168pt too wide) in paragraph at lines 24--24
  [][] [] [][]  
  []
 
-
+[9]
 Overfull \hbox (75.21687pt too wide) in paragraph at lines 49--49
  [][] [] [][]  
  []
 
 
-Overfull \hbox (40.67523pt too wide) in paragraph at lines 50--50
+Overfull \hbox (56.04648pt too wide) in paragraph at lines 50--50
  [] [] []  
  []
 
-[9])
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -696,11 +711,7 @@ Overfull \hbox (40.67523pt too wide) in paragraph at lines 50--50
 Chapter 1.
 [11
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12])
-(./Chapters/theory.tex [13] [14
+] [12]) (./Chapters/theory.tex [13] [14
 
 ]
 Chapter 2.
@@ -831,11 +842,6 @@ Underfull \vbox (badness 1043) has occurred while \output is active []
 
  [38]
 [39] [40] [41] [42] [43] [44]
-Overfull \hbox (4.77591pt too wide) in paragraph at lines 731--731
-[]\T1/cmr/bx/n/17.28 Specification and anal-y-sis of con-trol strate-
- []
-
-
 Overfull \hbox (8.83131pt too wide) in paragraph at lines 736--737
 []\T1/cmr/m/n/12 For any given con-stant en-vi-ron-ment $\OML/cmm/m/it/12 E[]$\
 T1/cmr/m/n/12 , they drive the self-replicator
@@ -886,7 +892,11 @@ Overfull \hbox (34.748pt too wide) detected at line 1082
 
 [53]
 File: Fig/Fig_sliding.eps Graphic file (type eps)
- <Fig/Fig_sliding.eps> [54]
+ <Fig/Fig_sliding.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54] [55]
 Overfull \hbox (13.54846pt too wide) in paragraph at lines 1178--1180
 []\T1/cmr/m/n/12 Ref. [[][][][]] pro-vides a typ-i-cal value for such a re-ac-t
 ion, cat-alyzed by glutaminyl-
@@ -899,18 +909,18 @@ cmm/m/it/12 :\OT1/cmr/m/n/12 2$ \T1/cmr/m/n/12 s$[]$, in-di-cat-ing that on av-
 er-age 3.2 glutaminyl-
  []
 
-[55
+[56
 
-] [56] [57]
+] [57] [58]
 Overfull \hbox (1.72568pt too wide) in paragraph at lines 1243--1243
 []\T1/cmr/bx/n/17.28 S3 Text -- So-lu-tion of op-ti-mal con-trol prob-
  []
 
 
-LaTeX Warning: Reference `S1.eq:supp_growthrate_adim' on page 58 undefined on i
+LaTeX Warning: Reference `S1.eq:supp_growthrate_adim' on page 59 undefined on i
 nput line 1256.
 
-[58
+[59
 
 ]
 Overfull \hbox (18.71075pt too wide) in paragraph at lines 1302--1303
@@ -926,37 +936,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 1302--1303
 
  []
 
-[59]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 1329--1331
 
  []
 
-[60]
+[61]
 File: Fig/adj2ab.eps Graphic file (type eps)
  <Fig/adj2ab.eps>
 File: Fig/adj2.eps Graphic file (type eps)
- <Fig/adj2.eps>
-Underfull \vbox (badness 1292) has occurred while \output is active []
+ <Fig/adj2.eps> [62] [63]
 
- [61]
-[62]
-
-LaTeX Warning: Reference `S4.tab:notations' on page 63 undefined on input line 
+LaTeX Warning: Reference `S4.tab:notations' on page 64 undefined on input line 
 1388.
 
 
-LaTeX Warning: Reference `S4.tab:notations' on page 63 undefined on input line 
+LaTeX Warning: Reference `S4.tab:notations' on page 64 undefined on input line 
 1395.
 
-[63
+[64
 
-] [64]
+] [65]
 
-LaTeX Warning: Reference `S4.eq:rttot-f' on page 65 undefined on input line 146
+LaTeX Warning: Reference `S4.eq:rttot-f' on page 66 undefined on input line 146
 1.
 
 
-LaTeX Warning: Reference `S4.fig:ppGpp' on page 65 undefined on input line 1472
+LaTeX Warning: Reference `S4.fig:ppGpp' on page 66 undefined on input line 1472
 .
 
 File: ./Fig/FigS4-1.eps Graphic file (type eps)
@@ -964,38 +970,50 @@ File: ./Fig/FigS4-1.eps Graphic file (type eps)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[65] [66] [67]
+[66] [67] [68]
 Overfull \hbox (21.73697pt too wide) in paragraph at lines 1567--1567
 []\T1/cmr/bx/n/17.28 S1 Ta-ble -- Pa-ram-e-ter val-ues of self-replicator
  []
 
-[68
 
-]
-File: ./Fig/plot_strategies.eps Graphic file (type eps)
- <./Fig/plot_strategies.eps>) (./Chapters/experiments.tex
-Overfull \hbox (233.25072pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/12 2.21.  S1 FIGURE -- SIMPLE CONTROL STRATEGIES FOR THE SELF-REPL
-ICATOR OF BACTERIAL GROWTH \T1/cmr/m/n/12 69
+Overfull \hbox (27.14667pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/12 2.16.  S1 TABLE -- PARAMETER VALUES OF SELF-REPLICATOR MODEL \T
+1/cmr/m/n/12 69
  []
 
 [69
 
-] [70
+]
+File: ./Fig/plot_strategies.eps Graphic file (type eps)
+ <./Fig/plot_strategies.eps>) (./Chapters/experiments.tex [70
 
 ]
 Chapter 3.
-) (./Chapters/discussion.tex [71]
-Overfull \hbox (169.02725pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 72 \T1/cmr/m/sl/12 CHAPTER 3.  MONITORING GENE EXPRESSION MACHIN
-ERY DURING GROWTH TRANSITIONS
+
+Overfull \hbox (6.1449pt too wide) in paragraph at lines 19--20
+[]\T1/cmr/m/n/12 the sec-ond ex-per-i-ment might not work (poor precul-ture, de
+-vice plugged,
  []
 
-[72
+[71
+
+]
+Overfull \hbox (188.43925pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 72 \T1/cmr/m/sl/12 CHAPTER 3.  MONITORING OF GENE EXPRESSION MAC
+HINERY DURING GROWTH TRANSITIONS
+ []
+
+[72]) (./Chapters/discussion.tex [73]
+Overfull \hbox (188.43925pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 74 \T1/cmr/m/sl/12 CHAPTER 3.  MONITORING OF GENE EXPRESSION MAC
+HINERY DURING GROWTH TRANSITIONS
+ []
+
+[74
 
 ]
 Chapter 4.
-) (./main.bbl [73] [74
+) (./main.bbl [75] [76
 
 ]
 Underfull \hbox (badness 1147) in paragraph at lines 19--25
@@ -1003,7 +1021,7 @@ Underfull \hbox (badness 1147) in paragraph at lines 19--25
 
  []
 
-[75]
+[77]
 Underfull \hbox (badness 7030) in paragraph at lines 146--151
 []\T1/cmr/m/n/12 Fishov I, Zarit-sky A, Grover NB.  On mi-cro-bial states
  []
@@ -1031,7 +1049,7 @@ Underfull \hbox (badness 2213) in paragraph at lines 153--159
 ol-ogy. 2014 Jun;160(Pt6):1214--23.
  []
 
-[76]
+[78]
 Underfull \hbox (badness 1810) in paragraph at lines 238--244
 []\T1/cmr/m/n/12 Hauryliuk V, Atkin-son GC, Mu-rakami KS, Ten-son T, Gerdes
  []
@@ -1047,7 +1065,7 @@ Underfull \hbox (badness 3240) in paragraph at lines 238--244
 -309.
  []
 
-[77]
+[79]
 Underfull \hbox (badness 1484) in paragraph at lines 282--287
 []\T1/cmr/m/n/12 Schaechter M.  Pat-terns of cel-lu-lar con-trol dur-ing un-bal
 -anced
@@ -1068,7 +1086,7 @@ Underfull \hbox (badness 3907) in paragraph at lines 314--320
 []\T1/cmr/m/n/12 Deutscher J, Francke C, Postma PW.  How phos-pho-trans-
  []
 
-[78]
+[80]
 Underfull \hbox (badness 5622) in paragraph at lines 371--376
 []\T1/cmr/m/n/12 Scott M, Hwa T.  Bac-te-rial growth laws and their ap-
  []
@@ -1078,7 +1096,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 371--376
 \T1/cmr/m/n/12 pli-ca-tions.  Curr Opin Biotech-nol. 2011 Aug;22(4):559--65.
  []
 
-[79]
+[81]
 Underfull \hbox (badness 1009) in paragraph at lines 452--458
 \T1/cmr/m/n/12 trol of bac-te-rial home-osta-sis.  J Bac-te-riol. 2015;197(7):1
 146--56.
@@ -1117,7 +1135,7 @@ Underfull \hbox (badness 1097) in paragraph at lines 518--522
 []\T1/cmr/m/n/12 Duncombe TA, Ten-tori AM, Herr AE.  Mi-croflu-idics: re-fram-
  []
 
-[80]
+[82]
 Underfull \hbox (badness 1072) in paragraph at lines 577--582
 []\T1/cmr/m/n/12 Filippov AF.  Dif-fer-en-tial Equa-tions with Dis-con-tin-u-ou
 s Right-
@@ -1150,7 +1168,7 @@ Underfull \hbox (badness 2846) in paragraph at lines 599--605
 \T1/cmr/m/n/12 ics.  Proc Natl Acad Sci USA. 2004 Oct;101(40):14396--401.
  []
 
-[81]
+[83]
 Underfull \hbox (badness 2762) in paragraph at lines 637--642
 []\T1/cmr/m/n/12 Churchward G, Bre-mer H, Young R.  Macro-molec-u-lar com-
  []
@@ -1180,13 +1198,13 @@ Underfull \hbox (badness 4416) in paragraph at lines 652--658
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
- [82]
+ [84]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
  (./main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D460C9439DC8546916E9E83CCFE96B88;2573.
+(rerunfilecheck)             Checksum: 6ADF5ECFF014378DFC6D46861A7FE413;4467.
 
 
 LaTeX Warning: There were undefined references.
@@ -1194,12 +1212,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 7868 strings out of 495006
- 111835 string characters out of 6180763
- 303854 words of memory out of 5000000
- 10894 multiletter control sequences out of 15000+600000
- 43739 words of font info for 91 fonts, out of 8000000 for 9000
+ 7898 strings out of 495026
+ 112345 string characters out of 6181542
+ 306359 words of memory out of 5000000
+ 10914 multiletter control sequences out of 15000+600000
+ 45282 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,15n,32p,1087b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,32p,1087b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (82 pages, 438008 bytes).
+Output written on main.dvi (84 pages, 458848 bytes).

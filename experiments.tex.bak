@@ -1,9 +1,0 @@
-\chapter{Monitoring Gene Expression Machinery during growth transitions}
-
-This part is about the experiments. The preceding chapter made predictions about what should happen during transition if the micro-organisms actually optimize their biomass.
-I describe here the strain construction, the choices we made (fluorescent reporter, subunit, single cell/pop, etc), the strain caracterisation (measured growth, signal-to-noise ratio,
-the silly things mCherry was doing), and
-- Motivation
-- Methods
-- Results
-- Discussion
