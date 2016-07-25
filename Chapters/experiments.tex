@@ -1,9 +1,83 @@
-\chapter{Monitoring Gene Expression Machinery during growth transitions}
+\chapter{Monitoring of Gene Expression Machinery during growth transitions}
 
-This part is about the experiments. The preceding chapter made predictions about what should happen during transition if the micro-organisms actually optimize their biomass.
-I describe here the strain construction, the choices we made (fluorescent reporter, subunit, single cell/pop, etc), the strain caracterisation (measured growth, signal-to-noise ratio,
-the silly things mCherry was doing), and
-- Motivation
-- Methods
-- Results
-- Discussion
+Missing results as of today:
+\begin{itemize}
+\item manual segmentation of one well --> mean RFU per pixel per cell (2-3 days in the best case, it could be difficult to export schnitzcells data)
+\item semi-manual tracking of cells based on segmentation (hard to evaluate, will depend on schnitzcells performances, not optimistic)
+\item estimation of $\alpha$ and $\mu$ over time (2-3 days for calculation, 2-3 days for implementation). I need tracking for $\mu$, maybe not for $\alpha$
+\item make another experiments glu-sugar-glu (glycerol?), depends on Irina
+\item analyze this experiments (repeat steps above, will probably be faster if we manage to work everything out, but still takes time because it's manual)
+\item model modification to take into account the new data (5 days)
+\end{itemize}
+
+What could go wrong: everything. In particular:
+\begin{itemize}
+\item segmentation results could be impossible to export
+\item tracking might not work (schnitzcells not designed to handle massive cell disappearance)
+\item $\mu$ might be too noisy due to pixel size (note: image interpolation before segmentation might be a solution)
+\item what we saw on the rough analysis might just be an artefact (as Hans usually says "When it works the first time, something went horribly wrong.")
+\item the second experiment might not work (poor preculture, device plugged, out of focus overnight, medium contamination...)
+\end{itemize}
+
+Would everything go right, the chapter/article would be as follow.
+
+\section{Introduction}
+
+\begin{itemize}
+\item Understanding growth transitions is important, because so and so.
+\item We predicted earlier counter-intuitive bang-bang-singular behaviours for GEM during transition
+\item But we're missing experimental data on what really happens in real cells during these transitions (quick review of available data)
+\item We fix it by making a strain with fluorescent ribosomes and monitoring ribosome abundance during growth transitions in a microfluidic device.
+\end{itemize}
+
+\section{Methods}
+
+\subsection{Strain design}
+
+We used rpsB, GFP, and a chromosomic construction because so and so.
+
+\subsection{Strain construction}
+
+We used Gibson assembly, Kan-pbad-ccdb, etc and obtain the following sequence.
+
+\subsection{Microfluidic device}
+
+Mother machine because needed to change the medium, single cell data because asynchronization etc.
+
+\subsection{Data analysis}
+
+We used this and that to analyze the microscopic images.
+We applied the following corrections.
+
+\section{Results}
+
+\subsection{Model calibration}
+
+We want to get $\alpha (t)$ during a transition. We show that $\alpha$ can be obtained if we measure so and so.
+
+\subsection{Bang-bang expression during transitions, as predicted}
+
+One stunning figure that show the RFU / cell / pixels, and the predicted $\alpha$ for the glucose-acetate transition.
+
+\subsection{Discrepancies with the model and model adaptation}
+
+The growth rate stalls after the addition of glucose, which was not originally predicted by the model.
+This is because so and so.
+This can be taken into account if we add another sector (M1 and M2).
+This raises a new interesting question : during the transition amino-acids drop, so the cell should produce ribosomes, but it also need to produce the new enzymes to actually be able to perform metabolism.
+We thus have competition between several layers of regulation, which can be added to the model by doing so and so.
+
+\section{Discussion}
+
+More research need to be done.
+
+Could be interesting to use transitions for syn bio purposes.
+Could be interesting to validate such results in different microorganisms, with different type of medium (fast env, slow env, etc)
+
+\section{Supporting Information}
+
+\begin{itemize}
+\item Strain validation (signal-to-noise ratio, growth rate not hampered in microplate reader)
+\item Primers used for gibson assembly
+\item Difference between mCherry and GFP (mCherry not good because so and so, GFP was chosen)
+\end{itemize}

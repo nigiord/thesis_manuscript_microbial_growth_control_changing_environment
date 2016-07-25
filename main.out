@@ -16,15 +16,39 @@
 \BOOKMARK [1][-]{section.2.9}{A near-optimal feedback control strategy: exploiting information on the imbalance between precursors and the gene expression machinery}{chapter.2}% 16
 \BOOKMARK [1][-]{section.2.10}{Discussion}{chapter.2}% 17
 \BOOKMARK [1][-]{section.2.11}{Methods}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.12}{Steady-state analysis of model}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.13}{Model fitting}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.14}{Solution of optimal control problem}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.15}{Specification and analysis of control strategies}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.16}{S1 Text \205 Model derivation and analysis}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.17}{S2 Text \205 Model parameters}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.18}{S3 Text \205 Solution of optimal control problem}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.19}{S4 Text \205 Kinetic model of the ppGpp system}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.20}{S1 Table \205 Parameter values of self-replicator model}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.21}{S1 Figure \205 Simple control strategies for the self-replicator of bacterial growth}{chapter.2}% 28
-\BOOKMARK [0][-]{chapter.3}{Monitoring Gene Expression Machinery during growth transitions}{}% 29
-\BOOKMARK [0][-]{chapter.4}{Discussion}{}% 30
+\BOOKMARK [2][-]{subsection.2.11.1}{Steady-state analysis of model}{section.2.11}% 19
+\BOOKMARK [2][-]{subsection.2.11.2}{Model fitting}{section.2.11}% 20
+\BOOKMARK [2][-]{subsection.2.11.3}{Solution of optimal control problem}{section.2.11}% 21
+\BOOKMARK [2][-]{subsection.2.11.4}{Specification and analysis of control strategies}{section.2.11}% 22
+\BOOKMARK [1][-]{section.2.12}{S1 Text \205 Model derivation and analysis}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.12.1}{Model formulation}{section.2.12}% 24
+\BOOKMARK [2][-]{subsection.2.12.2}{Nondimensionalization of the system}{section.2.12}% 25
+\BOOKMARK [2][-]{subsection.2.12.3}{Steady-state growth of the self-replicator}{section.2.12}% 26
+\BOOKMARK [2][-]{subsection.2.12.4}{Maximization of growth rate at steady state}{section.2.12}% 27
+\BOOKMARK [2][-]{subsection.2.12.5}{Analysis of the control strategies}{section.2.12}% 28
+\BOOKMARK [2][-]{subsection.2.12.6}{Precursor-only strategy}{section.2.12}% 29
+\BOOKMARK [2][-]{subsection.2.12.7}{On-off strategy}{section.2.12}% 30
+\BOOKMARK [1][-]{section.2.13}{S2 Text \205 Model parameters}{chapter.2}% 31
+\BOOKMARK [1][-]{section.2.14}{S3 Text \205 Solution of optimal control problem}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.14.1}{Statement of the problem}{section.2.14}% 33
+\BOOKMARK [2][-]{subsection.2.14.2}{Maximum Principle}{section.2.14}% 34
+\BOOKMARK [2][-]{subsection.2.14.3}{Characterization of singular arcs}{section.2.14}% 35
+\BOOKMARK [2][-]{subsection.2.14.4}{Analysis of the adjoint system}{section.2.14}% 36
+\BOOKMARK [2][-]{subsection.2.14.5}{Optimal trajectories}{section.2.14}% 37
+\BOOKMARK [1][-]{section.2.15}{S4 Text \205 Kinetic model of the ppGpp system}{chapter.2}% 38
+\BOOKMARK [1][-]{section.2.16}{S1 Table \205 Parameter values of self-replicator model}{chapter.2}% 39
+\BOOKMARK [1][-]{section.2.17}{S1 Figure \205 Simple control strategies for the self-replicator of bacterial growth}{chapter.2}% 40
+\BOOKMARK [0][-]{chapter.3}{Monitoring of Gene Expression Machinery during growth transitions}{}% 41
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.2.1}{Strain design}{section.3.2}% 44
+\BOOKMARK [2][-]{subsection.3.2.2}{Strain construction}{section.3.2}% 45
+\BOOKMARK [2][-]{subsection.3.2.3}{Microfluidic device}{section.3.2}% 46
+\BOOKMARK [2][-]{subsection.3.2.4}{Data analysis}{section.3.2}% 47
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 48
+\BOOKMARK [2][-]{subsection.3.3.1}{Model calibration}{section.3.3}% 49
+\BOOKMARK [2][-]{subsection.3.3.2}{Bang-bang expression during transitions, as predicted}{section.3.3}% 50
+\BOOKMARK [2][-]{subsection.3.3.3}{Discrepancies with the model and model adaptation}{section.3.3}% 51
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 52
+\BOOKMARK [1][-]{section.3.5}{Supporting Information}{chapter.3}% 53
+\BOOKMARK [0][-]{chapter.4}{Discussion}{}% 54
