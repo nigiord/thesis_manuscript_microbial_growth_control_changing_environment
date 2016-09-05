@@ -1,50 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-The style file: plos2015.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+The style file: unsrt.bst
 Database file #1: references.bib
-You've used 90 entries,
-            3170 wiz_defined-function locations,
-            1235 strings with 24312 characters,
-and the built_in function-call counts, 177784 in all, are:
-= -- 22599
-> -- 1288
-< -- 7
-+ -- 913
-- -- 321
-* -- 15016
-:= -- 18952
-add.period$ -- 433
-call.type$ -- 90
-change.case$ -- 13
-chr.to.int$ -- 12
-cite$ -- 90
-duplicate$ -- 14646
-empty$ -- 16886
-format.name$ -- 401
-if$ -- 41649
+Warning--empty institution in bonnans_bocop_2012
+You've used 101 entries,
+            1791 wiz_defined-function locations,
+            1030 strings with 22640 characters,
+and the built_in function-call counts, 25362 in all, are:
+= -- 2241
+> -- 1328
+< -- 3
++ -- 481
+- -- 380
+* -- 2192
+:= -- 4137
+add.period$ -- 308
+call.type$ -- 101
+change.case$ -- 98
+chr.to.int$ -- 0
+cite$ -- 102
+duplicate$ -- 949
+empty$ -- 2308
+format.name$ -- 380
+if$ -- 5376
 int.to.chr$ -- 0
-int.to.str$ -- 90
-missing$ -- 1016
-newline$ -- 532
-num.names$ -- 96
-pop$ -- 1796
+int.to.str$ -- 101
+missing$ -- 105
+newline$ -- 510
+num.names$ -- 107
+pop$ -- 153
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1683
+skip$ -- 351
 stack$ -- 0
-substring$ -- 34538
-swap$ -- 2546
+substring$ -- 2014
+swap$ -- 131
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 925
-width$ -- 92
-write$ -- 1150
+warning$ -- 1
+while$ -- 279
+width$ -- 104
+write$ -- 1118
+(There was 1 warning)
