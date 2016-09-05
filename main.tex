@@ -12,16 +12,16 @@
 % amsmath and amssymb packages, useful for mathematical formulas and symbols
 \usepackage{amsmath,amssymb,amsfonts,mathrsfs}
 
-\usepackage{graphicx} % no idea but was needed by Francis
+\usepackage{graphicx} % no idea but was needed in the suppinfo of chapter 2
 
-% cite package, to clean up citations in the main text. Do not remove.
+% cite package, to clean up citations in the main text.
 \usepackage{cite}
 
 % Use nameref to cite supporting information files (see Supporting Information section for more info)
 \usepackage{nameref,hyperref}
 
-% Use the PLoS provided BiBTeX style
-\bibliographystyle{plos2015}
+% BiBTeX style
+\bibliographystyle{unsrt}
 
 % Remove brackets from numbering in List of References
 \makeatletter
@@ -29,7 +29,7 @@
 \makeatother
 
 
-% CUSTOM ENV
+%%%%%%%%%%% Custom environment %%%%%%%%%%%
 \newenvironment{acknowledgements}{
 \newpage
 \null \vspace{\stretch{1}}
@@ -42,8 +42,11 @@
 \begin{center}\bfseries \abstractname \end{center}
 }
 {\vfill \null}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%% Custom commands %%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="8.0285645cm"
+   height="6.6755724cm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="growth_curve.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path3764"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3761"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="150.47287"
+     inkscape:cy="107.73783"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="981"
+     inkscape:window-x="0"
+     inkscape:window-y="41"
+     inkscape:window-maximized="1"
+     units="cm" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-129.48558,-218.17646)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="m 163.64471,219.99649 0,213.14218 248.49753,0"
+       id="path2987"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 163.57143,422.36218 51.38484,-0.37265 c 8.61997,-0.0625 17.58511,-9.18199 24.18045,-24.28325 l 59.58536,-136.43164 c 4.25145,-9.73449 10.59129,-14.83855 16.09246,-14.79157 9.34593,0.0798 77.14286,0 77.14286,0"
+       id="path4387"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssc" />
+    <path
+       style="fill:none;stroke:#009600;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 8;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 163.75,287.59699 50.41226,0 c 81.45005,0 85.39951,85.03716 84.2306,145.05156"
+       id="path4387-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4407"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(22.431253,-9.2650828)"><flowRegion
+         id="flowRegion4409"><rect
+           id="rect4411"
+           width="143.36496"
+           height="38.035603"
+           x="230.16415"
+           y="444.76782"
+           style="font-size:20px;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px" /></flowRegion><flowPara
+         id="flowPara4413">Time</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4407-4"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0.5px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,-1,1,0,-319.452,610.11964)"><flowRegion
+         id="flowRegion4409-8"><rect
+           id="rect4411-1"
+           width="125.81007"
+           height="24.869452"
+           x="230.16415"
+           y="444.76782"
+           style="font-size:20px;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0.5px" /></flowRegion><flowPara
+         style="letter-spacing:0px"
+         id="flowPara4165">Biomass (log)</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4407-4-8"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0.5px;word-spacing:0px;fill:#009600;fill-opacity:1;stroke:none"
+       transform="translate(74.666772,-34.841807)"><flowRegion
+         id="flowRegion4409-8-7"><rect
+           id="rect4411-1-5"
+           width="143.36496"
+           height="38.035603"
+           x="230.16415"
+           y="444.76782"
+           style="font-size:20px;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0.5px;fill:#009600;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara4413-6-0"
+         style="letter-spacing:0px;fill:#009600;fill-opacity:1">Nutrients</flowPara><flowPara
+         style="letter-spacing:0px;fill:#009600;fill-opacity:1"
+         id="flowPara3001" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4196"
+       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(385.14471,314.67149)"><flowRegion
+         id="flowRegion4198"><rect
+           id="rect4200"
+           width="116"
+           height="106.5"
+           x="-210"
+           y="84.054672"
+           style="font-size:25px" /></flowRegion><flowPara
+         id="flowPara4202"
+         style="font-size:18.75px">(A)</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4196-7"
+       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(455.84027,211.58966)"><flowRegion
+         id="flowRegion4198-5"><rect
+           id="rect4200-3"
+           width="116"
+           height="106.5"
+           x="-210"
+           y="84.054672"
+           style="font-size:25px" /></flowRegion><flowPara
+         id="flowPara4202-5"
+         style="font-size:18.75px">(B)</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4196-6"
+       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(576.34027,137.58966)"><flowRegion
+         id="flowRegion4198-2"><rect
+           id="rect4200-9"
+           width="116"
+           height="106.5"
+           x="-210"
+           y="84.054672"
+           style="font-size:25px" /></flowRegion><flowPara
+         id="flowPara4202-1"
+         style="font-size:18.75px">(C)</flowPara></flowRoot>  </g>
+</svg>

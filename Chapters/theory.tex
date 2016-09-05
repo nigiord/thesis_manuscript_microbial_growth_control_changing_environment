@@ -1,16 +1,9 @@
 \chapter{Dynamical Allocation of Cellular Resources as an Optimal Control Problem: Novel Insights into Microbial Growth Strategies }
 \chaptermark{Dynamical allocation of cell resources}
 
-\selectlanguage{french}
-\section*{Résumé du chapître \thechapter : [titre français]}
-dans cette section blablabla
-\selectlanguage{english}
+\textit{Rather than propose a new theory or unearth a new fact, often the most important contribution a scientist can make is to discover a new way of seeing old theories or facts.} -- Richard Dawkins, \textit{The Selfish Gene}, preface to 1989 edition.
 
-{\Large
-\textbf\newline{\textbf{}}
-}
-
-\section{Abstract}
+\section*{Summary of chapter \thechapter}
 Microbial physiology exhibits growth laws that relate the macromolecular composition of the cell to the growth rate.
 Recent work has shown that these empirical regularities can be derived from coarse-grained models of resource allocation.
 While these studies focus on steady-state growth, such conditions are rarely found in natural habitats, where microorganisms are continually challenged by environmental fluctuations.
@@ -22,6 +15,12 @@ A near-optimal control strategy in dynamical conditions is shown to require info
 Interestingly, this strategy has structural analogies with the regulation of ribosomal protein synthesis by ppGpp in the enterobacterium \textit{Escherichia coli}.
 It involves sensing a mismatch between precursor and ribosome concentrations, as well as the adjustment of ribosome synthesis in a switch-like manner.
 Our results show how the capability of regulatory systems to integrate information about several physiological variables is critical for optimizing growth in a changing environment. 
+
+\selectlanguage{french}
+\section*{Résumé du chapître \thechapter : [titre français]}
+dans cette section blablabla
+\selectlanguage{english}
+
 
 %%%%%% CORE OF THE ARTICLE %%%%%
 \section{Introduction}
@@ -87,7 +86,7 @@ From a methodological point of view, our study illustrates how optimal control t
 
 \section{Results}
 
-\section{Self-replicator model of resource allocation}
+\subsection{Self-replicator model of resource allocation}
 \label{sec:model}
 
 Resource allocation in bacteria involves the distribution of cellular resources (precursor metabolites and energy) over processes supporting maintenance and growth~\cite{schaechter_microbe_2006}.
@@ -182,7 +181,7 @@ However, it should be emphasized that the conclusions of this paper do not depen
 An interesting property of the model is that it is built on minimal assumptions, basically the two macroreactions and the definition of the volume as proportional to the total mass of macromolecules.
 Like in~\cite{molenaar_shifts_2009,pavlov_optimal_2013,scott_emergence_2014}, these assumptions directly lead to the expression of the growth rate in Eq.~\ref{eq:growthrate}, without additional assumptions.
 
-\section{Growth-rate maximization of the self-replicator reproduces bacterial growth laws}
+\subsection{Growth-rate maximization of the self-replicator reproduces bacterial growth laws}
 \label{sec:growthlaws}
 
 The nullcline for $r$ is given by $r=0$, $r=\alpha/\beta$, and $p=0$, while the nullcline for $p$ is defined by
@@ -251,7 +250,7 @@ Second, while it predicts which value of $\alpha$ is optimal at steady state, th
 In other words, how could bacterial cells use sensors of changes in their internal state and the environment to optimally adjust $\alpha$?
 In what follows, we will address the above two questions, after having given a precise statement of the problem of optimal resource allocation in a dynamical environment in the next section. 
 
-\section{Biomass maximization as an optimal control problem}
+\subsection{Biomass maximization as an optimal control problem}
 \label{sec:optimalcontrolproblem}
 
 A self-replicator at steady state accumulates biomass according to $\texttt{Vol}(0)\, e^{\mu^*\, t}$, $t\in [0,\tau]$, when $\mu^*$ is the growth rate at steady state. 
@@ -287,7 +286,7 @@ More specifically, we focus on the case of a nutrient upshift, corresponding to 
 This upshift scenario corresponds to classical experiments in bacterial physiology~\cite{kjeldgaard_kinetics_1961,schaechter_patterns_1961,johnsen_control_1977}, reviewed in~\cite{ehrenberg_mediumdependent_2012}, and is frequently encountered in the life cycle of a microorganism~\cite{schaechter_microbe_2006}.
 Notice that more complex environments can be approximated by a sequence of step-wise nutrient upshifts and downshifts.
 
-\section{Solution of the optimal control problem}
+\subsection{Solution of the optimal control problem}
 \label{sec:optimalcontrolsolution}
 
 Optimal dynamical control problems for two-dimensional nonlinear dynamical systems, like the problem of Eq.~\ref{eq:J}, are generally difficult to solve.
@@ -356,7 +355,7 @@ In order to answer this question, we will investigate in the next two sections t
 Although the idealized solution proposed by optimal control theory will obviously not be found in nature, actual control strategies may produce solutions that are close.
 The optimal solution can thus be used as a gold standard, a benchmark for comparing actual control strategies. 
 
-\section{Simple feedback control strategies: exploiting information on nutrients or precursors}
+\subsection{Simple feedback control strategies: exploiting information on nutrients or precursors}
 \label{sec:steadystate}
 
 The control strategies that microbial cells have evolved to bring resource allocation in line with changes in the environment involve a variety of molecular mechanisms~\cite{chubukov_coordination_2014}.
@@ -472,7 +471,7 @@ While the precursor-only strategy is thus seen to lead to good results, Fig.~\re
 It seems reasonable to expect that control strategies exploiting information of not just a single variable, but several variables simultaneously, could further improve the performance of the self-replicator during a growth transition.
 
 
-\section{A near-optimal feedback control strategy: exploiting information on the imbalance between precursors and the gene expression machinery}
+\subsection{A near-optimal feedback control strategy: exploiting information on the imbalance between precursors and the gene expression machinery}
 \label{sec:strategies}
 
 In the quest for further improvements, a natural starting-point would be to consider the curve defining the optimal steady states $(\hat{p}^*_{opt},\hat{r}^*_{opt})$  for different environments $E_M$.
