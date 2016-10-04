@@ -18,113 +18,114 @@ Dans cette section...
 \subsection{Self-replication is a resource allocation problem}
 
 At every moment of our lives, we are surrounded by billions of microscopic organisms.
-Sometimes beneficial, sometimes harmful, these small factories grab and use energy from their environment, in the form of organic matter, highly reactive chemicals, or light [citation trophic].
-While most cells in our body are kept in a stable and friendly micro-environment (temperature, oxygenation, nutrient abundance...), microorganisms made the evolutionary choice to constantly adapt their physiology to a strongly variable environment.
-Microbes have been found to evolve almost everywhere, sometimes in the strangest places that were initially thought unsuitable for life [citation deep water bacteria, citation bacteria in space, citation review bacterial diversity].
-Closer to us, the model organism \textit{Escherichia coli}, a bacteria first isolated from our intestinal track, is capable of growing on dozens of different sugars through changes in the expression of thousands of genes [find a citation here].
+Sometimes beneficial, sometimes harmful, these small factories collect and use energy from their environment, in the form of organic matter, highly reactive chemicals, or light [citation trophic].
+While most cells in our body are kept in a stable and friendly micro-environment (temperature, oxygenation, nutrient abundance, ...), microorganisms have evolved to constantly adapt their physiology to a strongly variable environment.
+Microbes are found almost everywhere, sometimes in the strangest places that were initially thought unsuitable for life [citation deep water bacteria, citation bacteria in space, citation review bacterial diversity].
+Closer to us, the model organism \textit{Escherichia coli}, a bacteria first isolated from our intestinal track, is capable of growing on dozens of different sugars through changes in the expression of thousands of genes\cite{zimmer_microcosm:_2009}.
 
-Polymers make the most of the organic molecules that constitute a living cell.
-They are constituted of many repeated similar sub-units (monomers), but not necessarily identical.
-There is about 20 versions of amino-acids that constitute the proteins, and 5 versions of the nucleobases found in the (desoxy-)ribonucleotids that constitute RNA and DNA (the famous A, T, C, G letters and the extra U that is only found in RNA).
+Polymers are the most abundant organic molecules that constitute a living cell.
+They consist of many repeated similar sub-units (monomers).
+There are about 20 different amino acids in the proteins, and 5 different nucleobases in the (desoxy-)ribonucleotids that constitute RNA and DNA (the famous A, T, C, G letters and the extra U only found in RNA).
 The information about their sequence is stored in the form of genes on the DNA.
 The process by which this information is used in the synthesis of a functional final product (protein or RNA) is called gene expression.
-A cell can produce as much proteins as it carries genes.
 Each gene contains a target sequence that allows the gene expression machinery to recognize it and start the synthesis of its product.
 This sequence is called a promoter.
-Without any regulation, the gene expression machinery would bind on every promoter, producing every possible gene product in every condition.
+If every promoter were the same, all genes would be expressed at the same level.
 That of course does not happen.
-Some promoters are stronger than others, and would in this condition monopolize all the available gene expression machinery.
-Furthermore, there exist gene products that bind the promoter region of genes (transcription factors), stimulating or inhibiting the binding of the gene expression machinery.
+In practice, some promoters are stronger than others, and attracts more of the available transcriptional machinery.
+Furthermore, there exist gene products that bind the promoter region of genes (transcription factors), stimulating or inhibiting the promoter affinity, hence the gene expression.
 This simple mechanism, among others, allows the regulation of cell composition.
 
-The reorganization of gene expression controls the abundance of enzymes and ribozymes that catalyzes the biochemical reactions that allow the cell to perform different functions.
-For instance, assimilating a given nutrient involves the synthesis of the corresponding uptake protein and of the metabolic enzymes that convert it into reductive power, nucleotids and amino-acids~\cite{schaechter_microbe_2006}.
+The reorganization of gene expression controls the abundance of enzymes and ribozymes that catalyzes the biochemical reactions allowing the cell to perform different functions.
+For instance, assimilating a given nutrient involves the synthesis of the corresponding uptake protein and of the metabolic enzymes converting the nutrients into reductive power, nucleotids and amino acids~\cite{schaechter_microbe_2006}.
 These precursors are then used to produce new macromolecules, closing the loop of self-replication.
-In order to optimize the overall process, the cell must adjust the abundance of every enzyme implicated in this network of biochemical reactions.
-By doing so, the cell actually resolves a resource allocation problem, where a common wealth (precursors) has to be divided between thousand of potential candidates (proteins and other macromolecules).
+In order to optimize the overall process, the cell must adjust the abundance of every enzyme involved in this network of biochemical reactions.
+By doing so, the cell actually resolves a resource allocation problem, where a common wealth (precursors) has to be distributed over thousands of potential beneficiaries (proteins and other macromolecules).
 
 \subsection{Optimizing biomass production yields a competitive advantage}
 
-Like most life strategies, solving the cell composition problem lays on finding an optimum.
-How to allocate resources in order to optimize some criteria?
-Under Darwin's theory, the optimization criteria of living systems are called fitness factors, and measure how much an organism fit to a given environment.
-They take into account the ability to survive and reproduce based on the adaptation to the environment and the competition with other organisms.
-Overall, they are usually countless and measure the long-term stability of a species in an environment~\cite{dawkins_selfish_1976}.
+What is the optimal allocation of precursors for a living cell?
+Under Darwin's theory, the optimization criteria of living systems are called fitness factors, and measure to which extend an organism fits into a given environment.
+Fitness factors take into account the ability to survive and reproduce based on the adaptation to the environment and the competition with other organisms.
+Whether fitness factors apply at the species, the population, the organism, or even the gene level is still highly debated~\cite{dawkins_selfish_1976}.
+This makes their clear identification highly difficult, even for organisms living an apparently simple life.
 
-There is no consensus about what constitutes the main fitness factors of microorganisms.
-Competition for common resources seems to favor the maximization of the offspring, in the principle that a replicator with more descendants will outnumber its competitors on the long term~\cite{dawkins_selfish_1976}.
-It is however unclear how this principle translates into the physiological behavior of microorganisms.
+For this reason, there is no consensus about what constitute the main fitness factors of microorganisms.
+Competition for common resources seems to favor the maximization of offspring, in the sense that a replicator with more descendants will outnumber its competitors in the long term~\cite{dawkins_selfish_1976}.
+It is unclear, however, how this principle translates into the physiological behavior of microorganisms.
 For instance, metabolic networks seems to either maximize ATP or biomass yield depending on the environmental condition, a result obtained by looking at the predicting power of genome-scale metabolic networks~\cite{schuetz_systematic_2007}.
-But the yield is not an universal measure, because in fluctuating or limited environments, evolution seems to favor bacteria with a high rate of nutrient assimilation, instead of a high yield of transformation even though it would favor the net biomass production of the population~\cite{frank_tradeoff_2010,maclean_tragedy_2008}, a result that has also been confirmed in yeast~\cite{schuster_maximization_2008}.
-Overall, it seems that cell optimality drift in a multidimensional space made of several trade-offs that strongly depend on the environmental context~\cite{schuetz_multidimensional_2012}.
+But, yield is not an universal fitness factor, because in fluctuating or limited environments, evolution seems to favor bacteria with a high rate of nutrient assimilation, instead of a high yield of transformation even though it would favor the net biomass production of the population~\cite{frank_tradeoff_2010,maclean_tragedy_2008}, a result that has also been confirmed in yeast~\cite{schuster_maximization_2008}.
+Overall, it seems that cell optimality drifts in a multidimensional space and involves making several trade-offs that strongly depend on the environmental context~\cite{schuetz_multidimensional_2012}.
 
 Nevertheless, numerous studies have shown that considering growth rate maximization confers a good predictive power of microorganism physiology.
-Uptake rates of \textit{Escherichia coli} growing on acetate or succinate are correctly predicted by considering its metabolic network operates in a mode that maximizes growth~\cite{edwards_silico_2001}.
-For carbon sources or strains for which the predictions initialy fail, the metabolic network evolves rapidly towards growth maximization if a constant nutrient-providing environment is maintained~\cite{ibarra_escherichia_2002}.
-This result reflects that an organism cannot be adapted to all possible environment, but the short-term at which these mutants are obtained ($\sim$ 400 generations) indicate a strong selective pressure for growth in these conditions~\cite{molenaar_shifts_2009}.
-The mutants obtained present modications in the regulation of the synthesis of metabolic enzymes~\cite{lewis_omic_2010}, indicating that not solely the efficiency of the implicated enzymes is affected, but also necessarily the cell composition.
+Uptake rates of \textit{Escherichia coli} growing on acetate or succinate are correctly predicted by assuming that its metabolic network operates in a mode that maximizes growth~\cite{edwards_silico_2001}.
+This result is not general and can initially fail for other carbon sources or strain~ \cite{ibarra_escherichia_2002}.
+But even in those cases, the metabolic networks evolve rapidly towards growth maximization if a constant nutrient-providing environment is maintained~\cite{ibarra_escherichia_2002}.
+The mutants obtained present modications in the regulation of the synthesis of metabolic enzymes~\cite{lewis_omic_2010}, indicating that not solely the efficiency of the enzymes is affected, but also as a consequence the cellular composition.
 Overall, when focusing on growth, growth rate maximization sounds like a rational choice to understand the growth strategies of microorganisms~\cite{molenaar_shifts_2009}.
 
 \subsection{Growth laws are universal strategies employed by microorganisms}
 
-One of the conclusion of the preceding part is that the fitness factors that shape growth strategies are rather general, if not universally shared among microorganisms.
-If microorganism physiology is determined by these optimization criteria, we would expect to find universal regularities in the way physiology adapts to the environment.
+One of the conclusions of the preceding section is that growth rate maximization is a rather general principle of microbial life.
+Would microbial physiology be determined by this criteria, we could expect to find universal regularities in the way physiology adapts to the environment.
 Are there fundamental laws that control the physiological parameters of microorganisms, or self-replication as a whole?
 
 The most emblematic effort to formalize microorganism growth by coarse-grained modelling is the discovery of Monod's law more than sixty years ago~\cite{monod_growth_1949}.
-This empirical relationship initially states that the growth rate $R$ [\texttt{div.h\textsuperscript{-1}}] of \textit{Escherichia coli} is a hyperbolic function of the concentration of the limiting nutrient $C$ [\texttt{mol.L\textsuperscript{-1}}], such that
+This empirical relationship states that the growth rate $\mu$ [\texttt{div.h\textsuperscript{-1}}] of \textit{Escherichia coli} is a hyperbolic function of the concentration of the limiting nutrient $C$ [\texttt{mol.L\textsuperscript{-1}}], such that
 \begin{equation}
 \label{eq:monod_law}
-R = R_K \frac{C}{C_1 + C}
+\mu = \mu_K \frac{C}{K_C + C}
 \end{equation}
-with $R_K$ and $C_1$ two constants depending on the quality of the nutrient (Fig~\ref{fig:monod_law}).
+with $\mu_K$ and $K_C$ two constants depending on the quality of the nutrient (Fig~\ref{fig:monod_law}).
 It is remarkable that the growth rate, a parameter that depends on the use and production of thousands of proteins, can be so easily predicted by a simple relation.
 What is even more remarkable is that this relation is rather universal.
-Despite some adjustments (the Droop's model being a famous one~\cite{droop_thoughts_1973}), the relation holds for most microorganisms: the growth rate increases with the abundance of the limiting nutrient, up to a point beyond which the microorganism cannot grow any faster~\cite{koch_why_1988}.
+Despite some adjustments (Droop model being a well-known example~\cite{droop_thoughts_1973}), the relation holds for most microorganisms: the growth rate increases with the abundance of the limiting nutrient, up to a point beyond which growth cannot be any faster~\cite{koch_why_1988}.
 
 \begin{figure}[!h]
 \centering
 \includegraphics[height=3cm]{./Fig/Chapter1/monod_law.eps}
-\caption{The Monod's law, reproduced from~\cite{monod_growth_1949}.
+\caption{Monod law, reproduced from~\cite{monod_growth_1949}.
 Monod has been a pioneer in the formalization of microbial growth into fundamental coarse-grained relationships.
-This figure shows the growth rate (in number of divisions per hour) of \textit{Escherichia coli} in synthetic mediums containing different concentrations of glucose (a common carbon source).
+This figure shows the growth rate (in number of divisions per hour) of \textit{Escherichia coli} in a synthetic minimal medium at 37$^{\circ}$C containing different concentrations of glucose (a common carbon source).
 As the concentration of glucose increases, the growth rate of \textit{E. coli} does so by following a hyperbolic relationship described in Eq~\ref{eq:monod_law}.
-Solid line is drawn with $R_K = 1.35$ div.h\textsuperscript{-1}, and $C_1 = 0.22 \cdot 10^{-4}$ mol.L\textsuperscript{-1}. Temperature 37$^{\circ}$C.
+Solid line is drawn with $\mu_K = 1.35$ div.h\textsuperscript{-1}, and $K_C = 0.22 \cdot 10^{-4}$ mol.L\textsuperscript{-1}.
 }
 \label{fig:monod_law}
 \end{figure}
 
-Despite the complexity of their regulations, the abundance of every component of the cell has to follow the doubling rate of growth, or is likely to be diluted out over time~\cite{monod_growth_1949}.
-So a lot of physiological parameters (like mass of DNA, RNA and proteins) are a function of the growth rate alone, regardless of the environmental conditions~\cite{schaechter_dependency_1958,bremer_modulation_1996}.
-These parameters were carefully recorded~\cite{bremer_modulation_1996} and are still use today in the quantitative understanding of growth control in microorganisms~\cite{ehrenberg_mediumdependent_2012}.
-Recently, the topic was stirred up by the extensive work of Scott \textit{et al}, whom redefined and revived interest in the bacterial growth laws~\cite{scott_bacterial_2011}.
-They focused on the RNA/Protein ratio, a physiological parameter that was long known to vary linearly with the growth rate in microorganisms (Fig~\ref{fig:scott_rnaprot}).
-By analyzing this ratio under different environmental perturbations of the protein synthesis machinery, they built a coarse-grained model based of the proteome resource allocation~\cite{scott_emergence_2014}.
-It helped to show that whatever the details of the molecular implementation (which are sometimes different between organisms), universal growth laws emerges from the underlying principles of robustness and optimization imposed by natural selection~\cite{scott_emergence_2014}. 
+The production of every component of the cell is under complex regulations.
+But they are all linked to the growth rate, since the production has to compensate for the dilution caused by growth~\cite{monod_growth_1949}.
+Many physiological parameters (like mass of DNA, RNA and proteins) are then functions of the growth rate alone, regardless of the environmental conditions~\cite{schaechter_dependency_1958,bremer_modulation_1996}.
+These functions were carefully measured~\cite{bremer_modulation_1996} and are still used today in the quantitative understanding of growth control in microorganisms~\cite{ehrenberg_mediumdependent_2012}.
+Recently, the topic was brought to the fore by the work of Scott \textit{et al}, whom redefined and revived interest in the bacterial growth laws~\cite{scott_bacterial_2011}.
+They focused on the RNA/protein ratio, a physiological parameter that was long known to vary linearly with the growth rate in microorganisms (Fig~\ref{fig:scott_rnaprot}).
+By analyzing this ratio under different environmental perturbations of the protein synthesis machinery, they built a coarse-grained model describing proteome resource allocation~\cite{scott_emergence_2014}.
+It has allowed to show that, whatever the details of the molecular implementation (differing between organisms), universal growth laws emerges from the underlying principles of robustness and optimization imposed by natural selection~\cite{scott_emergence_2014}.  % detail this
 
 \begin{figure}[!h]
 \centering
 \includegraphics[height=6cm]{./Fig/Chapter1/scott_rnaprot.eps}
 \caption{The growth law of ribosomal abundance (figure reproduced from Fig~S1 in~\cite{scott_interdependence_2010}).
-For different quality of carbon sources, the RNA/Protein ratio is linearly correlated with the growth rate, a relation that old for many species of microorganisms.
-This ratio is correlated with the fraction of ribosome-affiliated proteins, and so with the relative abundance of ribosomes in the cell.
+For different carbon sources more or less rich, the RNA/protein ratio is linearly correlated with the growth rate, a relation that holds for many species of microorganisms.
+This ratio is correlated with the fraction of ribosome-affiliated proteins, and therefore with the relative abundance of ribosomes in the cell.
 }
 \label{fig:scott_rnaprot}
 \end{figure}
 
-The growth strategy of overflow metabolism is another good example where a coarse-grained understanding of growth control was needed.
-It is the process by which microorganisms switch to inefficient metabolic pathways when growing at high nutrient availability, a strategy that apparently waste energy~\cite{molenaar_shifts_2009} (Fig~\ref{fig:molenaar_overflow}).
-This process is so general that it even wear several names: originally called the Crabtree effect when first observed in \textit{Saccharomyces cerevisiae}~\cite{dijken_kinetics_1993} and later in \textit{E. coli}~\cite{vemuri_overflow_2006}, it has also been called the Warburg effect in many types of tumor cells~\cite{mckeehan_glycolysis_1982,hsu_cancer_2008}.
+Coarse-grained models have also been helpful to understand the process by which microorganisms switch to inefficient metabolic pathways when growing at high nutrient availability.
+Since nutrients are not used at their full potential given the environmental conditions, this widespread growth strategy apparently leads to energy waste, ~\cite{molenaar_shifts_2009} (Fig~\ref{fig:molenaar_overflow}).
+Originally called the Crabtree effect when first observed in \textit{Saccharomyces cerevisiae}~\cite{dijken_kinetics_1993} and overflow metabolism when later found in \textit{E. coli}~\cite{vemuri_overflow_2006}, it has also been called the Warburg effect in many types of tumor cells~\cite{mckeehan_glycolysis_1982,hsu_cancer_2008}.
 Molenaar \textit{et al} showed that this phenomenon simply results from the underlying principle of growth rate maximization, in particular the trade-off between the cost of enzyme synthesis and the pathway efficiency~\cite{molenaar_shifts_2009}.
+Like traders, bacteria distribute their resources between different beneficiaries, and tend to do so in a way that maximizes returns on investments.
 
 \begin{figure}[!h]
 \centering
 \includegraphics[height=5cm]{./Fig/Chapter1/molenaar_overflow.eps}
-\caption{The strategy of overflow metabolism (reproduced from~\cite{molenaar_shifts_2009}, CC-BY-NC-SA 3.0).
+\caption{The strategy of overflow metabolism, reproduced from~\cite{molenaar_shifts_2009}.
 When increasing the concentration of substrate, the metabolism of microorganisms switches toward the use of inefficient pathways.
-This somehow incoherent behavior does in fact maximize the growth rate if we take into account the costs and benefits of enzyme synthesis, in particular the fact that the inefficient catabolism is cheaper to produce.
-(A) Simple view of the metabolism, with the two competitive efficient and inefficient pathways.
-(B) The switch curve from efficient to inefficient catabolism when the concentration of nutrient (and so the growth rate) increases.
+This paradoxical behavior does in fact maximize the growth rate if we take into account the costs and benefits of enzyme synthesis, in particular the fact that pathways for inefficient catabolism are shorter and therefore cheaper to produce.
+(A) Simple view of microbial metabolism, with the two competitive efficient and inefficient pathways.
+(B) The switching from efficient to inefficient catabolism when the concentration of nutrients, and hence the growth rate, increases.
 }
 \label{fig:molenaar_overflow}
 \end{figure}
@@ -132,39 +133,38 @@ This somehow incoherent behavior does in fact maximize the growth rate if we tak
 \subsection{Static versus dynamical perspective on growth}
 
 Growth rate maximization does a pretty good job at explaining the universal growth strategies described above.
-Since it technically favors the offspring, it seems to line up perfectly with the principles of natural selection.
-However, all the studies cited above apply this principle in a very specific state of growth, one that in fact does not correspond to the one in which these replicators have been selected, as we will argue below.
+By maximizing offspring, it seems to comply perfectly with the principles of natural selection cited earlier.
+However, all the studies cited above apply this growth rate maximization in a very specific growth scenario, one that in fact does not correspond to the environmental conditions in which microorganisms have been selected, as we will argue below.
 
-Most microbial studies are done at steady-state, where all intensive variables are time-invariant~\cite{schaechter_microbe_2006,fishov_microbial_1995}.
-It is also defined as balanced growth since it requires that the components of the cell "increases by the same factor over a time interval" (hence the term "balanced")~\cite{campbell_synchronization_1957}.
-Experimentally, this state is used as a standard growing condition because it improves reproducibility, since the time-point of sampling becomes irrelevant, and the history of the culture is forgotten~\cite{schaechter_microbe_2006}.
-It can be easily achieve in the laboratory either in continuous culture where the substrate is constantly supplied, or in batch conditions if the substrate is in high excess (Fig~\ref{fig:growth_curve}).
-This tradition was hold in mathematical modeling because considering the system at steady state reduces away the complexity of the dynamical systems, allowing to build and analyze huge genome-scale models that encapsulate the enzymatic diversity of living cells [citation FBA].
+Most microbial studies have been done at steady state, where all intensive properties of the cell are time-invariant~\cite{schaechter_microbe_2006,fishov_microbial_1995}.
+It means that the properties independent of the cell volume or mass (temperature, concentrations, ...) are constant over time, even though the cell is still growing.
+It requires that the components of the cell "increases by the same factor over a time interval", which have motivated the creation of the term balanced growth~\cite{campbell_synchronization_1957}.
+Experimentally, this growth scenario has been used as a standard because it improves reproducibility, in that the time-point of sampling becomes irrelevant~\cite{schaechter_microbe_2006}.
+It can be easily achieved laboratory conditions either in continuous culture, where the substrate is continually supplied, or in batch conditions if the substrate is in high excess (Fig~\ref{fig:growth_curve}).
+This approach has been beneficial to mathematical modeling because considering the system at steady state reduces the complexity of the underlying dynamical systems, allowing to build and analyze huge genome-scale models that encapsulate the enzymatic diversity of living cells [citation FBA].
 
 \begin{figure}[!h]
 \centering
 \includegraphics[height=5cm]{./Fig/Chapter1/growth_curve.eps}
-\caption{The different states of a typical growth curve are visualized by the biomass accumulation (black thick line) and the nutrient abundance in the medium (green dashed line).
+\caption{The different phases of a typical growth curve are visualized by the accumulation of biomass (black thick line) and the nutrient abundance in the medium (green dashed line).
 (A) The lag phase, a variable period of time during which the organism adapt to the new medium.
 It is hardly reproducible and strongly depends on the recent history of the culture.
-(B) The steady-state or balanced-growth phase which is characterized by an exponential growth of biomass.
-It presents constant and reproducible characteristics which made it a standard for microbial growth studies.
+(B) The steady-state (or balanced-growth) phase which is characterized by an exponential growth of biomass.
+It presents constant and reproducible characteristics which has made it a standard for microbial growth studies~\cite{schaechter_microbe_2006}.
 This phase can be extended for thousands of generations by the constant addition of fresh medium (continuous culture).
-As represented, in batch conditions nutrients are quickly depleted, which does not allow to maintain steady-state growth for a long period of time (less than 10 generations).
+As represented here, nutrients are quickly depleted in batch conditions, which does not allow to maintain steady-state growth for a long period of time.
 (C) The stationary phase, after the depletion of the limited nutrient in the medium.
-Microorganisms usually encounter poor media and spend most of their time in stationary phase.
-In some species, it can be the siege of specific long-term resistance mechanisms like sporulation.
+In environmental conditions, microorganisms usually encounter poor media and spend most of their time in stationary phase.
+Some species which have evolved long-term resistance mechanisms like sporulation can survive harsh conditions when in stationary phase.
 }
 \label{fig:growth_curve}
 \end{figure}
 
-Balanced growth might well be convenient, it is widely admitted that microorganisms rarely encounter this state in nature since it requires a stable environment over a long period of time~\cite{schaechter_microbe_2006}.
-Microorganisms live in strongly dynamic communities, in medium where the limited nutrient is quickly depleted by the competitors when appearing, the exception being bacteria that live a parasitic or symbiotic life in bigger cells [citation genitallium, deep water worms].
-On an evolutionary perspective, optimizing the steady-state growth rate should not play any role in the replicator persistence.
+Although balanced growth is convenient from an experimental and theoretical point of view, it is widely admitted that microorganisms rarely encounter this state in nature since it requires a stable environment over a long period of time~\cite{schaechter_microbe_2006}.
+Microorganisms live in strongly dynamic communities, in medium where the limited nutrient is quickly depleted by the competitors when available\footnote{an exception being bacteria that live a parasitic or symbiotic life in bigger cells [citation Micoplasma genitallium, Giant tube worm]}.
+With that in mind, a microorganism aptness to optimize its steady-state growth rate should not play any role for its persistence.
 Why would in that case microorganisms be optimal for steady-state growth?
 Are we missing something by studying systems that were selected to cope with environmental variations (regulations of cell composition) in stable, unchanging conditions that probably confuse them?
-
-[I think I need more references about the need of dynamic here, it's always tricky to justify this, do we have examples were it actually helped explain/understand/find something?]
 
 \section{Problem statement}
 
