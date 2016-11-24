@@ -14,6 +14,7 @@ Dans cette section...
 \selectlanguage{english}
 
 \section{Context}
+\label{sec:context}
 
 \subsection{Self-replication is a resource allocation problem}
 
@@ -189,36 +190,50 @@ This misconception usually comes from a bad understanding of what is modeling.
 In its general sense, a model depicts and simplifies reality.
 Maps, sketches, or pictures satisfy this definition, as do graphs, sets of equations, or even the DNA sequences I store in a text-file on my computer.
 Overall, depicting and simplifying reality makes you a modeler, not so much drawing equations on a board.
-But this does not change the fact that mathematics are incredible tools for these purpose~\cite{servedio_not_2014,mcgill_calm_2013}.
+But this does not change the fact that mathematics are incredible tools for these purposes~\cite{servedio_not_2014,mcgill_calm_2013}.
 
 What makes mathematical modeling so useful in microbial growth studies?
 Microbial physiology comes out from the interplay of thousands of chemical reactions that are not necessarily relevant in any given situation.
 They usually occur on a short time scale as compared with the organism life span.
 They nevertheless have been (and still are) selected by evolutionary processes that occur on long time scales.
-These physical limitations strongly impede a full empirical study of growth processes, and it's sometimes hard to test the most simple of our verbal hypothesis.
+These physical limitations strongly impede a full empirical study of growth processes, making sometimes hard to test the most simple verbal hypothesis.
 
 Since they are designed to abstract away complexity, mathematical models are great tools to deal with such limitations.
-Overwhelming number of variables and time scales can be dealt with by choosing the correct framework.
-Growth is abstracted into a world of rigor and rules, where logical reasoning can be applied, which allow to test hypothesis~\cite{servedio_not_2014}.
-Predictions can be made, "unpacked" into our real world, and confronted with experimental testing~\cite{mcgill_calm_2013}.
-Such approach has been successfully applied these decades, creating a diversity a modeling framework which are relevant to growth studies.
+The overwhelming number of variables and time scales can be dealt with by choosing the correct framework.
+When working on a model, growth is abstracted into a world of clearing stated rules, where logical reasoning can be applied~\cite{servedio_not_2014}.
+Predictions can be made, "unpacked" into our real world, and confronted with experimental testing.
+In that sense, modeling is at the core of the scientific method~\cite{mcgill_calm_2013}.
+This could explain why mathematical modeling has been extensively applied to microbial growth studies, creating a diversity a modeling framework.
 
-Constraint-based modeling.
-\textit{FBA and all the derivatives that appeared these years.
-The main successes and the main drawbacks are described, like the importance of the objective function, the problem of taking several layers into account, the steady-state assumption, and the example of overflow metabolism.
-They have a large scope, a detailed granularity but can do so by abstracting away the mathematical difficulties.}
+For an increasing number of microorganisms, we are now able to draw quasi-exhaustive maps of their inner metabolic reactions.
+This has been made possible by the advances on genome reconstruction, which are easier and cheaper to accomplish every passing year.
+But making sense of these data proved to be even more challenging.
+Which reactions are important, and in which conditions?
+How will a metabolic network react to perturbations?
+Can we predict its evolution in a given environment?
+When dealing with genome-scale metabolic networks, one is challenged by the number of metabolites and possible reactions (e.g. the most recent genome-scale reconstruction of \textit{E. coli} metabolism contains "1366 genes, 2251 metabolic reactions, and 1136 unique metabolites"~\cite{orth_comprehensive_2011}).
+More importantly, while progress in genomic made possible such reconstructions, measuring precise \textit{in-vivo} kinetic parameters for all these reactions still represents a technological bottleneck~[citation?].
+Nevertheless, a modeling framework is specifically designed to deal with such limitations: constraint-based modeling.
+This framework abstracts away the unknown kinetics and represents the metabolic maps as a flux map on which physico-chemical constraints can be applied, e.g. steady-state, compartmentalization, mass conservation, molecular crowding, and thermodynamic directionality~\cite{ebrahim_cobrapy_2013}.
+Candidates for the flux distribution are obtained by optimizing the system towards an objective function, which usually represents growth rate for microorganisms.
+One can find a lot of derivatives of this framework, but its the Flux Balance Analysis that renewed interest into it [citation review ?].
+\textbf{[Need some key results that were obtained, or this paragraph makes no sense].}
+Note that such a level of abstraction necessarily has its drawbacks, e.g. the definition of the objective function, the difficulty to work in dynamic or implement information on the metabolic regulations [citation?].
 
-Big kinetic models.
-\textit{Especially the work of Klumpp, Kremling, Sauer, etc, also the whole model of genitallium.
+The ever-growing available data on metabolic networks can also be used to make large kinetic models.
+For the reasons we stated above, we expect these models to be inherently limited in scope.
+It means that the modeler has to be extremely careful since he or she injects its knowledge about what might be important in the system, for the question he or she tries to solve.
+They are however more flexible, in the sense that one can easily make interplay different level of regulations.
+\textit{[Present the work of Klumpp, Kremling, Sauer, whole model of genitallium, etc]
+}\textit{Especially the work of Klumpp, Kremling, Sauer, etc, also the whole model of genitallium.
 Biggest problem is the lack of parameter values, and some huge trouble with identifiability.
 They have medium to large scope (increasing), highly detailed granularity and deal with the mathematical complexity via the computational power via the use of huge quantity of data.}
 
-Coarse-grained, proof of principle models.
-\textit{Examples are the work of Scott, Hwa, Teusink, van der Berg.
-They focus on the question, have usually a large scope but a very coarse-grained granularity.
-They can work as intuition pump and actually be more useful into given a new way to see previous data (example of Scott/Hwa and Teusink).
-They can exploit complicated math theories (van der Berg).}
-
+Another approach has shown successful in understanding some aspects of growth behaviors of microorganisms.
+By applying a high level of abstraction on how the cell functions, it becomes easy to compare data about different species and to uncover general evolutionary principles that are independent of the specific implementation in each organism.
+Best examples of this approach are the empirical growth laws of ribosomal abundance~\cite{scott_bacterial_2011,scott_interdependence_2010,scott_emergence_2014}, or the proof-of-concept explanation of overflow metabolism~\cite{molenaar_shifts_2009} that were described in section~\ref{sec:context} of this introduction.
+It is also the preferred approach when one wants to broaden its access to mathematical tools~\cite{vandenberg_optimal_1998}, most of them unhelpful with the high dimensionality of biological models.
+As we will describe in section~\ref{sec:approach}, this represents the modeling strategy that was used in this thesis.
 
 \subsection{Dynamical monitoring of microorganisms}
 
@@ -228,6 +243,7 @@ Levy is a good example. Alon is another one. Look also at the last publication o
 (the mother machine etc)
 
 \section{Approach}
+\label{sec:approach}
 
 We first tackle the problem of creating a mathematical framework for studying environmental transitions.
 \textit{Building upon the work cited above, we create a simple self-replicator model that allocate resources between two sections.}
