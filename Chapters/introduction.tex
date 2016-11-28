@@ -1,16 +1,16 @@
 \chapter{Introduction}
 
-\textit{There's an infinity of things that have never been done before, and most of those things are not worth doing.} -- Jeremy Fox, \textit{Dynamic Ecology}~\cite{fox_how_2016}
+\textit{There's an infinity of things that have never been done before, and most of those things are not worth doing.} -- Jeremy Fox, \textit{Dynamic Ecology (2016)}~\cite{fox_how_2016}
 
 \section*{Summary}
 
-(passive or active voice?)
+This chapter presents... (approx. 1 page)
 
 
 \selectlanguage{french}
 \section*{Résumé}
 
-Dans cette section...
+Dans cette section... (env. 1 page)
 \selectlanguage{english}
 
 \section{Context}
@@ -200,7 +200,7 @@ These physical limitations strongly impede a full empirical study of growth proc
 
 Since they are designed to abstract away complexity, mathematical models are great tools to deal with such limitations.
 The overwhelming number of variables and time scales can be dealt with by choosing the correct framework.
-When working on a model, growth is abstracted into a world of clearing stated rules, where logical reasoning can be applied~\cite{servedio_not_2014}.
+When working on a model, growth is abstracted into a world of clearly stated rules, where logical reasoning can be applied~\cite{servedio_not_2014}.
 Predictions can be made, "unpacked" into our real world, and confronted with experimental testing.
 In that sense, modeling is at the core of the scientific method~\cite{mcgill_calm_2013}.
 This could explain why mathematical modeling has been extensively applied to microbial growth studies, creating a diversity a modeling framework.
@@ -232,15 +232,48 @@ They have medium to large scope (increasing), highly detailed granularity and de
 Another approach has shown successful in understanding some aspects of growth behaviors of microorganisms.
 By applying a high level of abstraction on how the cell functions, it becomes easy to compare data about different species and to uncover general evolutionary principles that are independent of the specific implementation in each organism.
 Best examples of this approach are the empirical growth laws of ribosomal abundance~\cite{scott_bacterial_2011,scott_interdependence_2010,scott_emergence_2014}, or the proof-of-concept explanation of overflow metabolism~\cite{molenaar_shifts_2009} that were described in section~\ref{sec:context} of this introduction.
-It is also the preferred approach when one wants to broaden its access to mathematical tools~\cite{vandenberg_optimal_1998}, most of them unhelpful with the high dimensionality of biological models.
+It is also the preferred approach when one wants to broaden its access to mathematical tools~\cite{vandenberg_optimal_1998}, most of them being unhelpful with the high dimensionality of biological models.
 As we will describe in section~\ref{sec:approach}, this represents the modeling strategy that was used in this thesis.
 
-\subsection{Dynamical monitoring of microorganisms}
+\subsection{Measuring growth of microorganisms}
 
-[Talk about the works in dynamic, and how some questions cannot be answered at steady-state.
-Levy is a good example. Alon is another one. Look also at the last publication of Bremer and Dennis (medium-dependent control).]
+Models have to be tested with data.
+Measuring growth = measuring biomass accumulation, over time, and get relevant information on the cell inner state.
+We have a lot of data on this.
 
-(the mother machine etc)
+Population measurement is easy to implement, and allow to measure metabolites.
+But small unsynchronized effects can be hidden since we mostly work with the mean.
+Despite most of the knowledge we have on microorganism growth are from population measurements, like the RNA/DNA/etc ratios, the growth laws, etc.
+Extensive work of Bremmer and Dennis.
+Big discoveries of the last decades that rely on population measurements ? (cite 2 or 3)
+
+Single-cell measurements lay on technologies like microscopy, fluorescence, FACS...
+More interesting since we can use fluorescence to not just look at the cell but also measure interesting parameters (like gene expression) at the single-cell level.
+Information on the localisation of DNA, ribosomes [Bakshi].
+Variability in physiology, persistors, antibiotics resistance, etc [citations]
+
+Both approaches can be performed either in batch or continuous conditions.
+Batch conditions is the most straight forward in lab: you put sugar in a flask, they grow until nutrient is depleted.
+Implemented in flash or petri-microscopy.
+Resist to contamination.
+It is close to natural conditions, and industrial conditions.
+Has even been used to study long-term evolution of E. coli.
+But the system is poorly control, mostly because the history of the cells play a huge role in the waking process.
+
+Continuous culture consists into constantly providing nutrients to a culture, and maintaining it in a steady-state for a long time.
+Implemented in bioreactor [citation] or microfluidic devices [mother machine citation].
+Sensible to contaminations so hard to maintained (that's why industry ignore it so far).
+Does not correspond to natural conditions but the system is fully controlled: perturbations can be applied and a lot of parameters can be monitored.
+Possibility to let the cell long-enough in steady state to "forget" strain history.
+Most suitable if one need to have full control on its system.
+
+Finally, most of the work cited above are based on steady-state studies.
+But there are also work in dynamic.
+Levy showed that... in yeast.
+Alon in Coli.
+After decades working at steady-state, Bremmer and Dennis argued we should measure things during transitions.
+de Jong / Gerosa showed that the gene expression machinery has its own dynamic that should be taken into account when measuring gene expression.
+The evolutionary relevance of growth transitions has been emphasized in numerous others studies [citations lag phase, last generation before stationary, ...].
 
 \section{Approach}
 \label{sec:approach}
@@ -251,7 +284,7 @@ We first tackle the problem of creating a mathematical framework for studying en
 The goal is to identify what would be an ideal transition.
 \textit{We all have an intuitive idea of what should be a good transition: it should be fast, robust, etc... But it is unclear how this relates to the fitness factor that shaped the regulatory mechanisms of microorganisms.}
 
-We describe dynamical optimilaty by using optimal control theory.
+We describe dynamical optimality by using optimal control theory.
 \textit{Brieve explanation about optimal control theory and how it is used in economic or engineering to optimize or understant dynamical processes.}
 
 Then, after we know what to look for, we try to actually measure how resource allocation occurs in a model organism: \textit{Escherichia coli}.
