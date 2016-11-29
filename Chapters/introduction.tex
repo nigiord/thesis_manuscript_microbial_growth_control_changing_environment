@@ -197,7 +197,6 @@ Microbial physiology comes out from the interplay of thousands of chemical react
 They usually occur on a short time scale as compared with the organism life span.
 They nevertheless have been (and still are) selected by evolutionary processes that occur on long time scales.
 These physical limitations strongly impede a full empirical study of growth processes, making sometimes hard to test the most simple verbal hypothesis.
-
 Since they are designed to abstract away complexity, mathematical models are great tools to deal with such limitations.
 The overwhelming number of variables and time scales can be dealt with by choosing the correct framework.
 When working on a model, growth is abstracted into a world of clearly stated rules, where logical reasoning can be applied~\cite{servedio_not_2014}.
@@ -237,21 +236,24 @@ As we will describe in section~\ref{sec:approach}, this represents the modeling 
 
 \subsection{Measuring growth of microorganisms}
 
-Models have to be tested with data.
+\textbf{Either to build models or test their predictions, data on microbial growth have to be acquired.}
 Measuring growth = measuring biomass accumulation, over time, and get relevant information on the cell inner state.
 We have a lot of data on this.
 
-Population measurement is easy to implement, and allow to measure metabolites.
+\textbf{Measuring population-wide parameters is convenient and provides robust data.}
+Population measurement is easy to implement, and some things can only be measured at the population level (so far).
 But small unsynchronized effects can be hidden since we mostly work with the mean.
 Despite most of the knowledge we have on microorganism growth are from population measurements, like the RNA/DNA/etc ratios, the growth laws, etc.
 Extensive work of Bremmer and Dennis.
 Big discoveries of the last decades that rely on population measurements ? (cite 2 or 3)
 
+\textbf{Single-cell measurements give access to data and behaviors that are hidden at the population level.}
 Single-cell measurements lay on technologies like microscopy, fluorescence, FACS...
 More interesting since we can use fluorescence to not just look at the cell but also measure interesting parameters (like gene expression) at the single-cell level.
 Information on the localisation of DNA, ribosomes [Bakshi].
 Variability in physiology, persistors, antibiotics resistance, etc [citations]
 
+\textbf{Batch growing conditions are convenient and close to the natural conditions of bacteria, but they raise several problems.}
 Both approaches can be performed either in batch or continuous conditions.
 Batch conditions is the most straight forward in lab: you put sugar in a flask, they grow until nutrient is depleted.
 Implemented in flash or petri-microscopy.
@@ -260,6 +262,7 @@ It is close to natural conditions, and industrial conditions.
 Has even been used to study long-term evolution of E. coli.
 But the system is poorly control, mostly because the history of the cells play a huge role in the waking process.
 
+\textbf{Continous cultures allow to precisely control the growing conditions.}
 Continuous culture consists into constantly providing nutrients to a culture, and maintaining it in a steady-state for a long time.
 Implemented in bioreactor [citation] or microfluidic devices [mother machine citation].
 Sensible to contaminations so hard to maintained (that's why industry ignore it so far).
@@ -267,6 +270,7 @@ Does not correspond to natural conditions but the system is fully controlled: pe
 Possibility to let the cell long-enough in steady state to "forget" strain history.
 Most suitable if one need to have full control on its system.
 
+\textbf{In all these practical conditions, one can choose to either measure cells at steady-state or in dynamic.}
 Finally, most of the work cited above are based on steady-state studies.
 But there are also work in dynamic.
 Levy showed that... in yeast.
@@ -287,11 +291,11 @@ The goal is to identify what would be an ideal transition.
 We describe dynamical optimality by using optimal control theory.
 \textit{Brieve explanation about optimal control theory and how it is used in economic or engineering to optimize or understant dynamical processes.}
 
+All of this is described in chapter 2.
+
 Then, after we know what to look for, we try to actually measure how resource allocation occurs in a model organism: \textit{Escherichia coli}.
 \textit{We justify the use of coli and introduce the gene expression fluorescent reporter.
 We made a strain with fluorescent ribosomes, and studied our experimental framework in different transitions, at the population and the single cell level.
 We justify the use of both by the fact that population is easy for "screening", and single cell allow for a better resolution and take care of the "desynchronization" biais that could occur.}
 
-\section{Organisation of the dissertation}
-
-(announcing the plan of the manuscript, which actually follow exactly the approach part, without the lenghty justifications)
+This, is described in chapter 3.
