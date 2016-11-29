@@ -5,6 +5,11 @@ Jeremy Fox.
 \newblock How to write a good introduction section. {{And}} tell if yours is
   bad., April 2016.
 
+\bibitem{zimmer_microcosm:_2009}
+Carl Zimmer.
+\newblock {\em Microcosm: {{E}}. Coli and the {{New Science}} of {{Life}}}.
+\newblock {Vintage Books USA}, 2009.
+
 \bibitem{schaechter_microbe_2006}
 M.~Schaechter, J.~L. Ingraham, and F.~C. Neidhardt.
 \newblock {\em Microbe}.
@@ -57,11 +62,6 @@ Rafael~U. Ibarra, Jeremy~S. Edwards, and Bernhard~O. Palsson.
   achieve in silico predicted optimal growth.
 \newblock {\em Nature}, 420(6912):186--9, November 2002.
 
-\bibitem{molenaar_shifts_2009}
-Douwe Molenaar, Rogier {van Berlo}, Dick {de Ridder}, and Bas Teusink.
-\newblock Shifts in growth strategies reflect tradeoffs in cellular economics.
-\newblock {\em Mol Syst Biol}, 5:323, January 2009.
-
 \bibitem{lewis_omic_2010}
 Nathan~E Lewis, Kim~K Hixson, Tom~M Conrad, Joshua~A Lerman, Pep Charusanti,
   Ashoka~D Polpitiya, Joshua~N Adkins, Gunnar Schramm, Samuel~O Purvine, Daniel
@@ -70,6 +70,11 @@ Nathan~E Lewis, Kim~K Hixson, Tom~M Conrad, Joshua~A Lerman, Pep Charusanti,
 \newblock Omic data from evolved {{{\emph{E}}}}{\emph{. coli}} are consistent
   with computed optimal growth from genome-scale models.
 \newblock {\em Mol Syst Biol}, 6:390, July 2010.
+
+\bibitem{molenaar_shifts_2009}
+Douwe Molenaar, Rogier {van Berlo}, Dick {de Ridder}, and Bas Teusink.
+\newblock Shifts in growth strategies reflect tradeoffs in cellular economics.
+\newblock {\em Mol Syst Biol}, 5:323, January 2009.
 
 \bibitem{monod_growth_1949}
 J~Monod.
@@ -127,7 +132,7 @@ Matthew Scott, Carl~W Gunderson, Eduard~M Mateescu, Zhongge Zhang, and Terence
 \newblock {\em Science}, 330(6007):1099--102, November 2010.
 
 \bibitem{dijken_kinetics_1993}
-Johannes~P. {van Dijken}, Ruud~A. Weusthuis, and Jack~T. Pronk.
+Johannes~P. van Dijken, Ruud~A. Weusthuis, and Jack~T. Pronk.
 \newblock Kinetics of growth and sugar consumption in yeasts.
 \newblock {\em Antonie Van Leeuwenhoek}, 63(3-4):343--352, 1993.
 
@@ -158,6 +163,37 @@ Allan Campbell.
 \newblock {{SYNCHRONIZATION OF CELL DIVISION}}.
 \newblock {\em Bacteriol. Rev.}, 21(4):263--272, December 1957.
 
+\bibitem{servedio_not_2014}
+Maria~R. Servedio, Yaniv Brandvain, Sumit Dhole, Courtney~L. Fitzpatrick,
+  Emma~E. Goldberg, Caitlin~A. Stern, Jeremy Van~Cleve, and D.~Justin Yeh.
+\newblock Not just a theory\textemdash{}the utility of mathematical models in
+  evolutionary biology.
+\newblock {\em PLoS Biol}, 12(12):e1002017, December 2014.
+
+\bibitem{mcgill_calm_2013}
+Brian McGill.
+\newblock A calm and balanced case for math in biology, April 2013.
+
+\bibitem{orth_comprehensive_2011}
+Jeffrey~D. Orth, Tom~M. Conrad, Jessica Na, Joshua~A. Lerman, Hojung Nam,
+  Adam~M. Feist, and Bernhard~\O{} Palsson.
+\newblock A comprehensive genome-scale reconstruction of {{Escherichia}} coli
+  metabolism\textemdash{}2011.
+\newblock {\em Mol. Syst. Biol.}, 7(1):535, January 2011.
+
+\bibitem{ebrahim_cobrapy_2013}
+Ali Ebrahim, Joshua~A. Lerman, Bernhard~O. Palsson, and Daniel~R. Hyduke.
+\newblock {{COBRApy}}: {{COnstraints}}-{{Based Reconstruction}} and
+  {{Analysis}} for {{Python}}.
+\newblock {\em BMC Systems Biology}, 7:74, 2013.
+
+\bibitem{vandenberg_optimal_1998}
+Hugo~A. {van den Berg}, Yuri~N. Kiselev, S.~a. L.~M. Kooijman, and Michael~V.
+  Orlov.
+\newblock Optimal allocation between nutrient uptake and growth in a microbial
+  trichome.
+\newblock {\em J Math Biol}, 37(1):28--48, July 1998.
+
 \bibitem{keseler_ecocyc_2013}
 Ingrid~M Keseler, Amanda Mackie, Martin Peralta-Gil, Alberto Santos-Zavaleta,
   Socorro Gama-Castro, C{\'e}sar Bonavides-Mart{\'\i}nez, Carol Fulcher,
@@ -168,13 +204,6 @@ Ingrid~M Keseler, Amanda Mackie, Martin Peralta-Gil, Alberto Santos-Zavaleta,
   Peter~D Karp.
 \newblock {{EcoCyc}}: Fusing model organism databases with systems biology.
 \newblock {\em Nucleic Acids Res}, 41(Database issue):D605--12, January 2013.
-
-\bibitem{servedio_not_2014}
-Maria~R. Servedio, Yaniv Brandvain, Sumit Dhole, Courtney~L. Fitzpatrick,
-  Emma~E. Goldberg, Caitlin~A. Stern, Jeremy {Van Cleve}, and D.~Justin Yeh.
-\newblock Not just a theory\textemdash{}the utility of mathematical models in
-  evolutionary biology.
-\newblock {\em PLoS Biol}, 12(12):e1002017, December 2014.
 
 \bibitem{maitra_bacterial_2014}
 Arijit Maitra and Ken~A. Dill.
@@ -235,13 +264,6 @@ Michael~Y. Pavlov and M\aa{}ns Ehrenberg.
 \newblock Optimal control of gene expression for fast proteome adaptation to
   environmental change.
 \newblock {\em Proc Natl Acad Sci USA}, 110(51):20527--32, December 2013.
-
-\bibitem{vandenberg_optimal_1998}
-Hugo~A. {van den Berg}, Yuri~N. Kiselev, S.~a. L.~M. Kooijman, and Michael~V.
-  Orlov.
-\newblock Optimal allocation between nutrient uptake and growth in a microbial
-  trichome.
-\newblock {\em J Math Biol}, 37(1):28--48, July 1998.
 
 \bibitem{waldherr_dynamic_2015}
 Steffen Waldherr, Diego~A. Oyarz{\'u}n, and Alexander Bockmayr.
@@ -506,7 +528,7 @@ P.~Xu, L.~Li, F.~Zhang, G.~Stephanopoulos, and M.~Koffas.
 \newblock {\em Proc Natl Acad Sci USA}, 111(31):11299--304, 2014.
 
 \bibitem{izard_synthetic_2015}
-J{\'e}rome Izard, Cindy {Gomez Balderas}, Delphine Ropers, St{\'e}phan Lacour,
+J{\'e}rome Izard, Cindy Gomez~Balderas, Delphine Ropers, St{\'e}phan Lacour,
   X~Song, Y~Yang, Ariel Lindner, Johannes Geiselmann, and Hidde {de Jong}.
 \newblock A synthetic growth switch based on controlled expression of {{RNA}}
   polymerase.
@@ -514,7 +536,7 @@ J{\'e}rome Izard, Cindy {Gomez Balderas}, Delphine Ropers, St{\'e}phan Lacour,
 
 \bibitem{storn_differential_1997}
 Rainer Storn and Kenneth Price.
-\newblock Differential evolution \textendash a simple and efficient heuristic
+\newblock Differential evolution \textendash{} a simple and efficient heuristic
   for global optimization over continuous spaces.
 \newblock {\em J Glob Optim}, 11(4):341--59, December 1997.
 
@@ -566,7 +588,7 @@ Tatsuya Yamamoto, Shunsuke Izumi, and Kunihiko Gekko.
 
 \bibitem{bennett_absolute_2009}
 Bryson~D. Bennett, Elizabeth~H. Kimball, Melissa Gao, Robin Osterhout,
-  Stephen~J. {Van Dien}, and Joshua~D. Rabinowitz.
+  Stephen~J. Van~Dien, and Joshua~D. Rabinowitz.
 \newblock Absolute metabolite concentrations and implied enzyme active site
   occupancy in {{{\emph{Escherichia}}}}{\emph{ coli}}.
 \newblock {\em Nat Chem Biol}, 5(8):593--9, August 2009.
