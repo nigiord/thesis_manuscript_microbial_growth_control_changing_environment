@@ -9,15 +9,53 @@
 \item We fix it by making a strain with fluorescent ribosomes and monitoring ribosome abundance during growth transitions in a microfluidic device.
 \end{itemize}
 
-\section{Methods}
+\section{Material and Methods}
 
-\subsection{Strain design}
+\subsection*{Bacterial strain construction}
 
-We used rpsB, GFP, and a chromosomic construction because so and so.
+To achieve dynamical quantification of ribosome abundance, we designed and constructed a strain containing a translational fusion of \textit{gfpmut2} [citation Alon] to the C-terminus of rpsB (the gene coding the ribosome subunit S2).
+This design was inspired by the work of Bakshi \textit{et al}, who used a similar construction to assess the quantitative spatial distribution of ribosomes in living \textit{E. coli}~\cite{bakshi_superresolution_2012}.
 
-\subsection{Strain construction}
+The transcription factor tsf is under the control of the same promoter than rpsB, and is located after the C-terminus end.
+In order to ensure that tsf expression was not affected by our translation fusion of rpsB, we used a double-selection procedure to get rid of every resistance gene that the construction might introduce.
+This is something that was not done in the original construction from Bakshi \textit{et al}~\cite{bakshi_superresolution_2012}
 
-We used Gibson assembly, Kan-pbad-ccdb, etc and obtain the following sequence.
+A DNA fragment containing a double selection cassette was amplified with two long primers annealing respectively to the region just after the STOP codon at the C-terminus rpsB, and to the 3'-end of gfpmut2.
+The double-selection cassette contained a resistance gene to Kanamycin (positive selection) and a gene coding for the CcdB toxin under the control of the P\textsubscript{BAD} promoter (negative selection in presence of Arabinose).
+This cassette is referred below as kan-P\textsubscript{BAD}-ccdB.
+
+Another DNA fragment containing an ATG-less gfpmut2~\cite{zaslaver_comprehensive_2006} was amplified with long primers annealing respectively to the C-terminus region of rpsB (just before the stop codon), and the 5'-end of the kan-P\textsubscript{BAD}-ccdB cassette.
+The first primer also contained a 18-bp (base pair) linker that was selected according to the method section of~\cite{bakshi_superresolution_2012}.
+
+Both fragments (the gfpmut2 reporter and the kan-P\textsubscript{BAD}-ccdB cassette) were assembled using Gibson assembly~[citation].
+Both PCR products were quantified using NanoDrop and mixed in equimolar proportions with a commercial Gibson Assembly Master mix.
+A final product of 2683 bp was obtained:
+\begin{itemize}
+\item *(50 bp) the C-terminus of rpsB without the STOP codon 
+\item (18 bp) a linker
+\item (714 bp) the gfpmut2 sequence without the initial ATG
+\item (1851 bp) the kan-P\textsubscript{BAD}-ccdB
+\item *(50 bp) the region directly after rpsB in \textit{E. coli}
+\end{itemize}
+Regions labeled with * are supposed to anneal with the \textit{E. coli} chromosome.
+The complete sequence of this fragment, as well as all the primers used are available in the Supporting Information of this chapter.
+
+This fragment was electroporated in a BW25113 background strain containing the pSIM5 plasmid providing Chloramphenicol resistance (lambda-red recombinaison).
+A kanamycin-resistant colony was selected and verified to exhibit green fluorescence in a Tecan microplate reader.
+A new 100-bp fragment containing 50 bp of the 3'-end of gfpmut2 and 50 bp of the region just after rpsB was electroporated into this strain (sequence available in Supporting Information) to get rid of the kan-P\textsubscript{BAD}-ccdB cassette.
+An arabinose-resistant colony was selected and verified to be kanamycin-sensitive and to still exhibit green fluorescence.
+Finally, the strain was grown overnight at 42$^\circ$C to get rid of the pSIM5 plasmid and a chloramphenicol-sensitive colony was selected.
+The region after rpsB was sequenced and determined to be as anticipated (full sequence available in Supporting Information).
+
+In parallel, the same protocol was used to construct mCherry and cfp variants of the same strain.
+However, we were only able to recombine and obtain the gfp and mCherry versions for reasons that were not investigated.
+The full sequence of the final rpsB-mCherry strain is available in Supporting Information.
+
+The rpsB-gfp and rpsB-mCherry strains were caracterised on different media using a Tecan microplate reader.
+They were showed to exhibit a wild-type growth rate and sufficient fluorescence level to allow quantification.
+However, the rpsB-mCherry strain was shown to exhibit strange fluorescence dynamics, especially during growth transitions (entering stationary phase), which made it unsuitable for our study.
+Our effort were then concentrated on the rpsB-gfp strain.
+Data as well as information on the matter are available in Supporting Information.
 
 \subsection{Microfluidic device}
 
