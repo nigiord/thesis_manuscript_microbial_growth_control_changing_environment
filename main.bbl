@@ -629,4 +629,11 @@ Emmanuel Tr{\'e}lat and Enrique Zuazua.
   control.
 \newblock {\em J Differ Equ}, 258(1):81--114, January 2015.
 
+\bibitem{zaslaver_comprehensive_2006}
+Alon Zaslaver, Anat Bren, Michal Ronen, Shalev Itzkovitz, Ilya Kikoin, Seagull
+  Shavit, Wolfram Liebermeister, Michael~G. Surette, and Uri Alon.
+\newblock A comprehensive library of fluorescent transcriptional reporters for
+  {{Escherichia}} coli.
+\newblock {\em Nat. Methods}, 3(8):623--628, August 2006.
+
 \end{thebibliography}
