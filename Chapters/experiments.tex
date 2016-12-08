@@ -39,82 +39,6 @@ We placed it in a microfluidic device allowing the long-term imaging of individu
 We then used Kalman smoothing to estimate the variations of the growth rate and the relative ribosomal synthesis rate during this upshift.
 While not allowing a decisive validation of the expected behavior, this experiment opens interesting questions and is a step towards a better understanding of the gene expression machinery regulation during growth transitions.
 
-\section{Material and Methods}
-
-\subsection{Bacterial strain construction}
-
-To achieve dynamical quantification of ribosome abundance, we designed and constructed a strain containing a translational fusion of \textit{gfpmut2}~\cite{zaslaver_comprehensive_2006} to the C-terminus of \textit{rpsB} (the gene coding the ribosome subunit S2).
-This design was inspired by the work of Bakshi \textit{et al}, who used a similar construction to assess the quantitative spatial distribution of ribosomes in living \textit{E.~coli}~\cite{bakshi_superresolution_2012}.
-
-The transcription factor \textit{tsf} is under the control of the same promoter than \textit{rpsB}, and is located after the C-terminus.
-In order to ensure that \textit{tsf} expression was not affected by our translation fusion on \textit{rpsB}, we used a double-selection procedure to get rid of every resistance gene that the construction might introduce.
-This is something that was not done in the original construction from Bakshi \textit{et al}~\cite{bakshi_superresolution_2012}
-
-A DNA fragment containing a double selection cassette was amplified with two long primers annealing respectively to the region just after the STOP codon at the C-terminus of \textit{rpsB}, and to the beginning of \textit{gfpmut2}.
-The double-selection cassette contained a resistance gene to Kanamycin (positive selection) and a gene coding for the CcdB toxin under the control of the P\textsubscript{BAD} promoter (negative selection in presence of Arabinose).
-This cassette is referred below as \textit{kan-P\textsubscript{BAD}-ccdB}.
-
-Another DNA fragment containing \textit{gfpmut2}~\cite{zaslaver_comprehensive_2006} without ATG was amplified with long primers annealing respectively to the C-terminus of rpsB (just before the STOP codon), and the end of the \textit{kan-P\textsubscript{BAD}-ccdB} cassette.
-The first primer also contained a 18-bp (base pair) linker that was chosen according to the method section of~\cite{bakshi_superresolution_2012}.
-
-Both fragments (the \textit{gfpmut2} reporter and the \textit{kan-P\textsubscript{BAD}-ccdB} cassette) were assembled using Gibson assembly~\cite{gibson_enzymatic_2009}.
-Both PCR products were quantified using NanoDrop and mixed in equimolar proportions with a commercial Gibson Assembly Master mix.
-A final product of 2683 bp was obtained:
-\begin{itemize}
-\item *(50 bp) the C-terminus of \textit{rpsB} without the STOP codon 
-\item (18 bp) a linker (see Supporting Information)
-\item (714 bp) the \textit{gfpmut2} sequence without the initial ATG
-\item (1851 bp) the \textit{kan-P\textsubscript{BAD}-ccdB} cassette
-\item *(50 bp) the region directly after \textit{rpsB} in \textit{E.~coli}
-\end{itemize}
-Regions labeled with * are expected to anneal with the \textit{E.~coli} chromosome.
-The complete sequence of this fragment, as well as all the primers used are available in the Supporting Information of this chapter.
-
-This fragment was electroporated in a BW25113 background strain containing the pSIM5 plasmid with chloramphenicol resistance (lambda-red recombinaison).
-A kanamycin-resistant colony was selected and verified to exhibit green fluorescence in a Tecan microplate reader.
-A new 100-bp fragment containing 50 bp of the end of \textit{gfpmut2} and 50 bp of the region just after \textit{rpsB} was electroporated into this strain (sequence available in Supporting Information) to get rid of the \textit{kan-P\textsubscript{BAD}-ccdB} cassette.
-An arabinose-resistant colony was selected and verified to be kanamycin-sensitive and to still exhibit green fluorescence.
-Finally, the strain was grown overnight at 42$^\circ$C to get rid of the pSIM5 plasmid and a chloramphenicol-sensitive colony was selected.
-The region after \textit{rpsB} was verified by sequencing (full sequence available in Supporting Information).
-
-In parallel, the same protocol was used to construct \textit{mCherry} and \textit{cfp} variants of the same strain.
-However, only the \textit{gfpmut2} and \textit{mCherry} versions were successfully obtained for reasons that were not investigated.
-The full sequence of the final \textit{rpsB-mCherry} strain is available in Supporting Information.
-
-The \textit{rpsB-gfpmut2} and \textit{rpsB-mCherry} strains were characterized on different media using a Tecan microplate reader.
-They were showed to exhibit a wild-type growth rate and sufficient fluorescence level to allow quantification.
-However, the \textit{rpsB-mCherry} strain exhibited strange fluorescence dynamics, especially during growth transitions, which made it unsuitable for our study.
-Our effort were then concentrated on the \textit{rpsB-gfp} strain.
-Data as well as information on the matter are available in Supporting Information.
-
-\subsection{Microfluidic device}
-
-\textit{Irina gave me the relevant information about the microscope, the pump, the making of the microfluidic device, the auto-focus algorithm, etc.
-Just need to rephrase everything.
-We took 6 fields each containing 15 wells.}
-
-\subsection{Cell segmentation}
-
-\textit{We used OpenCV, scikit-image, and numpy in Python 3.5.
-The raw 16-bit images given by the Olympus microscope were converted in 16-bit Tif format.
-They were aligned using cross-correlation to correct for microscope drift.
-Each well was cropped into an individual picture.
-Only a single cell was segmented because we had trouble using available software with our experimental set-up (big pixels, reflection problem, fluorescence and phase contrast not aligned, not enough time...).
-As a preliminary analysis, the segmentation was done manually by focusing on the poles of the deepest cell.
-We used a rectangular mask around the cell with width of X pixels.
-After applying the mask, we corrected the background by removing the mean of the noise (evaluated with a closed shutter, see supporting information).
-We then computed the mean RFU in the mask (for ribosome concentration) and the lenght of the bacteria (for growth rate).
-}
-
-\subsection{Kalman smoothing}
-
-\textit{We used Pandas and numpy to manipulate the data, and pykalman to perform the smoothing in Python 3.5.
-Kalman smoother rely on this and that.
-The following problem was considered :
-[equations]
-We used a double integral of the white noise because so and so.
-}
-
 \section{Results}
 
 \textbf{In Chapter~\ref{chap:theory}, we developed a model of resource allocation during growth transitions.}
@@ -333,6 +257,83 @@ More research need to be done.
 
 Could be interesting to use transitions for syn bio purposes.
 Could be interesting to validate such results in different microorganisms, with different type of medium (fast env, slow env, etc)
+
+\section{Material and Methods}
+
+\subsection{Bacterial strain construction}
+
+To achieve dynamical quantification of ribosome abundance, we designed and constructed a strain containing a translational fusion of \textit{gfpmut2}~\cite{zaslaver_comprehensive_2006} to the C-terminus of \textit{rpsB} (the gene coding the ribosome subunit S2).
+This design was inspired by the work of Bakshi \textit{et al}, who used a similar construction to assess the quantitative spatial distribution of ribosomes in living \textit{E.~coli}~\cite{bakshi_superresolution_2012}.
+
+The transcription factor \textit{tsf} is under the control of the same promoter than \textit{rpsB}, and is located after the C-terminus.
+In order to ensure that \textit{tsf} expression was not affected by our translation fusion on \textit{rpsB}, we used a double-selection procedure to get rid of every resistance gene that the construction might introduce.
+This is something that was not done in the original construction from Bakshi \textit{et al}~\cite{bakshi_superresolution_2012}
+
+A DNA fragment containing a double selection cassette was amplified with two long primers annealing respectively to the region just after the STOP codon at the C-terminus of \textit{rpsB}, and to the beginning of \textit{gfpmut2}.
+The double-selection cassette contained a resistance gene to Kanamycin (positive selection) and a gene coding for the CcdB toxin under the control of the P\textsubscript{BAD} promoter (negative selection in presence of Arabinose).
+This cassette is referred below as \textit{kan-P\textsubscript{BAD}-ccdB}.
+
+Another DNA fragment containing \textit{gfpmut2}~\cite{zaslaver_comprehensive_2006} without ATG was amplified with long primers annealing respectively to the C-terminus of rpsB (just before the STOP codon), and the end of the \textit{kan-P\textsubscript{BAD}-ccdB} cassette.
+The first primer also contained a 18-bp (base pair) linker that was chosen according to the method section of~\cite{bakshi_superresolution_2012}.
+
+Both fragments (the \textit{gfpmut2} reporter and the \textit{kan-P\textsubscript{BAD}-ccdB} cassette) were assembled using Gibson assembly~\cite{gibson_enzymatic_2009}.
+Both PCR products were quantified using NanoDrop and mixed in equimolar proportions with a commercial Gibson Assembly Master mix.
+A final product of 2683 bp was obtained:
+\begin{itemize}
+\item *(50 bp) the C-terminus of \textit{rpsB} without the STOP codon 
+\item (18 bp) a linker (see Supporting Information)
+\item (714 bp) the \textit{gfpmut2} sequence without the initial ATG
+\item (1851 bp) the \textit{kan-P\textsubscript{BAD}-ccdB} cassette
+\item *(50 bp) the region directly after \textit{rpsB} in \textit{E.~coli}
+\end{itemize}
+Regions labeled with * are expected to anneal with the \textit{E.~coli} chromosome.
+The complete sequence of this fragment, as well as all the primers used are available in the Supporting Information of this chapter.
+
+This fragment was electroporated in a BW25113 background strain containing the pSIM5 plasmid with chloramphenicol resistance (lambda-red recombinaison).
+A kanamycin-resistant colony was selected and verified to exhibit green fluorescence in a Tecan microplate reader.
+A new 100-bp fragment containing 50 bp of the end of \textit{gfpmut2} and 50 bp of the region just after \textit{rpsB} was electroporated into this strain (sequence available in Supporting Information) to get rid of the \textit{kan-P\textsubscript{BAD}-ccdB} cassette.
+An arabinose-resistant colony was selected and verified to be kanamycin-sensitive and to still exhibit green fluorescence.
+Finally, the strain was grown overnight at 42$^\circ$C to get rid of the pSIM5 plasmid and a chloramphenicol-sensitive colony was selected.
+The region after \textit{rpsB} was verified by sequencing (full sequence available in Supporting Information).
+
+In parallel, the same protocol was used to construct \textit{mCherry} and \textit{cfp} variants of the same strain.
+However, only the \textit{gfpmut2} and \textit{mCherry} versions were successfully obtained for reasons that were not investigated.
+The full sequence of the final \textit{rpsB-mCherry} strain is available in Supporting Information.
+
+The \textit{rpsB-gfpmut2} and \textit{rpsB-mCherry} strains were characterized on different media using a Tecan microplate reader.
+They were showed to exhibit a wild-type growth rate and sufficient fluorescence level to allow quantification.
+However, the \textit{rpsB-mCherry} strain exhibited strange fluorescence dynamics, especially during growth transitions, which made it unsuitable for our study.
+Our effort were then concentrated on the \textit{rpsB-gfp} strain.
+Data as well as information on the matter are available in Supporting Information.
+
+\subsection{Microfluidic device}
+
+\textit{Irina gave me the relevant information about the microscope, the pump, the making of the microfluidic device, the auto-focus algorithm, etc.
+Just need to rephrase everything.
+We took 6 fields each containing 15 wells.}
+
+\subsection{Cell segmentation}
+
+\textit{We used OpenCV, scikit-image, and numpy in Python 3.5.
+The raw 16-bit images given by the Olympus microscope were converted in 16-bit Tif format.
+They were aligned using cross-correlation to correct for microscope drift.
+Each well was cropped into an individual picture.
+Only a single cell was segmented because we had trouble using available software with our experimental set-up (big pixels, reflection problem, fluorescence and phase contrast not aligned, not enough time...).
+As a preliminary analysis, the segmentation was done manually by focusing on the poles of the deepest cell.
+We used a rectangular mask around the cell with width of X pixels.
+After applying the mask, we corrected the background by removing the mean of the noise (evaluated with a closed shutter, see supporting information).
+We then computed the mean RFU in the mask (for ribosome concentration) and the lenght of the bacteria (for growth rate).
+}
+
+\subsection{Kalman smoothing}
+
+\textit{We used Pandas and numpy to manipulate the data, and pykalman to perform the smoothing in Python 3.5.
+Kalman smoother rely on this and that.
+The following problem was considered :
+[equations]
+We used a double integral of the white noise because so and so.
+}
+
 
 \section{Supporting Information}
 
