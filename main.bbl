@@ -339,7 +339,7 @@ Dean~A. Carlson, Alain~B. Haurie, and Arie Leizarowitz.
 \bibitem{bonnans_bocop_2012}
 Fr{\'e}d{\'e}ric Bonnans, Pierre Martinon, and Vincent Gr{\'e}lard.
 \newblock Bocop - {{A}} collection of examples.
-\newblock Research report, 2012.
+\newblock Research report, Inria, 2012.
 \newblock eprint: https://hal.inria.fr/hal-00726992.
 
 \bibitem{chubukov_coordination_2014}
@@ -629,11 +629,74 @@ Emmanuel Tr{\'e}lat and Enrique Zuazua.
   control.
 \newblock {\em J Differ Equ}, 258(1):81--114, January 2015.
 
+\bibitem{zulkower_robust_2015}
+Valentin Zulkower, Michel Page, Delphine Ropers, Johannes Geiselmann, and Hidde
+  de~Jong.
+\newblock Robust reconstruction of gene expression profiles from reporter gene
+  data using linear inversion.
+\newblock {\em Bioinformatics}, 31(12):i71--i79, June 2015.
+
+\bibitem{kailath_linear_2000}
+Thomas Kailath, Ali~H Sayed, and Babak Hassibi.
+\newblock {\em Linear Estimation}, volume~1.
+\newblock {Prentice Hall Upper Saddle River, NJ}, 2000.
+
+\bibitem{jazwinski_stochastic_2007}
+Andrew~H Jazwinski.
+\newblock {\em Stochastic Processes and Filtering Theory}.
+\newblock {Courier Corporation}, 2007.
+
+\bibitem{kalman_new_1960}
+R.~E. Kalman.
+\newblock A {{New Approach}} to {{Linear Filtering}} and {{Prediction
+  Problems}}.
+\newblock {\em J. Basic Eng}, 82(1):35--45, March 1960.
+
+\bibitem{julier_new_1997}
+Simon~J. Julier and Jeffrey~K. Uhlmann.
+\newblock New extension of the {{Kalman}} filter to nonlinear systems.
+\newblock volume 3068, pages 182--193, 1997.
+
+\bibitem{wang_robust_2010}
+Ping Wang, Lydia Robert, James Pelletier, Wei~Lien Dang, Francois Taddei,
+  Andrew Wright, and Suckjoon Jun.
+\newblock Robust growth of {{Escherichia}} coli.
+\newblock {\em Curr. Biol. CB}, 20(12):1099--103, June 2010.
+
+\bibitem{golub_generalized_1979}
+Gene~H. Golub, Michael Heath, and Grace Wahba.
+\newblock Generalized {{Cross}}-{{Validation}} as a {{Method}} for {{Choosing}}
+  a {{Good Ridge Parameter}}.
+\newblock {\em Technometrics}, 21(2):215--223, May 1979.
+
 \bibitem{zaslaver_comprehensive_2006}
 Alon Zaslaver, Anat Bren, Michal Ronen, Shalev Itzkovitz, Ilya Kikoin, Seagull
   Shavit, Wolfram Liebermeister, Michael~G. Surette, and Uri Alon.
 \newblock A comprehensive library of fluorescent transcriptional reporters for
   {{Escherichia}} coli.
 \newblock {\em Nat. Methods}, 3(8):623--628, August 2006.
+
+\bibitem{gibson_enzymatic_2009}
+Daniel~G Gibson, Lei Young, Ray-Yuan Chuang, J~Craig Venter, Clyde~A Hutchison,
+  and Hamilton~O Smith.
+\newblock Enzymatic assembly of {{DNA}} molecules up to several hundred
+  kilobases.
+\newblock {\em Nat. Methods}, 6(5):343--345, May 2009.
+
+\bibitem{goto_open_2005}
+Akira Goto and Holger Doerr.
+\newblock Open and save {{SPE}} image files, 2005.
+\newblock note: Available at https://imagej.nih.gov/ij/plugins/spe.html.
+
+\bibitem{guizar-sicairos_efficient_2008}
+Manuel Guizar-Sicairos, Samuel~T. Thurman, and James~R. Fienup.
+\newblock Efficient subpixel image registration algorithms.
+\newblock {\em Opt. Lett., OL}, 33(2):156--158, January 2008.
+
+\bibitem{skimage_cross-correlation}
+Cross-{{Correlation}} ({{Phase Correlation}}) \textemdash{} skimage v0.12dev
+  docs.
+\newblock
+  \url{http://scikit-image.org/docs/dev/auto_examples/plot_register_translation.html}.
 
 \end{thebibliography}

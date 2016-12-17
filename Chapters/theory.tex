@@ -111,10 +111,12 @@ The resource allocation parameter $\alpha \in [0,1]$ defines the proportion of p
 We will interchangeably use the symbols $M$, $R$, $S$, and $P$ for the components of the replicators themselves and their total mass [g].
 We will denote the rates at which the macroreactions occur by $V_R$ and $V_M$ [g~h\textsuperscript{-1}].
 
-\begin{figure}[!h]
-\includegraphics[width=\textwidth]{./Fig/Fig1.eps}
-\caption[Self-replicator model of bacterial growth]{
-{\bf Self-replicator model of bacterial growth.} External substrates $S$ enter the cell and are transformed into precursors $P$ through the action of the metabolic machinery $M$.
+\begin{figure}[tb]
+\centering
+\includegraphics[scale=0.9]{./Fig/Fig1.eps}
+\caption{
+\textbf{Self-replicator model of bacterial growth.}
+External substrates $S$ enter the cell and are transformed into precursors $P$ through the action of the metabolic machinery $M$.
 The precursors are used by the gene expression machinery $R$ to make the proteins composing both the metabolic machinery (transporters, enzymes, ...) and the gene expression machinery itself (RNA polymerase, ribosomes, ...).
 $\alpha$ ($1-\alpha$) is the mass proportion of precursors converted into $R$ ($M$).
 Thick arrows denote reactions and thin, dashed arrows denote catalytic activities.
@@ -201,9 +203,9 @@ That is, the model predicts that there is a single optimal way to divide the pre
 The same result, using a similar model, was obtained by Scott \textit{et al.}~\cite{scott_emergence_2014}.
 The self-replicator model is simple enough to derive an algebraic expression for computing $\alpha^*_{opt}$ and the corresponding maximal growth rate $\mu^*_{opt}$ (\textit{Methods} and \ref{S1_Text}), which will simplify analysis of the system in later sections.
 
-\begin{figure}[!h]
+\begin{figure}[tb]
 \includegraphics[width=\textwidth]{./Fig/Fig2.eps}
-\caption[Analysis of self-replicator model of bacterial growth]{\textbf{Analysis of self-replicator model of bacterial growth.}\\
+\caption{\textbf{Analysis of self-replicator model of bacterial growth.}
 \textit{A:}~Phase-plane analysis of the self-replicator model of Eqs~\ref{eq:pdef} and \ref{eq:rdef}.
 The nullclines for $p$ and $r$ are shown as solid and dashed curves, respectively.
 Parameter values are $e_M = 3.6$~h\textsuperscript{-1}, $k_R = 3.6$~h\textsuperscript{-1}, $K_R=1$~g~L\textsuperscript{-1}, $\beta = 0.003$~L~g\textsuperscript{-1}, $\alpha = 0.45$.
@@ -220,10 +222,10 @@ In the framework of our model, different media correspond to different values of
 As can be seen, the model is able to account for the observed quasi-linear relation between the growth rate and the total mass ratio of RNA and protein. 
 Moreover, for realistic values of $k_R$ and $e_M$, a good quantitative fit is obtained (\textit{Methods} and \ref{S1_Table}).
 
-\begin{figure}[!h]
+\begin{figure}[p]
 \includegraphics[width=\textwidth]{./Fig/Fig3.eps}
-\caption[Self-replicator model accounts for bacterial growth laws]{
-\textbf{Self-replicator model accounts for bacterial growth laws.}\\
+\caption{
+\textbf{Self-replicator model accounts for bacterial growth laws.}
 \textit{A:}~Predicted quasi-linear relation between the maximal growth rate $\mu^{*}_{opt}$ and the corresponding optimal resource allocation $\alpha^*_{opt}$, for different values of $e_M$ (different colors).
 The colored dots indicate $\alpha^*_{opt}$ and $\mu^{*}_{opt}$  for $k_R = 2.23$~h\textsuperscript{-1} and different $e_M$, and the dashed black line the relation for all intermediate values of $e_M$.
 The dashed colored lines indicate the relation between $\alpha^*_{opt}$ and $\mu^{*}_{opt}$ obtained when, for a given value of $e_M$, the value of $k_R$ is decreased (lower $k_R$ leads to lower $\mu^{*}_{opt}$).
@@ -255,7 +257,7 @@ In what follows, we will address the above two questions, after having given a p
 \subsection{Biomass maximization as an optimal control problem}
 \label{sec:optimalcontrolproblem}
 
-A self-replicator at steady state accumulates biomass according to $\texttt{Vol}(0)\, e^{\mu^*\, t}$, $t\in [0,\tau]$, when $\mu^*$ is the growth rate at steady state. 
+A self-replicator at steady state accumulates biomass according to \\ $\texttt{Vol}(0)\, e^{\mu^*\, t}$, $t\in [0,\tau]$, when $\mu^*$ is the growth rate at steady state. 
 The accumulation of biomass is obviously maximal when the growth rate is maximal ($\mu^* = \mu^*_{opt}$).
 In dynamical conditions, the growth rate is not constant and biomass accumulation is described more generally by: 
 \begin{equation*}
@@ -314,11 +316,11 @@ Second, if the optimal solution reaches the optimal steady state for the new env
 Third, this switching behavior is characterized by a so-called switching curve $\hat{r}=\varphi(\hat{p})$ in the $(\hat{p},\hat{r})$-plane, which passes through $(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$.
 The switching curve divides the phase plane into two regions, such that $\alpha(\cdot)$ switches to 0 when the system is in the region above $\varphi$ and to 1 when the system is below $\varphi$ (black dashed curve in Fig.~\ref{fig:optimalcontrol}\textit{A}).
 
-\begin{figure}[!h]
+\begin{figure}[tb]
 \centering
 \includegraphics[width=\textwidth]{./Fig/Fig4.eps}
-\caption[Optimal control of the self-replicator during a nutrient upshift]{
-{\bf Optimal control of the self-replicator during a nutrient upshift.}\\
+\caption{
+\textbf{Optimal control of the self-replicator during a nutrient upshift.}
 \textit{A:}~Optimal trajectory in the phase plane for the nondimensionalized model of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim}, with streamlines. The optimal trajectory is shown as a solid, red curve.
 The solid, black curve represents the $\hat{p}$-nullcline.
 The dashed, black curve is the switching curve $\varphi(\hat{p})$.
@@ -372,11 +374,11 @@ Second, for a constant environment $E_M$, the control strategies must drive the 
 Third, this steady state must equal the optimal steady state for that environment, given by $(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$.
 
 
-\begin{figure}[!h]
+\begin{figure}[tb]
 \centering
 \includegraphics[width=\textwidth]{./Fig/Fig5.eps}
-\caption[Alternative strategies for controlling the self-replicator of bacterial growth]{
-{\bf Alternative strategies for controlling the self-replicator of bacterial growth.}\\
+\caption{
+\textbf{Alternative strategies for controlling the self-replicator of bacterial growth.}
 The feedback control strategies, shown in red and superposed on the self-replicator of Fig.~\ref{fig:self_replicator}, exploit information on system variables and the environment to adjust the value of $\alpha$, and thus the relative allocation of resources to the metabolic machinery and gene expression machinery.
 }
 \label{fig:strategies_overview}
@@ -415,11 +417,11 @@ As can be seen from the solution trajectory in Fig.~\ref{fig:comparison_nutrient
 The overshoot reveals that resource allocation is initially suboptimal, with too many resources invested in the metabolic machinery at the expense of the gene expression machinery.
 This causes a transiently suboptimal growth rate, leading to lower biomass accumulation (Eq.~\ref{eq:biomassdyn}).
 
-\begin{figure}[!h]
+\begin{figure}[p]
 \centering
-\includegraphics[height=5cm]{./Fig/Fig6.eps}
-\caption[Comparison of the performance of the nutrient-only and precursor-only strategies after a nutrient upshift]{
-{\bf Comparison of the performance of the nutrient-only and precursor-only strategies after a nutrient upshift.}\\
+\includegraphics[scale=1]{./Fig/Fig6.eps}
+\caption{
+\textbf{Comparison of the performance of the nutrient-only and precursor-only strategies after a nutrient upshift.}
 \textit{A:}~Trajectory in the phase plane for the nutrient-only strategy (green curve).
 The solid, black curve represents the $\hat{p}$-nullcline.
 The dashed, black curve is the $\hat{r}$-nullcline.
@@ -504,12 +506,11 @@ The transition is seen to be nearly perfect, in the sense that 98\% of the optim
 The time course of $\alpha$ in panel \textit{D} is very similar to the optimal time course obtained by numerical optimization, shown in Fig.~\ref{fig:optimalcontrol}\textit{B}, and clearly brings out the bang-bang-singular nature of the solution. 
 These results show that a strategy exploiting complete information on the internal state of the self-replicator can lead to near-optimal performance, outcompeting a strategy that uses partial information on the internal state (precursor abundance only).
 
-\begin{figure}[!h]
+\begin{figure}[p]
 \centering
-\includegraphics[height=5cm]{./Fig/Fig7.eps}
-\caption[Comparison of the performance of the precursor-only and the on-off strategies after a nutrient upshift.]
-{
-{\bf Comparison of the performance of the precursor-only and the on-off strategies after a nutrient upshift.}\newline
+\includegraphics[scale=1]{./Fig/Fig7.eps}
+\caption{
+\textbf{Comparison of the performance of the precursor-only and the on-off strategies after a nutrient upshift.}
 \textit{A:}~Trajectory in the phase plane for the on-off strategy (yellow curve).
 The solid, black curve represents the $\hat{p}$-nullcline and the dashed, black curve the function $g$.
 The solution is obtained by numerical simulation of the system of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim}, supplemented with the equation $\alpha = h(\hat{p},\hat{r})$ defined in Eq.~\ref{eq:stratswitch} and plotted in Fig.~\ref{fig:ppGppsurface}\textit{A}.
@@ -552,12 +553,11 @@ While the role of ppGpp in maintaining optimal resource allocation was already p
 A major insight from the analysis in this section is that this conclusion seems to carry over to dynamical scenarios as well.
 Fundamentally, the analysis suggests that the ppGpp system is a likely candidate to fulfill this role because it integrates information on the imbalance between precursor concentration and abundance of the gene expression machinery.
 
-\begin{figure}[!h]
+\begin{figure}[tb]
 \centering
-\includegraphics[width=\textwidth]{./Fig/Fig8.eps}
-\caption[ppGpp regulation implements a on-off control strategy of resource allocation.]
-{
-{\bf ppGpp regulation implements an on-off control strategy of resource allocation.}\newline
+\includegraphics[scale=1]{./Fig/Fig8.eps}
+\caption{
+\textbf{ppGpp regulation implements an on-off control strategy of resource allocation.}
 \textit{A:}~Response surface of the on-off control strategy, defined by $\alpha = h(\hat{p},\hat{r})$ in Eq.~\ref{eq:stratswitch}.
 \textit{B:}~Response surface of the ppGpp control strategy, as defined by Eq.~\ref{eq:ppGpp_empirical} and the simplified kinetic model defining ppGpp in terms of the total amino acid concentration and the ribosomal protein fraction (\ref{S4_Text}).
 The shape of the response surface of the ppGpp control strategy is seen to be in very good agreement with the on-off strategy leading to near-optimal performance of the self-replicator during a nutrient upshift.
@@ -793,10 +793,12 @@ For numerical simulations of the ODE system, we used the CVODE solver~\cite{cohe
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{S1 Text -- Model derivation and analysis}
+\section{Supporting information for Chapter~2}
+
+\subsection{S1 Text -- Model derivation and analysis}
 \manuallabel{S1_Text}{S1~Text}
 
-\subsection{Model formulation}
+\subsubsection{Model formulation}
 
 The time evolution of the total mass of each component of the self-replicator can be written as follows:
 \begin{eqnarray}
@@ -845,7 +847,7 @@ From Eq.~\ref{eq:supp_deriv_growthrate}, it follows that:
 \mu (t) = \frac{1}{\texttt{Vol}} \frac{d\texttt{Vol}}{dt} = \beta\, v_R(t).
 \end{equation}
 
-\subsection{Nondimensionalization of the system}
+\subsubsection{Nondimensionalization of the system}
 
 For the sake of simplifying the proofs and derivations below, we define the following nondimensional variables:
 \begin{equation*}
@@ -876,7 +878,7 @@ The corresponding nondimensionalized growth rate is given by
 \hat{\mu} = \frac{\mu}{k_R} = \frac{\hat{p}}{K+\hat{p}} \, \hat{r}.
 \end{equation}
 
-\subsection{Steady-state growth of the self-replicator}
+\subsubsection{Steady-state growth of the self-replicator}
 \label{si::growthrate}
 
 If we suppose $E_M > 0$, $K > 0$ and $\alpha \in ]0, 1[$, there is a trivial unstable steady state at $(0, 1)$.
@@ -915,7 +917,10 @@ By substituting Eq.~\ref{eq:supp_growthrate_adim} into the first ODE of the syst
 which by means of Eq.~\ref{eq:supp_steadystate} gives the following relation:
 \begin{equation}
 \label{eq:supp_growthrate_p}
-\hat{\mu}^* = \frac{(1-\alpha)\, E_M}{1+\hat{p}^*} = \frac{2\alpha(1-\alpha)\, E_M}{(1-\alpha)\, E_M + \alpha + \sqrt{\left[(1-\alpha)\, E_M -\alpha\right]^2 + 4\alpha(1-\alpha)\, E_M\, K}}.
+\begin{split}
+\hat{\mu}^* &= \frac{(1-\alpha)\, E_M}{1+\hat{p}^*}\\
+ &= \frac{2\alpha(1-\alpha)\, E_M}{(1-\alpha)\, E_M + \alpha + \sqrt{\left[(1-\alpha)\, E_M -\alpha\right]^2 + 4\alpha(1-\alpha)\, E_M\, K}}.
+\end{split}
 \end{equation}
 Finally, we can transform this expression to obtain
 \begin{equation}
@@ -927,7 +932,7 @@ Finally, we can transform this expression to obtain
 \end{equation}
 This function of $\alpha$ is plotted in Figure~\ref{fig:model_analysis}\textit{B} in the main text.
 
-\subsection{Maximization of growth rate at steady state}
+\subsubsection{Maximization of growth rate at steady state}
 \label{si::optimal}
 
 We are interested in the steady state at which growth occurs at the maximum rate.
@@ -975,7 +980,7 @@ In addition, by using Eq. \ref{eq:supp_p_optimal}, we can write $\alpha_{opt}^*$
 \hat{\mu}^*_{opt} = \frac{\hat{p}^{* 2}_{opt}}{\hat{p}^{* 2}_{opt} + 2K\hat{p}^*_{opt} + K}.
 \end{equation}
 
-\subsection{Analysis of the control strategies}
+\subsubsection{Analysis of the control strategies}
 \label{si::control_strategies}
 
 In this section, we derive the main results for the functions $f$, $g$, and $h$ defining the nutrient-only, precursor-only, and on-off control strategies.
@@ -986,7 +991,7 @@ For each of these, we prove that the Conditions C1, C2 and C3 from the \textit{M
 \item[(C3)] This steady state corresponds to the optimal steady state $(\hat{p}_{opt}^*, \hat{r}_{opt}^*)$, allowing growth at the maximal rate $\mu^*_{opt}$.
 \end{description}
 
-\subsubsection{Nutrient-only strategy}
+\paragraph{Nutrient-only strategy}
 
 The nutrient-only strategy is defined by:
 \begin{equation}
@@ -1015,7 +1020,7 @@ In this environment, the system reaches a steady state $(\hat{p}_1^*, \hat{r}_1^
 However, by Eq.~\ref{eq:supp_alpha_optimal} the optimal value for $\hat{r}^*$ in this environment is given by $f({E_M}_1)$.
 So, the control law $c(E_M)$ does not drive the system to the optimal steady state in this environment, in contradiction with Condition~C3.
 
-\subsubsection{Precursor-only strategy}
+\paragraph{Precursor-only strategy}
 
 The precursor-only strategy is defined by:
 \begin{equation}
@@ -1073,10 +1078,10 @@ J = \left(\begin{matrix}
 \frac{\hat{r}}{K+\hat{p}} \left[ \frac{K}{K+\hat{p}} (g(\hat{p}) - \hat{r}) + \hat{p}K\frac{\hat{p}^2 + 2\hat{p} + K}{(\hat{p}^2 + 2K\hat{p} + K)^2}\right] & \frac{\hat{p}}{K+\hat{p}} (g(\hat{p}) - 2\hat{r})
 \end{matrix}\right) .
 \end{equation}
-Evaluated at $(\hat{p}^*, \hat{r}^*) = (\sqrt{K E_M}, g(\sqrt{K E_M}))$, the Jacobian becomes
+Evaluated at $(\hat{p}^*, \hat{r}^*) = (\sqrt{K E_M}, g(\sqrt{K E_M}))$, the Jacobian $J_{(\hat{p}^*, \hat{r}^*)}$ becomes
 \begin{equation}
 \label{eq:supp_jacobian_g_eq}
-J_{(\hat{p}^*, \hat{r}^*)} = \left(\begin{matrix}
+\left(\begin{matrix}
 - \frac{\sqrt{E_M}}{\sqrt{K}+\sqrt{E_M}} & - E_M - \frac{\sqrt{E_M}}{\sqrt{K}+\sqrt{E_M}} (1+\sqrt{K E_M}) \\
 \frac{\sqrt{E_M}}{\sqrt{K}+\sqrt{E_M}}\frac{K E_M + 2 \sqrt{K E_M} + K}{K (E_M + 2 \sqrt{K E_M} + 1)^2} g(\sqrt{K E_M}) & - \frac{\sqrt{E_M}}{\sqrt{K}+\sqrt{E_M}} g(\sqrt{K E_M})
 \end{matrix}\right).
@@ -1088,7 +1093,7 @@ Hence, the non-trivial steady state is stable, completing the proof of Condition
 Here again, it is interesting to observe that the expression in Eq.~\ref{eq:supp_g} is the only function $g(\hat{p})$ satisfying C1-C3. This can be proven in a similar way as for $f$.
 
 
-\subsubsection{On-off strategy}
+\paragraph{On-off strategy}
 
 The on-off strategy is defined by:
 \begin{equation}
@@ -1115,7 +1120,7 @@ Due to the direction of the vector fields relative to $\hat{r}=g(\hat{p})$, a \t
 The system is seen to evolve towards a locally asymptotically stable steady state, which is the single non-trivial steady state (Condition~C2). 
 This steady state coincides with the intersection of $\hat{r}=g(\hat{p})$ and the $\hat{p}$-nullcline, which is the steady state $(\hat{p}_{opt}^*, \hat{r}_{opt}^*)$ allowing maximal growth, thus verifying Condition~C3.
 
-\begin{figure}[h]
+\begin{figure}[tb]
 \centering
 \includegraphics[width=0.8\textwidth]{Fig/Fig_sliding.eps}
 \caption
@@ -1132,7 +1137,7 @@ The intersection of the $\hat{p}$-nullcline and the curve $\hat{r}=g(\hat{p})$ c
 
 \clearpage
 
-\section{S2 Text -- Model parameters}
+\subsection{S2 Text -- Model parameters}
 \manuallabel{S2_Text}{S2~Text}
 
 Most of the conclusions of this paper are parameter-independent in the range of physically admissible values.
@@ -1162,7 +1167,7 @@ $\alpha$ & -- & Resource allocation parameter\\
 The values derived below are summarized in \ref{S1_Table}.
 
 
-\subsection*{\Large \texorpdfstring{$e_M$}{eM}}
+\subsubsection{\Large \texorpdfstring{$e_M$}{eM}}
 
 By definition, $e_M$ is the effective turnover of the metabolic macroreaction producing precursors from external substrates, obtained by dividing the reaction rate $v_M$ by the enzyme concentration $m$ (Eq.~\ref{eq:metaflux}).
 The unit of $e_M$ is min$^{-1}$, and can be decomposed as follows:
@@ -1187,7 +1192,7 @@ k_M \approx 3.6 \text{ h}^{-1},
 \]
 and thus obtain an upper bound for $e_M$ in our simulations.
 
-\subsection*{\Large \texorpdfstring{$k_R$}{kR}}
+\subsubsection{\Large \texorpdfstring{$k_R$}{kR}}
 
 $k_R$ is the mass rate constant describing the maximal rate of conversion of precursors to macromolecules [h\textsuperscript{-1}].
 As for $e_M$, we can decompose this into
@@ -1214,7 +1219,7 @@ This value is comparable with the translational capacity $k_T$, in $\mu$g of pro
 k_T = \frac{4.5 \text{ }\mu\text{g of protein} \text{ / }\mu\text{g of RNA} \text{ / h }}{0.76 \text{ }\mu\text{g of ribosomal protein} \text{ / } \mu\text{g of RNA}} = 5.9 \text{ h}^{-1}.
 \]
 
-\subsection*{\Large \texorpdfstring{$K_R$}{KR}}
+\subsubsection{\Large \texorpdfstring{$K_R$}{KR}}
 
 A value for the parameter $K_R$, representing the half-saturation constant of macromolecular synthesis, is more difficult to obtain from the literature.
 However, assuming that ribosomes operate close to saturation (80\% over a range of growth rates~\cite{ehrenberg_mediumdependent_2012}), we find that $K_R \approx 0.25\,p$, with p the total amino acid concentration.
@@ -1224,7 +1229,7 @@ These considerations led to the following order of magnitude for $K_R$:
 K_R \approx 1\text{ g L}^{-1}.
 \]
 
-\subsection*{\Large \texorpdfstring{$\beta$}{Beta}}
+\subsubsection{\Large \texorpdfstring{$\beta$}{Beta}}
 
 $\beta$ is the inverse of the cellular density of macromolecules, which has been shown constant during balanced growth over a large range of growth rates~\cite{churchward_macromolecular_1982}, and there is some data suggesting that $\beta$ varies little during growth transitions as well~\cite{zhou_carbon_2013}.
 From~\cite{zimmerman_estimation_1991,mcguffee_diffusion_2010} we take the following typical value for $\beta$:
@@ -1232,7 +1237,7 @@ From~\cite{zimmerman_estimation_1991,mcguffee_diffusion_2010} we take the follow
 \beta \approx \frac{1}{300} \approx 0.003 \text{ L g}^{-1}.
 \]
 
-\subsection*{\Large \texorpdfstring{$E_M$}{EM} and \texorpdfstring{$K$}{K}}
+\subsubsection{\Large \texorpdfstring{$E_M$}{EM} and \texorpdfstring{$K$}{K}}
 
 From the values of the parameter in the dimensional model, one can deduce the parameters in the nondimensional model used in the simulations:
 \[
@@ -1241,10 +1246,10 @@ E_M = \frac{e_M}{k_R} = \frac{3.6}{3.6} = 1 \;\;\;\;\; , \;\;\;\;\;  K = \beta\,
 
 \clearpage
 
-\section{S3 Text -- Solution of optimal control problem}
+\subsection{S3 Text -- Solution of optimal control problem}
 \manuallabel{S3_Text}{S3~Text}
 
-\subsection{Statement of the problem}
+\subsubsection{Statement of the problem}
 
 We consider the dimensionless system defined by Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim} in the main text, which are here repeated for clarity:
 \begin{equation}{\label{eq:model}}
@@ -1280,7 +1285,8 @@ $$
 $$
 Roughly speaking, a trajectory is overtaking optimal if "the performance index catches up with the performance index of any other trajectory"~\cite{carlson_infinite_1991}.
 
-\subsection{Maximum Principle}
+\subsubsection{Maximum Principle}
+
 Necessary conditions on optimal trajectories can be obtained by the Infinite Horizon Maximum Principle~\cite{carlson_infinite_1991}.
 Let $H(\hat{p},\hat{r},\lambda_p,\lambda_r,\lambda_0,\alpha)$ be the Hamiltonian of the system, defined by
 \[
@@ -1312,7 +1318,7 @@ From Eq.~\ref{eq:PMP}, it follows that the control strategy is given by the sign
 
 Finally, given that the system is autonomous, the Hamiltonian is conserved along any extremal trajectory.
 
-\subsection{Characterization of singular arcs}
+\subsubsection{Characterization of singular arcs}
 
 Whenever $\phi$ is vanishing over a time interval, we say that the trajectory is \textit{singular}.
 We will now characterize such trajectories.
@@ -1331,7 +1337,8 @@ $$
 satisfying the Kelley condition necessary for optimality. Given that the singular arc is of second order, an optimal trajectory can enter into the singular arc only by a \textit{chattering arc} (also called the Fuller's phenomenon, \textit{i.e.}, an arc with an infinite number of switches~\cite{borisov_fullers_2000,marchal_chattering_2013}). \\
 
 
-\subsection{Analysis of the adjoint system}
+\subsubsection{Analysis of the adjoint system}
+
 Recalling that a switch corresponds to a change of sign of $\lambda_r$, the analysis of the adjoint system (Eqs~\ref{eq:adjoint_p}-\ref{eq:adjoint_r}) may be useful to characterize the switches of extremal trajectories. 
 
 First, for the abnormal case, we can easily determine in the phase-plane the possible transitions between the four regions defined by the axes (see Fig.~\ref{fig-adj}). A trajectory can cross at most twice the $\lambda_p$-axis, so  we conclude that an abnormal extremal cannot have more than two switches. Thus, an abnormal extremal is a concatenation of at most three bang arcs ($\alpha(t)=0$ or $\alpha(t)=1$). When  $\alpha(t)=0$ or $\alpha(t)=1$ for a long time, the growth rate tends to zero. We therefore conclude that  abnormal extremal trajectories are not optimal.
@@ -1339,16 +1346,16 @@ First, for the abnormal case, we can easily determine in the phase-plane the pos
 Secondly, for the normal case, after the first switch, a trajectory with two consecutive switches in the regions $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}<\hat{p}_{opt}^*\}$ or $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}>\hat{p}_{opt}^*\}$ is not possible, as shown in Fig.~\ref{fig-adj}. Therefore, such a trajectory is not optimal given that it does not fulfill the conditions given by the Maximum Principle.
 We conclude that if the optimal trajectory has a concatenation of bang arcs, the switches must alternatingly occur in the regions  $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}<\hat{p}_{opt}^*\}$ and $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}>\hat{p}_{opt}^*\}$.
 
-\begin{figure}[h]
+\begin{figure}[tb]
 \centering
-\includegraphics[width=0.35\textwidth]{Fig/adj2ab.eps} 
-\includegraphics[width=0.6\textwidth]{Fig/adj2.eps} 
+\includegraphics[height=4cm]{Fig/adj2ab.eps} 
+\includegraphics[height=4cm]{Fig/adj2.eps} 
 \caption{\textbf{Transitions between regions in the phase-plane for the adjoint system.} A switch occurs when a trajectory crosses the $\lambda_p$-axis. Left: abnormal case. An extremal trajectory cannot have more than two switches. Right: normal case. $(\lambda_p^s,0)$ corresponds to the singular arc.  After the first switch, an extremal trajectory cannot have two consecutive switches if it stays in the region $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}<\hat{p}_{opt}^*\}$ or $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}>\hat{p}_{opt}^*\}$.}
 \label{fig-adj}                               
 \end{figure} 
 
 
-\subsection{Optimal trajectories}
+\subsubsection{Optimal trajectories}
 
 From the Maximum Principle, we have shown that the optimal trajectory is a concatenation of bang arcs ($\alpha(t)=0$ or $\alpha(t)=1$) and possibly a singular arc corresponding to the optimal steady state $(\hat{p}(\hat{t}),\hat{r}(\hat{t}))=(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$. Moreover, if the optimal trajectory has a singular arc, it must enter it through a chattering arc (\textit{i.e.}, with an infinite number of switches between $\alpha=0$ and $\alpha=1$).
 
@@ -1377,10 +1384,8 @@ tends to confirm that the control strategy of Eq.~\ref{control-opt} is optimal. 
 
 \clearpage
 
-\section[S4 Text -- Kinetic model of the ppGpp system]{S4 Text -- Kinetic model of the ppGpp system in \textit{Escherichia coli}}
-\sectionmark{S4 Text -- Kinetic model of the ppGpp system}
-\sectionmark{S4 Text -- Kinetic model of the ppGpp system}
-
+\subsection[S4 Text -- Kinetic model of the ppGpp system]{S4 Text -- Kinetic model of the ppGpp system in \textit{Escherichia coli}}
+\sectionmark{Kinetic model of the ppGpp system}
 \manuallabel{S4_Text}{S4~Text}
 
 The recently published model of Bosdriesz \textit{et al.}~\cite{bosdriesz_how_2015} provides a synthesis of the currently available knowledge of the ppGpp regulatory system.
@@ -1468,6 +1473,7 @@ and substituting $t_i$ by the expression of Eq.~\ref{eq:ti_final}.
 
 Finally, we apply (A2) to Eq.~\ref{eq:ppGpp} and obtain the final expression giving the concentration of ppGpp as a function of the total amino acid and ribosome concentrations:
 \begin{equation}
+\footnotesize
 \texttt{ppGpp}(a_i, r) = \frac{1}{k_{spoT}} \left( k_{RelA} \cdot RelA_{tot} \cdot \frac{r_{t,tot}(a_i, r)}{K_{D,RelA} + r_{t,tot}(a_i,r)} + v_{spoT} \right).
 \end{equation}
 This function is represented in Fig.~\ref{S4.fig:ppGpp} with parameters taken from Table~\ref{tab:notations}.
@@ -1480,7 +1486,7 @@ We assumed a Michaelis-Menten inhibition for the regulatory effect of ppGpp on r
 The inhibitory constant $K_I$ lies in the dynamical range of variation of $\texttt{ppGpp}$.
 In Fig.~\ref{fig:ppGppsurface} in the main text, we took $K_I = 10$~$\mu$M.
 
-\begin{figure}[!ht]
+\begin{figure}[tb]~Text
 \centering
 \includegraphics[width=0.7\textwidth]{./Fig/FigS4-1.eps}
 \caption[ppGpp concentration is a function of total ribosome and amino acid concentrations.]
@@ -1493,8 +1499,8 @@ Parameters are taken from Table~\ref{tab:notations}.
 \label{fig:ppGpp}
 \end{figure}
 
-\begin{table}[!h]
-\tiny
+\begin{table}[tb]
+\scriptsize
 \centering
 \begin{tabular}{cccl}
 \hline
@@ -1565,10 +1571,10 @@ $f_i$ & 1/20 & -- & Proportion of aa $i$ in proteins (Assumption A1)\\
 
 \clearpage
 
-\section{S1 Table -- Parameter values of self-replicator model}
+\subsection{S1 Table -- Parameter values of self-replicator model}
 \manuallabel{S1_Table}{S1~Table}
 
-\begin{table}[!h]
+\begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -1599,10 +1605,10 @@ The parameter values in the model were obtained by fitting Eq.~\ref{eq:alpha_mu_
 
 \clearpage
 
-\section{S1 Figure -- Simple control strategies for the self-replicator of bacterial growth}
+\subsection{S1 Figure -- Simple control strategies for the self-replicator of bacterial growth}
 \manuallabel{S1_Fig}{S1~Figure}
 
-\begin{figure}[!h]
+\begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{./Fig/plot_strategies.eps}
 \caption{
