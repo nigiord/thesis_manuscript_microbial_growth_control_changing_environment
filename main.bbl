@@ -699,4 +699,75 @@ Cross-{{Correlation}} ({{Phase Correlation}}) \textemdash{} skimage v0.12dev
 \newblock
   \url{http://scikit-image.org/docs/dev/auto_examples/plot_register_translation.html}.
 
+\bibitem{falk_universe_2005}
+Dan Falk.
+\newblock {\em Universe on a {{T}}-Shirt: {{The Quest}} for the {{Theory}} of
+  {{Everything}}}.
+\newblock {Arcade Publishing}, 2005.
+
+\bibitem{frank_natural_2012}
+S.~A. Frank.
+\newblock Natural selection. {{IV}}. {{The Price}} equation*: {{Price}}
+  equation.
+\newblock {\em J. Evol. Biol.}, 25(6):1002--1019, June 2012.
+
+\bibitem{deamer_origins_1994}
+David~W Deamer and Gail~R Fleischaker.
+\newblock {\em Origins of Life: The Central Concepts}.
+\newblock {Jones \& Bartlett Pub}, 1994.
+
+\bibitem{benner_defining_2010}
+Steven~A. Benner.
+\newblock Defining {{Life}}.
+\newblock {\em Astrobiology}, 10(10):1021--1030, December 2010.
+
+\bibitem{hartwell_molecular_1999}
+Leland~H Hartwell, John~J Hopfield, Stanislas Leibler, and Andrew~W Murray.
+\newblock From molecular to modular cell biology.
+\newblock {\em Nature}, 402:C47--C52, 1999.
+
+\bibitem{arkin_fast_2006}
+Adam~P. Arkin and Daniel~A. Fletcher.
+\newblock Fast, cheap and somewhat in control.
+\newblock {\em Genome Biology}, 7:114, 2006.
+
+\bibitem{guido_bottom-up_2006}
+Nicholas~J. Guido, Xiao Wang, David Adalsteinsson, David McMillen, Jeff Hasty,
+  Charles~R. Cantor, Timothy~C. Elston, and J.~J. Collins.
+\newblock A bottom-up approach to gene regulation.
+\newblock {\em Nature}, 439(7078):856--860, February 2006.
+
+\bibitem{geisel_constitutive_2011}
+Nico Geisel.
+\newblock Constitutive versus responsive gene expression strategies for growth
+  in changing environments.
+\newblock {\em PloS One}, 6(11):e27033, January 2011.
+\newblock 00005.
+
+\bibitem{lopez-maury_tuning_2008}
+Luis L{\'o}pez-Maury, Samuel Marguerat, and J{\"u}rg B{\"a}hler.
+\newblock Tuning gene expression to changing environments: From rapid responses
+  to evolutionary adaptation.
+\newblock {\em Nat. Rev. Genet.}, 9(8):583--593, August 2008.
+\newblock 00196.
+
+\bibitem{lambert_memory_2014}
+Guillaume Lambert and Edo Kussel.
+\newblock Memory and {{Fitness Optimization}} of {{Bacteria}} under
+  {{Fluctuating Environments}}.
+\newblock {\em PLoS Genet}, 10(9):e1004556, September 2014.
+
+\bibitem{kussell_phenotypic_2005}
+Edo Kussell and Stanislas Leibler.
+\newblock Phenotypic {{Diversity}}, {{Population Growth}}, and {{Information}}
+  in {{Fluctuating Environments}}.
+\newblock {\em Science}, 309(5743):2075--2078, September 2005.
+
+\bibitem{short_flows_2006}
+Martin~B. Short, Cristian~A. Solari, Sujoy Ganguly, Thomas~R. Powers, John~O.
+  Kessler, and Raymond~E. Goldstein.
+\newblock Flows driven by flagella of multicellular organisms enhance
+  long-range molecular transport.
+\newblock {\em PNAS}, 103(22):8315--8319, May 2006.
+
 \end{thebibliography}
