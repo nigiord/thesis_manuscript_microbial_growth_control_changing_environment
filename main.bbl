@@ -210,6 +210,12 @@ Ping Wang, Lydia Robert, James Pelletier, Wei~Lien Dang, Francois Taddei,
 \newblock Robust growth of {{Escherichia}} coli.
 \newblock {\em Curr. Biol. CB}, 20(12):1099--103, June 2010.
 
+\bibitem{chubukov_environmental_2014}
+Victor Chubukov and Uwe Sauer.
+\newblock Environmental {{Dependence}} of {{Stationary}}-{{Phase Metabolism}}
+  in {{Bacillus}} subtilis and {{Escherichia}} coli.
+\newblock {\em Appl. Environ. Microbiol.}, 80(9):2901--2909, January 2014.
+
 \bibitem{mcarthur_microbial_2006}
 J.~Vaun McArthur.
 \newblock {\em Microbial {{Ecology}}: {{An Evolutionary Approach}}}.
@@ -239,6 +245,30 @@ Jos{\'e}~Eduardo Gonz{\'a}lez-Pastor.
 \newblock Cannibalism: A social behavior in sporulating {{Bacillus}} subtilis.
 \newblock {\em FEMS Microbiol. Rev.}, 35(3):415--424, May 2011.
 
+\bibitem{savageau_escherichia_1983}
+Michael~A. Savageau.
+\newblock {\emph{Escherichia Coli}} habitats, cell types, and molecular
+  mechanisms of gene control.
+\newblock {\em Am Nat}, 122(6):732--44, December 1983.
+
+\bibitem{savageau_demand_1998}
+Michael~A. Savageau.
+\newblock Demand theory of gene regulation. {{II}}. {{Quantitative}}
+  application to the lactose and maltose operons of
+  {{{\emph{Escherichia}}}}{\emph{ coli}}.
+\newblock {\em Genetics}, 149(4):1677--91, January 1998.
+
+\bibitem{blount_unexhausted_2015}
+Zachary~D. Blount.
+\newblock The unexhausted potential of {{{\emph{E}}}}{\emph{. coli}}.
+\newblock {\em eLife}, 4:e05826, March 2015.
+
+\bibitem{vanelsas_survival_2011}
+Jan~Dirk {van Elsas}, Alexander~V. Semenov, Rodrigo Costa, and Jack~T. Trevors.
+\newblock Survival of {{{\emph{Escherichia}}}}{\emph{ coli}} in the
+  environment: Fundamental and public health aspects.
+\newblock {\em ISME J}, 5(2):173--83, February 2011.
+
 \bibitem{servedio_not_2014}
 Maria~R. Servedio, Yaniv Brandvain, Sumit Dhole, Courtney~L. Fitzpatrick,
   Emma~E. Goldberg, Caitlin~A. Stern, Jeremy Van~Cleve, and D.~Justin Yeh.
@@ -249,6 +279,31 @@ Maria~R. Servedio, Yaniv Brandvain, Sumit Dhole, Courtney~L. Fitzpatrick,
 \bibitem{mcgill_calm_2013}
 Brian McGill.
 \newblock A calm and balanced case for math in biology, April 2013.
+
+\bibitem{elena_evolution_2003}
+Santiago~F. Elena and Richard~E. Lenski.
+\newblock Evolution experiments with microorganisms: The dynamics and genetic
+  bases of adaptation.
+\newblock {\em Nat Rev Genet}, 4(6):457--469, June 2003.
+
+\bibitem{hillis_why_1993}
+W.~Daniel Hillis.
+\newblock Why physicists like models and why biologists should.
+\newblock {\em Current Biology}, 3(2):79--81, February 1993.
+
+\bibitem{alon_introduction_2006}
+Uri Alon.
+\newblock {\em An {{Introduction}} to {{Systems Biology}}: {{Design
+  Principles}} of {{Biological Circuits}}}.
+\newblock {CRC Press}, July 2006.
+\newblock Google-Books-ID: tcxCkIxzCO4C.
+
+\bibitem{kremling_systems_2013}
+Andreas Kremling.
+\newblock {\em Systems {{Biology}}: {{Mathematical Modeling}} and {{Model
+  Analysis}}}.
+\newblock {CRC Press}, November 2013.
+\newblock Google-Books-ID: FXf6AQAAQBAJ.
 
 \bibitem{orth_comprehensive_2011}
 Jeffrey~D. Orth, Tom~M. Conrad, Jessica Na, Joshua~A. Lerman, Hojung Nam,
@@ -263,12 +318,121 @@ Ali Ebrahim, Joshua~A. Lerman, Bernhard~O. Palsson, and Daniel~R. Hyduke.
   {{Analysis}} for {{Python}}.
 \newblock {\em BMC Systems Biology}, 7:74, 2013.
 
-\bibitem{vandenberg_optimal_1998}
-Hugo~A. {van den Berg}, Yuri~N. Kiselev, S.~a. L.~M. Kooijman, and Michael~V.
-  Orlov.
-\newblock Optimal allocation between nutrient uptake and growth in a microbial
-  trichome.
-\newblock {\em J Math Biol}, 37(1):28--48, July 1998.
+\bibitem{palsson_systems_2011}
+B~Palsson.
+\newblock {\em Systems Biology: Properties of Reconstructed Networks}.
+\newblock {Cambridge University Press}, 2011.
+
+\bibitem{varma_stoichiometric_1994}
+A~Varma and BO~Palsson.
+\newblock Stoichiometric flux balance models quantitatively predict growth and
+  metabolic by-product secretion in wild-type {{Escherichia}} coli {{W3110}}.
+\newblock {\em Appl. Environ. Microbiol.}, 60(10):3724--3731, 1994.
+
+\bibitem{fong_metabolic_2004}
+Stephen~S. Fong and Bernhard~\O{} Palsson.
+\newblock Metabolic gene\textendash{}deletion strains of {{Escherichia}} coli
+  evolve to computationally predicted growth phenotypes.
+\newblock {\em Nat Genet}, 36(10):1056--1058, October 2004.
+
+\bibitem{kotte_bacterial_2010}
+Oliver Kotte, Judith~B Zaugg, and Matthias Heinemann.
+\newblock Bacterial adaptation through distributed sensing of metabolic fluxes.
+\newblock {\em Mol. Syst. Biol.}, 6(355):355, January 2010.
+
+\bibitem{peskov_kinetic_2012}
+Kirill Peskov, Ekaterina Mogilevskaya, and Oleg Demin.
+\newblock Kinetic modelling of central carbon metabolism in
+  {{Escherichia}}~coli.
+\newblock {\em FEBS J.}, 279(18):3374--3385, September 2012.
+
+\bibitem{karr_whole-cell_2012}
+Jonathan~R. Karr, Jayodita~C. Sanghvi, Derek~N. Macklin, Miriam~V. Gutschow,
+  Jared~M. Jacobs, Benjamin Bolival~Jr., Nacyra Assad-Garcia, John~I. Glass,
+  and Markus~W. Covert.
+\newblock A {{Whole}}-{{Cell Computational Model Predicts Phenotype}} from
+  {{Genotype}}.
+\newblock {\em Cell}, 150(2):389--401, July 2012.
+
+\bibitem{park_metabolite_2016}
+Junyoung~O. Park, Sara~A. Rubin, Yi-Fan Xu, Daniel Amador-Noguez, Jing Fan,
+  Tomer Shlomi, and Joshua~D. Rabinowitz.
+\newblock Metabolite concentrations, fluxes and free energies imply efficient
+  enzyme usage.
+\newblock {\em Nat Chem Biol}, 12(7):482--489, July 2016.
+
+\bibitem{bennett_absolute_2009}
+Bryson~D. Bennett, Elizabeth~H. Kimball, Melissa Gao, Robin Osterhout,
+  Stephen~J. Van~Dien, and Joshua~D. Rabinowitz.
+\newblock Absolute metabolite concentrations and implied enzyme active site
+  occupancy in {{{\emph{Escherichia}}}}{\emph{ coli}}.
+\newblock {\em Nat Chem Biol}, 5(8):593--9, August 2009.
+
+\bibitem{buscher_cross-platform_2009}
+J{\"o}rg~Martin B{\"u}scher, Dominika Czernik, Jennifer~Christina Ewald, Uwe
+  Sauer, and Nicola Zamboni.
+\newblock Cross-{{Platform Comparison}} of {{Methods}} for {{Quantitative
+  Metabolomics}} of {{Primary Metabolism}}.
+\newblock {\em Anal. Chem.}, 81(6):2135--2143, March 2009.
+
+\bibitem{kauffman_advances_2003}
+Kenneth~J Kauffman, Purusharth Prakash, and Jeremy~S Edwards.
+\newblock Advances in flux balance analysis.
+\newblock {\em Current Opinion in Biotechnology}, 14(5):491--496, October 2003.
+
+\bibitem{jaqaman_linking_2006}
+Khuloud Jaqaman and Gaudenz Danuser.
+\newblock Linking data to models: Data regression.
+\newblock {\em Nat. Rev. Mol. Cell Biol.}, 7(11):813--819, November 2006.
+
+\bibitem{mendes_non-linear_1998}
+P.~Mendes and D.~Kell.
+\newblock Non-linear optimization of biochemical pathways: Applications to
+  metabolic engineering and parameter estimation.
+\newblock {\em Bioinformatics}, 14(10):869--883, 1998.
+
+\bibitem{cho_experimental_2003}
+Kwang-Hyun Cho, Sung-Young Shin, Walter Kolch, and Olaf Wolkenhauer.
+\newblock Experimental design in systems biology, based on parameter
+  sensitivity analysis using a monte carlo method: {{A}} case study for the
+  tnf$\alpha$-mediated nf-$\kappa$ b signal transduction pathway.
+\newblock {\em Simulation}, 79(12):726--739, 2003.
+
+\bibitem{brodersen_characterization_1987}
+R.~Brodersen, F.~Nielsen, J.~C. Christiansen, and K.~Andersen.
+\newblock Characterization of binding equilibrium data by a variety of fitted
+  isotherms.
+\newblock {\em Eur. J. Biochem.}, 169(3):487--495, December 1987.
+
+\bibitem{rodriguez-fernandez_hybrid_2006}
+Maria Rodriguez-Fernandez, Pedro Mendes, and Julio~R. Banga.
+\newblock A hybrid approach for efficient and robust parameter estimation in
+  biochemical pathways.
+\newblock {\em BioSystems}, 83(2-3):248--265, 2006 Feb-Mar.
+
+\bibitem{gutenkunst_universally_2007}
+Ryan~N Gutenkunst, Joshua~J Waterfall, Fergal~P Casey, Kevin~S Brown,
+  Christopher~R Myers, and James~P Sethna.
+\newblock Universally sloppy parameter sensitivities in systems biology models.
+\newblock {\em PLoS Comput. Biol.}, 3(10):1871--78, October 2007.
+\newblock 00400.
+
+\bibitem{ingram_network_2006}
+Piers~J. Ingram, Michael P.~H. Stumpf, and Jaroslav Stark.
+\newblock Network motifs: Structure does not determine function.
+\newblock {\em BMC Genomics}, 7:108, May 2006.
+
+\bibitem{mayo_plasticity_2006}
+Avraham~E. Mayo, Yaakov Setty, Seagull Shavit, Alon Zaslaver, and Uri Alon.
+\newblock Plasticity of the cis-regulatory input function of a gene.
+\newblock {\em PLoS Biol.}, 4(4):e45, April 2006.
+
+\bibitem{spiesser_size_2012}
+Thomas~W. Spiesser, Christiane M{\"u}ller, Gabriele Schreiber, Marcus Krantz,
+  and Edda Klipp.
+\newblock Size homeostasis can be intrinsic to growing cell populations and
+  explained without size sensing or signalling.
+\newblock {\em FEBS J}, 279(22):4213--4230, November 2012.
 
 \bibitem{dijken_kinetics_1993}
 Johannes~P. van Dijken, Ruud~A. Weusthuis, and Jack~T. Pronk.
@@ -333,35 +497,18 @@ O.~Borirak, M.~Bekker, and K.~J. Hellingwerf.
   repression in {{{\emph{Escherichia}}}}{\emph{ coli}}.
 \newblock {\em Microbiology}, 160(Pt6):1214--23, June 2014.
 
-\bibitem{savageau_escherichia_1983}
-Michael~A. Savageau.
-\newblock {\emph{Escherichia Coli}} habitats, cell types, and molecular
-  mechanisms of gene control.
-\newblock {\em Am Nat}, 122(6):732--44, December 1983.
-
-\bibitem{savageau_demand_1998}
-Michael~A. Savageau.
-\newblock Demand theory of gene regulation. {{II}}. {{Quantitative}}
-  application to the lactose and maltose operons of
-  {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Genetics}, 149(4):1677--91, January 1998.
-
-\bibitem{blount_unexhausted_2015}
-Zachary~D. Blount.
-\newblock The unexhausted potential of {{{\emph{E}}}}{\emph{. coli}}.
-\newblock {\em eLife}, 4:e05826, March 2015.
-
-\bibitem{vanelsas_survival_2011}
-Jan~Dirk {van Elsas}, Alexander~V. Semenov, Rodrigo Costa, and Jack~T. Trevors.
-\newblock Survival of {{{\emph{Escherichia}}}}{\emph{ coli}} in the
-  environment: Fundamental and public health aspects.
-\newblock {\em ISME J}, 5(2):173--83, February 2011.
-
 \bibitem{pavlov_optimal_2013}
 Michael~Y. Pavlov and M\aa{}ns Ehrenberg.
 \newblock Optimal control of gene expression for fast proteome adaptation to
   environmental change.
 \newblock {\em Proc Natl Acad Sci USA}, 110(51):20527--32, December 2013.
+
+\bibitem{vandenberg_optimal_1998}
+Hugo~A. {van den Berg}, Yuri~N. Kiselev, S.~a. L.~M. Kooijman, and Michael~V.
+  Orlov.
+\newblock Optimal allocation between nutrient uptake and growth in a microbial
+  trichome.
+\newblock {\em J Math Biol}, 37(1):28--48, July 1998.
 
 \bibitem{waldherr_dynamic_2015}
 Steffen Waldherr, Diego~A. Oyarz{\'u}n, and Alexander Bockmayr.
@@ -683,13 +830,6 @@ Tatsuya Yamamoto, Shunsuke Izumi, and Kunihiko Gekko.
 \newblock Mass spectrometry of hydrogen/deuterium exchange in {{70S}} ribosomal
   proteins from {{{\emph{E}}}}{\emph{. coli}}.
 \newblock {\em FEBS Lett}, 580(15):3638--42, June 2006.
-
-\bibitem{bennett_absolute_2009}
-Bryson~D. Bennett, Elizabeth~H. Kimball, Melissa Gao, Robin Osterhout,
-  Stephen~J. Van~Dien, and Joshua~D. Rabinowitz.
-\newblock Absolute metabolite concentrations and implied enzyme active site
-  occupancy in {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Nat Chem Biol}, 5(8):593--9, August 2009.
 
 \bibitem{churchward_macromolecular_1982}
 Gordon Churchward, Hans Bremer, and Ry~Young.

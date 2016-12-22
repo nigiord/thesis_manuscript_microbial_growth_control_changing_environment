@@ -124,14 +124,14 @@ This approach has been beneficial to mathematical modeling because considering t
 \caption{
 \textbf{The different phases of a typical growth curve}.
 During a typical batch growth scenario, biomass accumulates (black thick line) whereas nutrients are consumed until depletion (green dashed line)~\cite{schaechter_microbe_2006}.
-(A) The lag phase, a variable period of time during which the organism adapt to the new medium~\cite{swinnen_predictive_2004}.
-It is hardly reproducible and can depends on the pre-culturing history of the strain~\cite{ng_damage_1962,dufrenne_effect_1997,shaw_effect_1967}, the magnitude and the rate of the change between the past and present environments~\cite{mcmeekin_predictive_2002}, and other hard-to-control environmental conditions~\cite{cheroutre-vialette_application_2002}.
-(B) The steady-state (or balanced-growth) phase which is characterized by an exponential production of biomass.
-It presents constant and reproducible characteristics which has made it a standard for microbial growth studies~\cite{schaechter_microbe_2006}.
-This phase can be extended for hundreds of generations by the constant addition of fresh medium (continuous culture)~\cite{wang_robust_2010}.
+(A) The lag phase is a variable period of time during which the organism adapt to the new medium~\cite{swinnen_predictive_2004}.
+It is hard to study experimentaly and is known to be affected by the pre-culturing history of the strain~\cite{ng_damage_1962,dufrenne_effect_1997,shaw_effect_1967}, the magnitude and the rate of the change between the past and present environments~\cite{mcmeekin_predictive_2002}, and other hard-to-control environmental conditions~\cite{cheroutre-vialette_application_2002}.
+(B) The steady-state (or balanced-growth) phase is characterized by an exponential production of biomass.
+Its characteristics are time-invariant and reproducible, which has made it a standard for microbial growth studies~\cite{schaechter_microbe_2006}.
+This phase can be extended for hundreds of generations in continuous cultures, by the constant addition of fresh medium~\cite{wang_robust_2010}.
 As represented here, nutrients are quickly depleted in batch conditions, which does not allow to maintain steady-state growth for a long period of time.
-(C) The stationary phase, after the depletion of the limited nutrient in the medium~\cite{chubukov_environmental_2014,schaechter_microbe_2006}.
-In environmental conditions, microorganisms usually encounter poor media and spend most of their time in stationary phase~\cite{mcarthur_microbial_2006,menge_nitrogen_2012,hobbie_microbes_2013}.
+(C) The stationary phase occurs after the depletion of the limiting nutrients in the medium~\cite{chubukov_environmental_2014,schaechter_microbe_2006}.
+In natural conditions, microorganisms usually encounter poor media and spend most of their time in stationary phase~\cite{mcarthur_microbial_2006,menge_nitrogen_2012,hobbie_microbes_2013}.
 Some species which have evolved long-term resistance mechanisms, like sporulation~\cite{stragier_molecular_1996} or cannibalism~\cite{gonzalez-pastor_cannibalism:_2011}, can survive particularly long stationary phases.
 }
 \label{fig:growth_curve}
@@ -139,95 +139,110 @@ Some species which have evolved long-term resistance mechanisms, like sporulatio
 
 Although balanced growth is convenient from an experimental and theoretical point of view, it is widely admitted that microorganisms rarely encounter this state in nature~\cite{schaechter_microbe_2006}.
 Steady-state growth requires stable conditions over a long period of time, but microorganisms live in
-environments where the key elements, such as carbon, nitrogen or phosphorus, are quickly depleted by the competitors as soon as they become available~\cite{mcarthur_microbial_2006,menge_nitrogen_2012,hobbie_microbes_2013}.
+environments where the key elements, such as carbon, nitrogen or phosphorus, are quickly depleted by the competitors as soon as they become available~\cite{mcarthur_microbial_2006,menge_nitrogen_2012,hobbie_microbes_2013}, a consideration that also holds for the lab strains on which growth laws are studied~\cite{savageau_escherichia_1983,savageau_demand_1998,blount_unexhausted_2015,vanelsas_survival_2011}.
 Why would microorganisms be optimal for a state they have barely encountered during their evolution?
 Are we missing something by studying in stable, unchanging conditions, systems that were in fact selected to cope with environmental variations?
 
 \section{Problem statement}
 
-With their beautiful simplicity, growth laws represent an exceptional point of view on microbial life strategies.
-But being established at balanced growth might have drawbacks since it is a growth state totally irrelevant to the life-trait history of microorganisms.
-How would growth laws be affected in a dynamical context?
-Can we still find universal regularities during growth states more relevant to the natural habitat of microorganisms?
+Microbial growth is essentially a resource allocation problem that can be summarized in simple, fundamental growth laws.
+Though established empirically, those laws are elegantly explained if we consider that microorganisms behave in way that optimizes their biomass production.
+However, these laws describe growth in stable environments, but it is hard to imagine how natural selection could have made microorganisms optimal for conditions they rarely encounter.
+This motivates the study of growth laws through a dynamical perspective, that is, in a changing environment, and leads us to the following problem statement: \textbf{Which strategies microorganisms follow to dynamically reallocate their resources after a change in the environment?}
+The development of this question prompts the following investigations.
 
-Since we lose the inherent advantages of working at steady state, we must confine our problem to keep it tractable.
-We then focus on the fundamentals behind resource allocation (the proteome composition growth law), especially the regulation of the abundance of gene expression machinery during the transition between two different growth media.
+What are the best strategies of resource allocation if, like for the steady-state growth laws, the biomass production is kept as the only optimization criteria?
+Through answering this question, we could assess to which extend the features of dynamical optimization differ from the steady-state optimization.
+In other words, it would test our verbal hypothesis that motivated a dynamical perspective on growth: the fact that we expect evolutionary pressure to apply differently between dynamic and stable conditions.
+This requires to translate the problem in the mathematical world, through the development of a proof-of-concept model of resource allocation in bacterial cells, and the theoretical determination of the optimal dynamical allocation of resources following a change in the environment.
 
-On the theoretical side, we assess if there exist a universal optimal way to allocate cell resources during growth transitions.
-On the experimental side, we monitor the abundance of key macromolecular components in order to get an insight that could be compared with the theoretical predictions.
+How could one measure empirically the resource allocation during a growth transition?
+The model will help us to establish actual resource allocation strategies that optimize biomass production during an environmental change.
+However, it will not be able to tell us if microorganism actually care to optimize such a criterion.
+We need though the possibility to measure biomass accumulation and changes in resource allocation when a shift is made in the environment.
+This would require a way to dynamically track the abundance of key macromolecules in living cells, while establishing an experimental set-up that temper the inherent variability of dynamical experimental studies of microbial growth.
 
 \section{Related work}
 
 \subsection{Modeling growth of microorganisms}
 
-My recent experience as a teacher taught me that, as of today, a lot of students still choose to study biology in the hope to find a math-free job in science.
-They fall from the clouds when you tell them modeling is an important part of a biologist's life.
-This misconception usually comes from a bad understanding of what is modeling.
-In its general sense, a model depicts and simplifies reality.
-Maps, sketches, or pictures satisfy this definition, as do graphs, sets of equations, or even the DNA sequences I store in a text-file on my computer.
-Overall, depicting and simplifying reality makes you a modeler, not so much drawing equations on a board.
-But this does not change the fact that mathematics are incredible tools for these purposes~\cite{servedio_not_2014,mcgill_calm_2013}.
+My recent experience as a teacher taught me that, as of today, a lot of students in biology do not like mathematics very much.
+Since mathematics is the main language of modeling, this has often made it difficult for me to convince them that modeling is of key importance for biologists.
+However, while mathematics is the language, it is not the essence of modeling.
+Generally speaking, a model depicts and simplifies reality.
+Maps, sketches, or pictures satisfy this definition, as do graphs, sets of equations, or even the DNA sequences stored in a text file on a computer.
+In other words, depicting and simplifying reality makes you a modeler, not so much drawing equations on a board.
+But this does not change the fact that mathematics are powerful tools for formulating and analyzing models~\cite{servedio_not_2014,mcgill_calm_2013}.
 
 What makes mathematical modeling so useful in microbial growth studies?
-Microbial physiology comes out from the interplay of thousands of chemical reactions that are not necessarily relevant in any given situation.
-They usually occur on a short time scale as compared with the organism life span.
-They nevertheless have been (and still are) selected by evolutionary processes that occur on long time scales.
-These physical limitations strongly impede a full empirical study of growth processes, making sometimes hard to test the most simple verbal hypothesis.
-Since they are designed to abstract away complexity, mathematical models are great tools to deal with such limitations.
+Evolutionary biology is a good instance of field that has been resorting for a long time on mathematical modeling~\cite{servedio_not_2014}.
+The large time and population scales at which evolutionary processes occur truly impede most of the experimental work, despite some attempts on organisms with a short generation time~\cite{elena_evolution_2003}.
+Besides, microbiology is a field particularly prone to experimental study.
+A growth curve as presented in Fig.~\ref{fig:growth_curve} can be made in a day, so the limitations of evolutionary biology should not apply to microbial growth studies.
+Why care to mimic reality on a computer when we can just directly bend it to our will~\cite{hillis_why_1993}?
+The last decades have strongly challenged this viewpoint: as knowledge and data on microbes accumulated, the need for a systemic understanding of biology was more and more pressing~\cite{alon_introduction_2006,kremling_systems_2013}.
+
+Microbial physiology results from the interplay of thousands of chemical reactions that are not necessarily relevant in any given situation~\cite{schaechter_microbe_2006}.
+These reactions occurs on short time scales, and are controlled by several layers of regulatory mechanisms that can only be understood through evolutionary considerations.
+As a consequence, even the simplest verbal hypothesis can resist direct empirical testing.
+But abstracting away complexity is the purpose of mathematical models.
 The overwhelming number of variables and time scales can be dealt with by choosing the correct framework.
-When working on a model, growth is abstracted into a world of clearly stated rules, where logical reasoning can be applied~\cite{servedio_not_2014}.
+When working on a model, the microbe behaviors are abstracted into a world of clearly stated rules, where logical reasoning can be applied~\cite{servedio_not_2014,mcgill_calm_2013}.
 Predictions can be made, "unpacked" into our real world, and confronted with experimental testing.
-In that sense, modeling is at the core of the scientific method~\cite{mcgill_calm_2013}.
-This could explain why mathematical modeling has been extensively applied to microbial growth studies, creating a diversity a modeling framework.
 
-For an increasing number of microorganisms, we are now able to draw quasi-exhaustive maps of their inner metabolic reactions.
-This has been made possible by the advances on genome reconstruction, which are easier and cheaper to accomplish every passing year.
-But making sense of these data proved to be even more challenging.
-Which reactions are important, and in which conditions?
-How will a metabolic network react to perturbations?
-Can we predict its evolution in a given environment?
-When dealing with genome-scale metabolic networks, one is challenged by the number of metabolites and possible reactions (e.g. the most recent genome-scale reconstruction of \textit{E. coli} metabolism contains "1366 genes, 2251 metabolic reactions, and 1136 unique metabolites"~\cite{orth_comprehensive_2011}).
-More importantly, while progress in genomic made possible such reconstructions, measuring precise \textit{in-vivo} kinetic parameters for all these reactions still represents a technological bottleneck~[citation?].
-Nevertheless, a modeling framework is specifically designed to deal with such limitations: constraint-based modeling.
-This framework abstracts away the unknown kinetics and represents the metabolic maps as a flux map on which physico-chemical constraints can be applied, e.g. steady-state, compartmentalization, mass conservation, molecular crowding, and thermodynamic directionality~\cite{ebrahim_cobrapy_2013}.
-Candidates for the flux distribution are obtained by optimizing the system towards an objective function, which usually represents growth rate for microorganisms.
-One can find a lot of derivatives of this framework, but its the Flux Balance Analysis that renewed interest into it [citation review ?].
-\textbf{[Need some key results that were obtained, or this paragraph makes no sense].}
-Note that such a level of abstraction necessarily has its drawbacks, e.g. the definition of the objective function, the difficulty to work in dynamic or implement information on the metabolic regulations [citation?].
+Modeling was particularly helpful to unveil how metabolic networks operate.
+For an increasing number of microorganisms, we are now able to draw quasi-exhaustive maps of their metabolic reactions.
+For instance, the most recent genome-scale reconstruction of \textit{E. coli} metabolism contains 1366 genes, 2251 metabolic reactions, and 1136 unique metabolites~\cite{orth_comprehensive_2011}.
+Such a number of variables might seem overwhelming, and making sense of these knowledge is rarely straightforward.
+Which reactions are important, and in which environmental conditions?
+Can we predict how perturbations will affect a given metabolic network?
+Do fundamental regularities exist between different metabolic networks, from different species?
 
-The ever-growing available data on metabolic networks can also be used to make large kinetic models.
-For the reasons we stated above, we expect these models to be inherently limited in scope.
-It means that the modeler has to be extremely careful since he or she injects its knowledge about what might be important in the system, for the question he or she tries to solve.
-They are however more flexible, in the sense that one can easily make interplay different level of regulations.
-\textit{[Present the work of Klumpp, Kremling, Sauer, whole model of genitallium, etc]
-}\textit{Especially the work of Klumpp, Kremling, Sauer, etc, also the whole model of genitallium.
-Biggest problem is the lack of parameter values, and some huge trouble with identifiability.
-They have medium to large scope (increasing), highly detailed granularity and deal with the mathematical complexity via the computational power via the use of huge quantity of data.}
+This apparent complexity does not impede a mathematical studies of metabolic networks.
+Constraint-based modeling is a framework that abstracts away the unknown kinetics and represents the metabolic reactions by steady-state fluxes to which physico-chemical constraints can be applied, e.g. compartmentalization, mass conservation, molecular crowding, and thermodynamic directionality~\cite{ebrahim_cobrapy_2013}.
+In other words, through constraints imposed to the metabolic networks, it provides a space of admissible flux distributions, eliminating reactions that are unlikely to occur in the environmental condition of interest.
+This space is often further reduced by selecting the flux distributions optimizing a specified objective function (e.g., the growth rate of the cell).
+Such an approach, initially developed through flux balance analysis (FBA)~\cite{orth_comprehensive_2011,palsson_systems_2011}, has been shown to correctly predict many behaviors of the metabolic network of \textit{E. coli}~\cite{varma_stoichiometric_1994,edwards_silico_2001}.
+It also proved capable of predicting its long-term recovery through genetic evolution after a gene deletion~\cite{fong_metabolic_2004}.
 
-Another approach has shown successful in understanding some aspects of growth behaviors of microorganisms.
-By applying a high level of abstraction on how the cell functions, it becomes easy to compare data about different species and to uncover general evolutionary principles that are independent of the specific implementation in each organism.
-Best examples of this approach are the empirical growth laws of ribosomal abundance~\cite{scott_bacterial_2011,scott_interdependence_2010,scott_emergence_2014}, or the proof-of-concept explanation of overflow metabolism~\cite{molenaar_shifts_2009} that were described in section~\ref{sec:context} of this introduction.
-It is also the preferred approach when one wants to broaden its access to mathematical tools~\cite{vandenberg_optimal_1998}, most of them being unhelpful with the high dimensionality of biological models.
-As we will describe in section~\ref{sec:approach}, this represents the modeling strategy that was used in this thesis.
+More direct modeling approaches, in the form of large kinetic models, have also been helpful to understand growth-related processes.
+Through the construction of a model of 47 differential equations and 193 parameters, Kotte \textit{et al} showed how metabolic fluxes are sensed at different locations of the central carbon metabolism, and integrated in a global cell response by the coupling of enzymatic and transcriptional regulations~\cite{kotte_bacterial_2010}.
+Such models are often sufficiently detailed to be used as \textit{in silico} testbed to investigate and uncover specific molecular mechanisms~\cite{peskov_kinetic_2012}.
+The most emblematic instance of that kind of approach is probably the recent whole-cell model of \textit{Mycoplasma genitalium}~\cite{karr_whole-cell_2012}.
+By aggregating all the available knowledge from more than 900 publications, Karr \textit{et al} constructed a dynamical model accounting for all the annotated gene functions of this pathogenic organism, and successfully used it to investigate unobserved molecular mechanisms and guide novel experimental analysis.
+While such approach is not yet applicable to all kind of organisms, it genuinely demonstrates how the increase in computational power could one day make at hand \textit{in silico} experimentation.
 
-Coarse-grained models have also been helpful to understand the process by which microorganisms switch to inefficient metabolic pathways when growing at high nutrient availability.
-Since nutrients are not used at their full potential given the environmental conditions, this widespread growth strategy apparently leads to energy waste, ~\cite{molenaar_shifts_2009} (Fig~\ref{fig:molenaar_overflow}).
-Originally called the Crabtree effect when first observed in \textit{Saccharomyces cerevisiae}~\cite{dijken_kinetics_1993} and overflow metabolism when later found in \textit{E. coli}~\cite{vemuri_overflow_2006}, it has also been called the Warburg effect in many types of tumor cells~\cite{mckeehan_glycolysis_1982,hsu_cancer_2008}.
-Molenaar \textit{et al} showed that this phenomenon simply results from the underlying principle of growth rate maximization, in particular the trade-off between the cost of enzyme synthesis and the pathway efficiency~\cite{molenaar_shifts_2009}.
-Like traders, bacteria distribute their resources between different beneficiaries, and tend to do so in a way that maximizes returns on investments.
+But while it represents their strength, the granularity of the models cited above is also their main weakness.
+Despite this apparently rich available knowledge, precise measurements of \textit{in-vivo} kinetic parameters still represents a technological bottleneck~\cite{park_metabolite_2016,bennett_absolute_2009,buscher_cross-platform_2009}.
+Constraint-based modeling overcomes this limitation by using a mathematical approach that does not require any knowledge about the reaction kinetics.
+The drawback is that they highly depend on the constraints used to reduce the space of admissible solutions, e.g. the choice of the objective function that could sometimes be tricky~\cite{kauffman_advances_2003}.
+Kinetic models however are particularly sensible to missing parameters.
+While the so-called free parameters are often collectively fitted to available data~\cite{jaqaman_linking_2006,mendes_non-linear_1998}, this is known to produce large parameter uncertainty~\cite{cho_experimental_2003,brodersen_characterization_1987,rodriguez-fernandez_hybrid_2006}, which can significantly affect the predictions of the model~\cite{gutenkunst_universally_2007,ingram_network_2006,mayo_plasticity_2006}.
 
-\begin{figure}[tb]
-\centering
-\includegraphics[width=\textwidth]{./Fig/Chapter1/molenaar_overflow.eps}
-\caption{
-\textbf{The strategy of overflow metabolism, reproduced from~\cite{molenaar_shifts_2009}.}
-When increasing the concentration of substrate, the metabolism of microorganisms switches toward the use of inefficient pathways.
-This paradoxical behavior does in fact maximize the growth rate if we take into account the costs and benefits of enzyme synthesis, in particular the fact that pathways for inefficient catabolism are shorter and therefore cheaper to produce.
-(A) Simple view of microbial metabolism, with the two competing efficient and inefficient pathways.
-(B) The switching from efficient to inefficient catabolism when the concentration of nutrients, and hence the growth rate, increases.
-}
-\label{fig:molenaar_overflow}
-\end{figure}
+Such limitations often motivate the construction of simpler, coarse-grained models.
+The approach is dramatically different: instead of aggregating the available knowledge into a highly detailed model, the modeler is concerned about carefully filtering this information to keep the model as simple as possible.
+They generally consider a high level of abstraction of the cell functions, and are particularly valuable when looking for universal laws or principles~\cite{scott_bacterial_2011,scott_interdependence_2010,scott_emergence_2014}.
+They can take the form of minimal core models that focus on a given aspect of growth, while still abstracting away the molecular details (see \textit{e.g.}, ~\cite{spiesser_size_2012}).
+Such models can also be used as proof-of-concept to submit verbal hypothesis to the logic and rigor of mathematical reasoning~\cite{servedio_not_2014}.
+For instance, a simple proof-of-concept model was used to uncover principles that lead to overflow metabolism, a mechanism by which microorganisms switch to inefficient metabolic pathways when growing at high nutrient availability~\cite{molenaar_shifts_2009}.
+This paradoxal and widely spread mechanism~\cite{dijken_kinetics_1993,vemuri_overflow_2006,mckeehan_glycolysis_1982,hsu_cancer_2008} was shown to be easily explained by the trade-off between the efficiency of a pathway and the cost of synthesis of its enzymes.
+Overall, these models have several advantages for the purpose of our study: they clearly state and do not lose track of their assumptions, and are sufficiently tractable to allow access to complex mathematical tools (as will be required for dynamical optimization).
+
+%It is also the preferred approach when one wants to broaden its access to mathematical tools~\cite{vandenberg_optimal_1998}, most of them being unhelpful with the high dimensionality of biological models.
+%As we will describe in section~\ref{sec:approach}, this represents the modeling strategy that was used in this thesis.
+
+%\begin{figure}[tb]
+%\centering
+%\includegraphics[width=\textwidth]{./Fig/Chapter1/molenaar_overflow.eps}
+%\caption{
+%\textbf{The strategy of overflow metabolism, reproduced from~\cite{molenaar_shifts_2009}.}
+%When increasing the concentration of substrate, the metabolism of microorganisms switches toward the use of inefficient pathways.
+%This paradoxical behavior does in fact maximize the growth rate if we take into account the costs and benefits of enzyme synthesis, in particular the fact that pathways for inefficient catabolism are shorter and therefore cheaper to produce.
+%(A) Simple view of microbial metabolism, with the two competing efficient and inefficient pathways.
+%(B) The switching from efficient to inefficient catabolism when the concentration of nutrients, and hence the growth rate, increases.
+%}
+%\label{fig:molenaar_overflow}
+%\end{figure}
 
 \subsection{Measuring growth of microorganisms}
 
