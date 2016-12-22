@@ -5,15 +5,33 @@ Jeremy Fox.
 \newblock How to write a good introduction section. {{And}} tell if yours is
   bad., April 2016.
 
-\bibitem{zimmer_microcosm:_2009}
-Carl Zimmer.
-\newblock {\em Microcosm: {{E}}. Coli and the {{New Science}} of {{Life}}}.
-\newblock {Vintage Books USA}, 2009.
+\bibitem{madigan_biology_2006}
+Michael~T Madigan, John~M Martinko, and Thomas~D Brock.
+\newblock {\em Biology of {{Microorganisms}}}.
+\newblock {Pearson Prentice Hall}, Upper Saddle River, NJ, 2006.
+\newblock OCLC: 57001814.
 
 \bibitem{schaechter_microbe_2006}
 M.~Schaechter, J.~L. Ingraham, and F.~C. Neidhardt.
 \newblock {\em Microbe}.
 \newblock {ASM Press}, 2006.
+
+\bibitem{rothschild_life_2001}
+Lynn~J. Rothschild and Rocco~L. Mancinelli.
+\newblock Life in extreme environments.
+\newblock {\em Nature}, 409(6823):1092--1101, February 2001.
+
+\bibitem{nicholson_transcriptomic_2012}
+Wayne~L. Nicholson, the PROTECT~Team Moeller, Ralf, and Gerda Horneck.
+\newblock Transcriptomic {{Responses}} of {{Germinating Bacillus}} subtilis
+  {{Spores Exposed}} to 1.5 {{Years}} of {{Space}} and {{Simulated Martian
+  Conditions}} on the {{EXPOSE}}-{{E Experiment PROTECT}}.
+\newblock {\em Astrobiology}, 12(5):469--486, May 2012.
+
+\bibitem{zimmer_microcosm:_2009}
+Carl Zimmer.
+\newblock {\em Microcosm: {{E}}. Coli and the {{New Science}} of {{Life}}}.
+\newblock {Vintage Books USA}, 2009.
 
 \bibitem{dawkins_selfish_1976}
 Richard Dawkins.
@@ -131,28 +149,6 @@ Matthew Scott, Carl~W Gunderson, Eduard~M Mateescu, Zhongge Zhang, and Terence
   consequences.
 \newblock {\em Science}, 330(6007):1099--102, November 2010.
 
-\bibitem{dijken_kinetics_1993}
-Johannes~P. van Dijken, Ruud~A. Weusthuis, and Jack~T. Pronk.
-\newblock Kinetics of growth and sugar consumption in yeasts.
-\newblock {\em Antonie Van Leeuwenhoek}, 63(3-4):343--352, 1993.
-
-\bibitem{vemuri_overflow_2006}
-G.~N. Vemuri, E.~Altman, D.~P. Sangurdekar, A.~B. Khodursky, and M.~A. Eiteman.
-\newblock Overflow {{Metabolism}} in {{Escherichia}} coli during
-  {{Steady}}-{{State Growth}}: {{Transcriptional Regulation}} and {{Effect}} of
-  the {{Redox Ratio}}.
-\newblock {\em Appl. Environ. Microbiol.}, 72(5):3653--3661, January 2006.
-
-\bibitem{mckeehan_glycolysis_1982}
-Wallace~L McKeehan.
-\newblock Glycolysis, glutaminolysis and cell proliferation.
-\newblock {\em Cell Biol. Int. Rep.}, 6(7):635--650, 1982.
-
-\bibitem{hsu_cancer_2008}
-Peggy~P. Hsu and David~M. Sabatini.
-\newblock Cancer {{Cell Metabolism}}: {{Warburg}} and {{Beyond}}.
-\newblock {\em Cell}, 134(5):703--707, September 2008.
-
 \bibitem{fishov_microbial_1995}
 Itzhak Fishov, Arieh Zaritsky, and N.~B. Grover.
 \newblock On microbial states of growth.
@@ -162,6 +158,86 @@ Itzhak Fishov, Arieh Zaritsky, and N.~B. Grover.
 Allan Campbell.
 \newblock {{SYNCHRONIZATION OF CELL DIVISION}}.
 \newblock {\em Bacteriol. Rev.}, 21(4):263--272, December 1957.
+
+\bibitem{orth_what_2010}
+Jeffrey~D. Orth, Ines Thiele, and Bernhard~\O{} Palsson.
+\newblock What is flux balance analysis?
+\newblock {\em Nat. Biotechnol.}, 28(3):245--248, March 2010.
+\newblock 00491.
+
+\bibitem{swinnen_predictive_2004}
+I.~A.~M. Swinnen, K.~Bernaerts, E.~J.~J. Dens, A.~H. Geeraerd, and J.~F.
+  Van~Impe.
+\newblock Predictive modelling of the microbial lag phase: A review.
+\newblock {\em International Journal of Food Microbiology}, 94(2):137--159,
+  July 2004.
+
+\bibitem{ng_damage_1962}
+Henry Ng, John~L. Ingraham, and Allen~G. Marr.
+\newblock Damage and {{Derepression}} in {{Escherichia Coli Resulting}} from
+  {{Growth}} at {{Low Temperatures}}.
+\newblock {\em J. Bacteriol.}, 84(2):331--339, January 1962.
+
+\bibitem{dufrenne_effect_1997}
+J.~Dufrenne, E.~Delfgou, W.~Ritmeester, and S.~Notermans.
+\newblock The effect of previous growth conditions on the lag phase time of
+  some foodborne pathogenic micro-organisms.
+\newblock {\em International Journal of Food Microbiology}, 34(1):89--94,
+  January 1997.
+
+\bibitem{shaw_effect_1967}
+Maxwell~K. Shaw.
+\newblock Effect of {{Abrupt Temperature Shift}} on the {{Growth}} of
+  {{Mesophilic}} and {{Psychrophilic Yeasts}}.
+\newblock {\em J. Bacteriol.}, 93(4):1332--1336, January 1967.
+
+\bibitem{mcmeekin_predictive_2002}
+T.~A. McMeekin, J.~Olley, D.~A. Ratkowsky, and T.~Ross.
+\newblock Predictive microbiology: Towards the interface and beyond.
+\newblock {\em International Journal of Food Microbiology},
+  73(2\textendash{}3):395--407, March 2002.
+
+\bibitem{cheroutre-vialette_application_2002}
+M~Cheroutre-Vialette and A~Lebert.
+\newblock Application of recurrent neural network to predict bacterial growth
+  in dynamic conditions.
+\newblock {\em International Journal of Food Microbiology},
+  73(2\textendash{}3):107--118, March 2002.
+
+\bibitem{wang_robust_2010}
+Ping Wang, Lydia Robert, James Pelletier, Wei~Lien Dang, Francois Taddei,
+  Andrew Wright, and Suckjoon Jun.
+\newblock Robust growth of {{Escherichia}} coli.
+\newblock {\em Curr. Biol. CB}, 20(12):1099--103, June 2010.
+
+\bibitem{mcarthur_microbial_2006}
+J.~Vaun McArthur.
+\newblock {\em Microbial {{Ecology}}: {{An Evolutionary Approach}}}.
+\newblock {Academic Press}, Amsterdam ; Boston, 1 edition edition, February
+  2006.
+
+\bibitem{menge_nitrogen_2012}
+Duncan N.~L. Menge, Lars~O. Hedin, and Stephen~W. Pacala.
+\newblock Nitrogen and {{Phosphorus Limitation}} over {{Long}}-{{Term Ecosystem
+  Development}} in {{Terrestrial Ecosystems}}.
+\newblock {\em PLOS ONE}, 7(8):e42045, August 2012.
+
+\bibitem{hobbie_microbes_2013}
+John~Eyres Hobbie and Erik~Alan Hobbie.
+\newblock Microbes in nature are limited by carbon and energy: The
+  starving-survival lifestyle in soil and consequences for estimating microbial
+  rates.
+\newblock {\em Front. Microbiol.}, 4, 2013.
+
+\bibitem{stragier_molecular_1996}
+Patrick Stragier and Richard Losick.
+\newblock Molecular genetics of sporulation in bacillus subtilis.
+\newblock {\em Annu. Rev. Genet.}, 30(1):297--341, December 1996.
+
+\bibitem{gonzalez-pastor_cannibalism:_2011}
+Jos{\'e}~Eduardo Gonz{\'a}lez-Pastor.
+\newblock Cannibalism: A social behavior in sporulating {{Bacillus}} subtilis.
+\newblock {\em FEMS Microbiol. Rev.}, 35(3):415--424, May 2011.
 
 \bibitem{servedio_not_2014}
 Maria~R. Servedio, Yaniv Brandvain, Sumit Dhole, Courtney~L. Fitzpatrick,
@@ -193,6 +269,28 @@ Hugo~A. {van den Berg}, Yuri~N. Kiselev, S.~a. L.~M. Kooijman, and Michael~V.
 \newblock Optimal allocation between nutrient uptake and growth in a microbial
   trichome.
 \newblock {\em J Math Biol}, 37(1):28--48, July 1998.
+
+\bibitem{dijken_kinetics_1993}
+Johannes~P. van Dijken, Ruud~A. Weusthuis, and Jack~T. Pronk.
+\newblock Kinetics of growth and sugar consumption in yeasts.
+\newblock {\em Antonie Van Leeuwenhoek}, 63(3-4):343--352, 1993.
+
+\bibitem{vemuri_overflow_2006}
+G.~N. Vemuri, E.~Altman, D.~P. Sangurdekar, A.~B. Khodursky, and M.~A. Eiteman.
+\newblock Overflow {{Metabolism}} in {{Escherichia}} coli during
+  {{Steady}}-{{State Growth}}: {{Transcriptional Regulation}} and {{Effect}} of
+  the {{Redox Ratio}}.
+\newblock {\em Appl. Environ. Microbiol.}, 72(5):3653--3661, January 2006.
+
+\bibitem{mckeehan_glycolysis_1982}
+Wallace~L McKeehan.
+\newblock Glycolysis, glutaminolysis and cell proliferation.
+\newblock {\em Cell Biol. Int. Rep.}, 6(7):635--650, 1982.
+
+\bibitem{hsu_cancer_2008}
+Peggy~P. Hsu and David~M. Sabatini.
+\newblock Cancer {{Cell Metabolism}}: {{Warburg}} and {{Beyond}}.
+\newblock {\em Cell}, 134(5):703--707, September 2008.
 
 \bibitem{keseler_ecocyc_2013}
 Ingrid~M Keseler, Amanda Mackie, Martin Peralta-Gil, Alberto Santos-Zavaleta,
@@ -656,12 +754,6 @@ R.~E. Kalman.
 Simon~J. Julier and Jeffrey~K. Uhlmann.
 \newblock New extension of the {{Kalman}} filter to nonlinear systems.
 \newblock volume 3068, pages 182--193, 1997.
-
-\bibitem{wang_robust_2010}
-Ping Wang, Lydia Robert, James Pelletier, Wei~Lien Dang, Francois Taddei,
-  Andrew Wright, and Suckjoon Jun.
-\newblock Robust growth of {{Escherichia}} coli.
-\newblock {\em Curr. Biol. CB}, 20(12):1099--103, June 2010.
 
 \bibitem{golub_generalized_1979}
 Gene~H. Golub, Michael Heath, and Grace Wahba.
