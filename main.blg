@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: references.bib
 Warning--empty booktitle in julier_new_1997
-You've used 129 entries,
+You've used 144 entries,
             1791 wiz_defined-function locations,
-            1170 strings with 27309 characters,
-and the built_in function-call counts, 31814 in all, are:
-= -- 2798
-> -- 1639
+            1252 strings with 30051 characters,
+and the built_in function-call counts, 35331 in all, are:
+= -- 3127
+> -- 1783
 < -- 6
-+ -- 597
-- -- 468
-* -- 2699
-:= -- 5161
-add.period$ -- 392
-call.type$ -- 129
-change.case$ -- 121
++ -- 651
+- -- 507
+* -- 2999
+:= -- 5719
+add.period$ -- 439
+call.type$ -- 144
+change.case$ -- 135
 chr.to.int$ -- 0
-cite$ -- 130
-duplicate$ -- 1205
-empty$ -- 2940
-format.name$ -- 468
-if$ -- 6775
+cite$ -- 145
+duplicate$ -- 1341
+empty$ -- 3281
+format.name$ -- 507
+if$ -- 7530
 int.to.chr$ -- 0
-int.to.str$ -- 129
-missing$ -- 135
-newline$ -- 650
-num.names$ -- 134
-pop$ -- 229
+int.to.str$ -- 144
+missing$ -- 152
+newline$ -- 727
+num.names$ -- 149
+pop$ -- 251
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 455
+skip$ -- 503
 stack$ -- 0
-substring$ -- 2483
-swap$ -- 170
+substring$ -- 2782
+swap$ -- 185
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 342
-width$ -- 132
-write$ -- 1419
+while$ -- 380
+width$ -- 147
+write$ -- 1589
 (There was 1 warning)
