@@ -1,48 +1,65 @@
 This is BibTeX, Version 0.99d (TeX Live 2016/dev)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-The style file: unsrt.bst
+The style file: plos2015.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated field_info (elt_size=4) to 11800 items from 5000.
 Database file #1: references.bib
+Warning--empty author and editor in fox_how_2016
+Warning--missing publisher in fox_how_2016
+Warning--empty author and editor in mcgill_calm_2013
+Warning--missing publisher in mcgill_calm_2013
 Warning--empty booktitle in julier_new_1997
-You've used 167 entries,
-            1791 wiz_defined-function locations,
-            1372 strings with 34482 characters,
-and the built_in function-call counts, 40994 in all, are:
-= -- 3634
-> -- 2053
-< -- 6
-+ -- 750
-- -- 583
-* -- 3495
-:= -- 6628
-add.period$ -- 511
-call.type$ -- 167
-change.case$ -- 155
-chr.to.int$ -- 0
-cite$ -- 168
-duplicate$ -- 1551
-empty$ -- 3815
-format.name$ -- 583
-if$ -- 8734
+Warning--empty author and editor in goto_open_2005
+Warning--missing publisher in goto_open_2005
+Warning--empty author in skimage_cross-correlation
+Warning--empty author and editor in skimage_cross-correlation
+Warning--missing publisher in skimage_cross-correlation
+Warning--there's a month but no year in skimage_cross-correlation
+Warning--empty author and editor in tomroud_tom_2016
+Warning--missing publisher in tomroud_tom_2016
+You've used 200 entries,
+            3170 wiz_defined-function locations,
+            1893 strings with 46756 characters,
+and the built_in function-call counts, 338433 in all, are:
+= -- 42460
+> -- 2639
+< -- 12
++ -- 1761
+- -- 658
+* -- 28245
+:= -- 36481
+add.period$ -- 947
+call.type$ -- 200
+change.case$ -- 25
+chr.to.int$ -- 18
+cite$ -- 213
+duplicate$ -- 27694
+empty$ -- 32240
+format.name$ -- 823
+if$ -- 79269
 int.to.chr$ -- 0
-int.to.str$ -- 167
-missing$ -- 178
-newline$ -- 845
-num.names$ -- 172
-pop$ -- 289
+int.to.str$ -- 200
+missing$ -- 2180
+newline$ -- 1172
+num.names$ -- 205
+pop$ -- 3643
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 575
+skip$ -- 3628
 stack$ -- 0
-substring$ -- 3264
-swap$ -- 208
+substring$ -- 63571
+swap$ -- 5457
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 440
-width$ -- 170
-write$ -- 1845
-(There was 1 warning)
+warning$ -- 13
+while$ -- 1939
+width$ -- 203
+write$ -- 2530
+(There were 13 warnings)
