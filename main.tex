@@ -1,11 +1,13 @@
 \documentclass[12pt,a4paper,twoside,openright]{book}
 \pagestyle{headings} % page style (for heading etc)
 
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{plos2015}
+
 \usepackage[a4paper]{meta-donnees} % University template
 \usepackage[utf8]{inputenc} % UTF-8 for accents
 \usepackage[T1]{fontenc} % UTF-8 for accents
 \usepackage[english,french]{babel} % for langages
-\usepackage{lipsum}
 %\usepackage{epigraph} % for quotations at the beginning of each chapter
 %\setlength{\epigraphwidth}{15cm}
 
@@ -14,11 +16,10 @@
 
 \usepackage{graphicx} % no idea but was needed in the suppinfo of chapter 2
 
-% cite package, to clean up citations in the main text.
-\usepackage{cite}
-
 % Use nameref to cite supporting information files (see Supporting Information section for more info)
 \usepackage{nameref}
+
+% hyperlink
 \usepackage{hyperref}
 \usepackage{xcolor}
 \hypersetup{
@@ -26,9 +27,8 @@
     allcolors = {blue},
     linktocpage = true, % for line break in table of contents
 }
-
-% BiBTeX style
-\bibliographystyle{unsrt}
+\usepackage{doi}
+\usepackage[hyphenbreaks]{breakurl}
 
 % Remove brackets from numbering in List of References
 \makeatletter

@@ -1,1005 +1,1469 @@
 \begin{thebibliography}{100}
 
 \bibitem{fox_how_2016}
-Jeremy Fox.
-\newblock How to write a good introduction section. {{And}} tell if yours is
-  bad., April 2016.
+Fox J. How to Write a Good Introduction Section. {{And}} Tell If Yours Is Bad.;
+  2016.
+\newblock Available from:
+  \url{https://dynamicecology.wordpress.com/2016/04/19/many-introduction-sections-suck-heres-how-to-ensure-yours-doesnt/}.
 
 \bibitem{madigan_biology_2006}
-Michael~T Madigan, John~M Martinko, and Thomas~D Brock.
-\newblock {\em Biology of {{Microorganisms}}}.
-\newblock {Pearson Prentice Hall}, Upper Saddle River, NJ, 2006.
+Madigan MT, Martinko JM, Brock TD.
+\newblock Biology of {{Microorganisms}}.
+\newblock Upper Saddle River, NJ: {Pearson Prentice Hall}; 2006.
 \newblock OCLC: 57001814.
 
 \bibitem{schaechter_microbe_2006}
-M.~Schaechter, J.~L. Ingraham, and F.~C. Neidhardt.
-\newblock {\em Microbe}.
-\newblock {ASM Press}, 2006.
-
-\bibitem{rothschild_life_2001}
-Lynn~J. Rothschild and Rocco~L. Mancinelli.
-\newblock Life in extreme environments.
-\newblock {\em Nature}, 409(6823):1092--1101, February 2001.
-
-\bibitem{nicholson_transcriptomic_2012}
-Wayne~L. Nicholson, the PROTECT~Team Moeller, Ralf, and Gerda Horneck.
-\newblock Transcriptomic {{Responses}} of {{Germinating Bacillus}} subtilis
-  {{Spores Exposed}} to 1.5 {{Years}} of {{Space}} and {{Simulated Martian
-  Conditions}} on the {{EXPOSE}}-{{E Experiment PROTECT}}.
-\newblock {\em Astrobiology}, 12(5):469--486, May 2012.
-
-\bibitem{zimmer_microcosm:_2009}
-Carl Zimmer.
-\newblock {\em Microcosm: {{E}}. Coli and the {{New Science}} of {{Life}}}.
-\newblock {Vintage Books USA}, 2009.
-
-\bibitem{dawkins_selfish_1976}
-Richard Dawkins.
-\newblock {\em The {{Selfish Gene}}}.
-\newblock {Oxford University Press}, 1976.
-
-\bibitem{schuetz_systematic_2007}
-Robert Schuetz, Lars Kuepfer, and Uwe Sauer.
-\newblock Systematic evaluation of objective functions for predicting
-  intracellular fluxes in {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Mol Syst Biol}, 3:119, January 2007.
-
-\bibitem{frank_tradeoff_2010}
-S.~A. Frank.
-\newblock The trade-off between rate and yield in the design of microbial
-  metabolism.
-\newblock {\em J Evol Biol}, 23(3):609--13, March 2010.
-
-\bibitem{maclean_tragedy_2008}
-R.~C. MacLean.
-\newblock The tragedy of the commons in microbial populations: Insights from
-  theoretical, comparative and experimental studies.
-\newblock {\em Heredity}, 100(5):471--7, May 2008.
-
-\bibitem{schuster_maximization_2008}
-Stefan Schuster, Thomas Pfeiffer, and David Fell.
-\newblock Is maximization of molar yield in metabolic networks favoured by
-  evolution?
-\newblock {\em J Theor Biol}, 252(3):497--504, June 2008.
-
-\bibitem{schuetz_multidimensional_2012}
-Robert Schuetz, Nicola Zamboni, Mattia Zampieri, Matthias Heinemann, and Uwe
-  Sauer.
-\newblock Multidimensional optimality of microbial metabolism.
-\newblock {\em Science}, 336(6081):601--4, May 2012.
-
-\bibitem{edwards_silico_2001}
-Jeremy~S. Edwards, Rafael~U. Ibarra, and Bernhard~O. Palsson.
-\newblock In silico predictions of {{{\emph{Escherichia}}}}{\emph{ coli}}
-  metabolic capabilities are consistent with experimental data.
-\newblock {\em Nat Biotechnol}, 19(2):125--30, February 2001.
-
-\bibitem{ibarra_escherichia_2002}
-Rafael~U. Ibarra, Jeremy~S. Edwards, and Bernhard~O. Palsson.
-\newblock {\emph{Escherichia Coli}} {{K}}-12 undergoes adaptive evolution to
-  achieve in silico predicted optimal growth.
-\newblock {\em Nature}, 420(6912):186--9, November 2002.
-
-\bibitem{lewis_omic_2010}
-Nathan~E Lewis, Kim~K Hixson, Tom~M Conrad, Joshua~A Lerman, Pep Charusanti,
-  Ashoka~D Polpitiya, Joshua~N Adkins, Gunnar Schramm, Samuel~O Purvine, Daniel
-  Lopez-Ferrer, Karl~K Weitz, Roland Eils, Rainer K{\"o}nig, Richard~D Smith,
-  and Bernhard~\O{} Palsson.
-\newblock Omic data from evolved {{{\emph{E}}}}{\emph{. coli}} are consistent
-  with computed optimal growth from genome-scale models.
-\newblock {\em Mol Syst Biol}, 6:390, July 2010.
-
-\bibitem{molenaar_shifts_2009}
-Douwe Molenaar, Rogier {van Berlo}, Dick {de Ridder}, and Bas Teusink.
-\newblock Shifts in growth strategies reflect tradeoffs in cellular economics.
-\newblock {\em Mol Syst Biol}, 5:323, January 2009.
-
-\bibitem{monod_growth_1949}
-J~Monod.
-\newblock The growth of bacterial cultures.
-\newblock {\em Annu. Rev. Microbiol.}, 1949.
-
-\bibitem{droop_thoughts_1973}
-M.~R. Droop.
-\newblock Some {{Thoughts}} on {{Nutrient Limitation}} in {{Algae}}.
-\newblock {\em J. Phycol.}, 9(3):264--272, September 1973.
-
-\bibitem{koch_why_1988}
-AL~Koch.
-\newblock Why can't a cell grow infinitely fast?
-\newblock {\em Can. J. Microbiol.}, 1988.
-
-\bibitem{schaechter_dependency_1958}
-M.~Schaechter, O.~Maal\O{}e, and N.~O. Kjeldgaard.
-\newblock Dependency on {{Medium}} and {{Temperature}} of {{Cell Size}} and
-  {{Chemical Composition}} during {{Balanced Growth}} of {{Salmonella}}
-  typhimurium.
-\newblock {\em Microbiology}, 19(3):592--606, 1958.
-
-\bibitem{bremer_modulation_1996}
-Hans Bremer and Patrick Dennis.
-\newblock Modulation of chemical composition and other parameters of the cell
-  by growth rate.
-\newblock In F.~C. Neidhardt, R.~Curtiss III, J.~L. Ingraham, E.~C.~C. Lin,
-  K.~B. Low, B.~Magasanik, W.~S. Reznikoff, M.~Riley, M.~Schaechter, and H.~E.
-  Umbarger, editors, {\em {\emph{Escherichia Coli}} and
-  {{{\emph{Salmonella}}}}: {{Cellular}} and {{Molecular Biology}}}, pages
-  1553--69. {ASM Press}, Washington, DC, 2nd edition, 1996.
-
-\bibitem{ehrenberg_mediumdependent_2012}
-Mans Ehrenberg, Hans Bremer, and Patrick~P Dennis.
-\newblock Medium-dependent control of the bacterial growth rate.
-\newblock {\em Biochimie}, 95(4):643--58, April 2013.
-
-\bibitem{scott_bacterial_2011}
-Matthew Scott and Terence Hwa.
-\newblock Bacterial growth laws and their applications.
-\newblock {\em Curr Opin Biotechnol}, 22(4):559--65, August 2011.
-
-\bibitem{scott_emergence_2014}
-Matthew Scott, Stefan Klumpp, Eduard~M. Mateescu, and Terence Hwa.
-\newblock Emergence of robust growth laws from optimal regulation of ribosome
-  synthesis.
-\newblock {\em Mol Syst Biol}, 10:747, August 2014.
-
-\bibitem{scott_interdependence_2010}
-Matthew Scott, Carl~W Gunderson, Eduard~M Mateescu, Zhongge Zhang, and Terence
-  Hwa.
-\newblock Interdependence of cell growth and gene expression: Origins and
-  consequences.
-\newblock {\em Science}, 330(6007):1099--102, November 2010.
-
-\bibitem{fishov_microbial_1995}
-Itzhak Fishov, Arieh Zaritsky, and N.~B. Grover.
-\newblock On microbial states of growth.
-\newblock {\em Mol Microbiol}, 15(5):789--94, March 1995.
-
-\bibitem{campbell_synchronization_1957}
-Allan Campbell.
-\newblock {{SYNCHRONIZATION OF CELL DIVISION}}.
-\newblock {\em Bacteriol. Rev.}, 21(4):263--272, December 1957.
-
-\bibitem{orth_what_2010}
-Jeffrey~D. Orth, Ines Thiele, and Bernhard~\O{} Palsson.
-\newblock What is flux balance analysis?
-\newblock {\em Nat. Biotechnol.}, 28(3):245--248, March 2010.
-\newblock 00491.
-
-\bibitem{swinnen_predictive_2004}
-I.~A.~M. Swinnen, K.~Bernaerts, E.~J.~J. Dens, A.~H. Geeraerd, and J.~F.
-  Van~Impe.
-\newblock Predictive modelling of the microbial lag phase: A review.
-\newblock {\em International Journal of Food Microbiology}, 94(2):137--159,
-  July 2004.
-
-\bibitem{ng_damage_1962}
-Henry Ng, John~L. Ingraham, and Allen~G. Marr.
-\newblock Damage and {{Derepression}} in {{Escherichia Coli Resulting}} from
-  {{Growth}} at {{Low Temperatures}}.
-\newblock {\em J. Bacteriol.}, 84(2):331--339, January 1962.
-
-\bibitem{dufrenne_effect_1997}
-J.~Dufrenne, E.~Delfgou, W.~Ritmeester, and S.~Notermans.
-\newblock The effect of previous growth conditions on the lag phase time of
-  some foodborne pathogenic micro-organisms.
-\newblock {\em International Journal of Food Microbiology}, 34(1):89--94,
-  January 1997.
-
-\bibitem{shaw_effect_1967}
-Maxwell~K. Shaw.
-\newblock Effect of {{Abrupt Temperature Shift}} on the {{Growth}} of
-  {{Mesophilic}} and {{Psychrophilic Yeasts}}.
-\newblock {\em J. Bacteriol.}, 93(4):1332--1336, January 1967.
-
-\bibitem{mcmeekin_predictive_2002}
-T.~A. McMeekin, J.~Olley, D.~A. Ratkowsky, and T.~Ross.
-\newblock Predictive microbiology: Towards the interface and beyond.
-\newblock {\em International Journal of Food Microbiology},
-  73(2\textendash{}3):395--407, March 2002.
-
-\bibitem{cheroutre-vialette_application_2002}
-M~Cheroutre-Vialette and A~Lebert.
-\newblock Application of recurrent neural network to predict bacterial growth
-  in dynamic conditions.
-\newblock {\em International Journal of Food Microbiology},
-  73(2\textendash{}3):107--118, March 2002.
-
-\bibitem{wang_robust_2010}
-Ping Wang, Lydia Robert, James Pelletier, Wei~Lien Dang, Francois Taddei,
-  Andrew Wright, and Suckjoon Jun.
-\newblock Robust growth of {{Escherichia}} coli.
-\newblock {\em Curr. Biol. CB}, 20(12):1099--103, June 2010.
-
-\bibitem{chubukov_environmental_2014}
-Victor Chubukov and Uwe Sauer.
-\newblock Environmental {{Dependence}} of {{Stationary}}-{{Phase Metabolism}}
-  in {{Bacillus}} subtilis and {{Escherichia}} coli.
-\newblock {\em Appl. Environ. Microbiol.}, 80(9):2901--2909, January 2014.
+Schaechter M, Ingraham JL, Neidhardt FC.
+\newblock Microbe.
+\newblock {ASM Press}; 2006.
 
 \bibitem{mcarthur_microbial_2006}
-J.~Vaun McArthur.
-\newblock {\em Microbial {{Ecology}}: {{An Evolutionary Approach}}}.
-\newblock {Academic Press}, Amsterdam ; Boston, 1 edition edition, February
-  2006.
+McArthur JV.
+\newblock Microbial {{Ecology}}: {{An Evolutionary Approach}}.
+\newblock 1st ed. Amsterdam ; Boston: {Academic Press}; 2006.
 
 \bibitem{menge_nitrogen_2012}
-Duncan N.~L. Menge, Lars~O. Hedin, and Stephen~W. Pacala.
+Menge DNL, Hedin LO, Pacala SW.
 \newblock Nitrogen and {{Phosphorus Limitation}} over {{Long}}-{{Term Ecosystem
   Development}} in {{Terrestrial Ecosystems}}.
-\newblock {\em PLOS ONE}, 7(8):e42045, August 2012.
+\newblock PLOS ONE. 2012 Aug;7(8):e42045.
+\newblock \href {http://dx.doi.org/10.1371/journal.pone.0042045}
+  {doi:~10.1371/journal.pone.0042045}.
 
 \bibitem{hobbie_microbes_2013}
-John~Eyres Hobbie and Erik~Alan Hobbie.
-\newblock Microbes in nature are limited by carbon and energy: The
-  starving-survival lifestyle in soil and consequences for estimating microbial
-  rates.
-\newblock {\em Front. Microbiol.}, 4, 2013.
-
-\bibitem{stragier_molecular_1996}
-Patrick Stragier and Richard Losick.
-\newblock Molecular genetics of sporulation in bacillus subtilis.
-\newblock {\em Annu. Rev. Genet.}, 30(1):297--341, December 1996.
-
-\bibitem{gonzalez-pastor_cannibalism:_2011}
-Jos{\'e}~Eduardo Gonz{\'a}lez-Pastor.
-\newblock Cannibalism: A social behavior in sporulating {{Bacillus}} subtilis.
-\newblock {\em FEMS Microbiol. Rev.}, 35(3):415--424, May 2011.
+Hobbie JE, Hobbie EA.
+\newblock Microbes in Nature Are Limited by Carbon and Energy: The
+  Starving-Survival Lifestyle in Soil and Consequences for Estimating Microbial
+  Rates.
+\newblock Front Microbiol. 2013;4.
+\newblock \href {http://dx.doi.org/10.3389/fmicb.2013.00324}
+  {doi:~10.3389/fmicb.2013.00324}.
 
 \bibitem{savageau_escherichia_1983}
-Michael~A. Savageau.
-\newblock {\emph{Escherichia Coli}} habitats, cell types, and molecular
-  mechanisms of gene control.
-\newblock {\em Am Nat}, 122(6):732--44, December 1983.
+Savageau MA.
+\newblock {\emph{Escherichia Coli}} Habitats, Cell Types, and Molecular
+  Mechanisms of Gene Control.
+\newblock Am Nat. 1983 Dec;122(6):732--44.
 
 \bibitem{savageau_demand_1998}
-Michael~A. Savageau.
-\newblock Demand theory of gene regulation. {{II}}. {{Quantitative}}
-  application to the lactose and maltose operons of
-  {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Genetics}, 149(4):1677--91, January 1998.
+Savageau MA.
+\newblock Demand Theory of Gene Regulation. {{II}}. {{Quantitative}}
+  Application to the Lactose and Maltose Operons of
+  {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock Genetics. 1998 Jan;149(4):1677--91.
 
 \bibitem{blount_unexhausted_2015}
-Zachary~D. Blount.
-\newblock The unexhausted potential of {{{\emph{E}}}}{\emph{. coli}}.
-\newblock {\em eLife}, 4:e05826, March 2015.
+Blount ZD.
+\newblock The Unexhausted Potential of {{{\emph{E}}}}{\emph{. Coli}}.
+\newblock eLife. 2015 Mar;4:e05826.
+\newblock \href {http://dx.doi.org/10.7554/eLife.05826}
+  {doi:~10.7554/eLife.05826}.
 
 \bibitem{vanelsas_survival_2011}
-Jan~Dirk {van Elsas}, Alexander~V. Semenov, Rodrigo Costa, and Jack~T. Trevors.
-\newblock Survival of {{{\emph{Escherichia}}}}{\emph{ coli}} in the
-  environment: Fundamental and public health aspects.
-\newblock {\em ISME J}, 5(2):173--83, February 2011.
+{van Elsas} JD, Semenov AV, Costa R, Trevors JT.
+\newblock Survival of {{{\emph{Escherichia}}}}{\emph{ Coli}} in the
+  Environment: Fundamental and Public Health Aspects.
+\newblock ISME J. 2011 Feb;5(2):173--83.
+\newblock \href {http://dx.doi.org/10.1038/ismej.2010.80}
+  {doi:~10.1038/ismej.2010.80}.
+
+\bibitem{rothschild_life_2001}
+Rothschild LJ, Mancinelli RL.
+\newblock Life in Extreme Environments.
+\newblock Nature. 2001 Feb;409(6823):1092--1101.
+\newblock \href {http://dx.doi.org/10.1038/35059215} {doi:~10.1038/35059215}.
+
+\bibitem{nicholson_transcriptomic_2012}
+Nicholson WL, Moeller tPT Ralf, Horneck G.
+\newblock Transcriptomic {{Responses}} of {{Germinating Bacillus}} Subtilis
+  {{Spores Exposed}} to 1.5 {{Years}} of {{Space}} and {{Simulated Martian
+  Conditions}} on the {{EXPOSE}}-{{E Experiment PROTECT}}.
+\newblock Astrobiology. 2012 May;12(5):469--486.
+\newblock \href {http://dx.doi.org/10.1089/ast.2011.0748}
+  {doi:~10.1089/ast.2011.0748}.
+
+\bibitem{zimmer_microcosm:_2009}
+Zimmer C.
+\newblock Microcosm: {{E}}. Coli and the {{New Science}} of {{Life}}.
+\newblock {Vintage Books USA}; 2009.
+
+\bibitem{dawkins_selfish_1976}
+Dawkins R.
+\newblock The {{Selfish Gene}}.
+\newblock {Oxford University Press}; 1976.
+
+\bibitem{schuetz_systematic_2007}
+Schuetz R, Kuepfer L, Sauer U.
+\newblock Systematic Evaluation of Objective Functions for Predicting
+  Intracellular Fluxes in {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock Mol Syst Biol. 2007 Jan;3:119.
+\newblock \href {http://dx.doi.org/10.1038/msb4100162}
+  {doi:~10.1038/msb4100162}.
+
+\bibitem{frank_tradeoff_2010}
+Frank SA.
+\newblock The Trade-off between Rate and Yield in the Design of Microbial
+  Metabolism.
+\newblock J Evol Biol. 2010 Mar;23(3):609--13.
+\newblock \href {http://dx.doi.org/10.1111/j.1420-9101.2010.01930.x}
+  {doi:~10.1111/j.1420-9101.2010.01930.x}.
+
+\bibitem{maclean_tragedy_2008}
+MacLean RC.
+\newblock The Tragedy of the Commons in Microbial Populations: Insights from
+  Theoretical, Comparative and Experimental Studies.
+\newblock Heredity. 2008 May;100(5):471--7.
+\newblock \href {http://dx.doi.org/10.1038/sj.hdy.6801073}
+  {doi:~10.1038/sj.hdy.6801073}.
+
+\bibitem{schuster_maximization_2008}
+Schuster S, Pfeiffer T, Fell D.
+\newblock Is Maximization of Molar Yield in Metabolic Networks Favoured by
+  Evolution?
+\newblock J Theor Biol. 2008 Jun;252(3):497--504.
+\newblock \href {http://dx.doi.org/10.1016/j.jtbi.2007.12.008}
+  {doi:~10.1016/j.jtbi.2007.12.008}.
+
+\bibitem{schuetz_multidimensional_2012}
+Schuetz R, Zamboni N, Zampieri M, Heinemann M, Sauer U.
+\newblock Multidimensional Optimality of Microbial Metabolism.
+\newblock Science. 2012 May;336(6081):601--4.
+\newblock \href {http://dx.doi.org/10.1126/science.1216882}
+  {doi:~10.1126/science.1216882}.
+
+\bibitem{edwards_silico_2001}
+Edwards JS, Ibarra RU, Palsson BO.
+\newblock In Silico Predictions of {{{\emph{Escherichia}}}}{\emph{ Coli}}
+  Metabolic Capabilities Are Consistent with Experimental Data.
+\newblock Nat Biotechnol. 2001 Feb;19(2):125--30.
+\newblock \href {http://dx.doi.org/10.1038/84379} {doi:~10.1038/84379}.
+
+\bibitem{ibarra_escherichia_2002}
+Ibarra RU, Edwards JS, Palsson BO.
+\newblock {\emph{Escherichia Coli}} {{K}}-12 Undergoes Adaptive Evolution to
+  Achieve in Silico Predicted Optimal Growth.
+\newblock Nature. 2002 Nov;420(6912):186--9.
+\newblock \href {http://dx.doi.org/10.1038/nature01149}
+  {doi:~10.1038/nature01149}.
+
+\bibitem{lewis_omic_2010}
+Lewis NE, Hixson KK, Conrad TM, Lerman JA, Charusanti P, Polpitiya AD, et~al.
+\newblock Omic Data from Evolved {{{\emph{E}}}}{\emph{. Coli}} Are Consistent
+  with Computed Optimal Growth from Genome-Scale Models.
+\newblock Mol Syst Biol. 2010 Jul;6:390.
+\newblock \href {http://dx.doi.org/10.1038/msb.2010.47}
+  {doi:~10.1038/msb.2010.47}.
+
+\bibitem{molenaar_shifts_2009}
+Molenaar D, {van Berlo} R, {de Ridder} D, Teusink B.
+\newblock Shifts in Growth Strategies Reflect Tradeoffs in Cellular Economics.
+\newblock Mol Syst Biol. 2009 Jan;5:323.
+\newblock \href {http://dx.doi.org/10.1038/msb.2009.82}
+  {doi:~10.1038/msb.2009.82}.
+
+\bibitem{monod_growth_1949}
+Monod J.
+\newblock The Growth of Bacterial Cultures.
+\newblock Annu Rev Microbiol. 1949;\href
+  {http://dx.doi.org/10.1146/annurev.mi.03.100149.002103}
+  {doi:~10.1146/annurev.mi.03.100149.002103}.
+
+\bibitem{droop_thoughts_1973}
+Droop MR.
+\newblock Some {{Thoughts}} on {{Nutrient Limitation}} in {{Algae}}.
+\newblock J Phycol. 1973 Sep;9(3):264--272.
+\newblock \href {http://dx.doi.org/10.1111/j.1529-8817.1973.tb04092.x}
+  {doi:~10.1111/j.1529-8817.1973.tb04092.x}.
+
+\bibitem{koch_why_1988}
+Koch A.
+\newblock Why Can't a Cell Grow Infinitely Fast?
+\newblock Can J Microbiol. 1988;Available from:
+  \url{http://www.nrcresearchpress.com/doi/abs/10.1139/m88-074}.
+
+\bibitem{schaechter_dependency_1958}
+Schaechter M, Maal\O{}e O, Kjeldgaard NO.
+\newblock Dependency on {{Medium}} and {{Temperature}} of {{Cell Size}} and
+  {{Chemical Composition}} during {{Balanced Growth}} of {{Salmonella}}
+  Typhimurium.
+\newblock Microbiology. 1958;19(3):592--606.
+\newblock \href {http://dx.doi.org/10.1099/00221287-19-3-592}
+  {doi:~10.1099/00221287-19-3-592}.
+
+\bibitem{bremer_modulation_1996}
+Bremer H, Dennis P.
+\newblock Modulation of Chemical Composition and Other Parameters of the Cell
+  by Growth Rate.
+\newblock In: Neidhardt FC, III RC, Ingraham JL, Lin ECC, Low KB, Magasanik B,
+  et~al., editors. {\emph{Escherichia Coli}} and {{{\emph{Salmonella}}}}:
+  {{Cellular}} and {{Molecular Biology}}. 2nd ed. Washington, DC: {ASM Press};
+  1996. p. 1553--69.
+
+\bibitem{ehrenberg_mediumdependent_2012}
+Ehrenberg M, Bremer H, Dennis PP.
+\newblock Medium-Dependent Control of the Bacterial Growth Rate.
+\newblock Biochimie. 2013 Apr;95(4):643--58.
+\newblock \href {http://dx.doi.org/10.1016/j.biochi.2012.11.012}
+  {doi:~10.1016/j.biochi.2012.11.012}.
+
+\bibitem{scott_bacterial_2011}
+Scott M, Hwa T.
+\newblock Bacterial Growth Laws and Their Applications.
+\newblock Curr Opin Biotechnol. 2011 Aug;22(4):559--65.
+\newblock \href {http://dx.doi.org/10.1016/j.copbio.2011.04.014}
+  {doi:~10.1016/j.copbio.2011.04.014}.
+
+\bibitem{scott_emergence_2014}
+Scott M, Klumpp S, Mateescu EM, Hwa T.
+\newblock Emergence of Robust Growth Laws from Optimal Regulation of Ribosome
+  Synthesis.
+\newblock Mol Syst Biol. 2014 Aug;10:747.
+\newblock \href {http://dx.doi.org/10.15252/msb.20145379}
+  {doi:~10.15252/msb.20145379}.
+
+\bibitem{scott_interdependence_2010}
+Scott M, Gunderson CW, Mateescu EM, Zhang Z, Hwa T.
+\newblock Interdependence of Cell Growth and Gene Expression: Origins and
+  Consequences.
+\newblock Science. 2010 Nov;330(6007):1099--102.
+\newblock \href {http://dx.doi.org/10.1126/science.1192588}
+  {doi:~10.1126/science.1192588}.
+
+\bibitem{fishov_microbial_1995}
+Fishov I, Zaritsky A, Grover NB.
+\newblock On Microbial States of Growth.
+\newblock Mol Microbiol. 1995 Mar;15(5):789--94.
+\newblock \href {http://dx.doi.org/10.1111/j.1365-2958.1995.tb02349.x}
+  {doi:~10.1111/j.1365-2958.1995.tb02349.x}.
+
+\bibitem{campbell_synchronization_1957}
+Campbell A.
+\newblock {{SYNCHRONIZATION OF CELL DIVISION}}.
+\newblock Bacteriol Rev. 1957 Dec;21(4):263--272.
+\newblock Available from:
+  \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC180914/}.
+
+\bibitem{borirak_molecular_2014}
+Borirak O, Bekker M, Hellingwerf KJ.
+\newblock Molecular Physiology of the Dynamic Regulation of Carbon Catabolite
+  Repression in {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock Microbiology. 2014 Jun;160(Pt6):1214--23.
+\newblock \href {http://dx.doi.org/10.1099/mic.0.077289-0}
+  {doi:~10.1099/mic.0.077289-0}.
+
+\bibitem{orth_what_2010}
+Orth JD, Thiele I, Palsson BO.
+\newblock What Is Flux Balance Analysis?
+\newblock Nat Biotechnol. 2010 Mar;28(3):245--248.
+\newblock 00491.
+\newblock \href {http://dx.doi.org/10.1038/nbt.1614} {doi:~10.1038/nbt.1614}.
+
+\bibitem{swinnen_predictive_2004}
+Swinnen IAM, Bernaerts K, Dens EJJ, Geeraerd AH, Van~Impe JF.
+\newblock Predictive Modelling of the Microbial Lag Phase: A Review.
+\newblock International Journal of Food Microbiology. 2004 Jul;94(2):137--159.
+\newblock \href {http://dx.doi.org/10.1016/j.ijfoodmicro.2004.01.006}
+  {doi:~10.1016/j.ijfoodmicro.2004.01.006}.
+
+\bibitem{ng_damage_1962}
+Ng H, Ingraham JL, Marr AG.
+\newblock Damage and {{Derepression}} in {{Escherichia Coli Resulting}} from
+  {{Growth}} at {{Low Temperatures}}.
+\newblock J Bacteriol. 1962 Jan;84(2):331--339.
+\newblock Available from: \url{http://jb.asm.org/content/84/2/331}.
+
+\bibitem{dufrenne_effect_1997}
+Dufrenne J, Delfgou E, Ritmeester W, Notermans S.
+\newblock The Effect of Previous Growth Conditions on the Lag Phase Time of
+  Some Foodborne Pathogenic Micro-Organisms.
+\newblock International Journal of Food Microbiology. 1997 Jan;34(1):89--94.
+\newblock \href {http://dx.doi.org/10.1016/S0168-1605(96)01170-1}
+  {doi:~10.1016/S0168-1605(96)01170-1}.
+
+\bibitem{shaw_effect_1967}
+Shaw MK.
+\newblock Effect of {{Abrupt Temperature Shift}} on the {{Growth}} of
+  {{Mesophilic}} and {{Psychrophilic Yeasts}}.
+\newblock J Bacteriol. 1967 Jan;93(4):1332--1336.
+\newblock Available from: \url{http://jb.asm.org/content/93/4/1332}.
+
+\bibitem{mcmeekin_predictive_2002}
+McMeekin TA, Olley J, Ratkowsky DA, Ross T.
+\newblock Predictive Microbiology: Towards the Interface and beyond.
+\newblock International Journal of Food Microbiology. 2002
+  Mar;73(2\textendash{}3):395--407.
+\newblock \href {http://dx.doi.org/10.1016/S0168-1605(01)00663-8}
+  {doi:~10.1016/S0168-1605(01)00663-8}.
+
+\bibitem{cheroutre-vialette_application_2002}
+Cheroutre-Vialette M, Lebert A.
+\newblock Application of Recurrent Neural Network to Predict Bacterial Growth
+  in Dynamic Conditions.
+\newblock International Journal of Food Microbiology. 2002
+  Mar;73(2\textendash{}3):107--118.
+\newblock \href {http://dx.doi.org/10.1016/S0168-1605(01)00642-0}
+  {doi:~10.1016/S0168-1605(01)00642-0}.
+
+\bibitem{herbert_continuous_1956}
+Herbert D, Elsworth R, Telling RC.
+\newblock The {{Continuous Culture}} of {{Bacteria}}; a {{Theoretical}} and
+  {{Experimental Study}}.
+\newblock Microbiology. 1956;14(3):601--622.
+\newblock \href {http://dx.doi.org/10.1099/00221287-14-3-601}
+  {doi:~10.1099/00221287-14-3-601}.
+
+\bibitem{wang_robust_2010}
+Wang P, Robert L, Pelletier J, Dang WL, Taddei F, Wright A, et~al.
+\newblock Robust Growth of {{Escherichia}} Coli.
+\newblock Curr Biol CB. 2010 Jun;20(12):1099--103.
+\newblock \href {http://dx.doi.org/10.1016/j.cub.2010.04.045}
+  {doi:~10.1016/j.cub.2010.04.045}.
+
+\bibitem{chubukov_environmental_2014}
+Chubukov V, Sauer U.
+\newblock Environmental {{Dependence}} of {{Stationary}}-{{Phase Metabolism}}
+  in {{Bacillus}} Subtilis and {{Escherichia}} Coli.
+\newblock Appl Environ Microbiol. 2014 Jan;80(9):2901--2909.
+\newblock \href {http://dx.doi.org/10.1128/AEM.00061-14}
+  {doi:~10.1128/AEM.00061-14}.
+
+\bibitem{stragier_molecular_1996}
+Stragier P, Losick R.
+\newblock Molecular Genetics of Sporulation in Bacillus Subtilis.
+\newblock Annu Rev Genet. 1996 Dec;30(1):297--341.
+\newblock \href {http://dx.doi.org/10.1146/annurev.genet.30.1.297}
+  {doi:~10.1146/annurev.genet.30.1.297}.
+
+\bibitem{gonzalez-pastor_cannibalism:_2011}
+Gonz{\'a}lez-Pastor JE.
+\newblock Cannibalism: A Social Behavior in Sporulating {{Bacillus}} Subtilis.
+\newblock FEMS Microbiol Rev. 2011 May;35(3):415--424.
+\newblock \href {http://dx.doi.org/10.1111/j.1574-6976.2010.00253.x}
+  {doi:~10.1111/j.1574-6976.2010.00253.x}.
 
 \bibitem{servedio_not_2014}
-Maria~R. Servedio, Yaniv Brandvain, Sumit Dhole, Courtney~L. Fitzpatrick,
-  Emma~E. Goldberg, Caitlin~A. Stern, Jeremy Van~Cleve, and D.~Justin Yeh.
-\newblock Not just a theory\textemdash{}the utility of mathematical models in
-  evolutionary biology.
-\newblock {\em PLoS Biol}, 12(12):e1002017, December 2014.
+Servedio MR, Brandvain Y, Dhole S, Fitzpatrick CL, Goldberg EE, Stern CA,
+  et~al.
+\newblock Not Just a Theory\textemdash{}the Utility of Mathematical Models in
+  Evolutionary Biology.
+\newblock PLoS Biol. 2014 Dec;12(12):e1002017.
+\newblock \href {http://dx.doi.org/10.1371/journal.pbio.1002017}
+  {doi:~10.1371/journal.pbio.1002017}.
 
 \bibitem{mcgill_calm_2013}
-Brian McGill.
-\newblock A calm and balanced case for math in biology, April 2013.
+McGill B. A Calm and Balanced Case for Math in Biology; 2013.
+\newblock Available from:
+  \url{https://dynamicecology.wordpress.com/2013/04/09/a-calm-and-balanced-case-for-math-in-biology/}.
 
 \bibitem{elena_evolution_2003}
-Santiago~F. Elena and Richard~E. Lenski.
-\newblock Evolution experiments with microorganisms: The dynamics and genetic
-  bases of adaptation.
-\newblock {\em Nat Rev Genet}, 4(6):457--469, June 2003.
+Elena SF, Lenski RE.
+\newblock Evolution Experiments with Microorganisms: The Dynamics and Genetic
+  Bases of Adaptation.
+\newblock Nat Rev Genet. 2003 Jun;4(6):457--469.
+\newblock \href {http://dx.doi.org/10.1038/nrg1088} {doi:~10.1038/nrg1088}.
 
 \bibitem{hillis_why_1993}
-W.~Daniel Hillis.
-\newblock Why physicists like models and why biologists should.
-\newblock {\em Current Biology}, 3(2):79--81, February 1993.
+Hillis WD.
+\newblock Why Physicists like Models and Why Biologists Should.
+\newblock Current Biology. 1993 Feb;3(2):79--81.
+\newblock \href {http://dx.doi.org/10.1016/0960-9822(93)90159-L}
+  {doi:~10.1016/0960-9822(93)90159-L}.
 
 \bibitem{alon_introduction_2006}
-Uri Alon.
-\newblock {\em An {{Introduction}} to {{Systems Biology}}: {{Design
-  Principles}} of {{Biological Circuits}}}.
-\newblock {CRC Press}, July 2006.
+Alon U.
+\newblock An {{Introduction}} to {{Systems Biology}}: {{Design Principles}} of
+  {{Biological Circuits}}.
+\newblock {CRC Press}; 2006.
 \newblock Google-Books-ID: tcxCkIxzCO4C.
 
 \bibitem{kremling_systems_2013}
-Andreas Kremling.
-\newblock {\em Systems {{Biology}}: {{Mathematical Modeling}} and {{Model
-  Analysis}}}.
-\newblock {CRC Press}, November 2013.
-\newblock Google-Books-ID: FXf6AQAAQBAJ.
+Kremling A.
+\newblock Systems {{Biology}}: {{Mathematical Modeling}} and {{Model
+  Analysis}}.
+\newblock {CRC Press}; 2013.
 
 \bibitem{orth_comprehensive_2011}
-Jeffrey~D. Orth, Tom~M. Conrad, Jessica Na, Joshua~A. Lerman, Hojung Nam,
-  Adam~M. Feist, and Bernhard~\O{} Palsson.
-\newblock A comprehensive genome-scale reconstruction of {{Escherichia}} coli
+Orth JD, Conrad TM, Na J, Lerman JA, Nam H, Feist AM, et~al.
+\newblock A Comprehensive Genome-scale Reconstruction of {{Escherichia}} Coli
   metabolism\textemdash{}2011.
-\newblock {\em Mol. Syst. Biol.}, 7(1):535, January 2011.
+\newblock Mol Syst Biol. 2011 Jan;7(1):535.
+\newblock \href {http://dx.doi.org/10.1038/msb.2011.65}
+  {doi:~10.1038/msb.2011.65}.
 
 \bibitem{ebrahim_cobrapy_2013}
-Ali Ebrahim, Joshua~A. Lerman, Bernhard~O. Palsson, and Daniel~R. Hyduke.
+Ebrahim A, Lerman JA, Palsson BO, Hyduke DR.
 \newblock {{COBRApy}}: {{COnstraints}}-{{Based Reconstruction}} and
   {{Analysis}} for {{Python}}.
-\newblock {\em BMC Systems Biology}, 7:74, 2013.
+\newblock BMC Systems Biology. 2013;7:74.
+\newblock \href {http://dx.doi.org/10.1186/1752-0509-7-74}
+  {doi:~10.1186/1752-0509-7-74}.
 
 \bibitem{palsson_systems_2011}
-B~Palsson.
-\newblock {\em Systems Biology: Properties of Reconstructed Networks}.
-\newblock {Cambridge University Press}, 2011.
+Palsson B.
+\newblock Systems Biology: Properties of Reconstructed Networks.
+\newblock {Cambridge University Press}; 2011.
 
 \bibitem{varma_stoichiometric_1994}
-A~Varma and BO~Palsson.
-\newblock Stoichiometric flux balance models quantitatively predict growth and
-  metabolic by-product secretion in wild-type {{Escherichia}} coli {{W3110}}.
-\newblock {\em Appl. Environ. Microbiol.}, 60(10):3724--3731, 1994.
+Varma A, Palsson B.
+\newblock Stoichiometric Flux Balance Models Quantitatively Predict Growth and
+  Metabolic by-Product Secretion in Wild-Type {{Escherichia}} Coli {{W3110}}.
+\newblock Appl Environ Microbiol. 1994;60(10):3724--3731.
+\newblock Available from: \url{http://aem.asm.org/content/60/10/3724.short}.
 
 \bibitem{fong_metabolic_2004}
-Stephen~S. Fong and Bernhard~\O{} Palsson.
-\newblock Metabolic gene\textendash{}deletion strains of {{Escherichia}} coli
-  evolve to computationally predicted growth phenotypes.
-\newblock {\em Nat Genet}, 36(10):1056--1058, October 2004.
+Fong SS, Palsson BO.
+\newblock Metabolic Gene\textendash{}deletion Strains of {{Escherichia}} Coli
+  Evolve to Computationally Predicted Growth Phenotypes.
+\newblock Nat Genet. 2004 Oct;36(10):1056--1058.
+\newblock \href {http://dx.doi.org/10.1038/ng1432} {doi:~10.1038/ng1432}.
 
 \bibitem{kotte_bacterial_2010}
-Oliver Kotte, Judith~B Zaugg, and Matthias Heinemann.
-\newblock Bacterial adaptation through distributed sensing of metabolic fluxes.
-\newblock {\em Mol. Syst. Biol.}, 6(355):355, January 2010.
+Kotte O, Zaugg JB, Heinemann M.
+\newblock Bacterial Adaptation through Distributed Sensing of Metabolic Fluxes.
+\newblock Mol Syst Biol. 2010 Jan;6(355):355.
+\newblock \href {http://dx.doi.org/10.1038/msb.2010.10}
+  {doi:~10.1038/msb.2010.10}.
 
 \bibitem{peskov_kinetic_2012}
-Kirill Peskov, Ekaterina Mogilevskaya, and Oleg Demin.
-\newblock Kinetic modelling of central carbon metabolism in
-  {{Escherichia}}~coli.
-\newblock {\em FEBS J.}, 279(18):3374--3385, September 2012.
+Peskov K, Mogilevskaya E, Demin O.
+\newblock Kinetic Modelling of Central Carbon Metabolism in
+  {{Escherichia}}~Coli.
+\newblock FEBS J. 2012 Sep;279(18):3374--3385.
+\newblock \href {http://dx.doi.org/10.1111/j.1742-4658.2012.08719.x}
+  {doi:~10.1111/j.1742-4658.2012.08719.x}.
 
 \bibitem{karr_whole-cell_2012}
-Jonathan~R. Karr, Jayodita~C. Sanghvi, Derek~N. Macklin, Miriam~V. Gutschow,
-  Jared~M. Jacobs, Benjamin Bolival~Jr., Nacyra Assad-Garcia, John~I. Glass,
-  and Markus~W. Covert.
+Karr JR, Sanghvi JC, Macklin DN, Gutschow MV, Jacobs JM, Bolival~Jr B, et~al.
 \newblock A {{Whole}}-{{Cell Computational Model Predicts Phenotype}} from
   {{Genotype}}.
-\newblock {\em Cell}, 150(2):389--401, July 2012.
+\newblock Cell. 2012 Jul;150(2):389--401.
+\newblock \href {http://dx.doi.org/10.1016/j.cell.2012.05.044}
+  {doi:~10.1016/j.cell.2012.05.044}.
 
 \bibitem{park_metabolite_2016}
-Junyoung~O. Park, Sara~A. Rubin, Yi-Fan Xu, Daniel Amador-Noguez, Jing Fan,
-  Tomer Shlomi, and Joshua~D. Rabinowitz.
-\newblock Metabolite concentrations, fluxes and free energies imply efficient
-  enzyme usage.
-\newblock {\em Nat Chem Biol}, 12(7):482--489, July 2016.
+Park JO, Rubin SA, Xu YF, Amador-Noguez D, Fan J, Shlomi T, et~al.
+\newblock Metabolite Concentrations, Fluxes and Free Energies Imply Efficient
+  Enzyme Usage.
+\newblock Nat Chem Biol. 2016 Jul;12(7):482--489.
+\newblock \href {http://dx.doi.org/10.1038/nchembio.2077}
+  {doi:~10.1038/nchembio.2077}.
 
 \bibitem{bennett_absolute_2009}
-Bryson~D. Bennett, Elizabeth~H. Kimball, Melissa Gao, Robin Osterhout,
-  Stephen~J. Van~Dien, and Joshua~D. Rabinowitz.
-\newblock Absolute metabolite concentrations and implied enzyme active site
-  occupancy in {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Nat Chem Biol}, 5(8):593--9, August 2009.
+Bennett BD, Kimball EH, Gao M, Osterhout R, Van~Dien SJ, Rabinowitz JD.
+\newblock Absolute Metabolite Concentrations and Implied Enzyme Active Site
+  Occupancy in {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock Nat Chem Biol. 2009 Aug;5(8):593--9.
+\newblock \href {http://dx.doi.org/10.1038/nchembio.186}
+  {doi:~10.1038/nchembio.186}.
 
 \bibitem{buscher_cross-platform_2009}
-J{\"o}rg~Martin B{\"u}scher, Dominika Czernik, Jennifer~Christina Ewald, Uwe
-  Sauer, and Nicola Zamboni.
+B{\"u}scher JM, Czernik D, Ewald JC, Sauer U, Zamboni N.
 \newblock Cross-{{Platform Comparison}} of {{Methods}} for {{Quantitative
   Metabolomics}} of {{Primary Metabolism}}.
-\newblock {\em Anal. Chem.}, 81(6):2135--2143, March 2009.
+\newblock Anal Chem. 2009 Mar;81(6):2135--2143.
+\newblock \href {http://dx.doi.org/10.1021/ac8022857} {doi:~10.1021/ac8022857}.
 
 \bibitem{kauffman_advances_2003}
-Kenneth~J Kauffman, Purusharth Prakash, and Jeremy~S Edwards.
-\newblock Advances in flux balance analysis.
-\newblock {\em Current Opinion in Biotechnology}, 14(5):491--496, October 2003.
+Kauffman KJ, Prakash P, Edwards JS.
+\newblock Advances in Flux Balance Analysis.
+\newblock Current Opinion in Biotechnology. 2003 Oct;14(5):491--496.
+\newblock \href {http://dx.doi.org/10.1016/j.copbio.2003.08.001}
+  {doi:~10.1016/j.copbio.2003.08.001}.
 
 \bibitem{jaqaman_linking_2006}
-Khuloud Jaqaman and Gaudenz Danuser.
-\newblock Linking data to models: Data regression.
-\newblock {\em Nat. Rev. Mol. Cell Biol.}, 7(11):813--819, November 2006.
+Jaqaman K, Danuser G.
+\newblock Linking Data to Models: Data Regression.
+\newblock Nat Rev Mol Cell Biol. 2006 Nov;7(11):813--819.
+\newblock \href {http://dx.doi.org/10.1038/nrm2030} {doi:~10.1038/nrm2030}.
 
 \bibitem{mendes_non-linear_1998}
-P.~Mendes and D.~Kell.
-\newblock Non-linear optimization of biochemical pathways: Applications to
-  metabolic engineering and parameter estimation.
-\newblock {\em Bioinformatics}, 14(10):869--883, 1998.
+Mendes P, Kell D.
+\newblock Non-Linear Optimization of Biochemical Pathways: Applications to
+  Metabolic Engineering and Parameter Estimation.
+\newblock Bioinformatics. 1998;14(10):869--883.
 
 \bibitem{cho_experimental_2003}
-Kwang-Hyun Cho, Sung-Young Shin, Walter Kolch, and Olaf Wolkenhauer.
-\newblock Experimental design in systems biology, based on parameter
-  sensitivity analysis using a monte carlo method: {{A}} case study for the
-  tnf$\alpha$-mediated nf-$\kappa$ b signal transduction pathway.
-\newblock {\em Simulation}, 79(12):726--739, 2003.
+Cho KH, Shin SY, Kolch W, Wolkenhauer O.
+\newblock Experimental Design in Systems Biology, Based on Parameter
+  Sensitivity Analysis Using a Monte Carlo Method: {{A}} Case Study for the
+  Tnf$\alpha$-Mediated Nf-$\kappa$ B Signal Transduction Pathway.
+\newblock Simulation. 2003;79(12):726--739.
 
 \bibitem{brodersen_characterization_1987}
-R.~Brodersen, F.~Nielsen, J.~C. Christiansen, and K.~Andersen.
-\newblock Characterization of binding equilibrium data by a variety of fitted
-  isotherms.
-\newblock {\em Eur. J. Biochem.}, 169(3):487--495, December 1987.
+Brodersen R, Nielsen F, Christiansen JC, Andersen K.
+\newblock Characterization of Binding Equilibrium Data by a Variety of Fitted
+  Isotherms.
+\newblock Eur J Biochem. 1987 Dec;169(3):487--495.
 
 \bibitem{rodriguez-fernandez_hybrid_2006}
-Maria Rodriguez-Fernandez, Pedro Mendes, and Julio~R. Banga.
-\newblock A hybrid approach for efficient and robust parameter estimation in
-  biochemical pathways.
-\newblock {\em BioSystems}, 83(2-3):248--265, 2006 Feb-Mar.
+Rodriguez-Fernandez M, Mendes P, Banga JR.
+\newblock A Hybrid Approach for Efficient and Robust Parameter Estimation in
+  Biochemical Pathways.
+\newblock BioSystems. 2006 Feb-Mar;83(2-3):248--265.
+\newblock \href {http://dx.doi.org/10.1016/j.biosystems.2005.06.016}
+  {doi:~10.1016/j.biosystems.2005.06.016}.
 
 \bibitem{gutenkunst_universally_2007}
-Ryan~N Gutenkunst, Joshua~J Waterfall, Fergal~P Casey, Kevin~S Brown,
-  Christopher~R Myers, and James~P Sethna.
-\newblock Universally sloppy parameter sensitivities in systems biology models.
-\newblock {\em PLoS Comput. Biol.}, 3(10):1871--78, October 2007.
+Gutenkunst RN, Waterfall JJ, Casey FP, Brown KS, Myers CR, Sethna JP.
+\newblock Universally Sloppy Parameter Sensitivities in Systems Biology Models.
+\newblock PLoS Comput Biol. 2007 Oct;3(10):1871--78.
 \newblock 00400.
+\newblock \href {http://dx.doi.org/10.1371/journal.pcbi.0030189}
+  {doi:~10.1371/journal.pcbi.0030189}.
 
 \bibitem{ingram_network_2006}
-Piers~J. Ingram, Michael P.~H. Stumpf, and Jaroslav Stark.
-\newblock Network motifs: Structure does not determine function.
-\newblock {\em BMC Genomics}, 7:108, May 2006.
+Ingram PJ, Stumpf MPH, Stark J.
+\newblock Network Motifs: Structure Does Not Determine Function.
+\newblock BMC Genomics. 2006 May;7:108.
+\newblock \href {http://dx.doi.org/10.1186/1471-2164-7-108}
+  {doi:~10.1186/1471-2164-7-108}.
 
 \bibitem{mayo_plasticity_2006}
-Avraham~E. Mayo, Yaakov Setty, Seagull Shavit, Alon Zaslaver, and Uri Alon.
-\newblock Plasticity of the cis-regulatory input function of a gene.
-\newblock {\em PLoS Biol.}, 4(4):e45, April 2006.
+Mayo AE, Setty Y, Shavit S, Zaslaver A, Alon U.
+\newblock Plasticity of the Cis-Regulatory Input Function of a Gene.
+\newblock PLoS Biol. 2006 Apr;4(4):e45.
+\newblock \href {http://dx.doi.org/10.1371/journal.pbio.0040045}
+  {doi:~10.1371/journal.pbio.0040045}.
 
 \bibitem{spiesser_size_2012}
-Thomas~W. Spiesser, Christiane M{\"u}ller, Gabriele Schreiber, Marcus Krantz,
-  and Edda Klipp.
-\newblock Size homeostasis can be intrinsic to growing cell populations and
-  explained without size sensing or signalling.
-\newblock {\em FEBS J}, 279(22):4213--4230, November 2012.
+Spiesser TW, M{\"u}ller C, Schreiber G, Krantz M, Klipp E.
+\newblock Size Homeostasis Can Be Intrinsic to Growing Cell Populations and
+  Explained without Size Sensing or Signalling.
+\newblock FEBS J. 2012 Nov;279(22):4213--30.
+\newblock \href {http://dx.doi.org/10.1111/febs.12014}
+  {doi:~10.1111/febs.12014}.
 
 \bibitem{dijken_kinetics_1993}
-Johannes~P. van Dijken, Ruud~A. Weusthuis, and Jack~T. Pronk.
-\newblock Kinetics of growth and sugar consumption in yeasts.
-\newblock {\em Antonie Van Leeuwenhoek}, 63(3-4):343--352, 1993.
+van Dijken JP, Weusthuis RA, Pronk JT.
+\newblock Kinetics of Growth and Sugar Consumption in Yeasts.
+\newblock Antonie Van Leeuwenhoek. 1993;63(3-4):343--352.
+\newblock \href {http://dx.doi.org/10.1007/BF00871229}
+  {doi:~10.1007/BF00871229}.
 
 \bibitem{vemuri_overflow_2006}
-G.~N. Vemuri, E.~Altman, D.~P. Sangurdekar, A.~B. Khodursky, and M.~A. Eiteman.
-\newblock Overflow {{Metabolism}} in {{Escherichia}} coli during
+Vemuri GN, Altman E, Sangurdekar DP, Khodursky AB, Eiteman MA.
+\newblock Overflow {{Metabolism}} in {{Escherichia}} Coli during
   {{Steady}}-{{State Growth}}: {{Transcriptional Regulation}} and {{Effect}} of
   the {{Redox Ratio}}.
-\newblock {\em Appl. Environ. Microbiol.}, 72(5):3653--3661, January 2006.
+\newblock Appl Environ Microbiol. 2006 Jan;72(5):3653--3661.
+\newblock \href {http://dx.doi.org/10.1128/AEM.72.5.3653-3661.2006}
+  {doi:~10.1128/AEM.72.5.3653-3661.2006}.
 
 \bibitem{mckeehan_glycolysis_1982}
-Wallace~L McKeehan.
-\newblock Glycolysis, glutaminolysis and cell proliferation.
-\newblock {\em Cell Biol. Int. Rep.}, 6(7):635--650, 1982.
+McKeehan WL.
+\newblock Glycolysis, Glutaminolysis and Cell Proliferation.
+\newblock Cell Biol Int Rep. 1982;6(7):635--650.
 
 \bibitem{hsu_cancer_2008}
-Peggy~P. Hsu and David~M. Sabatini.
+Hsu PP, Sabatini DM.
 \newblock Cancer {{Cell Metabolism}}: {{Warburg}} and {{Beyond}}.
-\newblock {\em Cell}, 134(5):703--707, September 2008.
+\newblock Cell. 2008 Sep;134(5):703--707.
+\newblock \href {http://dx.doi.org/10.1016/j.cell.2008.08.021}
+  {doi:~10.1016/j.cell.2008.08.021}.
 
-\bibitem{keseler_ecocyc_2013}
-Ingrid~M Keseler, Amanda Mackie, Martin Peralta-Gil, Alberto Santos-Zavaleta,
-  Socorro Gama-Castro, C{\'e}sar Bonavides-Mart{\'\i}nez, Carol Fulcher,
-  Araceli~M Huerta, Anamika Kothari, Markus Krummenacker, Mario Latendresse,
-  Luis Mu{\~n}iz-Rascado, Quang Ong, Suzanne Paley, Imke Schr{\"o}der,
-  Alexander~G Shearer, Pallavi Subhraveti, Mike Travers, Deepika Weerasinghe,
-  Verena Weiss, Julio Collado-Vides, Robert~P Gunsalus, Ian Paulsen, and
-  Peter~D Karp.
-\newblock {{EcoCyc}}: Fusing model organism databases with systems biology.
-\newblock {\em Nucleic Acids Res}, 41(Database issue):D605--12, January 2013.
-
-\bibitem{maitra_bacterial_2014}
-Arijit Maitra and Ken~A. Dill.
-\newblock Bacterial growth laws reflect the evolutionary importance of energy
-  efficiency.
-\newblock {\em Proc Natl Acad Sci USA}, 112(2):406--11, December 2014.
-
-\bibitem{kremling_understanding_2015}
-A.~Kremling, J.~Geiselmann, D.~Ropers, and H.~{de Jong}.
-\newblock Understanding carbon catabolite repression in
-  {{{\emph{Escherichia}}}}{\emph{ coli}} using quantitative models.
-\newblock {\em Trends Microbiol}, 23(2):99--109, 2015.
-
-\bibitem{bosdriesz_how_2015}
-Evert Bosdriesz, Douwe Molenaar, Bas Teusink, and Frank~J. Bruggeman.
-\newblock How fast-growing bacteria robustly tune their ribosome concentration
-  to approximate growth-rate maximization.
-\newblock {\em FEBS J}, 282:2029--204, March 2015.
-
-\bibitem{weisse_mechanistic_2015}
-Andrea~Y. Wei\ss{}e, Diego~A. Oyarz{\'u}n, Vincent Danos, and Peter~S. Swain.
-\newblock Mechanistic links between cellular trade-offs, gene expression, and
-  growth.
-\newblock {\em Proc Natl Acad Sci USA}, 112(9):1038--47, March 2015.
-
-\bibitem{borirak_molecular_2014}
-O.~Borirak, M.~Bekker, and K.~J. Hellingwerf.
-\newblock Molecular physiology of the dynamic regulation of carbon catabolite
-  repression in {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Microbiology}, 160(Pt6):1214--23, June 2014.
-
-\bibitem{pavlov_optimal_2013}
-Michael~Y. Pavlov and M\aa{}ns Ehrenberg.
-\newblock Optimal control of gene expression for fast proteome adaptation to
-  environmental change.
-\newblock {\em Proc Natl Acad Sci USA}, 110(51):20527--32, December 2013.
-
-\bibitem{vandenberg_optimal_1998}
-Hugo~A. {van den Berg}, Yuri~N. Kiselev, S.~a. L.~M. Kooijman, and Michael~V.
-  Orlov.
-\newblock Optimal allocation between nutrient uptake and growth in a microbial
-  trichome.
-\newblock {\em J Math Biol}, 37(1):28--48, July 1998.
-
-\bibitem{waldherr_dynamic_2015}
-Steffen Waldherr, Diego~A. Oyarz{\'u}n, and Alexander Bockmayr.
-\newblock Dynamic optimization of metabolic networks coupled with gene
-  expression.
-\newblock {\em J Theor Biol}, 365:469--85, January 2015.
-
-\bibitem{stengel_optimal_1994}
-R.~F. Stengel.
-\newblock {\em Optimal {{Control}} and {{Estimation}}}.
-\newblock {Dover Publications}, Mineola, NY, 1994.
-
-\bibitem{dalebroux_ppgpp_2012}
-Z.~D. Dalebroux and M.~S. Swanson.
-\newblock {{ppGpp}}: Magic beyond {{RNA}} polymerase.
-\newblock {\em Nat Rev Microbiol}, 10(3):203--12, 2012.
-
-\bibitem{potrykus_pppgpp_2008}
-K.~Potrykus and M.~Cashel.
-\newblock (p){{ppGpp}}: Still magical?
-\newblock {\em Annu Rev Microbiol}, 62:35--51, 2008.
-
-\bibitem{hauryliuk_recent_2015}
-V.~Hauryliuk, G.~C. Atkinson, K.~S. Murakami, T.~Tenson, and K.~Gerdes.
-\newblock Recent functional insights into the role of (p){{ppGpp}} in bacterial
-  physiology.
-\newblock {\em Nat Rev Microbiol}, 13(5):298--309, 2015.
-
-\bibitem{iglesias_control_2010}
-Pablo~A. Iglesias and Brian~P. Ingalls.
-\newblock {\em Control {{Theory}} and {{Systems Biology}}}.
-\newblock {MIT Press}, 2010.
-
-\bibitem{sipper_fifty_1998}
-M.~Sipper.
-\newblock Fifty years of research on self-replication: An overview.
-\newblock {\em Artif Life}, 4(3):237--57, 1998.
-
-\bibitem{flamm_minimal_2007}
-C.~Flamm, L.~Endler, S.~M{\"u}ller, S.~Widder, and P.~Schuster.
-\newblock A minimal and self-consistent in silico cell model based on
-  macromolecular interactions.
-\newblock {\em Philos Trans R Soc B}, 362(1486):1831--9, 2007.
-
-\bibitem{klumpp_molecular_2013}
-Stefan Klumpp, Matthew Scott, Steen Pedersen, and Terence Hwa.
-\newblock Molecular crowding limits translation and cell growth.
-\newblock {\em Proc Natl Acad Sci USA}, 110(42):16754--9, October 2013.
-
-\bibitem{kjeldgaard_kinetics_1961}
-Niels~Ole Kjeldgaard.
-\newblock The kinetics of ribonucleic acid- and protein formation in
-  {{{\emph{Salmonella}}}}{\emph{ typhimurium}} during the transition between
-  different states of balanced growth.
-\newblock {\em Biochim Biophys Acta}, 49(1):64--76, April 1961.
-
-\bibitem{schaechter_patterns_1961}
-Moselio Schaechter.
-\newblock Patterns of cellular control during unbalanced growth.
-\newblock {\em Cold Spring Harb Symp Quant Biol}, 26:53--62, January 1961.
-
-\bibitem{johnsen_control_1977}
-Knud Johnsen, S\o{}ren Molin, Olle Karlstr{\"o}m, and Ole Maal\o{}e.
-\newblock Control of protein synthesis in {{{\emph{Escherichia}}}}{\emph{
-  coli}}: Analysis of an energy source shift-down.
-\newblock {\em J Bacteriol}, 131(1):18--29, January 1977.
-
-\bibitem{carlson_infinite_1991}
-Dean~A. Carlson, Alain~B. Haurie, and Arie Leizarowitz.
-\newblock {\em Infinite {{Horizon Optimal Control}}}.
-\newblock {Springer}, Berlin, Heidelberg, 1991.
-
-\bibitem{bonnans_bocop_2012}
-Fr{\'e}d{\'e}ric Bonnans, Pierre Martinon, and Vincent Gr{\'e}lard.
-\newblock Bocop - {{A}} collection of examples.
-\newblock Research report, Inria, 2012.
-\newblock eprint: https://hal.inria.fr/hal-00726992.
-
-\bibitem{chubukov_coordination_2014}
-Victor Chubukov, Luca Gerosa, Karl Kochanowski, and Uwe Sauer.
-\newblock Coordination of microbial metabolism.
-\newblock {\em Nat Rev Microbiol}, 12:327--40, March 2014.
-
-\bibitem{deutscher_how_2006}
-J.~Deutscher, C.~Francke, and P.~W. Postma.
-\newblock How phosphotransferase system-related protein phosphorylation
-  regulates carbohydrate metabolism in bacteria.
-\newblock {\em Microbiol Mol Biol Rev}, 70(4):939--1031, 2006.
-
-\bibitem{gorke_carbon_2008}
-B.~G{\"o}rke and J.~St{\"u}lke.
-\newblock Carbon catabolite repression in bacteria: Many ways to make the most
-  out of nutrients.
-\newblock {\em Nat Rev Microbiol}, 6(8):613--24, 2008.
-
-\bibitem{english_singlemolecule_2011}
-B.~P. English, V.~Hauryliuk, A.~Sanamrad, S.~Tankov, N.~H. Dekker, and J.~Elf.
-\newblock Single-molecule investigations of the stringent response machinery in
-  living bacterial cells.
-\newblock {\em Proc Natl Acad Sci USA}, 108(31):365--73, 2011.
-
-\bibitem{dennis_control_2004}
-Patrick~P. Dennis, Mans Ehrenberg, and Hans Bremer.
-\newblock Control of {{rRNA}} synthesis in {{{\emph{Escherichia}}}}{\emph{
-  coli}}: A systems biology approach.
-\newblock {\em Microbiol Mol Biol Rev}, 68(4):639--68, January 2004.
-
-\bibitem{keener_regulation_1996}
-J.~Keener and M.~Nomura.
-\newblock Regulation of ribosome synthesis.
-\newblock In F.~C. Neidhardt, R.~Curtiss III, J.~L. Ingraham, E.~C.~C. Lin,
-  K.~B. Low, B.~Magasanik, W.~S. Reznikoff, M.~Riley, M.~Schaechter, and H.~E.
-  Umbarger, editors, {\em {\emph{Escherichia Coli}} and
-  {{{\emph{Salmonella}}}}: {{Cellular}} and {{Molecular Biology}}}, pages
-  1417--31. {ASM Press}, Washington, DC, 2nd edition, 1996.
-
-\bibitem{murray_control_2003}
-H.~D. Murray, D.~A. Schneider, and R.~L. Gourse.
-\newblock Control of {{rRNA}} expression by small molecules is dynamic and
-  nonredundant.
-\newblock {\em Mol Cell}, 12(1):125--34, 2003.
-
-\bibitem{macevicz_modeling_1976}
-S.~Macevicz and G.~Oster.
-\newblock Modeling social insect populations {{II}}: {{Optimal}} reproductive
-  strategies in annual eusocial insect colonies.
-\newblock {\em Behav Ecol Sociobiol}, 1(3):265--82, 1976.
-
-\bibitem{itzkovitz_optimality_2012}
-Shalev Itzkovitz, Irene~C Blat, Tyler Jacks, Hans Clevers, and Alexander {van
-  Oudenaarden}.
-\newblock Optimality in the development of intestinal crypts.
-\newblock {\em Cell}, 148(3):608--19, February 2012.
-
-\bibitem{bartl_modelling_2010}
-Martin Bartl, Pu~Li, and Stefan Schuster.
-\newblock Modelling the optimal timing in metabolic pathway
-  activation\textemdash{}{{Use}} of {{Pontryagin}}'s {{Maximum Principle}} and
-  role of the {{Golden}} section.
-\newblock {\em Biosystems}, 101(1):67--77, July 2010.
-
-\bibitem{oyarzun_sequential_2009}
-D.~A. Oyarz{\'u}n, B.~P. Ingalls, R.~H. Middleton, and D.~Kalamatianos.
-\newblock Sequential activation of metabolic pathways: A dynamic optimization
-  approach.
-\newblock {\em Bull Math Biol}, 71:1851--72, 2009.
-
-\bibitem{madar_promoter_2013}
-Daniel Madar, Erez Dekel, Anat Bren, Anat Zimmer, Ziv Porat, and Uri Alon.
-\newblock Promoter activity dynamics in the lag phase of
-  {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em BMC Syst Biol}, 7(1):136, December 2013.
-
-\bibitem{kiselev_resource_2009}
-Yu~N. Kiselev, S.~N. Avvakumov, and M.~V. Orlov.
-\newblock Resource allocation problem in a two-sector economic model of special
-  form.
-\newblock {\em Differ Equ}, 45(12):1791--810, December 2009.
-\newblock 00003.
-
-\bibitem{potrykus_ppgpp_2011}
-K.~Potrykus, H.~Murphy, N.~Philippe, and M.~Cashel.
-\newblock {{ppGpp}} is the major source of growth rate control in
-  {{{\emph{E}}}}{\emph{. coli}}.
-\newblock {\em Env. Microbiol}, 13(3):563--75, 2011.
-
-\bibitem{traxler_guanosine_2006}
-M.~F. Traxler, D.~E. Chang, and T.~Conway.
-\newblock Guanosine 3',5'-bispyrophosphate coordinates global gene expression
-  during glucose-lactose diauxie in {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Proc Natl Acad Sci USA}, 103(7):2374--9, 2006.
-
-\bibitem{traxler_global_2008}
-M.~F. Traxler, S.~M. Summers, H.-T. Nguyen, V.~M. Zacharia, G.~A. Hightower,
-  J.~T. Smith, and T.~Conway.
-\newblock The global, {{ppGpp}}-mediated stringent response to amino acid
-  starvation in {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Mol Microbiol}, 68(5):1128--48, 2008.
-
-\bibitem{gaca_many_2015}
-A.~O. Gaca, C.~Colomer-Winter, and J.~A. Lemos.
-\newblock Many means to a common end: The intricacies of (p){{ppGpp}}
-  metabolism and its control of bacterial homeostasis.
-\newblock {\em J Bacteriol}, 197(7):1146--56, 2015.
-
-\bibitem{liu_diversity_2015}
-K.~Liu, A.~N. Bittner, and J.~D. Wang.
-\newblock Diversity in (p){{ppGpp}} metabolism and effectors.
-\newblock {\em Curr Opin Microbiol}, 24:72--9, 2015.
-
-\bibitem{kalisky_costbenefit_2007}
-Tomer Kalisky, Erez Dekel, and Uri Alon.
-\newblock Cost-benefit theory and optimal design of gene regulation functions.
-\newblock {\em Phys Biol}, 4(4):229--45, November 2007.
-
-\bibitem{poelwijk_tradeoffs_2011}
-Frank~J Poelwijk, Marjon G~J {de Vos}, and Sander~J Tans.
-\newblock Tradeoffs and optimality in the evolution of gene regulation.
-\newblock {\em Cell}, 146(3):462--70, August 2011.
-\newblock 00023.
-
-\bibitem{bakshi_superresolution_2012}
-S.~Bakshi, A.~Siryaporn, M.~Goulian, and J.~C. Weisshaar.
-\newblock Superresolution imaging of ribosomes and {{RNA}} polymerase in live
-  {{{\emph{Escherichia}}}}{\emph{ coli}} cells.
-\newblock {\em Mol Microbiol}, 85(1):21--38, 2012.
-
-\bibitem{gausing_regulation_1980}
-K.~Gausing.
-\newblock Regulation of ribosome synthesis in {{{\emph{E}}}}{\emph{. coli}}.
-\newblock In G.~Chambliss, G.~R. Craven, J.~Davies, K.~Davis, L.~Kahan, and
-  M.~Nomura, editors, {\em Ribosomes: {{Structure}}, {{Function}} and
-  {{Genetics}}}, pages 693--718. {University Park Press}, Baltimore, 1980.
-
-\bibitem{zengel_transcription_1986}
-J.~M. Zengel and L.~Lindahl.
-\newblock Transcription of ribosomal genes during a nutritional shift-up of
-  {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em J Bacteriol}, 167(3):1095--7, 1986.
-
-\bibitem{friesen_synthesis_1975}
-J.~D. Friesen, N.~P. Fiil, and K.~{von Meyenburg}.
-\newblock Synthesis and turnover of basal level guanosine tetraphosphate in
-  {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em J Biol Chem}, 250(1):304--9, 1975.
-
-\bibitem{young_measuring_2011}
-J.~W. Young, J.~C. Locke, A.~Altinok, N.~Rosenfeld, T.~Bacarian, P.~S. Swain,
-  E.~Mjolsness, and M.~B. Elowitz.
-\newblock Measuring single-cell gene expression dynamics in bacteria using
-  fluorescence time-lapse microscopy.
-\newblock {\em Nat Protoc}, 7(1):80--8, 2011.
-
-\bibitem{duncombe_microfluidics_2015}
-T.~A. Duncombe, A.~M. Tentori, and A.~E. Herr.
-\newblock Microfluidics: Reframing biological enquiry.
-\newblock {\em Nat Rev Mol Cell Biol}, 16(9):554--67, 2015.
-
-\bibitem{molin_control_1977}
-S.~Molin, K.~Von Meyenburg, O.~Maaloe, M.~T. Hansen, and M.~L. Pato.
-\newblock Control of ribosome synthesis in {{{\emph{Escherichia}}}}{\emph{
-  coli}}: {{Analysis}} of an energy source shift-down.
-\newblock {\em J Bacteriol}, 131(1):7--17, 1977.
-
-\bibitem{venayak_engineering_2015}
-N.~Venayak, N.~Anesiadis, W.~R. Cluett, and R.~Mahadevan.
-\newblock Engineering metabolism through dynamic control.
-\newblock {\em Curr Opin Biotechnol}, 34:142--52, 2015.
-
-\bibitem{dahl_engineering_2013}
-R.~H. Dahl, F.~Zhang, J.~Alonso-Gutierrez, E.~Baidoo, T.~S. Batth, A.~M.
-  Redding-Johanson, C.~J. Petzold, A.~Mukhopadhyay, T.~S. Lee, P.~D. Adams, and
-  J.~D. Keasling.
-\newblock Engineering dynamic pathway regulation using stress-response
-  promoters.
-\newblock {\em Nat Biotechnol}, 31(11):1039--46, 2013.
-
-\bibitem{xu_improving_2014}
-P.~Xu, L.~Li, F.~Zhang, G.~Stephanopoulos, and M.~Koffas.
-\newblock Improving fatty acids production by engineering dynamic pathway
-  regulation and metabolic control.
-\newblock {\em Proc Natl Acad Sci USA}, 111(31):11299--304, 2014.
-
-\bibitem{izard_synthetic_2015}
-J{\'e}rome Izard, Cindy Gomez~Balderas, Delphine Ropers, St{\'e}phan Lacour,
-  X~Song, Y~Yang, Ariel Lindner, Johannes Geiselmann, and Hidde {de Jong}.
-\newblock A synthetic growth switch based on controlled expression of {{RNA}}
-  polymerase.
-\newblock {\em Mol Syst Biol}, 11(11):840, 2015.
-
-\bibitem{storn_differential_1997}
-Rainer Storn and Kenneth Price.
-\newblock Differential evolution \textendash{} a simple and efficient heuristic
-  for global optimization over continuous spaces.
-\newblock {\em J Glob Optim}, 11(4):341--59, December 1997.
-
-\bibitem{borisov_fullers_2000}
-V.~F. Borisov.
-\newblock Fuller's phenomenon: {{Review}}.
-\newblock {\em J Math Sci}, 100(4):2311--54, July 2000.
-
-\bibitem{filippov_differential_1988}
-A~F Filippov.
-\newblock {\em Differential {{Equations}} with {{Discontinuous Righthand
-  Sides}}}.
-\newblock {Kluwer Academic Publishers}, Dordrecht, 1988.
-
-\bibitem{cohen_cvode_1996}
-Scott~D Cohen and Alan~C Hindmarsh.
-\newblock {{CVODE}}, a stiff/nonstiff {{ODE}} solver in {{C}}.
-\newblock {\em Comput Phys}, 10(5):138--43, 1996.
-
-\bibitem{hindmarsh_sundials_2005}
-Alan~C. Hindmarsh, Peter~N. Brown, Keith~E. Grant, Steven~L. Lee, Radu Serban,
-  Dan~E. Shumaker, and Carol~S. Woodward.
-\newblock {{SUNDIALS}}: {{Suite}} of {{Nonlinear}} and
-  {{Differential}}/{{Algebraic Equation Solvers}}.
-\newblock {\em ACM Trans Math Softw}, 31(3):363--96, 2005.
-
-\bibitem{uter_longrange_2004}
-Nathan~T. Uter and John~J. Perona.
-\newblock Long-range intramolecular signaling in a {{tRNA}} synthetase complex
-  revealed by pre-steady-state kinetics.
-\newblock {\em Proc Natl Acad Sci USA}, 101(40):14396--401, October 2004.
-
-\bibitem{freist_glutaminyltrna_1997}
-W.~Freist, D.~H. Gauss, M.~Ibba, and D.~S{\"o}ll.
-\newblock Glutaminyl-{{tRNA}} synthetase.
-\newblock {\em Biol Chem}, 378(10):1103--17, October 1997.
-
-\bibitem{hachiya_increase_2007}
-Takushi Hachiya, Ichiro Terashima, and Ko~Noguchi.
-\newblock Increase in respiratory cost at high growth temperature is attributed
-  to high protein turnover cost in {{Petunia}} x hybrida petals.
-\newblock {\em Plant Cell Env.}, 30(10):1269--83, October 2007.
-
-\bibitem{yamamoto_mass_2006}
-Tatsuya Yamamoto, Shunsuke Izumi, and Kunihiko Gekko.
-\newblock Mass spectrometry of hydrogen/deuterium exchange in {{70S}} ribosomal
-  proteins from {{{\emph{E}}}}{\emph{. coli}}.
-\newblock {\em FEBS Lett}, 580(15):3638--42, June 2006.
+\bibitem{volkmer_condition-dependent_2011}
+Volkmer B, Heinemann M.
+\newblock Condition-{{Dependent Cell Volume}} and {{Concentration}} of
+  {{Escherichia}} Coli to {{Facilitate Data Conversion}} for {{Systems Biology
+  Modeling}}.
+\newblock PloS ONE. 2011 Jul;6(7):e23126.
+\newblock \href {http://dx.doi.org/10.1371/journal.pone.0023126}
+  {doi:~10.1371/journal.pone.0023126}.
 
 \bibitem{churchward_macromolecular_1982}
-Gordon Churchward, Hans Bremer, and Ry~Young.
-\newblock Macromolecular composition of bacteria.
-\newblock {\em J Theor Biol}, 94(3):651--70, February 1982.
+Churchward G, Bremer H, Young R.
+\newblock Macromolecular Composition of Bacteria.
+\newblock J Theor Biol. 1982 Feb;94(3):651--70.
+\newblock \href {http://dx.doi.org/10.1016/0022-5193(82)90305-8}
+  {doi:~10.1016/0022-5193(82)90305-8}.
 
-\bibitem{zhou_carbon_2013}
-Yi~Zhou, Alexei Vazquez, Aaron Wise, Tomoko Warita, Katsuhiko Warita, Ziv
-  Bar-Joseph, and Zoltan~N Oltvai.
-\newblock Carbon catabolite repression correlates with the maintenance of near
-  invariant molecular crowding in proliferating {{{\emph{E}}}}{\emph{. coli}}
-  cells.
-\newblock {\em BMC Syst Biol}, 7:138, December 2013.
+\bibitem{bremer_free_2003}
+Bremer H, Dennis P, Ehrenberg M.
+\newblock Free {{RNA}} Polymerase and Modeling Global Transcription in
+  {{Escherichia}} Coli.
+\newblock Biochimie. 2003 Jun;85(6):597--609.
+\newblock \href {http://dx.doi.org/10.1016/S0300-9084(03)00105-6}
+  {doi:~10.1016/S0300-9084(03)00105-6}.
 
-\bibitem{zimmerman_estimation_1991}
-S~B Zimmerman and S~O Trach.
-\newblock Estimation of macromolecule concentrations and excluded volume
-  effects for the cytoplasm of {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em J Mol Biol}, 222(3):599--620, December 1991.
+\bibitem{bremer_feedback_2008}
+Bremer H, Dennis P.
+\newblock Feedback Control of Ribosome Function in {{Escherichia}} Coli.
+\newblock Biochimie. 2008 Mar;90(3):493--499.
+\newblock \href {http://dx.doi.org/10.1016/j.biochi.2007.10.008}
+  {doi:~10.1016/j.biochi.2007.10.008}.
 
-\bibitem{mcguffee_diffusion_2010}
-Sean~R. McGuffee and Adrian~H. Elcock.
-\newblock Diffusion, crowding \& protein stability in a dynamic molecular model
-  of the bacterial cytoplasm.
-\newblock {\em PLoS Comput Biol}, 6(3):e1000694, March 2010.
+\bibitem{davey_flow_1996}
+Davey HM, Kell DB.
+\newblock Flow Cytometry and Cell Sorting of Heterogeneous Microbial
+  Populations: The Importance of Single-Cell Analyses.
+\newblock Microbiol Rev. 1996 Jan;60(4):641--696.
+\newblock Available from: \url{http://mmbr.asm.org/content/60/4/641}.
 
-\bibitem{marchal_chattering_2013}
-C.~Marchal.
-\newblock Chattering arcs and chattering controls.
-\newblock {\em J Optim Theory Appl}, 11(5):441--68, August 2013.
+\bibitem{bakshi_superresolution_2012}
+Bakshi S, Siryaporn A, Goulian M, Weisshaar JC.
+\newblock Superresolution Imaging of Ribosomes and {{RNA}} Polymerase in Live
+  {{{\emph{Escherichia}}}}{\emph{ Coli}} Cells.
+\newblock Mol Microbiol. 2012;85(1):21--38.
+\newblock \href {http://dx.doi.org/10.1111/j.1365-2958.2012.08081.x}
+  {doi:~10.1111/j.1365-2958.2012.08081.x}.
 
-\bibitem{trelat_turnpike_2015}
-Emmanuel Tr{\'e}lat and Enrique Zuazua.
-\newblock The turnpike property in finite-dimensional nonlinear optimal
-  control.
-\newblock {\em J Differ Equ}, 258(1):81--114, January 2015.
+\bibitem{balaban_bacterial_2004}
+Balaban NQ, Merrin J, Chait R, Kowalik L, Leibler S.
+\newblock Bacterial {{Persistence}} as a {{Phenotypic Switch}}.
+\newblock Science. 2004 Sep;305(5690):1622--1625.
+\newblock \href {http://dx.doi.org/10.1126/science.1099390}
+  {doi:~10.1126/science.1099390}.
 
-\bibitem{zulkower_robust_2015}
-Valentin Zulkower, Michel Page, Delphine Ropers, Johannes Geiselmann, and Hidde
-  de~Jong.
-\newblock Robust reconstruction of gene expression profiles from reporter gene
-  data using linear inversion.
-\newblock {\em Bioinformatics}, 31(12):i71--i79, June 2015.
+\bibitem{booth_stress_2002}
+Booth IR.
+\newblock Stress and the Single Cell: {{Intrapopulation}} Diversity Is a
+  Mechanism to Ensure Survival upon Exposure to Stress.
+\newblock International Journal of Food Microbiology. 2002
+  Sep;78(1\textendash{}2):19--30.
+\newblock \href {http://dx.doi.org/10.1016/S0168-1605(02)00239-8}
+  {doi:~10.1016/S0168-1605(02)00239-8}.
 
-\bibitem{kailath_linear_2000}
-Thomas Kailath, Ali~H Sayed, and Babak Hassibi.
-\newblock {\em Linear Estimation}, volume~1.
-\newblock {Prentice Hall Upper Saddle River, NJ}, 2000.
+\bibitem{sumner_phenotypic_2002}
+Sumner ER, Avery SV.
+\newblock Phenotypic Heterogeneity: Differential Stress Resistance among
+  Individual Cells of the Yeast {{Saccharomyces}} Cerevisiae.
+\newblock Microbiology. 2002;148(2):345--351.
+\newblock \href {http://dx.doi.org/10.1099/00221287-148-2-345}
+  {doi:~10.1099/00221287-148-2-345}.
 
-\bibitem{jazwinski_stochastic_2007}
-Andrew~H Jazwinski.
-\newblock {\em Stochastic Processes and Filtering Theory}.
-\newblock {Courier Corporation}, 2007.
+\bibitem{true_yeast_2000}
+True HL, Lindquist SL.
+\newblock A Yeast Prion Provides a Mechanism for Genetic Variation and
+  Phenotypic Diversity.
+\newblock Nature. 2000 Sep;407(6803):477--483.
+\newblock \href {http://dx.doi.org/10.1038/35035005} {doi:~10.1038/35035005}.
 
-\bibitem{kalman_new_1960}
-R.~E. Kalman.
-\newblock A {{New Approach}} to {{Linear Filtering}} and {{Prediction
-  Problems}}.
-\newblock {\em J. Basic Eng}, 82(1):35--45, March 1960.
+\bibitem{fraser_noise_2004}
+Fraser HB, Hirsh AE, Giaever G, Kumm J, Eisen MB.
+\newblock Noise {{Minimization}} in {{Eukaryotic Gene Expression}}.
+\newblock PLOS Biol. 2004 Apr;2(6):e137.
+\newblock \href {http://dx.doi.org/10.1371/journal.pbio.0020137}
+  {doi:~10.1371/journal.pbio.0020137}.
 
-\bibitem{julier_new_1997}
-Simon~J. Julier and Jeffrey~K. Uhlmann.
-\newblock New extension of the {{Kalman}} filter to nonlinear systems.
-\newblock volume 3068, pages 182--193, 1997.
+\bibitem{raser_control_2004}
+Raser JM, O'Shea EK.
+\newblock Control of {{Stochasticity}} in {{Eukaryotic Gene Expression}}.
+\newblock Science. 2004 Jun;304(5678):1811--1814.
+\newblock \href {http://dx.doi.org/10.1126/science.1098641}
+  {doi:~10.1126/science.1098641}.
 
-\bibitem{golub_generalized_1979}
-Gene~H. Golub, Michael Heath, and Grace Wahba.
-\newblock Generalized {{Cross}}-{{Validation}} as a {{Method}} for {{Choosing}}
-  a {{Good Ridge Parameter}}.
-\newblock {\em Technometrics}, 21(2):215--223, May 1979.
+\bibitem{baba_construction_2006}
+Baba T, Ara T, Hasegawa M, Takai Y, Okumura Y, Baba M, et~al.
+\newblock Construction of {{Escherichia}} Coli {{K}}-12 In-frame, Single-gene
+  Knockout Mutants: The {{Keio}} Collection.
+\newblock Mol Syst Biol. 2006 Jan;2(1):2006.0008.
+\newblock \href {http://dx.doi.org/10.1038/msb4100050}
+  {doi:~10.1038/msb4100050}.
 
 \bibitem{zaslaver_comprehensive_2006}
-Alon Zaslaver, Anat Bren, Michal Ronen, Shalev Itzkovitz, Ilya Kikoin, Seagull
-  Shavit, Wolfram Liebermeister, Michael~G. Surette, and Uri Alon.
-\newblock A comprehensive library of fluorescent transcriptional reporters for
-  {{Escherichia}} coli.
-\newblock {\em Nat. Methods}, 3(8):623--628, August 2006.
+Zaslaver A, Bren A, Ronen M, Itzkovitz S, Kikoin I, Shavit S, et~al.
+\newblock A Comprehensive Library of Fluorescent Transcriptional Reporters for
+  {{Escherichia}} Coli.
+\newblock Nat Methods. 2006 Aug;3(8):623--628.
+\newblock \href {http://dx.doi.org/10.1038/nmeth895} {doi:~10.1038/nmeth895}.
+
+\bibitem{yamamoto_update_2009}
+Yamamoto N, Nakahigashi K, Nakamichi T, Yoshino M, Takai Y, Touda Y, et~al.
+\newblock Update on the {{Keio}} Collection of {{Escherichia}} Coli Single-gene
+  Deletion Mutants.
+\newblock Mol Syst Biol. 2009 Jan;5(1):335.
+\newblock \href {http://dx.doi.org/10.1038/msb.2009.92}
+  {doi:~10.1038/msb.2009.92}.
+
+\bibitem{gerosa_dissecting_2013}
+Gerosa L, Kochanowski K, Heinemann M, Sauer U.
+\newblock Dissecting Specific and Global Transcriptional Regulation of
+  Bacterial Gene Expression.
+\newblock Mol Syst Biol. 2013 Apr;9(658):1--11.
+\newblock 00008.
+\newblock \href {http://dx.doi.org/10.1038/msb.2013.14}
+  {doi:~10.1038/msb.2013.14}.
+
+\bibitem{berthoumieux_shared_2013}
+Berthoumieux S, {de Jong} H, Baptist G, Pinel C, Ranquet C, Ropers D, et~al.
+\newblock Shared Control of Gene Expression in Bacteria by Transcription
+  Factors and Global Physiology of the Cell.
+\newblock Mol Syst Biol. 2013 Jan;9(1).
+\newblock \href {http://dx.doi.org/10.1038/msb.2012.70}
+  {doi:~10.1038/msb.2012.70}.
+
+\bibitem{keren_promoters_2013}
+Keren L, Zackay O, Lotan-Pompan M, Barenholz U, Dekel E, Sasson V, et~al.
+\newblock Promoters Maintain Their Relative Activity Levels under Different
+  Growth Conditions.
+\newblock Mol Syst Biol. 2013 Oct;9(1).
+\newblock 00000.
+\newblock \href {http://dx.doi.org/10.1038/msb.2013.59}
+  {doi:~10.1038/msb.2013.59}.
+
+\bibitem{ronen_assigning_2002}
+Ronen M, Rosenberg R, Shraiman BI, Alon U.
+\newblock Assigning Numbers to the Arrows: {{Parameterizing}} a Gene Regulation
+  Network by Using Accurate Expression Kinetics.
+\newblock Proc Natl Acad Sci. 2002 Jun;99(16):10555--10560.
+\newblock \href {http://dx.doi.org/10.1073/pnas.152046799}
+  {doi:~10.1073/pnas.152046799}.
+
+\bibitem{stefan_inference_2015}
+Stefan D, Pinel C, Pinhal S, Cinquemani E, Geiselmann J, de~Jong H.
+\newblock Inference of {{Quantitative Models}} of {{Bacterial Promoters}} from
+  {{Time}}-{{Series Reporter Gene Data}}.
+\newblock PLOS Computational Biology. 2015 Jan;11(1):e1004028.
+\newblock \href {http://dx.doi.org/10.1371/journal.pcbi.1004028}
+  {doi:~10.1371/journal.pcbi.1004028}.
+
+\bibitem{bekker_changes_2007}
+Bekker M, Kramer G, Hartog AF, Wagner MJ, {de Koster} CG, Hellingwerf KJ,
+  et~al.
+\newblock Changes in the Redox State and Composition of the Quinone Pool of
+  {{Escherichia}} Coli during Aerobic Batch-Culture Growth.
+\newblock Microbiology. 2007;153(6):1974--1980.
+\newblock \href {http://dx.doi.org/10.1099/mic.0.2007/006098-0}
+  {doi:~10.1099/mic.0.2007/006098-0}.
+
+\bibitem{ackerman_accumulation_1974}
+Ackerman RS, Cozzarelli NR, Epstein W.
+\newblock Accumulation of {{Toxic Concentrations}} of {{Methylglyoxal}} by
+  {{Wild}}-{{Type Escherichia}} Coli {{K}}-12.
+\newblock J Bacteriol. 1974 Jan;119(2):357--362.
+\newblock Available from: \url{http://jb.asm.org/content/119/2/357}.
+
+\bibitem{lenski_chemical_2002}
+Lenski RE, Riley MA.
+\newblock Chemical Warfare from an Ecological Perspective.
+\newblock PNAS. 2002 Jan;99(2):556--558.
+\newblock \href {http://dx.doi.org/10.1073/pnas.022641999}
+  {doi:~10.1073/pnas.022641999}.
+
+\bibitem{luli_comparison_1990}
+Luli GW, Strohl WR.
+\newblock Comparison of Growth, Acetate Production, and Acetate Inhibition of
+  {{Escherichia}} Coli Strains in Batch and Fed-Batch Fermentations.
+\newblock Appl Environ Microbiol. 1990 Jan;56(4):1004--1011.
+\newblock Available from: \url{http://aem.asm.org/content/56/4/1004}.
+
+\bibitem{myers_culture_1944}
+Myers J, Clark LB.
+\newblock {{CULTURE CONDITIONS AND THE DEVELOPMENT OF THE PHOTOSYNTHETIC
+  MECHANISM}}.
+\newblock J Gen Physiol. 1944 Nov;28(2):103--112.
+\newblock Available from:
+  \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2142662/}.
+
+\bibitem{novick_experiments_1950}
+Novick A, Szilard L.
+\newblock Experiments with the Chemostat on Spontaneous Mutations of Bacteria.
+\newblock Proc Natl Acad Sci. 1950;36(12):708--719.
+
+\bibitem{hoskisson_continuous_2005}
+Hoskisson PA, Hobbs G.
+\newblock Continuous Culture \textendash{} Making a Comeback?
+\newblock Microbiology. 2005;151(10):3153--3159.
+\newblock \href {http://dx.doi.org/10.1099/mic.0.27924-0}
+  {doi:~10.1099/mic.0.27924-0}.
+
+\bibitem{kolkman_comparative_2005}
+Kolkman A, Olsthoorn MMA, Heeremans CEM, Heck AJR, Slijper M.
+\newblock Comparative {{Proteome Analysis}} of {{Saccharomyces}} Cerevisiae
+  {{Grown}} in {{Chemostat Cultures Limited}} for {{Glucose}} or {{Ethanol}}.
+\newblock Mol Cell Proteomics. 2005 Jan;4(1):1--11.
+\newblock \href {http://dx.doi.org/10.1074/mcp.M400087-MCP200}
+  {doi:~10.1074/mcp.M400087-MCP200}.
+
+\bibitem{boer_genome-wide_2003}
+Boer VM, de~Winde JH, Pronk JT, Piper MDW.
+\newblock The {{Genome}}-Wide {{Transcriptional Responses}} of
+  {{Saccharomyces}} Cerevisiae {{Grown}} on {{Glucose}} in {{Aerobic Chemostat
+  Cultures Limited}} for {{Carbon}}, {{Nitrogen}}, {{Phosphorus}}, or
+  {{Sulfur}}.
+\newblock J Biol Chem. 2003 Jan;278(5):3265--3274.
+\newblock \href {http://dx.doi.org/10.1074/jbc.M209759200}
+  {doi:~10.1074/jbc.M209759200}.
+
+\bibitem{levy_strategy_2007}
+Levy S, Ihmels J, Carmi M, Weinberger A, Friedlander G, Barkai N.
+\newblock Strategy of {{Transcription Regulation}} in the {{Budding Yeast}}.
+\newblock PLoS ONE. 2007 Feb;2(2):e250.
+\newblock 00041.
+\newblock \href {http://dx.doi.org/10.1371/journal.pone.0000250}
+  {doi:~10.1371/journal.pone.0000250}.
+
+\bibitem{levy_coordination_2009}
+Levy S, Barkai N.
+\newblock Coordination of Gene Expression with Growth Rate: {{A}} Feedback or a
+  Feed-Forward Strategy?
+\newblock FEBS Lett. 2009 Dec;583(24):3974--3978.
+\newblock 00016.
+\newblock \href {http://dx.doi.org/10.1016/j.febslet.2009.10.071}
+  {doi:~10.1016/j.febslet.2009.10.071}.
+
+\bibitem{madar_promoter_2013}
+Madar D, Dekel E, Bren A, Zimmer A, Porat Z, Alon U.
+\newblock Promoter Activity Dynamics in the Lag Phase of
+  {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock BMC Syst Biol. 2013 Dec;7(1):136.
+\newblock \href {http://dx.doi.org/10.1186/1752-0509-7-136}
+  {doi:~10.1186/1752-0509-7-136}.
+
+\bibitem{kjeldgaard_kinetics_1961}
+Kjeldgaard NO.
+\newblock The Kinetics of Ribonucleic Acid- and Protein Formation in
+  {{{\emph{Salmonella}}}}{\emph{ Typhimurium}} during the Transition between
+  Different States of Balanced Growth.
+\newblock Biochim Biophys Acta. 1961 Apr;49(1):64--76.
+\newblock \href {http://dx.doi.org/10.1016/0006-3002(61)90870-8}
+  {doi:~10.1016/0006-3002(61)90870-8}.
+
+\bibitem{schaechter_patterns_1961}
+Schaechter M.
+\newblock Patterns of Cellular Control during Unbalanced Growth.
+\newblock Cold Spring Harb Symp Quant Biol. 1961 Jan;26:53--62.
+\newblock \href {http://dx.doi.org/10.1101/SQB.1961.026.01.011}
+  {doi:~10.1101/SQB.1961.026.01.011}.
+
+\bibitem{johnsen_control_1977}
+Johnsen K, Molin S, Karlstr{\"o}m O, Maal\o{}e O.
+\newblock Control of Protein Synthesis in {{{\emph{Escherichia}}}}{\emph{
+  Coli}}: Analysis of an Energy Source Shift-Down.
+\newblock J Bacteriol. 1977 Jan;131(1):18--29.
+
+\bibitem{stengel_optimal_1994}
+Stengel RF.
+\newblock Optimal {{Control}} and {{Estimation}}.
+\newblock Mineola, NY: {Dover Publications}; 1994.
+
+\bibitem{carlson_infinite_1991}
+Carlson DA, Haurie AB, Leizarowitz A.
+\newblock Infinite {{Horizon Optimal Control}}.
+\newblock Berlin, Heidelberg: {Springer}; 1991.
+
+\bibitem{bonnans_bocop_2012}
+Bonnans F, Martinon P, Gr{\'e}lard V.
+\newblock Bocop - {{A}} Collection of Examples.
+\newblock Inria; 2012.
+\newblock Eprint: https://hal.inria.fr/hal-00726992.
+
+\bibitem{bosdriesz_how_2015}
+Bosdriesz E, Molenaar D, Teusink B, Bruggeman FJ.
+\newblock How Fast-Growing Bacteria Robustly Tune Their Ribosome Concentration
+  to Approximate Growth-Rate Maximization.
+\newblock FEBS J. 2015 Mar;282:2029--204.
+\newblock \href {http://dx.doi.org/10.1111/febs.13258}
+  {doi:~10.1111/febs.13258}.
+
+\bibitem{kailath_linear_2000}
+Kailath T, Sayed AH, Hassibi B.
+\newblock Linear Estimation. vol.~1.
+\newblock {Prentice Hall Upper Saddle River, NJ}; 2000.
+
+\bibitem{jazwinski_stochastic_2007}
+Jazwinski AH.
+\newblock Stochastic Processes and Filtering Theory.
+\newblock {Courier Corporation}; 2007.
+
+\bibitem{keseler_ecocyc_2013}
+Keseler IM, Mackie A, Peralta-Gil M, Santos-Zavaleta A, Gama-Castro S,
+  Bonavides-Mart{\'\i}nez C, et~al.
+\newblock {{EcoCyc}}: Fusing Model Organism Databases with Systems Biology.
+\newblock Nucleic Acids Res. 2013 Jan;41(Database issue):D605--12.
+\newblock \href {http://dx.doi.org/10.1093/nar/gks1027}
+  {doi:~10.1093/nar/gks1027}.
+
+\bibitem{maitra_bacterial_2014}
+Maitra A, Dill KA.
+\newblock Bacterial Growth Laws Reflect the Evolutionary Importance of Energy
+  Efficiency.
+\newblock Proc Natl Acad Sci USA. 2014 Dec;112(2):406--11.
+\newblock \href {http://dx.doi.org/10.1073/pnas.1421138111}
+  {doi:~10.1073/pnas.1421138111}.
+
+\bibitem{kremling_understanding_2015}
+Kremling A, Geiselmann J, Ropers D, {de Jong} H.
+\newblock Understanding Carbon Catabolite Repression in
+  {{{\emph{Escherichia}}}}{\emph{ Coli}} Using Quantitative Models.
+\newblock Trends Microbiol. 2015;23(2):99--109.
+\newblock \href {http://dx.doi.org/10.1016/j.tim.2014.11.002}
+  {doi:~10.1016/j.tim.2014.11.002}.
+
+\bibitem{weisse_mechanistic_2015}
+Wei\ss{}e AY, Oyarz{\'u}n DA, Danos V, Swain PS.
+\newblock Mechanistic Links between Cellular Trade-Offs, Gene Expression, and
+  Growth.
+\newblock Proc Natl Acad Sci USA. 2015 Mar;112(9):1038--47.
+\newblock \href {http://dx.doi.org/10.1073/pnas.1416533112}
+  {doi:~10.1073/pnas.1416533112}.
+
+\bibitem{pavlov_optimal_2013}
+Pavlov MY, Ehrenberg M.
+\newblock Optimal Control of Gene Expression for Fast Proteome Adaptation to
+  Environmental Change.
+\newblock Proc Natl Acad Sci USA. 2013 Dec;110(51):20527--32.
+\newblock \href {http://dx.doi.org/10.1073/pnas.1309356110}
+  {doi:~10.1073/pnas.1309356110}.
+
+\bibitem{vandenberg_optimal_1998}
+{van den Berg} HA, Kiselev YN, Kooijman SaLM, Orlov MV.
+\newblock Optimal Allocation between Nutrient Uptake and Growth in a Microbial
+  Trichome.
+\newblock J Math Biol. 1998 Jul;37(1):28--48.
+\newblock \href {http://dx.doi.org/10.1007/s002850050118}
+  {doi:~10.1007/s002850050118}.
+
+\bibitem{waldherr_dynamic_2015}
+Waldherr S, Oyarz{\'u}n DA, Bockmayr A.
+\newblock Dynamic Optimization of Metabolic Networks Coupled with Gene
+  Expression.
+\newblock J Theor Biol. 2015 Jan;365:469--85.
+\newblock \href {http://dx.doi.org/10.1016/j.jtbi.2014.10.035}
+  {doi:~10.1016/j.jtbi.2014.10.035}.
+
+\bibitem{dalebroux_ppgpp_2012}
+Dalebroux ZD, Swanson MS.
+\newblock {{ppGpp}}: Magic beyond {{RNA}} Polymerase.
+\newblock Nat Rev Microbiol. 2012;10(3):203--12.
+\newblock \href {http://dx.doi.org/10.1038/nrmicro2720}
+  {doi:~10.1038/nrmicro2720}.
+
+\bibitem{potrykus_pppgpp_2008}
+Potrykus K, Cashel M.
+\newblock (p){{ppGpp}}: Still Magical?
+\newblock Annu Rev Microbiol. 2008;62:35--51.
+\newblock \href {http://dx.doi.org/10.1146/annurev.micro.62.081307.162903}
+  {doi:~10.1146/annurev.micro.62.081307.162903}.
+
+\bibitem{hauryliuk_recent_2015}
+Hauryliuk V, Atkinson GC, Murakami KS, Tenson T, Gerdes K.
+\newblock Recent Functional Insights into the Role of (p){{ppGpp}} in Bacterial
+  Physiology.
+\newblock Nat Rev Microbiol. 2015;13(5):298--309.
+\newblock \href {http://dx.doi.org/10.1038/nrmicro3448}
+  {doi:~10.1038/nrmicro3448}.
+
+\bibitem{iglesias_control_2010}
+Iglesias PA, Ingalls BP.
+\newblock Control {{Theory}} and {{Systems Biology}}.
+\newblock {MIT Press}; 2010.
+
+\bibitem{sipper_fifty_1998}
+Sipper M.
+\newblock Fifty Years of Research on Self-Replication: An Overview.
+\newblock Artif Life. 1998;4(3):237--57.
+\newblock \href {http://dx.doi.org/10.1162/106454698568576}
+  {doi:~10.1162/106454698568576}.
+
+\bibitem{flamm_minimal_2007}
+Flamm C, Endler L, M{\"u}ller S, Widder S, Schuster P.
+\newblock A Minimal and Self-Consistent in Silico Cell Model Based on
+  Macromolecular Interactions.
+\newblock Philos Trans R Soc B. 2007;362(1486):1831--9.
+\newblock \href {http://dx.doi.org/10.1098/rstb.2007.2075}
+  {doi:~10.1098/rstb.2007.2075}.
+
+\bibitem{klumpp_molecular_2013}
+Klumpp S, Scott M, Pedersen S, Hwa T.
+\newblock Molecular Crowding Limits Translation and Cell Growth.
+\newblock Proc Natl Acad Sci USA. 2013 Oct;110(42):16754--9.
+\newblock \href {http://dx.doi.org/10.1073/pnas.1310377110}
+  {doi:~10.1073/pnas.1310377110}.
+
+\bibitem{chubukov_coordination_2014}
+Chubukov V, Gerosa L, Kochanowski K, Sauer U.
+\newblock Coordination of Microbial Metabolism.
+\newblock Nat Rev Microbiol. 2014 Mar;12:327--40.
+\newblock \href {http://dx.doi.org/10.1038/nrmicro3238}
+  {doi:~10.1038/nrmicro3238}.
+
+\bibitem{deutscher_how_2006}
+Deutscher J, Francke C, Postma PW.
+\newblock How Phosphotransferase System-Related Protein Phosphorylation
+  Regulates Carbohydrate Metabolism in Bacteria.
+\newblock Microbiol Mol Biol Rev. 2006;70(4):939--1031.
+\newblock \href {http://dx.doi.org/10.1128/MMBR.00024-06}
+  {doi:~10.1128/MMBR.00024-06}.
+
+\bibitem{gorke_carbon_2008}
+G{\"o}rke B, St{\"u}lke J.
+\newblock Carbon Catabolite Repression in Bacteria: Many Ways to Make the Most
+  out of Nutrients.
+\newblock Nat Rev Microbiol. 2008;6(8):613--24.
+\newblock \href {http://dx.doi.org/10.1038/nrmicro1932}
+  {doi:~10.1038/nrmicro1932}.
+
+\bibitem{english_singlemolecule_2011}
+English BP, Hauryliuk V, Sanamrad A, Tankov S, Dekker NH, Elf J.
+\newblock Single-Molecule Investigations of the Stringent Response Machinery in
+  Living Bacterial Cells.
+\newblock Proc Natl Acad Sci USA. 2011;108(31):365--73.
+\newblock \href {http://dx.doi.org/10.1073/pnas.1102255108}
+  {doi:~10.1073/pnas.1102255108}.
+
+\bibitem{dennis_control_2004}
+Dennis PP, Ehrenberg M, Bremer H.
+\newblock Control of {{rRNA}} Synthesis in {{{\emph{Escherichia}}}}{\emph{
+  Coli}}: A Systems Biology Approach.
+\newblock Microbiol Mol Biol Rev. 2004 Jan;68(4):639--68.
+\newblock \href {http://dx.doi.org/10.1128/MMBR.68.4.639-668.2004}
+  {doi:~10.1128/MMBR.68.4.639-668.2004}.
+
+\bibitem{keener_regulation_1996}
+Keener J, Nomura M.
+\newblock Regulation of Ribosome Synthesis.
+\newblock In: Neidhardt FC, III RC, Ingraham JL, Lin ECC, Low KB, Magasanik B,
+  et~al., editors. {\emph{Escherichia Coli}} and {{{\emph{Salmonella}}}}:
+  {{Cellular}} and {{Molecular Biology}}. 2nd ed. Washington, DC: {ASM Press};
+  1996. p. 1417--31.
+
+\bibitem{murray_control_2003}
+Murray HD, Schneider DA, Gourse RL.
+\newblock Control of {{rRNA}} Expression by Small Molecules Is Dynamic and
+  Nonredundant.
+\newblock Mol Cell. 2003;12(1):125--34.
+\newblock \href {http://dx.doi.org/10.1016/S1097-2765(03)00266-1}
+  {doi:~10.1016/S1097-2765(03)00266-1}.
+
+\bibitem{macevicz_modeling_1976}
+Macevicz S, Oster G.
+\newblock Modeling Social Insect Populations {{II}}: {{Optimal}} Reproductive
+  Strategies in Annual Eusocial Insect Colonies.
+\newblock Behav Ecol Sociobiol. 1976;1(3):265--82.
+\newblock \href {http://dx.doi.org/10.1007/BF00300068}
+  {doi:~10.1007/BF00300068}.
+
+\bibitem{itzkovitz_optimality_2012}
+Itzkovitz S, Blat IC, Jacks T, Clevers H, {van Oudenaarden} A.
+\newblock Optimality in the Development of Intestinal Crypts.
+\newblock Cell. 2012 Feb;148(3):608--19.
+\newblock \href {http://dx.doi.org/10.1016/j.cell.2011.12.025}
+  {doi:~10.1016/j.cell.2011.12.025}.
+
+\bibitem{bartl_modelling_2010}
+Bartl M, Li P, Schuster S.
+\newblock Modelling the Optimal Timing in Metabolic Pathway
+  activation\textemdash{}{{Use}} of {{Pontryagin}}'s {{Maximum Principle}} and
+  Role of the {{Golden}} Section.
+\newblock Biosystems. 2010 Jul;101(1):67--77.
+\newblock \href {http://dx.doi.org/10.1016/j.biosystems.2010.04.007}
+  {doi:~10.1016/j.biosystems.2010.04.007}.
+
+\bibitem{oyarzun_sequential_2009}
+Oyarz{\'u}n DA, Ingalls BP, Middleton RH, Kalamatianos D.
+\newblock Sequential Activation of Metabolic Pathways: A Dynamic Optimization
+  Approach.
+\newblock Bull Math Biol. 2009;71:1851--72.
+\newblock \href {http://dx.doi.org/10.1007/s11538-009-9427-5}
+  {doi:~10.1007/s11538-009-9427-5}.
+
+\bibitem{kiselev_resource_2009}
+Kiselev YN, Avvakumov SN, Orlov MV.
+\newblock Resource Allocation Problem in a Two-Sector Economic Model of Special
+  Form.
+\newblock Differ Equ. 2009 Dec;45(12):1791--810.
+\newblock 00003.
+\newblock \href {http://dx.doi.org/10.1134/S0012266109120106}
+  {doi:~10.1134/S0012266109120106}.
+
+\bibitem{potrykus_ppgpp_2011}
+Potrykus K, Murphy H, Philippe N, Cashel M.
+\newblock {{ppGpp}} Is the Major Source of Growth Rate Control in
+  {{{\emph{E}}}}{\emph{. Coli}}.
+\newblock Env Microbiol. 2011;13(3):563--75.
+\newblock \href {http://dx.doi.org/10.1111/j.1462-2920.2010.02357.x}
+  {doi:~10.1111/j.1462-2920.2010.02357.x}.
+
+\bibitem{traxler_guanosine_2006}
+Traxler MF, Chang DE, Conway T.
+\newblock Guanosine 3',5'-bispyrophosphate Coordinates Global Gene Expression
+  during Glucose-Lactose Diauxie in {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock Proc Natl Acad Sci USA. 2006;103(7):2374--9.
+\newblock \href {http://dx.doi.org/10.1073/pnas.0510995103}
+  {doi:~10.1073/pnas.0510995103}.
+
+\bibitem{traxler_global_2008}
+Traxler MF, Summers SM, Nguyen HT, Zacharia VM, Hightower GA, Smith JT, et~al.
+\newblock The Global, {{ppGpp}}-Mediated Stringent Response to Amino Acid
+  Starvation in {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock Mol Microbiol. 2008;68(5):1128--48.
+\newblock \href {http://dx.doi.org/10.1111/j.1365-2958.2008.06229.x}
+  {doi:~10.1111/j.1365-2958.2008.06229.x}.
+
+\bibitem{gaca_many_2015}
+Gaca AO, Colomer-Winter C, Lemos JA.
+\newblock Many Means to a Common End: The Intricacies of (p){{ppGpp}}
+  Metabolism and Its Control of Bacterial Homeostasis.
+\newblock J Bacteriol. 2015;197(7):1146--56.
+\newblock \href {http://dx.doi.org/10.1128/JB.02577-14}
+  {doi:~10.1128/JB.02577-14}.
+
+\bibitem{liu_diversity_2015}
+Liu K, Bittner AN, Wang JD.
+\newblock Diversity in (p){{ppGpp}} Metabolism and Effectors.
+\newblock Curr Opin Microbiol. 2015;24:72--9.
+\newblock \href {http://dx.doi.org/10.1016/j.mib.2015.01.012}
+  {doi:~10.1016/j.mib.2015.01.012}.
+
+\bibitem{kalisky_costbenefit_2007}
+Kalisky T, Dekel E, Alon U.
+\newblock Cost-Benefit Theory and Optimal Design of Gene Regulation Functions.
+\newblock Phys Biol. 2007 Nov;4(4):229--45.
+\newblock \href {http://dx.doi.org/10.1088/1478-3975/4/4/001}
+  {doi:~10.1088/1478-3975/4/4/001}.
+
+\bibitem{poelwijk_tradeoffs_2011}
+Poelwijk FJ, {de Vos} MGJ, Tans SJ.
+\newblock Tradeoffs and Optimality in the Evolution of Gene Regulation.
+\newblock Cell. 2011 Aug;146(3):462--70.
+\newblock 00023.
+\newblock \href {http://dx.doi.org/10.1016/j.cell.2011.06.035}
+  {doi:~10.1016/j.cell.2011.06.035}.
+
+\bibitem{gausing_regulation_1980}
+Gausing K.
+\newblock Regulation of Ribosome Synthesis in {{{\emph{E}}}}{\emph{. Coli}}.
+\newblock In: Chambliss G, Craven GR, Davies J, Davis K, Kahan L, Nomura M,
+  editors. Ribosomes: {{Structure}}, {{Function}} and {{Genetics}}. Baltimore:
+  {University Park Press}; 1980. p. 693--718.
+
+\bibitem{zengel_transcription_1986}
+Zengel JM, Lindahl L.
+\newblock Transcription of Ribosomal Genes during a Nutritional Shift-up of
+  {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock J Bacteriol. 1986;167(3):1095--7.
+
+\bibitem{friesen_synthesis_1975}
+Friesen JD, Fiil NP, {von Meyenburg} K.
+\newblock Synthesis and Turnover of Basal Level Guanosine Tetraphosphate in
+  {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock J Biol Chem. 1975;250(1):304--9.
+
+\bibitem{young_measuring_2011}
+Young JW, Locke JC, Altinok A, Rosenfeld N, Bacarian T, Swain PS, et~al.
+\newblock Measuring Single-Cell Gene Expression Dynamics in Bacteria Using
+  Fluorescence Time-Lapse Microscopy.
+\newblock Nat Protoc. 2011;7(1):80--8.
+\newblock \href {http://dx.doi.org/10.1038/nprot.2011.432}
+  {doi:~10.1038/nprot.2011.432}.
+
+\bibitem{duncombe_microfluidics_2015}
+Duncombe TA, Tentori AM, Herr AE.
+\newblock Microfluidics: Reframing Biological Enquiry.
+\newblock Nat Rev Mol Cell Biol. 2015;16(9):554--67.
+\newblock \href {http://dx.doi.org/10.1038/nrm4041} {doi:~10.1038/nrm4041}.
+
+\bibitem{molin_control_1977}
+Molin S, Meyenburg KV, Maaloe O, Hansen MT, Pato ML.
+\newblock Control of Ribosome Synthesis in {{{\emph{Escherichia}}}}{\emph{
+  Coli}}: {{Analysis}} of an Energy Source Shift-Down.
+\newblock J Bacteriol. 1977;131(1):7--17.
+
+\bibitem{venayak_engineering_2015}
+Venayak N, Anesiadis N, Cluett WR, Mahadevan R.
+\newblock Engineering Metabolism through Dynamic Control.
+\newblock Curr Opin Biotechnol. 2015;34:142--52.
+\newblock \href {http://dx.doi.org/10.1016/j.copbio.2014.12.022}
+  {doi:~10.1016/j.copbio.2014.12.022}.
+
+\bibitem{dahl_engineering_2013}
+Dahl RH, Zhang F, Alonso-Gutierrez J, Baidoo E, Batth TS, Redding-Johanson AM,
+  et~al.
+\newblock Engineering Dynamic Pathway Regulation Using Stress-Response
+  Promoters.
+\newblock Nat Biotechnol. 2013;31(11):1039--46.
+\newblock \href {http://dx.doi.org/10.1038/nbt.2689} {doi:~10.1038/nbt.2689}.
+
+\bibitem{xu_improving_2014}
+Xu P, Li L, Zhang F, Stephanopoulos G, Koffas M.
+\newblock Improving Fatty Acids Production by Engineering Dynamic Pathway
+  Regulation and Metabolic Control.
+\newblock Proc Natl Acad Sci USA. 2014;111(31):11299--304.
+\newblock \href {http://dx.doi.org/10.1073/pnas.1406401111}
+  {doi:~10.1073/pnas.1406401111}.
+
+\bibitem{izard_synthetic_2015}
+Izard J, Gomez~Balderas C, Ropers D, Lacour S, Song X, Yang Y, et~al.
+\newblock A Synthetic Growth Switch Based on Controlled Expression of {{RNA}}
+  Polymerase.
+\newblock Mol Syst Biol. 2015;11(11):840.
+\newblock \href {http://dx.doi.org/10.15252/msb.20156382}
+  {doi:~10.15252/msb.20156382}.
+
+\bibitem{storn_differential_1997}
+Storn R, Price K.
+\newblock Differential Evolution \textendash{} a Simple and Efficient Heuristic
+  for Global Optimization over Continuous Spaces.
+\newblock J Glob Optim. 1997 Dec;11(4):341--59.
+\newblock \href {http://dx.doi.org/10.1023/A:1008202821328}
+  {doi:~10.1023/A:1008202821328}.
+
+\bibitem{borisov_fullers_2000}
+Borisov VF.
+\newblock Fuller's Phenomenon: {{Review}}.
+\newblock J Math Sci. 2000 Jul;100(4):2311--54.
+\newblock \href {http://dx.doi.org/10.1007/s10958-000-0001-9}
+  {doi:~10.1007/s10958-000-0001-9}.
+
+\bibitem{filippov_differential_1988}
+Filippov AF.
+\newblock Differential {{Equations}} with {{Discontinuous Righthand Sides}}.
+\newblock Dordrecht: {Kluwer Academic Publishers}; 1988.
+\newblock \href {http://dx.doi.org/10.1007/978-94-015-7793-9}
+  {doi:~10.1007/978-94-015-7793-9}.
+
+\bibitem{cohen_cvode_1996}
+Cohen SD, Hindmarsh AC.
+\newblock {{CVODE}}, a Stiff/Nonstiff {{ODE}} Solver in {{C}}.
+\newblock Comput Phys. 1996;10(5):138--43.
+\newblock \href {http://dx.doi.org/10.1063/1.4822377} {doi:~10.1063/1.4822377}.
+
+\bibitem{hindmarsh_sundials_2005}
+Hindmarsh AC, Brown PN, Grant KE, Lee SL, Serban R, Shumaker DE, et~al.
+\newblock {{SUNDIALS}}: {{Suite}} of {{Nonlinear}} and
+  {{Differential}}/{{Algebraic Equation Solvers}}.
+\newblock ACM Trans Math Softw. 2005;31(3):363--96.
+\newblock \href {http://dx.doi.org/10.1145/1089014.1089020}
+  {doi:~10.1145/1089014.1089020}.
+
+\bibitem{uter_longrange_2004}
+Uter NT, Perona JJ.
+\newblock Long-Range Intramolecular Signaling in a {{tRNA}} Synthetase Complex
+  Revealed by Pre-Steady-State Kinetics.
+\newblock Proc Natl Acad Sci USA. 2004 Oct;101(40):14396--401.
+\newblock \href {http://dx.doi.org/10.1073/pnas.0404017101}
+  {doi:~10.1073/pnas.0404017101}.
+
+\bibitem{freist_glutaminyltrna_1997}
+Freist W, Gauss DH, Ibba M, S{\"o}ll D.
+\newblock Glutaminyl-{{tRNA}} Synthetase.
+\newblock Biol Chem. 1997 Oct;378(10):1103--17.
+
+\bibitem{hachiya_increase_2007}
+Hachiya T, Terashima I, Noguchi K.
+\newblock Increase in Respiratory Cost at High Growth Temperature Is Attributed
+  to High Protein Turnover Cost in {{Petunia}} X Hybrida Petals.
+\newblock Plant Cell Env. 2007 Oct;30(10):1269--83.
+\newblock \href {http://dx.doi.org/10.1111/j.1365-3040.2007.01701.x}
+  {doi:~10.1111/j.1365-3040.2007.01701.x}.
+
+\bibitem{yamamoto_mass_2006}
+Yamamoto T, Izumi S, Gekko K.
+\newblock Mass Spectrometry of Hydrogen/Deuterium Exchange in {{70S}} Ribosomal
+  Proteins from {{{\emph{E}}}}{\emph{. Coli}}.
+\newblock FEBS Lett. 2006 Jun;580(15):3638--42.
+\newblock \href {http://dx.doi.org/10.1016/j.febslet.2006.05.049}
+  {doi:~10.1016/j.febslet.2006.05.049}.
+
+\bibitem{zhou_carbon_2013}
+Zhou Y, Vazquez A, Wise A, Warita T, Warita K, Bar-Joseph Z, et~al.
+\newblock Carbon Catabolite Repression Correlates with the Maintenance of near
+  Invariant Molecular Crowding in Proliferating {{{\emph{E}}}}{\emph{. Coli}}
+  Cells.
+\newblock BMC Syst Biol. 2013 Dec;7:138.
+\newblock \href {http://dx.doi.org/10.1186/1752-0509-7-138}
+  {doi:~10.1186/1752-0509-7-138}.
+
+\bibitem{zimmerman_estimation_1991}
+Zimmerman SB, Trach SO.
+\newblock Estimation of Macromolecule Concentrations and Excluded Volume
+  Effects for the Cytoplasm of {{{\emph{Escherichia}}}}{\emph{ Coli}}.
+\newblock J Mol Biol. 1991 Dec;222(3):599--620.
+\newblock \href {http://dx.doi.org/10.1016/0022-2836(91)90499-V}
+  {doi:~10.1016/0022-2836(91)90499-V}.
+
+\bibitem{mcguffee_diffusion_2010}
+McGuffee SR, Elcock AH.
+\newblock Diffusion, Crowding \& Protein Stability in a Dynamic Molecular Model
+  of the Bacterial Cytoplasm.
+\newblock PLoS Comput Biol. 2010 Mar;6(3):e1000694.
+\newblock \href {http://dx.doi.org/10.1371/journal.pcbi.1000694}
+  {doi:~10.1371/journal.pcbi.1000694}.
+
+\bibitem{marchal_chattering_2013}
+Marchal C.
+\newblock Chattering Arcs and Chattering Controls.
+\newblock J Optim Theory Appl. 2013 Aug;11(5):441--68.
+\newblock \href {http://dx.doi.org/10.1007/BF00935659}
+  {doi:~10.1007/BF00935659}.
+
+\bibitem{trelat_turnpike_2015}
+Tr{\'e}lat E, Zuazua E.
+\newblock The Turnpike Property in Finite-Dimensional Nonlinear Optimal
+  Control.
+\newblock J Differ Equ. 2015 Jan;258(1):81--114.
+\newblock \href {http://dx.doi.org/10.1016/j.jde.2014.09.005}
+  {doi:~10.1016/j.jde.2014.09.005}.
+
+\bibitem{zulkower_robust_2015}
+Zulkower V, Page M, Ropers D, Geiselmann J, de~Jong H.
+\newblock Robust Reconstruction of Gene Expression Profiles from Reporter Gene
+  Data Using Linear Inversion.
+\newblock Bioinformatics. 2015 Jun;31(12):i71--i79.
+\newblock \href {http://dx.doi.org/10.1093/bioinformatics/btv246}
+  {doi:~10.1093/bioinformatics/btv246}.
+
+\bibitem{kalman_new_1960}
+Kalman RE.
+\newblock A {{New Approach}} to {{Linear Filtering}} and {{Prediction
+  Problems}}.
+\newblock J Basic Eng. 1960 Mar;82(1):35--45.
+\newblock \href {http://dx.doi.org/10.1115/1.3662552} {doi:~10.1115/1.3662552}.
+
+\bibitem{julier_new_1997}
+Julier SJ, Uhlmann JK.
+\newblock New Extension of the {{Kalman}} Filter to Nonlinear Systems.
+\newblock vol. 3068; 1997. p. 182--193.
+\newblock \href {http://dx.doi.org/10.1117/12.280797} {doi:~10.1117/12.280797}.
+
+\bibitem{golub_generalized_1979}
+Golub GH, Heath M, Wahba G.
+\newblock Generalized {{Cross}}-{{Validation}} as a {{Method}} for {{Choosing}}
+  a {{Good Ridge Parameter}}.
+\newblock Technometrics. 1979 May;21(2):215--223.
+\newblock \href {http://dx.doi.org/10.1080/00401706.1979.10489751}
+  {doi:~10.1080/00401706.1979.10489751}.
 
 \bibitem{gibson_enzymatic_2009}
-Daniel~G Gibson, Lei Young, Ray-Yuan Chuang, J~Craig Venter, Clyde~A Hutchison,
-  and Hamilton~O Smith.
-\newblock Enzymatic assembly of {{DNA}} molecules up to several hundred
-  kilobases.
-\newblock {\em Nat. Methods}, 6(5):343--345, May 2009.
+Gibson DG, Young L, Chuang RY, Venter JC, Hutchison CA, Smith HO.
+\newblock Enzymatic Assembly of {{DNA}} Molecules up to Several Hundred
+  Kilobases.
+\newblock Nat Methods. 2009 May;6(5):343--345.
+\newblock \href {http://dx.doi.org/10.1038/nmeth.1318}
+  {doi:~10.1038/nmeth.1318}.
 
 \bibitem{goto_open_2005}
-Akira Goto and Holger Doerr.
-\newblock Open and save {{SPE}} image files, 2005.
-\newblock note: Available at https://imagej.nih.gov/ij/plugins/spe.html.
+Goto A, Doerr H. Open and Save {{SPE}} Image Files; 2005.
+\newblock Available from: \url{https://imagej.nih.gov/ij/plugins/spe.html}.
 
 \bibitem{guizar-sicairos_efficient_2008}
-Manuel Guizar-Sicairos, Samuel~T. Thurman, and James~R. Fienup.
-\newblock Efficient subpixel image registration algorithms.
-\newblock {\em Opt. Lett., OL}, 33(2):156--158, January 2008.
+Guizar-Sicairos M, Thurman ST, Fienup JR.
+\newblock Efficient Subpixel Image Registration Algorithms.
+\newblock Opt Lett, OL. 2008 Jan;33(2):156--158.
+\newblock \href {http://dx.doi.org/10.1364/OL.33.000156}
+  {doi:~10.1364/OL.33.000156}.
 
 \bibitem{skimage_cross-correlation}
-Cross-{{Correlation}} ({{Phase Correlation}}) \textemdash{} skimage v0.12dev
-  docs.
-\newblock
+Cross-{{Correlation}} ({{Phase Correlation}});.
+\newblock Available from:
   \url{http://scikit-image.org/docs/dev/auto_examples/plot_register_translation.html}.
 
+\bibitem{tomroud_tom_2016}
+@tomroud. Tom {{Roud}} on {{Twitter}} : "{{Apples}} Fall onto the {{Earth}}
+  Because Natural Selection Eliminated Apples Falling towards the Sky
+  \#{{BiologistSpaceFacts}}"; 2016.
+\newblock Available from:
+  \url{https://twitter.com/tomroud/status/708494284668977152}.
+
 \bibitem{falk_universe_2005}
-Dan Falk.
-\newblock {\em Universe on a {{T}}-Shirt: {{The Quest}} for the {{Theory}} of
-  {{Everything}}}.
-\newblock {Arcade Publishing}, 2005.
+Falk D.
+\newblock Universe on a {{T}}-Shirt: {{The Quest}} for the {{Theory}} of
+  {{Everything}}.
+\newblock {Arcade Publishing}; 2005.
 
 \bibitem{frank_natural_2012}
-S.~A. Frank.
-\newblock Natural selection. {{IV}}. {{The Price}} equation*: {{Price}}
-  equation.
-\newblock {\em J. Evol. Biol.}, 25(6):1002--1019, June 2012.
+Frank SA.
+\newblock Natural Selection. {{IV}}. {{The Price}} Equation*: {{Price}}
+  Equation.
+\newblock J Evol Biol. 2012 Jun;25(6):1002--1019.
+\newblock \href {http://dx.doi.org/10.1111/j.1420-9101.2012.02498.x}
+  {doi:~10.1111/j.1420-9101.2012.02498.x}.
 
 \bibitem{deamer_origins_1994}
-David~W Deamer and Gail~R Fleischaker.
-\newblock {\em Origins of Life: The Central Concepts}.
-\newblock {Jones \& Bartlett Pub}, 1994.
+Deamer DW, Fleischaker GR.
+\newblock Origins of Life: The Central Concepts.
+\newblock {Jones \& Bartlett Pub}; 1994.
 
 \bibitem{benner_defining_2010}
-Steven~A. Benner.
+Benner SA.
 \newblock Defining {{Life}}.
-\newblock {\em Astrobiology}, 10(10):1021--1030, December 2010.
+\newblock Astrobiology. 2010 Dec;10(10):1021--1030.
+\newblock \href {http://dx.doi.org/10.1089/ast.2010.0524}
+  {doi:~10.1089/ast.2010.0524}.
 
 \bibitem{hartwell_molecular_1999}
-Leland~H Hartwell, John~J Hopfield, Stanislas Leibler, and Andrew~W Murray.
-\newblock From molecular to modular cell biology.
-\newblock {\em Nature}, 402:C47--C52, 1999.
+Hartwell LH, Hopfield JJ, Leibler S, Murray AW.
+\newblock From Molecular to Modular Cell Biology.
+\newblock Nature. 1999;402:C47--C52.
 
 \bibitem{arkin_fast_2006}
-Adam~P. Arkin and Daniel~A. Fletcher.
-\newblock Fast, cheap and somewhat in control.
-\newblock {\em Genome Biology}, 7:114, 2006.
+Arkin AP, Fletcher DA.
+\newblock Fast, Cheap and Somewhat in Control.
+\newblock Genome Biology. 2006;7:114.
+\newblock \href {http://dx.doi.org/10.1186/gb-2006-7-8-114}
+  {doi:~10.1186/gb-2006-7-8-114}.
 
 \bibitem{guido_bottom-up_2006}
-Nicholas~J. Guido, Xiao Wang, David Adalsteinsson, David McMillen, Jeff Hasty,
-  Charles~R. Cantor, Timothy~C. Elston, and J.~J. Collins.
-\newblock A bottom-up approach to gene regulation.
-\newblock {\em Nature}, 439(7078):856--860, February 2006.
+Guido NJ, Wang X, Adalsteinsson D, McMillen D, Hasty J, Cantor CR, et~al.
+\newblock A Bottom-up Approach to Gene Regulation.
+\newblock Nature. 2006 Feb;439(7078):856--860.
+\newblock \href {http://dx.doi.org/10.1038/nature04473}
+  {doi:~10.1038/nature04473}.
 
 \bibitem{geisel_constitutive_2011}
-Nico Geisel.
-\newblock Constitutive versus responsive gene expression strategies for growth
-  in changing environments.
-\newblock {\em PloS One}, 6(11):e27033, January 2011.
+Geisel N.
+\newblock Constitutive versus Responsive Gene Expression Strategies for Growth
+  in Changing Environments.
+\newblock PloS One. 2011 Jan;6(11):e27033.
 \newblock 00005.
+\newblock \href {http://dx.doi.org/10.1371/journal.pone.0027033}
+  {doi:~10.1371/journal.pone.0027033}.
 
 \bibitem{lopez-maury_tuning_2008}
-Luis L{\'o}pez-Maury, Samuel Marguerat, and J{\"u}rg B{\"a}hler.
-\newblock Tuning gene expression to changing environments: From rapid responses
-  to evolutionary adaptation.
-\newblock {\em Nat. Rev. Genet.}, 9(8):583--593, August 2008.
+L{\'o}pez-Maury L, Marguerat S, B{\"a}hler J.
+\newblock Tuning Gene Expression to Changing Environments: From Rapid Responses
+  to Evolutionary Adaptation.
+\newblock Nat Rev Genet. 2008 Aug;9(8):583--593.
 \newblock 00196.
+\newblock \href {http://dx.doi.org/10.1038/nrg2398} {doi:~10.1038/nrg2398}.
 
 \bibitem{lambert_memory_2014}
-Guillaume Lambert and Edo Kussel.
+Lambert G, Kussel E.
 \newblock Memory and {{Fitness Optimization}} of {{Bacteria}} under
   {{Fluctuating Environments}}.
-\newblock {\em PLoS Genet}, 10(9):e1004556, September 2014.
+\newblock PLoS Genet. 2014 Sep;10(9):e1004556.
+\newblock \href {http://dx.doi.org/10.1371/journal.pgen.1004556}
+  {doi:~10.1371/journal.pgen.1004556}.
 
 \bibitem{kussell_phenotypic_2005}
-Edo Kussell and Stanislas Leibler.
+Kussell E, Leibler S.
 \newblock Phenotypic {{Diversity}}, {{Population Growth}}, and {{Information}}
   in {{Fluctuating Environments}}.
-\newblock {\em Science}, 309(5743):2075--2078, September 2005.
+\newblock Science. 2005 Sep;309(5743):2075--2078.
+\newblock \href {http://dx.doi.org/10.1126/science.1114383}
+  {doi:~10.1126/science.1114383}.
+
+\bibitem{shachrai_cost_2010}
+Shachrai I, Zaslaver A, Alon U, Dekel E.
+\newblock Cost of Unneeded Proteins in {{E}}. Coli Is Reduced after Several
+  Generations in Exponential Growth.
+\newblock Mol Cell. 2010 Jun;38(5):758--67.
+\newblock \href {http://dx.doi.org/10.1016/j.molcel.2010.04.015}
+  {doi:~10.1016/j.molcel.2010.04.015}.
+
+\bibitem{dong_gratuitous_1995}
+Dong H, Nilsson L, Kurland CG.
+\newblock Gratuitous Overexpression of Genes in {{Escherichia}} Coli Leads to
+  Growth Inhibition and Ribosome Destruction.
+\newblock J Bacteriol. 1995 Jan;177(6):1497--1504.
+\newblock \href {http://dx.doi.org/10.1128/jb.177.6.1497-1504.1995}
+  {doi:~10.1128/jb.177.6.1497-1504.1995}.
+
+\bibitem{dekel_environmental_2005}
+Dekel E, Mangan S, Alon U.
+\newblock Environmental Selection of the Feed-Forward Loop Circuit in
+  Gene-Regulation Networks.
+\newblock Phys Biol. 2005;2(2):81.
+\newblock \href {http://dx.doi.org/10.1088/1478-3975/2/2/001}
+  {doi:~10.1088/1478-3975/2/2/001}.
 
 \bibitem{short_flows_2006}
-Martin~B. Short, Cristian~A. Solari, Sujoy Ganguly, Thomas~R. Powers, John~O.
-  Kessler, and Raymond~E. Goldstein.
-\newblock Flows driven by flagella of multicellular organisms enhance
-  long-range molecular transport.
-\newblock {\em PNAS}, 103(22):8315--8319, May 2006.
+Short MB, Solari CA, Ganguly S, Powers TR, Kessler JO, Goldstein RE.
+\newblock Flows Driven by Flagella of Multicellular Organisms Enhance
+  Long-Range Molecular Transport.
+\newblock PNAS. 2006 May;103(22):8315--8319.
+\newblock \href {http://dx.doi.org/10.1073/pnas.0600566103}
+  {doi:~10.1073/pnas.0600566103}.
 
 \end{thebibliography}
