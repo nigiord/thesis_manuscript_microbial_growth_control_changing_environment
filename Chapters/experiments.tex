@@ -12,76 +12,68 @@ Résumé d'environ 6-8 paragraphes (2 pages).
 
 \section{Introduction}
 
-Most studies on the growth of microorganisms are done at steady state.
-It is a reasonable and logical choice given the drawbacks of working in dynamic.
-At steady state, microorganism behaviors are reproducible, and which helps uncover simple theories to apprehend their inherent complexity.
-But while this ideal environment is easily achievable at the bench, microorganisms naturally spend very little time in such a perfect condition.
-This motivated in chapter~\ref{chap:theory} the construction of a new theoretical framework to study growth laws during growth transitions.
+Most studies of the growth of microorganisms have been done at steady state.
+This is a reasonable and logical choice given that at steady state, the behavior of microorganisms is reproducible, which helps uncovering simple theories to apprehend their inherent complexity.
+But while this condition can be easily achieved in the laboratory, microorganisms naturally spend very little time in steay state.
+This motivated the construction of a new theoretical framework in Chapter~\ref{chap:theory} to study growth laws during growth transitions.
 
-The principles that define the regulatory processes in dynamic appear to be different than the ones that apply at steady state.
-We showed that efficient regulatory strategies have to be able to perform extremely abrupt and intense variations of the gene activity.
-This relies on the fact that bang-bang synthesis of gene expression machinery settles the upper-bound for biomass production during an environmental change.
-Such strategies are only implementable if the regulatory system focus on the internal state of the cell.
-But not all information is equivalent, and performing a near-perfect transition might require to measure several variables, a concept totally missing from steady-state considerations.
-Interestingly, we uncovered how the ppGpp regulatory system of \textit{E. coli} might be a cheap way for the cell to access just enough information, and to implement a \textit{on-off} strategy to regulate the synthesis of ribosomes.
-Overall, it taught us that the actual complexity of regulatory systems is only beneficial in a dynamical context.
-But elucidating what is the best behavior, and showing that \textit{E. coli} actually implement it are different matters...
+The principles underlying regulatory processes in dynamical conditions appear to be different from those applying at steady state.
+We showed that regulatory strategies approaching the theoretical optimal, given by bang-bang control of gene expression machinery, have to be able to effect abrupt and strong variations in the activity of a gene.
+It was seen that for implementing such strategies the regulatory system needs to be capable of sensing the internal state of the cell and not just the environment.
+A near-optimal transition also requires information of several different variables, whereas for maintaining a steady state with maximal biomass accumulation a single variable turned out to be sufficient in our theoretical framework.
+Interestingly, we showed that the ppGpp regulatory system of \textit{E. coli} fulfills the requirement of such a regulatory strategy, by implementing an on-off strategy for regulating the synthesis of ribosomes.
+However, although this provides circumstantial evidence that bacteria control resource allocation in a manner consistent with theoretical optimality, experimental data are necessary to decide if an on-off strategy is at work in \textit{E. coli} during growth transitions.
 
-Reality actually highlights the problem with adopting a dynamical perspective on growth.
-There are far more information on ribosome abundance at steady state than during growth transitions.
-It is widely admitted that the latter are hard to control and rely too much on hidden variables about the strain history~[citation ? Bremmer ?].
-Though, as we discussed in section~\ref{sec:discussion}, some data are available and seem to confirm that during growth transitions, the  synthesis rate of ribomoses can oscillate~\cite{gausing_regulation_1980,zengel_transcription_1986}, and that the ppGpp regulatory system can go through rapid changes~\cite{friesen_synthesis_1975,murray_control_2003}.
+Unfortunately, far more information is available on ribosome abundance at steady state than during growth transitions [refs].
+The main reason for this bias on steady-state conditions is that, from an experimental point of view, growth transitions are hard to control and may depend on the history of the culture~[citation ? Bremmer ?].
+However, as we discussed in Section~\ref{sec:discussion}, the few studies reported that have been reported seem to be consistent with our predictions, in the sense that they indicate that during growth transitions, the synthesis rate of ribomoses oscillates~\cite{gausing_regulation_1980,zengel_transcription_1986} and the ppGpp concentration manifests a rapid succession of increases and decreases~\cite{friesen_synthesis_1975,murray_control_2003}.
 But we cannot decisively validate or disprove the model predictions from measurements that were carried out at the population level, where it is inherently hard to identify switching patterns.
-What we need are dynamical single-cell measurements of the ribosome concentration during well-controlled growth transitions.
-Would the \textit{on-off} strategy be observed, it could confirm the importance of optimizing transitions for the organism.
-Would it be disproved, that could raise even more interesting questions: growth rate and biomass might not necessarily be what natural selection care for, or other unexpected limitations might prevent the cell to behave optimally.
+What is needed for the verification of our predictions are dynamical single-cell measurements of the ribosome concentration during well-controlled growth transitions.
+While the observation of an on-off strategy would show that simple models of the type introduced in Chapter~\ref{chap:theory} are instrumental in gaining a better understainding of microbial physiology, its refutation would also raise interesting questions. 
+If maximization of growth rate and biomass accumulation have been retained by natural selection in \textit{E. coli}, which factors would prevent the cell from behaving optimally from a theoretical point of view?
 
-In Chapter~\ref{chap:theory}, we developed a model of resource allocation during growth transitions.
-By applying optimal control theory, we predicted that in order to maximize biomass production, the cell should produce its gene expression machinery in a bang-bang manner.
-The full model with dimensional parameters is reproduced below, with dotted variables representing their time derivative:
+The aim of this chapter is to measure \textit{in vivo}, during a growth transition, the resource allocation profile $\alpha (\cdot)$ and compare its dynamics with the gold standard established in Chapter~\ref{chap:theory}.
+To this end, we have measured ribosomal abundance of \textit{E. coli} at the single-cell level during a nutrient upshift.
+More precisely, we constructed a strain in which a fluorescent marker has been attached to a ribosomal subunit, thus allowing the \textit{in-vivo} monitoring of (changes in) the abundance of ribosomes.
+In collaboration with Irina Mihalcescu of the Laboratoire Interdisciplinaire de Physique, we cultivated this \textit{E. coli} strain in a microfluidic device, allowing the long-term imaging of individual cells in well-controlled conditions, notably involving a classic upshift experiment from growth in minimal medium with acetate to minimal medium with glucose.
+We then developed a Kalman smoothing method, in collaboration with Eugenio Cinquemain of Inria Grenoble - Rh\^{o}ne-Alpes, to estimate the variations of the growth rate and the relative ribosomal synthesis rate during this upshift, which allows $\alpha (\cdot)$ to be reconstructed.
+While the preliminary results presented here do not allow a decisive validation of the expected behavior, among other things due to the experimental difficulties that were encountered and image analysis challenges, we believe they are promising as a first step towards the better understanding of global resource allocation during growth transitions.
+
+For clarity, the model of resource allocation during growth transitions developed in Chapter~\ref{chap:theory} is reproduced here, where dotted variables represent time derivatives:
 \begin{eqnarray}
 \dot{p}(t) &=& e_M(t)\cdot (1/\beta - r(t)) - \frac{k_R \cdot p(t)}{K_R + p(t)}\cdot r(t) \, (1+\beta\, p(t)), \label{eq:pdef-exp}\\
 \dot{r}(t) &=& \frac{k_R \cdot p(t)}{K_R + p(t)}\cdot r(t) \, (\alpha(t) - \beta\, r(t)). \label{eq:rdef-exp}
 \end{eqnarray}
 In this form, it contains 4 variables ($e_M(t)$, $p(t)$, $r(t)$, $\alpha (t)$) and 3 parameters ($\beta$, $k_R$, $K_R$).
-$e_M(t)$ [min\textsuperscript{-1}] is the richness of the environment.
+$e_M(t)$ [min\textsuperscript{-1}] is an indicator of the richness of the environment.
 $p(t)$ [g.L\textsuperscript{-1}] is the precursor concentration inside the cell.
-$r(t)$ [g.L\textsuperscript{-1}] is the gene expression machinery concentration inside the cell.
-$\alpha (t)$ [$\emptyset$] is the mass ratio of resources that goes to the gene expression machinery.
+$r(t)$ [g.L\textsuperscript{-1}] is the concentration of gene expression machinery inside the cell.
+$\alpha (t)$ [$\emptyset$] is the fraction of resources allocated to the synthesis of gene expression machinery.
 $k_R$ [min\textsuperscript{-1}] is the rate constant of macromolecular synthesis.
 $K_R$ [g.L\textsuperscript{-1}] is the half-saturation constant of macromolecular synthesis.
-$\beta$ [L.g\textsuperscript{-1}] is the inverse of the cellular density of macromolecules (assumed constant).
-The goal of this chapter is to measure in vivo $\alpha (\cdot)$ during a growth transition, and check how it compares with the gold standard established in chapter~\ref{chap:theory}.
+$\beta$ [L.g\textsuperscript{-1}] is the inverse of the cellular density of macromolecules, assumed to be constant.
 
-To this end, we took the challenge of measuring ribosomal abundance of \textit{E. coli} at the single-cell level during a controlled upshift.
-We made a strain displaying fluorescent ribosomes, thus allowing in-vivo measurement of their abundance in dynamical conditions.
-We placed it in a microfluidic device allowing the long-term imaging of individual cells while they are presented different growing media, and focused on the classic upshift from acetate to glucose.
-We then used Kalman smoothing to estimate the variations of the growth rate and the relative ribosomal synthesis rate during this upshift.
-While not allowing a decisive validation of the expected behavior, this experiment opens interesting questions and is a step towards a better understanding of the gene expression machinery regulation during growth transitions.
+
 
 \section{Results}
 
 \subsection{Experimental design}
 \label{sec:exp_design}
 
-How does one measure resource allocation in real cells?
-There is no direct way to measure $\alpha (\cdot)$ in an experiment, mostly because of its abstract nature.
+How can one measure the resource allocation variable in \textit{E. coli} cells?
+There is no direct way to quantify $\alpha (\cdot)$ in an experiment, mostly because of its abstract nature.
 To correctly reconstruct it, one has to know the value of every single term in the equations in which it appears.
-In the full dynamical system Eqs~\ref{eq:pdef-exp}-\ref{eq:rdef-exp}, $\alpha$ only pops up in Eq.~\ref{eq:rdef-exp}, and is already isolated in this equation, which simplifies the burden.
-We can identify $\alpha (t_k)$ for each time $t_k$ where the following 3 terms are known: $\beta r(t_k)$, $\dot{r}(t_k)$, and $\frac{k_R \cdot p(t_k)}{K_R + p(t_k)} \cdot r(t_k)$.
-Such a consideration remains valid if one can estimate the 6 individual components $r(t_k)$, $\dot{r}(t_k)$, $p(t_k)$, $k_R$, $K_R$, $\beta$.
-Even if we assume that the constant parameters are known, or at least easier to estimate independently, reconstructing the dynamics of $\alpha$ would require to co-estimate the gene expression machinery concentration ($r$, $\dot{r}$) and the precursor concentration $p$.
+In the model of Eqs~\ref{eq:pdef-exp}-\ref{eq:rdef-exp}, $\alpha$ only appears in Eq.~\ref{eq:rdef-exp}.
+We can therefore identify $\alpha (t_k)$ for each time $t_k$ when the terms $\beta r(t_k)$, $\dot{r}(t_k)$, and $\frac{k_R \cdot p(t_k)}{K_R + p(t_k)} \cdot r(t_k)$ are known, or equivalently, the six individual components $r(t_k)$, $\dot{r}(t_k)$, $p(t_k)$, $k_R$, $K_R$, $\beta$ they are composed of.
+Even when assuming that the parameters $k_R$, $K_R$, and $\beta$ are known, or at least easy to estimate independently, reconstructing the dynamics of $\alpha$ would require estimation of the (change in) concentration of the gene expression machinery ($r$, $\dot{r}$) and the precursor concentration $p$.
 
-Are such measurements acceptable?
-Measuring the abundance of gene expression is achievable if one focus on a proxy that represents the overall abundance.
-Ribosomes are widely known to be the most abundant part of the gene expression machinery, which allows to consider it as its main component~\cite{scott_interdependence_2010, scott_bacterial_2011,scott_emergence_2014}.
-Their abundance can be estimated for instance by using the total RNA of the cell~\cite{scott_interdependence_2010}, radioactive markers\cite{gausing_regulation_1980,zengel_transcription_1986}, or fluorescent labeling~\cite{bakshi_superresolution_2012}.
-Estimating precursor abundance is more challenging.
-There is no clear proxy that represents all the precursors in the cell, so using common methods would be excessively time expensive~[citation classic methods to estimate precursor ?].
-While absolute quantification of all the internal metabolites has been achieved in \textit{E. coli}~\cite{bennett_absolute_2009}, this method do not comply with our need of real-time single-cell quantification.
+Are such measurements feasible in practice?
+The abundance of ribosomes can be quantified, for instance, by measuring the total RNA of the cell~\cite{scott_interdependence_2010}, radioactive markers \cite{gausing_regulation_1980,zengel_transcription_1986}, fluorescent labels~\cite{bakshi_superresolution_2012}, or mass spectrometry techniques \cite{HwaMSBProteomics}.
+However, only the use of fluorescent proteins complies with our need for real-time single-cell quantification.
+Obtaining an estimate of precursor abundance is even more challenging, since there is no clear proxy for the totality of precursors in the cell and, while absolute quantification of all internal metabolites has been achieved in \textit{E. coli}~\cite{bennett_absolute_2009}, this method is also not suitable for the estimation of the precursor concentration dynamics in individual cells.
 
-This problem can be overcome by using a simple transformation.
-Taking into account that by construction the growth rate  $\mu(t)$ is given by:
+The problem of quantifying $\alpha$ can be simplified by applying a transformation of the model of Eqs~\ref{eq:pdef-exp}-\ref{eq:rdef-exp}.
+Taking into account that by construction the growth rate $\mu(t)$ is given by
 \[
 	\mu (t) = \beta \frac{k_R \cdot p(t)}{K_R + p(t)} \cdot r(t),
 \]
@@ -90,75 +82,66 @@ we can rewrite Eq.~\ref{eq:rdef-exp} as follows
 \label{eq:dot_r}
 \dot{r}(t) = \mu (t) \, \left(\frac{\alpha(t)}{\beta} - r(t) \right).
 \end{equation}
-The problem of estimating $\alpha(\cdot)$ is thus equivalent to the same problem where $r(\cdot)$, $\dot{r}(\cdot)$, $\mu (\cdot)$ and $\beta$ have to be co-estimated.
-If we are satisfied with estimating $\alpha$ up to a constant factor $\beta$, dynamically measuring the ribosome concentration and the growth rate would make $\alpha (\cdot) / \beta$ identifiable.
+The problem of estimating $\alpha(\cdot)$ is thus equivalent to the problem of estimating $r(\cdot)$, $\dot{r}(\cdot)$, $\mu (\cdot)$ and $\beta$.
+If we are satisfied with estimating $\alpha$ up to a constant factor $\beta$, dynamically measuring the ribosome concentration and the growth rate would make $\alpha (\cdot) / \beta$ identifiable. 
 
-These new measurements are more acceptable given the requirements of the study.
-We want to be able to identify potential abrupt changes of the gene expression.
-Such switching patterns are easily hidden at the population level if cells are not synchronous, which is generally the case.
-A short sample time and single-cell measurements are thus necessary, which motivated the use of fluorescent reporters like the green fluorescent protein (gfp).
-We constructed a strain displaying a gfp-tagged S2 ribosomal subunit (the gene name being \textit{rpsB}).
-The \textit{rpsB-gfp} strain produces fluorescent ribosomes, making them quantifiable while minimizing the burden for the cell (see Material and Methods~\ref{sec:methods_strain}).
-By observing such a strain through a microscope during a growth transition, we could theoretically estimate the ribosome concentration by measuring the cell fluorescence, and reconstruct the growth rate by measuring the cell size.
+Given that fluorescent reporters of ribosomal proteins can provide information on both $r(\cdot)$ and $\dot{r}(\cdot)$ \cite{ValentinBioinformatics}, the above reformulation of the problem is promising for the purposes of our study.
+Moreover, since the predicted bang-bang profiles in gene activity are easily hidden at the population level if cells are not synchronous, which is generally the case, expression of the ribosomal genes need to be monitored at high sampling density on the single-cell level, which is also possible with fluorescent reporters.
+We therefore constructed an \textit{E. coli} strain in which the S2 ribosomal subunit, encoded by the gene \textit{rpsB}, has been tagged with a green fluorescent protein (GFP).
+The strain with the chromosomal \textit{rpsB-gfp} fusion, inspired by previous work \cite{refBakshi}, produces fluorescent ribosomes that are quantifiable \textit{in vivo} in single cells while not affecting the growth rate (see Material and Methods~\ref{sec:methods_strain}).
+The monitoring of single cells of this strain, by time-lapse fluorescence miscroscopy, thus makes it possible to estimate $r(\cdot)$ and $\dot{r}(\cdot)$ and reconstruct $\mu(t)$.
 
-The growth conditions might also play a role in the limitations of the study.
-In natural conditions, the most straightforward growth transitions, or at least the one at which most of the selection is expected to occur, is the transition from the stationary phase in nutrient-deprived medium to any medium sustaining growth.
-There are good reasons though for which this particular growth transition is ignored from most studies.
-The transition from stationary to exponential phase is dramatically ill-controlled, in the sense that a lot of hard-to-control parameters seem to play a huge role in it.
-For instance, this is the case of the duration of the nutritive stress~[citation to find], the nutrient encountered during the last exponential phase~[citation to find], or the previous accumulation of wastes in the medium~[citation to find].
-This somehow results in a phenomenon called the lag phase~[citation lag phase review to find], the mechanisms of which are missing from our model.
-Furthermore, most microorganisms dramatically change their physiology in stationary-phase, either sporulating or organizing into biofilms~[citations subtilis sporulation and coli biofilms to find], which goes largely beyond the scope of this study.
-For this reason, we decided to focus on a transition from a slow exponential growth to high exponential growth, in particular the transition from acetate to glucose.
-By construction, this steady-state-to-steady-state transition requires a long acquisition time before and after the shift, respectively to ensure cells have \textit{forgotten} the previous stress phase, and have enough time to reach the new steady state.
-The mothermachine, a microfluidic device that was designed to sustain exponential growth for long period of time, seemed like a good choice for this purpose.
-It allows to maintain a constant flow of fresh medium around the cells, and make fast transitions possibles by switching the medium that is fed to the cells (see Material and Methods~\ref{sec:growth_condition} and \ref{sec:microflu}).
-The complete experimental scheme is summarized in Fig.~\ref{fig:experiment_schema}.
+The growth conditions also need to be carefully chosen for this study.
+In natural environments, for many bacteria one of the most frequently encountered growth transitions, or at least the transition on which selection is expected to operate, is the transition from stationary phase in a nutrient-deprived medium [see reference in recent PNAS paper by Balaban] to (exponential) growth after the renewed availability of nutrients.
+The transition from stationary to exponential phase is difficult to study though as many hard-to-control parameters play a role, including the duration of the nutrient stress, the composition of the medium before growth arrest, and the accumulation of waste products in the medium \cite{reviewBremerDennisBiochimie}.
+As a consequence, growth resumption only occurs after a lag phase of variable duration~[citation lag phase review to find], which is not included in the model.
+For this reason, we decided to focus on a transition from exponential growth on a poor carbon source (acetate) to exponential growth on a rich carbon source (glucose) in a well-defined minimal medium.
+By construction, this steady-state-to-steady-state transition requires a long acquisition time before and after the shift, respectively, to ensure that the cells have no memory of their physiological state before the transition and have enough time to reach the new steady state after the transition.
+The use of the mother machine, a microfluidic device that was designed to sustain exponential growth for long periods of time, is therefore a good choice for this purpose.
+It allows to maintain a constant flow of fresh medium and to effect fast transitions by switching the medium (see Material and Methods~\ref{sec:growth_condition} and \ref{sec:microflu}).
+The complete experimental plan is summarized in Fig.~\ref{fig:experiment_schema}.
 
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=1]{./Fig/experiment_schema.eps}
 \caption{
-\textbf{Scheme of the upshift experiment.}
-The goal is to measure the fluorescence and growth rate of cells during an acetate-to-glucose upshift.
-All the media used are M9 minimal medium supplemented with 0.2\% of the indicated carbon source, in this case acetate or glucose (see Material and Methods~\ref{sec:growth_condition}).
-The \textit{rpsB-gfp} strain was precultivated for 2.5 days on 0.2\% acetate in batch condition (shaken flask).
+\textbf{Schematic outline of the upshift experiment.}
+The goal is to measure the fluorescence and length/area of \textit{E. coli} \textit{rpsB-gfp} cells during an acetate-to-glucose upshift.
+We use M9 minimal medium supplemented with 0.2\% of acetate or glucose (see Material and Methods~\ref{sec:growth_condition}).
+A preculture was started from glycerol stock for 2.5 days on 0.2\% acetate in batch condition (shake flask).
 The day of the experiment, the cells were injected into the mothermachine and fed by a constant flow of fresh 0.2\% acetate medium (see Material and Methods~\ref{sec:microflu}).
 Fluorescence and phase contrast images were taken every 5 minutes.
-Twenty hours later, the feeding media was switched to 0.2\% glucose (known to theoretically sustain a 5-time-higher growth rate) and was maintained for twenty more hours while imaging carried on.
-Time 0 corresponds to the exact moment when cells start to be in contact with the glucose medium.
+After 20~h, the feeding media was switched to 0.2\% glucose and maintained for 20~h while continuing image acquisition.
+Time 0 corresponds to the moment of the acetate-glucose upshift.
 }
 \label{fig:experiment_schema}
 \end{figure}
 
 \subsection{Data acquisition}
+\label{sec:data_acquisition}
 
-It is important to evoke most of the issues that occurred while carrying on the experiment.
-At the time, a serious issue was starting to affect our only microscope: the motorization along the Z-axis was randomly stalling until an operator manually intervenes.
-This deactivates the autofocus and the Z-compensation for the tilt of the device when moving along the XY plane.
-In other words, series of images are out of focus and thus not exploitable if the operator was not around, which can happen a lot in a 40-hour-long experiment.
-For the experiment presented here, we timed the operations so that the operator can be around as long as possible when it counts, \textit{i.e.} close to the transition at time 0.
-This is the reason why data points between -720 and -150 minutes are not available (corresponding to the steady state on acetate).
-Another issue, more specific to the presented occurence of the experiment, was that bacteria started to massively die several hours after the transition.
-The reason is unknown, the most plausible hypothesis being a phage contamination.
-\footnote{Note that the operator was present when the dying started, which excludes the implication of lab gnomes.}
-Data analysis was thus stopped at 550 minutes, when roughly 3/4 of the cells were still growing.
-Note that for these reasons, the results of this preliminary experiment must be taken with caution.
-The necessary improvements are extensively discussed in section~\ref{sec:chap3_discussion}.
+An experiment following the plan of Fig.~\ref{fig:experiment_schema} was carried out, over a period of 40 h, but encountered a number of difficulties.
+First, the motor displacing the microscope along the Z-axis intermittently stalled, thus deactivating the autofocus and the Z-compensation for the tilt of the [microfluidics???] device in the XY plane.
+As a consequence, until the experimenter manually intervened, many of the images acquired were out of focus.
+This is the reason why data points between -720 and -150 min are not exploitable, but fortunately the experiment was planned in such a way that when it really mattered, notably around the growth transition, someone was present to monitor the microscope.
+Second, at around 7~h after the nutrient upshift, the bacteria started to die for reasons that are unknown, the most plausible hypothesis being a phage contamination.
+Data analysis was therefore limited to 550 min after the upshift, when roughly 3/4 of the cells were still growing.
+For these and other reasons, the experiment will have to be repeated (Section~\ref{sec:chap3_discussion}), but there was no time left for this in the framework of my PhD thesis.
 
-Image analysis was performed on the remaining shots.
-While image analysis softwares overflow the literature~[citations schitcells + others], some of them being specifically designed for the mother machine~[molysso + Wang et al], technical limitations did not allow to use any of them.
-For instance, the segmentation was systematically impeded by the poor resolution of the camera.
-The phase contrast images were not directly exploitable since we noticed they were not aligned with the fluorescence images.
-Fluorescence was also organized in hot spots (see Fig.~\ref{fig:data_acquisition}) and their intensity vary widely during the experiment, which was expected since ribosomes are extremely localized~\cite{bakshi_superresolution_2012} and ribosomal abundance is known to vary with the growth rate~\cite{scott_interdependence_2010}.
-It, however, dramatically impeded the automatic segmentation on the fluorescence images.
-In section~\ref{sec:chap3_discussion}, we give insights into how we plan to overtake these limitations.
+The acquired data consisted of phase contrast and fluorescence images of 60 wells in total, in four different fields.
+While quite a few image analysis programs have been reported in the literature~[citations schitcells + others], and some of these specifically address the mother machine design of the microfluidics device~[molysso + Wang et al], they all presented limitations when applied to our data.
+For instance, the segmentation algorithms experienced difficulties due to the low resolution of the camera, and the phase contrast images had a superposed reflection band due to the microfluidics device. [LACK OF ALIGNMENT IS NOT VERY STRONG ARGUMENT, UNLESS IT CANNOT BE REPAIRED]
+Moreover, the fluorescence density was concentrated in hot spots (Fig.~\ref{fig:data_acquisition}) and its intensity varied during the experiment. 
+While this was expected, since ribosomes are localized in the cell poles~\cite{bakshi_superresolution_2012} and ribosomal abundance is known to vary with the growth rate~\cite{scott_interdependence_2010}, it complicated automatic segmentation on the fluorescence images.
 
-The analysis presented in this study is thus preliminary.
-First, we focused solely on the deepest cell of each well.
-It avoided the tracking step, and ensured that the cell was visible from the beginning to the end of the experiment.
-Secondly, the segmentation was done by manually selecting two pixels at the poles of the cell of interest.
-These pixels were used to create a rectangular mask around the cell (see Fig.~\ref{fig:data_acquisition} and Material and Methods~\ref{sec:cell_segmentation}).
-After background correction (see Material and Methods~\ref{sec:cell_segmentation}), the RFU concentration was evaluated in this region of interest, as well as the length of the cell, defined by the distance in pixels between the poles (see Fig.~\ref{fig:data_acquisition}).
+For these reasons, the image analysis carried out for this chapter has been much simplified. 
+First, we have focused on the cell at the bottom of each well, since this avoids the tracking of individual cells across several generations and ensures that the descendance of this cell can be followed throughout the experiment.
+Second, segmentation was done by manually selecting two pixels, one at each pole of the cell.
+These pixels were used to create a rectangle surrounding the cell (Fig.~\ref{fig:data_acquisition} and Material and Methods~\ref{sec:cell_segmentation}).
+After background correction (Material and Methods~\ref{sec:cell_segmentation}), the fluorescence intensity in units RFU was evaluated for each pixel in the rectangle, as well as the length of the cell, defined by the distance in pixels between the poles (Fig.~\ref{fig:data_acquisition}).
+The fluorescence density for the entire cell [RFU/pixel/cell] was computed by dividing the sum of the fluorescence intensities of the pixels in the rectangle by the total number of pixels in the rectangle.
+Although we are well aware that the above procedure can be improved on many counts (Section~\ref{sec:chap3_discussion}), we nevertheless believe that it provides a reasonable approximation of the quantities of interest and a valid starting-point for the estimation of the growth rate and the resource allocation profile in the remainder of this chapter.   
+
 
 \begin{figure}[p]
 \centering
@@ -166,61 +149,61 @@ After background correction (see Material and Methods~\ref{sec:cell_segmentation
 \caption{
 \textbf{Results of data acquisition.}
 We imaged 6 fields (X1Y1, X2Y1, X3Y1, X1Y2, X2Y2, X3Y2) each containing 15 wells (W0 to W14) for $\sim$40 hours.
-From this, only 68 wells were available for analysis (the others were either empty, out of frame for some period of time, or plugged).
-For all wells, data points are missing in the time interval [-720,-150] because the camera was out of focus.
-We stopped the time series analysis at 550 minutes when visually 3/4 of the bacteria were still growing.
-The whole population was wiped out in the next few hours for an unknown reason.
-The Raw image is the last image analyzed for the highlighted well.
-The left bacteria on this image was manually segmented by selecting two pixels at the poles on the fluorescence images (red cross).
-A 6-pixel-wide rectangular mask was computed for each image, giving the segmented image on the right.
-Fluorescence levels are expressed in Relative Fluorescence Units (RFU) on a 16-bit image (values from 0 to 65335), and were corrected for camera background, but not autofluorescence background (see Material and Methods~\ref{sec:cell_segmentation} and Discussion~\ref{sec:chap3_discussion}).
-The RFU/pixel/cell was computed by taking the ratio between the sum of the pixels in the mask, and the total number of pixels in the mask.
-The bacteria length is the distance in pixels between the two poles (red line on the raw and segmented images).
-The thick lines highlights the time series for the cell visible in the top images.
-The dashed black line corresponds to the switch time from acetate to glucose.
+From the 90 wells, 68 were suitable for further analysis (the others being empty, out of frame for some period of time, or plugged).
+For all wells, data points are missing in the interval between -720 and -150 min because the camera was out of focus.
+We stopped the analysis at 550 min, when about 3/4 of the bacteria were still growing, before the entire population died within a few hours for an unknown reason.
+The image labelled "Raw image" is the last image analyzed for the highlighted well.
+The bacterium on the left of this image was manually segmented by selecting two pixels at the poles on the fluorescence images (red cross).
+A 6-pixel-wide rectangular mask was computed for each image, resulting in the "Segmented image" on the right.
+Fluorescence intensities are expressed in Relative Fluorescence Units (RFU) on a 16-bit image (values from 0 to 65335) and were corrected for camera background, but not autofluorescence background (Material and Methods~\ref{sec:cell_segmentation} and Discussion~\ref{sec:chap3_discussion}).
+The fluorescence intensity of the cell, expressed in units RFU/pixel/cell, was computed by dividing the sum of the fluorescence intensities of the pixels in the rectangle by the total number of pixels in the rectangle.
+The cell length is the distance in pixels between the two poles (red line on the raw and segmented images).
+The thick lines in green and black highlight the time-varying length and fluorescence density for the cell visible in the top images, labelled "X3Y2, W2".
+The vertical dashed lines represent the time of the upshift from growth on acetate to growth on glucose.
 }
 \label{fig:data_acquisition}
 \end{figure}
 
-From this preliminary analysis, we obtained time series for the concentration of fluorescence (RFU/pixel) and the length for 68 bacterial cells (Fig.~\ref{fig:data_acquisition}).
-The RFU/pixel appears constant on the acetate phase (before 0) and immediately increases when the medium is switched to glucose.
-Bacterial length shows that the division time abruptly decreases after the nutrient upshift, corresponding to a higher growth rate.
-Unfortunately, while the steady state on acetate was reached before the upshift, it is obvious that the time series stop before a new steady state on glucose is reached, at least for the fluorescence.
-Nevertheless, the time series are not interrupted around the transition.
-What do we observe if we estimate the growth rate and $\alpha$ in this region?
+In total, we obtained time courses of fluorescence density [RFU/pixel/cell] and the length for 68 bacterial cells (Fig.~\ref{fig:data_acquisition}).
+The fluorescence density appears constant during growth on acetate (before time 0) and immediately increases when the carbon source is switched to glucose.
+Inspection of the cellular length shows that the division frequency abruptly increases after the nutrient upshift, corresponding to a higher growth rate.
+Unfortunately, while steady-state growth on acetate was reached before the upshift, the fluorescence density profile suggests that the experiment did not continue long enough to ensure that a new steady state on glucose was reached.
+However, the data before and after the nutrient upshift are exploitable.
+What do we observe if we estimate the growth rate and the resource allocation profile from these data?
 
-\subsection{Data analysis using Kalman smoother}
+\subsection{Data analysis using Kalman smoothing}
 \label{sec:res_kalman}
 
-As we presented in section~\ref{sec:exp_design}, our goal is to reconstruct the signal $\alpha (\cdot)$ during the transition.
-By modeling \textit{E. coli} as a cylinder, the length can be assumed directly proportional to the volume of the cell.
+As we presented in section~\ref{sec:exp_design}, our goal is to reconstruct the signal $\alpha (\cdot)$ during a growth transition.
+By modeling \textit{E. coli} as a cylinder, the volume can be assumed directly proportional to the length of the cell.
 If we assume a negligible background of autofluorescence (see Material and Methods~\ref{sec:cell_segmentation}), the fluorescence concentration in the cell can be assumed proportional to the ribosome concentration.
-More precisely, based on the data available, we have the following measurement model at each time-point $t_k$:
+More precisely, based on the available data, we have the following measurement model at each time-point $t_k$, $0\leq k \leq N-1$:
 \begin{eqnarray}
 L(t_k) &= \lambda \cdot V(t_k) + \epsilon_k, \label{eq:mes_L}\\
 F(t_k) &= \gamma \cdot r(t_k) + \eta_k, \label{eq:mes_F}
 \end{eqnarray}
-where $L(t_k)$ (resp. $F(t_k)$) is the length (resp. RFU/pixel) measured at time $t_k$ (visible on Fig.~\ref{fig:data_acquisition}), $V(t_k)$ (resp. $r(t_k)$) is the actual volume (resp. ribosome concentration) at time $t_k$, ($\lambda$,$\gamma$) are unknown proportionality constants, and ($\epsilon_k$,$\eta_k$) are measurement noises.
-As we saw in section~\ref{sec:exp_design}, reconstructing $\alpha (\cdot)$ requires information on $\mu (\cdot)$, $r(\cdot)$ and $\dot{r}(\cdot)$.
-From Eq.~\ref{eq:mes_F}, we could obtain $r(\cdot)$ and $\dot{r}(\cdot)$ by smoothing interpolation and differentiation.
-The same can be said for Eq.~\ref{eq:mes_L} and $\mu (\cdot)$ since it is defined by:
+where $L(t_k)$ and $F(t_k)$ are the length and fluorescence density in units RFU/pixel measured at time $t_k$, respectively,  and $V(t_k)$  and $r(t_k)$) the corresponding actual volume and ribosome concentration at time $t_k$, respectively. ($\lambda$,$\gamma$) are unknown proportionality constants, and ($\epsilon_k$,$\eta_k$) measurement noise. [YOU MAY NEED TO SPECIFY THE ASSUMPTIONS ON THE NOISE DISTRIBUTION (0 MEAN, NORMAL?)]
+
+As explained in Section~\ref{sec:exp_design}, reconstructing $\alpha (\cdot)$ requires information on $\mu (\cdot)$, $r(\cdot)$ and $\dot{r}(\cdot)$.
+From Eq.~\ref{eq:mes_F}, we can obtain $r(\cdot)$ and $\dot{r}(\cdot)$ by smoothing interpolation and differentiation.
+Similarly, $\mu (\cdot)$ can be derived from Eq.~\ref{eq:mes_L} as it is defined by
 \[
 \dot{V}(t) = \mu (t) \cdot V(t).
 \]
 However, smoothing interpolation is particularly sensible to the boundary conditions.
-Since each division in the time series is a boundary, the smoothing interpolation of this kind of data is particularly unstable.
-For this reason, single-cell growth rate is usually estimated by fitting an exponential term on the volume between each division (or in particular a linear term on the logarithm of the volume)~[citation Wang et al et Izard et al].
-While it is suitable when bacteria are at steady state, it is not applicable in our case where we expect growth-rate variations between divisions.
-Other techniques are less sensible to this kind of problem~\cite{zulkower_robust_2015}, and we decided to focus on the use of Kalman smoother~\cite{kailath_linear_2000,jazwinski_stochastic_2007}.
+Since each division in the time series generates a new boundary condition, smoothing interpolation of our data is expected to be little robust.
+For this reason, the growth rate of single cells is usually estimated by fitting an exponential function to the volume data between each cell~[citation Wang et al et Izard et al].
+While this is suitable when bacteria are at steady state, it is not applicable during a growth transition, where we expect the growth rate to vary between successive divisions.
+Other techniques are less sensible to the above problem~\cite{zulkower_robust_2015}, and we decided to use Kalman smoothing for our purpose~\cite{kailath_linear_2000,jazwinski_stochastic_2007}.
 
-Kalman filtering~\cite{kalman_new_1960} is a bayesian algorithm that uses a series of noisy measurements to predict the state of a dynamical system.
-It is well known for its everyday technological applications (guidance, tracking, control, ...) which requires the real-time estimation of hidden variables in a dynamical system based on previous measurements.
-Kalman smoothing is an extension of Kalman filtering that uses information about the previous but also the next measurements of the state of the system, and is widely applied to estimate unknown inputs in time series analysis~\cite{kailath_linear_2000,jazwinski_stochastic_2007}.
-In that sense, it uses all the available information to estimate the hidden variables of a dynamical system.
-For our problem, at each time step $t_k$, our hidden variables are the resource allocation $\alpha (t_k)$ and the growth rate $\mu (t_k)$, and the available information is the N measurements $\left\{ F(t_0), F(t_1), ..., F(t_{N-1}) \right\}$ and $\left\{L(t_0), L(t_1), ..., L(t_{N-1}) \right\}$ that were taken during the whole experiment.
+Kalman filtering~\cite{kalman_new_1960} is a Bayesian algorithm using a series of noisy measurements to predict the state of a dynamical system.
+It has been extensively used in engineering applications (guidance, tracking, control, ...) requiring the real-time estimation of hidden variables in a dynamical system from present and past measurements.
+Kalman smoothing is an extension of Kalman filtering using information about past and present but also future measurements of the state of the system, and is widely applied to estimate unknown inputs in time series analysis~\cite{kailath_linear_2000,jazwinski_stochastic_2007}.
+The advantage of Kalman filtering with respect to Kalman smoothing is that it uses all available information to estimate the hidden variables of a dynamical system, in applications where a real-time response is not required.
+For our problem, at each time step $t_k$, our hidden variables are the resource allocation variable $\alpha (t_k)$ and the growth rate $\mu (t_k)$, while the available information consists of the $N$ measurements $\left\{ F(t_0), F(t_1), ..., F(t_{N-1}) \right\}$ and $\left\{L(t_0), L(t_1), ..., L(t_{N-1}) \right\}$ that were taken during the experiment.
 
-We state the problem as follows.
-We have the following dynamical system:
+The Kalman filtering problem can now be formulated as follows.
+The state of a growing bacterial cell is described by the dynamical system
 \begin{eqnarray}
 \dot{r}(t) &=& \mu (t) \cdot \frac{\alpha(t)}{\beta} - \mu (t) \cdot r(t),\\
 \dot{V}(t) &=& \mu (t) \cdot V(t),
@@ -230,49 +213,49 @@ with the following measurement model:
 L(t_k) &= \lambda \cdot V(t_k) + \epsilon_k,\\
 F(t_k) &= \gamma \cdot r(t_k) + \eta_k,
 \end{eqnarray}
-where each variable has already been defined in Eqs~\ref{eq:dot_r}, \ref{eq:mes_L} and \ref{eq:mes_F}.
-While $\beta$ can be obtained from the literature (see chapter~\ref{chap:theory}), $\lambda$ and $\gamma$ are unknown variables that need to be estimated along with $\alpha$ and $\mu$.
+where the variables are as defined as for Eqs~\ref{eq:dot_r}, \ref{eq:mes_L} and \ref{eq:mes_F}.
+While $\beta$ can be obtained from the literature (Chapter~\ref{chap:theory}), $\lambda$ and $\gamma$ are unknown parameters that need to be estimated along with $\alpha (\cdot)$ and $\mu (\cdot)$.
 Since we are satisfied with a qualitative reconstruction of $\alpha (\cdot)$, we can simplify the system by defining $r_\gamma = \gamma \cdot r$ and $V_\lambda = \lambda \cdot V$.
-The dynamical system is thus rewritten:
+The dynamical system is consequently rewritten as
 \begin{eqnarray}
-\dot{r_\gamma}(t) &=& \mu (t) \cdot\frac{\gamma \cdot \alpha(t)}{\beta} - \mu (t) \cdot r_\gamma (t),\label{eq:r_prob}\\
-\dot{V_\lambda}(t) &=& \mu (t) \cdot V_\lambda (t),\label{eq:V_prob}
+\dot{r}_\gamma(t) &=& \mu (t) \cdot\frac{\gamma \cdot \alpha(t)}{\beta} - \mu (t) \cdot r_\gamma (t),\label{eq:r_prob}\\
+\dot{V}_\lambda}t) &=& \mu (t) \cdot V_\lambda (t),\label{eq:V_prob}
 \end{eqnarray}
 with the new measurement model:
 \begin{eqnarray}
 F(t_k) &= r_\gamma (t_k) + \eta_k,\label{eq:F_prob}\\
 L(t_k) &= V_\lambda(t_k) + \epsilon_k.\label{eq:L_prob}
 \end{eqnarray}
-The problem becomes the reconstruction of $\gamma \alpha (\cdot) / \beta$ and $\mu (\cdot)$ through measurements $\left\{ F(t_0), F(t_1), ..., F(t_{N-1}) \right\}$ and $\left\{L(t_0), L(t_1), ..., L(t_{N-1}) \right\}$.
-Note that this problem is not linear, while Kalman filtering was initially introduced for linear systems~\cite{kalman_new_1960,kailath_linear_2000}.
-For this reason, we used a non-linear extension of Kalman smoothing called Unscented Kalman Smoothing~\cite{julier_new_1997,jazwinski_stochastic_2007}.
-Details about its exact implementation are available in Material and Methods~\ref{sec:meth_kalman}.
-While it is feasible to co-reconstruct the signals $\mu (\cdot)$ and $\gamma \alpha (\cdot) / \beta$ using Kalman smoothing, it is not necessary and could make the reconstruction unstable.
-We thus decided to proceed in two steps: first reconstruct $\mu$ from the measurements of $L$, than inject this result in the reconstruction of $\gamma \alpha / \beta$ from the measurements of $F$.
+The Kalman filtering problem thus becomes the reconstruction of $\gamma \alpha (\cdot) / \beta$ and $\mu (\cdot)$ from measurements $\left\{ F(t_0), F(t_1), ..., F(t_{N-1}) \right\}$ and $\left\{L(t_0), L(t_1), ..., L(t_{N-1}) \right\}$.
 
-\subsection{Estimation of growth rate and gene expression}
+Note that the above problem is not linear, whereas Kalman filtering was initially introduced for linear systems~\cite{kalman_new_1960,kailath_linear_2000}.
+For this reason, we use a nonlinear extension of Kalman smoothing called unscented Kalman smoothing~\cite{julier_new_1997,jazwinski_stochastic_2007}.
+Details about its exact implementation are available in Material and Methods~\ref{sec:meth_kalman}.
+While it is feasible to simultaneously reconstruct the signals $\mu (\cdot)$ and $\gamma \alpha (\cdot) / \beta$ using Kalman smoothing, it is not necessary in our case and might lead to unstable results.
+We therefore decided to proceed in two steps: first reconstruct $\mu(\cdot)$ from the measurements $L(\cdot)$, than inject this result into the reconstruction of $\gamma \alpha(\cdot) / \beta$ from the measurements $F(\cdot)$.
+
+\subsection{Estimation of growth rate and resource allocation profile}
 
 \subsubsection*{Growth rate estimation}
 
 As presented in the previous section, we want to reconstruct the growth rate $\mu$ defined by Eq.~\ref{eq:V_prob}, using measurements of the length $L$ defined by Eq.~\ref{eq:L_prob}.
-Note that Kalman smoothing is a procedure that returns the expected mean and covariance of the state of a dynamical system, given some measurements.
-Thus, reconstructing $\mu$ requires its explicit integration in the variables of the dynamical system.
-In some sense, this tells the system which constraints to apply on the variations of $\mu$, and represents a regularization method.
-Here, we used the following Bayesian regularization approach.
-In the Kalman smoothing procedure, we model the variations of $\mu$ as the outcome of a stochastic process.
-The laws of this process play the role of a prior on the expected regularity of $\mu$ (the more noisy the process, the less constrained the variations of $\mu$).
-In particular, we let $\mu$ be the double integral of a Gaussian white noise $w$:
+Note that Kalman smoothing is a procedure that returns the expected mean and covariance of the state of a dynamical system, given the  measurements.
+Therefore, reconstructing $\mu$ requires it to be explicitly included as a state variable of the dynamical system [I GUESS THIS IS WHAT YOU MEAN?].
+This provides constraints on the variation of $\mu$ that have the effect of a regularization.
+In particular, in the Kalman smoothing procedure, we model the variations of $\mu$ as the outcome of a stochastic process.
+The laws describing this process play the role of a prior on the expected regularity of $\mu$ (the more noisy the process, the less constrained the variations of $\mu$).
+In particular, we define $\mu$ as the double integral of a Gaussian white noise $w$:
 \[
-\dot{\mu} = v(t) \;\;\;\; \dot{v} = w(t),
+\dot{\mu} = v(t), \;\;\;\; \dot{v} = w(t),
 \]
-where $v$ is an intermediate variable, and $w(t) \sim \mathcal{N}(0, \theta)$.
-The full problem becomes:
+where $v$ is an intermediate variable and $w(t) \sim \mathcal{N}(0, \theta)$. [WHAT IS $\theta$?]
+The resulting system then becomes
 \begin{eqnarray}
 \dot{V_\lambda}(t) &=& \mu (t) \cdot V_\lambda (t),\nonumber\\
 \dot{\mu}(t) &=& v(t),\label{eq:full_mu_prob}\\
 \dot{v}(t) &=& w(t),\nonumber
 \end{eqnarray}
-with the measurement model:
+with the measurement model
 \begin{equation}
 L(t_k) = V_\lambda(t_k) + \epsilon_k.
 \end{equation}
@@ -286,78 +269,76 @@ Our prior is thus entirely contained in the parameters of the Kalman procedure:
 \item the transition covariance for the derivatives of $V_\lambda$, $\mu$ and $v$,
 \item the observation variance for $L$.
 \end{itemize}
-The means and covariances at the initial state represent the knowledge we have on the initial parameters.
-For instance, if we know exactly the value of $V_\lambda$, $\mu$ and $v$, we can fix the means and use very small covariances, but this "certainty" can be adjusted at will.
-In our framework, there is no transition covariance for $V_\lambda$ and $\mu$, because there are not the result of a stochastic process.
+[IF YOU DESCRIBE THE PROCEDURE IN SO MUCH DETAIL, THEN YOU NEED TO EXPLICITLY INTRODUCE THE MEANS/(CO)VARIANCES. THESE PARAGRAPHS ARE ONLY COMPREHENSIBLE FOR THE SPECIALISTS, BUT IN THAT CASE NEED TO BE MATHEMATICALLY PRECISE.]
+
+The means and covariances at the initial state represent the knowledge we have of the initial value of the variables. [YOU NEED TO EXTEND THE MODEL WITH THE INITIAL VALUES]
+For instance, if we know exactly the initial value of $V_\lambda$, $\mu$ and $v$, we can fix the means and use very small covariances.
+In our framework, there is no transition covariance for $V_\lambda$ and $\mu$, because they are not the result of a stochastic process.
 However, the transition variance $\theta^2$ of the derivative of $v$ is crucial: it represents the intensity of the white noise $w$ that serves as prior for the regularization of $\mu$.
 The smaller its value, the more the variations of $v$ are penalized, hence the smoother the reconstructed $\mu$.
 Finally, the observation variance for $L$ is the expected measurement noise.
-All these parameters represent the prior that we use to reconstruct the growth rate $\mu$.
-As we will see below, we widely use these properties to overcome the difficulties raised by the discontinuities introduced by cell divisions.
+Together,  these parameters represent the priors that we use to reconstruct the growth rate $\mu$.
+As we will see below, we widely use these properties to overcome the difficulties introduced by the discontinuities following cell divisions.
 
-Since we track bacteria for a long time, the observation of their length $L$ is inherently discontinuous, due to symmetrical divisions of the \textit{E. coli} cells (Fig.~\ref{fig:data_acquisition}).
-Thus, the problem cannot be solved for the whole time series at once, but has to be divided into smaller continuous regions between two divisions.
-We simply localize the divisions by looking at the time points at which the empirical derivative of the length is below an arbitrary threshold, and slice the curve into the appropriate number of continuous time series.
-From here, the most straightforward method would be to treat each portion independently.
-However, we loose an important information by doing so: neighbor portions of the curve are likely to have similar growth rate.
-This comes from the fact that we can expect a daughter cell to start growing with a growth rate similar to its mother cell.
-In other word, while not necessary continuous, the growth rate at the boundaries of a time region can be expected to depend strongly on the growth rate of neighbor regions.
+The observation of the length $L$ of growing bacterial cells is inherently discontinuous, due to the division of cells at regular time-points (Fig.~\ref{fig:data_acquisition}).
+The estimation problem can therefore not be solved for the experiment as a whole, but only for the time-intervals between two successive division events, when the cell length is expected to change continuously.
+We localize the division events by identifying the time points at which the empirical derivative of the length is below an arbitrary threshold, and correspondingly slice the total duration of the experiment into time-intervals with continuous change of cell length.
+The simplest way to proceed from there on would be to treat each portion independently.
+However, by doing this we would lose important information, since the growth rates of a mother and its daughter cells are expected to be similar.
+In other word, while not necessary continuous, the growth rate of new-born cells will depend strongly on the growth rate of their mother just before division.
 This can be easily taken into account in the Kalman smoothing procedure by exploiting the priors about the initial mean and covariance of the system variables.
-We simply let the initial state mean of the growth rate be the last estimated value in the mother cell, while defining a reasonable variance around this value to allow flexibility.
-When no data about the mother cell is available (at the beginning of the experiment), we simply let the algorithm choose freely the initial growth rate by defining a large variance around the expected growth rate on acetate.
-The results of this procedure, along with the exact parameters used for the Kalman smoothing, are reported in Fig.~\ref{fig:growth_rate_estimation} and Material and Methods~\ref{sec:meth_kalman}.
+In particular, we set the mean of the initial growth rate of a daughter cell equal to the final estimated growth rate of the mother cell, while defining a reasonable variance of the growth rate to allow for uncertainty.
+Right after the upshift, when the above assumption may not hold, we set the mean of the initial growth rate to the estimated growth rate right before the upshift, but define a large variance.
+The results of this Kalman smoothing procedure, along with the exact parameters used, are reported in Fig.~\ref{fig:growth_rate_estimation} and Material and Methods~\ref{sec:meth_kalman}.
 
 \begin{figure}[p]
 \centering
 \includegraphics[scale=1]{./Fig/growth_rate_estimation}
 \caption{
-\textbf{Growth rate estimation based on the bacterial length using Kalman smoothing.}
-Grey lines represent estimation of states of the system by the unscented Kalman smoothing procedure for the 68 cells.
-The reconstruction for the bacterial length and the growth rate are presented in the top and bottom graphs, respectively.
-For readability, the solid red lines highlight the result for a particular cell, while black crosses in the top graph are the data points for this cell.
-The dashed grey lines represent the switch time from acetate to glucose.
+\textbf{Growth-rate estimation using Kalman smoothing based on measurement of the length of bacteria growing in a microfluidics device.}
+Gray lines represent the estimation of the time-varying length (upper plot) and growth rate (lower plot) of 68 cells by the unscented Kalman smoothing procedure.
+The solid red lines highlight the result for one particular cell, located at the bottom of the well labelled "X3Y2, W2", while black crosses in the top graph are the data points for this cell.
+The vertical dashed lines represent the time of the upshift from growth on acetate to growth on glucose.
 As prior for the algorithm, we used an observation variance of 9 pixels\textsuperscript{2} for the length $L$.
-The transition variance $\theta^2$ (\textit{a.k.a.} the smoothing factor for $\mu$) is fixed at $10^{-8}$~min\textsuperscript{-6} during the whole time series.
-Inheritance between mother and daughter cells is taken into account by systematically choosing an initial mean equal to the last estimated value for $\mu$, and to half the last estimated value for $V_\gamma$ (modeling the symmetrical division).
-At the beginning of the experiment, were no mother cell is available, these values were fixed at 15~pixels for $V_\gamma$ and 0.004~min\textsuperscript{-1} for $\mu$.
+The transition variance $\theta^2$ (\textit{i.e.}, the smoothing factor for $\mu$) is fixed at $10^{-8}$~min\textsuperscript{-6}.
+Inheritance between mother and daughter cells is taken into account by systematically choosing an initial mean growth rate equal to the last estimated value for $\mu$ before cell division, and to half the last estimated value for $V_\gamma$, bearing in mind that \textit{E. coli} cells divide symmetrically.
+At the start of the experiment, when no mother cell is available to provide initial estimates, the above values were fixed at 15~pixels for $V_\gamma$ and 0.004~min\textsuperscript{-1} for $\mu$.
 The variances associated with these means are 16~pixels\textsuperscript{2} and $10^{-4}$~min\textsuperscript{-2}, respectively for $V_\gamma$ and $\mu$.
-$v$ initial mean is always taken null, with an initial variance of $10^{-8}$~min\textsuperscript{-6}.
+The initial mean of $v$ is set equal to 0, with an initial variance of $10^{-8}$~min\textsuperscript{-6}.
 All the cross-covariances are set to 0 because the system variables are independent by construction.
-The parameters cited above were chosen through trials and errors, and are as a consequence largely optimizable.
-Possible improvements are discussed in section~\ref{sec:chap3_discussion}.
 }
 \label{fig:growth_rate_estimation}
 \end{figure}
 
-On the mean, the results presented in~Fig.~\ref{fig:growth_rate_estimation} show a roughly constant growth rate on acetate, followed by a quick increase around the upshift.
-Contrary to what was visible on the fluorescence, a steady state for the growth rate seems to have been reached before the end of the experiment.
-When taken individually, the results are more fuzzy.
-A significant part of the cells stops growing before the end of the experiment.
-This was expected since all the cells die from an unknown cause at the end of the time series, and the interval of analysis was visually chosen so that roughly 3/4 of the cells are still growing.
-Interestingly, 1/6 of the cells exhibit growth rate oscillations, with a hour-long pause around 200 minutes after the upshift, then a growth rate recovery until the end of the time series (see Supporting Information XX).
-For now, we decided to classify the cells in three categories: the dying cells (N=12) for which the growth rate drop to zero after the upshift; the pausing cells (N=11) for which the growth rate drop to zero after the upshift then recover, and finally the normal cells (N=45) which do not exhibit any of the above behaviors.
+On average, the results presented in~Fig.~\ref{fig:growth_rate_estimation} show a roughly constant growth rate on acetate, followed by a quick increase after the upshift.
+Contrary to what was visible in the plot with the fluorescence data, a steady state for the growth rate seems to have been reached before the end of the experiment.
+When considering the individual cells, the results are more difficult to interpret.
+A significant part of the cells stopped growing before the end of the experiment, probably due to the fact that all cells die from an unknown cause around the end of the experiment. 
+As a consequence, the analysis has been limited to a time-interval after the upshift in which roughly 3/4 of the cells are still growing.
+Interestingly, 1/6 of the cells exhibit growth rate oscillations, with a 1~h-long pause around 200 min after the upshift, followed by a recovery of the growth rate until the end of the experiment (see Supporting Information XX).
+In order to focus the analysis, we decided to classify the cells in three categories: dying cells (N=12) for which the growth rate drops to zero after the upshift, pausing cells (N=11) for which the growth rate drops to zero after the upshift and then recovers, and finally so-called normal cells (N=45) which do not exhibit any of the above behaviors.
 More information about each category is available in Supporting Information XX.
-In what follows, we focus on the 45 normal cells (Fig.~\ref{fig:growth_rate_estimation_median}), which present a globally coherent behavior until the end of the interval of analysis.
+In what follows, we focus on the 45 normal cells (Fig.~\ref{fig:growth_rate_estimation_median}) which show a globally coherent behavior in the time window considered here.
 
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=1]{./Fig/growth_rate_estimation_median}
 \caption{
-\textbf{Growth rate estimation for the normal cells only.}
-The top graph is the same as the bottom graph of Fig.~\ref{fig:growth_rate_estimation}, except we removed the dying and pausing cells.
-The bottom graph gives the 25\% (lowest gray line), 50\% (solid black line) and 75\% (highest gray line) quartiles, computed at each time step.
+\textbf{Growth-rate estimation using Kalman smoothing for the normal cells only.}
+The top graph is the same as the bottom graph of Fig.~\ref{fig:growth_rate_estimation}, except that the dying and pausing cells were removed.
+The bottom graph shows the 25\% (lower gray curve), 50\% (solid black curve) and 75\% (upper gray curve) quartiles, computed at each time step.
 The gray area represents the interquartile range.
 }
 \label{fig:growth_rate_estimation_median}
 \end{figure}
 
-\subsubsection*{Estimation of gene activity}
+\subsubsection*{Estimation of resource allocation profile}
 
-We use a similar Bayesian regularization approach than for the growth rate estimation.
-We note $u(t) = \gamma \alpha (t) / \beta$ the input that we want to reconstruct.
-The full problem for the estimation of $u$ is:
+In order to estimate the time-varying allocation of resources after the upshift, we use a similar Bayesian regularization approach as for the estimation of the growth rate.
+We note $u(t) = \gamma \alpha (t) / \beta$ the resource allocation input that we wish to reconstruct.
+The full model for the estimation of $u$ is given by
 \begin{eqnarray}
-\dot{r_\gamma}(t) &=& \hat{\mu} (t) \cdot u (t) - \hat{\mu} (t) \cdot r_\gamma (t), \nonumber\\
+\dot{r}_\gamma(t) &=& \hat{\mu} (t) \cdot u (t) - \hat{\mu} (t) \cdot r_\gamma (t), \nonumber\\
 \dot{u}(t) &=& v(t),\label{eq:full_u_prob}\\
 \dot{v}(t) &=& w(t),\nonumber
 \end{eqnarray}
@@ -365,67 +346,67 @@ with the measurement model
 \begin{equation*}
 F(t_k) = r_\gamma (t_k) + \eta_k,\\
 \end{equation*}
-where $\hat{\mu}$ is the estimation of $\mu$ from the previous section.
-Contrary to the growth rate problem, this system is linear.
-Furthermore, we do not have to deal with discontinuities of the measurement since $F$ is continuous from the mother to the daughter cells (Fig.~\ref{fig:data_acquisition}).
+where $\hat{\mu}$ is the estimation of $\mu$ obtained in the previous section.
+Contrary to the model used for the estimation of the growth rate, the system of Eq.~\ref{eq:full_u_prob} is linear.
+Furthermore, we do not have to deal with discontinuities in the measurements, since the fluorescence density $F$ in the cells is continuous between mother and daughter cells (Fig.~\ref{fig:data_acquisition}).
 
-To be comparable with what we predicted in chapter~\ref{chap:theory}, we expect $u(\cdot)$ to exhibit bang-bang variations after the upshift.
-By definition, it is a very stiff signal that could be complicated to reconstruct depending on the parameters of the regularization method.
-In order to parametrize the Kalman smoothing algorithm, we generated synthetic data by simulating the model of chapter~\ref{chap:theory}.
-This was not possible for the growth rate problem since cell division is absent from the model.
-After estimating the noise on the RFU/pixel measurements (see Supporting Information XX), we simulated an upshift from acetate to glucose (the parameters were chosen based on the resulting growth rate), and used a value for $\gamma$ that generated a fluorescence concentration in the range of the observations.
-We then tried to estimate $\gamma \alpha / \beta$ based these synthetic data, choosing the prior parameters through trials and errors.
-There are probably not optimal, and we discuss possible improvements in section~\ref{sec:chap3_discussion}.
-The results along with the prior parameters are presented in Fig.~\ref{fig:synthetic_upshift}.
-Like any smooth methods, the algorithm has trouble reconstructing stiff variations of the system variables.
-The oscillatory nature of gene expression is however fully captured, which indicate that the algorithm should be able to conclude on the existence of the \textit{on-off} strategy.
-Some methods that could improve this result are also discussed in section~\ref{sec:chap3_discussion}.
-In what follows, we use the same prior parameters on the "normal cell" subset of the real data, in order to see if we can get the same oscillatory pattern.
+Given the analysis in Chapter~\ref{chap:theory}, we expect $u(\cdot)$ to exhibit bang-bang variations after the upshift.
+This is a discontinuous signal that could be complicated to reconstruct for certain choices of the parameters of the regularization method.
+In order to parametrize the Kalman smoothing algorithm, we generated synthetic data by simulating the model of Chapter~\ref{chap:theory}.
+After estimating the noise characteristics of $F$ using the RFU/pixel measurements from Fig.~\ref{fig:data_acquisition} (Supporting Information XX), choosing parameters that allow the model to reproduce the observed growth rates and fluorescence densities, we simulated an upshift from acetate to glucose.
+We then tried to estimate $\gamma \alpha(\cdot) / \beta$ from these synthetic data, selecting the \textit{a priori} values of the parameters in the Kalman smoothing procedure by trial and error. [THE USE OF PARAMETERS IS AMBIGUOUS HERE: YOU PROBABLY DO NOT REFER TO MODEL PARAMETERS AS IN THE PREVIOUS PHRASE, BUT TO THE PARAMETERS OF THE KALMAN PROCEDURE]
+This approach may not have been optimal for our purpose and possible improvements are discussed in Section~\ref{sec:chap3_discussion}.
+The results along with the parameter values [BOTH TYPES] are shown in Fig.~\ref{fig:synthetic_upshift}.
+As expected, like any smoothing method, the algorithm has difficulty in reconstructing stiff variations in the state variables of Eq.~\ref{eq:full_u_prob}.
+The switching profile of the resource allocation input is relatively well captured though, which indicates that the algorithm is in principle capable of reconstructing an on-off strategy (further improvements are discussed in Section~\ref{sec:chap3_discussion}).
+In what follows, we use the same values for the parameters of the Kalman smoothing procedure for the normal cells identified in the previous section, to test the occurrence of an on-off switching profile in our data.
 
 \begin{figure}[p]
 \centering
 \includegraphics[scale=0.8]{./Fig/synthetic_upshift}
 \caption{
-\textbf{Performance of the unscented Kalman smoother on synthetic data simulating an upshift.}
-\textit{(A)}~Synthetic data simulating an upshift with and without white noise, along the result of the Kalman smoothing procedure.
+\textbf{Performance of the Kalman smoothing procedure on synthetic data simulating an acetate-glucose upshift.}
+\textit{(A)}~Synthetic data simulating an upshift from minimal medium with acetate to minimal medium with glucose, with and without additive white noise, as well as the results obtained by Kalman smoothing.
 The synthetic data were generated by simulating the model presented in Eqs~\ref{eq:pdef}-\ref{eq:rdef} with the on-off regulatory strategy (Eq.~\ref{eq:stratswitch} and Fig.~\ref{fig:onoffresults}).
-Parameters for the simulation are $e_{M,\texttt{Ace}} = 0.18$~h\textsuperscript{-1}, $e_{M,\texttt{Glu}} = 0.9$~h\textsuperscript{-1}, $k_R = 3.6$~h\textsuperscript{-1}, $\beta = 0.003$~L.g\textsuperscript{-1}, $K_R = 1$~g.L\textsuperscript{-1}.
-The simulated $r(t)$ was multiplied by a factor $\gamma = 0.02$~L.g\textsuperscript{-1}.RFU\textsuperscript{-1} in order to get a synthetic $F$ in the same range of the observations (dashed black curve).
-Additive noise level was estimated from the real data and injected in $F$ (see Supporting Information XX).
-Here again, the parameters were chosen through trials and errors, and are reported in the Material and Methods~\ref{sec:meth_kalman}.
-They are largely optimizable, and possible improvements are discussed in section~\ref{sec:chap3_discussion}.
-\textit{(B)}~Estimation of $\gamma \alpha / \beta$ based on the data in (A).
-As described in chapter~\ref{chap:theory}, $\alpha (t)$ performs a bang-bang-singular response during the upshift (dashed black line).
-While the Kalman smoothing is not able to capture the stiff variations of $\gamma \alpha / \beta$, it fairly reproduces the oscillatory nature of the gene expression (red solid line).
-\textit{(C)}~The growth rate during the upshift.
-This information is used as an input in the procedure, since it is supposed to have been independently estimated from the measurements $\left\{L(t_0), L(t_1), ..., L(t_{N-1}) \right\}$.
+The model parameters used for the simulation are $e_{M,\texttt{Ace}} = 0.18$~h\textsuperscript{-1}, $e_{M,\texttt{Glu}} = 0.9$~h\textsuperscript{-1}, $k_R = 3.6$~h\textsuperscript{-1}, $\beta = 0.003$~L g\textsuperscript{-1}, $K_R = 1$~g L\textsuperscript{-1}.
+The predicted $r(t)$ profile was multiplied by a factor $\gamma = 0.02$~L g\textsuperscript{-1} RFU\textsuperscript{-1} in order to obtain the corresponding fluorescence intensity profile $F$ (dashed black curve).
+The noise level was estimated from the data (Supporting Information XX) and added to $F$.
+The choice of the parameters of the Kalman smoothing procedure is discussed in the Material and Methods~\ref{sec:meth_kalman}.
+\textit{(B)}~Estimation of the resource allocation profile $\gamma \alpha / \beta$ based on the data in \textit{(A)}.
+Following Chapter~\ref{chap:theory}, $\alpha (t)$ displays a bang-bang-singular profile during the upshift (dashed black curve).
+While the Kalman smoother is not able to capture the discontinuous variations in $\gamma \alpha / \beta$, it qualitatively reproduces the input quite well (red solid curve).
+\textit{(C)}~The predicted growth rate during the upshift experiment.
+This information is used as an input in the smoothing procedure, since it is supposed to have been independently estimated from the measurements $\left\{L(t_0), L(t_1), ..., L(t_{N-1}) \right\}$.
 }
 \label{fig:synthetic_upshift}
 \end{figure}
 
-Results of the reconstruction of $u = \gamma \alpha / \beta$ are presented in Fig.~\ref{fig:gene_activity}.
-Large oscillations are indeed visible on the reconstruction.
-These oscillations were already visible on the RFU/pixel data (Fig.~\ref{fig:gene_activity}A).
-The region between -150 and 0 min appears to be the most stable, as we could expect for a growth steady state.
-On the contrary, the reconstructed $\gamma \alpha / \beta$ seems particularly unstable at the beginning and the end of the experiment.
-Overall, the oscillations observed must be taken with extreme caution.
-The problem of reconstructing an on-off signal is more challenging than we initially thought, for the simple reason that the signal we expect to reconstruct is exactly the kind of artifacts a poorly calibrated regularization method would generate.
-Data about the pre-upshift and post-upshift steady state are more crucial than expected, and the experimental problem we described earlier truly impedes our capacity to conclude on the regulatory strategy.
-We extensively discuss this in section~\ref{sec:chap3_discussion}, and give numerous indications about the future improvements that will be implement.
-Finally, Fig.~\ref{fig:gene_activity_median} gives an idea of the distribution of the estimations at each time step.
-While most oscillations cancels out when we consider global statistics about the population, the first oscillation just after the upshift is conserved in each of the 25\%, 50\% and 75\% quartiles (Fig.~\ref{fig:gene_activity_median}B).
-This is rather encouraging and prompts for future investigations.
+The results of the reconstruction of the resource allocation profile $u = \gamma \alpha (\cdot) / \beta$ are presented in Fig.~\ref{fig:gene_activity}.
+Within the interval between -150 and 0 min, resource allocation remains more or less stable, as expected for steady-state growth on acetate.
+On the contrary, the reconstructed resource allocation profile seems particularly unstable at the beginning and the end of the experiment.
+While oscillations do occur after the upshift, these need to be taken with much care.
+The problem of reconstructing an on-off strategy is more challenging than we initially thought, for the simple reason that the expected signal is similar to the kind of artifacts a poorly calibrated regularization method would generate.
+Data about the pre-upshift and post-upshift steady state are crucial for the calibration of the method and, as explained in Section~\ref{sec:data_acquisition}, the experiment had to be interrupted before a steady state on glucose was attained.
+We extensively discuss this and other problems in Section~\ref{sec:chap3_discussion} and give directions for future improvements.
+
+Nevertheless, when not focusing on the individual cells but looking at the statistics of the entire data set, some interesting patterns emerge. 
+Fig.~\ref{fig:gene_activity_median} shows the median of the time-varying growth rate and resource allocation profile as well as the 25\%-75\% interquartile range. 
+The use of these statistics gives a more robust view on the population level of the response of the cells to a nutrient upshift. 
+When changing the carbon source from acetate to glucose, the growth rate increases to a value of around 0.011 min$^{-1}$, consistent with growth rates reported in the literature for the \textit{E. coli} strain used here \cite{Volkmer/Heinemann,Izard}, before decreasing when the first cells start to die (Fig.~\ref{fig:gene_activity_median}\textit{C}).
+In addition, the data show one period of an oscillation in the first 3~h after the upshift, conserved in each of the 25\%, 50\% and 75\% quartiles (Fig.~\ref{fig:gene_activity_median}\textit{B}).
+The heatmap in Fig~\ref{fig:gene_activity_heatmap} reveals that almost all of the normal cells show this oscillatory feature.
+Moreover, the first peak is seen to be even more pronounced on the level of the individual cells, reflecting the fact that in the different cells it occurs at different times after the upshift and is therefore dampened out at the population level.
+While the results of the microfluidics experiment presented here do not allow to confirm the occurrence of an on-off strategy for resource allocation after a nutrient upshift, the preliminary data are encouraging and prompt further investigation.
 
 \begin{figure}[p]
 \centering
 \includegraphics[scale=1]{./Fig/gene_activity}
 \caption{
-\textbf{Gene activity estimation based on the RFU/pixel measurements using Kalman smoothing.}
-\textit{(A-B)} Grey lines represent estimation of state of the system by the unscented Kalman smoothing procedure for the 45 normal cells.
-For readability, the solid red lines highlight the result for a particular cell, while black crosses in the top graph are the data points for this cell.
-The dashed grey line represents the switch time from acetate to glucose.
-The reconstruction for the RFU/pixel measurements and the gene activity $\gamma \alpha / \beta$ are presented in the (A) and (B), respectively.
-The prior parameters used for the algorithm are exactly the same than in Fig.~\ref{fig:synthetic_upshift} and are reported in Material and Methods~\ref{sec:meth_kalman}.
+\textbf{Estimation of the resource allocation profile using Kalman smoothing based on the fluorescence density measurements and the estimated growth rates from Fig.~\ref{fig:growth_rate_estimation}.}
+\textit{(A-B)} Gray lines represent the estimation of the fluorescence density (RFU/pixel) $F(\cdot)$ (in A) and the resource allocation profile $\gamma \alpha / \beta$ (in B) by the Kalman smoothing procedure for the 45 normal cells.
+The solid red curves highlight the result for one particular cell, , located at the bottom of the well labelled "X3Y2, W2", while black crosses in the top graph are the data points for this cell. [WHY THIS CELL AND NOT ONE OF THE CELLS YOU SENT US A WHILE AGO? THIS CELL HAS A PARTICULARLY IRREGULAR PROFILE...]
+The vertical dashed lines represent the time of the upshift from growth on acetate to growth on glucose.
+The prior values for the parameters of the smoothing algorithm are exactly the same as those used for Fig.~\ref{fig:synthetic_upshift} and are reported in the Material and Methods~\ref{sec:meth_kalman}.
 }
 \label{fig:gene_activity}
 \end{figure}
@@ -434,56 +415,66 @@ The prior parameters used for the algorithm are exactly the same than in Fig.~\r
 \centering
 \includegraphics[scale=1]{./Fig/gene_activity_median}
 \caption{
-\textbf{Distribution of the estimation results presented in Fig.~\ref{fig:gene_activity}.}
-Interestingly, while most oscillations in $\gamma \alpha / \beta$ are canceled out at the population level, the first one after the upshift is conserved.
-Each graph gives the 25\% (lowest gray line), 50\% (solid black line) and 75\% (highest gray line) quartiles, computed at each time step for the signals reconstructed in Fig.~\ref{fig:gene_activity}.
+\textbf{Robust statistics for the estimation results presented in Fig.~\ref{fig:gene_activity}.}
+Each graph shows the 25\% (lower gray curve), 50\% (solid black curve) and 75\% (upper gray curve) quartiles, computed at each time step for the signals reconstructed in Fig.~\ref{fig:gene_activity}.
 The gray area represents the interquartile range.
+Interestingly, while most oscillations in the resource allocation profile $\gamma \alpha (\cdot) / \beta$ cancel out at the population level, the first peak after the upshift is conserved.
 }
 \label{fig:gene_activity_median}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/}
+\caption{
+\textbf{Global overview of all estimated resource allocation profiles presented in Fig.~\ref{fig:gene_activity}.}
+The individual $\gamma \alpha (\cdot) / \beta$  curves have been normalized with respect to their maximum in the interval $[0, 400]$ and then ordered with respect to their maximum in the interval $[0, 100]$.
+
+}
+\label{fig:gene_activity_heatmap}
 \end{figure}
 
 \section{Discussion}
 \label{sec:chap3_discussion}
 
-As we showed in chapter~\ref{chap:theory}, adopting a dynamical perspective might prove useful to unveil and understand the regulatory strategies employed by microorganisms.
-The criteria of biomass optimization has proved useful to uncover and explain the steady-state empirical growth laws.
-Interestingly, when the same criteria are applied in growth transitions, they suggest that microorganisms should converge toward a bang-bang control of gene expression.
-For the control of ribosome synthesis, this would result into implementing an \textit{on-off} regulatory system, either only producing ribosomes, or not producing them at all, during the adaptation to the new growth medium.
-The widespread ppGpp system, known for its role in the control of ribosome synthesis, is theoretically able to implement such a regulatory system.
-But we lack experimental data to show that it does so, mostly because of the difficulties raised by working in growth transitions.
-Can we measure the ribosomal synthesis rate at the single-cell level during well-controlled growth transitions?
-Would it exhibit the \textit{on-off} strategy that was shown to be close to optimal in chapter~\ref{chap:theory}?
+As we showed in Chapter~\ref{chap:theory}, adopting a dynamical perspective might prove useful to unveil and understand the regulatory strategies employed by microorganisms.
+The criterion of biomass maximization has allowed to account for steady-state empirical growth laws.
+Interestingly, when the same criterion is applied to growth transitions, it predicts that microorganisms allocates their resources through bang-bang control of gene expression.
+For the control of ribosome synthesis, the implementation of this optimal control scheme results in an on-off strategy, where a bacterial cell is either producing only ribosomes or not producing them at all during the adaptation to a new growth medium.
+The ppGpp system, ubiquitous in bacteria and playing an important role in the control of ribosome synthesis in \textit{E. coli}, satisfies the requirements posed by the on-off strategy.
+However, we currently lack experimental data to show that it actually functions in this manner, among other things because of the difficulties to produce well-controlled growth transitions on the single-cell level in the laboratory.
+Can we set up appropriate experiments to measure the expression of ribosomes during a growth transitions?
+Will the bacterial cells exhibit the on-off strategy that was shown to be close to optimal in Chapter~\ref{chap:theory}?
 
-In this chapter, the above questions have been addressed by developing an experimental framework which allows the relative ribosome concentration to be estimated at the single-cell level in real time on \textit{E. coli}.
-Our main contribution consists into bringing together several experimental breakthroughs of the recent years.
-On one hand, inspired by the work of Bakshi \textit{et al}~\cite{bakshi_superresolution_2012}, we reconstructed a \textit{E. coli} strain displaying fluorescent, but still fully effective, ribosomes.
-In their paper, Bakshi \textit{et al} essentially used it to localize ribosomes in the cytoplasm through superresolution microscopy.
-While improving their design (see Material and Methods~\ref{sec:methods_strain}), we used it for the purpose of quantifying the ribosomal abundance.
-On the other hand, we used the mother machine~\cite{wang_robust_2010} developed by Wang \textit{et al} to observe this strain growing in continuous culture through real-time microscopy.
-This microfluidic device was originally developed to study long-term steady-state growth of \textit{E. coli}.
-Here, we used it to observe growth transitions in a well controlled framework, \textit{i.e.} from one steady-state growth to another steady-state growth.
-By changing the medium that was injected into the device, we were able to observe \textit{E. coli} transitioning from growth on acetate to growth on glucose.
-Overall, through the combination of fluorescent labeling of a core component of the gene expression machinery and the use of a microfluidic device, we opened the way to the experimental study of growth laws in a dynamical context.
+In this chapter, the above questions have been addressed by developing an experimental framework which allows the ribosome concentration to be quantified in individual \textit{E. coli} cells in real time.
+Our main contribution consists in bringing together several experimental techniques developed in recent years.
+First, inspired by the work of Bakshi \textit{et al.}~\cite{bakshi_superresolution_2012}, we constructed an \textit{E. coli} strain with fluorescent ribosomes.
+In their paper, Bakshi \textit{et al} essentially used this fluorescent marker to localize ribosomes in the cytoplasm through superresolution microscopy.
+While improving their design (Material and Methods~\ref{sec:methods_strain}), we used our strain for the purpose of quantifying ribosomal abundance in single cells.
+Second, we employed the mother machine developed by Wang \textit{et al.}~\cite{wang_robust_2010}, originally developed to study long-term steady-state growth of \textit{E. coli}, to observe individual \textit{E. coli} cells growing in continuous culture by means of time-lapse fluorescence microscopy.
+Here, the mother machine was used it to establish well-controlled growth transitions, \textit{i.e.} from steady-state growth in minimal medium with acetate to steady-state growth in minimal medium with glucose.
+By changing the medium source of the mother machine, we were able to observe how \textit{E. coli} cells adapt their growth rate and the expression of ribosomes.
+Overall, through the combination of fluorescent labeling of a core component of the gene expression machinery and the use of a microfluidic device, we have opened the way to experimentally study growth laws in a dynamical context.
 
-We applied this experimental set-up to the reconstruction of the resources allocation strategy employed by \textit{E. coli} during an environmental upshift.
-Obviously, the goal was to eventually observe the oscillations predicted in chapter~\ref{chap:theory}.
-We applied a signal processing algorithm known as Kalman smoothing and showed how it can be implemented to reconstruct the inner state of a cell from microscopy data.
-Similar to hidden markov chains, Kalman filtering and smoothing are powerful techniques allowing the reconstruction of hidden signals from noisy measurements, and have already numerous everyday applications, though not so much in biology.
-We showed in this chapter that the Bayesian logic behind Kalman smoothing can be exploited to inject in the growth rate reconstruction, a probabilistic prior that define the relation between the mother and its daughter cells.
-We also applied it for the reconstruction of $\alpha$, the abstract resource allocation parameter defined in chapter~\ref{chap:theory}.
-Our work on synthetic data showed that despite being challenged by the high stiffness of the signal, the algorithm was able to fully recover the oscillatory pattern that we expect to occur \textit{in vivo}.
-Unfortunately, its application on our dataset was not so successful: while oscillations can be reproduced, the signal is not strong enough to distinguish whether the oscillations are real or chimerical.
-We propose below several improvements that will certainly be addressed in future work.
+We applied this experimental set-up to the reconstruction of the resources allocation strategy employed by \textit{E. coli} during a nutrient upshift, with the aim to observe the bang-bang profile predicted in Chapter~\ref{chap:theory}.
+We developed a Kalman smoothing algorithm adapted to our question and showed how it can be implemented to reconstruct the internal state of a cell from time-lapse microscopy images.
+Similar to hidden Markov chains, Kalman filtering and smoothing are powerful techniques for the reconstruction of unobserved signals from noisy measurements, and have had numerous applications in a variety of domains, though less in biology than in other fields.
+We showed in this chapter that the Bayesian framework of Kalman smoothing can be exploited for growth rate reconstruction from a probabilistic prior defining the relation between mother and daughter cells.
+We also developed another varian of Kalman smoothing for the reconstruction of the resource allocation variable $\alpha (\cdot)$ that is at the heart of the models of Chapter~\ref{chap:theory}.
+Our work on synthetic data showed that, despite the challenge posed by the reconstruction of a discontinuous signal, the algorithm was capable of recovering an oscillatory pattern close to the expected on-off profile.
+Unfortunately, its application to the real data did not allow us an unambiguous conclusion to be drawn: while oscillations do occur, and a first peak between 0 and 120 min after the upshift is visiable in almost all of the cells, it turned out to be far from straightforward to distinguish a real oscillatory pattern from artifacts of the data analysis and signal reconstruction methods.
+Below we propose several improvements that will be addressed in future work.
 
-Several experimental problems dramatically impeded the analysis of the data.
-Sufficiently long steady-state measurements before and after the transition of interest are needed to provide a strong estimation of the intensity and the nature of the experimental noise.
-They are also critical to calibrate the parameters of the regularization method used in the signal reconstruction.
-Despite what was initially planned, we did not get long enough steady-state measurements far from the transition.
+Several experimental problems complicated the analysis of the data.
+Sufficiently long steady-state measurements before and after the transition of interest are needed to provide a reliable estimation of the intensity and the nature of the experimental noise.
+They are also critical to calibrate the parameters of the regularization method used for signal reconstruction.
+Despite what was initially planned, we did not completely reach a new steady state after the transition.
 Several causes are to blame.
 First, the random stall of the motorization along the Z-axis of the microscope, which do not allow overnight measurements and occurred during the slow growth on acetate in the presented experiment.
-Secondly, the massive death of bacteria starting after the transition on glucose.
+Second, the massive death of bacteria starting after the transition on glucose.
 Future work will focus on solving these issues.
 
+[I DID NOT TOUCH THE PARARAPH THAT FOLLOWS]
 The death of bacteria is particularly worrying.
 During the construction of this strain, most people in the lab experienced contamination by an aggressive bacteriophage.
 Unfortunately, the strain used in this study was not spared, and our frozen stocks were later tested positive for phage-induced lysis.
@@ -494,45 +485,35 @@ Phages are machines that are extremely well optimized to divert cell resources t
 That could dramatically perturb the cell regulation of resource allocation, and so the conclusions of this study.
 For this reason, future work will start by the reconstruction of a clean phage-free strain from scratch.
 
-The data analysis technique used is also largely optimizable.
-The results reported here are largely preliminary.
+It is also possible to optimize the image analysis techniques used in this study.
 We segmented the images using the most powerful and ubiquitous segmentation algorithm available: the human brain.
-In other word, we manually selected the pixels representing the poles of a single bacteria per well on the fluorescence images, and used this information to arbitrarily define a mask around the cell of interest.
-This is far from satisfying.
-Unfortunately, it seems that the first rule of image analysis is that every application is more or less unique.
+In other word, we manually selected the pixels representing the poles of a single bacteria per well on the fluorescence images, and used this information to arbitrarily define a rectangle around the cell of interest.
+While this is far from satisfying, it may turn out to be difficult to improve upon this, as it seems that the first rule of image analysis is that every application is more or less unique.
 Every algorithm has to make assumptions about the object it is trying to recognize.
-For bacteria imaging, it could be the curvature at the poles, the size of the pixels, the homogeneity of the background, the homogeneity of the inner fluorescence...
+For imaging of microbial cells, it could be the curvature at the poles, the size of the pixels, the homogeneity of the background, the homogeneity of intracellular fluorescence, ...
 While some parameters can be tweaked, some assumptions are always hard-coded in the algorithm and reflect the philosophy used to address the identification problem.
-Since this preliminary analysis was made, we started a collaboration with the authors of FluoBacTracker~[citation, ask Hugues if a publication exist] that focuses on adapting their software to our set-up in a near future.
-It should provide a robust, automatic way to identify and track the cells, enhancing reproducibility of the analysis.
+Since the preliminary analysis reported here was completed, we started a collaboration with the authors of FluoBacTracker~[fluobactracker.inrialpes.fr] that focuses on adapting their software to our set-up in a near future.
+It should provide a robust, automated way to identify and track the cells, enhancing the reproducibility of the analysis and increasing the number of cells available fro computing population statistics.
 
-The signal reconstruction algorithm that was later applied to these data is also largely optimizable.
-Like we described in the previous section, the algorithm is an instance of Bayesian reconstruction.
-Several parameters describing the expected input define a probabilistic prior.
-Preliminary, we chose these parameters through trials and errors, or by calibrating the system on synthetic data when it was possible.
-A better technique would be to choose these parameters by \textit{generalized cross-validation} (GCV)~\cite{golub_generalized_1979}, a procedure that maximizes the predictive power of the reconstructed signal.
-More generally, parameters could be optimized on a subset of the cells, then tested against the remaining subset.
-It would ensure that the algorithm does not overfit the behavior of a few cells.
-While the initial conditions did not seem to play a huge role in the final shape of the signal, the choice of the smoothing factor $\theta^2$ appeared to be critical, and would strongly benefit from such an implementation.
+The Kalman filtering algorithm that was later applied to these data can also be improved in many respects.
+As described in the Results section, the algorithm is an instance of Bayesian inference and several parameters describing the expected input define a probabilistic prior.
+In the work reported here, we chose these parameters through trial and error, or by calibrating the system on synthetic data whenever possible.
+A better technique would be to choose these parameters by \textit{generalized cross-validation} (GCV)~\cite{golub_generalized_1979}, a procedure maximizing the predictive power of the reconstructed signal by reducing overfitting.
+The use of GCV in our framework amounts to choosing the parameters of the Kalman smoother by optimizing predictions on a subset of the cells, then testing the performance on the remaining cells.
+While the initial conditions did not seem to play a huge role in the final shape of the signal, the choice of the smoothing factor $\theta^2$ is critical and may strongly benefit from the proposed GCV extension.
 
-We also did not fully exploited the power of Kalman smoothing.
-Smoothing methods have trouble estimating abrupt transitions, and our implementation has the same issue.
-As we can see in Fig.~\ref{fig:synthetic_upshift}, the reconstructed signal for $\gamma \alpha / \beta$ increases before the shift actually happen.
-This artifact also appears for the real data (Fig.~\ref{fig:gene_activity_median}), were the signal start to change dozens of minutes before the shift.
-We know exactly when bacteria start to be in contact with the new medium, but this information is never used as prior for the reconstruction.
-Using this information is however possible with Kalman smoothing.
-By implementing time-varying parameters for the regularization method, we can strongly penalize the variations of the reconstructed signal at steady state (when nothing is expected to happen) and release the constraints as soon as the medium is changed (when we expect most of the stuff to happen).
-Such a method has already been successfully applied to correctly estimate changes in growth rate during sugar exhaustion~[citation in preparation Eugenio].
+The Kalman smoothing algorithm itself can also be further improved, notably by addressing the difficulty of estimating abrupt transitions.
+As can be seen in Fig.~\ref{fig:synthetic_upshift}, the resource allocation profile $\gamma \alpha (\cdot) / \beta$ reconstructed from the synthetic data increases before the nutrient shift and this artifact also occurs when using the measured fluorescent densities (Fig.~\ref{fig:gene_activity_median}), the change in resource allocation preceding the nutrient upshift by several dozens of minutes.
+While we know exactly when the change of medium occurs, this information is currently not used as a prior for the reconstruction.
+The Kalman smoother can be improved by implementing time-varying parameters for the regularization method, so as to strongly penalize variations of the reconstructed signal at steady state and to release this constraint following the change in medium.
 
-We are convinced the improvements cited above would allow to robustly conclude on the existence of the on-off strategy, and are not excessively hard to implement.
-Other more challenging developments are planed and would probably benefit to the framework as a whole.
-For instance, we did not discuss the autofluorescence of the bacteria in this chapter.
-It was assumed negligible, mostly because its proper estimation in a dynamical, single-cell context is complicated (see Material and Methods~\ref{sec:cell_segmentation}).
-Nevertheless, a simple trick could solve the issue: merging wild-type and fluorescent bacteria when inseminating the device.
-The goal would be to have a significant part of the channels occupied by wild-type cells, while still being able to observe in parallel the strain of interest.
-That way, we could have an exact estimation of the level of autofluorescence of the cells, and robustly correct it for the channels of interest.
-Note that this would reduce the amount of exploitable channels, hence would probably require several adjustments. 
+The improvements of the approach proposed in this section, which would help in reaching a conclusion about the existence of the on-off strategy, are not very complicated to realize.
+Another improvement consists in taking into account the autofluorescence of the bacteria, which we assumed to be negligible, mostly because its proper estimation in a dynamical, single-cell context is complicated (Material and Methods~\ref{sec:cell_segmentation}).
+A simple trick, however, could help in quantifying autofluorescence: mixing wild-type bacteria with bacteria having fluorescent ribosomes when loading the device.
+This would allow some channels to be occupied by wild-type cells, in addition to the  channels in which the strain of interest is growing, and thus obtain a reliable estimation of the level of autofluorescence of the cells.
+Notice though that the propertion between the two types of bacteria need to be carefully adjusted in order to preserve enough cells for the estimation of the resource allocation profile. 
 
+[I WOULD SKIP THIS FINAL PARAGRAPH OR REDUCE IT TO ONE PHRASE AND ADD IT TO THE DISCUSSION IN THE PARARAPH STARTING WITH "The Kalman smoothing algorithm..."]
 Something is also displeasing in the current implement of the Kalman smoothing method.
 As described in the main text, the Kalman smoothing procedure not only use previous measuments to estimate the state of the system, but also the next available measurements.
 This is a feature we totally lose in the estimation of the growth rate, because the discontinuities introduced by the cell divisions impede a global analysis of the time series.
