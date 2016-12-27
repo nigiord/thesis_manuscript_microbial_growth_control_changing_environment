@@ -1296,6 +1296,12 @@ Tr{\'e}lat E, Zuazua E.
 \newblock \href {http://dx.doi.org/10.1016/j.jde.2014.09.005}
   {doi:~10.1016/j.jde.2014.09.005}.
 
+\bibitem{hui_quantitative_2015}
+Hui S, Silverman JM, Chen SS, Erickson DW, Basan M, Wang J, et~al.
+\newblock Quantitative Proteomic Analysis Reveals a Simple Strategy of Global
+  Resource Allocation in Bacteria.
+\newblock Mol Syst Biol. 2015 Feb;11(1):784.
+
 \bibitem{zulkower_robust_2015}
 Zulkower V, Page M, Ropers D, Geiselmann J, de~Jong H.
 \newblock Robust Reconstruction of Gene Expression Profiles from Reporter Gene
@@ -1303,6 +1309,55 @@ Zulkower V, Page M, Ropers D, Geiselmann J, de~Jong H.
 \newblock Bioinformatics. 2015 Jun;31(12):i71--i79.
 \newblock \href {http://dx.doi.org/10.1093/bioinformatics/btv246}
   {doi:~10.1093/bioinformatics/btv246}.
+
+\bibitem{gefen_direct_2014}
+Gefen O, Fridman O, Ronin I, Balaban NQ.
+\newblock Direct Observation of Single Stationary-Phase Bacteria Reveals a
+  Surprisingly Long Period of Constant Protein Production Activity.
+\newblock Proc Natl Acad Sci U S A. 2014 Jan;111(1):556--561.
+\newblock \href {http://dx.doi.org/10.1073/pnas.1314114111}
+  {doi:~10.1073/pnas.1314114111}.
+
+\bibitem{klein_tlm-tracker:_2012}
+Klein J, Leupold S, Biegler I, Biedendieck R, M{\"u}nch R, Jahn D.
+\newblock {{TLM}}-{{Tracker}}: Software for Cell Segmentation, Tracking and
+  Lineage Analysis in Time-Lapse Microscopy Movies.
+\newblock Bioinformatics. 2012 Jan;28(17):2276--2277.
+\newblock \href {http://dx.doi.org/10.1093/bioinformatics/bts424}
+  {doi:~10.1093/bioinformatics/bts424}.
+
+\bibitem{wang_image_2010}
+Wang Q, Niemi J, Tan CM, You L, West M.
+\newblock Image Segmentation and Dynamic Lineage Analysis in Single-Cell
+  Fluorescence Microscopy.
+\newblock Cytometry. 2010 Jan;77A(1):101--110.
+\newblock \href {http://dx.doi.org/10.1002/cyto.a.20812}
+  {doi:~10.1002/cyto.a.20812}.
+
+\bibitem{young_measuring_2012}
+Young JW, Locke JCW, Altinok A, Rosenfeld N, Bacarian T, Swain PS, et~al.
+\newblock Measuring Single-Cell Gene Expression Dynamics in Bacteria Using
+  Fluorescence Time-Lapse Microscopy.
+\newblock Nat Protocols. 2012 Jan;7(1):80--88.
+\newblock \href {http://dx.doi.org/10.1038/nprot.2011.432}
+  {doi:~10.1038/nprot.2011.432}.
+
+\bibitem{paintdakhi_oufti:_2016}
+Paintdakhi A, Parry B, Campos M, Irnov I, Elf J, Surovtsev I, et~al.
+\newblock Oufti: An Integrated Software Package for High-Accuracy,
+  High-Throughput Quantitative Microscopy Analysis: {{Oufti}}: Image Analysis
+  Software.
+\newblock Mol Microbiol. 2016 Feb;99(4):767--777.
+\newblock \href {http://dx.doi.org/10.1111/mmi.13264} {doi:~10.1111/mmi.13264}.
+
+\bibitem{sachs_image-based_2016}
+Sachs CC, Gr{\"u}nberger A, Helfrich S, Probst C, Wiechert W, Kohlheyer D,
+  et~al.
+\newblock Image-{{Based Single Cell Profiling}}: {{High}}-{{Throughput
+  Processing}} of {{Mother Machine Experiments}}.
+\newblock PLOS ONE. 2016 Sep;11(9):e0163453.
+\newblock \href {http://dx.doi.org/10.1371/journal.pone.0163453}
+  {doi:~10.1371/journal.pone.0163453}.
 
 \bibitem{kalman_new_1960}
 Kalman RE.
@@ -1316,6 +1371,28 @@ Julier SJ, Uhlmann JK.
 \newblock New Extension of the {{Kalman}} Filter to Nonlinear Systems.
 \newblock vol. 3068; 1997. p. 182--193.
 \newblock \href {http://dx.doi.org/10.1117/12.280797} {doi:~10.1117/12.280797}.
+
+\bibitem{tikhonov1977solutions}
+Tikhonov AN, Arsenin VY.
+\newblock Solutions of Ill-Posed Problems. 1977;.
+
+\bibitem{tikhonov1963solution}
+Tikhonov A.
+\newblock Solution of Incorrectly Formulated Problems and the Regularization
+  Method.
+\newblock In: Soviet {{Math}}. {{Dokl}}.. vol.~5; 1963. p. 1035--1038.
+
+\bibitem{de_nicolao_nonparametric_1997}
+De~Nicolao G, Sparacino G, Cobelli C.
+\newblock Nonparametric Input Estimation in Physiological Systems:
+  {{Problems}}, Methods, and Case Studies.
+\newblock Automatica. 1997 May;33(5):851--870.
+\newblock \href {http://dx.doi.org/10.1016/S0005-1098(96)00254-3}
+  {doi:~10.1016/S0005-1098(96)00254-3}.
+
+\bibitem{fluobactracker}
+{{FluoBacTracker}};.
+\newblock Available from: \url{https://fluobactracker.inrialpes.fr/index.php}.
 
 \bibitem{golub_generalized_1979}
 Golub GH, Heath M, Wahba G.
