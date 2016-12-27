@@ -6,13 +6,20 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated field_info (elt_size=4) to 11800 items from 5000.
+Reallocated field_info (elt_size=4) to 12174 items from 5000.
 Database file #1: references.bib
 Warning--empty author and editor in fox_how_2016
 Warning--missing publisher in fox_how_2016
 Warning--empty author and editor in mcgill_calm_2013
 Warning--missing publisher in mcgill_calm_2013
 Warning--empty booktitle in julier_new_1997
+`journal' is a missing field, not a string, for entry tikhonov1977solutions
+while executing---line 1874 of file plos2015.bst
+Warning--empty journal in tikhonov1977solutions
+Warning--empty author in fluobactracker
+Warning--empty author and editor in fluobactracker
+Warning--missing publisher in fluobactracker
+Warning--there's a month but no year in fluobactracker
 Warning--empty author and editor in goto_open_2005
 Warning--missing publisher in goto_open_2005
 Warning--empty author in skimage_cross-correlation
@@ -21,45 +28,45 @@ Warning--missing publisher in skimage_cross-correlation
 Warning--there's a month but no year in skimage_cross-correlation
 Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
-You've used 200 entries,
+You've used 211 entries,
             3170 wiz_defined-function locations,
-            1893 strings with 46756 characters,
-and the built_in function-call counts, 338433 in all, are:
-= -- 42460
-> -- 2639
-< -- 12
-+ -- 1761
-- -- 658
-* -- 28245
-:= -- 36481
-add.period$ -- 947
-call.type$ -- 200
-change.case$ -- 25
+            1949 strings with 49289 characters,
+and the built_in function-call counts, 361160 in all, are:
+= -- 45254
+> -- 2836
+< -- 14
++ -- 1870
+- -- 707
+* -- 30210
+:= -- 38913
+add.period$ -- 994
+call.type$ -- 211
+change.case$ -- 27
 chr.to.int$ -- 18
-cite$ -- 213
-duplicate$ -- 27694
-empty$ -- 32240
-format.name$ -- 823
-if$ -- 79269
+cite$ -- 229
+duplicate$ -- 29393
+empty$ -- 34425
+format.name$ -- 881
+if$ -- 84562
 int.to.chr$ -- 0
-int.to.str$ -- 200
-missing$ -- 2180
-newline$ -- 1172
-num.names$ -- 205
-pop$ -- 3643
+int.to.str$ -- 211
+missing$ -- 2311
+newline$ -- 1232
+num.names$ -- 215
+pop$ -- 3865
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3628
+skip$ -- 3870
 stack$ -- 0
-substring$ -- 63571
-swap$ -- 5457
-text.length$ -- 6
+substring$ -- 68175
+swap$ -- 5783
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 13
-while$ -- 1939
-width$ -- 203
-write$ -- 2530
-(There were 13 warnings)
+warning$ -- 18
+while$ -- 2053
+width$ -- 214
+write$ -- 2660
+(There was 1 error message)
