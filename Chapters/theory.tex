@@ -113,7 +113,7 @@ We will denote the rates at which the macroreactions occur by $V_R$ and $V_M$ [g
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=0.9]{./Fig/Fig1.eps}
+\includegraphics[scale=0.7]{./Fig/Fig1}
 \caption{
 \textbf{Self-replicator model of bacterial growth.}
 External substrates $S$ enter the cell and are transformed into precursors $P$ through the action of the metabolic machinery $M$.
@@ -204,7 +204,7 @@ The same result, using a similar model, was obtained by Scott \textit{et al.}~\c
 The self-replicator model is simple enough to derive an algebraic expression for computing $\alpha^*_{opt}$ and the corresponding maximal growth rate $\mu^*_{opt}$ (\textit{Methods} and \ref{S1_Text}), which will simplify analysis of the system in later sections.
 
 \begin{figure}[tb]
-\includegraphics[width=\textwidth]{./Fig/Fig2.eps}
+\includegraphics[width=\textwidth]{./Fig/Fig2}
 \caption{\textbf{Analysis of self-replicator model of bacterial growth.}
 \textit{A:}~Phase-plane analysis of the self-replicator model of Eqs~\ref{eq:pdef} and \ref{eq:rdef}.
 The nullclines for $p$ and $r$ are shown as solid and dashed curves, respectively.
@@ -223,7 +223,7 @@ As can be seen, the model is able to account for the observed quasi-linear relat
 Moreover, for realistic values of $k_R$ and $e_M$, a good quantitative fit is obtained (\textit{Methods} and \ref{S1_Table}).
 
 \begin{figure}[p]
-\includegraphics[width=\textwidth]{./Fig/Fig3.eps}
+\includegraphics[width=\textwidth]{./Fig/Fig3}
 \caption{
 \textbf{Self-replicator model accounts for bacterial growth laws.}
 \textit{A:}~Predicted quasi-linear relation between the maximal growth rate $\mu^{*}_{opt}$ and the corresponding optimal resource allocation $\alpha^*_{opt}$, for different values of $e_M$ (different colors).
@@ -318,7 +318,7 @@ The switching curve divides the phase plane into two regions, such that $\alpha(
 
 \begin{figure}[tb]
 \centering
-\includegraphics[width=\textwidth]{./Fig/Fig4.eps}
+\includegraphics[width=\textwidth]{./Fig/Fig4}
 \caption{
 \textbf{Optimal control of the self-replicator during a nutrient upshift.}
 \textit{A:}~Optimal trajectory in the phase plane for the nondimensionalized model of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim}, with streamlines. The optimal trajectory is shown as a solid, red curve.
@@ -376,7 +376,7 @@ Third, this steady state must equal the optimal steady state for that environmen
 
 \begin{figure}[tb]
 \centering
-\includegraphics[width=\textwidth]{./Fig/Fig5.eps}
+\includegraphics[width=\textwidth]{./Fig/Fig5}
 \caption{
 \textbf{Alternative strategies for controlling the self-replicator of bacterial growth.}
 The feedback control strategies, shown in red and superposed on the self-replicator of Fig.~\ref{fig:self_replicator}, exploit information on system variables and the environment to adjust the value of $\alpha$, and thus the relative allocation of resources to the metabolic machinery and gene expression machinery.
@@ -419,7 +419,7 @@ This causes a transiently suboptimal growth rate, leading to lower biomass accum
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=1]{./Fig/Fig6.eps}
+\includegraphics[scale=1]{./Fig/Fig6}
 \caption{
 \textbf{Comparison of the performance of the nutrient-only and precursor-only strategies after a nutrient upshift.}
 \textit{A:}~Trajectory in the phase plane for the nutrient-only strategy (green curve).
@@ -508,7 +508,7 @@ These results show that a strategy exploiting complete information on the intern
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=1]{./Fig/Fig7.eps}
+\includegraphics[scale=1]{./Fig/Fig7}
 \caption{
 \textbf{Comparison of the performance of the precursor-only and the on-off strategies after a nutrient upshift.}
 \textit{A:}~Trajectory in the phase plane for the on-off strategy (yellow curve).
@@ -555,7 +555,7 @@ Fundamentally, the analysis suggests that the ppGpp system is a likely candidate
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=1]{./Fig/Fig8.eps}
+\includegraphics[scale=1]{./Fig/Fig8}
 \caption{
 \textbf{ppGpp regulation implements an on-off control strategy of resource allocation.}
 \textit{A:}~Response surface of the on-off control strategy, defined by $\alpha = h(\hat{p},\hat{r})$ in Eq.~\ref{eq:stratswitch}.
@@ -786,12 +786,6 @@ The approximation causes $\alpha$ to take intermediate values (instead of 0 or 1
 For numerical simulations of the ODE system, we used the CVODE solver~\cite{cohen_cvode_1996} from SUNDIALS 2.6.2~\cite{hindmarsh_sundials_2005}.
 
 \clearpage
-
-%%%%%% FOR MANUAL REF%%%%%
-\makeatletter
-\newcommand{\manuallabel}[2]{\def\@currentlabel{#2}\label{#1}}
-\makeatother
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Supporting information for Chapter~2}
 
@@ -1122,7 +1116,7 @@ This steady state coincides with the intersection of $\hat{r}=g(\hat{p})$ and th
 
 \begin{figure}[tb]
 \centering
-\includegraphics[width=0.8\textwidth]{Fig/Fig_sliding.eps}
+\includegraphics[width=0.8\textwidth]{Fig/Fig_sliding}
 \caption
 {
 \textbf{Local stability of the on-off strategy.}
@@ -1348,8 +1342,8 @@ We conclude that if the optimal trajectory has a concatenation of bang arcs, the
 
 \begin{figure}[tb]
 \centering
-\includegraphics[height=4cm]{Fig/adj2ab.eps} 
-\includegraphics[height=4cm]{Fig/adj2.eps} 
+\includegraphics[height=4cm]{Fig/adj2ab} 
+\includegraphics[height=4cm]{Fig/adj2} 
 \caption{\textbf{Transitions between regions in the phase-plane for the adjoint system.} A switch occurs when a trajectory crosses the $\lambda_p$-axis. Left: abnormal case. An extremal trajectory cannot have more than two switches. Right: normal case. $(\lambda_p^s,0)$ corresponds to the singular arc.  After the first switch, an extremal trajectory cannot have two consecutive switches if it stays in the region $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}<\hat{p}_{opt}^*\}$ or $\{(\hat{p},\hat{r})\in \Omega \mid \hat{p}>\hat{p}_{opt}^*\}$.}
 \label{fig-adj}                               
 \end{figure} 
@@ -1488,7 +1482,7 @@ In Fig.~\ref{fig:ppGppsurface} in the main text, we took $K_I = 10$~$\mu$M.
 
 \begin{figure}[tb]~Text
 \centering
-\includegraphics[width=0.7\textwidth]{./Fig/FigS4-1.eps}
+\includegraphics[width=0.7\textwidth]{./Fig/FigS4-1}
 \caption[ppGpp concentration is a function of total ribosome and amino acid concentrations.]
 {
 {\bf ppGpp concentration is a function of total ribosome and amino acid concentrations.}\newline
@@ -1610,7 +1604,7 @@ The parameter values in the model were obtained by fitting Eq.~\ref{eq:alpha_mu_
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{./Fig/plot_strategies.eps}
+\includegraphics[width=\textwidth]{./Fig/plot_strategies}
 \caption{
 \noindent\textit{A:} Nutrient-only strategy: $\alpha = f(E_M)$.
 The dashed, black curve is the (unique) strategy driving the system exactly to the optimal steady state, that is, the state in which growth occurs at the maximal rate supported by $E_M$.
