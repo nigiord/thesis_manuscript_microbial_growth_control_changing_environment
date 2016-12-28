@@ -103,7 +103,7 @@ The complete experimental plan is summarized in Fig.~\ref{fig:experiment_schema}
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=1]{./Fig/experiment_schema.eps}
+\includegraphics[scale=1]{./Fig/experiment_schema}
 \caption{
 \textbf{Schematic outline of the upshift experiment.}
 The goal is to measure the fluorescence and length/area of \textit{E. coli} \textit{rpsB-gfp} cells during an acetate-to-glucose upshift.
@@ -749,22 +749,150 @@ Possible improvements are discussed in section~\ref{sec:chap3_discussion}.
 
 \section{Supporting Information for Chapter~3}
 
-(Plan not complete)
+\subsection{S5 Text -- Strain construction}
+\manuallabel{S5_Text}{S5~Text}
 
-\subsection{Strain construction}
+\subsubsection{Exhaustive list of the primers used...}
 
-Primers used for gibson assembly
+\paragraph{...for the \textit{gfpmut2} amplification.}
 
-\subsection{Strain validation using growth in microplate reader}
+\begin{itemize}
+\item[] \includegraphics[scale=1]{Fig/gfpmut2_L.png} \seqsplit{GTTCTCAGGATCTGGCTTCCCAGGCGGAAGAAAGCTTCGTAGAAGCTGAGCAGGAAAGGCGACAGGAGAGTAAAGGAGAAGAACTTTTCACTG}
+(Length: 93)
+\item[] \includegraphics[scale=1]{Fig/gfpmut2_R.png} \seqsplit{TGATGTTCTGGGGAATATAATTATTTGTATAGTTCATCCATGCC} (Length: 44)
+\end{itemize}
+
+\textbf{Rem.} The 50 first bases of the forward primer are supposed to anneal with the end of the \textit{rpsB} gene.
+The 20 last bases of the reverse primer are supposed to anneal with the ccdB-end of the \textit{kan-P\textsubscript{BAD}-ccdB} cassette.
+
+
+\paragraph{...for the \textit{mCherry} amplification}
+
+\begin{itemize}
+\item[] \includegraphics[scale=1]{Fig/mCherry_L.png} \seqsplit{GTTCTCAGGATCTGGCTTCCCAGGCGGAAGAAAGCTTCGTAGAAGCTGAGCAGGAAAGGCGACAGGAGACTAGCAAAAGATCCAAGGG}
+(Length: 88)
+\item[] \includegraphics[scale=1]{Fig/mCherry_R.png} \seqsplit{TGATGTTCTGGGGAATATAATTATTTGTACAGCTCATCCATG} (Length: 42)
+\end{itemize}
+
+\textbf{Rem.} The 50 first bases of the forward primer are supposed to anneal with the end of the \textit{rpsB} gene.
+The 20 last bases of the reverse primer are supposed to anneal with the ccdB-end of the \textit{kan-P\textsubscript{BAD}-ccdB} cassette.
+
+\paragraph{...for the cassette amplification}
+
+\begin{itemize}
+\item[] \includegraphics[scale=1]{Fig/cassette_L} \seqsplit{TGGATGAACTATACAAATAATTATATTCCCCAGAACATCAGG}
+(Length: 42, used to assemble with gfp)
+\item[] \includegraphics[scale=1]{Fig/cassette_L} \seqsplit{TGGATGAGCTGTACAAATAATTATATTCCCCAGAACATCAG}
+(Length: 41, used to assemble with mCherry)
+\item[] \includegraphics[scale=1]{Fig/cassette_R} \seqsplit{GAGCTTGCCGCCTTTCTGCAACTCGAACTATTTTGGGGGAGTTATCAAGCTTAGAAGAACTCGTCAAGAAGG}
+(Length: 72, used for both)
+\end{itemize}
+
+\textbf{Rem.} The 20 first bases of the first forward primer are supposed to anneal with the end of the \textit{gfpmut2} gene.
+The 20 first bases of the second forward primer are supposed to anneal with the end of the \textit{mCherry} gene.
+The 50 last bases of the reverse primer are supposed to anneal with the region after \textit{rpsB} on the \textit{E.~coli} BW25113 chromosome.
+
+
+\paragraph{...for the whole insert amplification}
+
+\begin{itemize}
+\item[] \includegraphics[scale=1]{Fig/overlap_L} \seqsplit{GTTCTCAGGATCTGGCTTCCCAGG}
+(Length: 24)
+\item[] \includegraphics[scale=1]{Fig/overlap_R} \seqsplit{GAGCTTGCCGCCTTTCTGCA} (Length: 20)
+\end{itemize}
+
+\paragraph{...for the cassette elimination}
+
+\begin{itemize}
+\item[\textbf{\textit{rpsB-gfpmut2}}] \seqsplit{TTGTAACAGCTGCTGGGATTACACATGGCATGGATGAACTATACAAATAAGCTTGATAACTCCCCCAAAATAGTTCGAGTTGCAGAAAGGCGGCAAGCTC}
+(Length: 100)
+\item[\textbf{\textit{rpsB-mCherry}}] \seqsplit{GCGCGGAGGGTCGTCATTCTACCGGTGGCATGGATGAGCTGTACAAATAAGCTTGATAACTCCCCCAAAATAGTTCGAGTTGCAGAAAGGCGGCAAGCTC}
+(Length: 100)
+\end{itemize}
+
+
+\paragraph{...for the sequencing of the final strain}
+
+\begin{itemize}
+\item[] \includegraphics[scale=1]{Fig/sequencing_L} \seqsplit{CGTCTGAAAGACCTGGAAAC}
+(Length: 20)
+\item[] \includegraphics[scale=1]{Fig/sequencing_R} \seqsplit{AAACGTGTACTACCTGGTCTATAAGG} (Length: 26)
+\end{itemize}
+
+\subsubsection{Full sequence of the inserts}
+
+The following pages contain the full sequences of the \textit{gfpmut2-cassette} and \textit{mCherry-cassette} constructions, inserted on the \textit{E.~coli} BW25113 chromosome at the region after the \textit{rpsB} gene.
+The primers annealing positions are indicated using the same color code as in the description of the primers above.
+The primers reported in the original publication of Bakshi \textit{et al}~\cite{bakshi_superresolution_2012} are indicated for information.
+
+\includepdf[pages={1-7}]{./Fig/gfp-mut2-cassette-after-rpsB-gene-sequence.pdf}
+\includepdf[pages={1-6}]{./Fig/mcherry-cassette-after-rpsB-gene-sequence.pdf}
+
+\subsubsection{Sequencing of the final strains}
+
+The strains were constructed using the protocol described in Material and Methods~\ref{sec:methods_strain}.
+Regions at the end of the \textit{rpsB} gene were amplified, and sent for sequencing.
+Alignments of the results showed they exhibit the expected sequences.
+The raw results of the sequencing are reproduced below.
+
+\paragraph{Final sequences of the \textit{rpsB-gfpmut2} strain (region after \textit{rpsB})}
+
+\begin{small}
+\begin{itemize}
+\item[] \includegraphics[scale=1]{Fig/sequencing_L} \seqsplit{AGAAAGAAGCGCTGTATGCGCACTCGTGAGCTGGAGAAACTGGAAAACAGCCTGGGCGGTATCAAAGACATGGGCGGTCTGCCGGACGCTCTGTTTGTAATCGATGCTGACCACGAACACATTGCTATCAAAGAAGCAAACAACCTGGGTATTCCGGTATTTGCTATCGTTGATACCAACTCTGATCCGGACGGTGTTGACTTCGTTATCCCGGGTAACGACGACGCAATCCGTGCTGTGACCCTGTACCTGGGCGCTGTTGCTGCAACCGTACGTGAAGGCCGTTCTCAGGATCTGGCTTCCCAGGCGGAAGAAAGCTTCGTAGAAGCTGAGCAGGAAAGGCGACAGGAGCGTAAAGGAGAAGAACTTTTCACTGGAGTTGTTCCAATTCTTGTTGAATTAGATGGTGATGTTAATGGGCACAAATTTTCTGTCAGTGGAGAGGGTGAAGGTGATGCAACATA}
+\item[] \includegraphics[scale=1]{Fig/sequencing_R} \seqsplit{CGCCGCAGATGCGTTATCTTCGCTCGCTCATCCCGGTCACTTACTGATGTAAGCTCCCGGGAATTCTCGAGCTTGCCGCCTTTCTGCAACTCGAACTATTTTGGGGGAGTTATCAAGCTTATTTGTATAGTTCATCCATGCCATGTGTAATCCCAGCAGCTGTTACAAACTCAAGAAGGACCATGTGGTCTCTCTTTTCGTTGGGATCTTTCGAAAGGGCAGATTGTGTGGACAGGTAATGGTTGTCTGGTAAAAGGACAGGGCCATCGCCAATTGGAGTATTTTGTTGATAATGGTCTGCTAGTTGAACGCTTCCATCTTCAATGTTGTGTCTAATTTTGAAGTTAACTTTGATTCCATTCTTTTGTTTGTCTGCCATGATGTATACATTGTGTGAGTTATAGTTGTATTCCAATTTGTGTCCAAGAATGTTTCCATCTTCTTTAAAATCAATACCTTTTAACTCGATTCTATTAACAAGGGTATCACCTTCAAACTTGACTTCAGCACGTGTCTTGTAGTTCCCGTCATCTTTGAAAAATATAGTTCTTTCCTGTACATAAACCTTCGGGCATGGCACTCTTGAAAAAGTCATGCTGTTTCATATGATCTGGGTATCTCGCAAAGCATTGAAGACCATACGCGAAAAGTAGTGACAAGTGTTGGCCATGGAACAGGTAGTTTTCCAGTAGTGCAAATAAATTTAAGGGTAAAGTTTTCCGTATGTTGCATCACCTTCACCCTCTCCACTGACAGAAAAATTTGTGCCCATTTAACATCACCATCTAATTCAACAAGAATTGGAAACAACTCCAGTGAAAGT} 
+\end{itemize}
+\end{small}
+
+\newpage
+\paragraph{Final sequences of the \textit{rpsB-mCherry} strain (region after \textit{rpsB})}
+
+\begin{small}
+\begin{itemize}
+\item[] \includegraphics[scale=1]{Fig/sequencing_L}
+\seqsplit{TTTCGACAGCTGACCAAGAAGAAGCGCTGATGCGCACTCGTGAGCTGGAGAAACTGGAAA
+ACAGCCTGGGCGGTATCAAAGACATGGGCGGTCTGCCGGACGCTCTGTTTGTAATCGATG
+CTGACCACGAACACATTGCTATCAAAGAAGCAAACAACCTGGGTATTCCGGTATTTGCTA
+TCGTTGATACCAACTCTGATCCGGACGGTGTTGACTTCGTTATCCCGGGTAACGACGACG
+CAATCCGTGCTGTGACCCTGTACCTGGGCGCTGTTGCTGCAACCGTACGTGAAGGCCGTT
+CTCAGGATCTGGCTTCCCAGGCGGAAGAAAGCTTCGTAGAAGCTGAGCAGGAAAGGCGAC
+AGGAGACTAGCAAAAGATCCAAGGGCGAGGAGGATAACATGGCTATCATTAAAGAGTTCA
+TGCGCTTCAAAGTTCACATGGAGGGTTCTGTTAACGGTCACGAGTTCGAGATCGAAGGCG
+AAGGCGAGGGCCGTCCGTATGAAGGCACCCAGACCGCCAAACTGAAAGTGACTAAAGGCG
+GCCCGCTGCCTTTTGCGTGGGACATCCTGAGCCCGCAATTTATGTACGGTTCTAAAGCGT
+ATGTTAAACACCCAGCGGATATCCCGGACTATCTGAAGCTGTCTTTTCCGGAAGGTTTCA
+AGTGGGAACGCGTAATGAATTTTGAAGATGGTGGTGTCGTGACCGTCACTCAGGACTCCT
+CCCTGCAAGATGGCGAGTTCATCTATAAAGTTAAACTGCGTGGTACTAATTTTCCATCTG
+ATGGCCCGGTGATGCAGAAAAAGACGATGGGTTGGGAGGCGTCTAGCGAACGCATGTATC
+CGGAAGATGGTGCGCTGAAAGGCGAAATTAAACAGCGCCTGAAACTGAAAGATGGCGG}
+\item[] \includegraphics[scale=1]{Fig/sequencing_R}
+\seqsplit{TTCGCGCCGCAGATGCGTTATCTTCGCTCGCTCATCCCGGTCACTTACTGATGTAAGCTC
+CCGGGAATTCTCGAGCTTGCCGCCTTTCTGCAACTCGAACTATTTTGGGGGAGTTATCAA
+GCTTATTTGTACAGCTCATCCATGCCACCGGTAGAATGACGACCCTCCGCGCGCTCATAT
+TGCTCTACGATCGTATAATCTTCATTATGAGAGGTGATGTCCAGTTTAATATTCACATTG
+TACGCGCCAGGCAGCTGCACAGGTTTCTTGGCTTTGTACGTGGTTTTCACTTCAGCGTCA
+TAATGGCCGCCATCTTTCAGTTTCAGGCGCTGTTTAATTTCGCCTTTCAGCGCACCATCT
+TCCGGATACATGCGTTCGCTAGACGCCTCCCAACCCATCGTCTTTTTCTGCATCACCGGG
+CCATCAGATGGAAAATTAGTACCACGCAGTTTAACTTTATAGATGAACTCGCCATCTTGC
+AGGGAGGAGTCCTGAGTGACGGTCACGACACCACCATCTTCAAAATTCATTACGCGTTCC
+CACTTGAAACCTTCCGGAAAAGACAGCTTCAGATAGTCCGGGATATCCGCTGGGTGTTTA
+ACATACGCTTTAGAACCGTACATAAATTGCGGGCTCAGGATGTCCCACGCAAAAGGCAGC
+GGGCCGCCTTTAGTCACTTTCAGTTTGGCGGTCTGGGTGCCTTCATACGGACGGCCCTCG
+CCTTCGCCTTCGATCTCGAACTCGTGACCGTTAACAGAACCCTCCATGTGAACTTTGAAG
+CGCATGAACTCTTTAATGATAGCCATGTTATCCTCCTCGCCCTTGGAT} 
+\end{itemize}
+\end{small}
+
+\subsection{S6 Text -- Strain validation}
+\manuallabel{S6_Text}{S6~Text}
 
 (signal-to-noise ratio, growth rate not hampered in microplate reader)
 Difference between mCherry and GFP (mCherry not good because so and so, GFP was chosen)
 
-\subsection{Microscopy analysis}
+\subsection{S7 Text -- Microscopy analysis}
+\manuallabel{S7_Text}{S7~Text}
 
-Show the complete analysis for 5 cells.
-
-\subsubsection*{Category of cells}
+\subsubsection{Category of cells}
 
 \begin{figure}[p]
 \centering
@@ -779,3 +907,11 @@ Show the complete analysis for 5 cells.
 \caption{Subtypes of cells, median. Caption to write.}
 \label{fig:subcat_median}
 \end{figure}
+
+\subsubsection{Noise estimation}
+
+Blabla
+
+\subsubsection{Complete analysis for 5 cells}
+
+blabla

@@ -1,0 +1,38 @@
+\documentclass[a4paper]{book}
+
+\usepackage[a4paper]{meta-donnees}
+
+\begin{document}
+
+
+%\Sethpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture horizontalement (valeur par défaut est -5.5mm)
+%\Setvpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture verticalement (valeur par défaut est -15.5mm)
+
+%\Universite{}    %%optionnel : à décommenter et à renseigenr si vous voulez changer le non d'université
+%\Grade{}         %%optionnel : à décommenter et à renseigenr si vous voulez changer le grade
+\Specialite{mati\`ere}
+\Arrete{25 mai 2016} % ATTENTION, A VERIFIER CHAQUE ANNEE
+\Auteur{pr\'enom nom}
+\Directeur{le Directeur}
+%\CoDirecteur{}
+\Laboratoire{Labo1}
+\EcoleDoctorale{nom de l'\'ecole}
+\Titre{Le titre des travaux}
+%\Soustitre{}%%optionnel : à décommenter et à renseigenr si présence d'un sous-titre de thèse
+\Depot{\today}
+
+% Commande pour création de nouvelles catégories dans le jury:
+%\UGTNewJuryCategory{...NomDeLaCategorie...}{...Definition...}
+% Exemple \UGTNewJuryCategory{UGTFamille}{Membre de la famille} que nous ajoutons dans la commande \Jury ci-dessous sous la forme \UGTFamille{Jean Rousseau}{(...titre_et_affiliation...s'il_y_en_a...)}
+
+\Jury{%\UGTRole{civilité, prénom et nom}{titre}{affiliation}
+  \UGTPresidente{Mme, Chose Machine}{Prof.}{Paris}
+  \UGTRapporteur{M, Bidule Truc}{Prof.}{Lyon}
+  \UGTRapporteur{M, Machin Machin}{DR}{Laboratoire quelconque}
+  \UGTExaminatrice{Mme, l'examinatrice}{Ma\^itre de conf'}{Labo2}
+  \UGTDirecteur{M, le Directeur}{DR}{Labo1}
+}
+
+\MakeUGthesePDG    %% très important pour générer la couvérture de thèse
+
+\end{document}

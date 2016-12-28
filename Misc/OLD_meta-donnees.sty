@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                meta-donnees style                  %%
-%%    pour produire la Page de Garde des theses       %%
-%%      de l'Universite De Grenoble                   %%
+%%                meta-donnees style                                 %%
+%%    pour produire la Page de Garde des theses        %%
+%%      de la Communaute Universite Grenoble Alpes   %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%      Fichier encodé au format ISO-8859-16          %%
+%%      Fichier encode au format ISO-8859-16          %%
 \NeedsTeXFormat{LaTeX2e}[2003/12/01]
 \ProvidesPackage{meta-donnees}[2011/02/25 v0.01]
 
@@ -17,10 +17,10 @@
 
 \long\def\Universite#1{\gdef\@Universite{#1}}
 \def\@Universite{\includegraphics[width=10cm,clip]{logo_first_ligne}}
-\long\def\EcoleDoctorale#1{\gdef\@EcoleDoctorale{et de l'\'ecole doctorale {\bfseries#1}}}
+\long\def\EcoleDoctorale#1{\gdef\@EcoleDoctorale{et de {\bfseries#1}}}
 \def\@EcoleDoctorale{}     
 \long\def\Grade#1{\gdef\@Grade{\uppercase{#1}}}
-\def\@Grade{\uppercase{Docteur de l'Universit\'e Grenoble Alpes}}       
+\def\@Grade{\uppercase{Docteur de la Communaut\'e Universit\'e Grenoble Alpes}}       
 \long\def\Specialite#1{\gdef\@Specialite{#1}}
 \def\@Specialite{}
 \long\def\Arrete#1{\gdef\@Arrete{#1}}
@@ -42,15 +42,15 @@
 \long\def\Jury#1{\gdef\@Jury{#1}}
 \def\@Jury{}        
 
-\def\UGTPresident#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Pr\'esident\\[0.5mm]}
-\def\UGTPresidente#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Pr\'esidente\\[0.5mm]}
-\def\UGTRapporteur#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Rapporteur\\[0.5mm]}
-\def\UGTExaminateur#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Examinateur\\[0.5mm]}
-\def\UGTExaminatrice#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Examinatrice\\[0.5mm]}
-\def\UGTInvitee#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Invit\'ee\\[0.5mm]}
-\def\UGTInvite#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Invit\'e\\[0.5mm]}
-\def\UGTDirecteur#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Directeur de th\`ese\\[0.5mm]}
-\def\UGTCoDirecteur#1#2#3{{\bfseries\fontsize{12}{14}\selectfont#1} & #2 & #3 & Co-Directeur de th\`ese\\[0.5mm]}
+\def\UGTPresident#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Pr\'esident\\[0.5mm]}
+\def\UGTPresidente#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Pr\'esidente\\[0.5mm]}
+\def\UGTRapporteur#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Rapporteur\\[0.5mm]}
+\def\UGTExaminateur#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Examinateur\\[0.5mm]}
+\def\UGTExaminatrice#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Examinatrice\\[0.5mm]}
+\def\UGTInvitee#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Invit\'ee\\[0.5mm]}
+\def\UGTInvite#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Invit\'e\\[0.5mm]}
+\def\UGTDirecteur#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Directeur de th\`ese\\[0.5mm]}
+\def\UGTCoDirecteur#1#2{{\bfseries\fontsize{12}{14}\selectfont#1}\\ #2, Co-Directeur de th\`ese\\[0.5mm]}
 
 \newcommand{\UGTNewJuryCategory}[2]{%
   \csname#1\endcsname={}%
@@ -68,7 +68,7 @@
 \newcommand{\@ThesisInOrderToGet}{Pour obtenir le grade de}
 \newcommand\ThesisInOrderToGet[1]{\renewcommand{\@ThesisInOrderToGet}{{#1}}}
 
-\newcommand{\@ThesisMinisterialDecree}{Arr\^et\'e minist\'eriel du}
+\newcommand{\@ThesisMinisterialDecree}{Arr\^et\'e minist\'eriel~:}
 \newcommand\ThesisMinisterialDecree[1]{\renewcommand{\@ThesisMinisterialDecree}{{#1}}}
 
 \newcommand{\@ThesisMinisterial}{\@ThesisMinisterialDecree\ \@Arrete}
@@ -77,7 +77,7 @@
 \newcommand{\@ThesisDiploma}{{\@Grade}}
 \newcommand\ThesisDiploma[1]{\renewcommand{\@ThesisDiploma}{{#1}}}
 
-\newcommand{\@ThesisPreparedIn}{Pr\'epar\'ee au sein de }
+\newcommand{\@ThesisPreparedIn}{pr\'epar\'ee au sein }
 \newcommand\ThesisPreparedIn[1]{\renewcommand{\@ThesisPreparedIn}{{#1}}}
 
 \newcommand{\@ThesisLaboratory}{{\@Laboratoire}}
@@ -119,10 +119,9 @@
 \newcommand{\@ThesisJuryTitle}{{devant le jury compos\'e de~:}}
 \newcommand\ThesisJuryTitle[1]{\renewcommand{\@ThesisJuryTitle}{{#1}}}
 
-%\newcommand{\@ThesisJury}{\begin{tabular}{@{}p{12.5cm}@{}}\@Jury\end{tabular}}
-\newcommand{\@ThesisJury}{\begin{tabular}{llll}\@Jury\end{tabular}}
+\newcommand{\@ThesisJury}{\begin{tabular}{@{}p{12.5cm}@{}}\@Jury\end{tabular}}
 
-\newcommand{\@UniversityLogo}{\includegraphics[clip,width=1.5cm]{logo_Univ_Grenoble}}
+\newcommand{\@UniversityLogo}{\includegraphics[clip]{logo_Univ_Grenoble}}
 \newcommand\UniversityLogo[1]{\renewcommand{\@UniversityLogo}{{#1}}}
 
 \newcommand\@UGthesepage@height{28cm}
@@ -162,10 +161,8 @@
             \newpage}
 
 \newcommand\@Thesis@titlep@ge{\fboxsep=0pt
-%\fbox{\colorbox[gray]{.82}{\parbox[t][28cm][b]{5.7cm}{\hfil\@UniversityLogo\hfil\par\vskip5mm}}\hskip5mm\parbox[t][28cm]{12.8cm}{
-\fbox{\colorbox[gray]{.82}{\parbox[t][28cm][b]{1.5cm}{\hfil\@UniversityLogo\hfil\par\vskip5mm}}\hskip5mm\parbox[t][28cm]{16.8cm}{
-%\fbox{\parbox[t][28cm][b]{1.5cm}{\hfil\hfil\par\vskip5mm}\hskip5mm\parbox[t][28cm]{15.8cm}{
-       \vskip6mm plus1fil
+\fbox{\colorbox[gray]{.82}{\parbox[t][28cm][b]{5.7cm}{\hfil\@UniversityLogo\hfil\par\vskip5mm}}\hskip5mm\parbox[t][28cm]{12.8cm}{
+       \vskip3mm plus1fil
              \hfill\@ThesisHead
        \vfill
              {\bfseries\fontsize{16}{18}\selectfont\@ThesisType}
@@ -173,18 +170,10 @@
              \@ThesisInOrderToGet
        \vskip3mm plus1fil
              {\bfseries\fontsize{16}{18}\selectfont\@ThesisDiploma}
-       \vskip2mm plus1fil
+       \vskip1mm plus1fil
              \@ThesisSpeciality
        \vskip2mm plus1fil
              {\fontsize{9}{11}\selectfont\@ThesisMinisterial}
-       \vskip5mm plus1fil
-             \@ThesisPreparedIn\ 
-             {\bfseries\@ThesisLaboratory}\\
-             \@ThesisEcoleDoctorale
-       \vskip15mm plus2fil
-             {\bfseries\fontsize{22}{24}\begin{center}\selectfont\@ThesisTitle\end{center}}
-       \vskip1mm plus1fil
-             {\fontsize{18}{20}\selectfont\@ThesisSubTitle}
        \vskip10mm plus2fil
              {\fontsize{10}{12}\selectfont\@ThesisPresentedBy}
        \vskip2mm plus1fil
@@ -193,6 +182,14 @@
              \@ThesisDirectedBy\ 
              {\bfseries\@ThesisSupervisor}\\
              \@ThesisCoSupervisor
+       \vskip5mm plus1fil
+             \@ThesisPreparedIn\ 
+             {\bfseries\@ThesisLaboratory}\\
+             \@ThesisEcoleDoctorale
+       \vskip15mm plus2fil      
+             {\bfseries\fontsize{22}{24}\selectfont\@ThesisTitle}
+       \vskip1mm plus1fil
+             {\fontsize{18}{20}\selectfont\@ThesisSubTitle}
        \vskip10mm plus2fil
              \@ThesisDefendedThe\ {\bfseries\@ThesisPresentedThe},\\
              \@ThesisJuryTitle
