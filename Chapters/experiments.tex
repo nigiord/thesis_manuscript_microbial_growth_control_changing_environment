@@ -148,17 +148,17 @@ Although we are well aware that the above procedure can be improved on many coun
 \includegraphics[scale=1]{./Fig/data_acquisition}
 \caption{
 \textbf{Results of data acquisition.}
-We imaged 6 fields (X1Y1, X2Y1, X3Y1, X1Y2, X2Y2, X3Y2) each containing 15 wells (W0 to W14) for $\sim$40 hours.
+We imaged 6 fields (X[1-3]Y[1-2]) each containing 15 wells (W[0-14]) for $\sim$40~h.
 From the 90 wells, 68 were suitable for further analysis (the others being empty, out of frame for some period of time, or plugged).
-For all wells, data points are missing in the interval between -720 and -150 min because the camera was out of focus.
-We stopped the analysis at 550 min, when about 3/4 of the bacteria were still growing, before the entire population died within a few hours for an unknown reason.
-The image labelled "Raw image" is the last image analyzed for the highlighted well.
+For all wells, data points are missing in the interval between [-720,-150] because the camera was out of focus.
+We stopped the analysis at 550~min, when about 3/4 of the bacteria were still growing, before the entire population died within a few hours for an unknown reason.
+The image labeled "Raw image" is the last image analyzed for the highlighted well.
 The bacterium on the left of this image was manually segmented by selecting two pixels at the poles on the fluorescence images (red cross).
 A 6-pixel-wide rectangular mask was computed for each image, resulting in the "Segmented image" on the right.
-Fluorescence intensities are expressed in Relative Fluorescence Units (RFU) on a 16-bit image (values from 0 to 65335) and were corrected for camera background, but not autofluorescence background (Material and Methods~\ref{sec:cell_segmentation} and Discussion~\ref{sec:chap3_discussion}).
+Fluorescence intensities are expressed in Relative Fluorescence Units (RFU) on a 16-bit image and were corrected for camera background, but not autofluorescence background (Material and Methods~\ref{sec:cell_segmentation} and Discussion~\ref{sec:chap3_discussion}).
 The fluorescence intensity of the cell, expressed in units RFU/pixel/cell, was computed by dividing the sum of the fluorescence intensities of the pixels in the rectangle by the total number of pixels in the rectangle.
 The cell length is the distance in pixels between the two poles (red line).
-The thick lines in green and black highlight the time-varying length and fluorescence density for the cell visible in the top images, labelled "X3Y2, W2".
+The thick lines in green and black highlight the time-varying length and fluorescence density for the cell visible in the top images, labeled "X3Y2, W2".
 The vertical dashed lines represent the time of the upshift from growth on acetate to growth on glucose.
 }
 \label{fig:data_acquisition}
@@ -235,6 +235,7 @@ While it is feasible to simultaneously reconstruct the signals $\mu (\cdot)$ and
 We therefore decided to proceed in two steps: first reconstruct $\mu(\cdot)$ from the measurements $L(\cdot)$, than inject this result into the reconstruction of $\gamma \alpha(\cdot) / \beta$ from the measurements $F(\cdot)$.
 
 \subsection{Estimation of growth rate and resource allocation profile}
+\label{sec:estim_gr_ra}
 
 \subsubsection*{Growth rate estimation}
 
@@ -320,9 +321,8 @@ Contrary to what was visible in the plot with the fluorescence data, a steady st
 When considering the individual cells, the results are more difficult to interpret.
 A significant part of the cells stopped growing before the end of the experiment, probably due to the fact that all cells die from an unknown cause around the end of the experiment. 
 As a consequence, the analysis has been limited to a time-interval after the upshift in which roughly 3/4 of the cells are still growing.
-Interestingly, 1/6 of the cells exhibit growth rate oscillations, with a 1~h-long pause around 200 min after the upshift, followed by a recovery of the growth rate until the end of the experiment (see Supporting Information XX).
-In order to focus the analysis, we decided to classify the cells in three categories: dying cells (N=12) for which the growth rate drops to zero after the upshift, pausing cells (N=11) for which the growth rate drops to zero after the upshift and then recovers, and finally so-called normal cells (N=45) which do not exhibit any of the above behaviors.
-More information about each category is available in Supporting Information XX.
+Interestingly, 1/6 of the cells exhibit growth rate oscillations, with a 1~h-long pause around 200 min after the upshift, followed by a recovery of the growth rate until the end of the experiment (see~\ref{S2_Figure}  and \ref{S3_Figure}).
+In order to focus the analysis, we decided to classify the cells in three categories: dying cells (N=12) for which the growth rate drops to zero after the upshift, pausing cells (N=11) for which the growth rate drops to zero after the upshift and then recovers, and finally so-called normal cells (N=45) which do not exhibit any of the above behaviors (see~\ref{S2_Figure} and \ref{S3_Figure})
 In what follows, we focus on the 45 normal cells (Fig.~\ref{fig:growth_rate_estimation_median}) which show a globally coherent behavior in the time window considered here.
 
 \begin{figure}[tb]
@@ -362,7 +362,7 @@ Furthermore, we do not have to deal with discontinuities in the measurements, si
 Given the analysis in Chapter~\ref{chap:theory}, we expect $u(\cdot)$ to exhibit bang-bang variations after the upshift.
 This is a discontinuous signal that could be complicated to reconstruct for certain choices of the parameters of the regularization method.
 In order to parametrize the Kalman smoothing algorithm, we generated synthetic data by simulating the model of Chapter~\ref{chap:theory}.
-We estimated the noise characteristics of $F$ using the RFU/pixel measurements from Fig.~\ref{fig:data_acquisition} (Supporting Information XX) and chose parameters that allow the model to reproduce the observed growth rates and fluorescence densities.
+We estimated the noise characteristics of $F$ using the RFU/pixel measurements from Fig.~\ref{fig:data_acquisition} (\ref{S7_Text}) and chose parameters that allow the model to reproduce the observed growth rates and fluorescence densities.
 We simulated an upshift from acetate to glucose and tried to estimate $\gamma \alpha(\cdot) / \beta$ from these synthetic data, selecting the \textit{prior} in the Kalman smoothing procedure by trial and error.
 This approach may not have been optimal for our purpose and possible improvements are discussed in Section~\ref{sec:chap3_discussion}.
 The results along with the \textit{prior} used are reported in Fig.~\ref{fig:synthetic_upshift}.
@@ -372,20 +372,20 @@ In what follows, we use the same \textit{prior} of the Kalman smoothing procedur
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=0.8]{./Fig/synthetic_upshift}
+\includegraphics[scale=1]{./Fig/synthetic_upshift}
 \caption{
 \textbf{Performance of the Kalman smoothing procedure on synthetic data simulating an acetate-glucose upshift.}
-\textit{(A)}~Synthetic data simulating an upshift from minimal medium with acetate to minimal medium with glucose, with and without additive white noise, as well as the results obtained by Kalman smoothing.
+\textit{(A)}~Synthetic data simulating an upshift from acetate to glucose, with and without additive white noise, as well as the results obtained by Kalman smoothing.
 The synthetic data were generated by simulating the model presented in Eqs~\ref{eq:pdef}-\ref{eq:rdef} with the on-off regulatory strategy (Eq.~\ref{eq:stratswitch} and Fig.~\ref{fig:onoffresults}).
 The model parameters used for the simulation are $e_{M,\texttt{Ace}} = 0.18$~h\textsuperscript{-1}, $e_{M,\texttt{Glu}} = 0.9$~h\textsuperscript{-1}, $k_R = 3.6$~h\textsuperscript{-1}, $\beta = 0.003$~L~g\textsuperscript{-1}, $K_R = 1$~g~L\textsuperscript{-1}.
-The predicted $r(t)$ profile was multiplied by a factor $\gamma = 0.02$~L~g\textsuperscript{-1}~RFU\textsuperscript{-1} in order to obtain the corresponding fluorescence intensity profile $F$ (dashed black curve).
-The noise level was estimated from the data (Supporting Information XX) and added to $F$.
+The predicted $r(t)$ profile was multiplied by a factor $\gamma = 0.02$~RFU~L~g\textsuperscript{-1} in order to obtain the corresponding fluorescence intensity profile $F$ (dashed black curve).
+The noise level was estimated from the data (\ref{S7_Text}) and added to $F$.
 The choice of the parameters of the Kalman smoothing procedure is discussed in the Material and Methods~\ref{sec:meth_kalman}.
 \textit{(B)}~Estimation of the resource allocation profile $\gamma \alpha / \beta$ based on the data in \textit{(A)}.
 Following Chapter~\ref{chap:theory}, $\alpha (t)$ displays a bang-bang-singular profile during the upshift (dashed black curve).
 While the Kalman smoother is not able to capture the discontinuous variations in $\gamma \alpha / \beta$, it qualitatively reproduces the input quite well (red solid curve).
 \textit{(C)}~The predicted growth rate during the upshift experiment.
-This information is used as an input in the smoothing procedure, since it is supposed to have been independently estimated from the measurements $\left\{L(t_0), L(t_1), ..., L(t_{N-1}) \right\}$.
+This information is used as an input in the smoothing procedure, since it is supposed to have been independently estimated from the measurements $\left\{L(t_0), ..., L(t_{N-1}) \right\}$.
 }
 \label{fig:synthetic_upshift}
 \end{figure}
@@ -434,10 +434,10 @@ Interestingly, while most oscillations in the resource allocation profile $\gamm
 
 \begin{figure}[tb]
 \centering
-%\includegraphics[scale=1]{./Fig/}
+\includegraphics[scale=1]{./Fig/heatmap}
 \caption{
 \textbf{Global overview of all estimated resource allocation profiles presented in Fig.~\ref{fig:gene_activity}.}
-The individual $\gamma \alpha (\cdot) / \beta$  curves have been normalized with respect to their maximum in the interval $[0, 400]$ and then ordered with respect to their maximum in the interval $[0, 100]$.
+The individual $\gamma \alpha (\cdot) / \beta$  curves have been normalized with respect to their maximum in the interval $[0, 400]$ and then ordered with respect to their maximum in the interval $[0, 120]$.
 }
 \label{fig:gene_activity_heatmap}
 \end{figure}
@@ -819,7 +819,7 @@ The 50 last bases of the reverse primer are supposed to anneal with the region a
 \item[] \includegraphics[scale=1]{Fig/sequencing_R} \seqsplit{AAACGTGTACTACCTGGTCTATAAGG} (Length: 26)
 \end{itemize}
 
-\subsubsection{Full sequence of the inserts}
+\subsubsection{Full annotated sequences of the inserts}
 
 The following pages contain the full sequences of the \textit{gfpmut2-cassette} and \textit{mCherry-cassette} constructions, inserted on the \textit{E.~coli} BW25113 chromosome at the region after the \textit{rpsB} gene.
 The primers annealing positions are indicated using the same color code as in the description of the primers above.
@@ -832,7 +832,7 @@ The primers reported in the original publication of Bakshi \textit{et al}~\cite{
 
 The strains were constructed using the protocol described in Material and Methods~\ref{sec:methods_strain}.
 Regions at the end of the \textit{rpsB} gene were amplified, and sent for sequencing.
-Alignments of the results showed they exhibit the expected sequences.
+Alignments of the results showed they exhibit the expected sequences (except for a couple of single-base mutations).
 The raw results of the sequencing are reproduced below.
 
 \paragraph{Final sequences of the \textit{rpsB-gfpmut2} strain (region after \textit{rpsB})}
@@ -883,35 +883,195 @@ CGCATGAACTCTTTAATGATAGCCATGTTATCCTCCTCGCCCTTGGAT}
 \end{itemize}
 \end{small}
 
+\clearpage
 \subsection{S6 Text -- Strain validation}
 \manuallabel{S6_Text}{S6~Text}
 
 (signal-to-noise ratio, growth rate not hampered in microplate reader)
 Difference between mCherry and GFP (mCherry not good because so and so, GFP was chosen)
 
-\subsection{S7 Text -- Microscopy analysis}
+\clearpage
+\subsection{S7 Text -- Noise estimation in the microscopy experiment}
 \manuallabel{S7_Text}{S7~Text}
 
-\subsubsection{Category of cells}
+We estimated the noise in the RFU/pixel/cell by using the data points just before upshift (Fig.~\ref{fig:noise_poi}).
+Since they have been growing for 20~h on acetate in the microfluidic device, bacteria are assumed in balanced growth in this region of $\sim$2~hours (roughly 23-24 points depending on the well of interest).
+For this reason, ribosome concentration, and so fluorescence concentration, are expected constant.
+Fig.~\ref{fig:noise_poi} represents the distribution of points in this region for a particular cell, that can be approximated by a Gaussian distribution.
 
 \begin{figure}[p]
 \centering
+\includegraphics[scale=1]{./Fig/noise_poi}
+\caption{
+\textbf{Point of interest for the noise estimation.}
+\textit{(Top graph)} RFU/pixel/cell data points for the cell at the bottom of the well labeled X3Y2,W2.
+Noise estimation was performed on the points just before the upshift (red points), were the bacteria is assumed to grow at steady state.
+\textit{(Bottom graph)} Cumulative density function (CDF, in red) and probability density function (CDF, in gray) of the points highlighted in red on the top graph.
+They are visually compared with CDF (solid green line) and PDF (dashed green line) of a Gaussian fit with mean 548.88 and standard deviation 17.316.
+}
+\label{fig:noise_poi}
+\end{figure}
+
+Interestingly, as can be seen in Fig.~\ref{fig:noise_distrib_mean_std}, the mean and standard deviation of the distribution vary from cell to cell in a slightly correlated manner (Pearson R\textsuperscript{2}: $0.3213$, p-value: $4.923\cdot10^{-5}$).
+We did not investigate if this heterogeneity between cells is the result of true biological variations or a bias due to the microfluidic device.
+By looking at the points of Fig.~\ref{fig:noise_distrib_mean_std}, there are however no strong correlation of the mean and standard deviation with the acquisition field (XY), or the position of the well on the image (W).
+
+\begin{figure}[tb]
+\centering
+\includegraphics[scale=1]{./Fig/noise_distrib_mean_std}
+\caption{
+\textbf{Distribution of the means and standard deviations in the region of interest for the normal cells.}
+The empirical mean and standard deviation were evaluated in the region before the upshift (red points on Fig.~\ref{fig:noise_poi}) for each of the 45 normal cells.
+They appear to be slightly correlated (Pearson R\textsuperscript{2}: $0.3213$, p-value: $4.923\cdot10^{-5}$) which could indicate a multiplicative instead of an additive noise.
+}
+\label{fig:noise_distrib_mean_std}
+\end{figure}
+
+Noise characteristics were computed by normalizing and aggregating data for the 45 normal cells presented in Fig.~\ref{fig:noise_distrib_mean_std}.
+Two scenarii were considered.
+First, the noise model can be considered additive, which means we have the measurement model presented in Section~\ref{sec:estim_gr_ra}:
+\begin{equation}
+F(t_k) = \gamma r (t_k) + \eta_k,\\
+\end{equation}
+were $F(t_k)$ is the fluorescence measured at the time step $t_k$, $r (t_k)$ is the true ribosomal concentration at this time step, $\gamma$ is an unknown factor, and $\eta_k$ is the measurement noise.
+In this scenario, for a time independent ribosome concentration $r$ (steady state), the ribosome concentration is constant and equal to its mean on the interval of interest (noted $m_k(\cdot)$).
+Given that
+\begin{equation}
+m_k (F) = m_k (\gamma r) + m_k(\eta_k) = \gamma m_k (r),\\
+\end{equation}
+the noise residues are given by
+\begin{equation}
+\eta_k = F(t_k) - m_k (F). \label{eq:noise_add}
+\end{equation}
+In other words, we can normalize the data points of each cell by removing their mean in order to aggregate the noise residues and get an estimation of the noise level (Fig.~\ref{fig:noise_estim_add_mul}, top panel).
+
+Secondly, the noise model can be considered multiplicative.
+The noise model is than different than presented in Section~\ref{sec:estim_gr_ra}, and can be re-written:
+\begin{equation}
+F(t_k) = \gamma r (t_k) \cdot (1 + \lambda_k),
+\end{equation}
+were $\gamma r (t_k) \cdot \lambda_k$ is the measurement noise, proportional to the value measured.
+In that scenario, with the same notations as above, the noise $\lambda_k$ is given by
+\begin{equation}
+\lambda_k = \frac{F(t_k)}{m_k (F)} - 1, \label{eq:noise_mul}
+\end{equation}
+which means we can normalize data points from different cells by dividing by the mean and removing 1 (Fig.~\ref{fig:noise_estim_add_mul}, bottom panel).
+
+Both models were considered and are represented in Fig.~\ref{fig:noise_estim_add_mul}.
+Despite the correlation identified in Fig.~\ref{fig:noise_distrib_mean_std}, the means of the residues in both models are very close to zero, and the distributions are well approximated by a Gaussian distribution.
+For this reason, we decided in the main analysis to stick with an additive noise, the main reason being that the implementation used for the Kalman smoothing procedure are faster and more stable with an additive noise model.
+We thus assumed an additive white Gaussian noise with mean 0 and standard deviation 28.29 for the simulation of the synthetic data and the signal reconstruction through the Kalman smoothing procedure.
+As discussed in Section~\ref{sec:chap3_discussion}, the only way to decisively choose a noise model over the other would have been to obtain two different steady-state growths for the each cell.
+Unfortunately, the presented time series were not long enough to obtain a new steady state on glucose, something that will be corrected in future instances of the experiment.
+
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/noise_estim_add_mul}
+\caption{
+\textbf{Distribution of the noise residues after normalization and aggregation for the 45 normal cells.}
+Two noise models were considered for the normalization: either the temporal mean $m_k (\cdot)$ was removed from the measurements independently for each cell (additive noise model in Eq.~\ref{eq:noise_add}), or $1$ was removed from the ratio of the measurements with the temporal mean $m_k (\cdot)$ (multiplicative noise model in Eq.~\ref{eq:noise_mul}).
+For the additive noise model, the fitted Gaussian distribution as a mean of $1.256\cdot 10^{-15}$ and a standard deviation of 28.29.
+For the multiplicative noise model, the fitted Gaussian distribution as a mean of $2.666\cdot 10^{-18}$ and a standard deviation of 0.05383.
+}
+\label{fig:noise_estim_add_mul}
+\end{figure}
+
+\clearpage
+\subsection{S8 Text -- Examples of complete analysis for 5 normal cells}
+\manuallabel{S8_Text}{S8~Text}
+
+To help the reader get a better idea on the analysis, we display below the complete reconstructions for 5 cells.
+In Figs~\ref{fig:cell1}-\ref{fig:cell5}, the image on the left is the last image analyzed for the corresponding well.
+The bacteria either at the top or the bottom (depending on the orientation in the device) was manually segmented by selecting two pixels at the poles on the fluorescence images (red cross).
+A 6-pixel-wide rectangular mask was computed for each image, resulting in the masked image on the right.
+In each of the graphs, the black and green points represents data points, while the red solid lines are the results of the signal reconstruction \textit{via} the Kalman smoothing procedure, the parameters of which are described in Material and Methods~\ref{sec:meth_kalman} and Figs~\ref{fig:growth_rate_estimation} and \ref{fig:gene_activity}.
+Specific comments on each cell are given in the caption of Figs~\ref{fig:cell1}-\ref{fig:cell5}.
+
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/cell1}
+\caption{
+\textbf{Complete analysis for the cell located at the bottom of the well labelled "X1Y1, W11".}
+(Figure description available in the introduction of \ref{S8_Text}.)\newline
+Growth rate and resource allocation are particularly unstable at the beginning of the experiment, but seems to have stabilized before the upshift.
+Oscillations in the RFU/pixel/cell signal are clearly visible, which results in oscillations in the resource allocation signal reconstruction, even though the smoothing factor seems a little too high for this particular cell.
+}
+\label{fig:cell1}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/cell2}
+\caption{
+\textbf{Complete analysis for the cell located at the bottom of the well labelled "X2Y1, W7".}
+(Figure description available in the introduction of \ref{S8_Text}.)\newline
+Here, the resource is unstable at the beginning of the experiment despite the apparent regularity of the RFU/pixel/cell.
+This could indicate a smoothing factor that is too low for this particular cell.
+}
+\label{fig:cell2}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/cell3}
+\caption{
+\textbf{Complete analysis for the cell located at the bottom of the well labelled "X3Y2, W5".}
+(Figure description available in the introduction of \ref{S8_Text}.)\newline
+We see for this cell that the reconstruction of the growth rate on the acetate medium (before 0) is affected by the huge gap in the acquisition, the increase before -150~min clearly being an artifact.
+However, because the Kalman smoothing procedure we used allows for flexibility between the mother and the daughter cell, we quickly recover a more realistic growth rate before the upshift.
+Despite an instability at the beginning of the experiment, the resource allocation reconstruction exhibits a remarkable stability during growth on the acetate medium, followed by oscillations after the upshift on glucose (also visible directly on the RFU/pixel/cell data).
+}
+\label{fig:cell3}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/cell4}
+\caption{
+\textbf{Complete analysis for the cell located at the bottom of the well labelled "X2Y2, W3".}
+(Figure description available in the introduction of \ref{S8_Text}.)\newline
+The reconstruction on this cell is a good instance of what we aimed to obtain: the growth rate is stable on acetate, than quickly increases after the upshift on glucose.
+The resource allocation is stable on a acetate (indicating a steady state) than starts to oscillate after the upshift on glucose.
+}
+\label{fig:cell4}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/cell5}
+\caption{
+\textbf{Complete analysis for the cell located at the bottom of the well labelled "X1Y2, W6".}
+(Figure description available in the introduction of \ref{S8_Text}.)\newline
+The results on this cell are particularly terrible: we do not seem to get a good steady state on acetate since the reconstructed resource allocation appears either negative or oscillating.
+The oscillations after the upshift are thus very hard to interpret.
+}
+\label{fig:cell5}
+\end{figure}
+
+\clearpage
+\subsection{S2 Figure -- Cell categories identified in the microscopy analysis}
+\manuallabel{S2_Figure}{S2~Fig}
+
+\begin{figure}[h]
+\centering
 \includegraphics[scale=1]{./Fig/subcat_cells}
-\caption{Subtypes of cells. Caption to write. Cutting the x axis might be a good idea because a third of the x-axis of each graph are "missing data".}
+\caption{
+\textbf{Cell categories identified in the microscopy analysis.}
+As stated in Section~\ref{sec:estim_gr_ra}, the reconstruction of the growth rate for the 68 available cells motivated their classification in three categories: the dying cells (lowest graphs) stop growing, pausing cells (middle graph) present growth rate oscillations, and normal cells (highest graph) does not present any of the above}
 \label{fig:subcat_cells}
 \end{figure}
 
-\begin{figure}[p]
+\clearpage
+\subsection{S3 Figure -- Robust statistics for the cell categories}
+\manuallabel{S3_Figure}{S3~Fig}
+
+\begin{figure}[h]
 \centering
 \includegraphics[scale=1]{./Fig/subcat_median}
-\caption{Subtypes of cells, median. Caption to write.}
+\caption{
+\textbf{Robust statistics for the cell categories identified in the microscopy analysis.}
+Each graph shows the 25\% (lower gray curve), 50\% (solid black curve) and 75\% (upper gray curve) quartiles, computed at each time step for the growth rate presented in~\ref{S2_Figure}.
+The gray area represents the interquartile range.
+}
 \label{fig:subcat_median}
 \end{figure}
-
-\subsubsection{Noise estimation}
-
-Blabla
-
-\subsubsection{Complete analysis for 5 cells}
-
-blabla
