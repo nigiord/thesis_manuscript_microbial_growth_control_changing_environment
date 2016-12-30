@@ -464,7 +464,7 @@ Here, the mother machine was used to establish well-controlled growth transition
 By changing the medium source of the mother machine, we were able to observe how \textit{E. coli} cells adapt their growth rate and the expression of ribosomes.
 Overall, through the combination of fluorescent labeling of a core component of the gene expression machinery and the use of a microfluidic device, we have opened the way to experimentally study growth laws in a dynamical context.
 
-We applied this experimental set-up to the reconstruction of the resources allocation strategy employed by \textit{E. coli} during a nutrient upshift, with the aim to observe the bang-bang profile predicted in Chapter~\ref{chap:theory}.
+We applied this experimental setup to the reconstruction of the resources allocation strategy employed by \textit{E. coli} during a nutrient upshift, with the aim to observe the bang-bang profile predicted in Chapter~\ref{chap:theory}.
 We developed a Kalman smoothing procedure adapted to our question and showed how it can be implemented to reconstruct the internal state of a cell from time-lapse microscopy images.
 Similar to hidden Markov chains, Kalman filtering and smoothing are powerful techniques for the reconstruction of unobserved signals from noisy measurements, and have had numerous applications in a variety of domains, though less in biology than in other fields.
 We showed in this chapter that the Bayesian framework of Kalman smoothing can be exploited for growth rate reconstruction from a probabilistic prior defining the relation between mother and daughter cells.
@@ -499,7 +499,7 @@ While this is far from satisfying, it may turn out to be difficult to improve up
 Every algorithm has to make assumptions about the object it is trying to recognize.
 For imaging of microbial cells, it could be the curvature at the poles, the size of the pixels, the homogeneity of the background, the homogeneity of intracellular fluorescence, ...
 While some parameters can be tweaked, some assumptions are always hard-coded in the algorithm and reflect the philosophy used to address the identification problem.
-Since the preliminary analysis reported here was completed, we started a collaboration with the authors of FluoBacTracker~\cite{fluobactracker} that focuses on adapting their software to our set-up in a near future.
+Since the preliminary analysis reported here was completed, we started a collaboration with the authors of FluoBacTracker~\cite{fluobactracker} that focuses on adapting their software to our setup in a near future.
 It should provide a robust, automated way to identify and track the cells, enhancing the reproducibility of the analysis and increasing the number of cells available for computing population statistics.
 
 The Kalman filtering algorithm that was later applied to these data can also be improved in many respects.
@@ -551,8 +551,11 @@ two steps: (i)~creation of the translational fusion by selecting
 an antibiotic resistance marker and (ii)~removal of the selection
 marker. The strategy is outlined in Figure~\ref{fig:Cloning}.
 
-\begin{figure}
-\includegraphics[width=13cm]{/home/geiselmann/Persons/Nils/Thesis/Man/Fig/NilsCloning}\caption{\label{fig:Cloning}Construction of the gfp-tagged ribosome subunit.
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/meth_cloning}
+\caption{
+\textbf{Construction of the gfp-tagged ribosome subunit.}
 The translational fusion of \textit{gfp\_mut2} with \textit{rpsB}
 was constructed on the chromosome of \textit{E.~coli} (top line)
 by homologous recombination of \textit{gfp\_mut2} followed by a selection
@@ -572,14 +575,12 @@ and the beginning the original region downstream of \textit{rpsB}
 removes the selection cassette. The resulting strain (line four) carries
 the translational fusion of \textit{gfp\_mut2} to \textit{rpsB} without
 any other modification of the chromosome.}
-
-\selectlanguage{english}%
-\selectlanguage{french}%
+\label{fig:Cloning}
 \end{figure}
 
 The DNA fragment containing the selection cassette was amplified using
 two long primers annealing, respectively, to the region just before
-the STOP codon of \textit{rpsB}, and to the beginning of \textit{gfpmut2}.
+the STOP codon of \textit{rpsB}, and to the beginning of \textit{gfp\_mut2}.
 The selection cassette contains an antiobiotic resistance gene, kanamycin
 (positive selection), and a gene coding for the CcdB toxin under the
 control of the P\textsubscript{BAD} promoter (negative selection
@@ -587,58 +588,55 @@ in presence of arabinose). This cassette is referred below as \textit{kan-p\text
 
 Another DNA fragment containing \textit{gfp\_mut2}~\cite{zaslaver_comprehensive_2006}
 without the ATG start codon was amplified using long primers annealing,
-respectively, to the C-terminus of \ref{chap:theory}\textit{rpsB}
-(just before the STOP codon), and the end of the \textit{kan-P\textsubscript{BAD}-ccdB}
+respectively, to the C-terminus of \textit{rpsB}
+(just before the STOP codon), and the end of the \textit{kan-p\textsubscript{BAD}-ccdB}
 cassette. The first primer also contained a 18-bp (base pair) linker,
-inserting the same six amino-acids that Bakshi had used for their
+inserting the same six amino-acids that Bakshi \textit{et al.} have used for their
 construction ~\cite{bakshi_superresolution_2012}.
 
 The two fragments, the \textit{gfp\_mut2} reporter including the linker
-and the \textit{kan-P\textsubscript{BAD}-ccdB} cassette, were assembled
-using Gibson assembly~\cite{gibson_enzymatic_2009} using a commercial
+and the \textit{kan-p\textsubscript{BAD}-ccdB} cassette, were assembled
+by Gibson assembly~\cite{gibson_enzymatic_2009} using a commercial
 Gibson Assembly mix (New England Biolabs). A final product of 2683
 bp was obtained: 
 \begin{itemize}
 \item {*}(50 bp) the C-terminus of \textit{rpsB} without the STOP codon 
-\item (18 bp) a linker (see Supporting Information) 
+\item (18 bp) a linker
 \item (714 bp) the \textit{gfpmut2} sequence without the initial ATG 
-\item (1851 bp) the \textit{kan-P\textsubscript{BAD}-ccdB} cassette 
+\item (1851 bp) the \textit{kan-p\textsubscript{BAD}-ccdB} cassette 
 \item {*}(50 bp) the region directly after \textit{rpsB} in \textit{E.~coli} 
 \end{itemize}
 Regions labeled with {*} anneal to the \textit{E.~coli} chromosome.
-The complete sequence of this fragment, as well as the sequence of
-all the primers,are listed in the Supporting Information of this chapter.
+The complete sequence of this fragment, as well as the sequences of
+all the primers, are listed in \ref{S5_Text}.
 
 This fragment was electroporated into the wildtype strain, BW25113,
-containing the pSIM5 plasmid for lambda-red recombinaison \cite{sharan2009recombineering}.
+containing the pSIM5 plasmid for lambda-red recombinaison~\cite{sharan_recombineering_2009}.
 A kanamycin-resistant colony was selected on LA-glucose medium and
-verified to show green fluorescence in a Tecan microplate reader.
-A 100-bp oligonucleotide, containing 50 bp of the end of \textit{gfpmut2}
+verified to show green fluorescence (485~nm excitation, 535~nm emission) in a microplate reader (Tecan Infinite 200 pro).
+A 100-bp oligonucleotide, containing 50 bp of the end of \textit{gfp\_mut2}
 and 50 bp of the region just downstream of \textit{rpsB} was electroporated
-into this strain (sequence available in Supporting Information). The
-homologous recombination removes the \textit{kan-P\textsubscript{BAD}-ccdB}
+into this strain (sequence available in \ref{S5_Text}). The
+homologous recombination removes the \textit{kan-p\textsubscript{BAD}-ccdB}
 cassette. A colony was selected on an LA-arabinose plate. The clone
 was tested for kanamycin-sensitivity and  green fluorescence. Finally,
 the strain was grown overnight at 42$^{\circ}$C to get rid of the
 pSIM5 plasmid, containing a temperature-sensitive origin of replication.
-A chloramphenicol-sensitive colony was chosen andthe region after
-\textit{rpsB} was verified by sequencing (full sequence available
-in Supporting Information).
+A chloramphenicol-sensitive colony was chosen and the region after
+\textit{rpsB} was verified by sequencing (full sequence obtained available in \ref{S5_Text}).
 
 In parallel, the same protocol was used to construct \textit{mCherry}
 and \textit{cfp} variants of the same strain. However, only the \textit{gfp\_mut2}
 and \textit{mCherry} versions were successfully obtained. The full
-sequence of the final \textit{rpsB-mCherry} strain is available in
-Supporting Information.
+sequence of the final \textit{rpsB-mCherry} strain is available in \ref{S5_Text}.
 
-The \textit{rpsB-gfp\_mut2} and \textit{rpsB-mCherry} strains were
-characterized on different media using a Tecan microplate reader.
+The \textit{rpsB-gfp} and \textit{rpsB-mCherry} strains were
+characterized on different media using a Tecan microplate reader (\ref{S6_Text}, in particular Fig.~\ref{fig:suppinfo_caract} for growth on glucose).
 They possess a wild-type growth rate and sufficient fluorescence to
 allow quantification. However, the \textit{rpsB-mCherry} strain exhibited
 strange fluorescence dynamics, especially during growth transitions,
 which made it unsuitable for our study. We therefore concentrated
-our efforts on the \textit{rpsB-gfp} strain. Detaied data about the
-characterization of the strain are available in Supporting Information.
+our efforts on the \textit{rpsB-gfp} strain (see \ref{S6_Text} for more details).
 
 \subsection{Growth conditions}
 
@@ -654,116 +652,69 @@ Numbers in squared brackets are characteristics of the stock solution.
 All stock solutions were stored at room temperature, except for FeSO$_{4}$~{[}30
 g.L\textsuperscript{-1}{]} and Thiamine~{[}10 g.L\textsuperscript{-1}{]},
 which were stored respectively at -20$^{\circ}$C and 4$^{\circ}$C. 
+
 \begin{center}
 \begin{tabular}{|l r|}
-\hline 
-\multicolumn{2}{|c}{\textbf{M9 medium (100 mL)}} & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-\hline 
-CaCl2 {[}1 mol.L\textsuperscript{-1}{]}  & 10 $\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-MgSO$_{4}$ {[}1 mol.L\textsuperscript{-1}{]}  & 200 $\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-5x Salts  & 20 mL  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-Traces elements  & 90 $\mu$l  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-FeSO$_{4}$ {[}30 g.L\textsuperscript{-1}{]}  & 10 $\mu$l  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-Thiamine {[}10 g.L\textsuperscript{-1}{]}  & 50 $\mu$l  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-Carbon source  & at will  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-H$_{2}$0 {[}18.2 M$\Omega$.cm{]}  & to 100 mL  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-\hline 
-\end{tabular}%
-\begin{tabular}{|l r|}
-\hline 
-\multicolumn{2}{|c}{\textbf{Traces elements (0.9 mL)}} & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-\hline 
-H$_{2}$0 {[}18.2 M$\Omega$.cm{]}  & 200$\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-Na$_{2}$EDTA 2H$_{2}$O {[}150 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-ZnSO$_{4}$ 7H$_{2}$O {[}45 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-CoCl$_{2}$ 6H$_{2}$O {[}3 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-MnCl$_{2}$ 4H$_{2}$O {[}10 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-H$_{3}$BO$_{3}$ {[}10 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-Na$_{2}$MoO$_{4}$ 2H$_{2}$O {[}4 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-CuSO$_{4}$ 5H$_{2}$O {[}3 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-\hline 
-\end{tabular}%
-\begin{tabular}{|l r|}
-\hline 
-\multicolumn{2}{|c}{\textbf{5x Salts (100 mL)}} & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-\hline 
-Na$_{2}$HPO$_{4}$2H$_{2}$0  & 4.25 g  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-KH$_{2}$HPO$_{4}$  & 1.5 mg  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-NaCl  & 0.25 g & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-NH$_{4}$Cl & 0.5 g & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-H$_{2}$0 {[}18.2 M$\Omega$.cm{]}  & to 100 mL  & \selectlanguage{english}%
-\selectlanguage{french}%
-\tabularnewline
-\hline 
+  \hline
+  \multicolumn{2}{|c|}{\textbf{M9 medium (100 mL)}}\\
+  \hline
+  CaCl2 [1 mol.L\textsuperscript{-1}] & 10 $\mu$l\\
+  MgSO$_4$ [1 mol.L\textsuperscript{-1}] & 200 $\mu$l\\
+   5x Salts & 20 mL \\
+  Traces elements & 90 $\mu$l \\
+  FeSO$_4$ [30 g.L\textsuperscript{-1}] & 10 $\mu$l \\
+  Thiamine [10 g.L\textsuperscript{-1}] & 50 $\mu$l \\
+  Carbon source & at will \\
+  H$_2$0 [18.2 M$\Omega$.cm] & to 100 mL \\
+  \hline
 \end{tabular}
-\par\end{center}
+\begin{tabular}{|l r|}
+  \hline
+  \multicolumn{2}{|c|}{\textbf{Traces elements (0.9 mL)}}\\
+  \hline
+  H$_2$0 [18.2 M$\Omega$.cm] & 200$\mu$l\\
+  Na$_2$EDTA 2H$_2$O [150 g.L\textsuperscript{-1}] & 100$\mu$l\\
+  ZnSO$_4$ 7H$_2$O [45 g.L\textsuperscript{-1}] & 100$\mu$l\\
+  CoCl$_2$ 6H$_2$O [3 g.L\textsuperscript{-1}] & 100$\mu$l\\
+  MnCl$_2$ 4H$_2$O [10 g.L\textsuperscript{-1}] & 100$\mu$l\\
+  H$_3$BO$_3$ [10 g.L\textsuperscript{-1}] & 100$\mu$l\\
+  Na$_2$MoO$_4$ 2H$_2$O [4 g.L\textsuperscript{-1}] & 100$\mu$l\\
+  CuSO$_4$ 5H$_2$O [3 g.L\textsuperscript{-1}] & 100$\mu$l\\
+  \hline
+\end{tabular}
+\begin{tabular}{|l r|}
+    \hline
+  \multicolumn{2}{|c|}{\textbf{5x Salts (100 mL)}}\\
+  \hline
+  Na$_2$HPO$_4$2H$_2$0 & 4.25 g \\
+  KH$_2$HPO$_4$ & 1.5 mg \\
+  NaCl & 0.25 g\\
+  NH$_4$Cl& 0.5 g\\
+  H$_2$0 [18.2 M$\Omega$.cm] & to 100 mL \\
+  \hline
+\end{tabular}
+\end{center}
 
 A large quantity of M9 was prepared several days before the experiment,
 and stored at 4$^{\circ}$C. It contained all the necessary components
 except FeSO$_{4}$, thiamine, and carbon sources, which were added
-just before inocculation of the pre-culture. Except where stated otherwise,
+just before inoculation of the pre-culture. Except where stated otherwise,
 the growth temperature was 37$^{\circ}$C. M9 Acetate contains 0.2\%
-Acetate (in mass of C$_{2}$H$_{3}$O$_{2}$ per mass of solution),
-and M9 Glucose contains 0.2\% Glucose (in mass of D-(+)-Glucose per
+acetate (in mass of C$_{2}$H$_{3}$O$_{2}$ per mass of solution),
+and M9 Glucose contains 0.2\% glucose (in mass of D-(+)-Glucose per
 mass of solution).
 
 Four days before the measurements, the glycerol stock containing the
 \textit{rpsB-gfp} strain was spread on a Petri dish of LA, and incubated
-at 37$^{\circ}$C. On the following day, an isolated colony was was
+at 37$^{\circ}$C. On the following day, an isolated colony was
 used to inoculate a cotton-plugged, sterile flask containing 20 mL
 of M9 acetate (Fig.~\ref{fig:experiment_schema}). The time of inoculation
 was calculated such that the culture obtains an OD of 0.3-0.4 OD at
 the beginning of the experiment. This optical density corresponds
 to a culture in mid-exponential growth phase.
 
-At the day of the experiment, the preculture was concentrated by centrifugation
-and re-suspended in 5 mL of M9 acetate, supplemented with 50 mg.mL\textsuperscript{-1}
+At the day of the experiment, the pre-culture was concentrated by centrifugation
+and re-suspended in 5 mL of M9 acetate, supplemented with 50~mg.mL\textsuperscript{-1}
 BSA (passivation buffer) for injection into the microfluidic device.
 Channels were filled by diffusion until most of them contained cells
 ($\sim$1 hour). Data acquisition started after a constant medium
@@ -793,7 +744,7 @@ with bacteria (see section above).
 The device was connected using 0.023\textquotedbl{} inner diameter
 polyethylene tubes to a waste and a sterile bottle containing 200
 mL of growth medium, which was enough for several days of acquisition.
-A microfluidics pump (Elvesys) containing an output flow sensor module
+A microfluidic pump (Elvesys) containing an output flow sensor module
 was plugged to the medium bottle and a pressure up to 2~bars was
 applied to the bottle. The output flow was set to 50 $\mu$L.min$^{-1}$.
 
@@ -824,7 +775,7 @@ plugin of ImageJ~\cite{goto_open_2005}. The rest of the analysis
 was performed using Python 3.5.2. In particular, we used OpenCV~3.1.0-dev,
 Scikit-Image~0.12.3, Numpy~1.11.2 to manipulate the images.
 
-In order to register consecutive image of a time series, we calculated
+In order to correct for the drift of the device, we calculated
 the offset between consecutive images of a given field using cross-correlation
 in the Fourier space~\cite{guizar-sicairos_efficient_2008} (see
 Scikit-Image documentation at \cite{skimage_cross-correlation}).
@@ -862,7 +813,7 @@ As a control, the same device was used to image bacteria in stationary
 phase that do not produce any fluorescent protein. They were indistinguishable
 from the camera noise. Of course, using this control we can not affirm
 that the autofluorescence is also negligible when the bacteria are
-actively growing. Furthermore, the autofluorescencecould change in
+actively growing. Furthermore, the autofluorescence could change in
 different media of interest, and may even be different in steady state
 and during growth transitions. An independent estimate of the autofluorescence
 is therefore difficult to obtain. In the section~\ref{sec:chap3_discussion},
@@ -876,11 +827,11 @@ abundance in a single experiment.
 
 The data of the length and the RFU/pixel of each bacteria were analyzed
 using Python~3.5.2. In particular, we manipulated the data using
-Pandas~0.19.1, pykalman~0.9.5 and the curves submodule of wellfare~0.1.1.
+Pandas~0.19.1, Pykalman~0.9.5 and the Curves submodule of Wellfare~0.1.1.
 
 Historical details about the Kalman smoothing procedure are reported
 in section~\ref{sec:res_kalman} of the main text. We used the Additive
-Unscented Kalman Filter implementation of the pykalman python module.
+Unscented Kalman Filter implementation of the Pykalman python module.
 This class is reported to be more stable and computationally efficient
 with non-linear problems containing additive noise.
 
@@ -895,7 +846,11 @@ in Eq.~\ref{eq:full_mu_prob}, is reproduced below for clarity:
 \end{eqnarray*}
 with the measurement model: 
 \[
-L(t_{k})=V_{\lambda}(t_{k})+\epsilon_{k}.
+L(t_{k})=V_{\lambda}(t_{k})+\epsilon_{k},
+\]
+and the initial conditions
+\[
+V_\lambda (0) = V_{\lambda,0}, \;\;\;\; \mu (0) = \mu_0 , \;\;\;\; v(0) = v_0.
 \]
 The parameters used as priors for the reconstruction of $\mu$ are
 described below. We used an observation variance of 9 pixels\textsuperscript{2}
@@ -903,14 +858,14 @@ for the length $L$. The transition variance $\theta^{2}$ (\textit{a.k.a.}
 the smoothing factor for $\mu$) is fixed at $10^{-8}$~min\textsuperscript{-6}
 for the entire time series. Inheritance between mother and daughter
 cells is taken into account by systematically choosing an initial
-mean equal to the last estimated value for $\mu$, and to half the
+mean for $\mu_0$ equal to the last estimated value for $\mu$, and for $V_{\gamma,0}$ to half the
 last estimated value for $V_{\gamma}$ (as expected for a completely
 symmetrical division). At the beginning of the experiment, when no
 mother cells are available, these values were fixed to 15~pixels
 for $V_{\gamma}$ and 0.004~min\textsuperscript{-1} for $\mu$.
 The variances associated with these means are 16~pixels\textsuperscript{2}
-and $10^{-4}$~min\textsuperscript{-2}, respectively, for $V_{\gamma}$
-and $\mu$. The initial mean of $v$ is always taken as null, with
+and $10^{-4}$~min\textsuperscript{-2}, respectively, for $V_{\gamma,0}$
+and $\mu_0$. The initial mean of $v$ is always taken as null, with
 an initial variance of $10^{-8}$~min\textsuperscript{-6}. All the
 cross-covariances are set to 0 because the system variables are independent
 by construction.
@@ -930,21 +885,25 @@ with the measurement model
 \[
 F(t_{k})=r_{\gamma}(t_{k})+\eta_{k},
 \]
+and the initial conditions
+\[
+r_\gamma (0) = r_{\gamma,0}, \;\;\;\; u (0) = u_0 , \;\;\;\; v(0) = v_0,
+\]
 where $\hat{\mu}$ is the estimate of $\mu$ above. In both case,
 we used as prior an observation variance of 800.4 RFU\textsuperscript{2}
 for $F$. The transition variance $\theta^{2}$ (\textit{a.k.a.} the
 smoothing factor for $\gamma\alpha/\beta$) is fixed at $10^{2}$~RFU\textsuperscript{2}.min\textsuperscript{-4}.
-The initial state means used are 600~RFU for $r_{\gamma}$ and 1000~RFU
-for $\gamma\alpha/\beta$. The variances associated with these means
+The initial state means used are 600~RFU for $r_{\gamma,0}$ and 1000~RFU
+for $u_0$. The variances associated with these means
 are purposely large and fixed at 10\textsuperscript{6}~RFU\textsuperscript{2}
-for $r_{\gamma}$ and $\gamma\alpha/\beta$. The initial mean of $v$
+for $r_{\gamma,0}$ and $u_0$. The initial mean for $v_0$
 is always taken as null, with an initial variance of $10^{-8}$~RFU.min\textsuperscript{-2},
 imposing a null second derivative for the reconstructed signal $\gamma\alpha/\beta$.
 Here again, all the cross-covariances are set to 0.
 
 All the parameters cited in this section were chosen through trial
-and error, and aretherefore certainly optimizable. Possible improvements
-are discussed in section~\ref{sec:chap3_discussion}.
+and error, and are therefore certainly optimizable. Possible improvements
+are discussed in Section~\ref{sec:chap3_discussion}.
 
 \section{Supporting Information for Chapter~3}
 
@@ -1020,9 +979,9 @@ The 50 last bases of the reverse primer are supposed to anneal with the region a
 
 \subsubsection{Full annotated sequences of the inserts}
 
-The following pages contain the full sequences of the \textit{gfpmut2-cassette} and \textit{mCherry-cassette} constructions, inserted on the \textit{E.~coli} BW25113 chromosome at the region after the \textit{rpsB} gene.
+The following pages contain the full sequences of the \textit{gfpmut2-cassette} and \textit{mCherry-cassette} constructions, inserted on the \textit{E.~coli} BW25113 chromosome at the region after the \textit{rpsB} gene (see Fig.~\ref{fig:Cloning}).
 The primers annealing positions are indicated using the same color code as in the description of the primers above.
-The primers reported in the original publication of Bakshi \textit{et al}~\cite{bakshi_superresolution_2012} are indicated for information.
+The primers reported in the original publication of Bakshi \textit{et al.}~\cite{bakshi_superresolution_2012} are indicated for information.
 
 \includepdf[pages={1-7}]{./Fig/gfp-mut2-cassette-after-rpsB-gene-sequence.pdf}
 \includepdf[pages={1-6}]{./Fig/mcherry-cassette-after-rpsB-gene-sequence.pdf}
@@ -1030,11 +989,11 @@ The primers reported in the original publication of Bakshi \textit{et al}~\cite{
 \subsubsection{Sequencing of the final strains}
 
 The strains were constructed using the protocol described in Material and Methods~\ref{sec:methods_strain}.
-Regions at the end of the \textit{rpsB} gene were amplified, and sent for sequencing.
-Alignments of the results showed they exhibit the expected sequences (except for a couple of single-base mutations).
+The downstream region of the \textit{rpsB} gene was amplified, and sent for sequencing.
+Alignments of the results showed they exhibit the expected sequences, except for a couple of single-base mutations that do not impede the protein fluorescence.
 The raw results of the sequencing are reproduced below.
 
-\paragraph{Final sequences of the \textit{rpsB-gfpmut2} strain (region after \textit{rpsB})}
+\paragraph{Final sequences of the \textit{rpsB-gfp} strain (downstream region of \textit{rpsB})}
 
 \begin{small}
 \begin{itemize}
@@ -1044,7 +1003,7 @@ The raw results of the sequencing are reproduced below.
 \end{small}
 
 \newpage
-\paragraph{Final sequences of the \textit{rpsB-mCherry} strain (region after \textit{rpsB})}
+\paragraph{Final sequences of the \textit{rpsB-mCherry} strain (downstream region of \textit{rpsB})}
 
 \begin{small}
 \begin{itemize}
@@ -1086,12 +1045,26 @@ CGCATGAACTCTTTAATGATAGCCATGTTATCCTCCTCGCCCTTGGAT}
 \subsection{S6 Text -- Strain validation in batch growing conditions}
 \manuallabel{S6_Text}{S6~Text}
 
-(signal-to-noise ratio, growth rate not hampered in microplate reader)
-Difference between mCherry and GFP (mCherry not good because so and so, GFP was chosen)
+The \textit{rpsB-gfp} and \textit{rpsB-mCherry} strains were characterized on different media using a Tecan microplate reader.
+Strains were grown in M9 minimal medium at 37$^\circ$C in 96-well microplates.
+The absorbance and fluorescence were measured approximately every minute for up to 24~h.
+In a single experiment, this allowed to construct up to 96 growth curves like presented in Fig.~\ref{fig:growth_curve}.
 
-Two type of strains were obtained
+In Fig.~\ref{fig:suppinfo_caract}, we can see the results obtained on M9 supplemented with 0.2\% glucose.
+As for the construction of Bakshi \textit{et al.}~\cite{bakshi_superresolution_2012}, our strains possess a wild-type growth rate (Fig.~\ref{fig:suppinfo_caract}A), indicating that the gfp-tagging or mCherry-tagging of the ribosomal S2 subunit does not impede the functioning of the ribosome.
+It is known that \textit{E.~coli} cultures exhibit a high autofluorescence in the GFP bandwidth~\cite{mihalcescu_green_2015}, but the fluorescence of the \textit{rpsB-gfp} strain is at least 4-time higher than the \textit{wild-type} (Fig.~\ref{fig:suppinfo_caract}B).
+Contrary to green autofluorescence, red autofluorescence of \textit{E.~coli} cultures is very low (Fig.~\ref{fig:suppinfo_caract}B) so the signal level for mCherry was even less a problem.
+Overall, both strains possess enough fluorescence to allow quantification.
 
-Before being used in the microscopy experiments, the strain characteristics were validated by 
+In Fig.~\ref{fig:suppinfo_caract}C, we display the ratio between the (corrected) fluorescence of the strain and the absorbance.
+As a first approximation, this ratio can be used as a proxy for the fluorescence concentration in the cells, therefore for the ribosome concentration.
+The instability at the beginning of the experiment (before 400~min) is characteristic of the difficulty to obtain robust estimations when the absorbance of the culture is low~\cite{zulkower_robust_2015}.
+The RFU/Abs ratio is stable in the interval [400,600] for both \textit{rpsB-gfp} and \textit{rpsB-mCherry} strains, and can be interpreted as exponential steady-state growth.
+Note that this short time interval (a couple of generations) of readability before approaching the stationary phase is one of the main problem preventing the use of batch conditions to obtain robust data about growth transitions.
+
+Results for \textit{rpsB-gfp} and \textit{rpsB-mCherry} start to differ when glucose is exhausted and the cells enter stationary phase.
+As would be expected, the fluorescence of the \textit{rpsB-gfp} strain starts to slowly decrease as GFP proteins are degraded or photobleached.
+On the contrary, the fluorescence of the \textit{rpsB-mCherry} strain quickly triples when entering stationary phase, at a rate that is way higher than the physical limit imposed by the protein synthesis rate~\cite{scott_interdependence_2010}.
 
 \begin{figure}[p]
 \centering
@@ -1099,8 +1072,8 @@ Before being used in the microscopy experiments, the strain characteristics were
 \caption{
 \textbf{Growth curves in M9~0.2\% glucose for the \textit{rpsB-gfp} and \textit{rpsB-mCherry} strains.}
 Growth and measurements were performed in a 96-well microplate placed in a Tecan infinite 200 pro reader thermostated at 37$^\circ$C.
-We monitored 4 wells inseminated with the WT strain, the \textit{rpsB-gfp} strain, and the \textit{rpsB-mCherry} strain, for a total of 12 wells each containing 150~$\mu$L of growth medium.
-Curves were shifted in time to correct for pipetting variability in the insemination process (-50 min for WT, and -20 min for \textit{rpsB-mCherry}).
+We monitored 4 wells inoculated with the WT strain, the \textit{rpsB-gfp} strain, and the \textit{rpsB-mCherry} strain, for a total of 12 wells each containing 150~$\mu$L of growth medium.
+Curves were shifted in time to correct for pipetting variability in the inoculation process (-50 min for WT, and -20 min for \textit{rpsB-mCherry}).
 \textit{(A)}~The light absorbance as measured by the Tecan microplate reader, corrected for background by removing well containing clean M9.
 The superposition of the curves indicates similar growth rates between the WT and the modified strains.
 \textit{(B)}~The fluorescence measured in the wells, expressed in Relative Fluorescence Units (RFU).
@@ -1114,6 +1087,75 @@ Before each measurement cycle, the following procedure was applied: shaking (Orb
 }
 \label{fig:suppinfo_caract}
 \end{figure}
+
+In order to explain these strange dynamics, we set-up an experiment to evaluate the degradation and maturation rates of GFP and mCherry.
+The procedure was to abruptly stop the protein synthesis rate in mid-exponential phase, and observe the evolution of the fluorescence in a condition with no synthesis of new reporter proteins.
+The estimation was performed using the following model:
+\begin{eqnarray}
+\frac{dP_m}{dt} &=& K \cdot P - (\mu+D) \cdot P_m, \\
+\frac{dP}{dt} &=& f(t) - (\mu+D+K) P,
+\end{eqnarray}
+where $P_m$ is the concentration of mature (fluorescent) proteins, $P$ is the concentration of immature (non-fluorescent) proteins, $K$ is the maturation rate, $D$ is the degradation rate (assumed identical for mature and immature proteins), $f(t)$ the protein synthesis rate, and $\mu$ the growth rate.
+By stopping all protein synthesis in the bacteria, we obtain $f(t) = \mu = 0$, hence the model becomes:
+\begin{eqnarray}
+\frac{dP_m}{dt} &=& K \cdot P - D \cdot P_m, \\
+\frac{dP}{dt} &=& - (D+K) P.
+\end{eqnarray}
+This system of differential equations can be analytically solved into:
+\[
+P_m(t) = \left(P_m(0) + P(0) \left( 1 - e^{-Kt} \right) \right) e^{-Dt}
+\]
+with $P_m(0)$ and $P(0)$ the initial concentration of mature proteins and immature proteins, respectively.
+By normalizing by $P_m(0)$ and taking the log of both sides, we can rewrite it as
+\begin{equation}
+\log \frac{P_m(t)}{P_m(0)} = - Dt + \log \left(1 + \frac{P(0)}{P_m(0)} \left( 1 - e^{-Kt} \right) \right).
+\label{eq:matur_deg}
+\end{equation}
+Since growth is stopped, the bacterial volume is constant and then $\frac{P_m(t)}{P_m(0)}$ can be easily measured by directly taking the fluorescence normalized by its initial value, while the maturation rate $K$, the degradation rate $D$, and the initial fraction of immature proteins $\frac{P(0)}{P_m(0)}$ are free parameters that can be fitted on fluorescence time series.
+The curves used for the estimation are represented in Fig.~\ref{fig:suppinfo_matur} and the results are reported in Tab.~\ref{tab:suppinfo_matur}.
+As expected, both reporter proteins are stable and exhibit a long half-life in exponential phase (>24~h).
+The maturation rate of GFP was too fast to obtain numerical value.
+However, the maturation rate of mCherry is rather slow, with a half-maturation time in the order of 30~min (time needed to mature 50\% of a pool of mCherry).
+Even though degradation and maturation rate can be slightly different in stationary phase, the estimated value is not sufficient to explain the increase in fluorescence observed in Fig.~\ref{fig:suppinfo_caract}.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[scale=1]{./Fig/suppinfo_matur}
+\caption{
+\textbf{Estimation of the maturation and degradation rates of the reporter proteins in the \textit{rpsB-gfp} and \textit{rpsB-mCherry} strains.}
+The strains were grown in the same condition as in Fig.~\ref{fig:suppinfo_caract}, except a massive dose of Chloramphenicol was added at t=0 (vertical dashed grey line).
+The fluorescence was normalized by the value at t=0 and the degradation and maturation rates were estimated by using the model in Eq.~\ref{eq:matur_deg}.
+Parameters of the best fit (solid black line) are reported in Tab.~\ref{tab:suppinfo_matur}.
+Data are the result of the aggregation of 9 and 8 independent growth curves for \textit{rpsB-gfp} and \textit{rpsB-mCherry}, respectively.
+}
+\label{fig:suppinfo_matur}
+\end{figure}
+
+\begin{table}[tb]
+\begin{tabular}{|c|c|c|}
+\hline
+& \textbf{GFP mut2} & \textbf{mCherry}\\
+\hline
+\textbf{$P(0) / P_m(0)$} & 0.05635 $\pm$ 0.001202  & 0.7349 $\pm$ 0.0027362\\
+\hline
+\textbf{$D$~[min\textsuperscript{-1}]} & 0.0002064 $\pm$ 2.066e-06 & 0.0003027 $\pm$ 2.645e-06\\
+\hline
+\textbf{half-life~[min]}& 3325 - 3392 & 2269 - 2309\\
+\hline
+\textbf{$K$~[min\textsuperscript{-1}]} & $\emptyset$ & 0.02254 $\pm$ 0.0003\\
+\hline
+\textbf{half-maturation~[min]} & $\emptyset$  &  30.27 - 31.16\\
+\hline
+\end{tabular}
+\caption{\textbf{Fitted parameters for the degradation and maturation of GFP mut2 and mCherry, according to the model in Eq.~\ref{eq:matur_deg} and data in Fig.~\ref{fig:suppinfo_matur}}}
+\label{tab:suppinfo_matur}
+\end{table}
+
+The fluorescence of GFP and mCherry is known to be affected by intracellular physiological changes like pH or pO\textsubscript{2}~\cite{doherty_stage-specific_2010}.
+In particular, mCherry has been reported to be extremely sensible to the presence of oxygen for its maturation~\cite{doherty_stage-specific_2010}.
+We however reproduced the following results in conditions were the oxygen is not limiting.
+In particular, the abrupt increase of mCherry fluorescence is conserved when the stationary phase is attained at low bacterial density, in a larger volume (20-mL flask), and on several type of carbon sources (acetate, xylose, glycerol, maltose).
+We have so far no explanation for this strange dynamic, and therefore concentrated our effort on the \textit{rpsB-gfp} strain in the microfluidic experiments.
 
 \clearpage
 \subsection{S7 Text -- Noise estimation in the microscopy experiment}

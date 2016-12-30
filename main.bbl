@@ -1391,7 +1391,8 @@ De~Nicolao G, Sparacino G, Cobelli C.
   {doi:~10.1016/S0005-1098(96)00254-3}.
 
 \bibitem{fluobactracker}
-{{FluoBacTracker}};.
+{{FluoBacTracker}}: An {{ImageJ}} Plugin Designed to Segment and Track Growing
+  {{E}}. {{Coli}} Cells;.
 \newblock Available from: \url{https://fluobactracker.inrialpes.fr/index.php}.
 
 \bibitem{golub_generalized_1979}
@@ -1409,6 +1410,14 @@ Gibson DG, Young L, Chuang RY, Venter JC, Hutchison CA, Smith HO.
 \newblock Nat Methods. 2009 May;6(5):343--345.
 \newblock \href {http://dx.doi.org/10.1038/nmeth.1318}
   {doi:~10.1038/nmeth.1318}.
+
+\bibitem{sharan_recombineering_2009}
+Sharan SK, Thomason LC, Kuznetsov SG, Court DL.
+\newblock Recombineering: A Homologous Recombination-Based Method of Genetic
+  Engineering.
+\newblock Nat Protoc. 2009;4(2):206--223.
+\newblock \href {http://dx.doi.org/10.1038/nprot.2008.227}
+  {doi:~10.1038/nprot.2008.227}.
 
 \bibitem{goto_open_2005}
 Goto A, Doerr H. Open and Save {{SPE}} Image Files; 2005.
