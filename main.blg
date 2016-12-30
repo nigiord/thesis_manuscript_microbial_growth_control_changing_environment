@@ -6,7 +6,7 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated field_info (elt_size=4) to 12174 items from 5000.
+Reallocated field_info (elt_size=4) to 12208 items from 5000.
 Database file #1: references.bib
 Warning--empty author and editor in fox_how_2016
 Warning--missing publisher in fox_how_2016
@@ -28,45 +28,45 @@ Warning--missing publisher in skimage_cross-correlation
 Warning--there's a month but no year in skimage_cross-correlation
 Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
-You've used 211 entries,
+You've used 212 entries,
             3170 wiz_defined-function locations,
-            1949 strings with 49289 characters,
-and the built_in function-call counts, 361160 in all, are:
-= -- 45254
-> -- 2836
+            1954 strings with 49586 characters,
+and the built_in function-call counts, 363066 in all, are:
+= -- 45492
+> -- 2852
 < -- 14
-+ -- 1870
-- -- 707
-* -- 30210
-:= -- 38913
-add.period$ -- 994
-call.type$ -- 211
++ -- 1878
+- -- 711
+* -- 30374
+:= -- 39118
+add.period$ -- 999
+call.type$ -- 212
 change.case$ -- 27
 chr.to.int$ -- 18
-cite$ -- 229
-duplicate$ -- 29393
-empty$ -- 34425
-format.name$ -- 881
-if$ -- 84562
+cite$ -- 230
+duplicate$ -- 29541
+empty$ -- 34606
+format.name$ -- 886
+if$ -- 85006
 int.to.chr$ -- 0
-int.to.str$ -- 211
-missing$ -- 2311
-newline$ -- 1232
-num.names$ -- 215
-pop$ -- 3865
+int.to.str$ -- 212
+missing$ -- 2323
+newline$ -- 1238
+num.names$ -- 216
+pop$ -- 3884
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3870
+skip$ -- 3889
 stack$ -- 0
-substring$ -- 68175
-swap$ -- 5783
+substring$ -- 68549
+swap$ -- 5812
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 18
-while$ -- 2053
-width$ -- 214
-write$ -- 2660
+while$ -- 2064
+width$ -- 215
+write$ -- 2673
 (There was 1 error message)
