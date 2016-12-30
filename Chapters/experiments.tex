@@ -530,222 +530,421 @@ Notice though that the propertion between the two types of bacteria need to be c
 \section{Material and Methods}
 
 \subsection{Bacterial strain construction}
+
 \label{sec:methods_strain}
 
-To achieve dynamical quantification of ribosome abundance, we designed and constructed a strain containing a translational fusion of \textit{gfpmut2}~\cite{zaslaver_comprehensive_2006} to the C-terminus of \textit{rpsB} (the gene coding the ribosome subunit S2).
-This design was inspired by the work of Bakshi \textit{et al}, who used a similar construction to assess the quantitative spatial distribution of ribosomes in living \textit{E.~coli}~\cite{bakshi_superresolution_2012}.
+In order to quantify the concentration of ribosomes in the cell in
+real time, we constructed a strain  containing a translational fusion
+of \textit{gfp\_mut2}~\cite{zaslaver_comprehensive_2006} to the
+C-terminus of \textit{rpsB}, the gene coding for the ribosome subunit
+S2. The design was inspired by the work of Bakshi \textit{et al}.,
+who used a similar construction to measure the spatial distribution
+of ribosomes in living \textit{E.~coli}~cells \cite{bakshi_superresolution_2012}.
+However, contrary to Bakshi \textit{et al.}, and in order not to create
+any interference with normal gene expression in the modified cells,
+we decided to keep the intergenic region between \textit{rpsB} and
+the downstream gene, \textit{tsf}, unchanged. Since the transcription
+factor \textit{tsf} is under the control of the same promoter as \textit{rpsB},
+leaving a selection marker downstream of \textit{rpsB} would interfere
+with the proper expression of \textit{tsf}. Our strategy comprises
+two steps: (i)~creation of the translational fusion by selecting
+an antibiotic resistance marker and (ii)~removal of the selection
+marker. The strategy is outlined in Figure~\ref{fig:Cloning}.
 
-The transcription factor \textit{tsf} is under the control of the same promoter than \textit{rpsB}, and is located after the C-terminus.
-In order to ensure that \textit{tsf} expression was not affected by our translation fusion on \textit{rpsB}, we used a double-selection procedure to get rid of every resistance gene that the construction might introduce.
-This is something that was not done in the original construction from Bakshi \textit{et al}~\cite{bakshi_superresolution_2012}
+\begin{figure}
+\includegraphics[width=13cm]{/home/geiselmann/Persons/Nils/Thesis/Man/Fig/NilsCloning}\caption{\label{fig:Cloning}Construction of the gfp-tagged ribosome subunit.
+The translational fusion of \textit{gfp\_mut2} with \textit{rpsB}
+was constructed on the chromosome of \textit{E.~coli} (top line)
+by homologous recombination of \textit{gfp\_mut2} followed by a selection
+``cassette'' (second line). A small linker was inserted between
+\textit{rpsB} and \textit{gfp\_mut2} in order to minimize interference
+of the fluorescent protein with ribosome functioning. The selection
+cassette consists of a positive selection marker, the gene coding
+for the resistance to the antibiotic kanamycine, and a negative selection
+marker, the gene coding for the toxin CcdB. The latter is transcribed
+from the $p_{BAD}$ promoter, which is only activated in the presence
+of arabinose in the culture medium. Homologous recombination is indicated
+by the grey shaded lines. The resulting recombination product (third
+line) contains the desired fusion protein followed by the selection
+cassette on the chromosome of the bacterium. A second homologous recombination,
+using an oligonucleotide complementary to the end of \textit{gfp\_mut2}
+and the beginning the original region downstream of \textit{rpsB}
+removes the selection cassette. The resulting strain (line four) carries
+the translational fusion of \textit{gfp\_mut2} to \textit{rpsB} without
+any other modification of the chromosome.}
 
-A DNA fragment containing a double selection cassette was amplified with two long primers annealing respectively to the region just after the STOP codon at the C-terminus of \textit{rpsB}, and to the beginning of \textit{gfpmut2}.
-The double-selection cassette contained a resistance gene to Kanamycin (positive selection) and a gene coding for the CcdB toxin under the control of the P\textsubscript{BAD} promoter (negative selection in presence of Arabinose).
-This cassette is referred below as \textit{kan-P\textsubscript{BAD}-ccdB}.
+\selectlanguage{english}%
+\selectlanguage{french}%
+\end{figure}
 
-Another DNA fragment containing \textit{gfpmut2}~\cite{zaslaver_comprehensive_2006} without ATG was amplified with long primers annealing respectively to the C-terminus of \ref{chap:theory}rpsB (just before the STOP codon), and the end of the \textit{kan-P\textsubscript{BAD}-ccdB} cassette.
-The first primer also contained a 18-bp (base pair) linker that was chosen according to the method section of~\cite{bakshi_superresolution_2012}.
+The DNA fragment containing the selection cassette was amplified using
+two long primers annealing, respectively, to the region just before
+the STOP codon of \textit{rpsB}, and to the beginning of \textit{gfpmut2}.
+The selection cassette contains an antiobiotic resistance gene, kanamycin
+(positive selection), and a gene coding for the CcdB toxin under the
+control of the P\textsubscript{BAD} promoter (negative selection
+in presence of arabinose). This cassette is referred below as \textit{kan-p\textsubscript{BAD}-ccdB}.
 
-Both fragments (the \textit{gfpmut2} reporter and the \textit{kan-P\textsubscript{BAD}-ccdB} cassette) were assembled using Gibson assembly~\cite{gibson_enzymatic_2009}.
-Both PCR products were quantified using NanoDrop and mixed in equimolar proportions with a commercial Gibson Assembly Master mix.
-A final product of 2683 bp was obtained:
+Another DNA fragment containing \textit{gfp\_mut2}~\cite{zaslaver_comprehensive_2006}
+without the ATG start codon was amplified using long primers annealing,
+respectively, to the C-terminus of \ref{chap:theory}\textit{rpsB}
+(just before the STOP codon), and the end of the \textit{kan-P\textsubscript{BAD}-ccdB}
+cassette. The first primer also contained a 18-bp (base pair) linker,
+inserting the same six amino-acids that Bakshi had used for their
+construction ~\cite{bakshi_superresolution_2012}.
+
+The two fragments, the \textit{gfp\_mut2} reporter including the linker
+and the \textit{kan-P\textsubscript{BAD}-ccdB} cassette, were assembled
+using Gibson assembly~\cite{gibson_enzymatic_2009} using a commercial
+Gibson Assembly mix (New England Biolabs). A final product of 2683
+bp was obtained: 
 \begin{itemize}
-\item *(50 bp) the C-terminus of \textit{rpsB} without the STOP codon 
-\item (18 bp) a linker (see Supporting Information)
-\item (714 bp) the \textit{gfpmut2} sequence without the initial ATG
-\item (1851 bp) the \textit{kan-P\textsubscript{BAD}-ccdB} cassette
-\item *(50 bp) the region directly after \textit{rpsB} in \textit{E.~coli}
+\item {*}(50 bp) the C-terminus of \textit{rpsB} without the STOP codon 
+\item (18 bp) a linker (see Supporting Information) 
+\item (714 bp) the \textit{gfpmut2} sequence without the initial ATG 
+\item (1851 bp) the \textit{kan-P\textsubscript{BAD}-ccdB} cassette 
+\item {*}(50 bp) the region directly after \textit{rpsB} in \textit{E.~coli} 
 \end{itemize}
-Regions labeled with * are expected to anneal with the \textit{E.~coli} chromosome.
-The complete sequence of this fragment, as well as all the primers used are available in the Supporting Information of this chapter.
+Regions labeled with {*} anneal to the \textit{E.~coli} chromosome.
+The complete sequence of this fragment, as well as the sequence of
+all the primers,are listed in the Supporting Information of this chapter.
 
-This fragment was electroporated in a BW25113 background strain containing the pSIM5 plasmid with chloramphenicol resistance (lambda-red recombinaison).
-A kanamycin-resistant colony was selected and verified to exhibit green fluorescence in a Tecan microplate reader.
-A new 100-bp fragment containing 50 bp of the end of \textit{gfpmut2} and 50 bp of the region just after \textit{rpsB} was electroporated into this strain (sequence available in Supporting Information) to get rid of the \textit{kan-P\textsubscript{BAD}-ccdB} cassette.
-An arabinose-resistant colony was selected and verified to be kanamycin-sensitive and to still exhibit green fluorescence.
-Finally, the strain was grown overnight at 42$^\circ$C to get rid of the pSIM5 plasmid and a chloramphenicol-sensitive colony was selected.
-The region after \textit{rpsB} was verified by sequencing (full sequence available in Supporting Information).
+This fragment was electroporated into the wildtype strain, BW25113,
+containing the pSIM5 plasmid for lambda-red recombinaison \cite{sharan2009recombineering}.
+A kanamycin-resistant colony was selected on LA-glucose medium and
+verified to show green fluorescence in a Tecan microplate reader.
+A 100-bp oligonucleotide, containing 50 bp of the end of \textit{gfpmut2}
+and 50 bp of the region just downstream of \textit{rpsB} was electroporated
+into this strain (sequence available in Supporting Information). The
+homologous recombination removes the \textit{kan-P\textsubscript{BAD}-ccdB}
+cassette. A colony was selected on an LA-arabinose plate. The clone
+was tested for kanamycin-sensitivity and  green fluorescence. Finally,
+the strain was grown overnight at 42$^{\circ}$C to get rid of the
+pSIM5 plasmid, containing a temperature-sensitive origin of replication.
+A chloramphenicol-sensitive colony was chosen andthe region after
+\textit{rpsB} was verified by sequencing (full sequence available
+in Supporting Information).
 
-In parallel, the same protocol was used to construct \textit{mCherry} and \textit{cfp} variants of the same strain.
-However, only the \textit{gfpmut2} and \textit{mCherry} versions were successfully obtained for reasons that were not investigated.
-The full sequence of the final \textit{rpsB-mCherry} strain is available in Supporting Information.
+In parallel, the same protocol was used to construct \textit{mCherry}
+and \textit{cfp} variants of the same strain. However, only the \textit{gfp\_mut2}
+and \textit{mCherry} versions were successfully obtained. The full
+sequence of the final \textit{rpsB-mCherry} strain is available in
+Supporting Information.
 
-The \textit{rpsB-gfpmut2} and \textit{rpsB-mCherry} strains were characterized on different media using a Tecan microplate reader.
-They were showed to exhibit a wild-type growth rate and sufficient fluorescence level to allow quantification.
-However, the \textit{rpsB-mCherry} strain exhibited strange fluorescence dynamics, especially during growth transitions, which made it unsuitable for our study.
-Our effort were then concentrated on the \textit{rpsB-gfp} strain.
-Data as well as information on the matter are available in Supporting Information.
+The \textit{rpsB-gfp\_mut2} and \textit{rpsB-mCherry} strains were
+characterized on different media using a Tecan microplate reader.
+They possess a wild-type growth rate and sufficient fluorescence to
+allow quantification. However, the \textit{rpsB-mCherry} strain exhibited
+strange fluorescence dynamics, especially during growth transitions,
+which made it unsuitable for our study. We therefore concentrated
+our efforts on the \textit{rpsB-gfp} strain. Detaied data about the
+characterization of the strain are available in Supporting Information.
 
 \subsection{Growth conditions}
+
 \label{sec:growth_condition}
 
-Sterilization was performed by autoclaving for instruments and filtration for solutions (0.2 $\mu$m).
-During cloning, bacteria were grown in 20-mL flasks filled with LB or spread on Petri dish with LA.
-In all the experiments, we used M9 minimal medium~[citation to find] supplemented with trace elements, thiamine and a carbon source.
-The full recipe is reproduced below.
+All experiments were carried out in sterilized media. Sterilization
+was performed by autoclaving for instruments and filtration for solutions
+(0.2 $\mu$m). During cloning, bacteria were grown in 20-mL Erlenmeyer
+flasks filled with LB or spread on Petri dishes with LA. In all the
+experiments, we used M9 minimal medium supplemented with trace elements,
+thiamine and a carbon source. The full recipe is reproduced below.
 Numbers in squared brackets are characteristics of the stock solution.
-All stock solutions were stored at room temperature, except for FeSO$_4$~[30 g.L\textsuperscript{-1}] and Thiamine~[10 g.L\textsuperscript{-1}] that were stored respectively at -20$^\circ$C and 4$^\circ$C.
+All stock solutions were stored at room temperature, except for FeSO$_{4}$~{[}30
+g.L\textsuperscript{-1}{]} and Thiamine~{[}10 g.L\textsuperscript{-1}{]},
+which were stored respectively at -20$^{\circ}$C and 4$^{\circ}$C. 
 \begin{center}
 \begin{tabular}{|l r|}
-  \hline
-  \multicolumn{2}{|c|}{\textbf{M9 medium (100 mL)}}\\
-  \hline
-  CaCl2 [1 mol.L\textsuperscript{-1}] & 10 $\mu$l\\
-  MgSO$_4$ [1 mol.L\textsuperscript{-1}] & 200 $\mu$l\\
-   5x Salts & 20 mL \\
-  Traces elements & 90 $\mu$l \\
-  FeSO$_4$ [30 g.L\textsuperscript{-1}] & 10 $\mu$l \\
-  Thiamine [10 g.L\textsuperscript{-1}] & 50 $\mu$l \\
-  Carbon source & at will \\
-  H$_2$0 [18.2 M$\Omega$.cm] & to 100 mL \\
-  \hline
-\end{tabular}
+\hline 
+\multicolumn{2}{|c}{\textbf{M9 medium (100 mL)}} & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+\hline 
+CaCl2 {[}1 mol.L\textsuperscript{-1}{]}  & 10 $\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+MgSO$_{4}$ {[}1 mol.L\textsuperscript{-1}{]}  & 200 $\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+5x Salts  & 20 mL  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+Traces elements  & 90 $\mu$l  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+FeSO$_{4}$ {[}30 g.L\textsuperscript{-1}{]}  & 10 $\mu$l  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+Thiamine {[}10 g.L\textsuperscript{-1}{]}  & 50 $\mu$l  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+Carbon source  & at will  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+H$_{2}$0 {[}18.2 M$\Omega$.cm{]}  & to 100 mL  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+\hline 
+\end{tabular}%
 \begin{tabular}{|l r|}
-  \hline
-  \multicolumn{2}{|c|}{\textbf{Traces elements (0.9 mL)}}\\
-  \hline
-  H$_2$0 [18.2 M$\Omega$.cm] & 200$\mu$l\\
-  Na$_2$EDTA 2H$_2$O [150 g.L\textsuperscript{-1}] & 100$\mu$l\\
-  ZnSO$_4$ 7H$_2$O [45 g.L\textsuperscript{-1}] & 100$\mu$l\\
-  CoCl$_2$ 6H$_2$O [3 g.L\textsuperscript{-1}] & 100$\mu$l\\
-  MnCl$_2$ 4H$_2$O [10 g.L\textsuperscript{-1}] & 100$\mu$l\\
-  H$_3$BO$_3$ [10 g.L\textsuperscript{-1}] & 100$\mu$l\\
-  Na$_2$MoO$_4$ 2H$_2$O [4 g.L\textsuperscript{-1}] & 100$\mu$l\\
-  CuSO$_4$ 5H$_2$O [3 g.L\textsuperscript{-1}] & 100$\mu$l\\
-  \hline
-\end{tabular}
+\hline 
+\multicolumn{2}{|c}{\textbf{Traces elements (0.9 mL)}} & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+\hline 
+H$_{2}$0 {[}18.2 M$\Omega$.cm{]}  & 200$\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+Na$_{2}$EDTA 2H$_{2}$O {[}150 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+ZnSO$_{4}$ 7H$_{2}$O {[}45 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+CoCl$_{2}$ 6H$_{2}$O {[}3 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+MnCl$_{2}$ 4H$_{2}$O {[}10 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+H$_{3}$BO$_{3}$ {[}10 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+Na$_{2}$MoO$_{4}$ 2H$_{2}$O {[}4 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+CuSO$_{4}$ 5H$_{2}$O {[}3 g.L\textsuperscript{-1}{]}  & 100$\mu$l & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+\hline 
+\end{tabular}%
 \begin{tabular}{|l r|}
-    \hline
-  \multicolumn{2}{|c|}{\textbf{5x Salts (100 mL)}}\\
-  \hline
-  Na$_2$HPO$_4$2H$_2$0 & 4.25 g \\
-  KH$_2$HPO$_4$ & 1.5 mg \\
-  NaCl & 0.25 g\\
-  NH$_4$Cl& 0.5 g\\
-  H$_2$0 [18.2 M$\Omega$.cm] & to 100 mL \\
-  \hline
+\hline 
+\multicolumn{2}{|c}{\textbf{5x Salts (100 mL)}} & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+\hline 
+Na$_{2}$HPO$_{4}$2H$_{2}$0  & 4.25 g  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+KH$_{2}$HPO$_{4}$  & 1.5 mg  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+NaCl  & 0.25 g & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+NH$_{4}$Cl & 0.5 g & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+H$_{2}$0 {[}18.2 M$\Omega$.cm{]}  & to 100 mL  & \selectlanguage{english}%
+\selectlanguage{french}%
+\tabularnewline
+\hline 
 \end{tabular}
-\end{center}
+\par\end{center}
 
-A large quantity of M9 was prepared several days before the experiment, and stored at 4$^\circ$C.
-It contained all the necessary components except FeSO$_4$, thiamine, and carbon sources that were added the day the pre-culture were launched.
-Except stated otherwise, the growth temperature was 37$^\circ$C.
-M9 Acetate contains 0.2\% Acetate (in mass of C$_2$H$_3$O$_2$ per mass of solution), and M9 Glucose contains 0.2\% Glucose (in mass of D-(+)-Glucose per mass of solution).
+A large quantity of M9 was prepared several days before the experiment,
+and stored at 4$^{\circ}$C. It contained all the necessary components
+except FeSO$_{4}$, thiamine, and carbon sources, which were added
+just before inocculation of the pre-culture. Except where stated otherwise,
+the growth temperature was 37$^{\circ}$C. M9 Acetate contains 0.2\%
+Acetate (in mass of C$_{2}$H$_{3}$O$_{2}$ per mass of solution),
+and M9 Glucose contains 0.2\% Glucose (in mass of D-(+)-Glucose per
+mass of solution).
 
-At J-4, the glycerol stock containing the \textit{rpsB-gfp} strain was spread out on a Petri dish of LA, and incubated at 37$^\circ$C.
-At J-3, an isolated colony was inseminated in 20 mL of M9 Acetate, and incubated in a cotton-plugged sterile flask (Fig.~\ref{fig:experiment_schema}).
-Time of insemination was calculated to obtain a 0.3-0.4 cm\textsuperscript{-1} OD when starting the experiment, which correspond to a mid-exponential phase.
+Four days before the measurements, the glycerol stock containing the
+\textit{rpsB-gfp} strain was spread on a Petri dish of LA, and incubated
+at 37$^{\circ}$C. On the following day, an isolated colony was was
+used to inoculate a cotton-plugged, sterile flask containing 20 mL
+of M9 acetate (Fig.~\ref{fig:experiment_schema}). The time of inoculation
+was calculated such that the culture obtains an OD of 0.3-0.4 OD at
+the beginning of the experiment. This optical density corresponds
+to a culture in mid-exponential growth phase.
 
-At J+0, the preculture was concentrated by centrifugation and back suspended into 5 mL of M9 Acetate supplemented with 50 mg.mL\textsuperscript{-1} BSA (passivation	buffer) for injection into the microfluidic device.
-Channels were populated by diffusion until most of them were filled with cells ($\sim$1 hour).
-Data acquisition started after a constant medium flow was successfully obtained ($\sim$1 hour, depending on the quality of the device).
+At the day of the experiment, the preculture was concentrated by centrifugation
+and re-suspended in 5 mL of M9 acetate, supplemented with 50 mg.mL\textsuperscript{-1}
+BSA (passivation buffer) for injection into the microfluidic device.
+Channels were filled by diffusion until most of them contained cells
+($\sim$1 hour). Data acquisition started after a constant medium
+flow was successfully obtained ($\sim$1 hour, depending on the quality
+of the microfluidics device).
 
 \subsection{Microfluidic device}
+
 \label{sec:microflu}
 
-We used the mothermachine~\cite{wang_robust_2010}.
-It consists of a series of growth wells (or channels), oriented at a 90$^\circ$ angle to a large central channel through which growth medium is passed at a constant flow.
-The wideness of the wells is selected as to constrain the growth direction of the bacteria.
-This design ensures that at least one cell per well (the deepest one) is preserved during the whole experiment, while the others incrementally escape into the central channel as divisions occur.
-For the fabrication of the devices, we thoroughly followed the step described in the supporting information of~\cite{wang_robust_2010}.
-We maintained a stock of chemically treated devices at room temperature (day 2 in workflow summary~\cite{wang_robust_2010}).
-The day of the experiment, a single device was plasma cleaned, bond to a glass coverslip, and injected with bacteria (see section above).
+In order to observe the bacteria over a long time, we used the so-called
+mothermachine~\cite{wang_robust_2010}. It consists of a series of
+wells (or channels), oriented at a 90$^{\circ}$ angle to a large,
+central channel through which growth medium is passed at a constant
+flow rate. The width of the wells, a little over a $\mu m$, constrains
+the bacteria to grow ``in a line''. This design ensures that at
+least one cell per well (the one at the bottom of the channel) remains
+in the device during the entire experiment, while the others incrementally
+escape into the central channel as divisions occur. For the fabrication
+of the devices, we thoroughly followed the step described in the supporting
+information of~\cite{wang_robust_2010}. We maintained a stock of
+chemically treated devices at room temperature (day 2 in workflow
+summary~\cite{wang_robust_2010}). The day of the experiment, a single
+device was plasma cleaned, bond to a glass coverslip, and injected
+with bacteria (see section above).
 
-The device was connected using 0.023" inner diameter polyethylene tubes to a waste and a sterile bottle containing 200 mL of growth medium, which was enough for several days of acquisition.
-A microfluidic pump (Elvesys) containing an output flow sensor module was plugged to the medium bottle, and was applied a pressure up to 2 bars.
-The output flow was set to 50 $\mu$L.min$^{-1}$.
+The device was connected using 0.023\textquotedbl{} inner diameter
+polyethylene tubes to a waste and a sterile bottle containing 200
+mL of growth medium, which was enough for several days of acquisition.
+A microfluidics pump (Elvesys) containing an output flow sensor module
+was plugged to the medium bottle and a pressure up to 2~bars was
+applied to the bottle. The output flow was set to 50 $\mu$L.min$^{-1}$.
 
-For the imaging, the device was placed on a motorized inverted microscope (Zeiss Axiovert 200M) with a phase contrast objective lens (Zeiss PlanNeofluar, Ph3 100x/1.3), placed in a thermostated box at 37$^\circ$C.
-In this setup, fluorescence illumination is provided by a mercury lamp (Osram, 1xHBO 103X/2) and visualization is performed with narrow-bandpass excitation and emission filters (Chroma, \#49002 ET-GFP and Chroma, \#49005 TR/DsRED ET).
-The exposure time to the light source is externally controlled by mechanical shutters (Uniblitz-VS35).
-Images are acquired with a 16-bit gray level CCDcamera cooled to -80$^\circ$C (Roper Scientific, Princeton Instruments PHOTOMAX 512) controlled by a custom-made software using Visual Basic and the Type libraries of the Winview software (Princeton Instruments).
-Every 5 minutes, autofocus was numerically performed by maximizing the contrast of a region of interest, and a serie of acquisitions was made.
-A total of 6 fields, each containing 15 wells was observed during the whole experiment.
+For imaging, the device was placed on a motorized inverted microscope
+(Zeiss Axiovert 200M) with a phase contrast objective lens (Zeiss
+PlanNeofluar, Ph3 100x/1.3), placed in a thermostated box at 37$^{\circ}$C.
+In this setup, fluorescence illumination is provided by a mercury
+lamp (Osram, 1xHBO 103X/2) and visualization is performed with narrow-bandpass
+excitation and emission filters (Chroma, \#49002 ET-GFP and Chroma,
+\#49005 TR/DsRED ET). The exposure time is externally controlled by
+mechanical shutters (Uniblitz-VS35). Images were acquired with a 16-bit
+gray level CCDcamera cooled to -80$^{\circ}$C (Roper Scientific,
+Princeton Instruments PHOTOMAX 512) controlled by a custom-made software
+using Visual Basic and the Type libraries of the Winview software
+(Princeton Instruments). Every 5 minutes, autofocus was numerically
+performed by maximizing the contrast of a region of interest, and
+a series of acquisitions were made. A total of 6 fields, each containing
+15 wells was observed during the entire experiment.
 
 \subsection{Cell segmentation}
+
 \label{sec:cell_segmentation}
 
-Raw data are in the form of 512x512-pixel 16-bit SPE images (proprietary format produced by the Princeton Instruments camera).
-They were converted in 16-bit Tif images using the \textit{SPE} plugin of ImageJ~\cite{goto_open_2005}.
-The rest of the analysis was performed using Python 3.5.2.
-In particular, we used OpenCV~3.1.0-dev, Scikit-Image~0.12.3, Numpy~1.11.2 to manipulate the images.
+The raw data from the camera are in the form of 512x512-pixel 16-bit
+SPE images (proprietary format produced by the Princeton Instruments
+camera). They were converted into 16-bit Tif images using the \textit{SPE}
+plugin of ImageJ~\cite{goto_open_2005}. The rest of the analysis
+was performed using Python 3.5.2. In particular, we used OpenCV~3.1.0-dev,
+Scikit-Image~0.12.3, Numpy~1.11.2 to manipulate the images.
 
-The offset between consecutive images of a given field was evaluated using cross-correlation in the Fourier space~\cite{guizar-sicairos_efficient_2008} (see Scikit-Image documentation at \cite{skimage_cross-correlation}).
-All the images for a field were then aligned on the first acquisition by simple affine translation.
+In order to register consecutive image of a time series, we calculated
+the offset between consecutive images of a given field using cross-correlation
+in the Fourier space~\cite{guizar-sicairos_efficient_2008} (see
+Scikit-Image documentation at \cite{skimage_cross-correlation}).
+All images for a field were thereby aligned to the first acquisition
+by a simple translation.
 
-The wells were isolated in individual images through a combination of manual pixel selection and automatic segmentation.
-In particular, we selected the entrance of the two wells at the border of the image, and used this information along with the regularity of the microfluidic device to compute a mask that allowed to crop each well in its own image of size 100x21 pixels.
-These sub-images were labeled $\left\{W0, W1, ..., W14\right\}$ depending on the position of the well on the original image, from left to right.
+In order to simplify the image treatment, we extracted individual
+wells from the images by a combination of manual pixel selection and
+automatic segmentation. In particular, we selected the entrance of
+the two wells at the border of the image, and used this information
+along with the regularity of the microfluidic device to compute a
+mask that allowed to extract each well into an image of size 100x21
+pixels. These sub-images were labeled $\left\{ W0,W1,...,W14\right\} $
+depending on the position of the well in the original image, from
+left to right.
 
-In this study, we performed a preliminary analysis on each well that focused on the deepest cell.
-For each image, we manually selected two pixels representing the position of the poles of the cell of interest.
-The distance between the two selected pixels was directly used as the bacteria length $L$ in pixels.
-They were also used to compute a rectangular 6-pixel-wide mask around the cell (see Fig.~\ref{fig:data_acquisition}).
-We then computed the RFU/pixel in this cell mask by summing each pixel and dividing by the mask size.
+In this study, we performed a preliminary analysis of each well, focusing
+on the cell at the bottom of the channel. For each image, we manually
+selected the poles of the cell of interest. The distance between the
+two selected pixels was directly used as the length $L$ of the bacterium
+in pixels. The two selected positions were also used to compute a
+rectangular 6-pixel-wide mask around the cell (see Fig.~\ref{fig:data_acquisition}).
+We then computed the RFU/pixel in this cell mask by summing each pixel
+and dividing by the mask size.
 
-The camera noise and background was evaluated by taking a picture with a closed shutter at the end of the experiment.
-Pixels in this picture were found to be Gaussian distributed with a mean of 1101.0 and a standard deviation of 10.788.
-Correction for camera background was thus applied by removing 1101 to the computed RFU/pixel.
+The camera noise and background were evaluated by taking a picture
+with a closed shutter at the end of the experiment. Pixels in this
+picture were found to be Gaussian distributed with a mean of 1101.0
+and a standard deviation of 10.788. A correction for the camera background
+was thus applied by removing 1101 from the computed RFU/pixel.
 
-The background for autofluorescence of the bacteria and the medium was supposed negligible and was thus not corrected.
-Indeed, the same device was used to image bacteria in stationary phase that do not produce any fluorescent protein.
-They were entirely indistinguishable from the camera noise.
-Not that this does not ensure that the autofluorescence is also negligible when the bacteria are actively growing.
-Furthermore, its value could change with the medium of interest, and even be different at steady state and during growth transitions, which does not allow to estimate it independently.
-In the section~\ref{sec:chap3_discussion}, we discuss possible improvements of the experimental set-up that would allow to dynamically co-estimate the autofluorescence with the ribosome abundance in a single experiment.
+The autofluorescence of the bacteria and the background fluorescence
+of the medium were supposed to be negligible and were thus not corrected.
+As a control, the same device was used to image bacteria in stationary
+phase that do not produce any fluorescent protein. They were indistinguishable
+from the camera noise. Of course, using this control we can not affirm
+that the autofluorescence is also negligible when the bacteria are
+actively growing. Furthermore, the autofluorescencecould change in
+different media of interest, and may even be different in steady state
+and during growth transitions. An independent estimate of the autofluorescence
+is therefore difficult to obtain. In the section~\ref{sec:chap3_discussion},
+we discuss possible improvements of the experimental setup that would
+allow to dynamically co-estimate the autofluorescence with the ribosome
+abundance in a single experiment.
 
 \subsection{Kalman smoothing}
+
 \label{sec:meth_kalman}
 
-The data about the length and the RFU/pixel of each bacteria were analyzed using Python~3.5.2.
-In particular, we manipulated the data using Pandas~0.19.1, pykalman~0.9.5 and the curves submodule of wellfare~0.1.1.
+The data of the length and the RFU/pixel of each bacteria were analyzed
+using Python~3.5.2. In particular, we manipulated the data using
+Pandas~0.19.1, pykalman~0.9.5 and the curves submodule of wellfare~0.1.1.
 
-Historical details about the Kalman smoothing procedure are reported in section~\ref{sec:res_kalman} of the main text.
-We used the Additive Unscented Kalman Filter implementation of the pykalman python module.
-This class is reported to be more stable and computationally efficient with non-linear problems featuring additive noises.
+Historical details about the Kalman smoothing procedure are reported
+in section~\ref{sec:res_kalman} of the main text. We used the Additive
+Unscented Kalman Filter implementation of the pykalman python module.
+This class is reported to be more stable and computationally efficient
+with non-linear problems containing additive noise.
 
-As described in section~\ref{sec:res_kalman}, the reconstruction of the growth rate was done on continuous portions of the length, \textit{i.e.} between two division events.
-The full problem, as reported in Eq.~\ref{eq:full_mu_prob}, is reproduced below for clarity is:
+As described in section~\ref{sec:res_kalman}, the reconstruction
+of the growth rate was done on continuous portions of the length,
+\textit{i.e.} between cell divisions. The full problem, as described
+in Eq.~\ref{eq:full_mu_prob}, is reproduced below for clarity: 
 \begin{eqnarray*}
-\dot{V_\lambda}(t) &=& \mu (t) \cdot V_\lambda (t),\nonumber\\
-\dot{\mu}(t) &=& v(t),\\
-\dot{v}(t) &=& w(t),\nonumber
+\dot{V_{\lambda}}(t) & = & \mu(t)\cdot V_{\lambda}(t),\\
+\dot{\mu}(t) & = & v(t),\\
+\dot{v}(t) & = & w(t),
 \end{eqnarray*}
-with the measurement model:
-\begin{equation*}
-L(t_k) = V_\lambda(t_k) + \epsilon_k.
-\end{equation*}
-The parameters used as prior for the reconstruction of $\mu$ are reported below.
-We used an observation variance of 9 pixels\textsuperscript{2} for the length $L$.
-The transition variance $\theta^2$ (\textit{a.k.a.} the smoothing factor for $\mu$) is fixed at $10^{-8}$~min\textsuperscript{-6} during the whole time series.
-Inheritance between mother and daughter cells is taken into account by systematically choosing an initial mean equal to the last estimated value for $\mu$, and to half the last estimated value for $V_\gamma$ (modeling the symmetrical division).
-At the beginning of the experiment, were no mother cell are available, these values were fixed at 15~pixels for $V_\gamma$ and 0.004~min\textsuperscript{-1} for $\mu$.
-The variances associated with these means are 16~pixels\textsuperscript{2} and $10^{-4}$~min\textsuperscript{-2}, respectively for $V_\gamma$ and $\mu$.
-$v$ initial mean is always taken null, with an initial variance of $10^{-8}$~min\textsuperscript{-6}.
-All the cross-covariances are set to 0 because the system variables are independent by construction.
+with the measurement model: 
+\[
+L(t_{k})=V_{\lambda}(t_{k})+\epsilon_{k}.
+\]
+The parameters used as priors for the reconstruction of $\mu$ are
+described below. We used an observation variance of 9 pixels\textsuperscript{2}
+for the length $L$. The transition variance $\theta^{2}$ (\textit{a.k.a.}
+the smoothing factor for $\mu$) is fixed at $10^{-8}$~min\textsuperscript{-6}
+for the entire time series. Inheritance between mother and daughter
+cells is taken into account by systematically choosing an initial
+mean equal to the last estimated value for $\mu$, and to half the
+last estimated value for $V_{\gamma}$ (as expected for a completely
+symmetrical division). At the beginning of the experiment, when no
+mother cells are available, these values were fixed to 15~pixels
+for $V_{\gamma}$ and 0.004~min\textsuperscript{-1} for $\mu$.
+The variances associated with these means are 16~pixels\textsuperscript{2}
+and $10^{-4}$~min\textsuperscript{-2}, respectively, for $V_{\gamma}$
+and $\mu$. The initial mean of $v$ is always taken as null, with
+an initial variance of $10^{-8}$~min\textsuperscript{-6}. All the
+cross-covariances are set to 0 because the system variables are independent
+by construction.
 
-For the reconstruction of gene activity, we only had to cope with the large gap in data acquisition between -720 and -150 min.
-Reconstruction was then done independently on the continuous sections before and after this gap.
-The full problem for the estimation of $u = \gamma \alpha / \beta$, as reported in Eq.~\ref{eq:full_u_prob}, is reproduced here for clarity:
+For the reconstruction of gene activity, we had to cope with the large
+gap in data acquisition between -720 and -150 min. Reconstruction
+was then done independently on the continuous sections before and
+after this gap. The full problem for the estimation of $u=\gamma\alpha/\beta$,
+as described in Eq.~\ref{eq:full_u_prob}, is reproduced here for
+clarity: 
 \begin{eqnarray*}
-\dot{r_\gamma}(t) &=& \hat{\mu} (t) \cdot u (t) - \hat{\mu} (t) \cdot r_\gamma (t), \nonumber\\
-\dot{u}(t) &=& v(t),\\
-\dot{v}(t) &=& w(t),\nonumber
+\dot{r_{\gamma}}(t) & = & \hat{\mu}(t)\cdot u(t)-\hat{\mu}(t)\cdot r_{\gamma}(t),\\
+\dot{u}(t) & = & v(t),\\
+\dot{v}(t) & = & w(t),
 \end{eqnarray*}
-with the measurement model
-\begin{equation*}
-F(t_k) = r_\gamma (t_k) + \eta_k,\\
-\end{equation*}
-where $\hat{\mu}$ is the estimation of $\mu$ above.
-In both case, we used as prior an observation variance of 800.4 RFU\textsuperscript{2} for $F$.
-The transition variance $\theta^2$ (\textit{a.k.a.} the smoothing factor for $\gamma \alpha / \beta$) is fixed at $10^2$~RFU\textsuperscript{2}.min\textsuperscript{-4}.
-The initial state means used are 600~RFU for $r_\gamma$ and 1000~RFU for $\gamma \alpha / \beta$.
-The variances associated with these means are purposely large and fixed to 10\textsuperscript{6}~RFU\textsuperscript{2} for $r_\gamma$ and $\gamma \alpha / \beta$.
-$v$ initial mean is always taken null, with an initial variance of $10^{-8}$~RFU.min\textsuperscript{-2}, imposing a null second derivative for the reconstructed signal $\gamma \alpha / \beta$.
+with the measurement model 
+\[
+F(t_{k})=r_{\gamma}(t_{k})+\eta_{k},
+\]
+where $\hat{\mu}$ is the estimate of $\mu$ above. In both case,
+we used as prior an observation variance of 800.4 RFU\textsuperscript{2}
+for $F$. The transition variance $\theta^{2}$ (\textit{a.k.a.} the
+smoothing factor for $\gamma\alpha/\beta$) is fixed at $10^{2}$~RFU\textsuperscript{2}.min\textsuperscript{-4}.
+The initial state means used are 600~RFU for $r_{\gamma}$ and 1000~RFU
+for $\gamma\alpha/\beta$. The variances associated with these means
+are purposely large and fixed at 10\textsuperscript{6}~RFU\textsuperscript{2}
+for $r_{\gamma}$ and $\gamma\alpha/\beta$. The initial mean of $v$
+is always taken as null, with an initial variance of $10^{-8}$~RFU.min\textsuperscript{-2},
+imposing a null second derivative for the reconstructed signal $\gamma\alpha/\beta$.
 Here again, all the cross-covariances are set to 0.
 
-All the parameters cited in this section were chosen through trials and errors, and are as a consequence largely optimizable.
-Possible improvements are discussed in section~\ref{sec:chap3_discussion}.
+All the parameters cited in this section were chosen through trial
+and error, and aretherefore certainly optimizable. Possible improvements
+are discussed in section~\ref{sec:chap3_discussion}.
 
 \section{Supporting Information for Chapter~3}
 
