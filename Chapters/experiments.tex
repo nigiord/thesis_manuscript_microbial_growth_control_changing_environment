@@ -749,7 +749,7 @@ Possible improvements are discussed in section~\ref{sec:chap3_discussion}.
 
 \section{Supporting Information for Chapter~3}
 
-\subsection{S5 Text -- Strain construction}
+\subsection{S5 Text -- DNA sequences used for the strain construction}
 \manuallabel{S5_Text}{S5~Text}
 
 \subsubsection{Exhaustive list of the primers used...}
@@ -884,11 +884,37 @@ CGCATGAACTCTTTAATGATAGCCATGTTATCCTCCTCGCCCTTGGAT}
 \end{small}
 
 \clearpage
-\subsection{S6 Text -- Strain validation}
+\subsection{S6 Text -- Strain validation in batch growing conditions}
 \manuallabel{S6_Text}{S6~Text}
 
 (signal-to-noise ratio, growth rate not hampered in microplate reader)
 Difference between mCherry and GFP (mCherry not good because so and so, GFP was chosen)
+
+Two type of strains were obtained
+
+Before being used in the microscopy experiments, the strain characteristics were validated by 
+
+\begin{figure}[p]
+\centering
+\includegraphics[scale=1]{./Fig/suppinfo_caract}
+\caption{
+\textbf{Growth curves in M9~0.2\% glucose for the \textit{rpsB-gfp} and \textit{rpsB-mCherry} strains.}
+Growth and measurements were performed in a 96-well microplate placed in a Tecan infinite 200 pro reader thermostated at 37$^\circ$C.
+We monitored 4 wells inseminated with the WT strain, the \textit{rpsB-gfp} strain, and the \textit{rpsB-mCherry} strain, for a total of 12 wells each containing 150~$\mu$L of growth medium.
+Curves were shifted in time to correct for pipetting variability in the insemination process (-50 min for WT, and -20 min for \textit{rpsB-mCherry}).
+\textit{(A)}~The light absorbance as measured by the Tecan microplate reader, corrected for background by removing well containing clean M9.
+The superposition of the curves indicates similar growth rates between the WT and the modified strains.
+\textit{(B)}~The fluorescence measured in the wells, expressed in Relative Fluorescence Units (RFU).
+Green fluorescence (485nm excitation, 535nm reception) is measured for the WT (dashed lines) and the \textit{rpsB-gfp} (solid lines) strains.
+Red fluorescence (560nm excitation, 635nm reception) is measured for the WT (dashed lines) and the \textit{rpsB-mCherry} (solid lines) strains.
+As can be seen, fluorescence levels of the modified strains (solid lines) are far above the autofluorescence measured on the WT strain.
+\textit{(C)}~The ratio of fluorescence over absorbance, a proxy for the fluorescence concentration in the cells.
+Autofluorescence background was corrected by removing the autofluorescence measured on the WT wells.
+We observe a strange increase in fluorescence concentration for the \textit{rpsB-mCherry} strain at stationary phase, something that is not visible on the \textit{rpsB-gfp} strain.
+Before each measurement cycle, the following procedure was applied: shaking (Orbital 6mm) for 30~s, shaking (Linear 6mm) for 30~s, waiting for 5~s.
+}
+\label{fig:suppinfo_caract}
+\end{figure}
 
 \clearpage
 \subsection{S7 Text -- Noise estimation in the microscopy experiment}
