@@ -1,52 +1,83 @@
 \selectlanguage{english}
+%%% MAX 4000 CHARACTERS %%%%
 \begin{abstract}
-Growth is one of the most fundamental processes of life, and is highly optimized in microorganisms.
-It relies on the transformation of matter and energy from the environment into diverse organic structures.
-Decades of studies have shown that despite an extreme microbial diversity, this transformation follows general regularities, forming the so-called microbial growth laws.
-But those works focused on steady-state growth, despite this condition being irrelevant to the natural growth condition of microorganisms.
+Growth is one of the most fundamental processes of life.
+In microbial cells, it relies on the transformation of matter and energy from the environment into diverse organic structures.
+Interestingly when comparing growth in different environments, microbial physiology exhibits general growth laws that relate the macromolecular composition of the cell to the growth rate.
+These laws are widespread and conserved in different microbial species, suggesting a fundamental principle of design.
+Indeed, recent work has shown that these empirical regularities can be derived from coarse-grained models of resource allocation, and explained by the principles of natural selection.
+However, while these studies focus on steady-state growth, such conditions are rarely found in natural habitats, where microorganisms are continually challenged by environmental fluctuations.
+The aim of this thesis is to extend the theoretical and experimental studies of microbial growth strategies to dynamical environments.
 
-Do these laws still hold when considering a dynamical environment?
-What does it mean to be optimal during an environmental transition?
+Using a self-replicator model, we develop an intuitive framework that encapsulates the main features of growth through nutrient assimilation.
+We formulate dynamical growth maximization as an optimal control problem that the microbial cell must solve to allocate its resources between gene expression machinery and metabolism.
+We find a general solution using Pontryagin's Maximum Principle, and compare it with different possible implementations of growth control in bacterial cells.
+It shows that simple control strategies enabling growth-rate maximization at steady state are suboptimal for transitions from one growth regime to another, for example when shifting bacterial cells to a medium supporting a higher growth rate.
+A near-optimal control strategy in dynamical conditions is shown to require information on several, rather than a single physiological variable.
+Interestingly, this strategy has structural analogies with the regulation of ribosomal protein synthesis by ppGpp in the enterobacterium \textit{Escherichia coli}.
+It involves sensing a mismatch between precursor and ribosome concentrations, as well as the adjustment of ribosome synthesis in a switch-like manner.
 
-This project aims to lay the foundation of dynamical growth laws, more in adequation with the natural habitats of microorganisms and the selective pressures that shaped their current forms.
-We develop an intuitive framework by using a self-replicator model that encapsulates the main features of growth through nutrient assimilation.
-We formulate the resource allocation problem that arises as an optimal control problem in which the cell has to allocate its resources between gene expression machinery and metabolism.
-By applying the Pontryagin's Maximum Principle, the model predicts the optimal dynamical behavior to be a bang-bang allocation between gene expression machinery and metabolism.
-Despite not having been observed yet, we show that such behaviors are conceptually feasible with the known regulations of the enterobacteria \textit{Escherichia coli}, in particular the ppGpp system that regulates ribosomal abundance.
+While suggested by old literature data, this switch-like ribosome synthesis after a growth transition has never been experimentally confirmed.
+For this reason, we measure ribosomal abundance of \textit{Escherichia coli} at the single-cell level during a nutrient upshift.
+More precisely, we have constructed a strain in which a fluorescent marker has been attached to a ribosomal subunit, thus allowing \textit{in-vivo} monitoring of the abundance of ribosomes.
+We monitor this strain in a microfluidic device designed for long-term imaging of individual cells in a continuous culture, and use it to simulate a nutrient upshift by changing the input medium.
+We develop a Kalman smoothing method that is able from these data to reconstruct how resources are allocated towards the synthesis of ribosomes.
+The results obtained are preliminary and do not allow a decisive validation, but they suggest the presence of oscillatory patterns after an upshift that could be reminiscent of the expected behavior.
 
-In order to find such patterns in real cells, we make a strain displaying fluorescent ribosomes.
-We observe \textit{E. coli} cells in a microfluidic device and monitor their fluorescence during growth transitions.
-Using state-of-the-art techniques of parameter estimation, we can reconstruct the state of the cellular resource allocation controler with a high temporal precision.
-Even if preliminary, our experimental results seem to confirm the bang-bang singular nature of resource allocation during a growth transition, as predicted by our model.
-
-Our work might play an important role in the formulation of dynamical fundamental growth laws.
-It also has application for biotechnological purposes, since microorganisms and in particular \textit{E. coli}, are more and more used in health and energy industries to produce valuable elements.
+Our results show how the capability of regulatory systems to integrate information about several physiological variables is critical for optimizing growth in a changing environment.
+All over, they demonstrate that when applied in dynamical instead of steady-state conditions, the same principles can generate unexpected behaviors and provide more information about the regulatory strategies employed by microorganisms.
+Such new understandings could be of great help for biotechnological purposes, in particular when using microorganisms to produce valuable elements for the health and energy industries.
 \end{abstract}
+
+%TC:ignore  
+
+%%% MAX 1000 CHARACTERS %%%
+\begin{author-summary}
+Microbial cells sustain and replicate themselves from the matter and energy they extract from their environment.
+Strategies enabling microorganisms to optimize their replication rate have been extensively studied, but mostly in stable environments.
+Here, we build a simple model of microbial growth and use mathematical methods from optimal control theory to determine how the cells should behave when the environment around them is abruptly changed.
+Interestingly, we find that microbial cells should adopt an \textit{on-off} strategy: they should alternatively allocate all their resources to the production of each cell component, a prediction that we also tried to confirm experimentally.
+In other words, the regulations inside the bacterial cells could profit from functioning more like a switch, rather than a dim, in changing environments.
+These results might suggest new ways to optimize the biotechnological production of molecules of interest.
+\end{author-summary}
 
 \selectlanguage{french}
+%%% MAX 4000 CARACTERES %%%%
 \begin{abstract}
-La croissance et la reproduction sont des mécanismes fondamentaux du vivant.
-Généralement couplés chez les micro-organismes, ces deux processus reposent sur la transformation des ressources de l'environnement (matière et énergie) en nouvelles structures organiques.
-Malgré l'extrême diversité des micro-organismes, certaines caractéristiques clés du contrôle de la croissance semblent être largement répandues, au point que des lois de croissance ont pu être érigées.
-Ces dernières montrent que des mécanismes encore plus fondamentaux dictent la répartition des ressources dans les différents sous-systèmes de la cellule, généralement dans un souci d'optimisation de son taux de croissance.
-Mais ces lois ont été établies uniquement lors d'une croissance à l'état stationnaire, c'est-à-dire lorsque l'environnement et le taux de croissance ne varient pas dans le temps.
+Croissance et reproduction sont des mécanismes fondamentaux du vivant.
+Chez les micro-organismes, ces processus sont couplés dans la transformation des ressources de l'environnement (matière et énergie) en nouvelles structures organiques.
+Étonnamment, malgré l'extrême diversité des micro-organismes, certaines caractéristiques de leur physiologie suivent des lois de croissance universelles.
+Cela suggère l'existence de principes fondamentaux, ce qui a été en effet récemment confirmé en montrant que ces lois s'expliquent facilement si l'organisme maximise son taux de croissance dans chaque environnement.
+Cependant, ces lois ont seulement été étudiées lors de croissances à l'état stationnaire, c'est-à-dire lorsque l'environnement et donc le taux de croissance sont stables.
 Ces conditions, même si elles peuvent être reproduites en laboratoire, n'ont rien à voir avec les conditions de vie dans lesquelles les organismes ont évolué durant des milliards d'années.
+Le but de cette thèse est d'étendre dans un contexte d'environnement purement dynamique, l'étude à la fois théorique et expérimentale de ces stratégies de croissance microbienne.
 
-Ces lois sont-elles toujours valable en environnement dynamique ?
-Comment traduire les concepts d'optimalité dans de tels environnements ?
+En modélisant la cellule comme un auto-réplicateur, nous cherchons à savoir quelles sont les meilleures stratégies d'allocation des ressources lors de l'adaptation à un nouvel environnement.
+Ce problème se formule très bien comme un problème de contrôle optimal : la cellule choisit en temps réel comment allouer ses ressources entre la machinerie d'expression génique et le métabolisme.
+Le meilleur comportement possible, comme le révèle l'application du Principe de Maximisation de Pontryagin, est de successivement orienter toutes les ressources dans chacun des deux secteurs, une stratégie communément appelée \textit{bang-bang}.
+Mais s'approcher d'un tel contrôle requiert pour la cellule des stratégies de régulation bien plus complexes que celles qui étaient suffisantes pour maximiser le taux de croissance à l'état stationnaire.
+De manière intéressante, la régulation de la synthèse des ribosomes par le ppGpp chez la bactérie \textit{Escherichia coli} s'avère présenter la structure adéquate.
+Nous montrons en effet qu'elle permet de détecter rapidement toute incompatibilité entre la concentration de précurseurs et celle des ribosomes, et d'ajuster en conséquence la synthèse de ces derniers pour obtenir un comportement proche de l'optimum mathématique prédit.
 
-Le but de ce projet est de poser les bases de nouvelles lois de croissance étendues en environnement dynamique, c'est-à-dire plus proche du milieu réel de vie, et tenant mieux compte des pressions de sélection qui ont donné lieu à ces organismes.
-Notre cadre d'étude s'articule autour d'un modèle d'auto-réplicateur qui prend en compte les caractéristiques principales de la croissance par assimilation de nutriments.
-De ce cadre émerge un problème d'allocation des ressources entre la machinerie d'expression génique et le métabolisme, que nous formulons comme un problème de contrôle optimal.
-Le modèle prédit ainsi via l'application du Principe de Maximisation de Pontryagin que le meilleur comportement possible lors d'une transition est une allocation de type bang-bang, c'est-à-dire lors de laquelle les ressources vont par alternance soit uniquement dans la machinerie, soit uniquement dans le métabolisme.
-Malgré l'absence d'observation claire d'une tel phénomène, nous montrons qu'un tel comportement est conceptuellement possible à partir des régulations connues de l'enterobactérie \textit{Escherichia coli}, notamment le système ppGpp qui régule l'abondance des ribosomes.
+Même si de vieilles données le suggèrent, un tel comportement \textit{bang-bang} n'a jamais été totalement confirmé expérimentalement pour la synthèse des ribosomes.
+Nous mesurons donc l'abondance des ribosomes chez \textit{Escherichia coli} au niveau d'une cellule unique lors d'un changement brutal de milieu de culture.
+En particulier, nous créons une souche de \textit{E.coli} sur laquelle un rapporteur fluorescent est attaché à l'une des sous-unités ribosomales, permettant ainsi leur quantification \textit{in vivo}.
+Un appareillage micro-fluidique nous permet ensuite de contrôler en temps réel le milieu de croissance tout en observant individuellement chaque cellule fluorescente.
+Nous développons une méthode basée sur le lissage de Kalman qui est capable de reconstruire la façon dont les ressources sont aiguillées vers la synthèse des ribosomes.
+Même si ces résultats sont préliminaires, ils suggèrent que la concentration des ribosomes oscille après le changement d'environnement, ce qui rappelle une stratégie de type \textit{bang-bang}.
 
-Afin d'observer de tester ces prédictions, nous avons ingéniéré une souche de \textit{E. coli} arborant des ribosomes fluorescents.
-Nous avons observé ces cellules dans un système de microfluidique et enregistré leur fluorescence au cours de transitions de croissance.
-En utilisant les dernières méthodes d'identification paramétrique, nous pouvons reconstruire l'état du contrôleur d'allocation des ressources avec une très bonne précision temporelle.
-Même s'ils ne sont que préliminaires, ces résultats expérimentaux semblent confirmer la nature bang-bang de l'allocation lors des transitions de croissance chez \textit{E. coli}.
-
-Notre travail peut jouer un rôle clé dans la formalution de nouvelles lois de croissances, étendues en environnement dynamique.
-Il a également de nombreuses applications en biotechnologie, dans la mesure où les micro-organismes et plus particulièrement \textit{E. coli} sont très largement utilisés par de nombreuses industries pour produire des molécules valorisables.
+Nos résultats montrent que la capacité des systèmes de régulations à intégrer l'état de différentes variables physiologiques est crucial dans l'optimisation de la croissance en environnement variable.
+Au final, nous démontrons que les principes utilisés à l'état stationnaire peuvent, lorsqu'ils sont appliqués en dynamique, générer des comportements inattendus et expliquer plus en détails les stratégies de régulations employées par les micro-organismes.
 \end{abstract}
+
+\begin{resume-vulgaire}
+Bactéries et autres micro-organismes se multiplient en utilisant la matière et l'énergie présentent dans leur environnement.
+Les stratégies qui leur permettent d'optimiser ce processus ont été longuement étudiées, mais uniquement dans des environnements stables.
+Ici, nous construisons un modèle simple de la croissance microbienne et utilisons la théorie du contrôle optimal pour déterminer la façon dont les cellules devrait agir lorsque leur environnement est soudainement modifié.
+Nous mettons en évidence que la meilleure stratégie consiste à aiguiller toutes les ressources disponibles vers la production d'un seul composant de manière alternative, une prédiction que nous tentons également de confirmer de manière expérimentale.
+En d'autres termes, dans un contexte dynamique, mieux vaut agir tel un interrupteur à bascule plutôt qu'un variateur de lumière.
+Ces résultats pourraient suggérer de nouvelles façons d'optimiser les processus biotechnologiques de production de molécules d'intérêt.
+\end{resume-vulgaire}
+
 \selectlanguage{english}
+%TC:endignore  
