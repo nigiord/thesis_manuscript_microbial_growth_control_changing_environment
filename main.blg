@@ -6,8 +6,9 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated field_info (elt_size=4) to 12276 items from 5000.
+Reallocated field_info (elt_size=4) to 12242 items from 5000.
 Database file #1: references.bib
+Warning--I didn't find a database entry for "keseler_ecocyc:_2013"
 Warning--I didn't find a database entry for "young_measuring_2012"
 Warning--empty author and editor in fox_how_2016
 Warning--missing publisher in fox_how_2016
@@ -29,45 +30,45 @@ Warning--missing publisher in skimage_cross-correlation
 Warning--there's a month but no year in skimage_cross-correlation
 Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
-You've used 213 entries,
+You've used 211 entries,
             3170 wiz_defined-function locations,
-            1962 strings with 49894 characters,
-and the built_in function-call counts, 363641 in all, are:
-= -- 45565
-> -- 2856
+            1953 strings with 49641 characters,
+and the built_in function-call counts, 363025 in all, are:
+= -- 45508
+> -- 2852
 < -- 14
-+ -- 1875
-- -- 712
-* -- 30404
-:= -- 39185
-add.period$ -- 1004
-call.type$ -- 213
-change.case$ -- 27
++ -- 1873
+- -- 711
+* -- 30380
+:= -- 39100
+add.period$ -- 996
+call.type$ -- 211
+change.case$ -- 26
 chr.to.int$ -- 18
-cite$ -- 231
-duplicate$ -- 29617
-empty$ -- 34657
+cite$ -- 229
+duplicate$ -- 29585
+empty$ -- 34583
 format.name$ -- 888
-if$ -- 85147
+if$ -- 84995
 int.to.chr$ -- 0
-int.to.str$ -- 213
-missing$ -- 2332
-newline$ -- 1244
-num.names$ -- 217
-pop$ -- 3906
+int.to.str$ -- 211
+missing$ -- 2322
+newline$ -- 1232
+num.names$ -- 215
+pop$ -- 3880
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3900
+skip$ -- 3873
 stack$ -- 0
-substring$ -- 68586
-swap$ -- 5831
+substring$ -- 68557
+swap$ -- 5801
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 18
-while$ -- 2070
-width$ -- 216
-write$ -- 2686
+while$ -- 2062
+width$ -- 214
+write$ -- 2662
 (There was 1 error message)
