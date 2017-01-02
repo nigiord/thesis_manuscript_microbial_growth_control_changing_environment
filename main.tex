@@ -112,13 +112,23 @@
 \newenvironment{acknowledgements}{
 \newpage
 \null \vspace{\stretch{1}}
-\begin{center}\bfseries Acknowledgements \end{center}
+\begin{center}\bfseries Remerciements \end{center}
 }
 {\vfill \null}
 
 \newenvironment{abstract}{
 \clearpage
 \begin{center}\bfseries \abstractname \end{center}
+}
+{\null}
+
+\newenvironment{author-summary}{
+\begin{center}\bfseries Non-technical summary of the work \end{center}
+}
+{\vfill \null}
+
+\newenvironment{resume-vulgaire}{
+\begin{center}\bfseries Résumé pour le grand public \end{center}
 }
 {\vfill \null}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,7 +147,7 @@
 
 \input{titlepage}
 
-\input{dedication}
+%\input{dedication}
 
 \input{acknowledgements}
 

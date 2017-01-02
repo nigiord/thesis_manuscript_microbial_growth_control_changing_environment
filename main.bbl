@@ -1314,7 +1314,7 @@ Zulkower V, Page M, Ropers D, Geiselmann J, de~Jong H.
 Gefen O, Fridman O, Ronin I, Balaban NQ.
 \newblock Direct Observation of Single Stationary-Phase Bacteria Reveals a
   Surprisingly Long Period of Constant Protein Production Activity.
-\newblock Proc Natl Acad Sci U S A. 2014 Jan;111(1):556--561.
+\newblock Proc Natl Acad Sci U S A. 2014 Jan;111(1):556--61.
 \newblock \href {http://dx.doi.org/10.1073/pnas.1314114111}
   {doi:~10.1073/pnas.1314114111}.
 
@@ -1333,14 +1333,6 @@ Wang Q, Niemi J, Tan CM, You L, West M.
 \newblock Cytometry. 2010 Jan;77A(1):101--110.
 \newblock \href {http://dx.doi.org/10.1002/cyto.a.20812}
   {doi:~10.1002/cyto.a.20812}.
-
-\bibitem{young_measuring_2012}
-Young JW, Locke JCW, Altinok A, Rosenfeld N, Bacarian T, Swain PS, et~al.
-\newblock Measuring Single-Cell Gene Expression Dynamics in Bacteria Using
-  Fluorescence Time-Lapse Microscopy.
-\newblock Nat Protocols. 2012 Jan;7(1):80--88.
-\newblock \href {http://dx.doi.org/10.1038/nprot.2011.432}
-  {doi:~10.1038/nprot.2011.432}.
 
 \bibitem{paintdakhi_oufti:_2016}
 Paintdakhi A, Parry B, Campos M, Irnov I, Elf J, Surovtsev I, et~al.
@@ -1434,6 +1426,22 @@ Guizar-Sicairos M, Thurman ST, Fienup JR.
 Cross-{{Correlation}} ({{Phase Correlation}});.
 \newblock Available from:
   \url{http://scikit-image.org/docs/dev/auto_examples/plot_register_translation.html}.
+
+\bibitem{mihalcescu_green_2015}
+Mihalcescu I, Gateau MVM, Chelli B, Pinel C, Ravanat JL.
+\newblock Green Autofluorescence, a Double Edged Monitoring Tool for Bacterial
+  Growth and Activity in Micro-Plates.
+\newblock Phys Biol. 2015;12(6):066016.
+\newblock \href {http://dx.doi.org/10.1088/1478-3975/12/6/066016}
+  {doi:~10.1088/1478-3975/12/6/066016}.
+
+\bibitem{doherty_stage-specific_2010}
+Doherty GP, Bailey K, Lewis PJ.
+\newblock Stage-Specific Fluorescence Intensity of {{GFP}} and {{mCherry}}
+  during Sporulation {{In Bacillus Subtilis}}.
+\newblock BMC Res Notes. 2010 Nov;3:303.
+\newblock \href {http://dx.doi.org/10.1186/1756-0500-3-303}
+  {doi:~10.1186/1756-0500-3-303}.
 
 \bibitem{tomroud_tom_2016}
 @tomroud. Tom {{Roud}} on {{Twitter}} : "{{Apples}} Fall onto the {{Earth}}
