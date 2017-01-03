@@ -48,65 +48,6 @@
 % For genetic sequences
 \usepackage{seqsplit}
 
-%% For Python syntaxic coloration
-%\usepackage{lmodern}
-%\usepackage{color}
-%\usepackage{xcolor}
-%\usepackage{textcomp}
-%\usepackage{listings}
-%
-%% Default fixed font does not support bold face
-%\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
-%\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
-%
-%% Custom colors
-%\definecolor{SolutionColor}{rgb}{0.9,0.9,0.9} % bleu ciel
-%\definecolor{deepblue}{rgb}{0,0,0.5}
-%\definecolor{deepred}{rgb}{0.6,0,0}
-%\definecolor{deepgreen}{rgb}{0,0.5,0}
-%
-%% Python style for highlighting
-%\newcommand\pythonstyle{
-%	\lstset{
-%	prebreak=,
-%	language=Python,
-%	basicstyle=\ttm,
-%	otherkeywords={self},             % Add keywords here
-%	keywordstyle=\ttb\color{deepblue},
-%	emph={MyClass,__init__},          % Custom highlighting
-%	emphstyle=\ttb\color{deepred},    % Custom highlighting style
-%	stringstyle=\color{deepgreen},
-%	frame=tb,                         % Any extra options here
-%%	showstringspaces=false            % 
-%	commentstyle=\ttm\color{gray}
-%	}
-%}
-%
-%% Python environment
-%\lstnewenvironment{code-python}[1][]
-%{
-%	\pythonstyle
-%	\lstset{#1}
-%}
-%{}
-%
-%
-%\usepackage{xspace}
-%% Python for inline
-%\newcommand\pythoninline{\noindent\lstinline[ %\noindent is here because texmaker is buggy...
-%	language=Python,
-%	basicstyle=\ttm,
-%	otherkeywords={self},             % Add keywords here
-%	keywordstyle=\ttb\color{deepblue},
-%	emph={MyClass,__init__},          % Custom highlighting
-%	emphstyle=\ttb\color{deepred},    % Custom highlighting style
-%	stringstyle=\color{deepgreen},
-%	frame=tb,                         % Any extra options here
-%	commentstyle=\ttm\color{gray}
-%	]
-%}
-%
-
 
 %%%%%%%%%%% Custom environment %%%%%%%%%%%
 \newenvironment{acknowledgements}{
@@ -131,6 +72,32 @@
 \begin{center}\bfseries Résumé pour le grand public \end{center}
 }
 {\vfill \null}
+
+\newenvironment{chapter_summary}[1]{
+\section*{Résumé du Chapitre \thechapter : #1}
+}
+{\null}
+
+
+%% For chapter mark
+%\makeatletter
+%\g@addto@macro{\frontmatter}{
+%    \renewcommand{\chaptermark}[1]{%
+%        \markboth{#1}{}%
+%    }    
+%}
+%\g@addto@macro{\mainmatter}{
+%    \renewcommand{\chaptermark}[1]{%
+%        \markboth{Chapter \thechapter{}: #1}{}%
+%    }    
+%}
+%\g@addto@macro{\backmatter}{
+%    \renewcommand{\chaptermark}[1]{%
+%        \markboth{#1}{}%
+%    }    
+%}
+%\makeatother
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%% Custom commands %%%%%%%%%%%%%
@@ -143,26 +110,39 @@
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
 \input{titlepage}
 
 %\input{dedication}
 
-\input{acknowledgements}
+%\input{acknowledgements}
 
 \input{abstract}
 
 \tableofcontents
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%\frontmatter
+%\input{Chapters/introduction_summary}
+%\mainmatter
 \input{Chapters/introduction}
 
+%\frontmatter
+%\input{Chapters/theory_summary}
+%\mainmatter
 \input{Chapters/theory}
 
+%\frontmatter
+%\input{Chapters/experiments_summary}
+%\mainmatter
 \input{Chapters/experiments}
 
+%\frontmatter
+%\input{Chapters/discussion_summary}
+%\mainmatter
 \input{Chapters/discussion}
 
 \bibliography{references}
