@@ -6,7 +6,7 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated field_info (elt_size=4) to 12242 items from 5000.
+Reallocated field_info (elt_size=4) to 12276 items from 5000.
 Database file #1: references.bib
 Warning--I didn't find a database entry for "keseler_ecocyc:_2013"
 Warning--I didn't find a database entry for "young_measuring_2012"
@@ -30,45 +30,45 @@ Warning--missing publisher in skimage_cross-correlation
 Warning--there's a month but no year in skimage_cross-correlation
 Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
-You've used 211 entries,
+You've used 212 entries,
             3170 wiz_defined-function locations,
-            1953 strings with 49641 characters,
-and the built_in function-call counts, 363025 in all, are:
-= -- 45508
-> -- 2852
+            1959 strings with 49959 characters,
+and the built_in function-call counts, 365415 in all, are:
+= -- 45807
+> -- 2872
 < -- 14
-+ -- 1873
-- -- 711
-* -- 30380
-:= -- 39100
-add.period$ -- 996
-call.type$ -- 211
++ -- 1883
+- -- 716
+* -- 30590
+:= -- 39353
+add.period$ -- 1001
+call.type$ -- 212
 change.case$ -- 26
 chr.to.int$ -- 18
-cite$ -- 229
-duplicate$ -- 29585
-empty$ -- 34583
-format.name$ -- 888
-if$ -- 84995
+cite$ -- 230
+duplicate$ -- 29777
+empty$ -- 34811
+format.name$ -- 894
+if$ -- 85553
 int.to.chr$ -- 0
-int.to.str$ -- 211
-missing$ -- 2322
-newline$ -- 1232
-num.names$ -- 215
-pop$ -- 3880
+int.to.str$ -- 212
+missing$ -- 2335
+newline$ -- 1238
+num.names$ -- 216
+pop$ -- 3901
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3873
+skip$ -- 3892
 stack$ -- 0
-substring$ -- 68557
-swap$ -- 5801
+substring$ -- 69040
+swap$ -- 5834
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 18
-while$ -- 2062
-width$ -- 214
-write$ -- 2662
+while$ -- 2073
+width$ -- 215
+write$ -- 2675
 (There was 1 error message)

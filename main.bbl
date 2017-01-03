@@ -860,6 +860,14 @@ Jazwinski AH.
 \newblock Stochastic Processes and Filtering Theory.
 \newblock {Courier Corporation}; 2007.
 
+\bibitem{giordano_dynamical_2016}
+Giordano N, Mairet F, Gouz{\'e} JL, Geiselmann J, de~Jong H.
+\newblock Dynamical {{Allocation}} of {{Cellular Resources}} as an {{Optimal
+  Control Problem}}: {{Novel Insights}} into {{Microbial Growth Strategies}}.
+\newblock PLOS Comput Biol. 2016 Mar;12(3):e1004802.
+\newblock \href {http://dx.doi.org/10.1371/journal.pcbi.1004802}
+  {doi:~10.1371/journal.pcbi.1004802}.
+
 \bibitem{keseler_ecocyc_2013}
 Keseler IM, Mackie A, Peralta-Gil M, Santos-Zavaleta A, Gama-Castro S,
   Bonavides-Mart{\'\i}nez C, et~al.
