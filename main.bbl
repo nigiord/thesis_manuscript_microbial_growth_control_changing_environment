@@ -1312,7 +1312,7 @@ Gefen O, Fridman O, Ronin I, Balaban NQ.
 \newblock \href {http://dx.doi.org/10.1073/pnas.1314114111}
   {doi:~10.1073/pnas.1314114111}.
 
-\bibitem{klein_tlm-tracker:_2012}
+\bibitem{klein_tlm-tracker_2012}
 Klein J, Leupold S, Biegler I, Biedendieck R, M{\"u}nch R, Jahn D.
 \newblock {{TLM}}-{{Tracker}}: Software for Cell Segmentation, Tracking and
   Lineage Analysis in Time-Lapse Microscopy Movies.
@@ -1328,7 +1328,7 @@ Wang Q, Niemi J, Tan CM, You L, West M.
 \newblock \href {http://dx.doi.org/10.1002/cyto.a.20812}
   {doi:~10.1002/cyto.a.20812}.
 
-\bibitem{paintdakhi_oufti:_2016}
+\bibitem{paintdakhi_oufti_2016}
 Paintdakhi A, Parry B, Campos M, Irnov I, Elf J, Surovtsev I, et~al.
 \newblock Oufti: An Integrated Software Package for High-Accuracy,
   High-Throughput Quantitative Microscopy Analysis: {{Oufti}}: Image Analysis
