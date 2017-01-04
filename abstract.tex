@@ -1,44 +1,48 @@
 \selectlanguage{english}
 %%% MAX 4000 CHARACTERS %%%%
 \begin{abstract}
-Growth is one of the most fundamental processes of life.
-In microbial cells, it relies on the transformation of matter and energy from the environment into diverse organic structures.
-Interestingly when comparing growth in different environments, microbial physiology exhibits general growth laws that relate the macromolecular composition of the cell to the growth rate.
+Growth is the most fundamental property of life.
+Growth consists in the transformation of matter and energy from the environment into diverse organic structures.
+Interestingly, general growth laws relate the macromolecular composition of the cell to growth rate.
 These laws are widespread and conserved in different microbial species, suggesting a fundamental principle of design.
-Indeed, recent work has shown that these empirical regularities can be derived from coarse-grained models of resource allocation, and explained by the principles of natural selection.
-However, while these studies focus on steady-state growth, such conditions are rarely found in natural habitats, where microorganisms are continually challenged by environmental fluctuations.
-The aim of this thesis is to extend the theoretical and experimental studies of microbial growth strategies to dynamical environments.
+Recent work has shown that these empirical regularities can be derived from coarse-grained models of resource allocation and explained by the principles of natural selection.
+However, the vast majority of these studies focus on steady-state growth.
+Such conditions are rarely found in natural habitats, where microorganisms are continually challenged by environmental fluctuations.
+The aim of this thesis is to extend the theoretical and experimental studies of microbial growth strategies to changing environments.
 
-Using a self-replicator model, we develop an intuitive framework that encapsulates the main features of growth through nutrient assimilation.
-We formulate dynamical growth maximization as an optimal control problem that the microbial cell must solve to allocate its resources between gene expression machinery and metabolism.
-We find a general solution using Pontryagin's Maximum Principle, and compare it with different possible implementations of growth control in bacterial cells.
-It shows that simple control strategies enabling growth-rate maximization at steady state are suboptimal for transitions from one growth regime to another, for example when shifting bacterial cells to a medium supporting a higher growth rate.
-A near-optimal control strategy in dynamical conditions is shown to require information on several, rather than a single physiological variable.
-Interestingly, this strategy has structural analogies with the regulation of ribosomal protein synthesis by ppGpp in the enterobacterium \textit{Escherichia coli}.
-It involves sensing a mismatch between precursor and ribosome concentrations, as well as the adjustment of ribosome synthesis in a switch-like manner.
+Using a self-replicator model, we developed a theoretical framework that encapsulates the main features of growth.
+We formulate dynamical growth maximization as an optimal control problem that the microbial cell must solve in order to allocate the available resources to the gene expression machinery or to metabolism.
+Using Pontryagin's Maximum Principle, we have derived a general solution to the optimization problem and we have compared the optimal strategy with possible implementations of growth control in bacterial cells.
+Our results show that simple control strategies that maximize the growth-rate at steady state are suboptimal for transitions from one growth regime to another.
+We show that a near-optimal control strategy in dynamical conditions requires information about several, rather than a single, physiological variable.
+Interestingly, this strategy has structural analogies with the regulation of ribosomal protein synthesis by the signaling molecule ppGpp in the enterobacterium \textit{Escherichia coli}.
+The strategy involves sensing a discrepancy between the concentrations of precursor metabolites and ribosomes, and the control of the rate of ribosome synthesis in a switch-like manner.
 
-While suggested by old literature data, this switch-like ribosome synthesis after a growth transition has never been experimentally confirmed.
-For this reason, we measure ribosomal abundance of \textit{Escherichia coli} at the single-cell level during a nutrient upshift.
-More precisely, we have constructed a strain in which a fluorescent marker has been attached to a ribosomal subunit, thus allowing \textit{in-vivo} monitoring of the abundance of ribosomes.
-We monitor this strain in a microfluidic device designed for long-term imaging of individual cells in a continuous culture, and use it to simulate a nutrient upshift by changing the input medium.
-We develop a Kalman smoothing method that is able from these data to reconstruct how resources are allocated towards the synthesis of ribosomes.
-The results obtained are preliminary and do not allow a decisive validation, but they suggest the presence of oscillatory patterns after an upshift that could be reminiscent of the expected behavior.
+Even though this switch-like ribosome synthesis has been suggested by published data, the phenomenon has never been experimentally confirmed.
+We therefore measured ribosomal abundance in \textit{Escherichia coli} at the single-cell level during a nutrient upshift.
+More precisely, we constructed a strain in which a fluorescent marker has been attached to a ribosomal subunit, thus allowing \textit{in-vivo} monitoring of the abundance of ribosomes.
+We monitored this strain in a microfluidics device designed for long-term imaging of individual cells in a continuous culture, and used this experimental setup to simulate a nutrient upshift by changing the input medium.
+We developed a Kalman smoothing method for extracting quantitative information about resource allocation to ribosome synthesis from the raw data.
+Even though our preliminary results do not allow to reach a final conclusion, they do suggest the presence of oscillatory patterns after an upshift that are reminiscent of the expected behavior.
 
-Our results show how the capability of regulatory systems to integrate information about several physiological variables is critical for optimizing growth in a changing environment.
-All over, they demonstrate that when applied in dynamical instead of steady-state conditions, the same principles can generate unexpected behaviors and provide more information about the regulatory strategies employed by microorganisms.
-Such new understandings could be of great help for biotechnological purposes, in particular when using microorganisms to produce valuable elements for the health and energy industries.
+Our results demonstrate that the capability of regulatory systems to integrate information about several physiological variables is critical for optimizing growth in a changing environment.
+The proposed control scheme correctly reproduces the observed growth laws at steady state, but also predicts novel and unexpected behaviors when applied to a dynamical environment.
+Our improved understanding of the principles that govern the control of bacterial growth could be used for improving biotechnological processes, in particular those that use microorganisms to produce high valuable-added products for the chemical or biomedical industry.
 \end{abstract}
 
 %TC:ignore  
 
 %%% MAX 1000 CHARACTERS %%%
 \begin{author-summary}
-Microbial cells sustain and replicate themselves from the matter and energy they extract from their environment.
-Strategies enabling microorganisms to optimize their replication rate have been extensively studied, but mostly in stable environments.
-Here, we build a simple model of microbial growth and use mathematical methods from optimal control theory to determine how the cells should behave when the environment around them is abruptly changed.
-Interestingly, we find that microbial cells should adopt an \textit{on-off} strategy: they should alternatively allocate all their resources to the production of each cell component, a prediction that we also tried to confirm experimentally.
-In other words, the regulations inside the bacterial cells could profit from functioning more like a switch, rather than a dim, in changing environments.
-These results might suggest new ways to optimize the biotechnological production of molecules of interest.
+Bacteria grow by exploiting matter and energy extracted from their environment.
+The strategies that enable bacteria to optimize their growth rate have been extensively studied.
+However, most of these studies were carried out in a constant environment.
+Here, we construct a simple model of microbial growth and use mathematical methods from optimal control theory to determine how the cells should behave when the environment changes abruptly.
+We find that microbial cells should adopt an \textit{on-off} strategy:
+they should alternatively allocate all of their resources to the production of two categories of cellular components, the elements needed for gene expression and the ones needed for the general metabolism of the cell.
+Our preliminary experiments confirm this prediction.
+In other words, theory tells us that switch-like mechanisms would optimize the growth of bacterial cells and our experiments validate the theory.
+This suggests new ways for optimizing biotechnological processes.
 \end{author-summary}
 
 \selectlanguage{french}
