@@ -61,26 +61,26 @@ Nous montrerons comment l'utilisation de marqueurs fluorescents des ribosomes, d
 \subsection{Self-replication is a resource allocation problem}
 
 At every moment of our lives, we are surrounded by billions of microscopic organisms.
-They sustain themselves by harvesting energy from their environment, in the form of organic matter, highly reactive chemicals, or light~\cite{madigan_biology_2006,schaechter_microbe_2006}.
+They sustain themselves by harvesting energy from their environment in the form of organic matter, highly reactive chemicals, or light~\cite{madigan_biology_2006,schaechter_microbe_2006}.
 While most of our cells are kept in a stable and friendly internal environment (temperature, oxygenation, nutrient abundance, ...), microorganisms have evolved to constantly adapt their physiology to strongly variable conditions~\cite{mcarthur_microbial_2006,menge_nitrogen_2012,hobbie_microbes_2013,
 savageau_escherichia_1983,savageau_demand_1998,blount_unexhausted_2015,vanelsas_survival_2011}.
 Not without success, because microbes have been found to survive almost everywhere, sometimes in the strangest places that were initially thought unsuitable for life~\cite{rothschild_life_2001,nicholson_transcriptomic_2012,madigan_biology_2006,schaechter_microbe_2006}.
 Such ubiquity translates a strong potential for adaptation.
-The model organism \textit{Escherichia coli}, a bacteria first isolated from our intestinal tract, is capable of growing on dozens of different carbon sources through changes in the expression of thousands of genes~\cite{zimmer_microcosm:_2009}.
+The model organism \textit{Escherichia coli}, a bacterium first isolated from our intestinal tract, is capable of growing on dozens of different carbon sources through changes in the expression of thousands of genes~\cite{zimmer_microcosm:_2009}.
 
 Microorganisms, along with all living cells, are mainly constituted of polymers (DNA, RNA, proteins) consisting of many repeated subunits (nucleotides, amino acids).
-The information about their sequences is stored in the form of genes physically located on the DNA.
+The information about their sequences is stored in the form of genes, physically located on the DNA.
 Gene expression is the process by which this information is used in the synthesis of a functional final product (protein or RNA).
-The gene expression machinery (itself constituted of RNA and proteins) synthesizes gene products after binding to target sequences either at the state of transcription (promoter on the DNA), or translation (ribosome binding site on the messaging RNA).
+The gene expression machinery (itself constituted of RNA and proteins) synthesizes gene products after binding to target sequences either by transcription (promoter on the DNA), or translation (ribosome binding site on the messaging RNA).
 In a given cell, there are roughly as many different target sequences as genes~\cite{keseler_ecocyc_2013}, which ensures that not all products are synthesized at the same rate.
 Furthermore, some of these products specifically bind some promoters and stimulate or repress promoter activity and hence gene expression.
 These products are called transcription factors and allow, in addition to other mechanisms, the regulation of cell composition.
 
 The reorganization of gene expression controls the abundance of enzymes and ribozymes that catalyze the biochemical reactions allowing the cell to perform different functions.
-For instance, assimilating a given nutrient involves the synthesis of the corresponding uptake protein and of the metabolic enzymes converting the nutrients into reductive power, nucleotides and amino acids~\cite{schaechter_microbe_2006}.
+For instance, assimilating a given nutrient involves the synthesis of the corresponding uptake protein and of the metabolic enzymes converting the nutrients into reducing power, nucleotides and amino acids~\cite{schaechter_microbe_2006}.
 These precursors are then used to produce new macromolecules, closing the loop of self-replication.
 In order to optimize the overall process in different environmental conditions, the cell must adjust the abundance of every enzyme involved in this network of biochemical reactions.
-By doing so, the cell actually resolves a resource allocation problem, where a common wealth (precursors) has to be distributed over thousands of potential beneficiaries (proteins and other macromolecules).
+By doing so, the cell actually solves a resource allocation problem, where a common wealth (precursors) has to be distributed over thousands of potential beneficiaries (proteins and other macromolecules).
 
 \subsection{Optimizing biomass production yields a competitive advantage}
 
@@ -92,7 +92,7 @@ Whether they apply at the species, the population, the organism, or even the gen
 An optimal resource allocation would be a gene expression scheme maximizing the fitness factors.
 But since fitness factors have to take into account the ability to survive, reproduce, and compete with other organisms in a given (sometimes changing) environment, they are often context-dependent and highly difficult to identify.
 
-For this reason, there is no consensus about what constitute the main fitness factors of microorganisms.
+For this reason, there is no consensus about what constitutes the main fitness factors of microorganisms.
 Competition for common resources seems to favor the maximization of offspring, in the sense that a replicator with more descendants will outnumber its competitors in the long term~\cite{dawkins_selfish_1976}.
 It is unclear, however, how this general principle translates into specific features of microbial physiology.
 For instance, the use of genome-scale metabolic network models has shown that metabolism maximizes the production either of biomass or available energy (ATP) depending on the environmental conditions~\cite{schuetz_systematic_2007}.
@@ -101,7 +101,7 @@ Overall, it seems that cell optimality drifts in a multidimensional space and in
 
 Nevertheless, numerous studies have shown that considering growth rate maximization confers a good predictive power of microorganism physiology.
 When cultivated in minimal medium with acetate or succinate, \textit{Escherichia coli} uptake rates are correctly predicted by assuming that the metabolic network operates in a mode that maximizes growth rate~\cite{edwards_silico_2001}.
-This result is not general though, and depends on the carbon source and strain used~\cite{ibarra_escherichia_2002}.
+This result is not general though and depends on the carbon source and strain used~\cite{ibarra_escherichia_2002}.
 But even in other situations, the metabolic networks evolve rapidly towards growth-rate maximization if a constant nutrient-providing environment is maintained~\cite{ibarra_escherichia_2002}.
 The mutants obtained present modications in the regulation of the synthesis of metabolic enzymes~\cite{lewis_omic_2010}, indicating that not only the efficiency of the enzymes is affected, but also their abundance and thus the cellular composition.
 Overall, with the currently available knowledge and its limitations (discussed in Chapter~\ref{chap:discussion}), focusing on growth-rate maximization sounds like a rational choice to understand the growth strategies of microorganisms~\cite{molenaar_shifts_2009}.
@@ -126,7 +126,7 @@ Despite some adjustments (the Droop model being a well-known example~\cite{droop
 \textbf{Monod law, reproduced from~\cite{monod_growth_1949}.}
 Monod has been a pioneer in the formalization of microbial growth into fundamental, coarse-grained relationships.
 This figure displays the steady-state growth rate (in number of divisions per hour) of \textit{Escherichia coli} in a synthetic minimal medium at 37$^{\circ}$C containing different concentrations of glucose (a common carbon source).
-As the concentration of glucose increases, the growth rate of \textit{E. coli} also does by following the hyperbolic relationship described in Eq.~\ref{eq:monod_law}.
+As the concentration of glucose increases, so does the growth rate of \textit{E.~coli} by following the hyperbolic relationship described in Eq.~\ref{eq:monod_law}.
 The solid curve is obtained for $\mu_K = 1.35$ div h\textsuperscript{-1}, and $K_C = 0.22 \cdot 10^{-4}$ mol L\textsuperscript{-1}.
 }
 \label{fig:monod_law}
@@ -155,7 +155,7 @@ This ratio is correlated with the fraction of ribosome-affiliated proteins, and 
 \subsection{Static versus dynamical perspective on growth}
 
 The growth laws cited above apply at steady state, where all intensive properties of the cell are time-invariant~\cite{schaechter_microbe_2006,fishov_microbial_1995}.
-It means that the properties that are independent of the cell volume or the cell mass (temperature, concentrations, ...) are constant over time, even though the cell is still growing.
+This means that the properties that are independent of the cell volume or the cell mass (temperature, concentrations, ...) are constant over time, even though the cell is growing.
 It requires that the components of the cell "increase by the same factor over a time interval", which has motivated the use of the term balanced growth~\cite{campbell_synchronization_1957}.
 Experimentally, this growth scenario has been used as a standard because it improves reproducibility, in that the results do no longer depend on the precise timing of the samples~\cite{schaechter_microbe_2006}.
 It can be easily achieved in the laboratory either in continuous culture, where the substrate is continually supplied~\cite{borirak_molecular_2014}, or in batch conditions if the substrate is in high excess (Fig~\ref{fig:growth_curve}).
@@ -171,11 +171,11 @@ During a typical batch growth scenario, biomass accumulates (black thick line) w
 It is hard to study experimentaly and is known to be affected by the pre-culturing history of the strain~\cite{ng_damage_1962,dufrenne_effect_1997,shaw_effect_1967}, the magnitude and the rate of the change between the past and present environments~\cite{mcmeekin_predictive_2002}, and other hard-to-control environmental conditions~\cite{cheroutre-vialette_application_2002}.
 (B) The steady-state (or balanced-growth) phase is characterized by an exponential production of biomass.
 Its characteristics are time-invariant and quite robust accross conditions, which has made it a standard for microbial growth studies~\cite{schaechter_microbe_2006}.
-This phase can be extended for hundreds of generations in continuous cultures, by the constant renewal of the medium~\cite{borirak_molecular_2014,herbert_continuous_1956,wang_robust_2010}.
+This phase can be extended for hundreds of generations in continuous cultures by the constant renewal of the medium~\cite{borirak_molecular_2014,herbert_continuous_1956,wang_robust_2010}.
 As represented here, nutrients are quickly depleted in batch conditions, which does not allow to maintain steady-state growth for a long period of time.
 (C) The stationary phase occurs after the depletion of the limiting nutrients in the medium~\cite{chubukov_environmental_2014,schaechter_microbe_2006}.
 In natural conditions, microorganisms usually encounter poor media and spend most of their time in stationary phase~\cite{mcarthur_microbial_2006,menge_nitrogen_2012,hobbie_microbes_2013}.
-Some species which have evolved long-term resistance mechanisms, like sporulation~\cite{stragier_molecular_1996} or cannibalism~\cite{gonzalez-pastor_cannibalism:_2011}, can survive particularly long stationary phases.
+Some species that have evolved long-term resistance mechanisms, like sporulation~\cite{stragier_molecular_1996} or cannibalism~\cite{gonzalez-pastor_cannibalism:_2011}, can survive particularly long stationary phases.
 }
 \label{fig:growth_curve}
 \end{figure}
@@ -190,9 +190,9 @@ Are we missing something by studying in stable, unchanging conditions systems th
 \label{sec:problemstatement}
 
 Microbial growth is essentially a resource allocation problem that can be summarized in simple, fundamental growth laws.
-Though established empirically, those laws are elegantly explained if we consider that microorganisms behave in way that optimizes biomass production.
+Though established empirically, those laws are elegantly explained if we consider that microorganisms behave in ways that optimize biomass production.
 However, these laws describe growth in stable environments and it is hard to imagine how natural selection could have resulted in microorganisms that are optimal for conditions they rarely encounter outside the laboratory.
-This motivates the study of growth laws from a dynamical perspective, that is, in a changing environment, and leads us to the following problem statement: \textbf{Which strategies microorganisms follow to dynamically reallocate their resources after a change in the environment?}
+This motivates the study of growth laws from a dynamical perspective, that is, in a changing environment, and leads us to the following problem statement: \textbf{Which strategies do microorganisms follow in order to dynamically reallocate their resources after a change in the environment?}
 The development of this question prompts the following investigations.
 
 What are the best strategies of resource allocation if, like for the steady-state growth laws, we continue to assume that biomass production is the only optimization criterion?
@@ -204,13 +204,13 @@ The model will help us to establish actual resource allocation strategies that o
 However, it will not be able to tell us if microorganism do actually optimize such a criterion.
 We therefore need to measure biomass accumulation and changes in resource allocation following a change in the environment.
 How could one measure resource allocation during a growth transition?
-In the light of the discussion in the previous section, it requires to monitor the abundance of key macromolecules in living cells over time, while establishing an experimental set-up that allows to control the inherent variability of dynamical experimental studies of microbial growth.
+In the light of the discussion in the previous section, this requires monitoring the abundance of key macromolecules in living cells over time, while establishing an experimental set-up that allows to control the inherent variability of dynamical experimental studies of microbial growth.
 
 \section{Related work}
 
 \subsection{Modeling growth of microorganisms}
 
-My recent experience as a teacher taught me that, as of today, a lot of students in biology do not like mathematics very much.
+My recent experience as a teacher taught me that, as of today, many students in biology do not like mathematics very much.
 Since mathematics is the main language of modeling, this has often made it difficult for me to convince them that modeling is of key importance for biologists.
 However, while mathematics is the language, it is not the essence of modeling.
 Generally speaking, a model depicts and simplifies reality.
@@ -225,7 +225,7 @@ What makes mathematical modeling so useful in microbial growth studies?
 %A growth curve as presented in Fig.~\ref{fig:growth_curve} can be made in a day, so the limitations of evolutionary biology should not apply to microbial growth studies.
 %But as knowledge and experimental data on microbes accumulates, the need for a systemic understanding of biology is more and more pressing~\cite{alon_introduction_2006,kremling_systems_2013,hillis_why_1993}.
 Microbial physiology results from the interplay of thousands of chemical reactions that are not necessarily relevant in any given situation~\cite{schaechter_microbe_2006}.
-These reactions occurs on a wide range of time scales (shorter than 1~second for the metabolism, to more than 1~day for the degradation of stable proteins~\cite{schaechter_microbe_2006}), and are controlled by several layers of regulatory mechanisms that can only be understood through evolutionary considerations~\cite{dawkins_selfish_1976}.
+These reactions occurs on a wide range of time scales (shorter than 1~second for metabolism, to more than 1~day for the degradation of stable proteins~\cite{schaechter_microbe_2006}), and are controlled by several layers of regulatory mechanisms that can only be understood through evolutionary considerations~\cite{dawkins_selfish_1976}.
 As a consequence, even the simplest verbal hypothesis can resist direct empirical testing.
 But abstracting away complexity is the purpose of mathematical models.
 The overwhelming number of variables and the co-existence of several different time scales can be dealt with by choosing the correct framework.
@@ -247,7 +247,7 @@ The solution space is often further reduced by selecting the flux distributions 
 This approach, called flux balance analysis (FBA)~\cite{orth_comprehensive_2011,palsson_systems_2011}, has been shown to correctly predict many behaviors of the metabolic network of \textit{E. coli}~\cite{varma_stoichiometric_1994,edwards_silico_2001}.
 It has also proved capable of predicting its long-term adaptation through evolution of the network after a gene deletion~\cite{fong_metabolic_2004}.
 
-More direct modeling approaches, in the form of large kinetic models, have also been helpful to understand growth-related processes.
+More direct modeling approaches, in the form of large kinetic models, have also been helpful for understanding growth-related processes.
 Through the construction of a model of 47 differential equations and 193 parameters, Kotte \textit{et al.} have shown how metabolic fluxes are sensed at different locations in central carbon metabolism, and are integrated in a global cellular response by the coupling of enzymatic and transcriptional regulation~\cite{kotte_bacterial_2010}.
 Kinetic models of this type are sufficiently detailed to be used as an \textit{in silico} testbed to investigate specific molecular mechanisms and uncover their function in bringing about a cellular response~\cite{peskov_kinetic_2012}.
 The most emblematic instance of this approach is probably the recent whole-cell model of \textit{Mycoplasma genitalium}~\cite{karr_whole-cell_2012}.
@@ -267,8 +267,8 @@ The resulting models generally describe cellular functioning on a high level of 
 They can take the form of minimal core models that focus on a given aspect of growth, while still abstracting away the molecular details (see \textit{e.g.}, ~\cite{spiesser_size_2012}).
 They can also be used as proof-of-concepts to submit verbal hypotheses to the logic and rigor of mathematical reasoning~\cite{servedio_not_2014}.
 For instance, a simple proof-of-concept model was used to uncover the principles leading to overflow metabolism, a mechanism by which microorganisms switch to inefficient metabolic pathways when growing at high nutrient availability~\cite{molenaar_shifts_2009}.
-This paradoxal and widespread phenomenon~\cite{dijken_kinetics_1993,vemuri_overflow_2006,mckeehan_glycolysis_1982,hsu_cancer_2008} was shown to be easily explained by the fact that high yield pathways also require the synthesis of more enzymes, revealing the occurrence of a cost-benefit trade-off producing the switch when nutrients are no longer the limiting factor.
-Overall, these models have several advantages for the purpose of our study: they clearly state the underlying assumptions, and are sufficiently tractable to apply a variety of mathematical tools.
+This paradoxical and widespread phenomenon~\cite{dijken_kinetics_1993,vemuri_overflow_2006,mckeehan_glycolysis_1982,hsu_cancer_2008} was shown to be easily explained by the fact that high yield pathways also require the synthesis of more enzymes, revealing the occurrence of a cost-benefit trade-off producing the switch when nutrients are no longer the limiting factor.
+Overall, these models have several advantages for the purpose of our study: they clearly state the underlying assumptions, and are sufficiently tractable to be analyzed by a variety of mathematical tools.
 
 %It is also the preferred approach when one wants to broaden its access to mathematical tools~\cite{vandenberg_optimal_1998}, most of them being unhelpful with the high dimensionality of biological models.
 %As we will describe in section~\ref{sec:approach}, this represents the modeling strategy that was used in this thesis.
@@ -290,15 +290,15 @@ Overall, these models have several advantages for the purpose of our study: they
 
 Either to formulate hypotheses or test predictions, data on microbial growth need to be acquired.
 The most straightforward method is to work at the population level.
-When working with microorganisms, a clonal population of genetically identical cells can easily be obtained by inseminating a single colony into a growth medium~\cite{schaechter_microbe_2006}.
+When working with microorganisms, a clonal population of genetically identical cells can easily be obtained by inoculating a single colony into a growth medium~\cite{schaechter_microbe_2006}.
 Over time, this culture can be subjected to different types of measurements: for instance, biomass can be estimated  directly through measurements of the dry weight of samples~\cite{monod_growth_1949}, or indirectly through measurements of transmitted or scattered light across the culture~\cite{volkmer_condition-dependent_2011}, allowing to construct growth curves as presented in Fig.~\ref{fig:growth_curve}.
-Other population-wide parameters like the macromolecular composition~\cite{scott_interdependence_2010,scott_bacterial_2011} or the concentration of metabolites~\cite{bennett_absolute_2009} can also be evaluated.
-They represent averaged estimates from billions of genetically identical cells, and are thus usually robust and reliable measurements.
+Other population-wide parameters, like the macromolecular composition~\cite{scott_interdependence_2010,scott_bacterial_2011} or the concentration of metabolites~\cite{bennett_absolute_2009} can also be evaluated.
+They represent averaged estimates from billions of genetically identical cells and are thus usually robust and reliable measurements.
 In fact, most of \textit{E.~coli} parameters that are currently used in today's growth models have been measured at the population level, notably through the emblematic work of Bremer and Dennis~\cite{churchward_macromolecular_1982,bremer_modulation_1996,bremer_free_2003,bremer_feedback_2008}.
 
 Nevertheless, some questions cannot be solved at the population level~\cite{davey_flow_1996,bakshi_superresolution_2012,balaban_bacterial_2004}.
 One example are questions about the internal structure of the cell~\cite{bakshi_superresolution_2012}.
-Bakshi \textit{et al.} used a combination of fluorescent labeling and superresolution imaging to localize the ribosomes, RNA polymerazes and DNA in living \textit{E. coli} cells~\cite{bakshi_superresolution_2012}.
+Bakshi \textit{et al.} used a combination of fluorescent labeling and superresolution imaging to localize the ribosomes, RNA polymerases and DNA in living \textit{E.~coli} cells~\cite{bakshi_superresolution_2012}.
 They showed that despite what was previously thought, most of the translation occurs far from the DNA, on free mRNA molecules that migrate to ribosome-rich regions~\cite{bakshi_superresolution_2012}.
 Another example concerns questions about single-cell variability~\cite{balaban_bacterial_2004,booth_stress_2002,sumner_phenotypic_2002}.
 Through growth and imaging of single cells in a microfluidic device, Balaban \textit{et al.} showed that a clonal bacterial population can profit from a preexisting heterogeneity to persist when challenged by the presence of an antibiotic, a short-term mechanism that does not involve any genetic mutation~\cite{balaban_bacterial_2004}.
@@ -307,36 +307,36 @@ In fact, cell heterogeneity seems so crucial for the fitness of microorganisms t
 
 In addition to the level of measurement, the cultivation method plays a significant role in the kinds of question that an experiment can answer.
 With the advent of molecular genetics in the 1970s and 1980s, batch growth conditions have been the preferred choice of most microbiologists~\cite{hoskisson_continuous_2005}.
-As illustrated in Fig.~\ref{fig:growth_curve}, the organism is inseminated in a closed-system and grows until the nutrient is depleted.
+As illustrated in Fig.~\ref{fig:growth_curve}, the organism is inoculated in a closed-system and grows until the nutrient is depleted.
 In a sense, such a condition is close to what microbes encounter in nature, where key nutrients are only available for a short time and quickly depleted~\cite{mcarthur_microbial_2006,menge_nitrogen_2012,hobbie_microbes_2013}, and is essential to study many questions, \textit{e.g.} diauxic growth~\cite{kremling_understanding_2015}.
 Currently, a strong advantage of batch culturing is the intense parallelization that can be attained using microplates.
 Indeed, microplates allow to perform dozens to hundreds of growth experiments, each in less than one milliliter, while the optical density or the fluorescence of each culture is automatically monitored.
 This has proven extremely helpful for screening purposes and the establishment of standard libraries of gene labeling and modification~\cite{baba_construction_2006,zaslaver_comprehensive_2006}.
 Parallel cultivation has notably been exploited to construct roughly 4,000 single-cell knock-out mutants of \textit{Escherichia coli}, forming the Keio collection~\cite{baba_construction_2006}.
-This mutant collection was intensively used during the last decade to unveil unknown gene functions and test genome-wide effects of gene deletions (as of 2009, more than 4 millions samples issued from this collection had been shared worldwide~\cite{yamamoto_update_2009}).
+This mutant collection was extensively used during the last decade to unveil unknown gene functions and test genome-wide effects of gene deletions (as of 2009, more than 4~millions samples issued from this collection had been shared worldwide~\cite{yamamoto_update_2009}).
 Microplates have also helped building a massive library of transcriptional fusions of the green fluorescent protein to each of about 2,000 different promoters in \textit{E.~coli}~\cite{zaslaver_comprehensive_2006}.
 Interestingly, microplate batch growing conditions have also been used when applying the above constructions in the inference and analysis of gene regulatory networks~\cite{gerosa_dissecting_2013,berthoumieux_shared_2013,keren_promoters_2013,
 ronen_assigning_2002,stefan_inference_2015}.
-But the later use can be hazardous, because the main drawback of the batch condition is that the culturing system is poorly controlled.
+But the latter use can be hazardous, because the main drawback of the batch condition is that the culturing system is poorly controlled.
 Changes of key chemical parameters (\textit{e.g.} pH, pO\textsubscript{2}) have been shown to occur during the whole growth curve~\cite{bekker_changes_2007}. 
 At high density, metabolic by-products can accumulate in the medium and impede growth before nutrients are exhausted~\cite{ackerman_accumulation_1974,lenski_chemical_2002,luli_comparison_1990}.
 This could be dealt with by focusing on the beginning of the culture, but this part has been shown to strongly depend on the preculture history~\cite{ng_damage_1962,dufrenne_effect_1997,shaw_effect_1967}, and one is never sure when an internal steady state has been reached~\cite{myers_culture_1944}.
 %[NB THE FACT THAT CULTURE CONDITIONS CHANGE IS NOT NECESSARILY "HAZARDOUS", IF ALL MEASUREMENTS USED FOR THE INFERENCE PROCESS HAVE BEEN OBTAINED UNDER THE SAME CONDITIONS. THE CHANGE IN CONDITIONS IS ALSO A PERTURBATION OF THE NETWORK AND POSSIBLY INFORMATIVE...]
 % Nils: Indeed, but I need to make a point here in order to motivate why we used complicated culture.
 
-For this reason, we early observed development of continuous cultures for microbial studies~\cite{myers_culture_1944,novick_experiments_1950,herbert_continuous_1956}.
-Through permanent renewal of the growth medium, continuous cultures allow for maintenance of a chemically well-controlled environment, allowing for the acquisition of reproducible and reliable data~\cite{borirak_molecular_2014,hoskisson_continuous_2005}.
+For this reason, continuous cultures were developed for microbial studies~\cite{myers_culture_1944,novick_experiments_1950,herbert_continuous_1956}.
+Through the permanent renewal of the growth medium, continuous cultures allow for maintenance of a chemically well-controlled environment, allowing for the acquisition of reproducible and reliable data~\cite{borirak_molecular_2014,hoskisson_continuous_2005}.
 This has shown to be particularly valuable for comparative omic analysis, for instance the analysis of changes in protein levels~\cite{kolkman_comparative_2005} or genome-wide transcriptomic changes~\cite{boer_genome-wide_2003} that occur when \textit{Saccharomyces cerevisiae} is grown in different media.
 Continuous cultures are more difficult to set-up, however~\cite{novick_experiments_1950,borirak_molecular_2014}.
 Even if the working volume can be reduced~\cite{betts_miniature_2006}, they usually consume large quantities of medium and are, by design, expected to be more prone to contamination~\cite{novick_experiments_1950}.
 But recent advances in microfluidic technology have made it possible to set up robust continuous cultures experiments on the microliter scale~\cite{wang_robust_2010,balaban_bacterial_2004}.
 For instance, the mother machine~\cite{wang_robust_2010} allows to perform long-term growth of microorganisms
 in continuous culture using only a few milliliters of fresh medium per hour.
-It has enabled to show that \textit{E.~coli} growth is remarkably stable on the long term and rather immune to the aging mechanisms that normally affect mother cells in other microorganisms.
+This has enabled to show that \textit{E.~coli} growth is remarkably stable on the long term and rather immune to the aging mechanisms that normally affect mother cells in other microorganisms.
 It is however important to note that at those scales, growth can only be monitored through microscopy analysis, which could unnecessarily complicate studies that do not rely on single-cell measurements.
 
 The experimental approaches briefly reviewed above can be applied to study microbial growth in a dynamical setting~\cite{levy_strategy_2007,levy_coordination_2009,madar_promoter_2013,ehrenberg_mediumdependent_2012}.
-For instance, Levy \textit{et al.}~\cite{levy_strategy_2007,levy_coordination_2009} applied pulse-like environmental perturbations to a continuous culture of yeasts, and measured how transcriptomic reorganization occurs.
+For instance, Levy \textit{et al.}~\cite{levy_strategy_2007,levy_coordination_2009} applied pulse-like environmental perturbations to a continuous culture of yeast, and measured how transcriptomic reorganization occurs.
 They observed that the transcription levels are affected before the growth rate of the organism, suggesting a significant role of feed-forward sensing from the environment.
 Madar \textit{et al.}~\cite{madar_promoter_2013} analyzed the transcriptional reorganization occuring in \textit{E.~coli} during the lag phase through the coupling of batch experiments in microplates and single-cell measurements \textit{via} flow cytometry.
 They showed that \textit{bottleneck enzymes} were produced early in the lag phase, before the cells actually switch to the production of ribosomes and general metabolic enzymes.
