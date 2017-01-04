@@ -87,6 +87,14 @@ Zimmer C.
 \newblock Microcosm: {{E}}. Coli and the {{New Science}} of {{Life}}.
 \newblock {Vintage Books USA}; 2009.
 
+\bibitem{keseler_ecocyc_2013}
+Keseler IM, Mackie A, Peralta-Gil M, Santos-Zavaleta A, Gama-Castro S,
+  Bonavides-Mart{\'\i}nez C, et~al.
+\newblock {{EcoCyc}}: Fusing Model Organism Databases with Systems Biology.
+\newblock Nucleic Acids Res. 2013 Jan;41(Database issue):D605--12.
+\newblock \href {http://dx.doi.org/10.1093/nar/gks1027}
+  {doi:~10.1093/nar/gks1027}.
+
 \bibitem{dawkins_selfish_1976}
 Dawkins R.
 \newblock The {{Selfish Gene}}.
@@ -867,14 +875,6 @@ Giordano N, Mairet F, Gouz{\'e} JL, Geiselmann J, de~Jong H.
 \newblock PLOS Comput Biol. 2016 Mar;12(3):e1004802.
 \newblock \href {http://dx.doi.org/10.1371/journal.pcbi.1004802}
   {doi:~10.1371/journal.pcbi.1004802}.
-
-\bibitem{keseler_ecocyc_2013}
-Keseler IM, Mackie A, Peralta-Gil M, Santos-Zavaleta A, Gama-Castro S,
-  Bonavides-Mart{\'\i}nez C, et~al.
-\newblock {{EcoCyc}}: Fusing Model Organism Databases with Systems Biology.
-\newblock Nucleic Acids Res. 2013 Jan;41(Database issue):D605--12.
-\newblock \href {http://dx.doi.org/10.1093/nar/gks1027}
-  {doi:~10.1093/nar/gks1027}.
 
 \bibitem{maitra_bacterial_2014}
 Maitra A, Dill KA.
