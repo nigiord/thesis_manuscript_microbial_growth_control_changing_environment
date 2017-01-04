@@ -3,10 +3,51 @@
 
 \textit{There's an infinity of things that have never been done before, and most of those things are not worth doing.} -- Jeremy Fox, \textit{Dynamic Ecology (2016)}~\cite{fox_how_2016}
 
-\selectlanguage{french}
-\section*{Résumé en français}
+\begin{center}
+\noindent\rule{4cm}{0.1pt}
+\end{center}
 
-Dans cette section... (env. 1-2 pages)
+\selectlanguage{french}
+\begin{chapter_summary}{Introduction}
+Malgré leur apparente simplicité, les microorganismes sont des êtres vivants complexes capable de survivre dans les milieux les plus extrêmes.
+Une telle ubiquité repose en partie sur leur excellente capacité d'adaptation.
+En effet, \textit{via} l'information stockée dans son ADN, une cellule microbienne est capable, par la production des protéines nécessaires, d'assimiler et de se répliquer à partir d'une grande variété de nutriments.
+Ce mécanisme, que l'on appelle l'expression génétique, permet donc à la cellule de réguler sa composition en fonction des conditions environnementales.
+Chaque composant cellulaire est initialement issu des ressources trouvées dans l'environnement.
+\textit{Via} l'expression génétique, la machinerie cellulaire résout donc un problème de distribution des ressources: un bien commun (les nutriments) est partagé entre plusieurs milliers de bénéficiaires potentiels (les protéines et autre macromolécules).
+
+Selon quels critères les ressources sont-elles distribuées dans la cellule ?
+Le comportement de la plupart des systèmes vivants peut s'expliquer par les principes de la sélection naturelle.
+En définissant des facteurs de \textit{fitness} (adaptation au milieu), on peut généralement identifier des objectifs permettant à l'organisme de maximiser sa descendance, et donc de persister sur le long terme dans un milieu donné.
+Cependant, ces facteurs et surtout leurs importances relatives, peuvent s'avérer extrêmement complexes à identifier.
+C'est notamment le cas pour les microorganismes, où de nombreux facteurs peuvent entrer en compte.
+Cependant, de nombreuses études ont pu montrer que la maximisation du taux de croissance (ou taux de réplication) est un facteur qui semble commun à de nombreux microorganismes, et qui permet d'expliquer à lui seul une grande variété de comportements.
+
+Peut-on, à l'aide d'un tel principe universel, formaliser la croissance des microorganismes en lois simples, analogues à celle que l'on peut trouver dans d'autres domaines des sciences comme la physique ?
+Historiquement, la première tentative de formalisation de la physiologie microbienne en lois fondamentales fut la découverte de la loi de Monod il y a plus de 60 ans (Fig.~\ref{fig:monod_law} et Eq.~\ref{eq:monod_law}).
+Elle montre notamment que le taux de croissance d'un microorganisme est une loi hyperbolique de la concentration du nutriment limitant dans le milieu.
+Depuis, d'autres lois fondamentales ont pu être identifiées.
+L'une d'entre elle est une loi de croissance qui décrit la relation linéaire existant entre la concentration en ribosomes dans la cellule, et la richesse du milieu qui se traduit par le taux de croissance de l'organisme (Fig.~\ref{fig:scott_rnaprot}).
+De manière étonnante, quel que soient les détails moléculaires qui permettent à l'organisme cette adaptation, cette loi émerge s'il cherche à maximiser son taux de croissance dans chacun des milieux.
+
+Bien que quasi-universelle, ces lois se limitent cependant à un état bien particulier de croissance : la croissance à l'état stationnaire.
+Cet état est atteint lorsque l'organisme se multiplie pendant suffisamment longtemps dans un environnement stable (Fig.~\ref{fig:growth_curve}).
+Pour de nombreuses raisons, il s'avère très pratique pour les études théoriques et expérimentales car les composants de la cellule ne changent plus au cours de temps, ce qui lui vaut aussi l'appellation de croissance équilibrée (\textit{balanced growth}).
+Mais cet état a beau être pratique, il est très loin des conditions rencontrées par les microorganismes dans leur milieu de vie naturel.
+Ces derniers sont en effet plutôt soumis à des environnements très changeants, où les éléments chimiques indispensables à la croissance sont rares, et sont donc les objets d'une rude compétition.
+Pour quelles raisons alors les microorganismes seraient-ils optimisés pour une état de croissance qu'ils n'ont quasiment jamais rencontré au cours de leur évolution ?
+Si comme on s'y attend ces systèmes sont plutôt adaptés à des environnements variables, ratons-nous quelque chose en les étudiant dans des conditions stables ?
+
+Dans cette thèse, nous nous proposons ainsi d'étendre les études des lois de croissance en adoptant une perspective dynamique, c'est-à-dire, en environnements variables : quelles stratégies dynamiques les microorganismes suivent-ils pour redistribuer leurs ressources lors d'un changement environnemental ?
+Cette question sera développée ici en deux grands axes d'étude.
+
+Quelles sont les meilleures stratégies de distribution des ressources si, comme pour les lois de croissance à l'état stationnaire, la production de biomasse est le seul critère optimisé par la cellule ?
+Répondre à cette question est une étape nécessaire pour évaluer dans quelle mesure les critères d'optimisation dynamique peuvent différer de ceux à l'état stationnaire, et donc, de tester si les pressions évolutives s'appliquent effectivement différemment entre environnements stables et dynamiques.
+Cette preuve de concept reposera sur un modèle de la distribution des ressources dans une cellule microbienne, qui sera utilisé pour déterminer quelle est la manière dynamique optimale pour la cellule de distribuer ses ressources lors d'un changement d'environnement (Chapitre~\ref{chap:theory}).
+
+Pour tester cette prédiction expérimentalement, nous chercherons ensuite à mesurer cette distribution des ressources chez \textit{Escherichia coli} lors d'une transition de croissance (Chapitre~\ref{chap:experiments}).
+Nous montrerons comment l'utilisation de marqueurs fluorescents des ribosomes, d'un dispositif microfluidique de culture continue, et de méthodes originales d'analyse de série temporelle, permettent d'observer et de reconstruire dans le temps l'allocation des ressources lors d'une transition brutale du milieu.
+\end{chapter_summary}
 \selectlanguage{english}
 
 \begin{center}
@@ -30,7 +71,7 @@ Microorganisms, along with all living cells, are mainly constituted of polymers 
 The information about their sequences is stored in the form of genes physically located on the DNA.
 Gene expression is the process by which this information is used in the synthesis of a functional final product (protein or RNA).
 The gene expression machinery (itself constituted of RNA and proteins) synthesizes gene products after binding to target sequences either at the state of transcription (promoter on the DNA), or translation (ribosome binding site on the messaging RNA).
-In a given cell, there are roughly as many different target sequences as genes~\cite{keseler_ecocyc:_2013}, which ensures that not all products are synthesized at the same rate.
+In a given cell, there are roughly as many different target sequences as genes~\cite{keseler_ecocyc_2013}, which ensures that not all products are synthesized at the same rate.
 Furthermore, some of these products specifically bind some promoters and stimulate or repress promoter activity and hence gene expression.
 These products are called transcription factors and allow, in addition to other mechanisms, the regulation of cell composition.
 

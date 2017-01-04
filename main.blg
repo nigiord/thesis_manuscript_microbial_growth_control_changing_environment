@@ -6,10 +6,8 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated field_info (elt_size=4) to 12276 items from 5000.
+Reallocated field_info (elt_size=4) to 12208 items from 5000.
 Database file #1: references.bib
-Warning--I didn't find a database entry for "keseler_ecocyc:_2013"
-Warning--I didn't find a database entry for "young_measuring_2012"
 Warning--empty author and editor in fox_how_2016
 Warning--missing publisher in fox_how_2016
 Warning--empty author and editor in mcgill_calm_2013
@@ -32,7 +30,7 @@ Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
 You've used 212 entries,
             3170 wiz_defined-function locations,
-            1959 strings with 49957 characters,
+            1957 strings with 49917 characters,
 and the built_in function-call counts, 365415 in all, are:
 = -- 45807
 > -- 2872
