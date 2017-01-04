@@ -13,45 +13,45 @@
 
 Dans ce chapitre, nous nous intéressons à la validation expérimentale des prédictions faites au cours du Chapitre~\ref{chap:theory}.
 Nous avons en effet pu voir que, si l'on suppose qu'un microorganisme optimise sa production de biomasse lors d'une transition de croissance, on peut s'attendre à ce que ce dernier distribue ses ressources cellulaires entre la production de machinerie d'expression génique et de machinerie métabolique en suivant un schéma tout-ou-rien (\textit{bang-bang}).
-Le but est donc ici de mesurer précisément la dynamique de $\alpha$ \textit{in vivo} lors d'une transition de croissance contrôlée.
+Le but est donc ici de mesurer précisément la dynamique de $\alpha$ lors d'une transition de croissance contrôlée.
 
 La Section~\ref{sec:exp_design} s'attache à définir les conditions expérimentales dans lesquelles le comportement prédit lors du Chapitre~\ref{chap:theory} pourra être observé.
-En utilisant le modèle d'auto-réplicateur (Eqs~\ref{eq:pdef-exp} et \ref{eq:rdef-exp}), nous montrons que $\alpha (\cdot)$ peut être reconstruit au cours du temps si l'on dispose de mesure dynamiques lors de la transition du taux de croissance et de la concentration en machinerie d'expression génique.
-Cependant, le comportement tout-ou-rien présente une dynamique bien particulière qui peut facilement être offusquée au niveau d'une population de cellules si ces dernières ne sont pas synchrones.
-De fait, cette question ne peut être résolue qu'en obtenant des mesures à haute fréquence et au niveau de la cellule unique, ce qui nous a conduit à utiliser des rapporteurs fluorescents de l'abondance de la machinerie.
-En particulier, nous construisons une souche de \textit{Escherichia coli} chez laquelle la sous-unité S2 du ribosome a été fusionnée avec une protéine fluorescente (GFP) (voir Section~\ref{sec:methods_strain} des matériels et méthodes).
-Couplé à de la vidéomicroscopie, cette solution permet de quantifier en temps réel la quantité de ribosomes au niveau de cellules uniques, ce qui procure un excellent moyen d'obtenir la concentration en machinerie d'expression génique (le ribosome étant son composant principal).
-Le taux de croissance quant à lui, peut-être facilement reconstruit en mesurant simplement la taille des cellules au cours du temps.
+En utilisant le modèle d'auto-réplicateur (Eqs~\ref{eq:pdef-exp} et \ref{eq:rdef-exp}), nous montrons que $\alpha (\cdot)$ lors de la transition peut être reconstruit au cours du temps si l'on dispose de mesures dynamiques du taux de croissance et de la concentration en machinerie d'expression génique.
+Cependant, le comportement tout-ou-rien a une dynamique bien particulière qui peut facilement être offusquée au niveau d'une population de cellules si ces dernières ne sont pas synchrones.
+De fait, cette question ne peut être résolue qu'en obtenant des mesures à haute fréquence et au niveau de la cellule unique, ce qui nous a conduit à utiliser des rapporteurs fluorescents de l'abondance d'une des machineries.
+En particulier, nous construisons une souche d'\textit{Escherichia coli} chez laquelle la sous-unité S2 du ribosome a été fusionnée avec une protéine fluorescente (GFP) (voir Section~\ref{sec:methods_strain} des matériels et méthodes).
+Couplée à de la vidéomicroscopie, cette souche nous permet de quantifier en temps réel la quantité de ribosomes au niveau de cellules uniques, ce qui procure un excellent moyen d'obtenir la concentration en machinerie d'expression génique (le ribosome étant son composant principal).
+Le taux de croissance quant à lui, peut-être facilement reconstruit en mesurant la taille des cellules au cours du temps.
 
 Nous définissons également dans la Section~\ref{sec:exp_design} les conditions de croissance adéquates.
 Nous nous focalisons sur le cas particulier d'une transition d'un milieu de croissance pauvre vers un milieu riche.
-Cependant, aussi pauvre que soit le premier milieu, il est important que les bactéries soient en phase de croissance, pour la raison que leur physiologie change complètement lorsqu'elles s'arrêtent de croître, ce qui crée des effets expérimentaux indésirables qui sont durs à contrôler.
+Cependant, aussi pauvre que soit le premier milieu, il est important que les bactéries soient en phase de croissance, pour la raison que leur physiologie change complètement lorsqu'elles s'arrêtent de croître, ce qui crée des effets indésirables durs à contrôler expérimentalement.
 Les cellules doivent donc croître pendant suffisamment longtemps sur le premier milieu, sans épuisé celui-ci, puis une transition rapide doit être effectuée vers le milieu riche.
-Nous avons utilisé pour cela la \textit{mother machine}, un dispositif microfluidique à la base inventé pour maintenir et observer les cellules bactériennes en état de croissance exponentielle pendant de longues périodes.
-Au sein de ce dispositif, les cellules sont constamment en contact avec du milieu frais, qui circule et apporte de nouveaux nutriments à leur portée durant toute la durée de l'expérience (voir Section~\ref{sec:microflu}).
-En changeant simplement le type de milieu injecté dans le dispositif, nous pouvons l'utiliser pour changer quasi-instantanément les nutriments auxquels les bactéries ont accès, et donc réaliser la transition de manière robuste et contrôlée.
-En particulier, le milieu pauvre utilisé contient de l'acétate comme seule source de carbone, tandis que le milieu riche contient essentiellement du glucose (Fig.~\ref{fig:experiment_schema}).
+Nous avons utilisé pour cela la \textit{Mother Machine}, un dispositif microfluidique à la base inventé pour maintenir et observer les cellules bactériennes en état de croissance stationnaire pendant de longues périodes.
+Au sein de ce dispositif, les cellules sont constamment en contact avec du milieu frais, qui circule et leur procure de nouveaux nutriments durant toute la durée de l'expérience (voir Section~\ref{sec:microflu}).
+En changeant simplement le type de milieu injecté dans le dispositif, nous pouvons l'utiliser pour modifier en quelques secondes les nutriments auxquels les bactéries ont accès, et donc réaliser la transition de manière robuste et contrôlée.
+Plus particulièrement, le milieu pauvre utilisé contient de l'acétate comme seule source de carbone, tandis que le milieu riche contient essentiellement du glucose (Fig.~\ref{fig:experiment_schema}).
 
 De telles expériences s'avèrent malheureusement pointues et, dans le temps disponible pour le doctorat, nous n'avons pu en réaliser qu'un petit nombre, dont seule celle présentée ici s'est avérée exploitable.
 Celle-ci a cependant subit de nombreux problèmes expérimentaux qui, s'ils n'ont pas empêché complètement son exploitation, ont posé des problèmes pour l'analyse et l'interprétation des résultats.
 Ces problèmes expérimentaux sont abordés dans la Section~\ref{sec:data_acquisition}, et sont largement discutés en Section~\ref{sec:chap3_discussion}.
 En effet, suite à un problème logiciel et à ce qui semble être une contamination par un bacteriophage, nous n'avons pas pu obtenir des séries temporelles aussi longues qu'initialement prévu.
 Même si nous disposons néanmoins des données se situant autour de la transition, le fait de ne pas avoir atteint un nouvel état de croissance stationnaire sur glucose va s'avérer être un inconvénient majeur pour l'analyse des résultats.
-De plus, nous n'avons pu analyser qu'une partie des données, en nous focalisant sur une seule cellule par canal de la \textit{mother machine} (Fig.~\ref{fig:data_acquisition}).
-Au final, il faut retenir de ces sections que cette expérience et son analyse sont largement préliminaires, et seront consolidés dans le futur par de nouveaux travaux.
+De plus, nous n'avons pu analyser qu'une partie des données, en nous focalisant sur une seule cellule par canal de la \textit{Mother Machine} (Fig.~\ref{fig:data_acquisition}).
+Au final, il faut retenir de ces sections que cette expérience et son analyse sont largement préliminaires, et seront consolidées dans le futur par de nouveaux travaux.
 
 La Section~\ref{sec:res_kalman} présente la façon dont nous pouvons reconstruire $\alpha (\cdot)$ lors de la transition à partir des données obtenues.
-Pour cela, nous développons une méthode basée sur le lissage de Kalman, qui repose sur une approche probabiliste et bayésienne pour reconstruire de manière robuste un signal à partir de mesures bruitées.
-Nous montrons comment l'information disponible sur le déroulement de l'expérience peut être injectées sous la forme d'un \textit{prior} pour faciliter la reconstruction, ce qui rend cette technique particulièrement efficace sur des données de microscopie.
-De plus, à partir de données synthétiques générée \textit{via} le modèle développé lors du Chapitre~\ref{chap:theory}, et constatons que la méthode est capable de capturer le profil oscillatoire généré par le comportement tout-ou-rien attendu (Fig.~\ref{fig:synthetic_upshift}).
+Pour cela, nous développons une méthode basée sur le lissage de Kalman, qui utilise une approche probabiliste et bayésienne pour reconstruire de manière robuste un signal à partir de mesures bruitées.
+Nous montrons comment l'information dont nous disposons sur le déroulement de l'expérience peut être injectée dans l'analyse sous la forme d'un \textit{prior} bayésien afin de faciliter la reconstruction, ce qui s'avère particulièrement utile sur nos données.
+De plus, à partir de données synthétiques générée grâce au modèle développé lors du Chapitre~\ref{chap:theory}, nous constatons que la méthode est capable de capturer le profil oscillatoire généré par le comportement tout-ou-rien que nous attendons (Fig.~\ref{fig:synthetic_upshift}).
 
 Finalement, nous appliquons cette méthode à la reconstruction du taux de croissance puis de $\alpha (\cdot)$, et présentons les résultats dans la Section~\ref{sec:estim_gr_ra}.
-En moyenne, le taux de croissance présente le comportement attendu (Figs~\ref{fig:growth_rate_estimation} et \ref{fig:growth_rate_estimation_median}), avec des valeurs à l'état stationnaire de croissance qui sont proches de celles connues pour \textit{E.~coli}, et une augmentation rapide au moment de la transition vers le milieu riche.
+En moyenne, le taux de croissance présente le comportement attendu (Figs~\ref{fig:growth_rate_estimation} et \ref{fig:growth_rate_estimation_median}), avec des valeurs à l'état de croissance stationnaire qui sont proches de celles connues pour \textit{E.~coli}, et une augmentation rapide au moment de la transition vers le milieu riche.
 Les résultats pour la reconstruction de $\alpha (\cdot)$ sont cependant plus mitigés.
-Même si un comportement oscillatoire est observé pour chaque cellule (Figs~\ref{fig:gene_activity} et \ref{fig:gene_activity_heatmap}), il n'est pas certain que ce dernier ne soit pas un artefact du à une mauvaise calibration de la méthode.
-Il aurait fallu en effet obtenir de longs état stationnaires de croissance avant et après la transition pour pouvoir réaliser cette calibration dans de bonnes conditions.
-Néanmoins, si l'on s'intéresse au comportement médian de la population (Fig.~\ref{fig:gene_activity_median}), on constate que la première oscillation survenant après la transition semble conservée (Fig.~\ref{fig:gene_activity_heatmap}).
-Ces résultats s'avèrent finalement encourageants, et incitent à pousser plus en avant cette étude, notamment via l'acquisition de nouvelles données pour lesquelles les problèmes cités auront pu être corrigé (voir discussion en Section~\ref{sec:chap3_discussion}).
+Même si un comportement oscillatoire est observé pour chaque cellule (Figs~\ref{fig:gene_activity} et \ref{fig:gene_activity_heatmap}), il n'est pas certain que ce dernier ne soit pas un artefact dû à une mauvaise calibration de la méthode.
+Il aurait fallu en effet obtenir de longs états stationnaires de croissance avant et après la transition pour pouvoir réaliser cette calibration dans de bonnes conditions.
+Néanmoins, si l'on s'intéresse au comportement médian des cellules (Fig.~\ref{fig:gene_activity_median}), on constate que la première oscillation survenant après la transition semble conservée dans la population (Fig.~\ref{fig:gene_activity_heatmap}).
+Ces résultats s'avèrent finalement encourageants, et incitent à pousser plus en avant cette étude, notamment via l'acquisition de nouvelles données pour lesquelles les problèmes cités auront pu être corrigés (voir discussion en Section~\ref{sec:chap3_discussion}).
 
 \end{chapter_summary}
 \selectlanguage{english}
