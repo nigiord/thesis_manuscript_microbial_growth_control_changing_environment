@@ -12,10 +12,10 @@
 \begin{chapter_summary}{Modélisation de l'allocation dynamique des ressources cellulaires comme un problème de contrôle optimal}
 
 Ce chapitre est dédié à une approche théorique du problème d'allocation des ressources cellulaires chez les microorganismes.
-En Section \ref{sec:model}, mous modélisons la cellule comme un auto-réplicateur (Fig.~\ref{fig:self_replicator}) devant allouer une ressource commune (les nutriments du milieu) à deux secteurs distincts de macromolécules: la machinerie métabolique qui extrait les nutriments de l'environnement et les convertit en précurseurs utilisables, et la machinerie d'expression génique qui utilise ces précurseurs pour produire de nouvelles macromolécules.
+En Section \ref{sec:model}, nous modélisons la cellule comme un auto-réplicateur devant allouer une ressource commune (les nutriments du milieu) à deux secteurs distincts de macromolécules: la machinerie métabolique qui extrait les nutriments de l'environnement et les convertit en précurseurs utilisables, et la machinerie d'expression génique qui utilise ces précurseurs pour produire de nouvelles macromolécules (Fig.~\ref{fig:self_replicator}).
 Ce modèle très simple comprenant 2 réactions (Eq.~\ref{eq:reactions}) se traduit mathématiquement par deux équations différentielles ordinaires (Eqs~\ref{eq:pdef} et \ref{eq:rdef}) faisant intervenir le paramètre $\alpha$ qui va devenir clé dans notre étude.
-$\alpha$ représente la proportion massique des précurseurs qui sont utilisés pour produire de la machinerie d'expression génique, au détriment de la machinerie métabolique (qui elle est produite à la proportion $1-\alpha$).
-Comme on l'a déjà vu avec les lois de croissance établie à l'état stationnaire (voir Chapitre~\ref{chap:introduction}), cette proportion varie avec l'environnement, on s'attend donc à ce que $\alpha$ en fasse autant, augmentant d'autant plus que l'environnement devient riche (Fig.~\ref{fig:scott_rnaprot}).
+$\alpha$ représente la proportion massique des précurseurs qui sont utilisés pour produire de la machinerie d'expression génique, au détriment de la machinerie métabolique (qui elle, est produite à la proportion $1-\alpha$).
+Comme on l'a déjà vu avec les lois de croissance établie à l'état stationnaire (voir Chapitre~\ref{chap:introduction}), cette proportion varie avec l'environnement, on s'attend donc à ce que $\alpha$ en fasse autant, augmentant d'autant que l'environnement devient riche (Fig.~\ref{fig:scott_rnaprot}).
 Cependant, de quelle manière varie-t-il entre deux états de croissance stationnaire, lorsque les composants cellulaires sont en déséquilibre et que la cellule doit adapter sa composition ?
 
 Comme nous l'avons vu dans le Chapitre~\ref{chap:introduction}, les lois de croissances à l'état stationnaire s'expliquent facilement si l'on considère que la cellule maximise son taux de croissance.
@@ -25,24 +25,24 @@ Peut-on appliquer le même principe, dans un contexte cette fois dynamique, de f
 
 Dans ce contexte, $\alpha$ est désormais une fonction du temps.
 Nous cherchons donc quelle fonction du temps maximise un objectif donné.
-Ce problème, formulé en Section~\ref{sec:optimalcontrolproblem}, est un problème de contrôle optimal, puisque l'objectif que l'on se fixe est une fonction d'une fonction, plus communément appelée fonctionnelle.
-Nous choisissons comme équivalent dynamique de la maximisation du taux de croissance à l'état stationnaire, la maximisation de la production de biomasse sur un intervalle de temps comprenant une changement abrupt de l'environnement (Eq.~\ref{eq:biomassdyn}).
+Ce problème, formulé en Section~\ref{sec:optimalcontrolproblem}, est un problème de contrôle optimal, puisque l'objectif à optimiser est une fonction d'une autre fonction, plus communément appelée fonctionnelle.
+Nous choisissons comme équivalent dynamique de la maximisation du taux de croissance à l'état stationnaire, la maximisation de la production de biomasse sur un intervalle de temps comprenant un changement abrupt de l'environnement (Eq.~\ref{eq:biomassdyn}).
 Nous résolvons ce problème en Section~\ref{sec:optimalcontrolsolution} en couplant utilisation du principe du maximum de Pontryagin avec de l'optimisation numérique.
 La solution optimale obtenue montre que le contrôle $\alpha$ doit prendre alternativement les valeurs 0 ou 1 jusqu'à ce que le système soit stabilisé sur un nouvel équilibre (Fig.~\ref{fig:optimalcontrol} et Eq.~\ref{eq:optcontrol}).
 En d'autres termes, la meilleure production de biomasse s'obtient si, à tout moment, la cellule aiguille 100\% de ses ressources vers un seul secteur, en alternant entre l'un et l'autre jusqu'à ce que le nouvel état stationnaire de croissance soit atteint.
-Ce type de solution se rencontre souvent en contrôle optimal, est répond au nom de concept TOR (Tout-Ou-Rien, ou \textit{bang-bang-control} en anglais).
+Ce type de solution se rencontre souvent en contrôle optimal, et répond au nom de concept TOR (Tout-Ou-Rien, ou \textit{bang-bang-control} en anglais).
 Mais ce contrôle est-il pertinent d'un point de vue biologique ?
-La cellule a-t-elle suffisamment d'information à sa disposition pour réaliser une telle transition, laquelle repose sur des changements abrupts de l'expression génique à des moments clés de la transition ?
+La cellule a-t-elle suffisamment d'information à sa disposition pour réaliser une telle transition, laquelle repose sur des changements abrupts de l'expression génique à des instants bien précis ?
 
-En Section~\ref{sec:steadystate}, nous utilisons le problème de contrôle optimal et sa solution comme un banc d'essai permettant de comparer entre elle différentes stratégies de régulations (Fig.~\ref{fig:strategies_overview}).
-En se servant du modèle pour guider notre intuition, et en nous limitant aux solutions qui respectent les lois de croissance stationnaires, nous montrons que deux stratégies de régulations simples sont possibles : soit l'organisme mesure directement la quantité de nutriments dans l'environnement, soit il mesure la concentration en précurseurs dans la cellule.
-De manière intéressante, ces deux stratégies sont optimales à l'état stationnaire, et donc sont exactement équivalentes.
+En Section~\ref{sec:steadystate}, nous utilisons le problème de contrôle optimal et sa solution comme un banc d'essai permettant de comparer entre elles différentes stratégies de régulations (Fig.~\ref{fig:strategies_overview}).
+En se servant du modèle pour guider notre intuition, et en nous limitant aux solutions qui respectent les lois de croissance stationnaire, nous montrons que deux stratégies de régulations simples sont possibles : soit l'organisme mesure directement la quantité de nutriments dans l'environnement, soit il mesure la concentration en précurseurs dans la cellule.
+De manière intéressante, ces deux stratégies sont optimales à l'état stationnaire, et donc strictement équivalentes.
 Cependant, dans le contexte dynamique de notre banc d'essai, la stratégie qui consiste à mesurer les précurseurs est bien plus efficace, même si elle reste évidemment inférieure à la solution optimale (Fig.~\ref{fig:comparison_nutrients_precursor}).
-Mais il s'agit là de régulations simples qui exploitent l'information ne venant que d'une seule variable.
 
-Finalement, nous montrons en Section~\ref{sec:strategies} qu'une stratégie mesurant à la fois les précurseurs et la concentration en machinerie d'expression génique est tout à fait capable de réaliser un contrôle proche du tout-ou-rien optimal (Eq.~\ref{eq:stratswitch} et Fig.~\ref{fig:onoffresults}).
-Mais surtout, en réutilisant un modèle du système ppGpp qui contrôle la synthèse des ribosomes chez la bactérie \textit{Escherichia coli}, nous montrons que ce système répond, au moins structurellement, aux exigences d'une telle stratégie de régulation (Fig.~\ref{fig:ppGppsurface}).
-Cela procure un nouveau point de vue sur ce système largement répandu chez de nombreux microorganismes: en intégrant l'information provenant à la fois de la quantité de ribosomes et celle des précurseurs, il permet d'allouer efficacement les ressources de la cellule en environnement variable.
+Finalement, nous montrons en Section~\ref{sec:strategies} qu'une stratégie plus complexe mesurant à la fois les précurseurs et la concentration en machinerie d'expression génique est tout à fait capable de réaliser un contrôle proche du tout-ou-rien optimal (Eq.~\ref{eq:stratswitch} et Fig.~\ref{fig:onoffresults}).
+Mais surtout, en réutilisant un modèle du système ppGpp, connu pour réguler la synthèse des ribosomes chez la bactérie \textit{Escherichia coli}, nous montrons que ce système répond, au moins structurellement, aux exigences d'une telle stratégie de régulation (Fig.~\ref{fig:ppGppsurface}).
+Cela procure un nouveau point de vue sur ce système, d'ailleurs largement répandu chez de nombreux microorganismes.
+En intégrant l'information provenant à la fois de la quantité de ribosomes et de celle des précurseurs, il permet d'allouer efficacement les ressources de la cellule lorsque celle-ci doit s'adapter rapidement à un nouvel environnement.
 \end{chapter_summary}
 \selectlanguage{english}
 
