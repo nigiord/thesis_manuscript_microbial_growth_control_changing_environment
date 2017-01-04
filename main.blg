@@ -19,53 +19,51 @@ Warning--empty journal in tikhonov1977solutions
 Warning--empty author in fluobactracker
 Warning--empty author and editor in fluobactracker
 Warning--missing publisher in fluobactracker
-Warning--there's a month but no year in fluobactracker
 Warning--empty author and editor in goto_open_2005
 Warning--missing publisher in goto_open_2005
 Warning--empty author in skimage_cross-correlation
 Warning--empty author and editor in skimage_cross-correlation
 Warning--missing publisher in skimage_cross-correlation
-Warning--there's a month but no year in skimage_cross-correlation
 Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
 You've used 212 entries,
             3170 wiz_defined-function locations,
-            1957 strings with 49917 characters,
-and the built_in function-call counts, 365415 in all, are:
-= -- 45807
+            1957 strings with 49817 characters,
+and the built_in function-call counts, 363849 in all, are:
+= -- 45589
 > -- 2872
 < -- 14
 + -- 1883
 - -- 716
-* -- 30590
-:= -- 39353
+* -- 30392
+:= -- 39200
 add.period$ -- 1001
 call.type$ -- 212
 change.case$ -- 26
 chr.to.int$ -- 18
-cite$ -- 230
-duplicate$ -- 29777
-empty$ -- 34811
+cite$ -- 228
+duplicate$ -- 29649
+empty$ -- 34660
 format.name$ -- 894
-if$ -- 85553
+if$ -- 85184
 int.to.chr$ -- 0
 int.to.str$ -- 212
 missing$ -- 2335
 newline$ -- 1238
 num.names$ -- 216
-pop$ -- 3901
+pop$ -- 3950
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3892
+skip$ -- 3886
 stack$ -- 0
-substring$ -- 69040
-swap$ -- 5834
+substring$ -- 68646
+swap$ -- 5840
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 18
+warning$ -- 16
 while$ -- 2073
 width$ -- 215
 write$ -- 2675

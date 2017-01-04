@@ -28,7 +28,7 @@
     linktocpage = true, % for line break in table of contents
 }
 \usepackage{doi}
-\usepackage[hyphenbreaks]{breakurl}
+%\usepackage[hyphenbreaks]{breakurl}
 
 % Remove brackets from numbering in List of References
 \makeatletter
@@ -47,6 +47,12 @@
 
 % For genetic sequences
 \usepackage{seqsplit}
+
+% For margins
+%\usepackage[a4paper]{geometry}
+
+%% To remove the Underfull vbox at the beginning of each chapter
+\raggedbottom
 
 
 %%%%%%%%%%% Custom environment %%%%%%%%%%%
@@ -69,7 +75,7 @@
 {\vfill \null}
 
 \newenvironment{resume-vulgaire}{
-\begin{center}\bfseries Résumé pour le grand public \end{center}
+\begin{center}\bfseries Résumé pour un public non spécialiste \end{center}
 }
 {\vfill \null}
 
@@ -78,25 +84,6 @@
 }
 {\null}
 
-
-%% For chapter mark
-%\makeatletter
-%\g@addto@macro{\frontmatter}{
-%    \renewcommand{\chaptermark}[1]{%
-%        \markboth{#1}{}%
-%    }    
-%}
-%\g@addto@macro{\mainmatter}{
-%    \renewcommand{\chaptermark}[1]{%
-%        \markboth{Chapter \thechapter{}: #1}{}%
-%    }    
-%}
-%\g@addto@macro{\backmatter}{
-%    \renewcommand{\chaptermark}[1]{%
-%        \markboth{#1}{}%
-%    }    
-%}
-%\makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -125,27 +112,11 @@
 
 \tableofcontents
 
-%\frontmatter
-%\input{Chapters/introduction_summary}
-%\mainmatter
 \input{Chapters/introduction}
-
-%\frontmatter
-%\input{Chapters/theory_summary}
-%\mainmatter
 \input{Chapters/theory}
-
-%\frontmatter
-%\input{Chapters/experiments_summary}
-%\mainmatter
 \input{Chapters/experiments}
-
-%\frontmatter
-%\input{Chapters/discussion_summary}
-%\mainmatter
 \input{Chapters/discussion}
 
 \bibliography{references}
 
 \end{document}
-

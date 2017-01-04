@@ -70,7 +70,7 @@ Blount ZD.
 \bibitem{rothschild_life_2001}
 Rothschild LJ, Mancinelli RL.
 \newblock Life in Extreme Environments.
-\newblock Nature. 2001 Feb;409(6823):1092--1101.
+\newblock Nature. 2001 Feb;409(6823):1092--101.
 \newblock \href {http://dx.doi.org/10.1038/35059215} {doi:~10.1038/35059215}.
 
 \bibitem{nicholson_transcriptomic_2012}
@@ -78,7 +78,7 @@ Nicholson WL, Moeller tPT Ralf, Horneck G.
 \newblock Transcriptomic {{Responses}} of {{Germinating Bacillus}} Subtilis
   {{Spores Exposed}} to 1.5 {{Years}} of {{Space}} and {{Simulated Martian
   Conditions}} on the {{EXPOSE}}-{{E Experiment PROTECT}}.
-\newblock Astrobiology. 2012 May;12(5):469--486.
+\newblock Astrobiology. 2012 May;12(5):469--86.
 \newblock \href {http://dx.doi.org/10.1089/ast.2011.0748}
   {doi:~10.1089/ast.2011.0748}.
 
@@ -247,7 +247,7 @@ Fishov I, Zaritsky A, Grover NB.
 \bibitem{campbell_synchronization_1957}
 Campbell A.
 \newblock {{SYNCHRONIZATION OF CELL DIVISION}}.
-\newblock Bacteriol Rev. 1957 Dec;21(4):263--272.
+\newblock Bacteriol Rev. 1957 Dec;21(4):263--72.
 \newblock Available from:
   \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC180914/}.
 
@@ -269,7 +269,7 @@ Orth JD, Thiele I, Palsson BO.
 \bibitem{swinnen_predictive_2004}
 Swinnen IAM, Bernaerts K, Dens EJJ, Geeraerd AH, Van~Impe JF.
 \newblock Predictive Modelling of the Microbial Lag Phase: A Review.
-\newblock International Journal of Food Microbiology. 2004 Jul;94(2):137--159.
+\newblock Int J Food Microbiol. 2004 Jul;94(2):137--59.
 \newblock \href {http://dx.doi.org/10.1016/j.ijfoodmicro.2004.01.006}
   {doi:~10.1016/j.ijfoodmicro.2004.01.006}.
 
@@ -277,14 +277,14 @@ Swinnen IAM, Bernaerts K, Dens EJJ, Geeraerd AH, Van~Impe JF.
 Ng H, Ingraham JL, Marr AG.
 \newblock Damage and {{Derepression}} in {{Escherichia Coli Resulting}} from
   {{Growth}} at {{Low Temperatures}}.
-\newblock J Bacteriol. 1962 Jan;84(2):331--339.
+\newblock J Bacteriol. 1962 Jan;84(2):331--9.
 \newblock Available from: \url{http://jb.asm.org/content/84/2/331}.
 
 \bibitem{dufrenne_effect_1997}
 Dufrenne J, Delfgou E, Ritmeester W, Notermans S.
 \newblock The Effect of Previous Growth Conditions on the Lag Phase Time of
   Some Foodborne Pathogenic Micro-Organisms.
-\newblock International Journal of Food Microbiology. 1997 Jan;34(1):89--94.
+\newblock Int J Food Microbiol. 1997 Jan;34(1):89--94.
 \newblock \href {http://dx.doi.org/10.1016/S0168-1605(96)01170-1}
   {doi:~10.1016/S0168-1605(96)01170-1}.
 
@@ -292,14 +292,13 @@ Dufrenne J, Delfgou E, Ritmeester W, Notermans S.
 Shaw MK.
 \newblock Effect of {{Abrupt Temperature Shift}} on the {{Growth}} of
   {{Mesophilic}} and {{Psychrophilic Yeasts}}.
-\newblock J Bacteriol. 1967 Jan;93(4):1332--1336.
+\newblock J Bacteriol. 1967 Jan;93(4):1332--6.
 \newblock Available from: \url{http://jb.asm.org/content/93/4/1332}.
 
 \bibitem{mcmeekin_predictive_2002}
 McMeekin TA, Olley J, Ratkowsky DA, Ross T.
 \newblock Predictive Microbiology: Towards the Interface and beyond.
-\newblock International Journal of Food Microbiology. 2002
-  Mar;73(2\textendash{}3):395--407.
+\newblock Int J Food Microbiol. 2002 Mar;73(2\textendash{}3):395--407.
 \newblock \href {http://dx.doi.org/10.1016/S0168-1605(01)00663-8}
   {doi:~10.1016/S0168-1605(01)00663-8}.
 
@@ -307,8 +306,7 @@ McMeekin TA, Olley J, Ratkowsky DA, Ross T.
 Cheroutre-Vialette M, Lebert A.
 \newblock Application of Recurrent Neural Network to Predict Bacterial Growth
   in Dynamic Conditions.
-\newblock International Journal of Food Microbiology. 2002
-  Mar;73(2\textendash{}3):107--118.
+\newblock Int J Food Microbiol. 2002 Mar;73(2\textendash{}3):107--18.
 \newblock \href {http://dx.doi.org/10.1016/S0168-1605(01)00642-0}
   {doi:~10.1016/S0168-1605(01)00642-0}.
 
@@ -316,7 +314,7 @@ Cheroutre-Vialette M, Lebert A.
 Herbert D, Elsworth R, Telling RC.
 \newblock The {{Continuous Culture}} of {{Bacteria}}; a {{Theoretical}} and
   {{Experimental Study}}.
-\newblock Microbiology. 1956;14(3):601--622.
+\newblock Microbiology. 1956;14(3):601--22.
 \newblock \href {http://dx.doi.org/10.1099/00221287-14-3-601}
   {doi:~10.1099/00221287-14-3-601}.
 
@@ -345,7 +343,7 @@ Stragier P, Losick R.
 \bibitem{gonzalez-pastor_cannibalism:_2011}
 Gonz{\'a}lez-Pastor JE.
 \newblock Cannibalism: A Social Behavior in Sporulating {{Bacillus}} Subtilis.
-\newblock FEMS Microbiol Rev. 2011 May;35(3):415--424.
+\newblock FEMS Microbiol Rev. 2011 May;35(3):415--24.
 \newblock \href {http://dx.doi.org/10.1111/j.1574-6976.2010.00253.x}
   {doi:~10.1111/j.1574-6976.2010.00253.x}.
 
@@ -375,7 +373,7 @@ Orth JD, Conrad TM, Na J, Lerman JA, Nam H, Feist AM, et~al.
 Ebrahim A, Lerman JA, Palsson BO, Hyduke DR.
 \newblock {{COBRApy}}: {{COnstraints}}-{{Based Reconstruction}} and
   {{Analysis}} for {{Python}}.
-\newblock BMC Systems Biology. 2013;7:74.
+\newblock BMC Syst Biol. 2013;7:74.
 \newblock \href {http://dx.doi.org/10.1186/1752-0509-7-74}
   {doi:~10.1186/1752-0509-7-74}.
 
@@ -395,7 +393,7 @@ Varma A, Palsson B.
 Fong SS, Palsson BO.
 \newblock Metabolic Gene\textendash{}deletion Strains of {{Escherichia}} Coli
   Evolve to Computationally Predicted Growth Phenotypes.
-\newblock Nat Genet. 2004 Oct;36(10):1056--1058.
+\newblock Nat Genet. 2004 Oct;36(10):1056--8.
 \newblock \href {http://dx.doi.org/10.1038/ng1432} {doi:~10.1038/ng1432}.
 
 \bibitem{kotte_bacterial_2010}
@@ -409,7 +407,7 @@ Kotte O, Zaugg JB, Heinemann M.
 Peskov K, Mogilevskaya E, Demin O.
 \newblock Kinetic Modelling of Central Carbon Metabolism in
   {{Escherichia}}~Coli.
-\newblock FEBS J. 2012 Sep;279(18):3374--3385.
+\newblock FEBS J. 2012 Sep;279(18):3374--85.
 \newblock \href {http://dx.doi.org/10.1111/j.1742-4658.2012.08719.x}
   {doi:~10.1111/j.1742-4658.2012.08719.x}.
 
@@ -425,7 +423,7 @@ Karr JR, Sanghvi JC, Macklin DN, Gutschow MV, Jacobs JM, Bolival~Jr B, et~al.
 Park JO, Rubin SA, Xu YF, Amador-Noguez D, Fan J, Shlomi T, et~al.
 \newblock Metabolite Concentrations, Fluxes and Free Energies Imply Efficient
   Enzyme Usage.
-\newblock Nat Chem Biol. 2016 Jul;12(7):482--489.
+\newblock Nat Chem Biol. 2016 Jul;12(7):482--9.
 \newblock \href {http://dx.doi.org/10.1038/nchembio.2077}
   {doi:~10.1038/nchembio.2077}.
 
@@ -441,39 +439,39 @@ Bennett BD, Kimball EH, Gao M, Osterhout R, Van~Dien SJ, Rabinowitz JD.
 B{\"u}scher JM, Czernik D, Ewald JC, Sauer U, Zamboni N.
 \newblock Cross-{{Platform Comparison}} of {{Methods}} for {{Quantitative
   Metabolomics}} of {{Primary Metabolism}}.
-\newblock Anal Chem. 2009 Mar;81(6):2135--2143.
+\newblock Anal Chem. 2009 Mar;81(6):2135--43.
 \newblock \href {http://dx.doi.org/10.1021/ac8022857} {doi:~10.1021/ac8022857}.
 
 \bibitem{jaqaman_linking_2006}
 Jaqaman K, Danuser G.
 \newblock Linking Data to Models: Data Regression.
-\newblock Nat Rev Mol Cell Biol. 2006 Nov;7(11):813--819.
+\newblock Nat Rev Mol Cell Biol. 2006 Nov;7(11):813--9.
 \newblock \href {http://dx.doi.org/10.1038/nrm2030} {doi:~10.1038/nrm2030}.
 
 \bibitem{mendes_non-linear_1998}
 Mendes P, Kell D.
 \newblock Non-Linear Optimization of Biochemical Pathways: Applications to
   Metabolic Engineering and Parameter Estimation.
-\newblock Bioinformatics. 1998;14(10):869--883.
+\newblock Bioinforma Oxf Engl. 1998;14(10):869--83.
 
 \bibitem{cho_experimental_2003}
 Cho KH, Shin SY, Kolch W, Wolkenhauer O.
 \newblock Experimental Design in Systems Biology, Based on Parameter
   Sensitivity Analysis Using a Monte Carlo Method: {{A}} Case Study for the
   Tnf$\alpha$-Mediated Nf-$\kappa$ B Signal Transduction Pathway.
-\newblock Simulation. 2003;79(12):726--739.
+\newblock Simulation. 2003;79(12):726--39.
 
 \bibitem{brodersen_characterization_1987}
 Brodersen R, Nielsen F, Christiansen JC, Andersen K.
 \newblock Characterization of Binding Equilibrium Data by a Variety of Fitted
   Isotherms.
-\newblock Eur J Biochem. 1987 Dec;169(3):487--495.
+\newblock Eur J Biochem. 1987 Dec;169(3):487--95.
 
 \bibitem{rodriguez-fernandez_hybrid_2006}
 Rodriguez-Fernandez M, Mendes P, Banga JR.
 \newblock A Hybrid Approach for Efficient and Robust Parameter Estimation in
   Biochemical Pathways.
-\newblock BioSystems. 2006 Feb-Mar;83(2-3):248--265.
+\newblock Biosystems. 2006 Feb-Mar;83(2-3):248--65.
 \newblock \href {http://dx.doi.org/10.1016/j.biosystems.2005.06.016}
   {doi:~10.1016/j.biosystems.2005.06.016}.
 
@@ -502,7 +500,7 @@ Mayo AE, Setty Y, Shavit S, Zaslaver A, Alon U.
 \bibitem{kauffman_advances_2003}
 Kauffman KJ, Prakash P, Edwards JS.
 \newblock Advances in Flux Balance Analysis.
-\newblock Current Opinion in Biotechnology. 2003 Oct;14(5):491--496.
+\newblock Curr Opin Biotechnol. 2003 Oct;14(5):491--6.
 \newblock \href {http://dx.doi.org/10.1016/j.copbio.2003.08.001}
   {doi:~10.1016/j.copbio.2003.08.001}.
 
@@ -517,7 +515,7 @@ Spiesser TW, M{\"u}ller C, Schreiber G, Krantz M, Klipp E.
 \bibitem{dijken_kinetics_1993}
 van Dijken JP, Weusthuis RA, Pronk JT.
 \newblock Kinetics of Growth and Sugar Consumption in Yeasts.
-\newblock Antonie Van Leeuwenhoek. 1993;63(3-4):343--352.
+\newblock Antonie Van Leeuwenhoek. 1993;63(3-4):343--52.
 \newblock \href {http://dx.doi.org/10.1007/BF00871229}
   {doi:~10.1007/BF00871229}.
 
@@ -526,19 +524,19 @@ Vemuri GN, Altman E, Sangurdekar DP, Khodursky AB, Eiteman MA.
 \newblock Overflow {{Metabolism}} in {{Escherichia}} Coli during
   {{Steady}}-{{State Growth}}: {{Transcriptional Regulation}} and {{Effect}} of
   the {{Redox Ratio}}.
-\newblock Appl Environ Microbiol. 2006 Jan;72(5):3653--3661.
+\newblock Appl Environ Microbiol. 2006 Jan;72(5):3653--61.
 \newblock \href {http://dx.doi.org/10.1128/AEM.72.5.3653-3661.2006}
   {doi:~10.1128/AEM.72.5.3653-3661.2006}.
 
 \bibitem{mckeehan_glycolysis_1982}
 McKeehan WL.
 \newblock Glycolysis, Glutaminolysis and Cell Proliferation.
-\newblock Cell Biol Int Rep. 1982;6(7):635--650.
+\newblock Cell Biol Int Rep. 1982;6(7):635--50.
 
 \bibitem{hsu_cancer_2008}
 Hsu PP, Sabatini DM.
 \newblock Cancer {{Cell Metabolism}}: {{Warburg}} and {{Beyond}}.
-\newblock Cell. 2008 Sep;134(5):703--707.
+\newblock Cell. 2008 Sep;134(5):703--7.
 \newblock \href {http://dx.doi.org/10.1016/j.cell.2008.08.021}
   {doi:~10.1016/j.cell.2008.08.021}.
 
@@ -577,7 +575,7 @@ Bremer H, Dennis P.
 Davey HM, Kell DB.
 \newblock Flow Cytometry and Cell Sorting of Heterogeneous Microbial
   Populations: The Importance of Single-Cell Analyses.
-\newblock Microbiol Rev. 1996 Jan;60(4):641--696.
+\newblock Microbiol Rev. 1996 Jan;60(4):641--96.
 \newblock Available from: \url{http://mmbr.asm.org/content/60/4/641}.
 
 \bibitem{bakshi_superresolution_2012}
@@ -591,7 +589,7 @@ Bakshi S, Siryaporn A, Goulian M, Weisshaar JC.
 \bibitem{balaban_bacterial_2004}
 Balaban NQ, Merrin J, Chait R, Kowalik L, Leibler S.
 \newblock Bacterial {{Persistence}} as a {{Phenotypic Switch}}.
-\newblock Science. 2004 Sep;305(5690):1622--1625.
+\newblock Science. 2004 Sep;305(5690):1622--5.
 \newblock \href {http://dx.doi.org/10.1126/science.1099390}
   {doi:~10.1126/science.1099390}.
 
@@ -599,8 +597,7 @@ Balaban NQ, Merrin J, Chait R, Kowalik L, Leibler S.
 Booth IR.
 \newblock Stress and the Single Cell: {{Intrapopulation}} Diversity Is a
   Mechanism to Ensure Survival upon Exposure to Stress.
-\newblock International Journal of Food Microbiology. 2002
-  Sep;78(1\textendash{}2):19--30.
+\newblock Int J Food Microbiol. 2002 Sep;78(1\textendash{}2):19--30.
 \newblock \href {http://dx.doi.org/10.1016/S0168-1605(02)00239-8}
   {doi:~10.1016/S0168-1605(02)00239-8}.
 
@@ -608,7 +605,7 @@ Booth IR.
 Sumner ER, Avery SV.
 \newblock Phenotypic Heterogeneity: Differential Stress Resistance among
   Individual Cells of the Yeast {{Saccharomyces}} Cerevisiae.
-\newblock Microbiology. 2002;148(2):345--351.
+\newblock Microbiology. 2002;148(2):345--51.
 \newblock \href {http://dx.doi.org/10.1099/00221287-148-2-345}
   {doi:~10.1099/00221287-148-2-345}.
 
@@ -616,7 +613,7 @@ Sumner ER, Avery SV.
 True HL, Lindquist SL.
 \newblock A Yeast Prion Provides a Mechanism for Genetic Variation and
   Phenotypic Diversity.
-\newblock Nature. 2000 Sep;407(6803):477--483.
+\newblock Nature. 2000 Sep;407(6803):477--83.
 \newblock \href {http://dx.doi.org/10.1038/35035005} {doi:~10.1038/35035005}.
 
 \bibitem{fraser_noise_2004}
@@ -629,14 +626,14 @@ Fraser HB, Hirsh AE, Giaever G, Kumm J, Eisen MB.
 \bibitem{raser_control_2004}
 Raser JM, O'Shea EK.
 \newblock Control of {{Stochasticity}} in {{Eukaryotic Gene Expression}}.
-\newblock Science. 2004 Jun;304(5678):1811--1814.
+\newblock Science. 2004 Jun;304(5678):1811--4.
 \newblock \href {http://dx.doi.org/10.1126/science.1098641}
   {doi:~10.1126/science.1098641}.
 
 \bibitem{hoskisson_continuous_2005}
 Hoskisson PA, Hobbs G.
 \newblock Continuous Culture \textendash{} Making a Comeback?
-\newblock Microbiology. 2005;151(10):3153--3159.
+\newblock Microbiology. 2005;151(10):3153--9.
 \newblock \href {http://dx.doi.org/10.1099/mic.0.27924-0}
   {doi:~10.1099/mic.0.27924-0}.
 
@@ -701,7 +698,7 @@ Keren L, Zackay O, Lotan-Pompan M, Barenholz U, Dekel E, Sasson V, et~al.
 Ronen M, Rosenberg R, Shraiman BI, Alon U.
 \newblock Assigning Numbers to the Arrows: {{Parameterizing}} a Gene Regulation
   Network by Using Accurate Expression Kinetics.
-\newblock Proc Natl Acad Sci. 2002 Jun;99(16):10555--10560.
+\newblock Proc Natl Acad Sci. 2002 Jun;99(16):10555--60.
 \newblock \href {http://dx.doi.org/10.1073/pnas.152046799}
   {doi:~10.1073/pnas.152046799}.
 
@@ -709,7 +706,7 @@ Ronen M, Rosenberg R, Shraiman BI, Alon U.
 Stefan D, Pinel C, Pinhal S, Cinquemani E, Geiselmann J, de~Jong H.
 \newblock Inference of {{Quantitative Models}} of {{Bacterial Promoters}} from
   {{Time}}-{{Series Reporter Gene Data}}.
-\newblock PLOS Computational Biology. 2015 Jan;11(1):e1004028.
+\newblock PLOS Comput Biol. 2015 Jan;11(1):e1004028.
 \newblock \href {http://dx.doi.org/10.1371/journal.pcbi.1004028}
   {doi:~10.1371/journal.pcbi.1004028}.
 
@@ -718,7 +715,7 @@ Bekker M, Kramer G, Hartog AF, Wagner MJ, {de Koster} CG, Hellingwerf KJ,
   et~al.
 \newblock Changes in the Redox State and Composition of the Quinone Pool of
   {{Escherichia}} Coli during Aerobic Batch-Culture Growth.
-\newblock Microbiology. 2007;153(6):1974--1980.
+\newblock Microbiology. 2007;153(6):1974--80.
 \newblock \href {http://dx.doi.org/10.1099/mic.0.2007/006098-0}
   {doi:~10.1099/mic.0.2007/006098-0}.
 
@@ -726,13 +723,13 @@ Bekker M, Kramer G, Hartog AF, Wagner MJ, {de Koster} CG, Hellingwerf KJ,
 Ackerman RS, Cozzarelli NR, Epstein W.
 \newblock Accumulation of {{Toxic Concentrations}} of {{Methylglyoxal}} by
   {{Wild}}-{{Type Escherichia}} Coli {{K}}-12.
-\newblock J Bacteriol. 1974 Jan;119(2):357--362.
+\newblock J Bacteriol. 1974 Jan;119(2):357--62.
 \newblock Available from: \url{http://jb.asm.org/content/119/2/357}.
 
 \bibitem{lenski_chemical_2002}
 Lenski RE, Riley MA.
 \newblock Chemical Warfare from an Ecological Perspective.
-\newblock PNAS. 2002 Jan;99(2):556--558.
+\newblock Proc Natl Acad Sci. 2002 Jan;99(2):556--8.
 \newblock \href {http://dx.doi.org/10.1073/pnas.022641999}
   {doi:~10.1073/pnas.022641999}.
 
@@ -740,21 +737,21 @@ Lenski RE, Riley MA.
 Luli GW, Strohl WR.
 \newblock Comparison of Growth, Acetate Production, and Acetate Inhibition of
   {{Escherichia}} Coli Strains in Batch and Fed-Batch Fermentations.
-\newblock Appl Environ Microbiol. 1990 Jan;56(4):1004--1011.
+\newblock Appl Environ Microbiol. 1990 Jan;56(4):1004--11.
 \newblock Available from: \url{http://aem.asm.org/content/56/4/1004}.
 
 \bibitem{myers_culture_1944}
 Myers J, Clark LB.
 \newblock {{CULTURE CONDITIONS AND THE DEVELOPMENT OF THE PHOTOSYNTHETIC
   MECHANISM}}.
-\newblock J Gen Physiol. 1944 Nov;28(2):103--112.
+\newblock J Gen Physiol. 1944 Nov;28(2):103--12.
 \newblock Available from:
   \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2142662/}.
 
 \bibitem{novick_experiments_1950}
 Novick A, Szilard L.
 \newblock Experiments with the Chemostat on Spontaneous Mutations of Bacteria.
-\newblock Proc Natl Acad Sci. 1950;36(12):708--719.
+\newblock Proc Natl Acad Sci. 1950;36(12):708--19.
 
 \bibitem{kolkman_comparative_2005}
 Kolkman A, Olsthoorn MMA, Heeremans CEM, Heck AJR, Slijper M.
@@ -770,7 +767,7 @@ Boer VM, de~Winde JH, Pronk JT, Piper MDW.
   {{Saccharomyces}} Cerevisiae {{Grown}} on {{Glucose}} in {{Aerobic Chemostat
   Cultures Limited}} for {{Carbon}}, {{Nitrogen}}, {{Phosphorus}}, or
   {{Sulfur}}.
-\newblock J Biol Chem. 2003 Jan;278(5):3265--3274.
+\newblock J Biol Chem. 2003 Jan;278(5):3265--74.
 \newblock \href {http://dx.doi.org/10.1074/jbc.M209759200}
   {doi:~10.1074/jbc.M209759200}.
 
@@ -856,7 +853,7 @@ Bosdriesz E, Molenaar D, Teusink B, Bruggeman FJ.
 Andersen KB, {von Meyenburg} K.
 \newblock Are Growth Rates of {{Escherichia}} Coli in Batch Cultures Limited by
   Respiration?
-\newblock J Bacteriol. 1980 Oct;144(1):114--123.
+\newblock J Bacteriol. 1980 Oct;144(1):114--23.
 
 \bibitem{kailath_linear_2000}
 Kailath T, Sayed AH, Hassibi B.
@@ -1300,7 +1297,7 @@ Hui S, Silverman JM, Chen SS, Erickson DW, Basan M, Wang J, et~al.
 Zulkower V, Page M, Ropers D, Geiselmann J, de~Jong H.
 \newblock Robust Reconstruction of Gene Expression Profiles from Reporter Gene
   Data Using Linear Inversion.
-\newblock Bioinformatics. 2015 Jun;31(12):i71--i79.
+\newblock Bioinformatics. 2015 Jun;31(12):i71--9.
 \newblock \href {http://dx.doi.org/10.1093/bioinformatics/btv246}
   {doi:~10.1093/bioinformatics/btv246}.
 
@@ -1316,7 +1313,7 @@ Gefen O, Fridman O, Ronin I, Balaban NQ.
 Klein J, Leupold S, Biegler I, Biedendieck R, M{\"u}nch R, Jahn D.
 \newblock {{TLM}}-{{Tracker}}: Software for Cell Segmentation, Tracking and
   Lineage Analysis in Time-Lapse Microscopy Movies.
-\newblock Bioinformatics. 2012 Jan;28(17):2276--2277.
+\newblock Bioinformatics. 2012 Jan;28(17):2276--7.
 \newblock \href {http://dx.doi.org/10.1093/bioinformatics/bts424}
   {doi:~10.1093/bioinformatics/bts424}.
 
@@ -1324,7 +1321,7 @@ Klein J, Leupold S, Biegler I, Biedendieck R, M{\"u}nch R, Jahn D.
 Wang Q, Niemi J, Tan CM, You L, West M.
 \newblock Image Segmentation and Dynamic Lineage Analysis in Single-Cell
   Fluorescence Microscopy.
-\newblock Cytometry. 2010 Jan;77A(1):101--110.
+\newblock Cytometry A. 2010 Jan;77A(1):101--10.
 \newblock \href {http://dx.doi.org/10.1002/cyto.a.20812}
   {doi:~10.1002/cyto.a.20812}.
 
@@ -1333,7 +1330,7 @@ Paintdakhi A, Parry B, Campos M, Irnov I, Elf J, Surovtsev I, et~al.
 \newblock Oufti: An Integrated Software Package for High-Accuracy,
   High-Throughput Quantitative Microscopy Analysis: {{Oufti}}: Image Analysis
   Software.
-\newblock Mol Microbiol. 2016 Feb;99(4):767--777.
+\newblock Mol Microbiol. 2016 Feb;99(4):767--77.
 \newblock \href {http://dx.doi.org/10.1111/mmi.13264} {doi:~10.1111/mmi.13264}.
 
 \bibitem{sachs_image-based_2016}
@@ -1355,7 +1352,7 @@ Kalman RE.
 \bibitem{julier_new_1997}
 Julier SJ, Uhlmann JK.
 \newblock New Extension of the {{Kalman}} Filter to Nonlinear Systems.
-\newblock vol. 3068; 1997. p. 182--193.
+\newblock vol. 3068; 1997. p. 182--93.
 \newblock \href {http://dx.doi.org/10.1117/12.280797} {doi:~10.1117/12.280797}.
 
 \bibitem{tikhonov1977solutions}
@@ -1366,26 +1363,26 @@ Tikhonov AN, Arsenin VY.
 Tikhonov A.
 \newblock Solution of Incorrectly Formulated Problems and the Regularization
   Method.
-\newblock In: Soviet {{Math}}. {{Dokl}}.. vol.~5; 1963. p. 1035--1038.
+\newblock In: Soviet {{Math}}. {{Dokl}}.. vol.~5; 1963. p. 1035--8.
 
 \bibitem{de_nicolao_nonparametric_1997}
 De~Nicolao G, Sparacino G, Cobelli C.
 \newblock Nonparametric Input Estimation in Physiological Systems:
   {{Problems}}, Methods, and Case Studies.
-\newblock Automatica. 1997 May;33(5):851--870.
+\newblock Automatica. 1997 May;33(5):851--70.
 \newblock \href {http://dx.doi.org/10.1016/S0005-1098(96)00254-3}
   {doi:~10.1016/S0005-1098(96)00254-3}.
 
 \bibitem{fluobactracker}
 {{FluoBacTracker}}: An {{ImageJ}} Plugin Designed to Segment and Track Growing
-  {{E}}. {{Coli}} Cells;.
+  {{E}}. {{Coli}} Cells; 2016.
 \newblock Available from: \url{https://fluobactracker.inrialpes.fr/index.php}.
 
 \bibitem{golub_generalized_1979}
 Golub GH, Heath M, Wahba G.
 \newblock Generalized {{Cross}}-{{Validation}} as a {{Method}} for {{Choosing}}
   a {{Good Ridge Parameter}}.
-\newblock Technometrics. 1979 May;21(2):215--223.
+\newblock Technometrics. 1979 May;21(2):215--23.
 \newblock \href {http://dx.doi.org/10.1080/00401706.1979.10489751}
   {doi:~10.1080/00401706.1979.10489751}.
 
@@ -1393,7 +1390,7 @@ Golub GH, Heath M, Wahba G.
 Gibson DG, Young L, Chuang RY, Venter JC, Hutchison CA, Smith HO.
 \newblock Enzymatic Assembly of {{DNA}} Molecules up to Several Hundred
   Kilobases.
-\newblock Nat Methods. 2009 May;6(5):343--345.
+\newblock Nat Methods. 2009 May;6(5):343--5.
 \newblock \href {http://dx.doi.org/10.1038/nmeth.1318}
   {doi:~10.1038/nmeth.1318}.
 
@@ -1401,7 +1398,7 @@ Gibson DG, Young L, Chuang RY, Venter JC, Hutchison CA, Smith HO.
 Sharan SK, Thomason LC, Kuznetsov SG, Court DL.
 \newblock Recombineering: A Homologous Recombination-Based Method of Genetic
   Engineering.
-\newblock Nat Protoc. 2009;4(2):206--223.
+\newblock Nat Protoc. 2009;4(2):206--23.
 \newblock \href {http://dx.doi.org/10.1038/nprot.2008.227}
   {doi:~10.1038/nprot.2008.227}.
 
@@ -1412,12 +1409,12 @@ Goto A, Doerr H. Open and Save {{SPE}} Image Files; 2005.
 \bibitem{guizar-sicairos_efficient_2008}
 Guizar-Sicairos M, Thurman ST, Fienup JR.
 \newblock Efficient Subpixel Image Registration Algorithms.
-\newblock Opt Lett, OL. 2008 Jan;33(2):156--158.
+\newblock Opt Lett. 2008 Jan;33(2):156--8.
 \newblock \href {http://dx.doi.org/10.1364/OL.33.000156}
   {doi:~10.1364/OL.33.000156}.
 
 \bibitem{skimage_cross-correlation}
-Cross-{{Correlation}} ({{Phase Correlation}});.
+Cross-{{Correlation}} ({{Phase Correlation}}); 2016.
 \newblock Available from:
   \url{http://scikit-image.org/docs/dev/auto_examples/plot_register_translation.html}.
 
@@ -1454,7 +1451,7 @@ Falk D.
 Frank SA.
 \newblock Natural Selection. {{IV}}. {{The Price}} Equation*: {{Price}}
   Equation.
-\newblock J Evol Biol. 2012 Jun;25(6):1002--1019.
+\newblock J Evol Biol. 2012 Jun;25(6):1002--19.
 \newblock \href {http://dx.doi.org/10.1111/j.1420-9101.2012.02498.x}
   {doi:~10.1111/j.1420-9101.2012.02498.x}.
 
@@ -1473,19 +1470,19 @@ Benner SA.
 \bibitem{hartwell_molecular_1999}
 Hartwell LH, Hopfield JJ, Leibler S, Murray AW.
 \newblock From Molecular to Modular Cell Biology.
-\newblock Nature. 1999;402:C47--C52.
+\newblock Nature. 1999;402:C47--52.
 
 \bibitem{arkin_fast_2006}
 Arkin AP, Fletcher DA.
 \newblock Fast, Cheap and Somewhat in Control.
-\newblock Genome Biology. 2006;7:114.
+\newblock Genome Biol. 2006;7:114.
 \newblock \href {http://dx.doi.org/10.1186/gb-2006-7-8-114}
   {doi:~10.1186/gb-2006-7-8-114}.
 
 \bibitem{guido_bottom-up_2006}
 Guido NJ, Wang X, Adalsteinsson D, McMillen D, Hasty J, Cantor CR, et~al.
 \newblock A Bottom-up Approach to Gene Regulation.
-\newblock Nature. 2006 Feb;439(7078):856--860.
+\newblock Nature. 2006 Feb;439(7078):856--60.
 \newblock \href {http://dx.doi.org/10.1038/nature04473}
   {doi:~10.1038/nature04473}.
 
@@ -1534,7 +1531,7 @@ Shachrai I, Zaslaver A, Alon U, Dekel E.
 Dong H, Nilsson L, Kurland CG.
 \newblock Gratuitous Overexpression of Genes in {{Escherichia}} Coli Leads to
   Growth Inhibition and Ribosome Destruction.
-\newblock J Bacteriol. 1995 Jan;177(6):1497--1504.
+\newblock J Bacteriol. 1995 Jan;177(6):1497--504.
 \newblock \href {http://dx.doi.org/10.1128/jb.177.6.1497-1504.1995}
   {doi:~10.1128/jb.177.6.1497-1504.1995}.
 
@@ -1550,7 +1547,7 @@ Dekel E, Mangan S, Alon U.
 Short MB, Solari CA, Ganguly S, Powers TR, Kessler JO, Goldstein RE.
 \newblock Flows Driven by Flagella of Multicellular Organisms Enhance
   Long-Range Molecular Transport.
-\newblock PNAS. 2006 May;103(22):8315--8319.
+\newblock Proc Natl Acad Sci. 2006 May;103(22):8315--9.
 \newblock \href {http://dx.doi.org/10.1073/pnas.0600566103}
   {doi:~10.1073/pnas.0600566103}.
 

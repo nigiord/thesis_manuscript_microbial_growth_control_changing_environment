@@ -348,7 +348,7 @@ The switching curve divides the phase plane into two regions, such that $\alpha(
 
 \begin{figure}[tb]
 \centering
-\includegraphics[width=\textwidth]{./Fig/Fig4}
+\includegraphics[clip,trim={0.4cm 0.5cm 0.54cm 0.45cm}]{./Fig/Fig4}
 \caption{
 \textbf{Optimal control of the self-replicator during a nutrient upshift.}
 \textit{A:}~Optimal trajectory in the phase plane for the nondimensionalized model of Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim}, with streamlines. The optimal trajectory is shown as a solid, red curve.
@@ -450,7 +450,7 @@ This causes a transiently suboptimal growth rate, leading to lower biomass accum
 \begin{figure}[p]
 \centering
 \includegraphics[scale=1]{./Fig/Fig6}
-\caption{
+\caption{\small
 \textbf{Comparison of the performance of the nutrient-only and precursor-only strategies after a nutrient upshift.}
 \textit{A:}~Trajectory in the phase plane for the nutrient-only strategy (green curve).
 The solid, black curve represents the $\hat{p}$-nullcline.
@@ -539,7 +539,7 @@ These results show that a strategy exploiting complete information on the intern
 \begin{figure}[p]
 \centering
 \includegraphics[scale=1]{./Fig/Fig7}
-\caption{
+\caption{\small
 \textbf{Comparison of the performance of the precursor-only and the on-off strategies after a nutrient upshift.}
 \textit{A:}~Trajectory in the phase plane for the on-off strategy (yellow curve).
 The solid, black curve represents the $\hat{p}$-nullcline and the dashed, black curve the function $g$.
@@ -1283,7 +1283,7 @@ We consider the dimensionless system defined by Eqs~\ref{eq:pdefnondim}-\ref{eq:
 \end{aligned}
 \end{equation}
 
-As stated in the section \textit{Biomass maximization as an optimal control problem} in the main text, the objective of this study is to maximize the growth rate on an interval $[0,\tau]$ after a nutrient upshift. With Eq.~\ref{S1.eq:supp_growthrate_adim} in \ref{S1_Text}, we have
+As stated in the section \textit{Biomass maximization as an optimal control problem} in the main text, the objective of this study is to maximize the growth rate on an interval $[0,\tau]$ after a nutrient upshift. With Eq.~\ref{eq:supp_growthrate_adim} in \ref{S1_Text}, we have
  
 \begin{equation*}
 \hat{\mu}= \hat{r}\, \dfrac{\hat{p}}{K+\hat{p}}.
@@ -1330,7 +1330,7 @@ The maximization condition is given by:
 \end{aligned}
 \end{equation}
 
-An extremal trajectory is a quadruplet $(\hat{x}(\cdot),\lambda(\cdot),\lambda_0,\alpha(\cdot))$ satisfying Eqs~\ref{eq:model}-\ref{eq:PMP}. The extremal is said to be normal (resp. abnormal) if $\lambda_0<0$ (resp. $\lambda_0=0$). In the normal case, we normalize the adjoint vector so that $\lambda_0=-1$.\\
+An extremal trajectory is a quadruplet $(\hat{x}(\cdot),\lambda(\cdot),\lambda_0,\alpha(\cdot))$ satisfying Eqs~\ref{eq:model}-\ref{eq:PMP}. The extremal is said to be normal (resp. abnormal) if $\lambda_0<0$ (resp. $\lambda_0=0$). In the normal case, we normalize the adjoint vector so that $\lambda_0=-1$.
 
 From Eq.~\ref{eq:PMP}, it follows that the control strategy is given by the sign of the \textit{switching function} $\phi(\cdot) \equiv \lambda_r \, \hat{r}\, \hat{p}/(K+\hat{p})$, that is,
 \[
@@ -1355,11 +1355,10 @@ Thus, the singular arc is the optimal steady state, corresponding to a singular 
 
 A necessary condition of optimality for a singular arc is given by the Kelley condition~\cite{borisov_fullers_2000}.
 We must differentiate $\phi$ with respect to $\hat{t}$ until $\alpha$ appears in the derivative. Along a singular arc, we obtain for $q=2$:
-$$
-(-1)^q\frac{\partial}{\partial\alpha}\frac{d^{2q}}{d\hat{t}^{2q}}\phi(\hat{t})<0,
-$$
-satisfying the Kelley condition necessary for optimality. Given that the singular arc is of second order, an optimal trajectory can enter into the singular arc only by a \textit{chattering arc} (also called the Fuller's phenomenon, \textit{i.e.}, an arc with an infinite number of switches~\cite{borisov_fullers_2000,marchal_chattering_2013}). \\
-
+\[
+(-1)^q \; \frac{\partial}{\partial\alpha} \; \frac{d^{2q}}{d\hat{t}^{2q}} \; \phi(\hat{t})<0,
+\]
+satisfying the Kelley condition necessary for optimality. Given that the singular arc is of second order, an optimal trajectory can enter into the singular arc only by a \textit{chattering arc} (also called the Fuller's phenomenon, \textit{i.e.}, an arc with an infinite number of switches~\cite{borisov_fullers_2000,marchal_chattering_2013}).
 
 \subsubsection{Analysis of the adjoint system}
 
@@ -1415,14 +1414,14 @@ tends to confirm that the control strategy of Eq.~\ref{control-opt} is optimal. 
 The recently published model of Bosdriesz \textit{et al.}~\cite{bosdriesz_how_2015} provides a synthesis of the currently available knowledge of the ppGpp regulatory system.
 Through the mechanisms of ppGpp production and degradation, it describes regulation of the synthesis of ribosomal RNA.
 We explain below how we use the model to compare the action of the ppGpp system with the on-off control strategy.
-The denomination of variables and parameters follows the Supporting Information of~\cite{bosdriesz_how_2015} , and is reproduced in Table~\ref{S4.tab:notations} in order to make the text self-contained.
+The denomination of variables and parameters follows the Supporting Information of~\cite{bosdriesz_how_2015} , and is reproduced in Table~\ref{tab:notations} in order to make the text self-contained.
 
 The evolution of the cellular concentration of ppGpp is described in~\cite{bosdriesz_how_2015} by
 \begin{equation}
 \label{eq:ppGpp}
 \frac{d\texttt{ppGpp}}{dt} = v_{RelA}(r_{t,tot}) + v_{spoT} - k_{spoT} \cdot \texttt{ppGpp},
 \end{equation}
-where $v_{spoT}$ and $k_{spoT}$ are constants (see Table~\ref{S4.tab:notations}), and $v_{RelA}$ is a function of $r_{t,tot}$, the total concentration of "stalled" ribosomes:
+where $v_{spoT}$ and $k_{spoT}$ are constants (see Table~\ref{tab:notations}), and $v_{RelA}$ is a function of $r_{t,tot}$, the total concentration of "stalled" ribosomes:
 \begin{equation}
 \label{eq:vrelA}
 v_{RelA}(r_{t,tot}) = k_{RelA} \cdot RelA_{tot} \cdot \frac{r_{t,tot}}{K_{D,RelA} + r_{t,tot}}.
@@ -1488,7 +1487,7 @@ It is not difficult to show that the only solution on $[0, 0.5\,r]$ is
 \label{eq:ti_final}
 t_i (a_i, r) = \frac{-B + \sqrt{B^2 - 4AC}}{2A}.
 \end{equation}
-From this result, we obtain $r_{t,tot}$ as a function of $a_i$ and $r$, by applying (A1) to Eq.~\ref{S4.eq:rttot-f}:
+From this result, we obtain $r_{t,tot}$ as a function of $a_i$ and $r$, by applying (A1) to Eq.~\ref{eq:rttot-f}:
 \begin{equation}
 \label{eq:rttot-f_without_sum}
 r_{t,tot}(t_i, r) = r \cdot \frac{t_i/\kappa_{t}}{1+(0.5 r-t_i)/\kappa_{ta}+t_i/\kappa_{t}},
@@ -1497,10 +1496,9 @@ and substituting $t_i$ by the expression of Eq.~\ref{eq:ti_final}.
 
 Finally, we apply (A2) to Eq.~\ref{eq:ppGpp} and obtain the final expression giving the concentration of ppGpp as a function of the total amino acid and ribosome concentrations:
 \begin{equation}
-\footnotesize
 \texttt{ppGpp}(a_i, r) = \frac{1}{k_{spoT}} \left( k_{RelA} \cdot RelA_{tot} \cdot \frac{r_{t,tot}(a_i, r)}{K_{D,RelA} + r_{t,tot}(a_i,r)} + v_{spoT} \right).
 \end{equation}
-This function is represented in Fig.~\ref{S4.fig:ppGpp} with parameters taken from Table~\ref{tab:notations}.
+This function is represented in Fig.~\ref{fig:ppGpp} with parameters taken from Table~\ref{tab:notations}.
 
 The plotted surface of the function resembles the inverse of the on-off control strategy in Fig.~\ref{fig:ppGppsurface}, as expected, bearing in mind that ppGpp has an inhibitory effect on the synthesis of ribosomal RNA.
 We assumed a Michaelis-Menten inhibition for the regulatory effect of ppGpp on rRNA synthesis, and thus indirectly on the synthesis of ribosomal proteins~\cite{potrykus_pppgpp_2008,keener_regulation_1996}:
