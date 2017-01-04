@@ -9,34 +9,34 @@
 \end{center}
 
 \selectlanguage{french}
-\section*{Résumé en français}
-Contrairement à la physique, la biologie manque encore de théories quantitatives à fort pouvoir prédictif.
-Même si de grosses avancées ont eu lieu en biologie évolutive, d'autres domaines sont loin d'être aussi avancés d'un point de mathématique.
-C'est notamment le cas de la croissance, qui malgré son rôle fondamental dans la définition du vivant, repose sur des mécanismes qui semblent varier énormément d'un organisme à l'autre.
+\begin{chapter_summary}{Introduction}
+Contrairement à sa cousine la physique, la biologie manque encore de théories quantitatives à fort pouvoir prédictif.
+Même si de grosses avancées ont eu lieu en biologie évolutive, d'autres domaines sont loin d'être aussi développés d'un point de mathématique.
+C'est notamment le cas de la croissance, qui malgré la place fondamentale qu'elle occupe dans ce qui définit un être-vivant, repose sur des mécanismes qui semblent varier énormément d'un organisme à l'autre, et pour lesquels des lois fondamentales sont dures à identifier.
 
 Chez les microorganismes, nous disposons néanmoins de lois de croissance.
-Elles montrent de manière empirique que malgré une grande diversité des mécanismes moléculaires qui assurent le contrôle de la croissance, la composition des microorganismes obéit à des règles universelles lorsqu'ils se multiplient à l'état stationnaire dans différents environnements.
-En particulier, l'abondance de leurs ribosomes s'ajuste linéairement avec la richesse du milieu, d'une manière que maximise leur taux de croissance.
+Elles montrent de manière empirique que malgré la grande diversité des mécanismes moléculaires qui assurent le contrôle de la croissance, la composition des microorganismes obéit à des règles universelles lorsqu'ils se multiplient à l'état stationnaire dans différents environnements.
+En particulier, l'abondance de leurs ribosomes s'ajuste linéairement avec la richesse du milieu, d'une manière qui maximise leur taux de croissance.
 Mais comme décrit au cours du Chapitre~\ref{chap:introduction}, ces lois ont été essentiellement établies en croissance stationnaire, un état très rarement rencontré par ces organismes dans leur milieu naturel.
 Pour quelles raisons les microorganismes seraient-ils optimisés pour un état qu'ils n'ont que très peu rencontré au cours de leur évolution ?
 Les lois de croissance à l'état stationnaire ne seraient-elles pas une application particulière de lois plus générales qui s'appliquent en environnements variables ?
 
 Notre but dans ce manuscrit a été d'établir un cadre de travail à la fois théorique et expérimental dans lequel une perspective dynamique peut être adoptée sur les lois de croissance.
 Au cours du Chapitre~\ref{chap:theory}, nous avons utilisé un modèle d'auto-réplicateur pour évaluer la redistribution optimale des ressources lors d'un changement environnemental.
-En élargissant les principes d'optimalité établis dans les lois de croissance stationnaire, nous avons montré qu'une distribution de type tout-ou-rien (bang-bang en anglais) optimise la biomasse générée au cours de la transition.
+En élargissant les principes d'optimalité établis dans les lois de croissance stationnaire, nous avons montré qu'une distribution des ressources de type tout-ou-rien (\textit{bang-bang} en anglais) optimise la biomasse générée tant que la composition cellulaire n'est pas à l'équilibre.
 Cela nous a servi de point de référence pour comparer entre elles différentes stratégies de régulation.
-Ainsi, nous avons montré que les stratégies mesurant l'état interne de la cellule s'avèrent plus efficace que celles tirant leur information de l'environnement, contrairement à l'état stationnaire de croissance où toutes ces stratégies sont strictement équivalentes.
-De plus, une stratégie étonnamment proche du système ppGpp chez \textit{Escherichia coli}, est théoriquement capable de s'approcher de la distribution tout-ou-rien identifiée comme optimale.
+Ainsi, nous avons montré que les stratégies mesurant l'état interne de la cellule s'avèrent plus efficaces que celles tirant leur information de l'environnement, contrairement à l'état stationnaire de croissance où toutes ces stratégies sont strictement équivalentes.
+De plus, une stratégie légèrement plus complexe mais proche du système ppGpp chez \textit{Escherichia coli}, est théoriquement capable de s'approcher de la distribution tout-ou-rien identifiée comme optimale.
 
 La simplicité du modèle, même si elle peut rendre certains lecteurs sceptiques, s'est avérée cruciale dans notre étude.
 En effet, cela nous a permis de clairement spécifier les hypothèses mise en jeu.
 La plus critique s'avère être celle qui considère la production de biomasse comme étant le facteur de \textit{fitness} principal que l'on soit en environnement stable ou dynamique.
-Bien que largement répandue, cette hypothèse n'est finalement basée que sur des arguments indirects, ou bien établis dans des conditions de laboratoire, sur des souches de laboratoire (décrit dans le Chapitre~\ref{chap:introduction}).
-De fait, en conditions naturelles et à l'échelle des temps évolutifs, il n'est pas certain que ce critère soit vraiment si universel que ça.
-Une étape importante a donc été de vérifier expérimentalement les prédictions que nous avons tirées de cette hypothèse.
+Bien que largement répandue, cette hypothèse n'est finalement basée que sur des arguments indirects, ou bien établis dans des conditions de laboratoire, et sur des souches de laboratoire (Chapitre~\ref{chap:introduction}).
+De fait, en conditions naturelles et à l'échelle des temps évolutifs, il n'est pas certain que ce critère soit vraiment universel.
+Une étape importante a donc été de vérifier expérimentalement les prédictions que nous avons pu tirer de cette hypothèse.
 
 C'est ce qui a été abordé au cours du Chapitre~\ref{chap:experiments} de ce manuscrit.
-Nous avons mis en place une cadre d'étude expérimental dans lequel la distribution des ressources peut être observée lors d'une transition de croissance.
+Nous avons mis en place un cadre d'étude expérimentale dans lequel la distribution des ressources peut être observée lors d'une transition de croissance.
 Tout d'abord, une souche d'\textit{Escherichia coli} a été modifiée en attachant une protéine fluorescente (GFP) à l'une des sous-unités du ribosome.
 Cette souche a ensuite été observée en utilisant une technique avancée de microfluidique permettant de réaliser des transitions robustes et contrôlées du milieu de culture.
 Enfin, les mesures obtenues ont pu être exploitées \textit{via} le développement d'une technique de reconstruction du signal utilisant le lissage de Kalman.
@@ -45,30 +45,33 @@ Deux scénarios sont cependant envisageables.
 
 Dans le premier cas, le caractère tout-ou-rien ou du moins oscillatoire de la synthèse des ribosomes pourrait être confirmé.
 Cela suggèreraient que les mécanismes de régulation de la distribution des ressources maximisent la biomasse produite lors d'une transition, et donc que les microorganismes sont effectivement adaptés à des environnements changeants.
-Pour confirmer ces résultats, de nouvelles données devront nécessairement être acquises, notamment en mesurant de telle transition dans une variété plus large de conditions environnementales (changement de source de carbone, ajout d'acides aminés dans le milieu pour contourner le métabolisme, utilisation d'une restriction en azote au lieu du carbone, ...).
+Pour confirmer ces résultats, de nouvelles données devront nécessairement être acquises, notamment en mesurant des transitions similaires dans une variété plus large de conditions environnementales (changement de source de carbone, ajout d'acides aminés dans le milieu pour contourner le métabolisme, utilisation d'une restriction en azote au lieu du carbone, ...).
 Le dispositif expérimental pourrait également être modifié pour contrôler un plus grand nombre de paramètres.
-Par exemple, en attachant un autre rapporteur fluorescent à une enzyme clé du métabolisme, nous pourrions vérifier si les synthèses de la machinerie d'expression génique et des enzymes du métabolisme sont effectivement en anti-phase lors des oscillations.
+Par exemple, en attachant un autre rapporteur fluorescent à une enzyme clé du métabolisme, nous pourrions vérifier si les synthèses de la machinerie d'expression génique et de la machinerie métaboliques sont effectivement en anti-phase lors des oscillations.
 
 Dans le second cas, le comportement observé serait différent d'une production tout-ou-rien.
 Par construction, cela signifierait qu'une hypothèse du modèle n'est pas respectée.
-Par exemple, la cellule ne maximiserait pas la biomasse produite lors d'une transition.
-Une autre possibilité serait que les coûts d'une telle régulation dépasse pour la cellule les éventuels bénéfices qu'elle peut en tirer.
-En effet, en ne comparant les schémas de régulation que vis-à-vis de leur bénéfices, nous avons fait l'hypothèse implicite que leurs coûts pour la cellule sont négligeables, sinon au moins comparables.
+Par exemple, cela pourrait signifier l'optimisation de la biomasse produite lors d'une transition n'est pas un objectif pour la cellule.
+Une autre possibilité serait que les coûts pour la cellule d'une telle régulation dépassent les éventuels bénéfices qu'elle peut en tirer.
+En effet, en ne comparant les schémas de régulation qu'en terme de bénéfices, nous avons fait l'hypothèse implicite que leurs coûts pour la cellule sont négligeables, sinon au moins comparables.
 Il est possible que même si la production de biomasse s'avère être un critère déterminant, les limites physiques imposées par le coût des régulations empêchent la cellule de faire mieux que le comportement observé.
-La prise en compte de ces coûts dans le modèle devra donc être explorée.
+La prise en compte de ces coûts dans le modèle devra donc être explorée avant toute conclusion.
 
 Dans tous les cas, cette exploration des coûts des schémas de régulation pourrait s'avérer cruciale dans l'établissement d'un lien fondamental entre la complexité des schémas de régulation d'une espèce microbienne, et la dynamique de son environnement.
 En effet, comme montré dans le Chapitre~\ref{chap:theory}, la cellule ne tire avantage d'un schéma de régulation complexe que lorsque son environnement varie.
-On peut élargir ce résultat en supposant que le bénéfice apporté par des régulations toujours plus complexes devrait saturer.
-En revanche, leurs coûts devraient continuer à croitre, dans la mesure où des régulations plus élaborées impliquent pour la cellule la synthèse de davantage de système de mesure, et donc détournent une part toujours plus grande des ressources cellulaires.
+On peut élargir ce résultat en supposant que le bénéfice apporté par des régulations toujours plus complexes finit par saturer.
+En revanche, le coût de ces régulations devrait continuer à croitre, dans la mesure où des régulations plus élaborées impliquent pour la cellule la synthèse de davantage de systèmes de mesure, et donc détournent une part toujours plus grande des ressources cellulaires.
 On peut donc conjecturer que ces deux tendances vont finir par se croiser au niveau d'un goulot d'étranglement évolutif, au delà duquel les coûts excèdent les bénéfices.
-On peut de plus s'attendre à ce que ce goulot d'étranglement survienne plus ou moins loin vers la complexité en fonction de l'intensité et la fréquence des variations environnementales auxquels le microorganisme est soumis.
+On peut de plus s'attendre à ce que ce goulot d'étranglement survienne plus ou moins loin en fonction de l'intensité et la fréquence des variations environnementales auxquels les microorganismes sont soumis.
 En d'autres termes, là où les lois de croissances actuelles décrivent uniquement des variations physiologiques avec la qualité du milieu, nous pourrions ajouter une autre dimension à ces lois qui représenterait la variabilité temporelle de la disponibilité des nutriments dans l'environnement naturel.
+\end{chapter_summary}
 \selectlanguage{english}
 
 \begin{center}
 \noindent\rule{4cm}{0.1pt}
 \end{center}
+
+\section*{Beginning of Chapter \thechapter}
 
 Physics has yet to be reduced to a formula that will fit on a piece of clothing~\cite{falk_universe_2005}.
 This is even more true for Biology, but the extensive work on the mechanisms of evolution are helping to close this gap (see for instance the Price equation, which summarize in a short and elegant formula the mechanisms of evolution and natural selection~\cite{frank_natural_2012}).
