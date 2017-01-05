@@ -9,7 +9,7 @@
 \end{center}
 
 \selectlanguage{french}
-\begin{chapter_summary}{Introduction}
+\begin{chapter_summary}{Discussion}
 Contrairement à sa cousine la physique, la biologie manque encore de théories quantitatives à fort pouvoir prédictif.
 Même si de grosses avancées ont eu lieu en biologie évolutive, d'autres domaines sont loin d'être aussi développés d'un point de mathématique.
 C'est notamment le cas de la croissance, qui malgré la place fondamentale qu'elle occupe dans ce qui définit un être-vivant, repose sur des mécanismes qui semblent varier énormément d'un organisme à l'autre, et pour lesquels des lois fondamentales sont dures à identifier.
@@ -76,13 +76,13 @@ En d'autres termes, là où les lois de croissances actuelles décrivent uniquem
 Physics has yet to be reduced to a formula that will fit on a piece of clothing~\cite{falk_universe_2005}.
 This is even more true for Biology, but the extensive work on the mechanisms of evolution are helping to close this gap (see for instance the Price equation, which summarize in a short and elegant formula the mechanisms of evolution and natural selection~\cite{frank_natural_2012}).
 But evolution by itself is not sufficient to define life.
-Even the less restrictive definition we have -- the one we use to look for life in the universe -- defines a living system as "a self-sustaining chemical system capable of Darwinian evolution"~\cite{deamer_origins_1994,benner_defining_2010}.
+Even the least restrictive definition we have -- the one we use to look for life in the universe -- defines a living system as "a self-sustaining chemical system capable of Darwinian evolution"~\cite{deamer_origins_1994,benner_defining_2010}.
 Self-sustainment appears to be as fundamental as evolution, and relies on the transformation of matter and energy from the environment into organic matter, in other words, on growth.
-But the mathematical framing of questions regarding the self-sustaining character of living systems has not advanced as much as the mathematical analysis of evolution.
+But the mathematical formulation of questions regarding the self-sustaining character of living systems has not advanced as much as the mathematical analysis of evolution.
 
 Nevertheless, fundamental growth laws have been established for microorganisms.
-These growth laws show that, regardless of the molecular mechanisms ensuring growth control, microorganisms tend to follow the same empirical regularities when grown at steady state in different environmental conditions~\cite{molenaar_shifts_2009,scott_emergence_2014,scott_interdependence_2010,scott_bacterial_2011}.
-In particular, they adjust their internal molecular composition after a change in the environment, in such a way as to maximize their growth rate~(see in particular~\cite{molenaar_shifts_2009,scott_emergence_2014}).
+These growth laws show that, regardless of the molecular mechanisms underlying growth control, microorganisms tend to follow the same empirical regularities when grown at steady state in different environmental conditions~\cite{molenaar_shifts_2009,scott_emergence_2014,scott_interdependence_2010,scott_bacterial_2011}.
+In particular, they adjust their internal molecular composition after a change in the environment in such a way as to maximize their growth rate~(see in particular~\cite{molenaar_shifts_2009,scott_emergence_2014}).
 Growth laws are a strong support for the theory of a modular organization of microorganisms~\cite{scott_emergence_2014,hartwell_molecular_1999,arkin_fast_2006,guido_bottom-up_2006}.
 They represent a big step forward towards gaining a general understanding of the physiology of microorganisms.
 They have been established at steady state, however, a state in which most microorganisms spend very little time~\cite{mcarthur_microbial_2006,menge_nitrogen_2012,
@@ -102,16 +102,16 @@ What is optimal at steady state and during a growth transition is thus not the s
 
 The model developed here is an instance of proof-of-concept model~\cite{servedio_not_2014}.
 It does not necessarily aim at quantitatively predicting or controlling the behavior of microorganisms.
-By using a simple and abstract representation, it enables a convenient and tractable way of evaluating the implications of dynamical optimality, in particular its divergence from steady-state optimality.
+By using a simple and abstract representation, it provides a convenient and tractable way of evaluating the implications of dynamical optimality, in particular its divergence from steady-state optimality.
 Is a dynamical perspective on growth laws necessary?
 Do regulatory mechanisms need to differ in a dynamical context?
 Those are the questions that were investigated by means of this model. 
 To our surprise, it additionally provided a new way of looking at the regulatory systems controlling ribosomal abundance in many bacteria.
 
-Some readers might be skeptical about the interest of using such a simple model for addressing the above questions.
-Given the profusion of knowledge and data available on biological systems, one might be tempted to introduce every known detail about the molecular implementation of a system of interest.
+Some readers may be skeptical about the interest of using such a simple model for addressing the above questions.
+Given the profusion of knowledge and data available on biological systems, one might be tempted to include in the model every known detail about the molecular implementation of the system of interest.
 One of the main drawbacks of such mechanistic models is that we quickly loose track of the big picture and the underlying assumptions.
-When including much molecular details, the models also tend to become untractable, prohibiting the use of mathematical tools like optimal control theory that are quickly overwhelmed by the sheer number of variables and parameters in the model.
+When including many molecular details, the models also tend to become untractable, prohibiting the use of mathematical tools like optimal control theory that are quickly overwhelmed by the sheer number of variables and parameters in the model.
 Besides, simple, abstract models make it easy for the modeler to state the assumptions that are made, and more importantly to identify which ones are logistical, exploratory, or critical (see~\cite{servedio_not_2014}, in particular Box~1).
 Logistical assumptions do not affect the conclusions of the model, and are only necessary for tractability.
 A good example in our case is the Michaelis-Menten kinetics that were considered in Chapter~\ref{chap:theory}.
@@ -135,7 +135,7 @@ Advances in microfluidics were exploited to perform steady-state-to-steady-state
 Finally, the signal of interest was reconstructed through the use of Kalman smoothing, a powerful signal processing algorithm that has, as we showed, many features that make it suitable for the analysis of microscopy time-series data~\cite{kailath_linear_2000,jazwinski_stochastic_2007,kalman_new_1960}.
 Overall, the set-up still needs many improvements, though most of them are experimental issues that should be easily fixable.
 
-Chapter~\ref{chap:experiments} must not be taken as a "test of the model" in Chapter~\ref{chap:theory}, but rather as a test of its assumptions (see Box~2 in~\cite{servedio_not_2014}).
+Chapter~\ref{chap:experiments} must not be taken as a "test of the model" presented in Chapter~\ref{chap:theory}, but rather as a test of its assumptions (see Box~2 in~\cite{servedio_not_2014}).
 The model is correct in that bang-bang resource allocation follows mathematically from the assumption that microorganisms maximize their biomass production at steady state and during growth transitions.
 The model predictions can be used, however, as a tool to test whether this critical assumption is valid.
 In Chapter~\ref{chap:experiments}, we thus apply the experimental set-up to observe the resource allocation profile following a nutrient upshift in \textit{E.~coli}.
@@ -150,17 +150,18 @@ For instance, the strain could be modified so as to express an additional fluore
 Along with the ribosomal reporter, this would allow us to test the prediction that the metabolic and gene expression machineries are expressed in anti-phase.
 
 In the other scenario, we do not observe any trace of a bang-bang resource allocation scheme.
-In that case, the questions that would arise are which critical assumptions are not valid.
-We also cannot discard the possibility that an assumption that was originally identified as exploratory or logistical might in fact be critical for the predictions of the model.
+In that case, the crucial questions is: "Which critical assumptions are not valid?"
+We cannot discard the possibility that an assumption that was originally identified as exploratory or logistical might in fact be critical for the predictions of the model.
 Although unlikely \textit{a priori}, this might be the case for the expressions used for the macroreactions in the model (Eqs~\ref{eq:metaflux}-\ref{eq:machflux}), the definition of the volume as invariably proportional to the total mass of macromolecules (Eq.~\ref{eq:voldef}), or the fact that degradation is assumed negligible with respect to the rates of other reactions in the system.
-More probably, the assumptions regarding the cost of the regulatory system could be more critical than initially thought.
+More likely, the assumptions regarding the cost of the regulatory system could be more critical than initially thought.
 By only comparing the regulatory schemes with respect to their benefits, we implicitly made the assumption that their costs are negligible or at least comparable.
-The costs of regulatory schemes are actually difficult to model~\cite{shachrai_cost_2010,dong_gratuitous_1995,dekel_environmental_2005}, since the cellular variables are not equally costly to measure and, as we showed for the ppGpp system, one mechanism may measure several variables at once.
+The costs of regulatory schemes are difficult to model~\cite{shachrai_cost_2010,dong_gratuitous_1995,
+dekel_environmental_2005} since the cellular variables are not equally costly to measure and, as we showed for the ppGpp system, one mechanism may measure several variables at once.
 Nevertheless, relaxation of this hypothesis would definitively need to be explored before concluding that microorganisms do not optimize their biomass production during growth transitions.
 
 In any case, exploring the costs of regulatory mechanisms might uncover a fundamental link between the complexity of the regulatory schemes and the dynamics of the environment.
 As we illustrated in Chapter~\ref{chap:theory}, complex regulatory schemes only prove beneficial in a dynamical context, away from steady state.
 At the opposite extreme, one can expect the benefits of these regulatory schemes to saturate, whereas the cost of complexity would probably not saturate, since acquiring more information is expected to require additional sensing systems, diverting away an increasingly larger part of cellular resources.
 Overall, these two tendencies are expected to cross at a point that would represent an evolutionary bottleneck, beyond which the costs exceed the benefits (see~\cite{short_flows_2006} for another example of such a bottleneck).
-Interestingly, the position of the bottleneck might be dependent on the environment, resulting in a dynamic law that would link the complexity of regulatory systems to the dynamics of the environment.
+Interestingly, the position of the bottleneck might be dependent on the environment, resulting in a law that would link the complexity of regulatory systems to the dynamics of the environment.
 In other words, while the current growth laws consider how the physiology of the cell varies with the nutrient quality of the medium, we could add another dimension representing the time-varying availability of this nutrient in the natural environment.
