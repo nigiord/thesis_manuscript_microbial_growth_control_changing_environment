@@ -353,7 +353,7 @@ In nature, nutrient upshifts generally start from stationary phase~\cite{mcarthu
 For this reason, we confine the problem to the study of resource allocation during a so-called steady-state-to-steady-state transition.
 While we expect the starting and ending conditions to be on the growth law presented in Fig.~\ref{fig:scott_rnaprot}, we currently have no idea of what happens in the time between.
 
-We start by developing in Chapter~\ref{chap:theory} a simple proof-of-concept model of resource allocation which evaluates how biomass production can be maximized during an upshift from a medium with low nutrient content to a medium with high nutrient content.
+We start by developing in Chapter~\ref{chap:theory} a simple proof-of-concept model of resource allocation that evaluates how biomass production can be maximized during an upshift from a medium with low nutrient content to a medium with high nutrient content.
 The model is an instance of a self-replicator model~\cite{molenaar_shifts_2009}, but focuses on the allocation of resources to only two sectors of the microbial cell: metabolism, taking up and converting nutrients to precursor metabolites, and gene expression, producing macromolecules from the precursors.
 The model is kept as simple as possible in order to make sure it stays mathematically tractable in a dynamical context.
 A necessary step is however to verify that, at steady-state, the model account for known growth laws of resource allocation~\cite{scott_interdependence_2010,scott_bacterial_2011}.
@@ -366,18 +366,18 @@ In particular, we use the bang-bang~\cite{stengel_optimal_1994} control solution
 This provides a common scale on which the outcomes of different regulatory schemes can be compared during an upshift scenario.
 This allows us to identify one or several strategies that clearly outperform all the others, giving us testable predictions.
 Specifically, we show that feedback from the intracellular state turns out to be much more valuable than information from the environment.
-We investigate if such a strategy could be active in real cells, and identify the widespread ppGpp system~\cite{bosdriesz_how_2015} as a possible molecular implementation of that should allow the synthesis of ribosomes in a switch-like manner during a nutrient upshift.
-Overall, this chapter demonstrates that if microbial cells actually optimize their biomass production during an upshift, they should dynamically allocate their resources to the gene expression machinery in an on-off manner, making an experimentally testable prediction.
+We investigate if such a strategy could be active in real cells, and identify the widespread ppGpp system~\cite{bosdriesz_how_2015} as a possible molecular implementation that could control the synthesis of ribosomes in a switch-like manner during a nutrient upshift.
+Overall, this chapter demonstrates that, if microbial cells actually optimize their biomass production during an upshift, they should dynamically allocate their resources to the gene expression machinery in an on-off manner, making an experimentally testable prediction.
 
-In Chapter~\ref{chap:experiments}, we address the challenging problem of experimentally verifying the above prediction in \textit{Escherichia coli}.
-It requires the development of an experimental set-up allowing the measurement of resource allocation in our dynamical growth scenario, \textit{i.e.} a steady-state-to-steady-state nutrient upshift.
+In Chapter~\ref{chap:experiments}, we address the challenging problem of experimentally verifying this prediction in \textit{Escherichia coli}.
+This task requires the development of an experimental set-up allowing the measurement of resource allocation in our dynamical growth scenario, \textit{i.e.} a steady-state-to-steady-state nutrient upshift.
 From the model developed in Chapter~\ref{chap:theory}, we identified that the predicted on-off pattern should occur on a short time scale after the transition (a couple of generations).
 This motivates the use of \textit{in-vivo}, high-frequency, single-cell measurements of the concentration of the gene expression machinery.
-Inspired by the work of Bakshi \textit{et al.}~\cite{bakshi_superresolution_2012}, we construct a strain with a GFP-tagged S2 ribosomal subunit, grow this strain in the mother machine, and monitor expression of the reporter gene using fluorescence microscopy~\cite{wang_robust_2010}.
-While originally developed for studies of long-term steady-state growth, we use the mother machine here to perform an instantaneous medium transition in a controlled manner from acetate (a poor carbon source) to glucose (a rich carbon source), in order to get a significant difference in growth rates between the two media~\cite{andersen_are_1980}.
+Inspired by the work of Bakshi \textit{et al.}~\cite{bakshi_superresolution_2012}, we constructed a strain with a GFP-tagged S2 ribosomal subunit, grew this strain in the mother machine, and monitored expression of the reporter gene using fluorescence microscopy~\cite{wang_robust_2010}.
+While originally developed for studies of long-term steady-state growth, we used the mother machine here to perform an instantaneous medium transition in a controlled manner from acetate (a poor carbon source) to glucose (a rich carbon source), in order to obtain a significant difference in growth rates between the two media~\cite{andersen_are_1980}.
 
-After segmentation and cell tracking, this set-up is able to generate fluorescence and size time series for dozens of cells.
-Using again the self-replicator model as a framework, we show that these measurements are sufficient for the intended signal reconstructions, in particular the growth rate and the resource allocation profile over time.
-The method we use is called Kalman smoothing~\cite{kailath_linear_2000,jazwinski_stochastic_2007}.
-While well-known in engineering, Kalman smoothing has been rarely used in quantitative biology, but turns out to be particularly suitable for the purpose of the model-based analysis of gene expression data in single cells, as we argue and show on synthetic data through the chapter.
-Finally, the experimental verification or falsification of the optimal control prediction, should allow to conclude if the biomass maximization, as considered in Chapter~\ref{chap:theory}, is indeed a cell objective in a dynamical context.
+After segmentation and cell tracking, this set-up was able to generate fluorescence and size time series for dozens of cells.
+Using again the self-replicator model as a framework, we showed that these measurements are sufficient for the intended signal reconstructions, in particular the growth rate and the resource allocation profile over time.
+The method we used is called Kalman smoothing~\cite{kailath_linear_2000,jazwinski_stochastic_2007}.
+While well-known in engineering, Kalman smoothing has been rarely used in quantitative biology, but turned out to be particularly suitable for the purpose of the model-based analysis of gene expression data in single cells, as we argue and show on synthetic data in Chapter~\ref{chap:experiments}.
+Finally, the experimental verification or falsification of the optimal control prediction, should allow to conclude whether the biomass maximization, as considered in Chapter~\ref{chap:theory}, is indeed a cell objective in a dynamical context.
