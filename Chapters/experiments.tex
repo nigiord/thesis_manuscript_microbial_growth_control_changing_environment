@@ -33,7 +33,7 @@ En changeant simplement le type de milieu injecté dans le dispositif, nous pouv
 Plus particulièrement, le milieu pauvre utilisé contient de l'acétate comme seule source de carbone, tandis que le milieu riche contient essentiellement du glucose (Fig.~\ref{fig:experiment_schema}).
 
 De telles expériences s'avèrent malheureusement pointues et, dans le temps disponible pour le doctorat, nous n'avons pu en réaliser qu'un petit nombre, dont seule celle présentée ici s'est avérée exploitable.
-Celle-ci a cependant subit de nombreux problèmes expérimentaux qui, s'ils n'ont pas empêché complètement son exploitation, ont posé des problèmes pour l'analyse et l'interprétation des résultats.
+Celle-ci a cependant subi de nombreux problèmes expérimentaux qui, s'ils n'ont pas empêché complètement son exploitation, ont posé des problèmes pour l'analyse et l'interprétation des résultats.
 Ces problèmes expérimentaux sont abordés dans la Section~\ref{sec:data_acquisition}, et sont largement discutés en Section~\ref{sec:chap3_discussion}.
 En effet, suite à un problème logiciel et à ce qui semble être une contamination par un bacteriophage, nous n'avons pas pu obtenir des séries temporelles aussi longues qu'initialement prévu.
 Même si nous disposons néanmoins des données se situant autour de la transition, le fait de ne pas avoir atteint un nouvel état de croissance stationnaire sur glucose va s'avérer être un inconvénient majeur pour l'analyse des résultats.
@@ -43,7 +43,7 @@ Au final, il faut retenir de ces sections que cette expérience et son analyse s
 La Section~\ref{sec:res_kalman} présente la façon dont nous pouvons reconstruire $\alpha (\cdot)$ lors de la transition à partir des données obtenues.
 Pour cela, nous développons une méthode basée sur le lissage de Kalman, qui utilise une approche probabiliste et bayésienne pour reconstruire de manière robuste un signal à partir de mesures bruitées.
 Nous montrons comment l'information dont nous disposons sur le déroulement de l'expérience peut être injectée dans l'analyse sous la forme d'un \textit{prior} bayésien afin de faciliter la reconstruction, ce qui s'avère particulièrement utile sur nos données.
-De plus, à partir de données synthétiques générée grâce au modèle développé lors du Chapitre~\ref{chap:theory}, nous constatons que la méthode est capable de capturer le profil oscillatoire généré par le comportement tout-ou-rien que nous attendons (Fig.~\ref{fig:synthetic_upshift}).
+De plus, à partir de données synthétiques générées grâce au modèle développé lors du Chapitre~\ref{chap:theory}, nous constatons que la méthode est capable de capturer le profil oscillatoire généré par le comportement tout-ou-rien que nous attendons (Fig.~\ref{fig:synthetic_upshift}).
 
 Finalement, nous appliquons cette méthode à la reconstruction du taux de croissance puis de $\alpha (\cdot)$, et présentons les résultats dans la Section~\ref{sec:estim_gr_ra}.
 En moyenne, le taux de croissance présente le comportement attendu (Figs~\ref{fig:growth_rate_estimation} et \ref{fig:growth_rate_estimation_median}), avec des valeurs à l'état de croissance stationnaire qui sont proches de celles connues pour \textit{E.~coli}, et une augmentation rapide au moment de la transition vers le milieu riche.

@@ -15,27 +15,27 @@ Ce chapitre est dédié à une approche théorique du problème d'allocation des
 En Section \ref{sec:model}, nous modélisons la cellule comme un auto-réplicateur devant allouer une ressource commune (les nutriments du milieu) à deux secteurs distincts de macromolécules: la machinerie métabolique qui extrait les nutriments de l'environnement et les convertit en précurseurs utilisables, et la machinerie d'expression génique qui utilise ces précurseurs pour produire de nouvelles macromolécules (Fig.~\ref{fig:self_replicator}).
 Ce modèle très simple comprenant 2 réactions (Eq.~\ref{eq:reactions}) se traduit mathématiquement par deux équations différentielles ordinaires (Eqs~\ref{eq:pdef} et \ref{eq:rdef}) faisant intervenir le paramètre $\alpha$ qui va devenir clé dans notre étude.
 $\alpha$ représente la proportion massique des précurseurs qui sont utilisés pour produire de la machinerie d'expression génique, au détriment de la machinerie métabolique (qui elle, est produite à la proportion $1-\alpha$).
-Comme on l'a déjà vu avec les lois de croissance établie à l'état stationnaire (voir Chapitre~\ref{chap:introduction}), cette proportion varie avec l'environnement, on s'attend donc à ce que $\alpha$ en fasse autant, augmentant d'autant que l'environnement devient riche (Fig.~\ref{fig:scott_rnaprot}).
-Cependant, de quelle manière varie-t-il entre deux états de croissance stationnaire, lorsque les composants cellulaires sont en déséquilibre et que la cellule doit adapter sa composition ?
+Comme on l'a déjà vu avec les lois de croissance établies à l'état stationnaire (voir Chapitre~\ref{chap:introduction}), cette proportion varie avec l'environnement, on s'attend donc à ce que $\alpha$ en fasse autant, augmentant d'autant que l'environnement devient riche (Fig.~\ref{fig:scott_rnaprot}).
+Cependant, de quelle manière varie-t-il entre deux états de croissance stationnaires, lorsque les composants cellulaires sont en déséquilibre et que la cellule doit adapter sa composition ?
 
-Comme nous l'avons vu dans le Chapitre~\ref{chap:introduction}, les lois de croissances à l'état stationnaire s'expliquent facilement si l'on considère que la cellule maximise son taux de croissance.
+Comme nous l'avons vu dans le Chapitre~\ref{chap:introduction}, les lois de croissance à l'état stationnaire s'expliquent facilement si l'on considère que la cellule maximise son taux de croissance.
 En Section~\ref{sec:growthlaws}, nous voyons en effet que pour chaque environnement, un $\alpha$ unique existe qui maximise la croissance de la cellule, mais surtout que ce $\alpha^*_{opt}$ est d'autant plus important que l'environnement est riche (Fig.~\ref{fig:model_analysis}).
-De fait, les lois de croissances à l'état stationnaire sont parfaitement prédites par notre modèle simple en considérant uniquement que la cellule maximise son taux de croissance (Fig.~\ref{fig:model_validation}).
+De fait, les lois de croissance à l'état stationnaire sont parfaitement prédites par notre modèle simple en considérant uniquement que la cellule maximise son taux de croissance (Fig.~\ref{fig:model_validation}).
 Peut-on appliquer le même principe, dans un contexte cette fois dynamique, de façon à prédire comment la cellule distribue ses ressources lors d'une transition de croissance ?
 
 Dans ce contexte, $\alpha$ est désormais une fonction du temps.
 Nous cherchons donc quelle fonction du temps maximise un objectif donné.
 Ce problème, formulé en Section~\ref{sec:optimalcontrolproblem}, est un problème de contrôle optimal, puisque l'objectif à optimiser est une fonction d'une autre fonction, plus communément appelée fonctionnelle.
 Nous choisissons comme équivalent dynamique de la maximisation du taux de croissance à l'état stationnaire, la maximisation de la production de biomasse sur un intervalle de temps comprenant un changement abrupt de l'environnement (Eq.~\ref{eq:biomassdyn}).
-Nous résolvons ce problème en Section~\ref{sec:optimalcontrolsolution} en couplant utilisation du principe du maximum de Pontryagin avec de l'optimisation numérique.
+Nous résolvons ce problème en Section~\ref{sec:optimalcontrolsolution} en couplant l'utilisation du principe du maximum de Pontryagin avec de l'optimisation numérique.
 La solution optimale obtenue montre que le contrôle $\alpha$ doit prendre alternativement les valeurs 0 ou 1 jusqu'à ce que le système soit stabilisé sur un nouvel équilibre (Fig.~\ref{fig:optimalcontrol} et Eq.~\ref{eq:optcontrol}).
 En d'autres termes, la meilleure production de biomasse s'obtient si, à tout moment, la cellule aiguille 100\% de ses ressources vers un seul secteur, en alternant entre l'un et l'autre jusqu'à ce que le nouvel état stationnaire de croissance soit atteint.
 Ce type de solution se rencontre souvent en contrôle optimal, et répond au nom de concept TOR (Tout-Ou-Rien, ou \textit{bang-bang-control} en anglais).
 Mais ce contrôle est-il pertinent d'un point de vue biologique ?
 La cellule a-t-elle suffisamment d'information à sa disposition pour réaliser une telle transition, laquelle repose sur des changements abrupts de l'expression génique à des instants bien précis ?
 
-En Section~\ref{sec:steadystate}, nous utilisons le problème de contrôle optimal et sa solution comme un banc d'essai permettant de comparer entre elles différentes stratégies de régulations (Fig.~\ref{fig:strategies_overview}).
-En se servant du modèle pour guider notre intuition, et en nous limitant aux solutions qui respectent les lois de croissance stationnaire, nous montrons que deux stratégies de régulations simples sont possibles : soit l'organisme mesure directement la quantité de nutriments dans l'environnement, soit il mesure la concentration en précurseurs dans la cellule.
+En Section~\ref{sec:steadystate}, nous utilisons le problème de contrôle optimal et sa solution comme un banc d'essai permettant de comparer entre elles différentes stratégies de régulation (Fig.~\ref{fig:strategies_overview}).
+En se servant du modèle pour guider notre intuition, et en nous limitant aux solutions qui respectent les lois de croissance stationnaire, nous montrons que deux stratégies de régulation simple sont possibles : soit l'organisme mesure directement la quantité de nutriments dans l'environnement, soit il mesure la concentration en précurseurs dans la cellule.
 De manière intéressante, ces deux stratégies sont optimales à l'état stationnaire, et donc strictement équivalentes.
 Cependant, dans le contexte dynamique de notre banc d'essai, la stratégie qui consiste à mesurer les précurseurs est bien plus efficace, même si elle reste évidemment inférieure à la solution optimale (Fig.~\ref{fig:comparison_nutrients_precursor}).
 
