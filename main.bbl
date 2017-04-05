@@ -190,7 +190,7 @@ Koch A.
   \url{http://www.nrcresearchpress.com/doi/abs/10.1139/m88-074}.
 
 \bibitem{schaechter_dependency_1958}
-Schaechter M, Maal\O{}e O, Kjeldgaard NO.
+Schaechter M, Maal{\O}e O, Kjeldgaard NO.
 \newblock Dependency on {{Medium}} and {{Temperature}} of {{Cell Size}} and
   {{Chemical Composition}} during {{Balanced Growth}} of {{Salmonella}}
   Typhimurium.
@@ -246,7 +246,7 @@ Fishov I, Zaritsky A, Grover NB.
 
 \bibitem{campbell_synchronization_1957}
 Campbell A.
-\newblock {{SYNCHRONIZATION OF CELL DIVISION}}.
+\newblock Synchronization of {{Cell Division}}.
 \newblock Bacteriol Rev. 1957 Dec;21(4):263--72.
 \newblock Available from:
   \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC180914/}.
@@ -260,7 +260,7 @@ Borirak O, Bekker M, Hellingwerf KJ.
   {doi:~10.1099/mic.0.077289-0}.
 
 \bibitem{orth_what_2010}
-Orth JD, Thiele I, Palsson BO.
+Orth JD, Thiele I, Palsson B{\O}.
 \newblock What Is Flux Balance Analysis?
 \newblock Nat Biotechnol. 2010 Mar;28(3):245--248.
 \newblock 00491.
@@ -297,7 +297,7 @@ Shaw MK.
 
 \bibitem{mcmeekin_predictive_2002}
 McMeekin TA, Olley J, Ratkowsky DA, Ross T.
-\newblock Predictive Microbiology: Towards the Interface and beyond.
+\newblock Predictive Microbiology: Towards the Interface and Beyond.
 \newblock Int J Food Microbiol. 2002 Mar;73(2\textendash{}3):395--407.
 \newblock \href {http://dx.doi.org/10.1016/S0168-1605(01)00663-8}
   {doi:~10.1016/S0168-1605(01)00663-8}.
@@ -364,7 +364,7 @@ McGill B. A Calm and Balanced Case for Math in Biology; 2013.
 \bibitem{orth_comprehensive_2011}
 Orth JD, Conrad TM, Na J, Lerman JA, Nam H, Feist AM, et~al.
 \newblock A Comprehensive Genome-scale Reconstruction of {{Escherichia}} Coli
-  metabolism\textemdash{}2011.
+  Metabolism\textemdash{}2011.
 \newblock Mol Syst Biol. 2011 Jan;7(1):535.
 \newblock \href {http://dx.doi.org/10.1038/msb.2011.65}
   {doi:~10.1038/msb.2011.65}.
@@ -385,12 +385,12 @@ Palsson B.
 \bibitem{varma_stoichiometric_1994}
 Varma A, Palsson B.
 \newblock Stoichiometric Flux Balance Models Quantitatively Predict Growth and
-  Metabolic by-Product Secretion in Wild-Type {{Escherichia}} Coli {{W3110}}.
+  Metabolic By-Product Secretion in Wild-Type {{Escherichia}} Coli {{W3110}}.
 \newblock Appl Environ Microbiol. 1994;60(10):3724--3731.
 \newblock Available from: \url{http://aem.asm.org/content/60/10/3724.short}.
 
 \bibitem{fong_metabolic_2004}
-Fong SS, Palsson BO.
+Fong SS, Palsson B{\O}.
 \newblock Metabolic Gene\textendash{}deletion Strains of {{Escherichia}} Coli
   Evolve to Computationally Predicted Growth Phenotypes.
 \newblock Nat Genet. 2004 Oct;36(10):1056--8.
@@ -458,7 +458,7 @@ Mendes P, Kell D.
 Cho KH, Shin SY, Kolch W, Wolkenhauer O.
 \newblock Experimental Design in Systems Biology, Based on Parameter
   Sensitivity Analysis Using a Monte Carlo Method: {{A}} Case Study for the
-  Tnf$\alpha$-Mediated Nf-$\kappa$ B Signal Transduction Pathway.
+  Tnf$\alpha$-Mediated Nf-$\kappa$ b Signal Transduction Pathway.
 \newblock Simulation. 2003;79(12):726--39.
 
 \bibitem{brodersen_characterization_1987}
@@ -742,8 +742,8 @@ Luli GW, Strohl WR.
 
 \bibitem{myers_culture_1944}
 Myers J, Clark LB.
-\newblock {{CULTURE CONDITIONS AND THE DEVELOPMENT OF THE PHOTOSYNTHETIC
-  MECHANISM}}.
+\newblock Culture {{Conditions}} and the {{Development}} of the
+  {{Photosynthetic Mechanism}}.
 \newblock J Gen Physiol. 1944 Nov;28(2):103--12.
 \newblock Available from:
   \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2142662/}.
@@ -820,7 +820,7 @@ Schaechter M.
   {doi:~10.1101/SQB.1961.026.01.011}.
 
 \bibitem{johnsen_control_1977}
-Johnsen K, Molin S, Karlstr{\"o}m O, Maal\o{}e O.
+Johnsen K, Molin S, Karlstr{\"o}m O, Maal{\o}e O.
 \newblock Control of Protein Synthesis in {{{\emph{Escherichia}}}}{\emph{
   Coli}}: Analysis of an Energy Source Shift-Down.
 \newblock J Bacteriol. 1977 Jan;131(1):18--29.
@@ -882,7 +882,7 @@ Maitra A, Dill KA.
   {doi:~10.1073/pnas.1421138111}.
 
 \bibitem{weisse_mechanistic_2015}
-Wei\ss{}e AY, Oyarz{\'u}n DA, Danos V, Swain PS.
+Wei{\ss}e AY, Oyarz{\'u}n DA, Danos V, Swain PS.
 \newblock Mechanistic Links between Cellular Trade-Offs, Gene Expression, and
   Growth.
 \newblock Proc Natl Acad Sci USA. 2015 Mar;112(9):1038--47.
@@ -922,7 +922,7 @@ Dalebroux ZD, Swanson MS.
 
 \bibitem{potrykus_pppgpp_2008}
 Potrykus K, Cashel M.
-\newblock (p){{ppGpp}}: Still Magical?
+\newblock (P){{ppGpp}}: Still Magical?
 \newblock Annu Rev Microbiol. 2008;62:35--51.
 \newblock \href {http://dx.doi.org/10.1146/annurev.micro.62.081307.162903}
   {doi:~10.1146/annurev.micro.62.081307.162903}.
@@ -1035,7 +1035,7 @@ Itzkovitz S, Blat IC, Jacks T, Clevers H, {van Oudenaarden} A.
 \bibitem{bartl_modelling_2010}
 Bartl M, Li P, Schuster S.
 \newblock Modelling the Optimal Timing in Metabolic Pathway
-  activation\textemdash{}{{Use}} of {{Pontryagin}}'s {{Maximum Principle}} and
+  Activation\textemdash{}{{Use}} of {{Pontryagin}}'s {{Maximum Principle}} and
   Role of the {{Golden}} Section.
 \newblock Biosystems. 2010 Jul;101(1):67--77.
 \newblock \href {http://dx.doi.org/10.1016/j.biosystems.2010.04.007}
@@ -1068,7 +1068,7 @@ Potrykus K, Murphy H, Philippe N, Cashel M.
 
 \bibitem{traxler_guanosine_2006}
 Traxler MF, Chang DE, Conway T.
-\newblock Guanosine 3',5'-bispyrophosphate Coordinates Global Gene Expression
+\newblock Guanosine 3',5'-Bispyrophosphate Coordinates Global Gene Expression
   during Glucose-Lactose Diauxie in {{{\emph{Escherichia}}}}{\emph{ Coli}}.
 \newblock Proc Natl Acad Sci USA. 2006;103(7):2374--9.
 \newblock \href {http://dx.doi.org/10.1073/pnas.0510995103}
@@ -1234,7 +1234,7 @@ Freist W, Gauss DH, Ibba M, S{\"o}ll D.
 \bibitem{hachiya_increase_2007}
 Hachiya T, Terashima I, Noguchi K.
 \newblock Increase in Respiratory Cost at High Growth Temperature Is Attributed
-  to High Protein Turnover Cost in {{Petunia}} X Hybrida Petals.
+  to High Protein Turnover Cost in {{Petunia}} x Hybrida Petals.
 \newblock Plant Cell Env. 2007 Oct;30(10):1269--83.
 \newblock \href {http://dx.doi.org/10.1111/j.1365-3040.2007.01701.x}
   {doi:~10.1111/j.1365-3040.2007.01701.x}.

@@ -28,24 +28,24 @@ Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
 You've used 212 entries,
             3170 wiz_defined-function locations,
-            1957 strings with 49817 characters,
-and the built_in function-call counts, 363849 in all, are:
-= -- 45589
+            1957 strings with 49825 characters,
+and the built_in function-call counts, 363924 in all, are:
+= -- 45598
 > -- 2872
 < -- 14
 + -- 1883
 - -- 716
-* -- 30392
-:= -- 39200
+* -- 30401
+:= -- 39209
 add.period$ -- 1001
 call.type$ -- 212
 change.case$ -- 26
 chr.to.int$ -- 18
 cite$ -- 228
-duplicate$ -- 29649
-empty$ -- 34660
+duplicate$ -- 29658
+empty$ -- 34666
 format.name$ -- 894
-if$ -- 85184
+if$ -- 85199
 int.to.chr$ -- 0
 int.to.str$ -- 212
 missing$ -- 2335
@@ -57,7 +57,7 @@ purify$ -- 0
 quote$ -- 0
 skip$ -- 3886
 stack$ -- 0
-substring$ -- 68646
+substring$ -- 68664
 swap$ -- 5840
 text.length$ -- 8
 text.prefix$ -- 0

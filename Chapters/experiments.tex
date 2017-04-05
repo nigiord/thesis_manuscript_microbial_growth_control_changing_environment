@@ -1,4 +1,4 @@
-\chapter{Dynamics of the gene expression machinery during an acetate-glucose upshift}
+\chapter{Dynamics of resource allocation during an acetate-glucose upshift}
 \chaptermark{Measurements during an upshift}
 \label{chap:experiments}
 
@@ -9,30 +9,30 @@
 \end{center}
 
 \selectlanguage{french}
-\begin{chapter_summary}{Mesure dynamique de la machinerie d'expression génique lors d'une transition acétate vers glucose}
+\begin{chapter_summary}{Mesures dynamiques de l'allocation des ressources lors d'une transition acétate vers glucose}
 
 Dans ce chapitre, nous nous intéressons à la validation expérimentale des prédictions faites au cours du Chapitre~\ref{chap:theory}.
 Nous avons en effet pu voir que, si l'on suppose qu'un microorganisme optimise sa production de biomasse lors d'une transition de croissance, on peut s'attendre à ce que ce dernier distribue ses ressources cellulaires entre la production de machinerie d'expression génique et de machinerie métabolique en suivant un schéma tout-ou-rien (\textit{bang-bang}).
 Le but est donc ici de mesurer précisément la dynamique de $\alpha$ lors d'une transition de croissance contrôlée.
 
 La Section~\ref{sec:exp_design} s'attache à définir les conditions expérimentales dans lesquelles le comportement prédit lors du Chapitre~\ref{chap:theory} pourra être observé.
-En utilisant le modèle d'auto-réplicateur (Eqs~\ref{eq:pdef-exp} et \ref{eq:rdef-exp}), nous montrons que $\alpha (\cdot)$ lors de la transition peut être reconstruit au cours du temps si l'on dispose de mesures dynamiques du taux de croissance et de la concentration en machinerie d'expression génique.
+En utilisant le modèle d'auto-réplicateur (Eqs~\ref{eq:pdef-exp} et \ref{eq:rdef-exp}), nous montrons que $\alpha (\cdot)$ peut être reconstruit au cours du temps de la transition si l'on dispose de mesures dynamiques du taux de croissance et de la concentration en machinerie d'expression génique.
 Cependant, le comportement tout-ou-rien a une dynamique bien particulière qui peut facilement être offusquée au niveau d'une population de cellules si ces dernières ne sont pas synchrones.
-De fait, cette question ne peut être résolue qu'en obtenant des mesures à haute fréquence et au niveau de la cellule unique, ce qui nous a conduit à utiliser des rapporteurs fluorescents de l'abondance d'une des machineries.
+De fait, cette question ne peut être résolue qu'en obtenant des mesures à haute fréquence et au niveau de cellules individuelles, ce qui nous a conduit à utiliser des rapporteurs fluorescents de l'abondance d'une des machineries.
 En particulier, nous construisons une souche d'\textit{Escherichia coli} chez laquelle la sous-unité S2 du ribosome a été fusionnée avec une protéine fluorescente (GFP) (voir Section~\ref{sec:methods_strain} des matériels et méthodes).
 Couplée à de la vidéomicroscopie, cette souche nous permet de quantifier en temps réel la quantité de ribosomes au niveau de cellules uniques, ce qui procure un excellent moyen d'obtenir la concentration en machinerie d'expression génique (le ribosome étant son composant principal).
-Le taux de croissance quant à lui, peut être facilement reconstruit en mesurant la taille des cellules au cours du temps.
+Le taux de croissance quant à lui, peut être facilement reconstruit en mesurant l'évolution de la taille des cellules dans le temps.
 
 Nous définissons également dans la Section~\ref{sec:exp_design} les conditions de croissance adéquates.
 Nous nous focalisons sur le cas particulier d'une transition d'un milieu de croissance pauvre vers un milieu riche.
-Cependant, aussi pauvre que soit le premier milieu, il est important que les bactéries soient en phase de croissance, pour la raison que leur physiologie change complètement lorsqu'elles s'arrêtent de croître, ce qui crée des effets indésirables durs à contrôler expérimentalement.
+Il est important que les bactéries soient en phase de croissance dans chaque milieu du fait de l'existence d'une physiologie bien particulière propre à la non-croissance.
 Les cellules doivent donc croître pendant suffisamment longtemps sur le premier milieu, sans épuiser celui-ci, puis une transition rapide doit être effectuée vers le milieu riche.
-Nous avons utilisé pour cela la \textit{Mother Machine}, un dispositif microfluidique à la base inventé pour maintenir et observer les cellules bactériennes en état de croissance stationnaire pendant de longues périodes.
-Au sein de ce dispositif, les cellules sont constamment en contact avec du milieu frais, qui circule et leur procure de nouveaux nutriments durant toute la durée de l'expérience (voir Section~\ref{sec:microflu}).
+Nous avons utilisé pour cela la \textit{Mother Machine}, un dispositif microfluidique à la base mis au point pour maintenir et observer les cellules bactériennes en état de croissance stationnaire pendant de longues périodes.
+Au sein de ce dispositif, les cellules sont en contact avec du milieu frais qui circule et leur procure de nouveaux nutriments durant toute la durée de l'expérience (voir Section~\ref{sec:microflu}).
 En changeant simplement le type de milieu injecté dans le dispositif, nous pouvons l'utiliser pour modifier en quelques secondes les nutriments auxquels les bactéries ont accès, et donc réaliser la transition de manière robuste et contrôlée.
 Plus particulièrement, le milieu pauvre utilisé contient de l'acétate comme seule source de carbone, tandis que le milieu riche contient essentiellement du glucose (Fig.~\ref{fig:experiment_schema}).
 
-De telles expériences s'avèrent malheureusement pointues et, dans le temps disponible pour le doctorat, nous n'avons pu en réaliser qu'un petit nombre, dont seule celle présentée ici s'est avérée exploitable.
+De telles expériences s'avèrent malheureusement pointues et, au cours du déroulement de cette thèse, nous n'avons pu en réaliser qu'un petit nombre, dont seule celle présentée ici s'est avérée exploitable.
 Celle-ci a cependant subi de nombreux problèmes expérimentaux qui, s'ils n'ont pas empêché complètement son exploitation, ont posé des problèmes pour l'analyse et l'interprétation des résultats.
 Ces problèmes expérimentaux sont abordés dans la Section~\ref{sec:data_acquisition}, et sont largement discutés en Section~\ref{sec:chap3_discussion}.
 En effet, suite à un problème logiciel et à ce qui semble être une contamination par un bacteriophage, nous n'avons pas pu obtenir des séries temporelles aussi longues qu'initialement prévu.
@@ -119,8 +119,8 @@ We can therefore identify $\alpha (t_k)$ for each time $t_k$ when the terms $\be
 Even when assuming that the parameters $k_R$, $K_R$, and $\beta$ are known, or at least easy to estimate independently, reconstructing the dynamics of $\alpha$ would require estimation of the (changes in) concentration of the gene expression machinery ($r$, $\dot{r}$) and the precursor concentration $p$.
 
 Are such measurements feasible in practice?
-The abundance of ribosomes can be quantified, for instance, by measuring the total RNA of the cell~\cite{scott_interdependence_2010}, or using radioactive markers \cite{gausing_regulation_1980,zengel_transcription_1986}, fluorescent labels~\cite{bakshi_superresolution_2012}, or mass spectrometry techniques~\cite{hui_quantitative_2015}.
-However, only the use of fluorescent proteins complies with our need for real-time single-cell quantification.
+The abundance of ribosomes can be quantified, for instance, by measuring the total RNA of the cell~\cite{scott_interdependence_2010}, or using radioactive markers \cite{gausing_regulation_1980,zengel_transcription_1986}, fluorescent labels~\cite{bakshi_superresolution_2012}, or mass spec\-trom\-e\-try techniques~\cite{hui_quantitative_2015}.
+However, only the use of fluo\-res\-cent pro\-teins com\-plies with our need for real-time single-cell quantification.
 Obtaining an estimate of precursor abundance is even more challenging, since there is no clear proxy for the totality of precursors in the cell and, while absolute quantification of all internal metabolites has been achieved in \textit{E. coli}~\cite{bennett_absolute_2009}, this method is also not suitable for a dynamical estimation in individual cells.
 
 The problem of quantifying $\alpha (\cdot)$ can be simplified by applying a transformation of the model of Eqs~\ref{eq:pdef-exp}-\ref{eq:rdef-exp}.
@@ -233,7 +233,7 @@ More precisely, based on the available data, we have the following measurement m
 L(t_k) &= \lambda \cdot V(t_k) + \epsilon_k, \label{eq:mes_L}\\
 F(t_k) &= \gamma \cdot r(t_k) + \eta_k, \label{eq:mes_F}
 \end{eqnarray}
-where $L(t_k)$ and $F(t_k)$ are the length and fluorescence density in units RFU/pixel measured at time $t_k$, respectively,  and $V(t_k)$  and $r(t_k)$ the corresponding actual volume and ribosome concentration at time $t_k$, respectively. ($\lambda$,$\gamma$) are unknown proportionality constants, and ($\epsilon_k$,$\eta_k$) uncorrelated sequence of measurement noise assumed normally distributed with mean 0.
+where $L(t_k)$ and $F(t_k)$ are the length and fluorescence density in Relative Fluorescence Units per pixels measured at time $t_k$, respectively,  and $V(t_k)$  and $r(t_k)$ the corresponding actual volume and ribosome concentration at time $t_k$, respectively. ($\lambda$,$\gamma$) are unknown proportionality constants, and ($\epsilon_k$,$\eta_k$) uncorrelated sequence of measurement noise assumed normally distributed with mean 0.
 
 As explained in Section~\ref{sec:exp_design}, reconstructing $\alpha (\cdot)$ requires information on $\mu (\cdot)$, $r(\cdot)$ and $\dot{r}(\cdot)$.
 From Eq.~\ref{eq:mes_F}, we can obtain $r(\cdot)$ and $\dot{r}(\cdot)$ by smoothing interpolation and differentiation.
@@ -453,7 +453,7 @@ We extensively discuss this and other problems in Section~\ref{sec:chap3_discuss
 \centering
 \includegraphics[scale=1]{./Fig/gene_activity}
 \caption{
-\textbf{Estimation of the resource allocation profile using Kalman smoothing based on the fluorescence density measurements and the estimated growth rates from Fig.~\ref{fig:growth_rate_estimation}.}
+\textbf{Estimation of the resource allocation profile using Kal\-man smooth\-ing based on the fluorescence density measurements and the estimated growth rates from Fig.~\ref{fig:growth_rate_estimation}.}
 \textit{(A-B)} Gray lines represent the estimation of the fluorescence density (RFU/pixel) $F(\cdot)$ (in A) and the resource allocation profile $\gamma \alpha / \beta$ (in B) by the Kalman smoothing procedure for the 45 normal cells.
 The solid red curves highlight the result for one particular cell, , located at the bottom of the well labelled "X3Y2, W2", while black crosses in the top graph are the data points for this cell.
 The vertical dashed lines represent the time of the upshift from growth on acetate to growth on glucose.
@@ -663,7 +663,7 @@ all the primers, are listed in \ref{S5_Text}.
 
 This fragment was electroporated into the wildtype strain, BW25113,
 containing the pSIM5 plasmid for lambda-red recombinaison~\cite{sharan_recombineering_2009}.
-A kanamycin-resistant colony was selected on LA-glucose medium and
+A kana\-my\-cin-resistant colony was selected on LA-glucose medium and
 verified to show green fluorescence (485~nm excitation, 535~nm emission) in a microplate reader (Tecan Infinite 200 pro).
 A 100-bp oligonucleotide, containing 50 bp of the end of \textit{gfp\_mut2}
 and 50 bp of the region just downstream of \textit{rpsB} was electroporated
@@ -993,7 +993,7 @@ The 18 next bp code for the linker (see Material and Methods~\ref{sec:methods_st
 \item[] \includegraphics[scale=1]{Fig/cassette_L} \seqsplit{TGGATGAGCTGTACAAATAATTATATTCCCCAGAACATCAG}
 (Length: 41, used to assemble with mCherry)\\
 \textit{The 20 first bp anneals with the end of mCherry.}
-\item[] \includegraphics[scale=1]{Fig/cassette_R} \seqsplit{GAGCTTGCCGCCTTTCTGCAACTCGAACTATTTTGGGGGAGTTATCAAGCTTAGAAGAACTCGTCAAGAAGG}
+\item[] \includegraphics[scale=1]{Fig/cassette_R} \seqsplit{GAGCTTGCCGCCTTTCTGCAACTCGAACTATTTTGGGGGAGTTATCAAGCTTAGAAGAACTCGTCAAGAAGG}\\
 (Length: 72, used for both)\\
 \textit{The 50 last bp anneals downstream rpsB (just before the STOP codon).}
 \end{itemize}
@@ -1186,7 +1186,7 @@ Data are the result of the aggregation of 9 and 8 independent growth curves for 
 \hline
 \textbf{$P(0) / P_m(0)$} & 0.05635 $\pm$ 0.001202  & 0.7349 $\pm$ 0.0027362\\
 \hline
-\textbf{$D$~[min\textsuperscript{-1}]} & 0.0002064 $\pm$ 2.066e-06 & 0.0003027 $\pm$ 2.645e-06\\
+\textbf{$D$~[min\textsuperscript{-1}]} & 0.0002064 $\pm$ 2.1$\cdot 10^{-6}$ & 0.0003027 $\pm$ 2.7$\cdot 10^{-6}$\\
 \hline
 \textbf{half-life~[min]}& 3325 - 3392 & 2269 - 2309\\
 \hline

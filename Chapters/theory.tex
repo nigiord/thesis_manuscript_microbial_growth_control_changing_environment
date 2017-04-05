@@ -1,4 +1,4 @@
-\chapter{Dynamical Allocation of Cellular Resources as an Optimal Control Problem: Novel Insights into Microbial Growth Strategies}
+\chapter[Dynamical Allocation of Cellular Resources as an Optimal Control Problem]{Dynamical Allocation of Cellular Resources as an Optimal Control Problem: Novel Insights into Microbial Growth Strategies}
 \chaptermark{Dynamical allocation of cell resources}
 \label{chap:theory}
 
@@ -12,25 +12,26 @@
 \begin{chapter_summary}{Modélisation de l'allocation dynamique des ressources cellulaires comme un problème de contrôle optimal}
 
 Ce chapitre est dédié à une approche théorique du problème d'allocation des ressources cellulaires chez les microorganismes.
-En Section \ref{sec:model}, nous modélisons la cellule comme un auto-réplicateur devant allouer une ressource commune (les nutriments du milieu) à deux secteurs distincts de macromolécules: la machinerie métabolique qui extrait les nutriments de l'environnement et les convertit en précurseurs utilisables, et la machinerie d'expression génique qui utilise ces précurseurs pour produire de nouvelles macromolécules (Fig.~\ref{fig:self_replicator}).
+En Section \ref{sec:model}, nous modélisons la cellule comme un auto-réplicateur devant allouer une ressource (les nutriments du milieu) à deux secteurs distincts de macromolécules: la machinerie métabolique qui extrait les nutriments de l'environnement et les convertit en précurseurs utilisables, et la machinerie d'expression génique qui utilise ces précurseurs pour produire de nouvelles macromolécules (Fig.~\ref{fig:self_replicator}).
 Ce modèle très simple comprenant 2 réactions (Eq.~\ref{eq:reactions}) se traduit mathématiquement par deux équations différentielles ordinaires (Eqs~\ref{eq:pdef} et \ref{eq:rdef}) faisant intervenir le paramètre $\alpha$ qui va devenir clé dans notre étude.
 $\alpha$ représente la proportion massique des précurseurs qui sont utilisés pour produire de la machinerie d'expression génique, au détriment de la machinerie métabolique (qui elle, est produite à la proportion $1-\alpha$).
 Comme on l'a déjà vu avec les lois de croissance établies à l'état stationnaire (voir Chapitre~\ref{chap:introduction}), cette proportion varie avec l'environnement, on s'attend donc à ce que $\alpha$ en fasse autant, augmentant d'autant que l'environnement devient riche (Fig.~\ref{fig:scott_rnaprot}).
 Cependant, de quelle manière varie-t-il entre deux états de croissance stationnaires, lorsque les composants cellulaires sont en déséquilibre et que la cellule doit adapter sa composition ?
 
 Comme nous l'avons vu dans le Chapitre~\ref{chap:introduction}, les lois de croissance à l'état stationnaire s'expliquent facilement si l'on considère que la cellule maximise son taux de croissance.
-En Section~\ref{sec:growthlaws}, nous voyons en effet que pour chaque environnement, un $\alpha$ unique existe qui maximise la croissance de la cellule, mais surtout que ce $\alpha^*_{opt}$ est d'autant plus important que l'environnement est riche (Fig.~\ref{fig:model_analysis}).
-De fait, les lois de croissance à l'état stationnaire sont parfaitement prédites par notre modèle simple en considérant uniquement que la cellule maximise son taux de croissance (Fig.~\ref{fig:model_validation}).
+C'est aussi le cas dans notre modèle, et en Section~\ref{sec:growthlaws} nous voyons que pour chaque environnement, la croissance de la cellule est maximale pour une valeur unique de $\alpha$.
+Mais surtout, cette valeur que l'on nomme $\alpha^*_{opt}$ est d'autant plus grande que l'environnement est riche (Fig.~\ref{fig:model_analysis}).
+C'est finalement toutes les lois de croissance à l'état stationnaire qui sont prédites par notre modèle simple, sous la simple hypothèse qu'à tout moment, la cellule maximise son taux de croissance (Fig.~\ref{fig:model_validation}).
 Peut-on appliquer le même principe, dans un contexte cette fois dynamique, de façon à prédire comment la cellule distribue ses ressources lors d'une transition de croissance ?
 
 Dans ce contexte, $\alpha$ est désormais une fonction du temps.
 Nous cherchons donc quelle fonction du temps maximise un objectif donné.
 Ce problème, formulé en Section~\ref{sec:optimalcontrolproblem}, est un problème de contrôle optimal, puisque l'objectif à optimiser est une fonction d'une autre fonction, plus communément appelée fonctionnelle.
-Nous choisissons comme équivalent dynamique de la maximisation du taux de croissance à l'état stationnaire, la maximisation de la production de biomasse sur un intervalle de temps comprenant un changement abrupt de l'environnement (Eq.~\ref{eq:biomassdyn}).
+Nous choisissons comme équivalent dynamique de la maximisation du taux de croissance, la maximisation de la production de biomasse sur un intervalle de temps comprenant un changement abrupt de l'environnement (Eq.~\ref{eq:biomassdyn}).
 Nous résolvons ce problème en Section~\ref{sec:optimalcontrolsolution} en couplant l'utilisation du principe du maximum de Pontryagin avec de l'optimisation numérique.
 La solution optimale obtenue montre que le contrôle $\alpha$ doit prendre alternativement les valeurs 0 ou 1 jusqu'à ce que le système soit stabilisé sur un nouvel équilibre (Fig.~\ref{fig:optimalcontrol} et Eq.~\ref{eq:optcontrol}).
 En d'autres termes, la meilleure production de biomasse s'obtient si, à tout moment, la cellule aiguille 100\% de ses ressources vers un seul secteur, en alternant entre l'un et l'autre jusqu'à ce que le nouvel état stationnaire de croissance soit atteint.
-Ce type de solution se rencontre souvent en contrôle optimal, et répond au nom de concept TOR (Tout-Ou-Rien, ou \textit{bang-bang-control} en anglais).
+Ce type de solution se rencontre souvent en contrôle optimal, et répond au nom de concept TOR (Tout-Ou-Rien, ou \textit{bang-bang} en anglais).
 Mais ce contrôle est-il pertinent d'un point de vue biologique ?
 La cellule a-t-elle suffisamment d'information à sa disposition pour réaliser une telle transition, laquelle repose sur des changements abrupts de l'expression génique à des instants bien précis ?
 
@@ -41,8 +42,8 @@ Cependant, dans le contexte dynamique de notre banc d'essai, la stratégie qui c
 
 Finalement, nous montrons en Section~\ref{sec:strategies} qu'une stratégie plus complexe mesurant à la fois les précurseurs et la concentration en machinerie d'expression génique est tout à fait capable de réaliser un contrôle proche du tout-ou-rien optimal (Eq.~\ref{eq:stratswitch} et Fig.~\ref{fig:onoffresults}).
 Mais surtout, en réutilisant un modèle du système ppGpp, connu pour réguler la synthèse des ribosomes chez la bactérie \textit{Escherichia coli}, nous montrons que ce système répond, au moins structurellement, aux exigences d'une telle stratégie de régulation (Fig.~\ref{fig:ppGppsurface}).
-Cela procure un nouveau point de vue sur ce système, d'ailleurs largement répandu chez de nombreux microorganismes.
-En intégrant l'information provenant à la fois de la quantité de ribosomes et de celle des précurseurs, il permet d'allouer efficacement les ressources de la cellule lorsque celle-ci doit s'adapter rapidement à un nouvel environnement.
+Cela éclaire d'un jour nouveau le fonctionnement et l'origine de ce système de régulation largement répandu chez de nombreux microorganismes.
+En intégrant l'information provenant à la fois de la quantité de ribosomes et de celle des précurseurs, ce dernier est capable d'allouer efficacement les ressources de la cellule lorsque celle-ci doit s'adapter rapidement à un nouvel environnement.
 \end{chapter_summary}
 \selectlanguage{english}
 
@@ -69,7 +70,7 @@ Others have shown, however, that appropriate optimization criteria will depend o
 For instance,  in environments without competition for a shared resource, maximization of growth yield rather than growth rate is expected to provide a selective advantage.
 Although what counts as optimal is thus context-dependent, growth and evolution experiments in \textit{Escherichia coli} have shown that in certain conditions bacterial metabolism is indeed geared towards growth-rate maximization~\cite{edwards_silico_2001,ibarra_escherichia_2002,lewis_omic_2010}.
 
-For this reason, growth-rate maximization is a central hypothesis in a number of recent theoretical studies of resource allocation using coarse-grained models of the cell~\cite{molenaar_shifts_2009,scott_interdependence_2010,scott_emergence_2014}.
+For this reason, growth-rate maximization is a central hypothesis in a number of recent theoretical studies of resource allocation using coarse-\linebreak grained mod\-els of the cell~\cite{molenaar_shifts_2009,scott_interdependence_2010,scott_emergence_2014}.
 The models deliberately reduce the molecular complexity of regulatory networks so as to focus on generic explanatory principles~\cite{servedio_not_2014}.
 Along these lines, Molenaar \textit{et al.} developed a series of simple models of the microbial cell, taking into account that growth requires the synthesis of proteins playing a role in metabolism (transporters, enzymes) and gene expression (ribosomes), in varying proportions.
 Allocation parameters that maximize the growth rate were shown to account, at least in a qualitative way, for the variation of the amount of ribosomal protein as a fraction of total protein in different growth media, and for the occurrence of overflow metabolism above certain growth rates~\cite{molenaar_shifts_2009}.
@@ -126,7 +127,7 @@ A simple modelling tool for analyzing resource allocation questions in a precise
 These models have a long history in various domains of chemistry, biology, physics, and computer science~\cite{sipper_fifty_1998}, and were recently put to use as an analytical tool in systems biology~\cite{molenaar_shifts_2009} (see also~\cite{flamm_minimal_2007}).
 We will show that despite their simplicity, which make them tractable for mathematical analysis, self-replicator models are sufficiently expressive to account for empirical observations and make testable predictions.
 
-Bearing in mind that the major constituents of the cell are macromolecules (DNA, RNA, proteins), produced from precursor metabolites, a fundamental resource allocation question is the following: How much of the cellular resources are invested in the making of new macromolecules (gene expression machinery) and how much in performing other functions, in particular producing metabolic enzymes involved in the uptake of nutrients and their conversion to precursor metabolites (metabolic machinery)?
+Bearing in mind that the major constituents of the cell are mac\-ro\-mol\-e\-cules (DNA, RNA, proteins), produced from precursor metabolites, a fundamental resource allocation question is the following: How much of the cellular resources are invested in the making of new macromolecules (gene expression machinery) and how much in performing other functions, in particular producing metabolic enzymes involved in the uptake of nutrients and their conversion to precursor metabolites (metabolic machinery)?
 In order to address this question, we consider a self-replicating system composed of the gene expression machinery ($R$) and the metabolic machinery ($M$).
 The system, shown schematically in Fig.~\ref{fig:self_replicator}, is thus defined by two macroreactions which are conveniently written as:
 \begin{equation}\label{eq:reactions}
@@ -505,7 +506,7 @@ While the precursor-only strategy is thus seen to lead to good results, Fig.~\re
 It seems reasonable to expect that control strategies exploiting information of not just a single variable, but several variables simultaneously, could further improve the performance of the self-replicator during a growth transition.
 
 
-\subsection{A near-optimal feedback control strategy: exploiting information on the imbalance between precursors and the gene expression machinery}
+\subsection{A near-optimal feedback control strategy that exploits information on the imbalance between precursors and the gene expression machinery}
 \label{sec:strategies}
 
 In the quest for further improvements, a natural starting-point would be to consider the curve defining the optimal steady states $(\hat{p}^*_{opt},\hat{r}^*_{opt})$  for different environments $E_M$.
@@ -764,8 +765,8 @@ The switching curve $\varphi(\hat{p})$ was computed from numerical simulations w
 As described in the \textit{Results} section, we are interested in control strategies satisfying the following conditions:
 \begin{description}
 \item[(C1)] The control laws are static functions of the system variables (as opposed to, for instance, functions that depend on derivatives or integrals of the variables).
-\item[(C2)] For any given constant environment $E_M$, they drive the self-replicator system towards a unique stable steady state that is not trivial, \textit{i.e.}, with nonzero growth rate.
-\item[(C3)] This steady state corresponds to the optimal steady state $(\hat{p}_{opt}^*, \hat{r}_{opt}^*)$, allowing growth at the maximal rate $\mu^*_{opt}$.
+\item[(C2)] For any given constant environment $E_M$, they drive the self-rep\-li\-cat\-or system towards a unique stable steady state that is not trivial, \textit{i.e.}, with nonzero growth rate.
+\item[(C3)] This steady state corresponds to the optimal steady state $(\hat{p}_{opt}^*, \linebreak \hat{r}_{opt}^*)$, allowing growth at the maximal rate $\mu^*_{opt}$.
 \end{description}
 It can be directly verified from the functions $f$, $g$, and $h$ defining the nutrient-only, precursor-only, and on-off control strategies (Eqs~\ref{eq:f}, \ref{eq:precursorstrategy}, and \ref{eq:stratswitch}) that they are indeed static functions of the system variables (or the system input, in the case of the nutrient-only strategy). 
 Here we show that the other two conditions are also satisfied for all three strategies.
@@ -786,7 +787,7 @@ Recall that Eq.~\ref{eq:alpha_mu_optimal_p} defines $\alpha_{opt}^*$ in terms of
 \label{eq:meth_g}
 g(\hat{p}) = \frac{\hat{p}}{\hat{p} + \frac{K}{K + \hat{p}}(1+\hat{p})}.
 \end{equation}
-As shown in \ref{S1_Text} by computing the Jacobian, the system given by Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim} and \ref{eq:meth_g} has a single nontrivial stable steady state for any environment $E_M$ (Condition~C2).
+As shown in \ref{S1_Text} by computing the Jacobian, the system given by \linebreak Eqs~\ref{eq:pdefnondim}-\ref{eq:rdefnondim} and \ref{eq:meth_g} has a single nontrivial stable steady state for any environment $E_M$ (Condition~C2).
 Moreover, Eq.~\ref{eq:meth_g} guarantees this steady state to be optimal (Condition~C3).
 This can be seen by noting that at steady state, $d\hat{r}/dt=0$ implies $\hat{r}^*=g(\hat{p}^*)$ (Eq.~\ref{eq:rdefnondim}).
 In order for the self-replicator to attain a maximal growth rate at steady rate, Eq.~\ref{eq:alpha_mu_optimal_p} needs to be satified, which is the case for the above choice of the function $g$.
@@ -802,7 +803,7 @@ h(\hat{p}, \hat{r}) =
 \alpha_{opt}^*, \ \textrm{if} \ (\hat{p},\hat{r})=(\hat{p}_{opt}^*,\hat{r}_{opt}^*).
 \end{cases}
 \end{equation}
-This strategy drives the system to a single steady state, because the $\hat{p}$-nullcline crosses the function $g(\hat{p})$ only once, as shown graphically in Fig.~\ref{fig:onoffresults}\textit{A}.
+This strategy drives the system to a single steady state, because the $\hat{p}$-nullcline crosses the function $g(\hat{p})$ only once, as shown graphically in \linebreak Fig.~\ref{fig:onoffresults}\textit{A}.
 In \ref{S1_Text} we argue that this steady state is stable, by taking into account so-called sliding modes on the switching curve~\cite{filippov_differential_1988} (Condition~C2).
 Moreover, the steady state coincides with the optimal steady state $(\hat{p}_{opt}^*,\hat{r}_{opt}^*)$ by construction, so that Condition~C3 is satisfied as well.
 Fig~\ref{fig:ppGppsurface}\textit{A} shows a plot of $h(\hat{p}, \hat{r})$.
@@ -1011,8 +1012,8 @@ In this section, we derive the main results for the functions $f$, $g$, and $h$ 
 For each of these, we prove that the Conditions C1, C2 and C3 from the \textit{Methods} section are satisfied, which we repeat here for clarity:
 \begin{description}
 \item[(C1)] The control laws are static functions of the system variables (as opposed to, for instance, functions that depend on derivatives or integrals of the variables).
-\item[(C2)] For any given constant environment $E_M$, they drive the self-replicator system towards a unique stable steady state that is not trivial, \textit{i.e.}, with nonzero growth rate.
-\item[(C3)] This steady state corresponds to the optimal steady state $(\hat{p}_{opt}^*, \hat{r}_{opt}^*)$, allowing growth at the maximal rate $\mu^*_{opt}$.
+\item[(C2)] For any given constant environment $E_M$, they drive the self-rep\-li\-cat\-or system towards a unique stable steady state that is not trivial, \textit{i.e.}, with nonzero growth rate.
+\item[(C3)] This steady state corresponds to the optimal steady state $(\hat{p}_{opt}^*, \linebreak \hat{r}_{opt}^*)$, allowing growth at the maximal rate $\mu^*_{opt}$.
 \end{description}
 
 \paragraph{Nutrient-only strategy}
@@ -1205,7 +1206,7 @@ For example, the precursor mass that can be produced from 1 g of glucose is high
 How can we find a typical value for $k_M$, and thus for $e_M$ (both have the same order of magnitude if we suppose that the reaction is not operating far below saturation, that is, $e_M \approx k_M$)?
 A reasonable estimate for $k_M$ can be obtained from the turnover numbers of reactions involved in the synthesis of charged tRNA, since the latter are directly consumed by the most abundant part of the gene expression machinery, the ribosomes.
 
-Ref.~\cite{uter_longrange_2004} provides a typical value for such a reaction, catalyzed by glutaminyl-tRNA synthetase: $k_{\textit{cat,GlnRS}} = 3.2$~s\textsuperscript{-1}, indicating that on average 3.2 glutaminyl-tRNA molecules are produced per glutaminyl-tRNA synthetase molecule per second. 
+Ref.~\cite{uter_longrange_2004} provides a typical value for such a reaction, catalyzed by glu\-ta\-min\-yl-tRNA synthetase: $k_{\textit{cat,GlnRS}} = 3.2$~s\textsuperscript{-1}, indicating that on average 3.2 glutaminyl-tRNA molecules are produced per glutaminyl-tRNA synthetase molecule per second. 
 After conversion to mass units using molar weight from~\cite{freist_glutaminyltrna_1997}, this yields
 \[
 k_{\textit{cat,GlnRS}} = \frac{3.2 \cdot 147}{64.4 \cdot 10^ 3} \approx 10^{-3} \, \text{g of glutaminyl-tRNA} \cdot \text{g of enzyme}^{-1} \cdot \text{s}^{-1}.
@@ -1330,7 +1331,7 @@ The maximization condition is given by:
 \end{aligned}
 \end{equation}
 
-An extremal trajectory is a quadruplet $(\hat{x}(\cdot),\lambda(\cdot),\lambda_0,\alpha(\cdot))$ satisfying Eqs~\ref{eq:model}-\ref{eq:PMP}. The extremal is said to be normal (resp. abnormal) if $\lambda_0<0$ (resp. $\lambda_0=0$). In the normal case, we normalize the adjoint vector so that $\lambda_0=-1$.
+An extremal trajectory is a quadruplet $(\hat{x}(\cdot),\lambda(\cdot),\lambda_0,\alpha(\cdot))$ satisfying \linebreak Eqs~\ref{eq:model}-\ref{eq:PMP}. The extremal is said to be normal (resp. abnormal) if $\lambda_0<0$ (resp. $\lambda_0=0$). In the normal case, we normalize the adjoint vector so that $\lambda_0=-1$.
 
 From Eq.~\ref{eq:PMP}, it follows that the control strategy is given by the sign of the \textit{switching function} $\phi(\cdot) \equiv \lambda_r \, \hat{r}\, \hat{p}/(K+\hat{p})$, that is,
 \[
@@ -1592,7 +1593,7 @@ $f_i$ & 1/20 & -- & Proportion of aa $i$ in proteins (Assumption A1)\\
 
 \clearpage
 
-\subsection{S1 Table -- Parameter values of self-replicator model}
+\subsection{S1 Table -- Parameter values of the self-rep\-li\-cat\-or model}
 \manuallabel{S1_Table}{S1~Table}
 
 \begin{table}[h]
@@ -1633,7 +1634,7 @@ The parameter values in the model were obtained by fitting Eq.~\ref{eq:alpha_mu_
 \centering
 \includegraphics[width=\textwidth]{./Fig/plot_strategies}
 \caption{
-\textbf{Simple control strategies for the self-replicator of bacterial growth.}
+\textbf{Simple control strategies for the self-rep\-li\-cat\-or of bacterial growth.}
 \textit{A:} Nutrient-only strategy: $\alpha = f(E_M)$.
 The dashed, black curve is the (unique) strategy driving the system exactly to the optimal steady state, that is, the state in which growth occurs at the maximal rate supported by $E_M$.
 The function $f$ is defined by Eq.~\ref{eq:meth_f} in the \textit{Methods} section of the main text.
