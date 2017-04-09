@@ -6,12 +6,14 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated field_info (elt_size=4) to 12208 items from 5000.
+Reallocated field_info (elt_size=4) to 12242 items from 5000.
 Database file #1: references.bib
 Warning--empty author and editor in fox_how_2016
 Warning--missing publisher in fox_how_2016
 Warning--empty author and editor in mcgill_calm_2013
 Warning--missing publisher in mcgill_calm_2013
+Warning--empty author and editor in weinersmith_biologists_2016
+Warning--missing publisher in weinersmith_biologists_2016
 Warning--empty booktitle in julier_new_1997
 `journal' is a missing field, not a string, for entry tikhonov1977solutions
 while executing---line 1874 of file plos2015.bst
@@ -26,45 +28,45 @@ Warning--empty author and editor in skimage_cross-correlation
 Warning--missing publisher in skimage_cross-correlation
 Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
-You've used 212 entries,
+You've used 213 entries,
             3170 wiz_defined-function locations,
-            1957 strings with 49825 characters,
-and the built_in function-call counts, 363924 in all, are:
-= -- 45598
-> -- 2872
+            1963 strings with 49971 characters,
+and the built_in function-call counts, 364552 in all, are:
+= -- 45670
+> -- 2876
 < -- 14
-+ -- 1883
-- -- 716
-* -- 30401
-:= -- 39209
-add.period$ -- 1001
-call.type$ -- 212
++ -- 1885
+- -- 717
+* -- 30447
+:= -- 39286
+add.period$ -- 1003
+call.type$ -- 213
 change.case$ -- 26
 chr.to.int$ -- 18
-cite$ -- 228
-duplicate$ -- 29658
-empty$ -- 34666
-format.name$ -- 894
-if$ -- 85199
+cite$ -- 231
+duplicate$ -- 29709
+empty$ -- 34732
+format.name$ -- 895
+if$ -- 85349
 int.to.chr$ -- 0
-int.to.str$ -- 212
-missing$ -- 2335
-newline$ -- 1238
-num.names$ -- 216
-pop$ -- 3950
+int.to.str$ -- 213
+missing$ -- 2341
+newline$ -- 1242
+num.names$ -- 217
+pop$ -- 3968
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3886
+skip$ -- 3901
 stack$ -- 0
-substring$ -- 68664
-swap$ -- 5840
+substring$ -- 68742
+swap$ -- 5853
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 16
-while$ -- 2073
-width$ -- 215
-write$ -- 2675
+warning$ -- 18
+while$ -- 2077
+width$ -- 216
+write$ -- 2684
 (There was 1 error message)
