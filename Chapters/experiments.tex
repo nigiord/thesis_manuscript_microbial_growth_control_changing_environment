@@ -247,11 +247,11 @@ However, smoothing interpolation is particularly sensible to the boundary condit
 Since each division in the time series generates a new boundary condition, smoothing interpolation of our data is expected to be little robust.
 For this reason, the growth rate of single cells is usually estimated by fitting an exponential function to the volume data between each cell~\cite{wang_robust_2010,izard_synthetic_2015}.
 While this is suitable when bacteria are at steady state, it is not applicable during a growth transition, where we expect the growth rate to vary between successive divisions.
-Other techniques are less sensible to the above problem~\cite{zulkower_robust_2015}, and we decided to use Kalman smoothing for our purpose~\cite{kailath_linear_2000,jazwinski_stochastic_2007}.
+Other techniques are less sensible to the above problem~\cite{zulkower_robust_2015}, and we decided to use Kalman smoothing for our purpose~\cite{kailath_linear_2000,jazwinski_stochastic_2007,cinquemani_estimation_2017}.
 
 Kalman filtering~\cite{kalman_new_1960} is a Bayesian algorithm using a series of noisy measurements to predict the state of a dynamical system.
 It has been extensively used in engineering applications (guidance, tracking, control, ...) requiring the real-time estimation of hidden variables in a dynamical system from present and past measurements.
-Kalman smoothing is an extension of Kalman filtering using information about past and present but also future measurements of the state of the system, and is widely applied to estimate unknown inputs in time series analysis~\cite{kailath_linear_2000,jazwinski_stochastic_2007}.
+Kalman smoothing is an extension of Kalman filtering using information about past and present but also future measurements of the state of the system, and is widely applied to estimate unknown inputs in time series analysis~\cite{kailath_linear_2000,jazwinski_stochastic_2007,cinquemani_estimation_2017}.
 The advantage of Kalman filtering with respect to Kalman smoothing is that it uses all available information to estimate the hidden variables of a dynamical system, in applications where a real-time response is not required.
 For our problem, at each time step $t_k$, our hidden variables are the resource allocation variable $\alpha (t_k)$ and the growth rate $\mu (t_k)$, while the available information consists of the $N$ measurements $\left\{ F(t_0), F(t_1), ..., F(t_{N-1}) \right\}$ and $\left\{L(t_0), L(t_1), ..., L(t_{N-1}) \right\}$ that were taken during the experiment.
 
@@ -296,7 +296,7 @@ As presented in the previous section, we want to reconstruct the growth rate $\m
 Note that Kalman smoothing is a procedure that returns the expected mean and covariance of the state of a dynamical system, given the  measurements.
 Therefore, reconstructing $\mu$ requires it to be explicitly included as a state variable of the dynamical system.
 This provides constraints on the variation of $\mu$ that have the effect of a regularization.
-In particular, in the Kalman smoothing procedure, we model the variations of $\mu$ as the outcome of a stochastic process.
+In particular, in the Kalman smoothing procedure, we model the variations of $\mu$ as the outcome of a stochastic process~\cite{cinquemani_estimation_2017}.
 The laws describing this process play the role of a prior on the expected regularity of $\mu$ (the more noisy the process, the less constrained the variations of $\mu$).
 In particular, we define $\mu$ as the double integral of a Gaussian white noise $w$:
 \[
@@ -318,7 +318,7 @@ and the initial conditions
 V_\lambda (0) = V_{\lambda,0}, \;\;\;\; \mu (0) = \mu_0 , \;\;\;\; v(0) = v_0,
 \]
 that may themselves be Gaussian random variables with some given statistics.
-The advantages of this regularization method are that the reconstructed $\mu$ is guaranteed to be second-order differentiable.
+The advantages of this regularization method are that the reconstructed $\mu$ is guaranteed to be second-order differentiable~\cite{cinquemani_estimation_2017}.
 It is also equivalent to other methods like Tikhonov regularization~\cite{tikhonov1977solutions,tikhonov1963solution,de_nicolao_nonparametric_1997}, which minimizes least-square differences between predictions and observations along with penalizing the variations of the input.
 
 Our prior is thus entirely contained in the parameters of the Kalman procedure:

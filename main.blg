@@ -6,7 +6,7 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated field_info (elt_size=4) to 12242 items from 5000.
+Reallocated field_info (elt_size=4) to 12276 items from 5000.
 Database file #1: references.bib
 Warning--empty author and editor in fox_how_2016
 Warning--missing publisher in fox_how_2016
@@ -28,45 +28,45 @@ Warning--empty author and editor in skimage_cross-correlation
 Warning--missing publisher in skimage_cross-correlation
 Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
-You've used 213 entries,
+You've used 214 entries,
             3170 wiz_defined-function locations,
-            1963 strings with 49971 characters,
-and the built_in function-call counts, 364552 in all, are:
-= -- 45670
-> -- 2876
+            1968 strings with 50217 characters,
+and the built_in function-call counts, 366802 in all, are:
+= -- 45957
+> -- 2896
 < -- 14
-+ -- 1885
-- -- 717
-* -- 30447
-:= -- 39286
-add.period$ -- 1003
-call.type$ -- 213
++ -- 1895
+- -- 722
+* -- 30637
+:= -- 39525
+add.period$ -- 1007
+call.type$ -- 214
 change.case$ -- 26
 chr.to.int$ -- 18
-cite$ -- 231
-duplicate$ -- 29709
-empty$ -- 34732
-format.name$ -- 895
-if$ -- 85349
+cite$ -- 232
+duplicate$ -- 29898
+empty$ -- 34944
+format.name$ -- 901
+if$ -- 85878
 int.to.chr$ -- 0
-int.to.str$ -- 213
-missing$ -- 2341
-newline$ -- 1242
-num.names$ -- 217
-pop$ -- 3968
+int.to.str$ -- 214
+missing$ -- 2353
+newline$ -- 1247
+num.names$ -- 218
+pop$ -- 3991
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3901
+skip$ -- 3920
 stack$ -- 0
-substring$ -- 68742
-swap$ -- 5853
+substring$ -- 69195
+swap$ -- 5874
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 18
-while$ -- 2077
-width$ -- 216
-write$ -- 2684
+while$ -- 2087
+width$ -- 217
+write$ -- 2695
 (There was 1 error message)

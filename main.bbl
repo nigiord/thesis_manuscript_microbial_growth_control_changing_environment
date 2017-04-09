@@ -1346,6 +1346,12 @@ Sachs CC, Gr{\"u}nberger A, Helfrich S, Probst C, Wiechert W, Kohlheyer D,
 \newblock \href {http://dx.doi.org/10.1371/journal.pone.0163453}
   {doi:~10.1371/journal.pone.0163453}.
 
+\bibitem{cinquemani_estimation_2017}
+Cinquemani E, Laroute V, Cocaign-Bousquet M, {de Jong} H, Ropers D.
+\newblock Estimation of Time-Varying Growth, Uptake and Excretion Rates from
+  Dynamic Metabolomics Data.
+\newblock Bioinformatics. 2017;Accepted for publication.
+
 \bibitem{kalman_new_1960}
 Kalman RE.
 \newblock A {{New Approach}} to {{Linear Filtering}} and {{Prediction
