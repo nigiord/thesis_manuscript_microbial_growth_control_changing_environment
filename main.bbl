@@ -1366,8 +1366,9 @@ Julier SJ, Uhlmann JK.
 \newblock \href {http://dx.doi.org/10.1117/12.280797} {doi:~10.1117/12.280797}.
 
 \bibitem{tikhonov1977solutions}
-Tikhonov AN, Arsenin VY.
-\newblock Solutions of Ill-Posed Problems. 1977;.
+Tikhonov AN, Arsenin VI.
+\newblock Solutions of Ill-Posed Problems.
+\newblock {Winston}; 1977.
 
 \bibitem{tikhonov1963solution}
 Tikhonov A.

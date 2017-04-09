@@ -15,9 +15,6 @@ Warning--missing publisher in mcgill_calm_2013
 Warning--empty author and editor in weinersmith_biologists_2016
 Warning--missing publisher in weinersmith_biologists_2016
 Warning--empty booktitle in julier_new_1997
-`journal' is a missing field, not a string, for entry tikhonov1977solutions
-while executing---line 1874 of file plos2015.bst
-Warning--empty journal in tikhonov1977solutions
 Warning--empty author in fluobactracker
 Warning--empty author and editor in fluobactracker
 Warning--missing publisher in fluobactracker
@@ -30,43 +27,43 @@ Warning--empty author and editor in tomroud_tom_2016
 Warning--missing publisher in tomroud_tom_2016
 You've used 214 entries,
             3170 wiz_defined-function locations,
-            1968 strings with 50217 characters,
-and the built_in function-call counts, 366802 in all, are:
-= -- 45957
+            1969 strings with 50244 characters,
+and the built_in function-call counts, 366932 in all, are:
+= -- 45972
 > -- 2896
 < -- 14
 + -- 1895
 - -- 722
-* -- 30637
-:= -- 39525
+* -- 30648
+:= -- 39539
 add.period$ -- 1007
 call.type$ -- 214
 change.case$ -- 26
 chr.to.int$ -- 18
-cite$ -- 232
-duplicate$ -- 29898
-empty$ -- 34944
+cite$ -- 231
+duplicate$ -- 29888
+empty$ -- 34965
 format.name$ -- 901
-if$ -- 85878
+if$ -- 85914
 int.to.chr$ -- 0
 int.to.str$ -- 214
-missing$ -- 2353
-newline$ -- 1247
+missing$ -- 2351
+newline$ -- 1248
 num.names$ -- 218
-pop$ -- 3991
+pop$ -- 3992
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3920
+skip$ -- 3918
 stack$ -- 0
-substring$ -- 69195
-swap$ -- 5874
+substring$ -- 69241
+swap$ -- 5875
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 18
-while$ -- 2087
+warning$ -- 17
+while$ -- 2085
 width$ -- 217
-write$ -- 2695
-(There was 1 error message)
+write$ -- 2697
+(There were 17 warnings)
